@@ -108,10 +108,10 @@ namespace PoE_Price_Lister
                         output = 0.8f;
                         break;
                     case DivinationValueEnum.ChaosLess1:
-                        output = 0.5f;
+                        output = 0.7f;
                         break;
                     case DivinationValueEnum.NearlyWorthless:
-                        output = 0.15f;
+                        output = 0.4f;
                         break;
                     case DivinationValueEnum.Worthless:
                         output = 0.0f;

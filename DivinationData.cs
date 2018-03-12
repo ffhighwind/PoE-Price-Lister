@@ -83,7 +83,7 @@ namespace PoE_Price_Lister
             get
             {
                 var expect = ExpectedFilterValue;
-                if (filterValue == expect || (listedValue < 0.7 && expect.Value == DivinationValueEnum.NearlyWorthless))
+                if (filterValue == expect || (listedValue < 0.7f && expect.Value == DivinationValueEnum.NearlyWorthless))
                     return 0;
                 int expectTier = expect.ValueTier;
                 int severity = Math.Abs(filterValue.ValueTier - expectTier);
@@ -109,8 +109,6 @@ namespace PoE_Price_Lister
             get
             {
                 int output = filterValue.ValueTier;
-                //if(output == 3 && listedValue > 4.5f)
-                //    output = 4;
                 return output;
             }
         }
