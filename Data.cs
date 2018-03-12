@@ -66,11 +66,11 @@ namespace PoE_Price_Lister
             try
             {
                 string[] lines = System.IO.File.ReadAllLines(filename);
-                foreach(var v in csvUniquesBaseTypes)
-                    uniques[v].FilterValue.Value = UniqueValueEnum.Unknown;
+                foreach(var v in uniques)
+                    v.Value.FilterValue.Value = UniqueValueEnum.Unknown;
                 GetFilterData(lines);
-                foreach (var v in csvUniquesBaseTypes)
-                    uniques[v].CalculateExpectedValue();
+                foreach (var v in uniques)
+                    v.Value.CalculateExpectedValue();
             }
             catch (Exception ex)
             {
@@ -267,9 +267,17 @@ namespace PoE_Price_Lister
                         lines = lines.Skip(1);
                         continue;
                     }
-                    else if (line.Contains("Always Show"))
-                        value = UniqueValueEnum.ChaosLess1NoHide;
-                    else
+                    else if (line.Contains("Boss"))
+                        value = UniqueValueEnum.ChaosLess1Boss;
+                    else if (line.Contains("League"))
+                        value = UniqueValueEnum.ChaosLess1League;
+                    else if (line.Contains("Shared"))
+                        value = UniqueValueEnum.ChaosLess1Shared;
+                    else if (line.Contains("Crafted"))
+                        value = UniqueValueEnum.ChaosLess1Crafted;
+                    else if (line.Contains("Labyrinth"))
+                        value = UniqueValueEnum.ChaosLess1Labyrinth;
+                    else //Nearly Worthless
                         value = UniqueValueEnum.ChaosLess1;
                 }
                 else
@@ -371,7 +379,7 @@ namespace PoE_Price_Lister
                         MessageBox.Show("Filter: unknown basetype: " + baseTy, "Error", MessageBoxButtons.OK);
                     }
                 }
-                data.FilterValue = new UniqueFilterValue(value);
+                data.FilterValue.Value = value;
             }
         }
 
@@ -517,12 +525,17 @@ namespace PoE_Price_Lister
             List<string> list2to10c = new List<string>();
             List<string> list1to2c = new List<string>();
             List<string> listLess1c = new List<string>();
-            List<string> listLess1cNoHide = new List<string>();
+            List<string> listLess1cShared = new List<string>();
+            List<string> listLess1cLeague = new List<string>();
+            List<string> listLess1cBoss = new List<string>();
+            List<string> listLess1cCrafted = new List<string>();
+            List<string> listLess1cLabyrinth = new List<string>();
             StringBuilder sb = new StringBuilder();
 
-            foreach (var baseTy in csvUniquesBaseTypes)
+            foreach (var uniq in uniques)
             {
-                UniqueBaseEntry entry = uniques[baseTy];
+                UniqueBaseEntry entry = uniq.Value;
+                string baseTy = uniq.Key;
                 UniqueFilterValue expectedVal = entry.ExpectedFilterValue;
                 UniqueFilterValue filterVal = entry.FilterValue;
                 string outputBaseTy = baseTy;
@@ -545,8 +558,6 @@ namespace PoE_Price_Lister
                     }
                     else if (filterVal.Value == UniqueValueEnum.Unknown && expectedVal.Value == UniqueValueEnum.ChaosLess1)
                         continue;
-                    else if (expectedVal.Value == UniqueValueEnum.ChaosLess1NoHide && filterVal.Value == UniqueValueEnum.ChaosLess1)
-                        expectedVal.Value = UniqueValueEnum.ChaosLess1NoHide;
                     else
                     {
                         int expectTier = expectedVal.ValueTier;
@@ -568,8 +579,20 @@ namespace PoE_Price_Lister
                     case UniqueValueEnum.ChaosLess1:
                         listLess1c.Add(outputBaseTy);
                         break;
-                    case UniqueValueEnum.ChaosLess1NoHide:
-                        listLess1cNoHide.Add(outputBaseTy);
+                    case UniqueValueEnum.ChaosLess1League:
+                        listLess1cLeague.Add(outputBaseTy);
+                        break;
+                    case UniqueValueEnum.ChaosLess1Boss:
+                        listLess1cBoss.Add(outputBaseTy);
+                        break;
+                    case UniqueValueEnum.ChaosLess1Shared:
+                        listLess1cShared.Add(outputBaseTy);
+                        break;
+                    case UniqueValueEnum.ChaosLess1Crafted:
+                        listLess1cCrafted.Add(outputBaseTy);
+                        break;
+                    case UniqueValueEnum.ChaosLess1Labyrinth:
+                        listLess1cLabyrinth.Add(outputBaseTy);
                         break;
                     default:
                         break;
@@ -582,9 +605,17 @@ namespace PoE_Price_Lister
                 sb.AppendLine("Show  # Uniques - 2-10c").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(list2to10c)).AppendLine();
             if(list1to2c.Count > 0)
                 sb.AppendLine("Show  # Uniques - 1-2c").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(list1to2c)).AppendLine();
-            if(listLess1cNoHide.Count > 0)
-                sb.AppendLine("Show  # Uniques - <1c - Always Show").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cNoHide)).AppendLine();
-            if(listLess1c.Count > 0)
+            if(listLess1cLeague.Count > 0)
+                sb.AppendLine("Show  # Uniques - <1c - League").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cLeague)).AppendLine();
+            if (listLess1cBoss.Count > 0)
+                sb.AppendLine("Show  # Uniques - <1c - Boss Prophecy").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cBoss)).AppendLine();
+            if (listLess1cShared.Count > 0)
+                sb.AppendLine("Show  # Uniques - <1c - Shared").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cShared)).AppendLine();
+            if (listLess1cCrafted.Count > 0)
+                sb.AppendLine("Show  # Uniques - <1c - Crafted Fated Purchased").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cCrafted)).AppendLine();
+            if (listLess1cLabyrinth.Count > 0)
+                sb.AppendLine("Show  # Uniques - <1c - Labyrinth").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cLabyrinth)).AppendLine();
+            if (listLess1c.Count > 0)
                 sb.AppendLine("Show  # Uniques - <1c - Nearly Worthless").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1c)).AppendLine();
 
             return sb.ToString();

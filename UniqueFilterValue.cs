@@ -8,7 +8,7 @@ namespace PoE_Price_Lister
 {
     public enum UniqueValueEnum
     {
-        Unknown, Chaos10, Chaos2to10, Chaos1to2, ChaosLess1, Error, ChaosLess1NoHide
+        Unknown, Chaos10, Chaos2to10, Chaos1to2, ChaosLess1, Error, ChaosLess1League, ChaosLess1Shared, ChaosLess1Boss, ChaosLess1Crafted, ChaosLess1Labyrinth
     }
 
     public class UniqueFilterValue
@@ -39,7 +39,11 @@ namespace PoE_Price_Lister
                         output = 0;
                         break;
                     case UniqueValueEnum.ChaosLess1:
-                    case UniqueValueEnum.ChaosLess1NoHide:
+                    case UniqueValueEnum.ChaosLess1League:
+                    case UniqueValueEnum.ChaosLess1Shared:
+                    case UniqueValueEnum.ChaosLess1Boss:
+                    case UniqueValueEnum.ChaosLess1Crafted:
+                    case UniqueValueEnum.ChaosLess1Labyrinth:
                         output = 1;
                         break;
                     case UniqueValueEnum.Chaos1to2:
@@ -67,20 +71,32 @@ namespace PoE_Price_Lister
                 case UniqueValueEnum.Unknown:
                     output = "Unknown";
                     break;
-                case UniqueValueEnum.Chaos10:
-                    output = "10c+";
+                case UniqueValueEnum.ChaosLess1:
+                    output = "<1c";
                     break;
-                case UniqueValueEnum.Chaos2to10:
-                    output = "2-10c";
+                case UniqueValueEnum.ChaosLess1Shared:
+                    output = "<1c Shared";
+                    break;
+                case UniqueValueEnum.ChaosLess1League:
+                    output = "<1c League";
+                    break;
+                case UniqueValueEnum.ChaosLess1Boss:
+                    output = "<1c Boss";
+                    break;
+                case UniqueValueEnum.ChaosLess1Crafted:
+                    output = "<1c Crafted";
+                    break;
+                case UniqueValueEnum.ChaosLess1Labyrinth:
+                    output = "<1c Labyrinth";
                     break;
                 case UniqueValueEnum.Chaos1to2:
                     output = "1-2c";
                     break;
-                case UniqueValueEnum.ChaosLess1:
-                    output = "<1c";
+                case UniqueValueEnum.Chaos2to10:
+                    output = "2-10c";
                     break;
-                case UniqueValueEnum.ChaosLess1NoHide:
-                    output = "<1c NoHide";
+                case UniqueValueEnum.Chaos10:
+                    output = "10c+";
                     break;
                 default:
                     output = "Error";
@@ -99,18 +115,22 @@ namespace PoE_Price_Lister
                     case UniqueValueEnum.Unknown:
                         output = 0.95f;
                         break;
-                    case UniqueValueEnum.Chaos10:
-                        output = float.MaxValue;
-                        break;
-                    case UniqueValueEnum.Chaos2to10:
-                        output = 13.0f;
+                    case UniqueValueEnum.ChaosLess1:
+                    case UniqueValueEnum.ChaosLess1Shared:
+                    case UniqueValueEnum.ChaosLess1League:
+                    case UniqueValueEnum.ChaosLess1Boss:
+                    case UniqueValueEnum.ChaosLess1Crafted:
+                    case UniqueValueEnum.ChaosLess1Labyrinth:
+                        output = 1.5f;
                         break;
                     case UniqueValueEnum.Chaos1to2:
                         output = 3.0f;
                         break;
-                    case UniqueValueEnum.ChaosLess1:
-                    case UniqueValueEnum.ChaosLess1NoHide:
-                        output = 1.5f;
+                    case UniqueValueEnum.Chaos2to10:
+                        output = 13.0f;
+                        break;
+                    case UniqueValueEnum.Chaos10:
+                        output = float.MaxValue;
                         break;
                     default:
                         output = 0.0f;
@@ -130,18 +150,22 @@ namespace PoE_Price_Lister
                     case UniqueValueEnum.Unknown:
                         output = -1.0f;
                         break;
-                    case UniqueValueEnum.Chaos10:
-                        output = 8.0f;
-                        break;
-                    case UniqueValueEnum.Chaos2to10:
-                        output = 1.7f;
+                    case UniqueValueEnum.ChaosLess1:
+                    case UniqueValueEnum.ChaosLess1Shared:
+                    case UniqueValueEnum.ChaosLess1League:
+                    case UniqueValueEnum.ChaosLess1Boss:
+                    case UniqueValueEnum.ChaosLess1Crafted:
+                    case UniqueValueEnum.ChaosLess1Labyrinth:
+                        output = 0.0f;
                         break;
                     case UniqueValueEnum.Chaos1to2:
                         output = 0.8f;
                         break;
-                    case UniqueValueEnum.ChaosLess1:
-                    case UniqueValueEnum.ChaosLess1NoHide:
-                        output = 0.0f;
+                    case UniqueValueEnum.Chaos2to10:
+                        output = 1.7f;
+                        break;
+                    case UniqueValueEnum.Chaos10:
+                        output = 8.0f;
                         break;
                     default:
                         output = -1.0f;
@@ -160,7 +184,7 @@ namespace PoE_Price_Lister
                     output = UniqueValueEnum.Unknown;
                     break;
                 case 1:
-                    output = UniqueValueEnum.ChaosLess1NoHide;
+                    output = UniqueValueEnum.ChaosLess1;
                     break;
                 case 2:
                     output = UniqueValueEnum.Chaos1to2;

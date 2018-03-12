@@ -71,9 +71,29 @@ namespace PoE_Price_Lister
             get { return source == "Fated"; }
         }
 
+        public bool IsPurchased
+        {
+            get { return source.StartsWith("Purchased"); }
+        }
+
+        public bool IsProphecyDrop
+        {
+            get { return source.StartsWith("Prophecy"); }
+        }
+
+        public bool IsLabyrinthDrop
+        {
+            get { return source == "Labyrinth"; }
+        }
+
         public bool IsBossDrop
         {
-            get { return source != null && source.Length > 0 && !IsCrafted && !IsFated; }
+            get { return source.Length > 0 && !IsCrafted && !IsFated && !IsProphecyDrop && !IsLabyrinthDrop; }
+        }
+
+        public bool IsLimitedDrop
+        {
+            get { return source.Length > 0 && !IsCrafted && !IsFated; }
         }
 
         public string Name
