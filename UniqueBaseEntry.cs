@@ -45,28 +45,6 @@ namespace PoE_Price_Lister
             items.Add(new UniqueData(item));
         }
 
-        /*
-        public bool IsWorthless
-        {
-            get
-            {
-                bool coreLeagueOnly = true;
-                float minValue = filterValue.LowValue;
-                foreach (UniqueData uniqData in items)
-                {
-                    string league = uniqData.League;
-                    if (uniqData.ChaosValue > 5.0f)
-                        return false;
-                    bool isCoreLeague = IsCoreLeague(league);
-                    coreLeagueOnly = coreLeagueOnly && !isCoreLeague;
-                    if (uniqData.ChaosValue > 1.2f)
-                        return false;
-                }
-                return true;
-            }
-        }
-        */
-
         public void CalculateExpectedValue()
         {
             if (items.Count() == 0)

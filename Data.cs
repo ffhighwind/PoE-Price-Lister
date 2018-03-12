@@ -234,10 +234,10 @@ namespace PoE_Price_Lister
                     lines = lines.Skip(1);
                     continue;
                 }
-
-                lines = lines.SkipWhile(aline => !aline.TrimStart().StartsWith("BaseType"));
-                line = lines.ElementAt(0).Substring(9);
-                FillFilterDivinationData(GetBaseTypes(line), value);
+                lines = lines.Skip(1).SkipWhile(aline => !aline.TrimStart().StartsWith("BaseType ") && !aline.StartsWith("Show ") && !aline.StartsWith("Hide "));
+                line = lines.ElementAt(0).TrimStart();
+                if (line.StartsWith("BaseType "))
+                    FillFilterDivinationData(GetBaseTypes(line.Substring(9)), value);
             }
         }
 
@@ -267,7 +267,7 @@ namespace PoE_Price_Lister
                         lines = lines.Skip(1);
                         continue;
                     }
-                    else if (line.Contains("Always Show") || line.Contains("No Hide"))
+                    else if (line.Contains("Always Show"))
                         value = UniqueValueEnum.ChaosLess1NoHide;
                     else
                         value = UniqueValueEnum.ChaosLess1;
@@ -279,9 +279,10 @@ namespace PoE_Price_Lister
                     lines = lines.Skip(1);
                     continue;
                 }
-                lines = lines.SkipWhile(aline => !aline.TrimStart().StartsWith("BaseType"));
-                line = lines.ElementAt(0).Substring(9);
-                FillFilterUniqueData(GetBaseTypes(line), value);
+                lines = lines.Skip(1).SkipWhile(aline => !aline.TrimStart().StartsWith("BaseType ") && !aline.StartsWith("Show ") && !aline.StartsWith("Hide "));
+                line = lines.ElementAt(0).TrimStart();
+                if (line.StartsWith("BaseType "))
+                    FillFilterUniqueData(GetBaseTypes(line.Substring(9)), value);
             }
         }
 

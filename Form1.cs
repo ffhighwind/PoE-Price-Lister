@@ -49,7 +49,7 @@ namespace PoE_Price_Lister
                 var expect = uniqData.ExpectedFilterValue;
                 string severity = uniqData.SeverityLevel.ToString();
                 string filterVal = uniqData.FilterValue.ToString();
-                string expectVal = uniqData.ExpectedFilterValue.ToString();
+                string expectVal = expect.Value == uniqData.FilterValue.Value ? "" : expect.ToString();
                 string listedVals = values.Substring(0, values.Length - 2);
                 listViewUniques.Items.Add(new ListViewItem(new string[] { baseType, severity, filterVal, expectVal, listedVals }));
             }
@@ -73,7 +73,7 @@ namespace PoE_Price_Lister
                 var expect = divData.ExpectedFilterValue;
                 string severity = divData.SeverityLevel.ToString();
                 string filterVal = divData.FilterValue.ToString();
-                string expectVal = expect.ToString();
+                string expectVal = expect.Value == divData.FilterValue.Value ? "" : expect.ToString();
                 string listedVal = divData.ChaosValue < 0.0f ? "?" : divData.ChaosValue.ToString();
                 listViewDiv.Items.Add(new ListViewItem(new string[] { div, severity, filterVal, expectVal, listedVal }));
             }
