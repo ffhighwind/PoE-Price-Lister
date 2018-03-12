@@ -12,6 +12,7 @@ namespace PoE_Price_Lister
         DivinationFilterValue filterValue = new DivinationFilterValue();
         string name;
         float listedValue = -1.0f;
+        int count;
 
         public DivinationData() { }
 
@@ -29,6 +30,12 @@ namespace PoE_Price_Lister
         {
             name = item.Name;
             listedValue = item.ChaosValue;
+            count = item.Count;
+        }
+
+        public bool IsLowConfidence
+        {
+            get { return count < 3; }
         }
 
         public string Name

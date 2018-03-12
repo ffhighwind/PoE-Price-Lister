@@ -187,11 +187,11 @@ namespace PoE_Price_Lister
         public static DivinationFilterValue ValueOf(float val)
         {
             DivinationValueEnum output;
-            if (val < 0.3f)
+            if (val < 0.4f)
                 output = DivinationValueEnum.Worthless;
-            else if (val < 0.5f)
+            else if (val < 0.65f)
                 output = DivinationValueEnum.NearlyWorthless;
-            else if (val < 0.9f)
+            else if (val < 1.01f)
                 output = DivinationValueEnum.ChaosLess1;
             else if (val < 9.0f)
                 output = DivinationValueEnum.Chaos1to10;

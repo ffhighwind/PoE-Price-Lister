@@ -97,7 +97,9 @@
     </Compile>
     <None Include="highwind%27s_filter.filter" />
     <None Include="packages.config" />
-    <None Include="poe_uniques.csv" />
+    <None Include="poe_uniques.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

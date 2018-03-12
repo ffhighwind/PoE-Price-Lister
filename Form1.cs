@@ -70,7 +70,6 @@ namespace PoE_Price_Lister
             foreach (string div in divinationList)
             {
                 var divData = data.GetDivinationEntry(div);
-                // name, filter value, expected value, chaos value, severity
                 var expect = divData.ExpectedFilterValue;
                 string severity = divData.SeverityLevel.ToString();
                 string filterVal = divData.FilterValue.ToString();
@@ -101,8 +100,6 @@ namespace PoE_Price_Lister
 
         private void listViewUniques_ColumnClick(object sender, ColumnClickEventArgs e)
         {
-            //if (e.Column != 0 && e.Column != 3) // name |... | severity
-            //    return;
             ListViewItemComparer sorter = listViewUniques.ListViewItemSorter as ListViewItemComparer;
 
             if (sorter == null)
@@ -120,8 +117,6 @@ namespace PoE_Price_Lister
 
         private void listViewDiv_ColumnClick(object sender, ColumnClickEventArgs e)
         {
-            //if (e.Column != 0 && e.Column != 4) // name |... | severity
-            //    return;
             ListViewItemComparer sorter = listViewDiv.ListViewItemSorter as ListViewItemComparer;
 
             if (sorter == null)
@@ -150,13 +145,18 @@ namespace PoE_Price_Lister
             {
                 var listView = (ListView)sender;
                 StringBuilder sb = new StringBuilder();
-                foreach (ListViewItem item in listView.SelectedItems)
+                if (listView.SelectedItems.Count == 1)
+                    sb.Append(listView.SelectedItems[0].Text);
+                else
                 {
-                    if (item.Text.Contains(" "))
-                        sb.Append('\"').Append(item.Text).Append('\"');
-                    else
-                        sb.Append(item.Text);
-                    sb.Append(' ');
+                    foreach (ListViewItem item in listView.SelectedItems)
+                    {
+                        if (item.Text.Contains(" "))
+                            sb.Append('\"').Append(item.Text).Append('\"');
+                        else
+                            sb.Append(item.Text);
+                        sb.Append(' ');
+                    }
                 }
                 Clipboard.SetText(sb.ToString());
             }
