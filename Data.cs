@@ -107,6 +107,9 @@ namespace PoE_Price_Lister
                     uniquesHC[baseTy].FilterValue.Value = UniqueValueEnum.Unknown;
                 }
                 GetFilterData(lines);
+                SetLeague(true);
+                GetFilterData(lines);
+                SetLeague(false);
                 foreach (var baseTy in csvUniquesBaseTypes)
                 {
                     uniquesSC[baseTy].CalculateExpectedValue();
