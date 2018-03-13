@@ -117,31 +117,32 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="buttonUniques.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 4</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="listViewUniques.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="buttonUniques.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 26</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="listViewUniques.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="listViewUniques.Size" type="System.Drawing.Size, System.Drawing">
+    <value>534, 522</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="buttonUniques.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="buttonUniques.Text" xml:space="preserve">
-    <value>Uniques</value>
-  </data>
-  <data name="&gt;&gt;buttonUniques.Name" xml:space="preserve">
-    <value>buttonUniques</value>
-  </data>
-  <data name="&gt;&gt;buttonUniques.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonUniques.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;buttonUniques.ZOrder" xml:space="preserve">
+  <data name="listViewUniques.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
+  </data>
+  <data name="&gt;&gt;listViewUniques.Name" xml:space="preserve">
+    <value>listViewUniques</value>
+  </data>
+  <data name="&gt;&gt;listViewUniques.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listViewUniques.Parent" xml:space="preserve">
+    <value>tabUniquesSC</value>
+  </data>
+  <data name="&gt;&gt;listViewUniques.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="columnUniqBaseType.Text" xml:space="preserve">
     <value>BaseType</value>
@@ -158,33 +159,29 @@
   <data name="columnUniqItems.Text" xml:space="preserve">
     <value>Uniques</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="listViewUniques.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="listViewDivination.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="listViewUniques.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="listViewDivination.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
   </data>
-  <data name="listViewUniques.Size" type="System.Drawing.Size, System.Drawing">
-    <value>548, 551</value>
+  <data name="listViewDivination.Size" type="System.Drawing.Size, System.Drawing">
+    <value>534, 522</value>
   </data>
-  <data name="listViewUniques.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="listViewDivination.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="&gt;&gt;listViewUniques.Name" xml:space="preserve">
-    <value>listViewUniques</value>
+  <data name="&gt;&gt;listViewDivination.Name" xml:space="preserve">
+    <value>listViewDivination</value>
   </data>
-  <data name="&gt;&gt;listViewUniques.Type" xml:space="preserve">
+  <data name="&gt;&gt;listViewDivination.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;listViewUniques.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="&gt;&gt;listViewDivination.Parent" xml:space="preserve">
+    <value>tabDivinationSC</value>
   </data>
-  <data name="&gt;&gt;listViewUniques.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="panel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
+  <data name="&gt;&gt;listViewDivination.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="columnDivName.Text" xml:space="preserve">
     <value>Name</value>
@@ -200,78 +197,6 @@
   </data>
   <data name="columnDivValue.Text" xml:space="preserve">
     <value>Value</value>
-  </data>
-  <data name="listViewDiv.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="listViewDiv.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="listViewDiv.Size" type="System.Drawing.Size, System.Drawing">
-    <value>548, 551</value>
-  </data>
-  <data name="listViewDiv.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="listViewDiv.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;listViewDiv.Name" xml:space="preserve">
-    <value>listViewDiv</value>
-  </data>
-  <data name="&gt;&gt;listViewDiv.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;listViewDiv.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;listViewDiv.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 39</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>548, 551</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="buttonDivCards.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 4</value>
-  </data>
-  <data name="buttonDivCards.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 26</value>
-  </data>
-  <data name="buttonDivCards.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="buttonDivCards.Text" xml:space="preserve">
-    <value>Divination Cards</value>
-  </data>
-  <data name="&gt;&gt;buttonDivCards.Name" xml:space="preserve">
-    <value>buttonDivCards</value>
-  </data>
-  <data name="&gt;&gt;buttonDivCards.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonDivCards.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;buttonDivCards.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="buttonGenFilter.Location" type="System.Drawing.Point, System.Drawing">
     <value>353, 4</value>
@@ -295,7 +220,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;buttonGenFilter.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="checkBox1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -322,10 +247,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;checkBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="buttonLoad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>252, 4</value>
+    <value>12, 4</value>
   </data>
   <data name="buttonLoad.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 26</value>
@@ -346,13 +271,220 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;buttonLoad.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <data name="openFileDialog1.Filter" xml:space="preserve">
     <value>Filter files|*.filter|Text files|*.txt|All files|*.*</value>
+  </data>
+  <data name="tabUniquesSC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabUniquesSC.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabUniquesSC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>540, 528</value>
+  </data>
+  <data name="tabUniquesSC.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabUniquesSC.Text" xml:space="preserve">
+    <value>Uniques SC</value>
+  </data>
+  <data name="&gt;&gt;tabUniquesSC.Name" xml:space="preserve">
+    <value>tabUniquesSC</value>
+  </data>
+  <data name="&gt;&gt;tabUniquesSC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabUniquesSC.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabUniquesSC.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabDivinationSC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabDivinationSC.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabDivinationSC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>540, 528</value>
+  </data>
+  <data name="tabDivinationSC.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabDivinationSC.Text" xml:space="preserve">
+    <value>Divination SC</value>
+  </data>
+  <data name="&gt;&gt;tabDivinationSC.Name" xml:space="preserve">
+    <value>tabDivinationSC</value>
+  </data>
+  <data name="&gt;&gt;tabDivinationSC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabDivinationSC.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabDivinationSC.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="columnHeader1.Text" xml:space="preserve">
+    <value>BaseType</value>
+  </data>
+  <data name="columnHeader2.Text" xml:space="preserve">
+    <value>Severity</value>
+  </data>
+  <data name="columnHeader3.Text" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="columnHeader4.Text" xml:space="preserve">
+    <value>Expected</value>
+  </data>
+  <data name="columnHeader5.Text" xml:space="preserve">
+    <value>Uniques</value>
+  </data>
+  <data name="listViewUniquesHC.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="listViewUniquesHC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="listViewUniquesHC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>534, 522</value>
+  </data>
+  <data name="listViewUniquesHC.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;listViewUniquesHC.Name" xml:space="preserve">
+    <value>listViewUniquesHC</value>
+  </data>
+  <data name="&gt;&gt;listViewUniquesHC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listViewUniquesHC.Parent" xml:space="preserve">
+    <value>tabUniquesHC</value>
+  </data>
+  <data name="&gt;&gt;listViewUniquesHC.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabUniquesHC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabUniquesHC.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabUniquesHC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>540, 528</value>
+  </data>
+  <data name="tabUniquesHC.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabUniquesHC.Text" xml:space="preserve">
+    <value>Uniques HC</value>
+  </data>
+  <data name="&gt;&gt;tabUniquesHC.Name" xml:space="preserve">
+    <value>tabUniquesHC</value>
+  </data>
+  <data name="&gt;&gt;tabUniquesHC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabUniquesHC.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabUniquesHC.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="columnHeader6.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="columnHeader7.Text" xml:space="preserve">
+    <value>Severity</value>
+  </data>
+  <data name="columnHeader8.Text" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="columnHeader9.Text" xml:space="preserve">
+    <value>Expected</value>
+  </data>
+  <data name="columnHeader10.Text" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="listViewDivinationHC.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="listViewDivinationHC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="listViewDivinationHC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>534, 522</value>
+  </data>
+  <data name="listViewDivinationHC.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;listViewDivinationHC.Name" xml:space="preserve">
+    <value>listViewDivinationHC</value>
+  </data>
+  <data name="&gt;&gt;listViewDivinationHC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listViewDivinationHC.Parent" xml:space="preserve">
+    <value>tabDivinationHC</value>
+  </data>
+  <data name="&gt;&gt;listViewDivinationHC.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabDivinationHC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabDivinationHC.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabDivinationHC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>540, 528</value>
+  </data>
+  <data name="tabDivinationHC.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tabDivinationHC.Text" xml:space="preserve">
+    <value>Divination HC</value>
+  </data>
+  <data name="&gt;&gt;tabDivinationHC.Name" xml:space="preserve">
+    <value>tabDivinationHC</value>
+  </data>
+  <data name="&gt;&gt;tabDivinationHC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabDivinationHC.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabDivinationHC.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 33</value>
+  </data>
+  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>548, 554</value>
+  </data>
+  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -434,6 +566,66 @@
   </data>
   <data name="&gt;&gt;openFileDialog1.Type" xml:space="preserve">
     <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeader1.Name" xml:space="preserve">
+    <value>columnHeader1</value>
+  </data>
+  <data name="&gt;&gt;columnHeader1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeader2.Name" xml:space="preserve">
+    <value>columnHeader2</value>
+  </data>
+  <data name="&gt;&gt;columnHeader2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeader3.Name" xml:space="preserve">
+    <value>columnHeader3</value>
+  </data>
+  <data name="&gt;&gt;columnHeader3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeader4.Name" xml:space="preserve">
+    <value>columnHeader4</value>
+  </data>
+  <data name="&gt;&gt;columnHeader4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeader5.Name" xml:space="preserve">
+    <value>columnHeader5</value>
+  </data>
+  <data name="&gt;&gt;columnHeader5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeader6.Name" xml:space="preserve">
+    <value>columnHeader6</value>
+  </data>
+  <data name="&gt;&gt;columnHeader6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeader7.Name" xml:space="preserve">
+    <value>columnHeader7</value>
+  </data>
+  <data name="&gt;&gt;columnHeader7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeader8.Name" xml:space="preserve">
+    <value>columnHeader8</value>
+  </data>
+  <data name="&gt;&gt;columnHeader8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeader9.Name" xml:space="preserve">
+    <value>columnHeader9</value>
+  </data>
+  <data name="&gt;&gt;columnHeader9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeader10.Name" xml:space="preserve">
+    <value>columnHeader10</value>
+  </data>
+  <data name="&gt;&gt;columnHeader10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form1</value>

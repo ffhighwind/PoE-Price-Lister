@@ -29,34 +29,45 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.buttonUniques = new System.Windows.Forms.Button();
             this.listViewUniques = new System.Windows.Forms.ListView();
             this.columnUniqBaseType = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnUniqSeverity = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnUniqFilter = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnUniqExpect = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnUniqItems = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.listViewDiv = new System.Windows.Forms.ListView();
+            this.listViewDivination = new System.Windows.Forms.ListView();
             this.columnDivName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnDivSeverity = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnDivFilter = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnDivExpect = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnDivValue = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.buttonDivCards = new System.Windows.Forms.Button();
             this.buttonGenFilter = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.buttonLoad = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.panel1.SuspendLayout();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabUniquesSC = new System.Windows.Forms.TabPage();
+            this.tabDivinationSC = new System.Windows.Forms.TabPage();
+            this.tabUniquesHC = new System.Windows.Forms.TabPage();
+            this.listViewUniquesHC = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tabDivinationHC = new System.Windows.Forms.TabPage();
+            this.listViewDivinationHC = new System.Windows.Forms.ListView();
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tabControl1.SuspendLayout();
+            this.tabUniquesSC.SuspendLayout();
+            this.tabDivinationSC.SuspendLayout();
+            this.tabUniquesHC.SuspendLayout();
+            this.tabDivinationHC.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // buttonUniques
-            // 
-            resources.ApplyResources(this.buttonUniques, "buttonUniques");
-            this.buttonUniques.Name = "buttonUniques";
-            this.buttonUniques.UseVisualStyleBackColor = true;
-            this.buttonUniques.Click += new System.EventHandler(this.button1_Click);
             // 
             // listViewUniques
             // 
@@ -94,28 +105,21 @@
             // 
             resources.ApplyResources(this.columnUniqItems, "columnUniqItems");
             // 
-            // panel1
+            // listViewDivination
             // 
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Controls.Add(this.listViewDiv);
-            this.panel1.Controls.Add(this.listViewUniques);
-            this.panel1.Name = "panel1";
-            // 
-            // listViewDiv
-            // 
-            this.listViewDiv.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listViewDivination.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnDivName,
             this.columnDivSeverity,
             this.columnDivFilter,
             this.columnDivExpect,
             this.columnDivValue});
-            resources.ApplyResources(this.listViewDiv, "listViewDiv");
-            this.listViewDiv.GridLines = true;
-            this.listViewDiv.Name = "listViewDiv";
-            this.listViewDiv.UseCompatibleStateImageBehavior = false;
-            this.listViewDiv.View = System.Windows.Forms.View.Details;
-            this.listViewDiv.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listViewDiv_ColumnClick);
-            this.listViewDiv.KeyUp += new System.Windows.Forms.KeyEventHandler(this.listView_KeyUp);
+            resources.ApplyResources(this.listViewDivination, "listViewDivination");
+            this.listViewDivination.GridLines = true;
+            this.listViewDivination.Name = "listViewDivination";
+            this.listViewDivination.UseCompatibleStateImageBehavior = false;
+            this.listViewDivination.View = System.Windows.Forms.View.Details;
+            this.listViewDivination.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listViewDiv_ColumnClick);
+            this.listViewDivination.KeyUp += new System.Windows.Forms.KeyEventHandler(this.listView_KeyUp);
             // 
             // columnDivName
             // 
@@ -136,13 +140,6 @@
             // columnDivValue
             // 
             resources.ApplyResources(this.columnDivValue, "columnDivValue");
-            // 
-            // buttonDivCards
-            // 
-            resources.ApplyResources(this.buttonDivCards, "buttonDivCards");
-            this.buttonDivCards.Name = "buttonDivCards";
-            this.buttonDivCards.UseVisualStyleBackColor = true;
-            this.buttonDivCards.Click += new System.EventHandler(this.button2_Click);
             // 
             // buttonGenFilter
             // 
@@ -172,33 +169,142 @@
             resources.ApplyResources(this.openFileDialog1, "openFileDialog1");
             this.openFileDialog1.RestoreDirectory = true;
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabUniquesSC);
+            this.tabControl1.Controls.Add(this.tabDivinationSC);
+            this.tabControl1.Controls.Add(this.tabUniquesHC);
+            this.tabControl1.Controls.Add(this.tabDivinationHC);
+            resources.ApplyResources(this.tabControl1, "tabControl1");
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            // 
+            // tabUniquesSC
+            // 
+            this.tabUniquesSC.Controls.Add(this.listViewUniques);
+            resources.ApplyResources(this.tabUniquesSC, "tabUniquesSC");
+            this.tabUniquesSC.Name = "tabUniquesSC";
+            this.tabUniquesSC.UseVisualStyleBackColor = true;
+            // 
+            // tabDivinationSC
+            // 
+            this.tabDivinationSC.Controls.Add(this.listViewDivination);
+            resources.ApplyResources(this.tabDivinationSC, "tabDivinationSC");
+            this.tabDivinationSC.Name = "tabDivinationSC";
+            this.tabDivinationSC.UseVisualStyleBackColor = true;
+            // 
+            // tabUniquesHC
+            // 
+            this.tabUniquesHC.Controls.Add(this.listViewUniquesHC);
+            resources.ApplyResources(this.tabUniquesHC, "tabUniquesHC");
+            this.tabUniquesHC.Name = "tabUniquesHC";
+            this.tabUniquesHC.UseVisualStyleBackColor = true;
+            // 
+            // listViewUniquesHC
+            // 
+            this.listViewUniquesHC.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5});
+            resources.ApplyResources(this.listViewUniquesHC, "listViewUniquesHC");
+            this.listViewUniquesHC.GridLines = true;
+            this.listViewUniquesHC.Name = "listViewUniquesHC";
+            this.listViewUniquesHC.UseCompatibleStateImageBehavior = false;
+            this.listViewUniquesHC.View = System.Windows.Forms.View.Details;
+            this.listViewUniquesHC.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listViewUniques_ColumnClick);
+            this.listViewUniquesHC.KeyUp += new System.Windows.Forms.KeyEventHandler(this.listView_KeyUp);
+            // 
+            // columnHeader1
+            // 
+            resources.ApplyResources(this.columnHeader1, "columnHeader1");
+            // 
+            // columnHeader2
+            // 
+            resources.ApplyResources(this.columnHeader2, "columnHeader2");
+            // 
+            // columnHeader3
+            // 
+            resources.ApplyResources(this.columnHeader3, "columnHeader3");
+            // 
+            // columnHeader4
+            // 
+            resources.ApplyResources(this.columnHeader4, "columnHeader4");
+            // 
+            // columnHeader5
+            // 
+            resources.ApplyResources(this.columnHeader5, "columnHeader5");
+            // 
+            // tabDivinationHC
+            // 
+            this.tabDivinationHC.Controls.Add(this.listViewDivinationHC);
+            resources.ApplyResources(this.tabDivinationHC, "tabDivinationHC");
+            this.tabDivinationHC.Name = "tabDivinationHC";
+            this.tabDivinationHC.UseVisualStyleBackColor = true;
+            // 
+            // listViewDivinationHC
+            // 
+            this.listViewDivinationHC.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader6,
+            this.columnHeader7,
+            this.columnHeader8,
+            this.columnHeader9,
+            this.columnHeader10});
+            resources.ApplyResources(this.listViewDivinationHC, "listViewDivinationHC");
+            this.listViewDivinationHC.GridLines = true;
+            this.listViewDivinationHC.Name = "listViewDivinationHC";
+            this.listViewDivinationHC.UseCompatibleStateImageBehavior = false;
+            this.listViewDivinationHC.View = System.Windows.Forms.View.Details;
+            this.listViewDivinationHC.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listViewDiv_ColumnClick);
+            this.listViewDivinationHC.KeyUp += new System.Windows.Forms.KeyEventHandler(this.listView_KeyUp);
+            // 
+            // columnHeader6
+            // 
+            resources.ApplyResources(this.columnHeader6, "columnHeader6");
+            // 
+            // columnHeader7
+            // 
+            resources.ApplyResources(this.columnHeader7, "columnHeader7");
+            // 
+            // columnHeader8
+            // 
+            resources.ApplyResources(this.columnHeader8, "columnHeader8");
+            // 
+            // columnHeader9
+            // 
+            resources.ApplyResources(this.columnHeader9, "columnHeader9");
+            // 
+            // columnHeader10
+            // 
+            resources.ApplyResources(this.columnHeader10, "columnHeader10");
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.buttonLoad);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.buttonGenFilter);
-            this.Controls.Add(this.buttonDivCards);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.buttonUniques);
             this.Name = "Form1";
-            this.panel1.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
+            this.tabUniquesSC.ResumeLayout(false);
+            this.tabDivinationSC.ResumeLayout(false);
+            this.tabUniquesHC.ResumeLayout(false);
+            this.tabDivinationHC.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button buttonUniques;
         private System.Windows.Forms.ListView listViewUniques;
         private System.Windows.Forms.ColumnHeader columnUniqBaseType;
         private System.Windows.Forms.ColumnHeader columnUniqFilter;
         private System.Windows.Forms.ColumnHeader columnUniqExpect;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ColumnHeader columnUniqSeverity;
-        private System.Windows.Forms.Button buttonDivCards;
-        private System.Windows.Forms.ListView listViewDiv;
+        private System.Windows.Forms.ListView listViewDivination;
         private System.Windows.Forms.ColumnHeader columnDivName;
         private System.Windows.Forms.ColumnHeader columnDivFilter;
         private System.Windows.Forms.ColumnHeader columnDivExpect;
@@ -209,6 +315,23 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button buttonLoad;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabUniquesSC;
+        private System.Windows.Forms.TabPage tabDivinationSC;
+        private System.Windows.Forms.TabPage tabUniquesHC;
+        private System.Windows.Forms.TabPage tabDivinationHC;
+        private System.Windows.Forms.ListView listViewUniquesHC;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ListView listViewDivinationHC;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ColumnHeader columnHeader8;
+        private System.Windows.Forms.ColumnHeader columnHeader9;
+        private System.Windows.Forms.ColumnHeader columnHeader10;
     }
 }
 

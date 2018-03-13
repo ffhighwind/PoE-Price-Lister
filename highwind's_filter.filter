@@ -1,5 +1,5 @@
 ############################################
-##      HIGHWIND'S LOOT FILTER 3.2.7      ##
+##      HIGHWIND'S LOOT FILTER 3.2.8      ##
 ############################################
 ## Release Date: March 12, 2018           ##
 ############################################
@@ -1730,10 +1730,6 @@ Show  # Maps - Fragments - New (Error)
 ##########################################
 # Section: Uniques
 
-# Ordered most expensive first to prevent future name conflicts!
-# Prices attained from poe.ninja.
-# Future values will fluctuate based on league challenges and the meta.
-
 #------#
 # 10c+ #
 #------#
@@ -1758,7 +1754,7 @@ Show  # Uniques - 10c+
 
 Show  # Uniques - 2-10c
 	Rarity = Unique
-	BaseType "Abyssal Axe" "Amber Amulet" "Archon Kite Shield" "Assassin's Boots" "Bismuth Flask" "Cardinal Round Shield" "Citadel Bow" "Coronal Leather" "Ebony Tower Shield" "Goathide Boots" "Gold Amulet" "Gold Ring" "Granite Flask" "Harlequin Mask" "Imperial Bow" "Imperial Claw" "Jade Amulet" "Jasper Chopper" "Jingling Spirit Shield" "Lapis Amulet" "Leather Cap" "Lion Pelt" "Midnight Blade" "Necromancer Silks" "Onyx Amulet" "Paua Ring" "Prismatic Ring" "Raven Mask" "Ritual Sceptre" "Silken Hood" "Titan Greaves" "Two-Stone Ring" "Unset Ring" "Ursine Pelt" "Vanguard Belt" "Varnished Coat"
+	BaseType "Abyssal Axe" "Amber Amulet" "Archon Kite Shield" "Assassin's Boots" "Bismuth Flask" "Cardinal Round Shield" "Citadel Bow" "Coronal Leather" "Ebony Tower Shield" "Goathide Boots" "Gold Amulet" "Gold Ring" "Granite Flask" "Harlequin Mask" "Imperial Bow" "Imperial Claw" "Jade Amulet" "Jasper Chopper" "Jingling Spirit Shield" "Lapis Amulet" "Leather Cap" "Lion Pelt" "Midnight Blade" "Necromancer Silks" "Onyx Amulet" "Paua Ring" "Prismatic Ring" "Raven Mask" "Ritual Sceptre" "Silken Hood" "Titan Greaves" "Two-Stone Ring" "Ursine Pelt" "Vanguard Belt" "Varnished Coat"
 	SetFontSize 45
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
@@ -1773,7 +1769,7 @@ Show  # Uniques - 2-10c
 
 Show  # Uniques - 1-2c
 	Rarity = Unique
-	BaseType "Amethyst Ring" "Ancient Gauntlets" "Ancient Greaves" "Assassin's Mitts" Blinder "Blood Raiment" "Bone Bow" "Carved Wand" "Cedar Tower Shield" "Clasped Mitts" "Coiled Staff" "Conjurer Boots" "Coral Ring" "Crystal Belt" "Demon Dagger" "Diamond Ring" "Etched Greatsword" "Exquisite Leather" "Goliath Greaves" "Hellion's Paw" "Highborn Staff" "Iron Ring" "Ironscale Gauntlets" "Judgement Staff" Labrys "Lacquered Garb" "Leather Belt" Maelstr "Magistrate Crown" Meatgrinder "Mirrored Spiked Shield" "Moonstone Ring" "Mosaic Kite Shield" "Murder Boots" "Nightmare Bascinet" "Nightmare Mace" "Opal Ring" "Penetrating Arrow Quiver" "Regicide Mask" "Ruby Ring" "Sanctified Life Flask" "Sanctified Mana Flask" "Sapphire Ring" "Sharkskin Tunic" "Siege Helmet" "Silver Flask" "Simple Robe" "Slink Boots" Steelhead "Stygian Vise" "Titan Gauntlets" "Titanium Spirit Shield" "Topaz Ring" "Tornado Wand" "Trapper Boots" "Vaal Sceptre"
+	BaseType "Amethyst Ring" "Ancient Gauntlets" "Ancient Greaves" "Assassin's Mitts" Blinder "Blood Raiment" "Bone Bow" "Carved Wand" "Cedar Tower Shield" "Clasped Mitts" "Coiled Staff" "Conjurer Boots" "Coral Ring" "Crystal Belt" "Demon Dagger" "Diamond Ring" "Etched Greatsword" "Exquisite Leather" "Goliath Greaves" "Hellion's Paw" "Highborn Staff" "Iron Ring" "Ironscale Gauntlets" "Judgement Staff" Labrys "Lacquered Garb" "Leather Belt" Maelstr "Magistrate Crown" Meatgrinder "Mirrored Spiked Shield" "Moonstone Ring" "Mosaic Kite Shield" "Murder Boots" "Nightmare Bascinet" "Nightmare Mace" "Opal Ring" "Penetrating Arrow Quiver" "Regicide Mask" "Ruby Ring" "Sanctified Life Flask" "Sanctified Mana Flask" "Sapphire Ring" "Sharkskin Tunic" "Siege Helmet" "Silver Flask" "Simple Robe" "Slink Boots" Steelhead "Stygian Vise" "Titan Gauntlets" "Titanium Spirit Shield" "Topaz Ring" "Tornado Wand" "Trapper Boots" "Unset Ring" "Vaal Sceptre"
 	SetFontSize 40
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
@@ -1832,9 +1828,18 @@ Show  # Uniques - <1c - Shared
 	SetBorderColor 180 90 45 # Unique (<1c)
 	PlayAlertSound 4 200 # Mid Value
 
+Show  # Uniques - <1c - Labyrinth
+	Rarity = Unique
+	BaseType "Burnished Spiked Shield" "Elegant Foil" "Full Scale Armour" "Iron Sceptre"
+	SetFontSize 40
+	SetTextColor 255 128 64 # Unique
+	SetBackgroundColor 50 25 12 # Unique
+	SetBorderColor 180 90 45 # Unique (<1c)
+	PlayAlertSound 4 200 # Mid Value
+
 Show  # Uniques - <1c - Nearly Worthless
 	Rarity = Unique
-	BaseType "Astral Plate" "Blue Pearl Amulet" "Bronzescale Gauntlets" "Burnished Spiked Shield" "Champion Kite Shield" "Close Helmet" "Corsair Sword" "Elegant Foil" "Full Scale Armour" Gladius "Great Mallet" "Hallowed Hybrid Flask" "Infernal Axe" "Iron Gauntlets" "Iron Sceptre" "Karui Sceptre" "Large Hybrid Flask" "Marble Amulet" "Mind Cage" "Necromancer Circlet" "Opal Sceptre" "Pinnacle Tower Shield" "Prophet Crown" "Serpentscale Gauntlets" "Shadow Sceptre" "Sinner Tricorne" "Sorcerer Gloves" "Spiraled Wand" "Tarnished Spirit Shield" "Turquoise Amulet" "Wool Shoes"
+	BaseType "Astral Plate" "Blue Pearl Amulet" "Bronzescale Gauntlets" "Champion Kite Shield" "Close Helmet" "Corsair Sword" "Destroyer Regalia" Gladius "Great Mallet" "Hallowed Hybrid Flask" "Infernal Axe" "Iron Gauntlets" "Karui Sceptre" "Large Hybrid Flask" "Marble Amulet" "Mind Cage" "Opal Sceptre" "Opal Wand" "Pinnacle Tower Shield" "Prophet Crown" "Serpentscale Gauntlets" "Sinner Tricorne" "Sorcerer Gloves" "Tarnished Spirit Shield" "Turquoise Amulet" "Wool Shoes"
 	SetFontSize 40
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique

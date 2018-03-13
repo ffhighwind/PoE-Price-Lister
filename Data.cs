@@ -16,8 +16,14 @@ namespace PoE_Price_Lister
 {
     class Data
     {
-        Dictionary<string, DivinationData> divination = new Dictionary<string, DivinationData>();
-        Dictionary<string, UniqueBaseEntry> uniques = new Dictionary<string, UniqueBaseEntry>();
+        Dictionary<string, DivinationData> divination;
+        Dictionary<string, UniqueBaseEntry> uniques;
+        Dictionary<string, DivinationData> divinationHC = new Dictionary<string, DivinationData>();
+        Dictionary<string, UniqueBaseEntry> uniquesHC = new Dictionary<string, UniqueBaseEntry>();
+        Dictionary<string, DivinationData> divinationSC = new Dictionary<string, DivinationData>();
+        Dictionary<string, UniqueBaseEntry> uniquesSC = new Dictionary<string, UniqueBaseEntry>();
+        bool isHardcore = false;
+
         List<string> divinationBaseTypes = new List<string>();
         List<string> csvUniquesBaseTypes = new List<string>();
 
@@ -25,11 +31,11 @@ namespace PoE_Price_Lister
         private const string league = "Bestiary";
 
         private const string filterURL = "http://pastebin.com/raw/k5q2b570";
-        private const string divinationJsonURL = "http://cdn.poe.ninja/api/Data/GetDivinationCardsOverview?league=" + league;
-        private const string armorJsonURL = "http://cdn.poe.ninja/api/Data/GetUniqueArmourOverview?league=" + league;
-        private const string flaskJsonURL = "http://cdn.poe.ninja/api/Data/GetUniqueFlaskOverview?league=" + league;
-        private const string weaponJsonURL = "http://cdn.poe.ninja/api/Data/GetUniqueWeaponOverview?league=" + league;
-        private const string accessoryJsonURL = "http://cdn.poe.ninja/api/Data/GetUniqueAccessoryOverview?league=" + league;
+        private const string divinationJsonURL = "http://cdn.poe.ninja/api/Data/GetDivinationCardsOverview?league=";
+        private const string armorJsonURL = "http://cdn.poe.ninja/api/Data/GetUniqueArmourOverview?league=";
+        private const string flaskJsonURL = "http://cdn.poe.ninja/api/Data/GetUniqueFlaskOverview?league=";
+        private const string weaponJsonURL = "http://cdn.poe.ninja/api/Data/GetUniqueWeaponOverview?league=";
+        private const string accessoryJsonURL = "http://cdn.poe.ninja/api/Data/GetUniqueAccessoryOverview?league=";
         private const string baseTypeRegexStr = @"""[A-Za-z'\-, ]+""|[A-Za-z'\-]+";
 
         private const string uniquesSectionStart = "# Section: Uniques";
@@ -39,7 +45,26 @@ namespace PoE_Price_Lister
 
         private List<List<string>> conflicts = new List<List<string>>();
 
-        public Data() { }
+        public Data()
+        {
+            divination = divinationSC;
+            uniques = uniquesSC;
+        }
+
+        private void SetLeague(bool hardcore)
+        {
+            isHardcore = hardcore;
+            if(hardcore)
+            {
+                divination = divinationHC;
+                uniques = uniquesHC;
+            }
+            else
+            {
+                divination = divinationSC;
+                uniques = uniquesSC;
+            }
+        }
 
         public IEnumerable<string> GetUniques()
         {
@@ -51,14 +76,24 @@ namespace PoE_Price_Lister
             return divinationBaseTypes;
         }
 
-        public UniqueBaseEntry GetUniqueEntry(string baseType)
+        public UniqueBaseEntry GetUniqueEntrySC(string baseType)
         {
-            return uniques[baseType];
+            return uniquesSC[baseType];
         }
 
-        public DivinationData GetDivinationEntry(string name)
+        public UniqueBaseEntry GetUniqueEntryHC(string baseType)
         {
-            return divination[name];
+            return uniquesHC[baseType];
+        }
+
+        public DivinationData GetDivinationEntrySC(string name)
+        {
+            return divinationSC[name];
+        }
+
+        public DivinationData GetDivinationEntryHC(string name)
+        {
+            return divinationHC[name];
         }
 
         public void Load(string filename)
@@ -66,11 +101,17 @@ namespace PoE_Price_Lister
             try
             {
                 string[] lines = System.IO.File.ReadAllLines(filename);
-                foreach(var v in uniques)
-                    v.Value.FilterValue.Value = UniqueValueEnum.Unknown;
+                foreach(var baseTy in csvUniquesBaseTypes)
+                {
+                    uniquesSC[baseTy].FilterValue.Value = UniqueValueEnum.Unknown;
+                    uniquesHC[baseTy].FilterValue.Value = UniqueValueEnum.Unknown;
+                }
                 GetFilterData(lines);
-                foreach (var v in uniques)
-                    v.Value.CalculateExpectedValue();
+                foreach (var baseTy in csvUniquesBaseTypes)
+                {
+                    uniquesSC[baseTy].CalculateExpectedValue();
+                    uniquesHC[baseTy].CalculateExpectedValue();
+                }
             }
             catch (Exception ex)
             {
@@ -80,18 +121,23 @@ namespace PoE_Price_Lister
 
         public void GetData()
         {
-            GetCSVData();
-            GetJsonData();
+            for (int i = 0; i < 2; i++) //hardcore and not hardcore
+            {
+                GetCSVData(!isHardcore);
+                GetJsonData();
 
-            try
-            {
-                string[] lines = ReadWebPage(filterURL, "").Split('\n');
-                GetFilterData(lines);
+                try
+                {
+                    string[] lines = ReadWebPage(filterURL, "").Split('\n');
+                    GetFilterData(lines);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK);
+                }
+                SetLeague(true);
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK);
-            }
+            SetLeague(false);
 
             List<string> uniqBasesToRemove = new List<string>();
 
@@ -115,20 +161,24 @@ namespace PoE_Price_Lister
             csvUniquesBaseTypes.Sort();
 
             foreach (var v in csvUniquesBaseTypes)
-                uniques[v].CalculateExpectedValue();
+            {
+                uniquesSC[v].CalculateExpectedValue();
+                uniquesHC[v].CalculateExpectedValue();
+            }
             GetDivinationCardConflicts();
         }
 
         private void GetJsonData()
         {
-            FillJsonData(divinationJsonURL, DivinationJsonHandler);
-            FillJsonData(armorJsonURL, UniqueJsonHandler);
-            FillJsonData(weaponJsonURL, UniqueJsonHandler);
-            FillJsonData(flaskJsonURL, UniqueJsonHandler);
-            FillJsonData(accessoryJsonURL, UniqueJsonHandler);
+            string leagueStr = isHardcore ? "Hardcore " + league : league;
+            FillJsonData(divinationJsonURL + leagueStr, DivinationJsonHandler);
+            FillJsonData(armorJsonURL + leagueStr, UniqueJsonHandler);
+            FillJsonData(weaponJsonURL + leagueStr, UniqueJsonHandler);
+            FillJsonData(flaskJsonURL + leagueStr, UniqueJsonHandler);
+            FillJsonData(accessoryJsonURL + leagueStr, UniqueJsonHandler);
         }
 
-        private void GetCSVData()
+        private void GetCSVData(bool addBaseTypes)
         {
             try
             {
@@ -142,7 +192,8 @@ namespace PoE_Price_Lister
                         entry = new UniqueBaseEntry();
                         entry.BaseType = data.BaseType;
                         uniques.Add(data.BaseType, entry);
-                        csvUniquesBaseTypes.Add(data.BaseType);
+                        if(addBaseTypes)
+                            csvUniquesBaseTypes.Add(data.BaseType);
                     }
                     entry.Add(data);
                 }

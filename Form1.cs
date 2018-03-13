@@ -25,19 +25,21 @@ namespace PoE_Price_Lister
             InitializeComponent();
             data = new Data();
             data.GetData();
-            FillUniqueListView();
-            FillDivinationListView();
+            FillUniqueListView(listViewUniques, data.GetUniqueEntrySC);
+            FillDivinationListView(listViewDivination, data.GetDivinationEntrySC);
+            FillUniqueListView(listViewUniquesHC, data.GetUniqueEntryHC);
+            FillDivinationListView(listViewDivinationHC, data.GetDivinationEntryHC);
             openFileDialog1.InitialDirectory = Directory.GetCurrentDirectory();
         }
 
-        void FillUniqueListView()
+        void FillUniqueListView(ListView lv, Func<string, UniqueBaseEntry> getEntry)
         {
-            listViewUniques.BeginUpdate();
-            listViewUniques.Items.Clear();
+            lv.BeginUpdate();
+            lv.Items.Clear();
             IEnumerable<string> uniquesList = data.GetUniques();
             foreach (string baseType in uniquesList)
             {
-                var uniqData = data.GetUniqueEntry(baseType);
+                var uniqData = getEntry(baseType);
                 string values = "";
                 foreach (UniqueData udata in uniqData.Items)
                 {
@@ -51,85 +53,75 @@ namespace PoE_Price_Lister
                 string filterVal = uniqData.FilterValue.ToString();
                 string expectVal = expect.Value == uniqData.FilterValue.Value ? "" : expect.ToString();
                 string listedVals = values.Substring(0, values.Length - 2);
-                listViewUniques.Items.Add(new ListViewItem(new string[] { baseType, severity, filterVal, expectVal, listedVals }));
+                lv.Items.Add(new ListViewItem(new string[] { baseType, severity, filterVal, expectVal, listedVals }));
             }
-            listViewUniques.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
-            columnUniqBaseType.AutoResize(ColumnHeaderAutoResizeStyle.ColumnContent);
-            columnUniqFilter.AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
-            columnUniqExpect.AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
-            columnUniqSeverity.AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
-            columnUniqItems.AutoResize(ColumnHeaderAutoResizeStyle.ColumnContent);
-            listViewUniques.EndUpdate();
+            lv.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
+            lv.Columns[0].AutoResize(ColumnHeaderAutoResizeStyle.ColumnContent);
+            lv.Columns[1].AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
+            lv.Columns[2].AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
+            lv.Columns[3].AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
+            lv.Columns[4].AutoResize(ColumnHeaderAutoResizeStyle.ColumnContent);
+            lv.EndUpdate();
         }
 
-        void FillDivinationListView()
+        void FillDivinationListView(ListView lv, Func<string, DivinationData> getEntry)
         {
-            listViewDiv.BeginUpdate();
-            listViewDiv.Items.Clear();
+            lv.BeginUpdate();
+            lv.Items.Clear();
             IEnumerable<string> divinationList = data.GetDivinationCards();
             foreach (string div in divinationList)
             {
-                var divData = data.GetDivinationEntry(div);
+                var divData = getEntry(div);
                 var expect = divData.ExpectedFilterValue;
                 string severity = divData.SeverityLevel.ToString();
                 string filterVal = divData.FilterValue.ToString();
                 string expectVal = expect.Value == divData.FilterValue.Value ? "" : expect.ToString();
                 string listedVal = divData.ChaosValue < 0.0f ? "?" : divData.ChaosValue.ToString();
-                listViewDiv.Items.Add(new ListViewItem(new string[] { div, severity, filterVal, expectVal, listedVal }));
+                lv.Items.Add(new ListViewItem(new string[] { div, severity, filterVal, expectVal, listedVal }));
             }
-            listViewDiv.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
-            columnDivName.AutoResize(ColumnHeaderAutoResizeStyle.ColumnContent);
-            columnDivFilter.AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
-            columnDivExpect.AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
-            columnDivValue.AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
-            columnDivSeverity.AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
-            listViewDiv.EndUpdate();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            listViewUniques.Show();
-            listViewUniques.BringToFront();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            listViewDiv.Show();
-            listViewDiv.BringToFront();
+            lv.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
+            lv.Columns[0].AutoResize(ColumnHeaderAutoResizeStyle.ColumnContent);
+            lv.Columns[1].AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
+            lv.Columns[2].AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
+            lv.Columns[3].AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
+            lv.Columns[4].AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
+            lv.EndUpdate();
         }
 
         private void listViewUniques_ColumnClick(object sender, ColumnClickEventArgs e)
         {
-            ListViewItemComparer sorter = listViewUniques.ListViewItemSorter as ListViewItemComparer;
+            ListView lv = (ListView)sender;
+            ListViewItemComparer sorter = lv.ListViewItemSorter as ListViewItemComparer;
 
             if (sorter == null)
             {
                 sorter = new ListViewItemComparer(e.Column);
-                listViewUniques.ListViewItemSorter = sorter;
+                lv.ListViewItemSorter = sorter;
             }
             else
                 sorter.Column = e.Column;
 
-            sorter.Ascending = listViewUniques.Columns[e.Column].Text == "Severity";
+            sorter.Ascending = lv.Columns[e.Column].Text == "Severity";
 
-            listViewUniques.Sort();
+            lv.Sort();
         }
 
         private void listViewDiv_ColumnClick(object sender, ColumnClickEventArgs e)
         {
-            ListViewItemComparer sorter = listViewDiv.ListViewItemSorter as ListViewItemComparer;
+            ListView lv = (ListView)sender;
+            ListViewItemComparer sorter = lv.ListViewItemSorter as ListViewItemComparer;
 
             if (sorter == null)
             {
                 sorter = new ListViewItemComparer(e.Column);
-                listViewDiv.ListViewItemSorter = sorter;
+                lv.ListViewItemSorter = sorter;
             }
             else
                 sorter.Column = e.Column;
 
-            sorter.Ascending = listViewDiv.Columns[e.Column].Text == "Severity";
+            sorter.Ascending = lv.Columns[e.Column].Text == "Severity";
 
-            listViewDiv.Sort();
+            lv.Sort();
         }
 
         private void buttonGenFilter_Click(object sender, EventArgs e)
@@ -168,8 +160,10 @@ namespace PoE_Price_Lister
             {
                 data.Load(openFileDialog1.FileName);
 
-                FillDivinationListView();
-                FillUniqueListView();
+                FillDivinationListView(listViewDivination, data.GetDivinationEntrySC);
+                FillUniqueListView(listViewUniques, data.GetUniqueEntrySC);
+                FillDivinationListView(listViewDivinationHC, data.GetDivinationEntryHC);
+                FillUniqueListView(listViewUniquesHC, data.GetUniqueEntryHC);
             }
         }
     }
