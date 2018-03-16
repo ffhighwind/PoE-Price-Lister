@@ -14,6 +14,7 @@ namespace PoE_Price_Lister
         UniqueFilterValue filterValue = new UniqueFilterValue();
         UniqueFilterValue expectedValue = new UniqueFilterValue();
         List<UniqueData> items = new List<UniqueData>();
+        private static string[] SIX_SOCKETS = new string[] { "Tabula Rasa", "Loreweave", "Oni-Goroshi" };
 
         public UniqueBaseEntry() { }
 
@@ -36,7 +37,7 @@ namespace PoE_Price_Lister
             {
                 if (i.Name == item.Name)
                 {
-                    if(i.Count == 0 || i.Links >= item.Links)
+                    if(i.Count == 0 || ((i.Links >= item.Links && !SIX_SOCKETS.Contains(i.Name)) || i.Links < item.Links))
                         i.Load(item);
                     return;
                 }
@@ -112,7 +113,7 @@ namespace PoE_Price_Lister
                     else
                     {
                         isBossOnly = false;
-                        if (!uniqData.IsLowConfidence)
+                        if (!uniqData.IsLowConfidence && uniqData.Links != 6)
                         {
                             if (minValue > uniqData.ChaosValue)
                                 minValue = uniqData.ChaosValue;
@@ -162,7 +163,7 @@ namespace PoE_Price_Lister
             }
             else if (hasLeague)
             {
-                if (minValueLeague > 4.5f)
+                if (minValueLeague > 3.5f)
                     minExpected = UniqueValueEnum.ChaosLess1Shared;
                 else
                     minExpected = UniqueValueEnum.ChaosLess1;
@@ -192,7 +193,7 @@ namespace PoE_Price_Lister
                         expectedValue.Value = UniqueValueEnum.Chaos2to10;
                     else if (maxValue > 9.0f || (minValue > 0.95f && maxValue > 1.8f))
                         expectedValue.Value = UniqueValueEnum.Chaos1to2;
-                    else if(maxValue > 4.5f || minValue > 0.95f)
+                    else if(maxValue > 2.0f || minValue > 0.95f)
                         expectedValue.Value = UniqueValueEnum.ChaosLess1;
                 }
                 else if (expectedValue.Value == UniqueValueEnum.Chaos1to2 && minValue > 1.9f && maxValue > 4.9f)
@@ -214,9 +215,9 @@ namespace PoE_Price_Lister
                 if (filterValue == expectedValue)
                     return 0;
                 int expectTier = expectedValue.ValueTier;
-                int severity = Math.Abs(filterValue.ValueTier - expectTier);
-
-                if (severity != 0 && expectTier >= 4)
+                int filterTier = filterValue.ValueTier;
+                int severity = Math.Abs(filterTier - expectTier);
+                if (severity != 0 && filterTier < expectTier && expectTier > 2)
                     severity += 1;
                 return severity;
             }

@@ -29,7 +29,7 @@ namespace PoE_Price_Lister
             FillDivinationListView(listViewDivination, data.GetDivinationEntrySC);
             FillUniqueListView(listViewUniquesHC, data.GetUniqueEntryHC);
             FillDivinationListView(listViewDivinationHC, data.GetDivinationEntryHC);
-            openFileDialog1.InitialDirectory = Directory.GetCurrentDirectory();
+            openFileDialog1.InitialDirectory = Directory.GetCurrentDirectory() + "\\Resources";
         }
 
         void FillUniqueListView(ListView lv, Func<string, UniqueBaseEntry> getEntry)

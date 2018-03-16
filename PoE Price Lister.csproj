@@ -96,20 +96,26 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="Resources\default.filtertheme" />
+    <None Include="Resources\filter enlarge.ahk.bak" />
+    <None Include="Resources\filter font enlarger.ahk" />
     <None Include="Resources\greengroove.filtertheme" />
     <None Include="Resources\highwind%27s_filter.filter">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Resources\highwind%27s_filter_large.filter" />
     <None Include="Resources\highwind%27s_mapping_filter.filter">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Resources\highwind%27s_mapping_filter_large.filter" />
     <None Include="Resources\highwind%27s_strict_filter.filter">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Resources\highwind%27s_strict_filter_large.filter" />
     <None Include="Resources\highwind%27s_very_strict_filter.filter">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
+    <None Include="Resources\highwind%27s_very_strict_filter_large.filter" />
     <None Include="Resources\neversink.filtertheme" />
     <None Include="Resources\poe_uniques.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

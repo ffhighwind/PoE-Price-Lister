@@ -1,7 +1,7 @@
 ############################################
-##      HIGHWIND'S LOOT FILTER 3.2.11     ##
+##      HIGHWIND'S LOOT FILTER 3.2.12     ##
 ############################################
-## Release Date: March 13, 2018           ##
+## Release Date: March 16, 2018           ##
 ############################################
 
 #--------------#
@@ -757,6 +757,7 @@ Show  # Vendor Recipes - Chisels - Leveling - Other
 	BaseType Gavel "Rock Breaker" "Stone Hammer"
 	Rarity = Normal
 	ItemLevel < 67
+	SetFontSize 32
 	SetBackgroundColor 30 30 30 # Chisel Recipe
 	SetBorderColor 0 0 0 # Chisel Recipe
 
@@ -765,6 +766,7 @@ Show  # Vendor Recipes - Chisels - Mapping (Low) - Other
 	BaseType Gavel "Rock Breaker" "Stone Hammer"
 	Rarity = Normal
 	ItemLevel < 73
+	SetFontSize 32
 	SetBackgroundColor 30 30 30 # Chisel Recipe
 	SetBorderColor 0 0 0 # Chisel Recipe
 
@@ -774,6 +776,7 @@ Show  # Vendor Recipes - Chisels - Mapping (Low) - Other
 #	BaseType Gavel "Rock Breaker" "Stone Hammer"
 #	Rarity = Normal
 #	ItemLevel < 77
+#	SetFontSize 32
 #	SetBackgroundColor 30 30 30 # Chisel Recipe
 #	SetBorderColor 0 0 0 # Chisel Recipe
 #Disabled Block End
@@ -782,6 +785,7 @@ Hide  # Vendor Recipes - Chisels - Mapping (High) - Other
 	Class "One Hand Maces"
 	BaseType Gavel "Rock Breaker" "Stone Hammer"
 	Rarity = Normal
+	SetFontSize 32
 	SetBackgroundColor 30 30 30 # Chisel Recipe
 	SetBorderColor 0 0 0 # Chisel Recipe
 
@@ -836,6 +840,7 @@ Show  # Breach Rings - Mapping (Low)
 	Class Rings
 	BaseType "Breach Ring"
 	ItemLevel < 73
+	SetFontSize 32
 	SetBackgroundColor 0 0 0 # Breach Ring
 	SetBorderColor 220 0 0 # Breach Ring
 
@@ -844,6 +849,7 @@ Show  # Breach Rings - Mapping (Low)
 #	Class Rings
 #	BaseType "Breach Ring"
 #	ItemLevel < 77
+#	SetFontSize 32
 #	SetBackgroundColor 0 0 0 # Breach Ring
 #	SetBorderColor 220 0 0 # Breach Ring
 #Disabled Block End
@@ -851,6 +857,7 @@ Show  # Breach Rings - Mapping (Low)
 Hide  # Breach Rings - Mapping (High)
 	Class Rings
 	BaseType "Breach Ring"
+	SetFontSize 32
 	SetBackgroundColor 0 0 0 # Breach Ring
 	SetBorderColor 220 0 0 # Breach Ring
 
@@ -948,6 +955,7 @@ Show  # Abyss Jewels - Magic - Mapping (Low)
 	Class "Abyss Jewel"
 	ItemLevel < 73
 	Rarity <= Magic
+	SetFontSize 32
 	SetBackgroundColor 0 0 0 # Jewel (Abyss)
 	SetBorderColor 0 220 220 # Jewel (Magic)
 
@@ -956,6 +964,7 @@ Show  # Abyss Jewels - Magic - Mapping (Low)
 #	Class "Abyss Jewel"
 #	ItemLevel < 77
 #	Rarity <= Magic
+#	SetFontSize 32
 #	SetBackgroundColor 0 0 0 # Jewel (Abyss)
 #	SetBorderColor 0 220 220 # Jewel (Magic)
 #Disabled Block End
@@ -963,6 +972,7 @@ Show  # Abyss Jewels - Magic - Mapping (Low)
 Hide  # Abyss Jewels - Magic - Mapping (High)
 	Class "Abyss Jewel"
 	Rarity <= Magic
+	SetFontSize 32
 	SetBackgroundColor 0 0 0 # Jewel (Abyss)
 	SetBorderColor 0 220 220 # Jewel (Magic)
 
@@ -1012,80 +1022,80 @@ Show  # Abyss Jewels - Rare - Mapping (High)
 Show  # Chance Bases - Skyforth, Sorcerer Boots
 	Rarity = Normal
 	BaseType "Sorcerer Boots"
+	SetFontSize 40
 	SetBackgroundColor 50 50 50 # Chance Base
 	SetBorderColor 0 0 0 # Chance Base
-	SetFontSize 40
 
 #Disabled Block Start
 #Show  # Chance Bases - Kaom's Heart, Glorious Plate
 #	Rarity = Normal
 #	BaseType "Glorious Plate"
+#	SetFontSize 40
 #	SetBackgroundColor 50 50 50 # Chance Base
 #	SetBorderColor 0 0 0 # Chance Base
-#	SetFontSize 40
 #Disabled Block End
 
 #Disabled Block Start
 #Show  # Chance Bases - Taste of Hate, Sapphire Flask
 #	Rarity = Normal
 #	BaseType "Sapphire Flask"
+#	SetFontSize 40
 #	SetBackgroundColor 50 50 50 # Chance Base
 #	SetBorderColor 0 0 0 # Chance Base
-#	SetFontSize 40
 #Disabled Block End
 
 #Disabled Block Start
 #Show  # Chance Bases - Heretic's Veil, Deicide Mask
 #	Rarity = Normal
 #	BaseType "Deicide Mask"
+#	SetFontSize 40
 #	SetBackgroundColor 50 50 50 # Chance Base
 #	SetBorderColor 0 0 0 # Chance Base
-#	SetFontSize 40
 #Disabled Block End
 
 #Disabled Block Start
 #Show  # Chance Bases - Shavronne's Wrappings, Occultist's Vestment
 #	Rarity = Normal
 #	BaseType "Occultist's Vestment"
+#	SetFontSize 40
 #	SetBackgroundColor 50 50 50 # Chance Base
 #	SetBorderColor 0 0 0 # Chance Base
-#	SetFontSize 40
 #Disabled Block End
 
 #Disabled Block Start
 #Show  # Chance Bases - Void Battery, Prophecy Wand
 #	Rarity = Normal
 #	BaseType "Prophecy Wand"
+#	SetFontSize 40
 #	SetBackgroundColor 50 50 50 # Chance Base
 #	SetBorderColor 0 0 0 # Chance Base
-#	SetFontSize 40
 #Disabled Block End
 
 #Disabled Block Start
 #Show  # Chance Bases - Soul Taker, Siege Axe
 #	Rarity = Normal
 #	BaseType "Siege Axe"
+#	SetFontSize 40
 #	SetBackgroundColor 50 50 50 # Chance Base
 #	SetBorderColor 0 0 0 # Chance Base
-#	SetFontSize 40
 #Disabled Block End
 
 #Disabled Block Start
 #Show  # Chance Bases - Ebony Tower Shield, Tukohama's Fortress
 #	Rarity = Normal
 #	BaseType "Ebony Tower Shield"
+#	SetFontSize 40
 #	SetBackgroundColor 50 50 50 # Chance Base
 #	SetBorderColor 0 0 0 # Chance Base
-#	SetFontSize 40
 #Disabled Block End
 
 #Disabled Block Start
 #Show  # Chance Bases - Abberath's Hooves, Goathide Boots
 #	Rarity = Normal
 #	BaseType "Goathide Boots"
+#	SetFontSize 40
 #	SetBackgroundColor 50 50 50 # Chance Base
 #	SetBorderColor 0 0 0 # Chance Base
-#	SetFontSize 40
 #Disabled Block End
 
 #-----------------#
@@ -1096,81 +1106,81 @@ Show  # Chance Bases - Skyforth, Sorcerer Boots
 #Show  # Chance Bases - League Specific - Headhunter, Leather Belt (Nemesis)
 #	Rarity = Normal
 #	BaseType "Leather Belt"
+#	SetFontSize 40
 #	SetBackgroundColor 50 50 50 # Chance Base
 #	SetBorderColor 0 0 0 # Chance Base
-#	SetFontSize 40
 #Disabled Block End
 
 #Disabled Block Start
 #Show  # Chance Bases - League Specific - Shadows and Dust, Clasped Mitts (Rampage)
 #	Rarity = Normal
 #	BaseType "Clasped Mitts"
+#	SetFontSize 40
 #	SetBackgroundColor 50 50 50 # Chance Base
 #	SetBorderColor 0 0 0 # Chance Base
-#	SetFontSize 40
 #Disabled Block End
 
 #Disabled Block Start
 #Show  # Chance Bases - League Specific - Null and Void, Legion Gloves (Rampage)
 #	Rarity = Normal
 #	BaseType "Legion Gloves"
+#	SetFontSize 40
 #	SetBackgroundColor 50 50 50 # Chance Base
 #	SetBorderColor 0 0 0 # Chance Base
-#	SetFontSize 40
 #Disabled Block End
 
 #Disabled Block Start
 #Show  # Chance Bases - League Specific - Seven-League Step, Rawhide Boots (Perandus)
 #	Rarity = Normal
 #	BaseType "Rawhide Boots"
+#	SetFontSize 40
 #	SetBackgroundColor 50 50 50 # Chance Base
 #	SetBorderColor 0 0 0 # Chance Base
-#	SetFontSize 40
 #Disabled Block End
 
 #Disabled Block Start
 #Show  # Chance Bases - League Specific - Feastbind and Faminebind, Rustic Sash (Talisman)
 #	Rarity = Normal
 #	BaseType "Rustic Sash"
+#	SetFontSize 40
 #	SetBackgroundColor 50 50 50 # Chance Base
 #	SetBorderColor 0 0 0 # Chance Base
-#	SetFontSize 40
 #Disabled Block End
 
 #Disabled Block Start
 #Show  # Chance Bases - League Specific - Brutus' Lead Sprinkler, Ritual Sceptre (Torment)
 #	Rarity = Normal
 #	BaseType "Ritual Sceptre"
+#	SetFontSize 40
 #	SetBackgroundColor 50 50 50 # Chance Base
 #	SetBorderColor 0 0 0 # Chance Base
-#	SetFontSize 40
 #Disabled Block End
 
 #Disabled Block Start
 #Show  # Chance Bases - League Specific - The Gull, Raven Mask (Domination)
 #	Rarity = Normal
 #	BaseType "Raven Mask"
+#	SetFontSize 40
 #	SetBackgroundColor 50 50 50 # Chance Base
 #	SetBorderColor 0 0 0 # Chance Base
-#	SetFontSize 40
 #Disabled Block End
 
 #Disabled Block Start
 #Show  # Chance Bases - League Specific - Voll's Devotion, Agate Amulet (Anarchy/Onslaught)
 #	Rarity = Normal
 #	BaseType "Agate Amulet"
+#	SetFontSize 40
 #	SetBackgroundColor 50 50 50 # Chance Base
 #	SetBorderColor 0 0 0 # Chance Base
-#	SetFontSize 40
 #Disabled Block End
 
 #Disabled Block Start
 #Show  # Chance Bases - League Specific - Shavronne's Revelation, Moonstone Ring (Anarchy/Onslaught)
 #	Rarity = Normal
 #	BaseType "Moonstone Ring"
+#	SetFontSize 40
 #	SetBackgroundColor 50 50 50 # Chance Base
 #	SetBorderColor 0 0 0 # Chance Base
-#	SetFontSize 40
 #Disabled Block End
 
 ##########################################
@@ -1268,6 +1278,7 @@ Hide  # 75+ Rares - Low Drop Level - 75+ Gloves Boots Helmets
 	ItemLevel >= 75
 	ShaperItem False
 	ElderItem False
+	SetFontSize 32
 	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (Hidden)
 	SetBorderColor 0 0 0 # Rare Recipe 75+ (Hidden)
 
@@ -1278,6 +1289,7 @@ Hide  # 75+ Rares - Low Drop Level - 75+ Body Armour
 	ItemLevel >= 75
 	ShaperItem False
 	ElderItem False
+	SetFontSize 32
 	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (Hidden)
 	SetBorderColor 0 0 0 # Rare Recipe 75+ (Hidden)
 
@@ -1289,6 +1301,7 @@ Hide  # 75+ Rares - Low Drop Level - 75+ One Hand Weapons
 	ItemLevel >= 75
 	ShaperItem False
 	ElderItem False
+	SetFontSize 32
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 40 35 8 230 # Rare Weapon 75+ (Hidden)
 	SetBorderColor 0 0 0 # Rare Weapon 75+ (Hidden)
@@ -1301,6 +1314,7 @@ Hide  # 75+ Rares - Low Drop Level - 75+ Two Hand Weapons
 	ItemLevel >= 75
 	ShaperItem False
 	ElderItem False
+	SetFontSize 32
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (Hidden)
 	SetBorderColor 0 0 0 # Rare Recipe 75+ (Hidden)
@@ -1312,6 +1326,7 @@ Hide  # 75+ Rares - Low Drop Level - 75+ Shields
 	ItemLevel >= 75
 	ShaperItem False
 	ElderItem False
+	SetFontSize 32
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 40 35 8 230 # Rare Weapon 75+ (Hidden)
 	SetBorderColor 0 0 0 # Rare Weapon 75+ (Hidden)
@@ -1327,6 +1342,7 @@ Hide  # 60+ Rares - Low Drop Level - 60+ Gloves Boots Helmets
 	ItemLevel >= 60
 	ShaperItem False
 	ElderItem False
+	SetFontSize 32
 	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (Hidden)
 	SetBorderColor 0 0 0 # Rare Recipe 60+ (Hidden)
 
@@ -1337,6 +1353,7 @@ Hide  # 60+ Rares - Low Drop Level - 60+ Body Armour
 	ItemLevel >= 60
 	ShaperItem False
 	ElderItem False
+	SetFontSize 32
 	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (Hidden)
 	SetBorderColor 0 0 0 # Rare Recipe 60+ (Hidden)
 
@@ -1347,6 +1364,7 @@ Hide  # 60+ Rares - Low Drop Level - 60+ One Hand Weapons Shields
 	ItemLevel >= 60
 	ShaperItem False
 	ElderItem False
+	SetFontSize 32
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 40 35 8 230 # Rare Weapon 60+ (Hidden)
 	SetBorderColor 0 0 0 # Rare Weapon 60+ (Hidden)
@@ -1358,6 +1376,7 @@ Hide  # 60+ Rares - Low Drop Level - 60+ Two Hand Weapons
 	ItemLevel >= 60
 	ShaperItem False
 	ElderItem False
+	SetFontSize 32
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (Hidden)
 	SetBorderColor 0 0 0 # Rare Recipe 60+ (Hidden)
@@ -1405,6 +1424,7 @@ Show  # Jewels - Magic - Mapping (Low)
 	Class Jewel
 	Rarity <= Magic
 	ItemLevel < 73
+	SetFontSize 32
 	SetBackgroundColor 0 0 0 # Jewel (Magic)
 	SetBorderColor 0 220 220 # Jewel (Magic)
 
@@ -1413,6 +1433,7 @@ Show  # Jewels - Magic - Mapping (Low)
 #	Class Jewel
 #	Rarity <= Magic
 #	ItemLevel < 77
+#	SetFontSize 32
 #	SetBackgroundColor 0 0 0 # Jewel (Magic)
 #	SetBorderColor 0 220 220 # Jewel (Magic)
 #Disabled Block End
@@ -1420,6 +1441,7 @@ Show  # Jewels - Magic - Mapping (Low)
 Hide  # Jewels - Magic - Mapping (High)
 	Class Jewel
 	Rarity <= Magic
+	SetFontSize 32
 	SetBackgroundColor 0 0 0 # Jewel (Magic)
 	SetBorderColor 0 220 220 # Jewel (Magic)
 
@@ -1549,6 +1571,7 @@ Show  # Gems - Drop Only - Worthless
 
 Show  # Gems - Other
 	Class "Skill Gems"
+	SetFontSize 32
 	SetTextColor 27 162 155 # Gem (Worthless)
 	SetBackgroundColor 0 0 0 200 # Gem (Worthless)
 	SetBorderColor 0 0 0 0 # Gem (Worthless)
@@ -2014,6 +2037,7 @@ Hide  # Flasks - Low Drop Level - 65+
 	Class Flasks
 	DropLevel < 60
 	ItemLevel > 65
+	SetFontSize 32
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 0 0 0 # Flask
 
@@ -2064,6 +2088,7 @@ Hide  # Flasks - Low Drop Level - 20+
 Hide  # Flasks - Leveling - Hybrid
 	Class "Hybrid Flasks"
 	ItemLevel < 68
+	SetFontSize 32
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 0 0 0 # Flask
 
@@ -2071,12 +2096,14 @@ Show  # Flasks - Leveling - Quality
 	Quality > 0
 	Class Flasks
 	ItemLevel < 68
+	SetFontSize 32
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 140 140 140 # Quality
 
 Show  # Flasks - Leveling - Normal
 	Class Flasks
 	ItemLevel < 68
+	SetFontSize 32
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 0 0 0 # Flask
 
@@ -2089,6 +2116,7 @@ Show  # Flasks - Leveling - Normal
 #	Quality > 0
 #	Class Flasks
 #	ItemLevel < 73
+#	SetFontSize 32
 #	SetBackgroundColor 30 60 60 # Flask
 #	SetBorderColor 140 140 140 # Quality
 #Disabled Block End
@@ -2097,6 +2125,7 @@ Show  # Flasks - Leveling - Normal
 #Show  # Flasks - Mapping (Low) - Normal
 #	Class Flasks
 #	ItemLevel < 73
+#	SetFontSize 32
 #	SetBackgroundColor 30 60 60 # Flask
 #	SetBorderColor 0 0 0 # Flask
 #Disabled Block End
@@ -2106,6 +2135,7 @@ Show  # Flasks - Leveling - Normal
 #	Quality > 0
 #	Class Flasks
 #	ItemLevel < 77
+#	SetFontSize 32
 #	SetBackgroundColor 30 60 60 # Flask
 #	SetBorderColor 140 140 140 # Quality
 #Disabled Block End
@@ -2114,6 +2144,7 @@ Show  # Flasks - Leveling - Normal
 #Show  # Flasks - Mapping (Mid) - Normal
 #	Class Flasks
 #	ItemLevel < 77
+#	SetFontSize 32
 #	SetBackgroundColor 30 60 60 # Flask
 #	SetBorderColor 0 0 0 # Flask
 #Disabled Block End
@@ -2121,11 +2152,13 @@ Show  # Flasks - Leveling - Normal
 Hide  # Flasks - Mapping (High) - Quality
 	Quality > 0
 	Class Flasks
+	SetFontSize 32
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 140 140 140 # Quality
 
 Hide  # Flasks - Mapping (High) - Normal
 	Class Flasks
+	SetFontSize 32
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 0 0 0 # Flask
 
@@ -2144,6 +2177,7 @@ Hide  # Crafting Bases - 84+ Shaper Jewelry
 	ItemLevel >= 84
 	DropLevel < 72
 	Rarity <= Magic
+	SetFontSize 32
 	SetBackgroundColor 40 40 40 # Crafting Base 84+ (Mid)
 	SetBorderColor 40 80 150 # Crafting Base 84+ (Mid)
 
@@ -2153,6 +2187,7 @@ Hide  # Crafting Bases - 83+ Shaper Weapons Armor
 	ItemLevel >= 83
 	DropLevel >= 56
 	Rarity <= Magic
+	SetFontSize 32
 	SetBackgroundColor 40 40 40 # Crafting Base 84+ (Mid)
 	SetBorderColor 40 80 150 # Crafting Base 84+ (Mid)
 
@@ -2166,6 +2201,7 @@ Hide  # Crafting Bases - 84+ Elder Jewelry
 	ItemLevel >= 84
 	DropLevel < 72
 	Rarity <= Magic
+	SetFontSize 32
 	SetBackgroundColor 40 40 40 # Crafting Base 84+ (Mid)
 	SetBorderColor 40 80 150 # Crafting Base 84+ (Mid)
 
@@ -2175,6 +2211,7 @@ Hide  # Crafting Bases - 83+ Elder Weapons Armor
 	ItemLevel >= 83
 	DropLevel >= 56
 	Rarity <= Magic
+	SetFontSize 32
 	SetBackgroundColor 40 40 40 # Crafting Base 84+ (Mid)
 	SetBorderColor 40 80 150 # Crafting Base 84+ (Mid)
 
@@ -2187,6 +2224,7 @@ Hide  # Crafting Bases - 84+ Rings
 	ItemLevel >= 84
 	DropLevel < 72
 	Rarity <= Magic
+	SetFontSize 32
 	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
 	SetBorderColor 0 0 0 # Crafting Base (Mid)
 
@@ -2195,6 +2233,7 @@ Hide  # Crafting Bases - 84+ Amulets
 	ItemLevel >= 84
 	DropLevel < 72
 	Rarity <= Magic
+	SetFontSize 32
 	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
 	SetBorderColor 0 0 0 # Crafting Base (Mid)
 
@@ -2203,6 +2242,7 @@ Hide  # Crafting Bases - 84+ Belts
 	ItemLevel >= 84
 	DropLevel < 72
 	Rarity <= Magic
+	SetFontSize 32
 	SetBackgroundColor 40 40 40 # Crafting Base (Low)
 	SetBorderColor 0 0 0 # Crafting Base (Low)
 
@@ -2238,6 +2278,7 @@ Hide  # Normal/Magic - Low Drop Level - 84+ Quivers
 #	Class "One Hand" "Two Hand" Bows Staves Daggers Wands Claws Sceptres
 #	BaseType "Harbinger Bow" "Imperial Skean" Ambusher "Imbued Wand" "Tornado Wand" "Opal Wand" "Imperial Claw" "Hellion's Paw" "Jewelled Foil" "Corsair Sword" "Behemoth Mace" "Vaal Sceptre" "Siege Axe"
 #	Rarity <= Magic
+#	SetFontSize 32
 #	SetBackgroundColor 40 40 40 # Crafting Base (Low)
 #	SetBorderColor 0 0 0 # Crafting Base (Low)
 #Disabled Block End
@@ -2247,6 +2288,7 @@ Hide  # Crafting Bases - 83+ Weapons - One Hand Weapons
 	Class "One Hand" Daggers Wands Claws Sceptres
 	BaseType "Siege Axe" "Vaal Hatchet" "Infernal Axe" "Runic Hatchet" "Legion Hammer" "Nightmare Mace" "Behemoth Mace" "Corsair Sword" "Spiraled Foil" "Eternal Sword" "Jewelled Foil" "Dragoon Sword" Ambusher "Platinum Kris" "Imperial Skean" Sai "Imbued Wand" "Opal Wand" "Tornado Wand" "Profane Wand" "Hellion's Paw" "Imperial Claw" "Terror Claw" "Gemini Claw" "Karui Sceptre" "Vaal Sceptre"
 	Rarity <= Magic
+	SetFontSize 32
 	SetBackgroundColor 40 40 40 # Crafting Base (Low)
 	SetBorderColor 0 0 0 # Crafting Base (Low)
 
@@ -2255,6 +2297,7 @@ Hide  # Crafting Bases - 83+ Weapons - Two Hand Weapons
 	Class "Two Hand" Bows Staves
 	BaseType "Sundering Axe" "Vaal Axe" "Ezomyte Axe" "Void Axe" "Despot Axe" Fleshripper Piledriver Meatgrinder "Terror Maul" "Coronal Maul" "Reaver Sword" "Vaal Greatsword" "Lion Sword" "Infernal Sword" "Exquisite Blade" "Thicket Bow" "Imperial Bow" "Harbinger Bow" "Maraketh Bow" Lathi "Ezomyte Staff" Maelstr "Eclipse Staff" "Judgement Staff"
 	Rarity <= Magic
+	SetFontSize 32
 	SetBackgroundColor 40 40 40 # Crafting Base (Low)
 	SetBorderColor 0 0 0 # Crafting Base (Low)
 
@@ -2302,6 +2345,7 @@ Show  # Crafting Bases - 70+ Drop Level (Mid) - <84 Normal/Magic
 	DropLevel >= 70
 	BaseType "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet"
 	Rarity <= Magic
+	SetFontSize 32
 	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
 	SetBorderColor 0 0 0 # Crafting Base (Mid)
 
@@ -2325,6 +2369,7 @@ Show  # Crafting Bases - 70+ Drop Level (Low) - <84 Normal/Magic
 	DropLevel >= 72
 	BaseType "Blue Pearl Amulet" "Vanguard Belt" "Sacrificial Garb"
 	Rarity <= Magic
+	SetFontSize 32
 	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
 	SetBorderColor 0 0 0 # Crafting Base (Mid)
  
@@ -2370,6 +2415,7 @@ Hide  # Normal/Magic - Low Drop Level - 16+ Accessories
 	DropLevel < 5
 	Class Rings Amulets Belts
 	Rarity <= Magic
+	SetFontSize 32
 
 Show  # Normal/Magic - Leveling - Accessories - < 10
 	ItemLevel < 10
@@ -2398,6 +2444,7 @@ Show  # Normal/Magic - Leveling - Jewelry
 	Class Rings Amulets
 	Rarity = Magic
 	ItemLevel < 25
+	SetFontSize 32
 
 #----------------#
 # Low Drop Level #
@@ -2452,6 +2499,7 @@ Show  # Normal/Magic - Leveling - 4 Link Armour - < 35
 	ItemLevel < 35
 	Class Gloves Boots Helmets "Body Armours"
 	Rarity <= Magic
+	SetFontSize 32
 	SetBorderColor 40 80 150 # 3-4 Link
 
 Show  # Normal/Magic - Leveling - 4 Link Armour - < 60
@@ -2459,12 +2507,14 @@ Show  # Normal/Magic - Leveling - 4 Link Armour - < 60
 	ItemLevel < 60
 	Class Gloves Boots Helmets "Body Armours"
 	Rarity <= Magic
+	SetFontSize 32
 
 Show  # Normal/Magic - Leveling - 3 Link Armour - < 10
 	LinkedSockets >= 3
 	ItemLevel < 10
 	Class Gloves Boots Helmets "Body Armours"
 	Rarity <= Magic
+	SetFontSize 32
 	SetBorderColor 40 80 150 # 3-4 Link
 
 Show  # Normal/Magic - Leveling - 3 Link Armour  - < 20
@@ -2472,6 +2522,7 @@ Show  # Normal/Magic - Leveling - 3 Link Armour  - < 20
 	ItemLevel < 20
 	Class Gloves Boots Helmets "Body Armours"
 	Rarity <= Magic
+	SetFontSize 32
 
 Show  # Normal/Magic - Leveling - 3 Link Armour - 4 Socket
 	LinkedSockets >= 3
@@ -2479,12 +2530,14 @@ Show  # Normal/Magic - Leveling - 3 Link Armour - 4 Socket
 	ItemLevel < 35
 	Class Gloves Boots Helmets "Body Armours"
 	Rarity <= Magic
+	SetFontSize 32
 
 Show  # Normal/Magic - Leveling - 3 Link Wands Sceptres
 	LinkedSockets = 3
 	ItemLevel <= 7
 	Class Wands Sceptres
 	Rarity <= Magic
+	SetFontSize 32
 	SetBorderColor 40 80 150 # 3-4 Link
 
 #-------#
@@ -2494,10 +2547,12 @@ Show  # Normal/Magic - Leveling - 3 Link Wands Sceptres
 Show  # Normal/Magic - Leveling - < 11 Normal
 	Rarity = Normal
 	ItemLevel <= 11
+	SetFontSize 32
 
 Show  # Normal/Magic - Leveling - < 20 Magic
 	Rarity = Magic
 	ItemLevel <= 20
+	SetFontSize 32
 
 Hide  # Normal/Magic - Other
 	Rarity <= Magic
@@ -2611,6 +2666,7 @@ Show  # 60+ Rares - Low Drop Level - Shaper - Gloves Boots Helmets
 	Class Gloves Boots Helmets
 	Rarity = Rare
 	DropLevel < 40
+	SetFontSize 32
 	SetBackgroundColor 50 20 70 230 # Shaper Elder 60+
 	SetBorderColor 0 0 0 # Rare Recipe 60+
 	PlayAlertSound 4 0 # Shaper Elder Rare (Low)
@@ -2620,6 +2676,7 @@ Show  # 60+ Rares - Low Drop Level - Elder - Gloves Boots Helmets
 	Class Gloves Boots Helmets
 	Rarity = Rare
 	DropLevel < 40
+	SetFontSize 32
 	SetBackgroundColor 50 20 70 230 # Shaper Elder 60+
 	SetBorderColor 0 0 0 # Rare Recipe 60+
 	PlayAlertSound 4 0 # Shaper Elder Rare (Low)
@@ -2633,6 +2690,7 @@ Show  # 60+ Rares - Low Drop Level - Shaper - Body Armour
 	Class "Body Armour"
 	Rarity = Rare
 	DropLevel < 50
+	SetFontSize 32
 	SetBackgroundColor 50 20 70 230 # Shaper Elder 60+
 	SetBorderColor 0 0 0 # Rare Recipe 60+
 	PlayAlertSound 4 0 # Shaper Elder Rare (Low)
@@ -2642,6 +2700,7 @@ Show  # 60+ Rares - Low Drop Level - Elder - Body Armour
 	Class "Body Armour"
 	Rarity = Rare
 	DropLevel < 50
+	SetFontSize 32
 	SetBackgroundColor 50 20 70 230 # Shaper Elder 60+
 	SetBorderColor 0 0 0 # Rare Recipe 60+
 	PlayAlertSound 4 0 # Shaper Elder Rare (Low)
@@ -2655,6 +2714,7 @@ Show  # 60+ Rares - Low Drop Level - Shaper - Weapons Shields
 	Class "One Hand" "Two Hand" Bows Staves Daggers Wands Claws Sceptres Shields
 	Rarity = Rare
 	DropLevel < 50
+	SetFontSize 32
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 50 20 70 230 # Shaper Elder 60+
 	SetBorderColor 0 0 0 # Rare Weapon 60+
@@ -2665,6 +2725,7 @@ Show  # 60+ Rares - Low Drop Level - Elder - Weapons Shields
 	Class "One Hand" "Two Hand" Bows Staves Daggers Wands Claws Sceptres Shields
 	Rarity = Rare
 	DropLevel < 50
+	SetFontSize 32
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 50 20 70 230 # Shaper Elder 60+
 	SetBorderColor 0 0 0 # Rare Weapon 60+
@@ -2709,6 +2770,7 @@ Show  # Highlighted Rares - Top Tier - Helmets - Hubris Circlet - 84+
 #Show  # Highlighted Rares - Armour - Str - 84+
 #	ItemLevel >= 84
 #	BaseType "Titan Greaves" "Vaal Greaves" "Eternal Burgonet" "Royal Burgonet" "Ezomyte Burgonet" "Spiked Gloves" "Titan Gauntlets" "Vaal Gauntlets" "Glorious Plate" "Gladiator Plate" "Astral Plate"
+#	SetFontSize 32
 #	SetBackgroundColor 20 80 55 240 # Rare Recipe 84+ (Highlighted)
 #	SetBorderColor 170 170 85 # Rare Recipe 84+ (Highlighted)
 #Disabled Block End
@@ -2717,6 +2779,7 @@ Show  # Highlighted Rares - Top Tier - Helmets - Hubris Circlet - 84+
 #Show  # Highlighted Rares - Armour - Dex - 84+
 #	ItemLevel >= 84
 #	BaseType "Slink Boots" "Stealth Boots" "Lion Pelt" "Sinner Tricorne" "Silken Hood" "Gripped Gloves" "Slink Gloves" "Stealth Gloves" "Assassin's Garb" "Zodiac Leather" "Exquisite Leather"
+#	SetFontSize 32
 #	SetBackgroundColor 20 80 55 240 # Rare Recipe 84+ (Highlighted)
 #	SetBorderColor 170 170 85 # Rare Recipe 84+ (Highlighted)
 #Disabled Block End
@@ -2725,6 +2788,7 @@ Show  # Highlighted Rares - Top Tier - Helmets - Hubris Circlet - 84+
 #Show  # Highlighted Rares - Armour - Int - 84+
 #	ItemLevel >= 84
 #	BaseType "Arcanist Slippers" "Sorcerer Boots" "Hubris Circlet" "Mind Cage" "Solaris Circlet" "Fingerless Silk Gloves" "Sorcerer Gloves" "Arcanist Gloves" "Vaal Regalia" "Widowsilk Robe" "Occultist's Vestment"
+#	SetFontSize 32
 #	SetBackgroundColor 20 80 55 240 # Rare Recipe 84+ (Highlighted)
 #	SetBorderColor 170 170 85 # Rare Recipe 84+ (Highlighted)
 #Disabled Block End
@@ -2733,6 +2797,7 @@ Show  # Highlighted Rares - Top Tier - Helmets - Hubris Circlet - 84+
 #Show  # Highlighted Rares - Armour - Str Dex - 84+
 #	ItemLevel >= 84
 #	BaseType "Murder Boots" "Hydrascale Boots" "Nightmare Bascinet" "Pig-Faced Bascinet" "Dragonscale Gauntlets" "Hydrascale Gauntlets" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale"
+#	SetFontSize 32
 #	SetBackgroundColor 20 80 55 240 # Rare Recipe 84+ (Highlighted)
 #	SetBorderColor 170 170 85 # Rare Recipe 84+ (Highlighted)
 #Disabled Block End
@@ -2741,6 +2806,7 @@ Show  # Highlighted Rares - Top Tier - Helmets - Hubris Circlet - 84+
 #Show  # Highlighted Rares - Armour - Str Int - 84+
 #	ItemLevel >= 84
 #	BaseType "Crusader Boots" "Legion Boots" "Bone Helmet" "Praetor Crown" "Prophet Crown" "Crusader Gloves" "Legion Gloves" "Saintly Chainmail" "Saint's Hauberk" "Elegant Ringmail"
+#	SetFontSize 32
 #	SetBackgroundColor 20 80 55 240 # Rare Recipe 84+ (Highlighted)
 #	SetBorderColor 170 170 85 # Rare Recipe 84+ (Highlighted)
 #Disabled Block End
@@ -2749,6 +2815,7 @@ Show  # Highlighted Rares - Top Tier - Helmets - Hubris Circlet - 84+
 #Show  # Highlighted Rares - Armour - Dex Int - 84+
 #	ItemLevel >= 84
 #	BaseType "Dragonscale Boots" "Assassin's Boots" "Deicide Mask" "Vaal Mask" "Murder Mitts" "Strapped Mitts" "Carnal Armour" "Sadist Garb" "Blood Raiment"
+#	SetFontSize 32
 #	SetBackgroundColor 20 80 55 240 # Rare Recipe 84+ (Highlighted)
 #	SetBorderColor 170 170 85 # Rare Recipe 84+ (Highlighted)
 #Disabled Block End
@@ -2758,6 +2825,7 @@ Show  # Highlighted Rares - Top Tier - Helmets - Hubris Circlet - 84+
 #	DropLevel >= 62
 #	Class "Body Armour"
 #	ItemLevel >= 84
+#	SetFontSize 32
 #	SetBackgroundColor 20 80 55 240 # Rare Recipe 84+ (Highlighted)
 #	SetBorderColor 170 170 85 # Rare Recipe 84+ (Highlighted)
 #Disabled Block End
@@ -2767,6 +2835,7 @@ Show  # Highlighted Rares - Top Tier - Helmets - Hubris Circlet - 84+
 #	DropLevel >= 56
 #	Class Gloves
 #	ItemLevel >= 84
+#	SetFontSize 32
 #	SetBackgroundColor 20 80 55 240 # Rare Recipe 84+ (Highlighted)
 #	SetBorderColor 170 170 85 # Rare Recipe 84+ (Highlighted)
 #Disabled Block End
@@ -2776,6 +2845,7 @@ Show  # Highlighted Rares - Top Tier - Helmets - Hubris Circlet - 84+
 #	DropLevel >= 56
 #	Class Boots
 #	ItemLevel >= 84
+#	SetFontSize 32
 #	SetBackgroundColor 20 80 55 240 # Rare Recipe 84+ (Highlighted)
 #	SetBorderColor 170 170 85 # Rare Recipe 84+ (Highlighted)
 #Disabled Block End
@@ -2785,6 +2855,7 @@ Show  # Highlighted Rares - Top Tier - Helmets - Hubris Circlet - 84+
 #	DropLevel >= 59
 #	Class Helmets
 #	ItemLevel >= 84
+#	SetFontSize 32
 #	SetBackgroundColor 20 80 55 240 # Rare Recipe 84+ (Highlighted)
 #	SetBorderColor 170 170 85 # Rare Recipe 84+ (Highlighted)
 #Disabled Block End
@@ -3224,6 +3295,7 @@ Show  # 83+ Rares - Gloves
 	DropLevel >= 56
 	Class Gloves
 	ItemLevel >= 84
+	SetFontSize 32
 	SetBackgroundColor 20 80 55 240 # Rare Recipe 83+
 	SetBorderColor 0 0 0 # Rare Recipe 83+
 
@@ -3231,6 +3303,7 @@ Show  # 83+ Rares - Boots
 	DropLevel >= 56
 	Class Boots
 	ItemLevel >= 84
+	SetFontSize 32
 	SetBackgroundColor 20 80 55 240 # Rare Recipe 83+
 	SetBorderColor 0 0 0 # Rare Recipe 83+
 
@@ -3238,6 +3311,7 @@ Show  # 83+ Rares - Helmets
 	DropLevel >= 59
 	Class Helmets
 	ItemLevel >= 84
+	SetFontSize 32
 	SetBackgroundColor 20 80 55 240 # Rare Recipe 83+
 	SetBorderColor 0 0 0 # Rare Recipe 83+
 
@@ -3245,6 +3319,7 @@ Show  # 83+ Rares - Body Armour
 	DropLevel >= 62
 	Class "Body Armours"
 	ItemLevel >= 84
+	SetFontSize 32
 	SetBackgroundColor 20 80 55 240 # Rare Recipe 83+
 	SetBorderColor 0 0 0 # Rare Recipe 83+
 
@@ -3257,6 +3332,7 @@ Show  # 83+ Rares - Two Hand Weapons
 	Class "Two Hand" Bows Staves
 	ItemLevel >= 83
 	BaseType "Sundering Axe" "Vaal Axe" "Ezomyte Axe" "Void Axe" "Despot Axe" Fleshripper Piledriver Meatgrinder "Terror Maul" "Coronal Maul" "Reaver Sword" "Vaal Greatsword" "Lion Sword" "Infernal Sword" "Exquisite Blade" "Thicket Bow" "Imperial Bow" "Harbinger Bow" "Maraketh Bow" Lathi "Ezomyte Staff" Maelstr "Eclipse Staff" "Judgement Staff"
+	SetFontSize 32
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 20 80 55 240 # Rare Recipe 83+
 	SetBorderColor 0 0 0 # Rare Weapon 83+
@@ -3271,6 +3347,7 @@ Show  # 83+ Rares - One Hand Weapons
 	Class "One Hand" Daggers Wands Claws Sceptres
 	ItemLevel >= 83
 	BaseType "Siege Axe" "Vaal Hatchet" "Infernal Axe" "Runic Hatchet" "Legion Hammer" "Nightmare Mace" "Behemoth Mace" "Corsair Sword" "Spiraled Foil" "Eternal Sword" "Jewelled Foil" "Dragoon Sword" Ambusher "Platinum Kris" "Imperial Skean" Sai "Imbued Wand" "Opal Wand" "Tornado Wand" "Profane Wand" "Hellion's Paw" "Imperial Claw" "Terror Claw" "Gemini Claw" "Karui Sceptre" "Vaal Sceptre"
+	SetFontSize 32
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 80 55 20 240 # Rare Weapon 83+
 	SetBorderColor 0 0 0 # Rare Weapon 83+
@@ -3283,6 +3360,7 @@ Show  # 83+ Rares - Shields
 	DropLevel >= 60
 	Class Shields
 	ItemLevel >= 84
+	SetFontSize 32
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 80 55 20 240 # Rare Weapon 83+
 	SetBorderColor 0 0 0 # Rare Weapon 83+
@@ -3295,6 +3373,7 @@ Show  # 83+ Rares - Quivers
 	Class Quivers
 	ItemLevel >= 84
 	BaseType "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver"
+	SetFontSize 32
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 80 55 20 240 # Rare Weapon 83+
 	SetBorderColor 0 0 0 # Rare Weapon 83+
@@ -3342,6 +3421,7 @@ Show  # 83+ Rares - Quivers
 #Show  # Highlighted Rares - Armour - Str - 75+
 #	ItemLevel >= 75
 #	BaseType "Titan Greaves" "Vaal Greaves" "Eternal Burgonet" "Royal Burgonet" "Ezomyte Burgonet" "Spiked Gloves" "Titan Gauntlets" "Vaal Gauntlets" "Glorious Plate" "Gladiator Plate" "Astral Plate"
+#	SetFontSize 32
 #	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (Highlighted)
 #	SetBorderColor 140 140 70 # Rare Recipe 75+ (Highlighted)
 #Disabled Block End
@@ -3350,6 +3430,7 @@ Show  # 83+ Rares - Quivers
 #Show  # Highlighted Rares - Armour - Dex - 75+
 #	ItemLevel >= 75
 #	BaseType "Slink Boots" "Stealth Boots" "Lion Pelt" "Sinner Tricorne" "Silken Hood" "Gripped Gloves" "Slink Gloves" "Stealth Gloves" "Assassin's Garb" "Zodiac Leather" "Exquisite Leather"
+#	SetFontSize 32
 #	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (Highlighted)
 #	SetBorderColor 140 140 70 # Rare Recipe 75+ (Highlighted)
 #Disabled Block End
@@ -3358,6 +3439,7 @@ Show  # 83+ Rares - Quivers
 #Show  # Highlighted Rares - Armour - Int - 75+
 #	ItemLevel >= 75
 #	BaseType "Arcanist Slippers" "Sorcerer Boots" "Hubris Circlet" "Mind Cage" "Solaris Circlet" "Fingerless Silk Gloves" "Sorcerer Gloves" "Arcanist Gloves" "Vaal Regalia" "Widowsilk Robe" "Occultist's Vestment"
+#	SetFontSize 32
 #	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (Highlighted)
 #	SetBorderColor 140 140 70 # Rare Recipe 75+ (Highlighted)
 #Disabled Block End
@@ -3366,6 +3448,7 @@ Show  # 83+ Rares - Quivers
 #Show  # Highlighted Rares - Armour - Str Dex - 75+
 #	ItemLevel >= 75
 #	BaseType "Murder Boots" "Hydrascale Boots" "Nightmare Bascinet" "Pig-Faced Bascinet" "Dragonscale Gauntlets" "Hydrascale Gauntlets" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale"
+#	SetFontSize 32
 #	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (Highlighted)
 #	SetBorderColor 140 140 70 # Rare Recipe 75+ (Highlighted)
 #Disabled Block End
@@ -3374,6 +3457,7 @@ Show  # 83+ Rares - Quivers
 #Show  # Highlighted Rares - Armour - Str Int - 75+
 #	ItemLevel >= 75
 #	BaseType "Crusader Boots" "Legion Boots" "Bone Helmet" "Praetor Crown" "Prophet Crown" "Crusader Gloves" "Legion Gloves" "Saintly Chainmail" "Saint's Hauberk" "Elegant Ringmail"
+#	SetFontSize 32
 #	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (Highlighted)
 #	SetBorderColor 140 140 70 # Rare Recipe 75+ (Highlighted)
 #Disabled Block End
@@ -3382,6 +3466,7 @@ Show  # 83+ Rares - Quivers
 #Show  # Highlighted Rares - Armour - Dex Int - 75+
 #	ItemLevel >= 75
 #	BaseType "Dragonscale Boots" "Assassin's Boots" "Deicide Mask" "Vaal Mask" "Murder Mitts" "Strapped Mitts" "Carnal Armour" "Sadist Garb" "Blood Raiment"
+#	SetFontSize 32
 #	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (Highlighted)
 #	SetBorderColor 140 140 70 # Rare Recipe 75+ (Highlighted)
 #Disabled Block End
@@ -3391,6 +3476,7 @@ Show  # 83+ Rares - Quivers
 #	DropLevel >= 50
 #	Class "Body Armour"
 #	ItemLevel >= 75
+#	SetFontSize 32
 #	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (Highlighted)
 #	SetBorderColor 140 140 70 # Rare Recipe 75+ (Highlighted)
 #Disabled Block End
@@ -3400,6 +3486,7 @@ Show  # 83+ Rares - Quivers
 #	DropLevel >= 40
 #	Class Gloves
 #	ItemLevel >= 75
+#	SetFontSize 32
 #	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (Highlighted)
 #	SetBorderColor 140 140 70 # Rare Recipe 75+ (Highlighted)
 #Disabled Block End
@@ -3409,6 +3496,7 @@ Show  # 83+ Rares - Quivers
 #	DropLevel >= 40
 #	Class Boots
 #	ItemLevel >= 75
+#	SetFontSize 32
 #	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (Highlighted)
 #	SetBorderColor 140 140 70 # Rare Recipe 75+ (Highlighted)
 #Disabled Block End
@@ -3418,6 +3506,7 @@ Show  # 83+ Rares - Quivers
 #	DropLevel >= 40
 #	Class Helmets
 #	ItemLevel >= 75
+#	SetFontSize 32
 #	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (Highlighted)
 #	SetBorderColor 140 140 70 # Rare Recipe 75+ (Highlighted)
 #Disabled Block End
@@ -3427,7 +3516,7 @@ Show  # 83+ Rares - Quivers
 #------------------------------------#
 # 73+ for T2 physical damage mods
 
-Show  # Highlighted Rares - Top Tier - Two Hand Weapons - Harbinger Bows - 75+
+Show  # Highlighted Rares - Top Tier - Bows - Harbinger Bows - 75+
 	Class Bows
 	ItemLevel >= 75
 	BaseType "Harbinger Bow"
@@ -3832,6 +3921,7 @@ Show  # Shaper Rares - Quivers - 75+ - Other
 	ShaperItem True
 	Class Quivers
 	ItemLevel >= 75
+	SetFontSize 32
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 50 20 70 230 # Shaper Elder 75+
 	SetBorderColor 0 0 0 # Rare Weapon 75+
@@ -3841,6 +3931,7 @@ Show  # Elder Rares - Quivers - 75+ - Other
 	ElderItem True
 	Class Quivers
 	ItemLevel >= 75
+	SetFontSize 32
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 50 20 70 230 # Shaper Elder 75+
 	SetBorderColor 0 0 0 # Rare Weapon 75+
@@ -3858,6 +3949,7 @@ Show  # Elder Rares - Quivers - 75+ - Other
 Show  # 75+ Rares - Armour
 	Class Gloves Boots Helmets "Body Armours"
 	ItemLevel >= 75
+	SetFontSize 32
 	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+
 	SetBorderColor 0 0 0 # Rare Recipe 75+
 
@@ -3868,6 +3960,7 @@ Show  # 75+ Rares - Armour
 Show  # 75+ Rares - Two Hand Weapons
 	Class "Two Hand" Bows Staves
 	ItemLevel >= 75
+	SetFontSize 32
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+
 	SetBorderColor 0 0 0 # Rare Recipe 75+
@@ -3880,6 +3973,7 @@ Show  # 75+ Rares - Two Hand Weapons
 Show  # 75+ Rares - One Hand Weapons
 	Class "One Hand" Daggers Wands Claws Sceptres
 	ItemLevel >= 75
+	SetFontSize 32
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 40 35 8 230 # Rare Weapon 75+
 	SetBorderColor 0 0 0 # Rare Weapon 75+
@@ -3891,6 +3985,7 @@ Show  # 75+ Rares - One Hand Weapons
 Show  # 75+ Rares - Shields
 	Class Shields
 	ItemLevel >= 75
+	SetFontSize 32
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 40 35 8 230 # Rare Weapon 75+
 	SetBorderColor 0 0 0 # Rare Weapon 75+
@@ -3903,6 +3998,7 @@ Show  # 75+ Rares - Quivers - Valuable
 	Class Quivers
 	ItemLevel >= 75
 	BaseType "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver"
+	SetFontSize 32
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 40 35 8 230 # Rare Weapon 75+
 	SetBorderColor 0 0 0 # Rare Weapon 75+
@@ -3910,6 +4006,7 @@ Show  # 75+ Rares - Quivers - Valuable
 Hide  # 75+ Rares - Quivers - Other
 	Class Quivers
 	ItemLevel >= 75
+	SetFontSize 32
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 40 35 8 230 # Rare Weapon 75+ (Hidden)
 	SetBorderColor 0 0 0 # Rare Weapon 75+ (Hidden)
@@ -3968,6 +4065,7 @@ Show  # Errors - 75+
 #Show  # Highlighted Rares - Armour - Str - 60+
 #	ItemLevel >= 60
 #	BaseType "Titan Greaves" "Vaal Greaves" "Eternal Burgonet" "Royal Burgonet" "Ezomyte Burgonet" "Spiked Gloves" "Titan Gauntlets" "Vaal Gauntlets" "Glorious Plate" "Gladiator Plate" "Astral Plate"
+#	SetFontSize 32
 #	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (Highlighted)
 #	SetBorderColor 140 140 70 # Rare Recipe 60+ (Highlighted)
 #Disabled Block End
@@ -3976,6 +4074,7 @@ Show  # Errors - 75+
 #Show  # Highlighted Rares - Armour - Dex - 60+
 #	ItemLevel >= 60
 #	BaseType "Slink Boots" "Stealth Boots" "Lion Pelt" "Sinner Tricorne" "Silken Hood" "Gripped Gloves" "Slink Gloves" "Stealth Gloves" "Assassin's Garb" "Zodiac Leather" "Exquisite Leather"
+#	SetFontSize 32
 #	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (Highlighted)
 #	SetBorderColor 140 140 70 # Rare Recipe 60+ (Highlighted)
 #Disabled Block End
@@ -3984,6 +4083,7 @@ Show  # Errors - 75+
 #Show  # Highlighted Rares - Armour - Int - 60+
 #	ItemLevel >= 60
 #	BaseType "Arcanist Slippers" "Sorcerer Boots" "Hubris Circlet" "Mind Cage" "Solaris Circlet" "Fingerless Silk Gloves" "Sorcerer Gloves" "Arcanist Gloves" "Vaal Regalia" "Widowsilk Robe" "Occultist's Vestment"
+#	SetFontSize 32
 #	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (Highlighted)
 #	SetBorderColor 140 140 70 # Rare Recipe 60+ (Highlighted)
 #Disabled Block End
@@ -3992,6 +4092,7 @@ Show  # Errors - 75+
 #Show  # Highlighted Rares - Armour - Str Dex - 60+
 #	ItemLevel >= 60
 #	BaseType "Murder Boots" "Hydrascale Boots" "Nightmare Bascinet" "Pig-Faced Bascinet" "Dragonscale Gauntlets" "Hydrascale Gauntlets" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale"
+#	SetFontSize 32
 #	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (Highlighted)
 #	SetBorderColor 140 140 70 # Rare Recipe 60+ (Highlighted)
 #Disabled Block End
@@ -4000,6 +4101,7 @@ Show  # Errors - 75+
 #Show  # Highlighted Rares - Armour - Str Int - 60+
 #	ItemLevel >= 60
 #	BaseType "Crusader Boots" "Legion Boots" "Bone Helmet" "Praetor Crown" "Prophet Crown" "Crusader Gloves" "Legion Gloves" "Saintly Chainmail" "Saint's Hauberk" "Elegant Ringmail"
+#	SetFontSize 32
 #	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (Highlighted)
 #	SetBorderColor 140 140 70 # Rare Recipe 60+ (Highlighted)
 #Disabled Block End
@@ -4008,6 +4110,7 @@ Show  # Errors - 75+
 #Show  # Highlighted Rares - Armour - Dex Int - 60+
 #	ItemLevel >= 60
 #	BaseType "Dragonscale Boots" "Assassin's Boots" "Deicide Mask" "Vaal Mask" "Murder Mitts" "Strapped Mitts" "Carnal Armour" "Sadist Garb" "Blood Raiment"
+#	SetFontSize 32
 #	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (Highlighted)
 #	SetBorderColor 140 140 70 # Rare Recipe 60+ (Highlighted)
 #Disabled Block End
@@ -4017,6 +4120,7 @@ Show  # Errors - 75+
 #	DropLevel >= 50
 #	Class "Body Armour"
 #	ItemLevel >= 60
+#	SetFontSize 32
 #	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (Highlighted)
 #	SetBorderColor 140 140 70 # Rare Recipe 60+ (Highlighted)
 #Disabled Block End
@@ -4026,6 +4130,7 @@ Show  # Errors - 75+
 #	DropLevel >= 40
 #	Class Gloves
 #	ItemLevel >= 60
+#	SetFontSize 32
 #	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (Highlighted)
 #	SetBorderColor 140 140 70 # Rare Recipe 60+ (Highlighted)
 #Disabled Block End
@@ -4035,6 +4140,7 @@ Show  # Errors - 75+
 #	DropLevel >= 40
 #	Class Boots
 #	ItemLevel >= 60
+#	SetFontSize 32
 #	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (Highlighted)
 #	SetBorderColor 140 140 70 # Rare Recipe 60+ (Highlighted)
 #Disabled Block End
@@ -4044,6 +4150,7 @@ Show  # Errors - 75+
 #	DropLevel >= 40
 #	Class Helmets
 #	ItemLevel >= 60
+#	SetFontSize 32
 #	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (Highlighted)
 #	SetBorderColor 140 140 70 # Rare Recipe 60+ (Highlighted)
 #Disabled Block End
@@ -4053,7 +4160,7 @@ Show  # Errors - 75+
 #------------------------------------#
 
 #Disabled Block Start
-#Show  # Highlighted Rares - Top Tier - Two Hand Weapons - Harbinger Bows - 60+
+#Show  # Highlighted Rares - Top Tier - Bows - Harbinger Bows - 60+
 #	Class Bows
 #	ItemLevel >= 60
 #	BaseType "Harbinger Bow"
@@ -4485,6 +4592,7 @@ Show  # Elder Rares - Quivers - 60+ - Other
 Show  # 60+ Rares - Armour
 	Class Gloves Boots Helmets "Body Armours"
 	ItemLevel >= 60
+	SetFontSize 32
 	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+
 	SetBorderColor 0 0 0 # Rare Recipe 60+
 
@@ -4495,6 +4603,7 @@ Show  # 60+ Rares - Armour
 Show  # 60+ Rares - Two Hand Weapons
 	Class "Two Hand" Bows Staves
 	ItemLevel >= 60
+	SetFontSize 32
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+
 	SetBorderColor 0 0 0 # Rare Recipe 60+
@@ -4507,6 +4616,7 @@ Show  # 60+ Rares - Two Hand Weapons
 Show  # 60+ Rares - One Hand Weapons
 	Class "One Hand" Daggers Wands Claws Sceptres
 	ItemLevel >= 60
+	SetFontSize 32
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 40 35 8 230 # Rare Weapon 60+
 	SetBorderColor 0 0 0 # Rare Weapon 60+
@@ -4518,6 +4628,7 @@ Show  # 60+ Rares - One Hand Weapons
 Show  # 60+ Rares - Shields
 	Class Shields
 	ItemLevel >= 60
+	SetFontSize 32
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 40 35 8 230 # Rare Weapon 60+
 	SetBorderColor 0 0 0 # Rare Weapon 60+
@@ -4530,6 +4641,7 @@ Show  # 60+ Rares - Quivers - Valuable
 	Class Quivers
 	BaseType "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver"
 	ItemLevel >= 60
+	SetFontSize 32
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 40 35 8 230 # Rare Weapon 60+
 	SetBorderColor 0 0 0 # Rare Weapon 60+
@@ -4537,6 +4649,7 @@ Show  # 60+ Rares - Quivers - Valuable
 Hide  # 60+ Rares - Quivers - Other
 	Class Quivers
 	ItemLevel >= 60
+	SetFontSize 32
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 40 35 8 230 # Rare Weapon 60+ (Hidden)
 	SetBorderColor 0 0 0 # Rare Weapon 60+ (Hidden)
@@ -4566,6 +4679,7 @@ Show  # < 60 Rares - Accessories
 # Quivers
 Show  # < 60 Rares - Quivers
 	Class Quivers
+	SetFontSize 32
 	SetTextColor 255 190 75 # Rare Weapon
 
 #---------------------#
@@ -4575,18 +4689,22 @@ Show  # < 60 Rares - Quivers
 Hide  # < 60 Rares - Very Low Drop Level - 55+
 	DropLevel < 30
 	ItemLevel >= 55
+	SetFontSize 32
 
 Hide  # < 60 Rares - Very Low Drop Level - 50+
 	DropLevel < 25
 	ItemLevel >= 50
+	SetFontSize 32
 
 Hide  # < 60 Rares - Very Low Drop Level - 45+
 	DropLevel < 20
 	ItemLevel >= 45
+	SetFontSize 32
 
 Hide  # < 60 Rares - Very Low Drop Level - 40+
 	DropLevel < 15
 	ItemLevel >= 40
+	SetFontSize 32
 
 #----------#
 # 3-4 Link #
@@ -4629,18 +4747,22 @@ Show  # < 60 Rares - Weapons - 3 Link
 Hide  # < 60 Rares - Low Drop Level - 55+
 	DropLevel < 35
 	ItemLevel >= 55
+	SetFontSize 32
 
 Hide  # < 60 Rares - Low Drop Level - 50+
 	DropLevel < 30
 	ItemLevel >= 50
+	SetFontSize 32
 
 Hide  # < 60 Rares - Low Drop Level - 45+
 	DropLevel < 25
 	ItemLevel >= 45
+	SetFontSize 32
 
 Hide  # < 60 Rares - Low Drop Level - 40+
 	DropLevel < 20
 	ItemLevel >= 40
+	SetFontSize 32
 
 #------#
 # Good #
@@ -4648,8 +4770,10 @@ Hide  # < 60 Rares - Low Drop Level - 40+
 
 Show  # < 60 Rares - Armour - Other
 	Class Gloves Boots Helmets "Body Armours"
+	SetFontSize 32
 
 Show  # < 60 Rares - Weapons - Other
+	SetFontSize 32
 	SetTextColor 255 190 75 # Rare Weapon
 
 ##########################################

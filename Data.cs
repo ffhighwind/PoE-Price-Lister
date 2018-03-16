@@ -27,7 +27,7 @@ namespace PoE_Price_Lister
         List<string> divinationBaseTypes = new List<string>();
         List<string> csvUniquesBaseTypes = new List<string>();
 
-        private const string csvFile = "poe_uniques.csv";
+        private const string csvFile = "Resources\\poe_uniques.csv";
         private const string league = "Bestiary";
 
         private const string filterURL = "http://pastebin.com/raw/k5q2b570";
@@ -137,6 +137,7 @@ namespace PoE_Price_Lister
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK);
+                    Application.Exit();
                 }
                 SetLeague(true);
             }
@@ -204,12 +205,13 @@ namespace PoE_Price_Lister
                 foreach (var baseTy in csvUniquesBaseTypes)
                 {
                     var items = uniques[baseTy].Items;
+                    items.Sort((lhs, rhs) => { return lhs.ChaosValue < rhs.ChaosValue ? -1 : 1; });
                     foreach (var item in items)
                     {
-                        if (item.IsCoreDrop || item.IsBossDrop)
+                        if (item.League.Length > 0)
                             resortList.Add(item);
                     }
-                    foreach(var item in resortList)
+                    foreach (var item in resortList)
                     {
                         items.Remove(item);
                         items.Add(item);
@@ -220,6 +222,7 @@ namespace PoE_Price_Lister
             catch(Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK);
+                Application.Exit();
             }
         }
 
@@ -470,6 +473,7 @@ namespace PoE_Price_Lister
                 catch(Exception ex)
                 {
                     MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK);
+                    Application.Exit();
                 }
                 return "";
             }

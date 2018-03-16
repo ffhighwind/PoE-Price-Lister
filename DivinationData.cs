@@ -86,9 +86,15 @@ namespace PoE_Price_Lister
                 if (filterValue == expect || (listedValue < 0.7f && expect.Value == DivinationValueEnum.NearlyWorthless))
                     return 0;
                 int expectTier = expect.ValueTier;
-                int severity = Math.Abs(filterValue.ValueTier - expectTier);
-                if (severity != 0 && expectTier >= 4)
-                    severity += 1;
+                int filterTier = filterValue.ValueTier;
+                int severity = Math.Abs(filterTier - expectTier);
+                if (severity != 0)
+                {
+                    if (expectTier >= 4)
+                        severity += 1;
+                    else if(expectTier == 0)
+                        severity -= 1;
+                }
                 return severity;
             }
         }
