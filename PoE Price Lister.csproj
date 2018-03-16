@@ -95,9 +95,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Resources\default.filtertheme" />
+    <None Include="Resources\Themes\default.filtertheme" />
     <None Include="Resources\filter font enlarger.ahk" />
-    <None Include="Resources\greengroove.filtertheme" />
+    <None Include="Resources\Themes\greengroove.filtertheme" />
     <None Include="Resources\highwind%27s_filter.filter">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -115,8 +115,8 @@
     </None>
     <None Include="packages.config" />
     <None Include="Resources\highwind%27s_very_strict_filter_large.filter" />
-    <None Include="Resources\neversink.filtertheme" />
-    <None Include="Resources\poe_uniques.csv">
+    <None Include="Resources\Themes\neversink.filtertheme" />
+    <None Include="poe_uniques.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Properties\Settings.settings">
