@@ -96,7 +96,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="Resources\default.filtertheme" />
-    <None Include="Resources\filter enlarge.ahk.bak" />
     <None Include="Resources\filter font enlarger.ahk" />
     <None Include="Resources\greengroove.filtertheme" />
     <None Include="Resources\highwind%27s_filter.filter">
@@ -147,6 +146,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="README.txt" />
+    <Content Include="Resources\filterblast_config.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,29 @@
+Filter [Highwind's Loot Filter]
+
+Version [3.2.12]
+LastUpdate [3.16.2018]
+PoEVersion [3.2.x]
+ForumThread [https://www.pathofexile.com/forum/view-thread/1490867]
+
+SmartBlocks on
+SmartColors on
+# BlockGroups on
+# DisabledBlocks wrapped
+
+Presets
+	Preset "Regular" DEFAULT [Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/highwind's_filter.filter]
+	Preset "Mapping" [Highwind_Mapping] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/highwind's_mapping_filter.filter]
+	Preset "Strict" [Highwind_Strict] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/highwind's_strict_filter.filter]
+	Preset "Very Strict" [Highwind_Very_Strict] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/highwind's_very_strict_filter.filter]
+	Preset "Regular Large" [Highwind_Large] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/highwind's_filter_large.filter]
+	Preset "Mapping Large" [Highwind_Mapping_Large] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/highwind's_mapping_filter_large.filter]
+	Preset "Strict Large" [Highwind_Strict_Large] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/highwind's_strict_filter_large.filter]
+	Preset "Very Strict Large" [Highwind_Very_Strict_Large] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/highwind's_very_strict_filter_large.filter]
+
+# ColorThemes filtertheme
+#	Theme "Default" DEFAULT [Highwind_Default_Theme] [https://pastebin.com/raw/TSFSZdry]
+#	Theme "Neversink" [Highwind_Neversink_Theme] [https://pastebin.com/raw/KTk1iiBJ]
+#	Theme "Greengroove" [Highwind_Greengroove_Theme] [https://pastebin.com/raw/ettTnViS]
+
+# SoundThemes
+#	Theme "Default" DEFAULT [] []
