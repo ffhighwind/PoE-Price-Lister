@@ -95,6 +95,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Resources\theme validator.ahk" />
     <None Include="Resources\Themes\default.filtertheme" />
     <None Include="Resources\filter font enlarger.ahk" />
     <None Include="Resources\Themes\greengroove.filtertheme" />

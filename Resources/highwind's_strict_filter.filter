@@ -2351,8 +2351,8 @@ Show  # Crafting Bases - 70+ Drop Level (Low) - Rare
 	DropLevel >= 72
 	BaseType "Blue Pearl Amulet" "Vanguard Belt" "Sacrificial Garb"
 	SetFontSize 40
-	SetBackgroundColor 20 85 55 230 # Crafting Base Rare (Mid)
-	SetBorderColor 75 150 255 # Crafting Base Rare (Mid)
+	SetBackgroundColor 20 85 55 230 # Crafting Base Rare (Low)
+	SetBorderColor 75 150 255 # Crafting Base Rare (Low)
 
 #------------#
 # 84+ Armour #
