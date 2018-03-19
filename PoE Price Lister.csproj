@@ -97,21 +97,21 @@
     </Compile>
     <None Include="Resources\FilterNova-AutoUpdater.ahk" />
     <None Include="Resources\Filters\Filters.zip" />
+    <None Include="Resources\Filters\L_Mapping_Highwind.filter" />
+    <None Include="Resources\Filters\L_Regular_Highwind.filter" />
+    <None Include="Resources\Filters\L_Strict_Highwind.filter" />
+    <None Include="Resources\Filters\L_Very_Strict_Highwind.filter" />
+    <None Include="Resources\Filters\S_Mapping_Highwind.filter" />
+    <None Include="Resources\Filters\S_Regular_Highwind.filter">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Filters\S_Strict_Highwind.filter" />
+    <None Include="Resources\Filters\S_Very_Strict_Highwind.filter" />
     <None Include="Resources\theme validator.ahk" />
     <None Include="Resources\Themes\default.filtertheme" />
     <None Include="Resources\filter font enlarger.ahk" />
     <None Include="Resources\Themes\greengroove.filtertheme" />
-    <None Include="Resources\Filters\highwind%27s_filter.filter">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Resources\Filters\highwind%27s_filter_large.filter" />
-    <None Include="Resources\Filters\highwind%27s_mapping_filter.filter" />
-    <None Include="Resources\Filters\highwind%27s_mapping_filter_large.filter" />
-    <None Include="Resources\Filters\highwind%27s_strict_filter.filter" />
-    <None Include="Resources\Filters\highwind%27s_strict_filter_large.filter" />
-    <None Include="Resources\Filters\highwind%27s_very_strict_filter.filter" />
     <None Include="packages.config" />
-    <None Include="Resources\Filters\highwind%27s_very_strict_filter_large.filter" />
     <None Include="Resources\Themes\neversink.filtertheme" />
     <None Include="poe_uniques.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
