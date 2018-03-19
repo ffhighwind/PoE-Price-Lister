@@ -24,11 +24,6 @@ namespace PoE_Price_Lister
         {
             InitializeComponent();
             data = new Data();
-            data.GetData();
-            FillUniqueListView(listViewUniques, data.GetUniqueEntrySC);
-            FillDivinationListView(listViewDivination, data.GetDivinationEntrySC);
-            FillUniqueListView(listViewUniquesHC, data.GetUniqueEntryHC);
-            FillDivinationListView(listViewDivinationHC, data.GetDivinationEntryHC);
             openFileDialog1.InitialDirectory = Directory.GetCurrentDirectory() + "\\Resources";
         }
 
@@ -165,6 +160,15 @@ namespace PoE_Price_Lister
                 FillDivinationListView(listViewDivinationHC, data.GetDivinationEntryHC);
                 FillUniqueListView(listViewUniquesHC, data.GetUniqueEntryHC);
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            data.GetData();
+            FillUniqueListView(listViewUniques, data.GetUniqueEntrySC);
+            FillDivinationListView(listViewDivination, data.GetDivinationEntrySC);
+            FillUniqueListView(listViewUniquesHC, data.GetUniqueEntryHC);
+            FillDivinationListView(listViewDivinationHC, data.GetDivinationEntryHC);
         }
     }
 }

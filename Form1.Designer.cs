@@ -288,6 +288,7 @@
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.buttonGenFilter);
             this.Name = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabUniquesSC.ResumeLayout(false);
             this.tabDivinationSC.ResumeLayout(false);

@@ -27,7 +27,7 @@ namespace PoE_Price_Lister
         List<string> divinationBaseTypes = new List<string>();
         List<string> csvUniquesBaseTypes = new List<string>();
 
-        private const string csvFile = "Resources\\poe_uniques.csv";
+        private const string csvFile = "poe_uniques.csv";
         private const string league = "Bestiary";
 
         private const string filterURL = "http://pastebin.com/raw/k5q2b570";
