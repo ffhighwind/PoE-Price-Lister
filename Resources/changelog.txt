@@ -4,6 +4,7 @@
 3.2.13
 * Fixed a minor color theme issue with low 70+ drop level items (Vanguard Belts, etc).
 * Added a theme validator to the repository.
+* Removed leveling normal/magic items from the mapping/strict filters. The previous patch only removed the flasks, rares, and recipe items.
 
 3.2.12
 * Fixed a naming inconsistency with highlighted harbinger bows.

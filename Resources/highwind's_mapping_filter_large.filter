@@ -1,7 +1,7 @@
 ############################################
-##    HIGHWIND'S MAPPING FILTER 3.2.12    ##
+##    HIGHWIND'S MAPPING FILTER 3.2.13    ##
 ############################################
-## Release Date: March 16, 2018           ##
+## Release Date: March 18, 2018           ##
 ############################################
 
 #--------------#
@@ -2414,14 +2414,14 @@ Hide  # Normal/Magic - Low Drop Level - 16+ Accessories
 	Rarity <= Magic
 	SetFontSize 36
 
-Show  # Normal/Magic - Leveling - Accessories - < 10
+Hide  # Normal/Magic - Leveling - Accessories - < 10
 	ItemLevel < 10
 	Class Rings Amulets Belts
 	Rarity <= Magic
 	SetFontSize 40
 	SetBorderColor 0 0 0 # Crafting Base (Mid)
 
-Show  # Normal/Magic - Leveling - Accessories - < 16
+Hide  # Normal/Magic - Leveling - Accessories - < 16
 	ItemLevel < 16
 	DropLevel >= 5
 	Class Rings Amulets Belts
@@ -2429,7 +2429,7 @@ Show  # Normal/Magic - Leveling - Accessories - < 16
 	SetFontSize 40
 	SetBorderColor 0 0 0 # Crafting Base (Mid)
 
-Show  # Normal/Magic - Leveling - Accessories - < 22
+Hide  # Normal/Magic - Leveling - Accessories - < 22
 	ItemLevel < 22
 	DropLevel >= 16
 	Class Rings Amulets
@@ -2437,7 +2437,7 @@ Show  # Normal/Magic - Leveling - Accessories - < 22
 	SetFontSize 40
 	SetBorderColor 0 0 0 # Crafting Base (Mid)
 
-Show  # Normal/Magic - Leveling - Jewelry
+Hide  # Normal/Magic - Leveling - Jewelry
 	Class Rings Amulets
 	Rarity = Magic
 	ItemLevel < 25
@@ -2491,7 +2491,7 @@ Hide  # Normal/Magic - Low Drop Level - 25+
 # 3-4 Link #
 #----------#
 
-Show  # Normal/Magic - Leveling - 4 Link Armour - < 35
+Hide  # Normal/Magic - Leveling - 4 Link Armour - < 35
 	LinkedSockets >= 4
 	ItemLevel < 35
 	Class Gloves Boots Helmets "Body Armours"
@@ -2499,14 +2499,14 @@ Show  # Normal/Magic - Leveling - 4 Link Armour - < 35
 	SetFontSize 36
 	SetBorderColor 40 80 150 # 3-4 Link
 
-Show  # Normal/Magic - Leveling - 4 Link Armour - < 60
+Hide  # Normal/Magic - Leveling - 4 Link Armour - < 60
 	LinkedSockets >= 4
 	ItemLevel < 60
 	Class Gloves Boots Helmets "Body Armours"
 	Rarity <= Magic
 	SetFontSize 36
 
-Show  # Normal/Magic - Leveling - 3 Link Armour - < 10
+Hide  # Normal/Magic - Leveling - 3 Link Armour - < 10
 	LinkedSockets >= 3
 	ItemLevel < 10
 	Class Gloves Boots Helmets "Body Armours"
@@ -2514,14 +2514,14 @@ Show  # Normal/Magic - Leveling - 3 Link Armour - < 10
 	SetFontSize 36
 	SetBorderColor 40 80 150 # 3-4 Link
 
-Show  # Normal/Magic - Leveling - 3 Link Armour  - < 20
+Hide  # Normal/Magic - Leveling - 3 Link Armour  - < 20
 	LinkedSockets >= 3
 	ItemLevel < 20
 	Class Gloves Boots Helmets "Body Armours"
 	Rarity <= Magic
 	SetFontSize 36
 
-Show  # Normal/Magic - Leveling - 3 Link Armour - 4 Socket
+Hide  # Normal/Magic - Leveling - 3 Link Armour - 4 Socket
 	LinkedSockets >= 3
 	Sockets >= 4
 	ItemLevel < 35
@@ -2529,7 +2529,7 @@ Show  # Normal/Magic - Leveling - 3 Link Armour - 4 Socket
 	Rarity <= Magic
 	SetFontSize 36
 
-Show  # Normal/Magic - Leveling - 3 Link Wands Sceptres
+Hide  # Normal/Magic - Leveling - 3 Link Wands Sceptres
 	LinkedSockets = 3
 	ItemLevel <= 7
 	Class Wands Sceptres
@@ -2541,12 +2541,12 @@ Show  # Normal/Magic - Leveling - 3 Link Wands Sceptres
 # Other #
 #-------#
 
-Show  # Normal/Magic - Leveling - < 11 Normal
+Hide  # Normal/Magic - Leveling - < 11 Normal
 	Rarity = Normal
 	ItemLevel <= 11
 	SetFontSize 36
 
-Show  # Normal/Magic - Leveling - < 20 Magic
+Hide  # Normal/Magic - Leveling - < 20 Magic
 	Rarity = Magic
 	ItemLevel <= 20
 	SetFontSize 36
