@@ -1,7 +1,7 @@
 ############################################
-##    HIGHWIND'S MAPPING FILTER 3.2.13    ##
+##    HIGHWIND'S MAPPING FILTER 3.2.14    ##
 ############################################
-## Release Date: March 18, 2018           ##
+## Release Date: March 20, 2018           ##
 ############################################
 
 #--------------#
@@ -303,6 +303,7 @@ Hide  # Currency - League Specific - Harbinger (Worthless)
 	SetTextColor 220 190 155 # Currency (Very Low Harbinger)
 	SetBackgroundColor 30 30 50 225 # Currency (Very Low Harbinger)
 	SetBorderColor 0 0 0 # Currency (Very Low Harbinger)
+	DisableDropSound
 
 Hide  # Currency - League Specific - Bestiary (Nearly Worthless)
 	Class "Stackable Currency"
@@ -311,6 +312,7 @@ Hide  # Currency - League Specific - Bestiary (Nearly Worthless)
 	SetTextColor 185 172 141 # Bestiary (Low)
 	SetBackgroundColor 0 0 0 225 # Bestiary (Low)
 	SetBorderColor 0 0 0 0 # Bestiary (Low)
+	DisableDropSound
 
 Show  # Currency - League Specific - Bestiary (Low)
 	Class "Stackable Currency"
@@ -319,6 +321,7 @@ Show  # Currency - League Specific - Bestiary (Low)
 	SetTextColor 185 172 141 # Bestiary (Low)
 	SetBackgroundColor 0 0 0 225 # Bestiary (Low)
 	SetBorderColor 0 0 0 0 # Bestiary (Low)
+	DisableDropSound
 
 Show  # Currency - League Specific - Bestiary (Mid)
 	Class "Stackable Currency"
@@ -348,6 +351,7 @@ Hide  # Currency - Worthless
 	SetTextColor 185 172 141 # Currency (Worthless)
 	SetBackgroundColor 0 0 0 180 # Currency (Worthless)
 	SetBorderColor 0 0 0 0 # Currency (Worthless)
+	DisableDropSound
 
 Hide  # Currency - Nearly Worthless (Low)
 	Class Currency
@@ -356,6 +360,7 @@ Hide  # Currency - Nearly Worthless (Low)
 	SetTextColor 185 172 141 # Currency (Nearly Worthless)
 	SetBackgroundColor 0 0 0 225 # Currency (Nearly Worthless)
 	SetBorderColor 0 0 0 0 # Currency (Nearly Worthless)
+	DisableDropSound
 
 Show  # Currency - Nearly Worthless (High)
 	Class Currency
@@ -1655,6 +1660,7 @@ Show  # Maps - T6+ (Yellow) - Silent - T6-7 in T13+ - Shaped
 	SetTextColor 0 0 0 # Map (Yellow)
 	SetBackgroundColor 255 255 0 200 # Map (Yellow)
 	SetBorderColor 0 0 0 # Map (Yellow)
+	DisableDropSound
 
 Show  # Maps - T6+ (Yellow) - Silent - T6-7 in T13+ - Other
 	Class Maps
@@ -1665,6 +1671,7 @@ Show  # Maps - T6+ (Yellow) - Silent - T6-7 in T13+ - Other
 	SetTextColor 0 0 0 # Map (Yellow)
 	SetBackgroundColor 255 255 0 200 # Map (Yellow)
 	SetBorderColor 0 0 0 # Map (Yellow)
+	DisableDropSound
 
 Show  # Maps - T6+ (Yellow) - Sound - Shaped
 	ShapedMap True
@@ -1696,6 +1703,7 @@ Show  # Maps - T1+ (White) - Silent - T1-5 in T11+
 	SetTextColor 0 0 0 # Map (White)
 	SetBackgroundColor 235 235 255 200 # Map (White)
 	SetBorderColor 0 0 0 # Map (White)
+	DisableDropSound
 
 Show  # Maps - T1+ (White) - Silent - T1-3 in T6+
 	Class Maps
@@ -1705,6 +1713,7 @@ Show  # Maps - T1+ (White) - Silent - T1-3 in T6+
 	SetTextColor 0 0 0 # Map (White)
 	SetBackgroundColor 235 235 255 200 # Map (White)
 	SetBorderColor 0 0 0 # Map (White)
+	DisableDropSound
 
 Show  # Maps - T1+ (White) - Sound
 	Class Maps
@@ -1786,7 +1795,7 @@ Show  # Uniques - 10c+
 
 Show  # Uniques - 2-10c
 	Rarity = Unique
-	BaseType "Abyssal Axe" "Amber Amulet" "Archon Kite Shield" "Assassin's Boots" "Bismuth Flask" "Cardinal Round Shield" "Citadel Bow" "Coronal Leather" "Ebony Tower Shield" "Goathide Boots" "Gold Amulet" "Gold Ring" "Granite Flask" "Harlequin Mask" "Imperial Bow" "Imperial Claw" "Jade Amulet" "Jasper Chopper" "Jingling Spirit Shield" "Lapis Amulet" "Leather Cap" "Lion Pelt" "Midnight Blade" "Necromancer Silks" "Onyx Amulet" "Paua Ring" "Prismatic Ring" "Raven Mask" "Ritual Sceptre" "Silken Hood" "Titan Greaves" "Two-Stone Ring" "Ursine Pelt" "Vanguard Belt" "Varnished Coat"
+	BaseType "Sanctified Life Flask" "Abyssal Axe" "Amber Amulet" "Archon Kite Shield" "Assassin's Boots" "Bismuth Flask" "Cardinal Round Shield" "Citadel Bow" "Coronal Leather" "Ebony Tower Shield" "Goathide Boots" "Gold Amulet" "Gold Ring" "Granite Flask" "Harlequin Mask" "Imperial Bow" "Imperial Claw" "Jade Amulet" "Jasper Chopper" "Jingling Spirit Shield" "Lapis Amulet" "Leather Cap" "Lion Pelt" "Midnight Blade" "Necromancer Silks" "Onyx Amulet" "Paua Ring" "Prismatic Ring" "Raven Mask" "Ritual Sceptre" "Silken Hood" "Titan Greaves" "Two-Stone Ring" "Ursine Pelt" "Vanguard Belt" "Varnished Coat"
 	SetFontSize 45
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
@@ -1801,7 +1810,7 @@ Show  # Uniques - 2-10c
 
 Show  # Uniques - 1-2c
 	Rarity = Unique
-	BaseType "Sorcerer Gloves" "Close Helmet" "Pinnacle Tower Shield" "Amethyst Ring" "Ancient Gauntlets" "Ancient Greaves" "Assassin's Mitts" Blinder "Blood Raiment" "Bone Bow" "Carved Wand" "Cedar Tower Shield" "Clasped Mitts" "Coiled Staff" "Conjurer Boots" "Coral Ring" "Crystal Belt" "Demon Dagger" "Diamond Ring" "Etched Greatsword" "Exquisite Leather" "Goliath Greaves" "Hellion's Paw" "Highborn Staff" "Iron Ring" "Ironscale Gauntlets" "Judgement Staff" Labrys "Lacquered Garb" "Leather Belt" Maelstr "Magistrate Crown" Meatgrinder "Mirrored Spiked Shield" "Moonstone Ring" "Mosaic Kite Shield" "Murder Boots" "Nightmare Bascinet" "Nightmare Mace" "Opal Ring" "Penetrating Arrow Quiver" "Regicide Mask" "Ruby Ring" "Sanctified Life Flask" "Sanctified Mana Flask" "Sapphire Ring" "Sharkskin Tunic" "Siege Helmet" "Silver Flask" "Simple Robe" "Slink Boots" Steelhead "Stygian Vise" "Titan Gauntlets" "Titanium Spirit Shield" "Topaz Ring" "Tornado Wand" "Trapper Boots" "Unset Ring" "Vaal Sceptre"
+	BaseType "Sorcerer Gloves" "Champion Kite Shield" "Corsair Sword" "Close Helmet" "Pinnacle Tower Shield" "Amethyst Ring" "Ancient Gauntlets" "Ancient Greaves" "Assassin's Mitts" Blinder "Blood Raiment" "Bone Bow" "Carved Wand" "Cedar Tower Shield" "Clasped Mitts" "Coiled Staff" "Conjurer Boots" "Coral Ring" "Crystal Belt" "Demon Dagger" "Diamond Ring" "Etched Greatsword" "Exquisite Leather" "Goliath Greaves" "Hellion's Paw" "Highborn Staff" "Iron Ring" "Ironscale Gauntlets" "Judgement Staff" Labrys "Lacquered Garb" "Leather Belt" Maelstr "Magistrate Crown" Meatgrinder "Mirrored Spiked Shield" "Moonstone Ring" "Mosaic Kite Shield" "Murder Boots" "Nightmare Bascinet" "Nightmare Mace" "Opal Ring" "Penetrating Arrow Quiver" "Regicide Mask" "Ruby Ring" "Sanctified Mana Flask" "Sapphire Ring" "Sharkskin Tunic" "Siege Helmet" "Silver Flask" "Simple Robe" "Slink Boots" Steelhead "Stygian Vise" "Titan Gauntlets" "Titanium Spirit Shield" "Topaz Ring" "Tornado Wand" "Trapper Boots" "Unset Ring" "Vaal Sceptre"
 	SetFontSize 40
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
@@ -1871,7 +1880,7 @@ Show  # Uniques - <1c - Labyrinth
 
 Show  # Uniques - <1c - Nearly Worthless
 	Rarity = Unique
-	BaseType "Astral Plate" "Blue Pearl Amulet" "Bronzescale Gauntlets" "Champion Kite Shield" "Corsair Sword" "Destroyer Regalia" Gladius "Great Mallet" "Hallowed Hybrid Flask" "Infernal Axe" "Iron Gauntlets" "Karui Sceptre" "Large Hybrid Flask" "Marble Amulet" "Mind Cage" "Opal Sceptre" "Opal Wand" "Prophet Crown" "Serpentscale Gauntlets" "Sinner Tricorne" "Tarnished Spirit Shield" "Turquoise Amulet" "Wool Shoes"
+	BaseType "Astral Plate" "Blue Pearl Amulet" "Bronzescale Gauntlets" "Destroyer Regalia" Gladius "Great Mallet" "Hallowed Hybrid Flask" "Infernal Axe" "Iron Gauntlets" "Karui Sceptre" "Large Hybrid Flask" "Marble Amulet" "Mind Cage" "Opal Sceptre" "Opal Wand" "Prophet Crown" "Serpentscale Gauntlets" "Sinner Tricorne" "Tarnished Spirit Shield" "Turquoise Amulet" "Wool Shoes"
 	SetFontSize 40
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
@@ -1952,6 +1961,7 @@ Hide  # Divination Cards - Worthless
 	SetTextColor 0 0 0 # Divination Card (Worthless)
 	SetBackgroundColor 255 0 175 120 # Divination Card (Worthless)
 	SetBorderColor 255 0 175 50 # Divination Card (Worthless)
+	DisableDropSound
 
 Show  # Divination Cards - New (Error)
 	Class Divination

@@ -30,7 +30,7 @@ namespace PoE_Price_Lister
         private const string csvFile = "poe_uniques.csv";
         private const string league = "Bestiary";
 
-        private const string filterURL = "http://pastebin.com/raw/k5q2b570";
+        private const string filterURL = "https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/S_Regular_Highwind.filter";
         private const string divinationJsonURL = "http://cdn.poe.ninja/api/Data/GetDivinationCardsOverview?league=";
         private const string armorJsonURL = "http://cdn.poe.ninja/api/Data/GetUniqueArmourOverview?league=";
         private const string flaskJsonURL = "http://cdn.poe.ninja/api/Data/GetUniqueFlaskOverview?league=";

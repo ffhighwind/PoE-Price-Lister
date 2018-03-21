@@ -1,6 +1,11 @@
 ---------------------------------------------------------------------------------------------------------------
 | Bestiary
 ---------------------------------------------------------------------------------------------------------------
+3.2.14
+* Added DisableDropSound to hidden currency/uniques/divcards as well as hidden/silent maps. This may not work for maps currently.
+* Modified a few unique values.
+* Fixed the filenames in the helper scripts.
+
 3.2.13
 * Fixed a minor color theme issue with low 70+ drop level items (Vanguard Belts, etc).
 * Added a theme validator to the repository.
