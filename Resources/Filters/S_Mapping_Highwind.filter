@@ -1,7 +1,7 @@
 ############################################
-##    HIGHWIND'S MAPPING FILTER 3.2.14    ##
+##    HIGHWIND'S MAPPING FILTER 3.2.15    ##
 ############################################
-## Release Date: March 20, 2018           ##
+## Release Date: March 22, 2018           ##
 ############################################
 
 #--------------#
@@ -1207,6 +1207,8 @@ Hide  # Normal/Magic - Low Drop Level - 30+ Accessories Quivers
 	Rarity <= Magic
 	ItemLevel < 84
 	ItemLevel >= 30
+	ShaperItem False
+	ElderItem False
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
@@ -1217,6 +1219,8 @@ Hide  # Normal/Magic - Low Drop Level - 6+ 1-2 Socket
 	DropLevel < 56
 	Rarity <= Magic
 	ItemLevel >= 6
+	ShaperItem False
+	ElderItem False
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
@@ -1227,6 +1231,8 @@ Hide  # Normal/Magic - Low Drop Level - 20+ 1-2 Link
 	DropLevel < 56
 	Rarity <= Magic
 	ItemLevel >= 20
+	ShaperItem False
+	ElderItem False
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
@@ -1237,6 +1243,8 @@ Hide  # Normal/Magic - Low Drop Level - 60+ Armour Weapons Shields
 	DropLevel < 56
 	Rarity <= Magic
 	ItemLevel >= 60
+	ShaperItem False
+	ElderItem False
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
@@ -1246,6 +1254,8 @@ Hide  # Normal/Magic - Low Drop Level - <83 Body Armour Weapons Shields
 	Rarity <= Magic
 	ItemLevel < 83
 	ItemLevel >= 60
+	ShaperItem False
+	ElderItem False
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
@@ -1256,6 +1266,8 @@ Hide  # Normal/Magic - Low Drop Level - <84 Gloves Boots Helmets
 	Rarity <= Magic
 	ItemLevel < 84
 	ItemLevel >= 60
+	ShaperItem False
+	ElderItem False
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
@@ -1265,6 +1277,8 @@ Hide  # Normal/Magic - Low Drop Level - 84+ Armour Shields
 	DropLevel < 62
 	Rarity <= Magic
 	ItemLevel >= 84
+	ShaperItem False
+	ElderItem False
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
@@ -2178,49 +2192,111 @@ Hide  # Flasks - Mapping (High) - Normal
 # Shaper #
 #--------#
 
-Hide  # Crafting Bases - 84+ Shaper Jewelry
+Show  # Crafting Bases - Shaper - Amulets
+	ShaperItem True
+	Class Amulets
+	Rarity <= Magic
+	SetFontSize 40
+	SetBackgroundColor 50 20 70 230 # Shaper Elder 83+
+	SetBorderColor 220 0 0 # Rare Accessory
+	PlayAlertSound 4 200 # Mid Value
+
+Show  # Crafting Bases - Shaper - 84+ Jewelry
 	ShaperItem True
 	Class Rings Amulets Belts
 	ItemLevel >= 84
-	DropLevel < 72
 	Rarity <= Magic
-	SetFontSize 32
-	SetBackgroundColor 40 40 40 # Crafting Base 84+ (Mid)
-	SetBorderColor 40 80 150 # Crafting Base 84+ (Mid)
+	SetFontSize 40
+	SetBackgroundColor 50 20 70 230 # Shaper Elder 83+
 
-Hide  # Crafting Bases - 83+ Shaper Weapons Armor
+Show  # Crafting Bases - Shaper - 83+ Weapons
 	ShaperItem True
-	Class "One Hand" "Two Hand" Bows Staves Daggers Wands Claws Sceptres Gloves Boots Helmets "Body Armours" Shields
+	Class "One Hand" "Two Hand" Bows Staves Daggers Wands Claws Sceptres
 	ItemLevel >= 83
 	DropLevel >= 56
 	Rarity <= Magic
+	SetFontSize 40
+	SetBackgroundColor 50 20 70 230 # Shaper Elder 83+
+
+Show  # Crafting Bases - Shaper - 84+ Armour Shields Quivers
+	ShaperItem True
+	Class Gloves Boots Helmets Shields Quivers
+	ItemLevel >= 84
+	DropLevel >= 56
+	Rarity <= Magic
+	SetFontSize 40
+	SetBackgroundColor 50 20 70 230 # Shaper Elder 83+
+
+Show  # Crafting Bases - Shaper - 84+ Body Armour
+	ShaperItem True
+	Class "Body Armours"
+	ItemLevel >= 84
+	DropLevel >= 62
+	Rarity <= Magic
+	SetFontSize 40
+	SetBackgroundColor 50 20 70 230 # Shaper Elder 83+
+
+Hide  # Crafting Bases - Shaper - <83 Other
+	ShaperItem True
+	Rarity <= Magic
 	SetFontSize 32
-	SetBackgroundColor 40 40 40 # Crafting Base 84+ (Mid)
-	SetBorderColor 40 80 150 # Crafting Base 84+ (Mid)
+	SetBackgroundColor 50 20 70 230 # Shaper Elder 60+
+	DisableDropSound
 
 #-------#
 # Elder #
 #-------#
 
-Hide  # Crafting Bases - 84+ Elder Jewelry
+Show  # Crafting Bases - Elder - Amulets
+	ElderItem True
+	Class Amulets
+	Rarity <= Magic
+	SetFontSize 40
+	SetBackgroundColor 50 20 70 230 # Shaper Elder 83+
+	SetBorderColor 220 0 0 # Rare Accessory
+	PlayAlertSound 4 200 # Mid Value
+
+Show  # Crafting Bases - Elder - 84+ Jewelry
 	ElderItem True
 	Class Rings Amulets Belts
 	ItemLevel >= 84
-	DropLevel < 72
 	Rarity <= Magic
-	SetFontSize 32
-	SetBackgroundColor 40 40 40 # Crafting Base 84+ (Mid)
-	SetBorderColor 40 80 150 # Crafting Base 84+ (Mid)
+	SetFontSize 40
+	SetBackgroundColor 50 20 70 230 # Shaper Elder 83+
 
-Hide  # Crafting Bases - 83+ Elder Weapons Armor
+Show  # Crafting Bases - Elder - 83+ Weapons
 	ElderItem True
-	Class "One Hand" "Two Hand" Bows Staves Daggers Wands Claws Sceptres Gloves Boots Helmets "Body Armours" Shields
+	Class "One Hand" "Two Hand" Bows Staves Daggers Wands Claws Sceptres
 	ItemLevel >= 83
 	DropLevel >= 56
 	Rarity <= Magic
+	SetFontSize 40
+	SetBackgroundColor 50 20 70 230 # Shaper Elder 83+
+
+Show  # Crafting Bases - Elder - 84+ Armour Shields Quivers
+	ElderItem True
+	Class Gloves Boots Helmets Shields Quivers
+	ItemLevel >= 84
+	DropLevel >= 56
+	Rarity <= Magic
+	SetFontSize 40
+	SetBackgroundColor 50 20 70 230 # Shaper Elder 83+
+
+Show  # Crafting Bases - Elder - 84+ Body Armour
+	ElderItem True
+	Class "Body Armours"
+	ItemLevel >= 84
+	DropLevel >= 62
+	Rarity <= Magic
+	SetFontSize 40
+	SetBackgroundColor 50 20 70 230 # Shaper Elder 83+
+
+Hide  # Crafting Bases - Elder - <83 Other
+	ElderItem True
+	Rarity <= Magic
 	SetFontSize 32
-	SetBackgroundColor 40 40 40 # Crafting Base 84+ (Mid)
-	SetBorderColor 40 80 150 # Crafting Base 84+ (Mid)
+	SetBackgroundColor 50 20 70 230 # Shaper Elder 60+
+	DisableDropSound
 
 #-------------#
 # Accessories #
@@ -2423,6 +2499,7 @@ Hide  # Normal/Magic - Low Drop Level - 16+ Accessories
 	Class Rings Amulets Belts
 	Rarity <= Magic
 	SetFontSize 32
+	DisableDropSound
 
 Hide  # Normal/Magic - Leveling - Accessories - < 10
 	ItemLevel < 10
@@ -2566,6 +2643,7 @@ Hide  # Normal/Magic - Other
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
+	DisableDropSound
 
 ##########################################
 ########## 60+ RARE ACCESSORIES ##########
