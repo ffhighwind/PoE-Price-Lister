@@ -1,7 +1,7 @@
 ############################################
-##  HIGHWIND'S VERY STRICT FILTER 3.2.15  ##
+##  HIGHWIND'S VERY STRICT FILTER 3.2.16  ##
 ############################################
-## Release Date: March 22, 2018           ##
+## Release Date: March 30, 2018           ##
 ############################################
 
 #--------------#
@@ -196,8 +196,8 @@
 #Disabled Block Start
 #Show  # Currency - Shaper Voice - General - <3c
 #	Class Currency
-#	BaseType "Orb of Scouring" "Chaos Orb" "Regal Orb" "Orb of Regret" "Vaal Orb" "Gemcutter's Prism" "Apprentice Cartographer's Sextant" "Journeyman Cartographer's Sextant" "Orb of Horizons" "Engineer's Orb" "Exalted Shard"
-#	SetFontSize 40
+#	BaseType "Orb of Scouring" "Chaos Orb" "Regal Orb" "Orb of Regret" "Vaal Orb" "Gemcutter's Prism" "Apprentice Cartographer's Sextant" "Journeyman Cartographer's Sextant" "Orb of Horizons" "Engineer's Orb"
+#	SetFontSize 45
 #	SetTextColor 255 0 255 # Currency (High)
 #	SetBackgroundColor 20 0 20 230 # Currency (High)
 #	SetBorderColor 255 0 255 # Currency (High)
@@ -207,7 +207,7 @@
 #Disabled Block Start
 #Show  # Currency - Shaper Voice - General - 3c+
 #	Class Currency
-#	BaseType "Remnant of Corruption" "Master Cartographer's Sextant" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb"
+#	BaseType "Remnant of Corruption" "Master Cartographer's Sextant" "Exalted Shard"
 #	SetFontSize 45
 #	SetTextColor 255 0 255 # Currency (3c+)
 #	SetBackgroundColor 255 255 255 255 # Currency (3c+)
@@ -218,7 +218,7 @@
 #Disabled Block Start
 #Show  # Currency - Shaper Voice - General - 6c+
 #	Class Currency
-#	BaseType "Divine Orb" "Exalted Orb" "Eternal Orb" "Imprint" "Mirror of Kalandra" "Mirror Shard"
+#	BaseType "Divine Orb" "Exalted Orb" "Eternal Orb" "Imprint" "Mirror of Kalandra" "Mirror Shard" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb"
 #	SetFontSize 45
 #	SetTextColor 255 0 255 # Currency (6c+)
 #	SetBackgroundColor 255 255 255 255 # Currency (6c+)
@@ -297,13 +297,22 @@ Show  # Currency - League Specific - Blessings (Breach)
 	SetBorderColor 255 0 255 # Currency (Blessing)
 	PlayAlertSound 1 200 # High Value
 
+Show  # Currency - League Specific - Harbinger (High)
+	Class Currency
+	BaseType "Orb of Annulment" "Ancient Orb" "Harbinger's Orb"
+	SetFontSize 45
+	SetTextColor 255 0 255 # Currency (High Harbinger)
+	SetBackgroundColor 255 255 255 230 # Currency (High Harbinger)
+	SetBorderColor 255 0 255 0 # Currency (High Harbinger)
+	PlayAlertSound 1 200 # High Value
+
 Show  # Currency - League Specific - Harbinger (Mid)
 	Class Currency
 	BaseType "Annulment Shard" "Harbinger's Shard" "Ancient Shard"
 	SetFontSize 40
 	SetTextColor 255 0 255 # Currency (Mid Harbinger)
 	SetBackgroundColor 0 0 0 230 # Currency (Mid Harbinger)
-	SetBorderColor 0 0 0 0 # Currency (Mid Harbinger)
+	SetBorderColor 255 0 255 0 # Currency (Mid Harbinger)
 
 Show  # Currency - League Specific - Harbinger (Low)
 	Class Currency
@@ -425,7 +434,7 @@ Show  # Currency - < 0.5c
 
 Show  # Currency - < 3c
 	Class Currency
-	BaseType "Orb of Scouring" "Chaos Orb" "Regal Orb" "Orb of Regret" "Vaal Orb" "Gemcutter's Prism" "Apprentice Cartographer's Sextant" "Journeyman Cartographer's Sextant" "Stacked Deck" "Shrieking Essence" "Screaming Essence" "Orb of Horizons" "Engineer's Orb" "Exalted Shard"
+	BaseType "Orb of Scouring" "Chaos Orb" "Regal Orb" "Orb of Regret" "Vaal Orb" "Gemcutter's Prism" "Apprentice Cartographer's Sextant" "Journeyman Cartographer's Sextant" "Stacked Deck" "Shrieking Essence" "Screaming Essence" "Orb of Horizons" "Engineer's Orb"
 	SetFontSize 40
 	SetTextColor 255 0 255 # Currency (High)
 	SetBackgroundColor 20 0 20 230 # Currency (High)
@@ -434,7 +443,7 @@ Show  # Currency - < 3c
 
 Show  # Currency - 3c+
 	Class Currency
-	BaseType "Remnant of Corruption" "Master Cartographer's Sextant" "Apprentice Cartographer's Seal" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb"
+	BaseType "Remnant of Corruption" "Master Cartographer's Sextant" "Apprentice Cartographer's Seal" "Exalted Shard"
 	SetFontSize 45
 	SetTextColor 255 0 255 # Currency (3c+)
 	SetBackgroundColor 255 255 255 255 # Currency (3c+)
@@ -443,7 +452,7 @@ Show  # Currency - 3c+
 
 Show  # Currency - 6c+
 	Class Currency
-	BaseType "Divine Orb" "Exalted Orb" "Eternal Orb" "Imprint" "Mirror of Kalandra" "Deafening Essence" "Essence of Delirium" "Essence of Hysteria" "Essence of Horror" "Essence of Insanity" "Albino Rhoa Feather" "Journeyman Cartographer's Seal" "Master Cartographer's Seal" "Unshaping Orb" "Mirror Shard"
+	BaseType "Divine Orb" "Exalted Orb" "Eternal Orb" "Imprint" "Mirror of Kalandra" "Deafening Essence" "Essence of Delirium" "Essence of Hysteria" "Essence of Horror" "Essence of Insanity" "Albino Rhoa Feather" "Journeyman Cartographer's Seal" "Master Cartographer's Seal" "Unshaping Orb" "Mirror Shard" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb"
 	SetFontSize 45
 	SetTextColor 255 0 255 # Currency (6c+)
 	SetBackgroundColor 255 255 255 255 # Currency (6c+)
@@ -1895,6 +1904,7 @@ Show  # Uniques - <1c - ilvl <67
 #	SetTextColor 255 128 64 # Unique
 #	SetBackgroundColor 50 25 12 # Unique
 #	SetBorderColor 180 90 45 # Unique (<1c)
+#	DisableDropSound
 #Disabled Block End
 
 Show  # Uniques - <1c - Boss Prophecy
@@ -1923,6 +1933,7 @@ Show  # Uniques - <1c - Shared
 #	SetTextColor 255 128 64 # Unique
 #	SetBackgroundColor 50 25 12 # Unique
 #	SetBorderColor 180 90 45 # Unique (<1c)
+#	DisableDropSound
 #Disabled Block End
 
 #Disabled Block Start
@@ -1933,6 +1944,7 @@ Show  # Uniques - <1c - Shared
 #	SetTextColor 255 128 64 # Unique
 #	SetBackgroundColor 50 25 12 # Unique
 #	SetBorderColor 180 90 45 # Unique (<1c)
+#	DisableDropSound
 #Disabled Block End
 
 Hide  # Uniques - New or Worthless
@@ -2348,6 +2360,7 @@ Hide  # Crafting Bases - 84+ Rings
 	SetFontSize 32
 	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
 	SetBorderColor 0 0 0 # Crafting Base (Mid)
+	DisableDropSound
 
 Hide  # Crafting Bases - 84+ Amulets
 	Class Amulets
@@ -2357,6 +2370,7 @@ Hide  # Crafting Bases - 84+ Amulets
 	SetFontSize 32
 	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
 	SetBorderColor 0 0 0 # Crafting Base (Mid)
+	DisableDropSound
 
 Hide  # Crafting Bases - 84+ Belts
 	Class Belts
@@ -2366,6 +2380,7 @@ Hide  # Crafting Bases - 84+ Belts
 	SetFontSize 32
 	SetBackgroundColor 40 40 40 # Crafting Base (Low)
 	SetBorderColor 0 0 0 # Crafting Base (Low)
+	DisableDropSound
 
 #---------#
 # Quivers #
@@ -2774,6 +2789,7 @@ Hide  # 60+ Rares - Accessories
 	SetFontSize 40
 	SetBackgroundColor 20 70 0 230 # Rare Recipe 60+ (Valuable)
 	SetBorderColor 220 0 0 # Rare Accessory
+	DisableDropSound
 
 ##########################################
 ## SHAPER/ELDER RARES (LOW DROP LEVEL) ###

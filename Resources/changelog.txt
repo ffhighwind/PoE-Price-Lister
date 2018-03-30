@@ -1,6 +1,9 @@
 ---------------------------------------------------------------------------------------------------------------
 | Bestiary
 ---------------------------------------------------------------------------------------------------------------
+3.2.16
+* Increased the tier/value of some Harbinger currencies: Orb of Annulment, Ancient Orb, Harbinger's Orb, Annulment Shard, Ancient Shard, Harbinger's Shard, Exalted Shard.
+
 3.2.15
 * Added a purple background color to normal/magic Elder/Shaper items.
 * Added normal/magic Elder/Shaper Amulets to all filters and added sound.
