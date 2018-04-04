@@ -1,6 +1,9 @@
 ---------------------------------------------------------------------------------------------------------------
 | Bestiary
 ---------------------------------------------------------------------------------------------------------------
+3.2.17
+* Added Stygian Vises to Strict and Very Strict filters.
+
 3.2.16
 * Increased the tier/value of some Harbinger currencies: Orb of Annulment, Ancient Orb, Harbinger's Orb, Annulment Shard, Ancient Shard, Harbinger's Shard, Exalted Shard.
 

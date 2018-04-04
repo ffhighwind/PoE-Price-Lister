@@ -1,7 +1,7 @@
 ############################################
-##     HIGHWIND'S STRICT FILTER 3.2.16    ##
+##     HIGHWIND'S STRICT FILTER 3.2.17    ##
 ############################################
-## Release Date: March 30, 2018           ##
+## Release Date: April 4, 2018            ##
 ############################################
 
 #--------------#
@@ -277,7 +277,7 @@ Show  # Currency - League Specific - Harbinger (High)
 	SetFontSize 45
 	SetTextColor 255 0 255 # Currency (High Harbinger)
 	SetBackgroundColor 255 255 255 230 # Currency (High Harbinger)
-	SetBorderColor 255 0 255 0 # Currency (High Harbinger)
+	SetBorderColor 255 0 255 # Currency (High Harbinger)
 	PlayAlertSound 1 200 # High Value
 
 Show  # Currency - League Specific - Harbinger (Mid)
@@ -919,7 +919,7 @@ Show  # Stygian Vises - Rare - Leveling
 #	SetBorderColor 220 0 0 # Stygian Vise
 #Disabled Block End
 
-Hide  # Stygian Vises - Rare - Mapping (High)
+Show  # Stygian Vises - Rare - Mapping (High)
 	BaseType "Stygian Vise"
 	Rarity = Rare
 	SetFontSize 40
