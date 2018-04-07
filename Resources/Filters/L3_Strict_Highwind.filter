@@ -1,7 +1,7 @@
 ############################################
-##  HIGHWIND'S VERY STRICT FILTER 3.2.17  ##
+##     HIGHWIND'S STRICT FILTER 3.2.18    ##
 ############################################
-## Release Date: April 4, 2018            ##
+## Release Date: April 7, 2018            ##
 ############################################
 
 #--------------#
@@ -246,7 +246,7 @@ Show  # Currency - League Specific - Essences (Low)
 	SetBackgroundColor 55 50 40 # Currency (Low Essence)
 	SetBorderColor 0 0 0 # Currency (Low Essence)
 
-Show  # Currency - League Specific - Splinters - Chayula
+Show  # Currency - League Specific - Splinters (Chayula)
 	Class Currency
 	BaseType "Splinter of Chayula"
 	SetFontSize 45
@@ -254,39 +254,13 @@ Show  # Currency - League Specific - Splinters - Chayula
 	SetBackgroundColor 20 0 20 # Currency (Splinter of Chayula)
 	SetBorderColor 255 0 255 # Currency (Splinter of Chayula)
 
-Show  # Currency - League Specific - Splinters - Uul-Netol
+Show  # Currency - League Specific - Splinters (Other)
 	Class Currency
-	BaseType "Splinter of Uul-Netol"
+	BaseType "Splinter of Xoph" "Splinter of Tul" "Splinter of Esh" "Splinter of Uul-Netol"
 	SetFontSize 45
 	SetTextColor 255 0 255 # Currency (Splinters)
 	SetBackgroundColor 0 0 0 # Currency (Splinters)
 	SetBorderColor 0 0 0 0 # Currency (Splinters)
-
-Show  # Currency - League Specific - Splinters - Xoph
-	Class Currency
-	BaseType "Splinter of Xoph"
-	SetFontSize 45
-	SetTextColor 255 0 255 # Currency (Splinters)
-	SetBackgroundColor 0 0 0 # Currency (Splinters)
-	SetBorderColor 0 0 0 0 # Currency (Splinters)
-
-Hide  # Currency - League Specific - Splinters - Tul
-	Class Currency
-	BaseType "Splinter of Tul"
-	SetFontSize 45
-	SetTextColor 255 0 255 # Currency (Splinters)
-	SetBackgroundColor 0 0 0 # Currency (Splinters)
-	SetBorderColor 0 0 0 0 # Currency (Splinters)
-	DisableDropSound
-
-Hide  # Currency - League Specific - Splinters - Esh
-	Class Currency
-	BaseType "Splinter of Esh"
-	SetFontSize 45
-	SetTextColor 255 0 255 # Currency (Splinters)
-	SetBackgroundColor 0 0 0 # Currency (Splinters)
-	SetBorderColor 0 0 0 0 # Currency (Splinters)
-	DisableDropSound
 
 Show  # Currency - League Specific - Blessings (Breach)
 	Class Currency
@@ -342,7 +316,7 @@ Hide  # Currency - League Specific - Harbinger (Worthless)
 
 Hide  # Currency - League Specific - Bestiary (Nearly Worthless)
 	Class "Stackable Currency"
-	BaseType "Simple Rope Net" "Reinforced Rope Net" "Strong Rope Net" "Simple Iron Net" "Reinforced Iron Net" "Strong Iron Net" "Simple Steel Net" "Reinforced Steel Net" "Strong Steel Net"
+	BaseType "Simple Rope Net" "Reinforced Rope Net" "Strong Rope Net" "Simple Iron Net" "Reinforced Iron Net" "Strong Iron Net" "Simple Steel Net" "Reinforced Steel Net"
 	SetFontSize 40
 	SetTextColor 185 172 141 # Bestiary (Low)
 	SetBackgroundColor 0 0 0 225 # Bestiary (Low)
@@ -351,7 +325,7 @@ Hide  # Currency - League Specific - Bestiary (Nearly Worthless)
 
 Show  # Currency - League Specific - Bestiary (Low)
 	Class "Stackable Currency"
-	BaseType "Thaumaturgical Net"
+	BaseType "Strong Steel Net" "Thaumaturgical Net"
 	SetFontSize 45
 	SetTextColor 185 172 141 # Bestiary (Low)
 	SetBackgroundColor 0 0 0 225 # Bestiary (Low)
@@ -407,22 +381,21 @@ Hide  # Currency - < 0.03c
 	SetBorderColor 0 0 0 0 # Currency (Nearly Worthless)
 	DisableDropSound
 
-Hide  # Currency - < 0.15c
+Show  # Currency - < 0.15c
 	Class Currency
 	BaseType "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb" "Orb of Chance"
 	SetFontSize 45
 	SetTextColor 185 172 141 # Currency (Nearly Worthless)
 	SetBackgroundColor 0 0 0 225 # Currency (Nearly Worthless)
 	SetBorderColor 0 0 0 0 # Currency (Nearly Worthless)
-	DisableDropSound
 
 Show  # Currency - < 0.25c
 	Class Currency
 	BaseType "Silver Coin" "Glassblower's Bauble"
 	SetFontSize 45
-	SetTextColor 185 172 141 # Currency (Nearly Worthless)
-	SetBackgroundColor 0 0 0 225 # Currency (Nearly Worthless)
-	SetBorderColor 0 0 0 0 # Currency (Nearly Worthless)
+	SetTextColor 255 0 255 # Currency (Low)
+	SetBackgroundColor 0 0 0 230 # Currency (Low)
+	SetBorderColor 0 0 0 0 # Currency (Low)
 
 Show  # Currency - < 0.5c
 	Class Currency
@@ -434,7 +407,7 @@ Show  # Currency - < 0.5c
 
 Show  # Currency - < 3c
 	Class Currency
-	BaseType "Orb of Scouring" "Chaos Orb" "Regal Orb" "Orb of Regret" "Vaal Orb" "Gemcutter's Prism" "Apprentice Cartographer's Sextant" "Journeyman Cartographer's Sextant" "Stacked Deck" "Shrieking Essence" "Screaming Essence" "Orb of Horizons" "Engineer's Orb"
+	BaseType "Orb of Scouring" "Chaos Orb" "Regal Orb" "Orb of Regret" "Vaal Orb" "Gemcutter's Prism" "Apprentice Cartographer's Sextant" "Journeyman Cartographer's Sextant" "Stacked Deck" "Shrieking Essence" "Screaming Essence" "Orb of Horizons" "Engineer's Orb" 
 	SetFontSize 45
 	SetTextColor 255 0 255 # Currency (High)
 	SetBackgroundColor 20 0 20 230 # Currency (High)
@@ -604,37 +577,31 @@ Show  # 5+ Links - 5L (Leveling)
 	SetBorderColor 255 0 0 # 5+ Link
 	PlayAlertSound 4 200 # Mid Value
 
-#Disabled Block Start
-#Show  # 5+ Links - 5L Bows
-#	LinkedSockets = 5
-#	Class Bows
-#	BaseType "Crude Bow" "Short Bow" "Royal Bow" "Grove Bow" "Thicket Bow" "Harbinger Bow"
-#	SetFontSize 40
-#	SetTextColor 255 0 0 # 5+ Link
-#	SetBackgroundColor 50 50 50 230 # 5+ Link (Mid)
-#	SetBorderColor 255 0 0 # 5+ Link
-#Disabled Block End
+Show  # 5+ Links - 5L Bows
+	LinkedSockets = 5
+	Class Bows
+	BaseType "Crude Bow" "Short Bow" "Royal Bow" "Grove Bow" "Thicket Bow" "Harbinger Bow"
+	SetFontSize 40
+	SetTextColor 255 0 0 # 5+ Link
+	SetBackgroundColor 50 50 50 230 # 5+ Link (Mid)
+	SetBorderColor 255 0 0 # 5+ Link
 
-#Disabled Block Start
-#Show  # 5+ Links - 5L Staves
-#	LinkedSockets = 5
-#	Class Staves
-#	SetFontSize 40
-#	SetTextColor 255 0 0 # 5+ Link
-#	SetBackgroundColor 50 50 50 230 # 5+ Link (Mid)
-#	SetBorderColor 255 0 0 # 5+ Link
-#Disabled Block End
+Show  # 5+ Links - 5L Staves
+	LinkedSockets = 5
+	Class Staves
+	SetFontSize 40
+	SetTextColor 255 0 0 # 5+ Link
+	SetBackgroundColor 50 50 50 230 # 5+ Link (Mid)
+	SetBorderColor 255 0 0 # 5+ Link
 
-#Disabled Block Start
-#Show  # 5+ Links - 5L Body Armour (High Drop Level)
-#	LinkedSockets = 5
-#	Class "Body Armour"
-#	DropLevel >= 56
-#	SetFontSize 40
-#	SetTextColor 255 0 0 # 5+ Link
-#	SetBackgroundColor 50 50 50 230 # 5+ Link (Mid)
-#	SetBorderColor 255 0 0 # 5+ Link
-#Disabled Block End
+Show  # 5+ Links - 5L Body Armour (High Drop Level)
+	LinkedSockets = 5
+	Class "Body Armour"
+	DropLevel >= 56
+	SetFontSize 40
+	SetTextColor 255 0 0 # 5+ Link
+	SetBackgroundColor 50 50 50 230 # 5+ Link (Mid)
+	SetBorderColor 255 0 0 # 5+ Link
 
 #Disabled Block Start
 #Show  # 5+ Links - 5L Two Hand Weapons (High Drop Level)
@@ -764,14 +731,16 @@ Hide  # Vendor Recipes - Chromatics (RGB) - Leveling - Normal
 # Chisels #
 #---------#
 
-Hide  # Vendor Recipes - Chisels - Leveling - Other
-	Class "One Hand Maces"
-	BaseType Gavel "Rock Breaker" "Stone Hammer"
-	Rarity = Normal
-	ItemLevel < 67
-	SetFontSize 36
-	SetBackgroundColor 30 30 30 # Chisel Recipe
-	SetBorderColor 0 0 0 # Chisel Recipe
+#Disabled Block Start
+#Show  # Vendor Recipes - Chisels - Leveling - Other
+#	Class "One Hand Maces"
+#	BaseType Gavel "Rock Breaker" "Stone Hammer"
+#	Rarity = Normal
+#	ItemLevel < 67
+#	SetFontSize 36
+#	SetBackgroundColor 30 30 30 # Chisel Recipe
+#	SetBorderColor 0 0 0 # Chisel Recipe
+#Disabled Block End
 
 #Disabled Block Start
 #Show  # Vendor Recipes - Chisels - Mapping (Low) - Other
@@ -950,7 +919,7 @@ Show  # Stygian Vises - Rare - Leveling
 #	SetBorderColor 220 0 0 # Stygian Vise
 #Disabled Block End
 
-Stygian  # Stygian Vises - Rare - Mapping (High)
+Show  # Stygian Vises - Rare - Mapping (High)
 	BaseType "Stygian Vise"
 	Rarity = Rare
 	SetFontSize 40
@@ -1493,15 +1462,13 @@ Show  # Jewels - Rare - Leveling
 	SetBorderColor 0 220 220 # Jewel (Rare)
 	PlayAlertSound 6 200 # Jewel
 
-#Disabled Block Start
-#Show  # Jewels - Rare - Mapping (Low)
-#	Class Jewel
-#	Rarity = Rare
-#	ItemLevel < 73
-#	SetFontSize 45
-#	SetBackgroundColor 0 0 0 # Jewel (Rare)
-#	SetBorderColor 0 220 220 # Jewel (Rare)
-#Disabled Block End
+Show  # Jewels - Rare - Mapping (Low)
+	Class Jewel
+	Rarity = Rare
+	ItemLevel < 73
+	SetFontSize 45
+	SetBackgroundColor 0 0 0 # Jewel (Rare)
+	SetBorderColor 0 220 220 # Jewel (Rare)
 
 #Disabled Block Start
 #Show  # Jewels - Rare - Mapping (Mid)
@@ -1568,12 +1535,13 @@ Show  # Gems - Quality - 10%+
 	SetTextColor 55 225 185 # Gem Quality (Mid)
 	SetBackgroundColor 50 50 50 # Gem Quality (Mid)
 	SetBorderColor 200 200 200 # Gem Quality (Mid)
+	PlayAlertSound 6 200 # Gem
 
 #-----#
 # Low #
 #-----#
 
-Hide  # Gems - Quality - 5%+
+Show  # Gems - Quality - 5%+
 	Quality >= 5
 	Class "Skill Gems"
 	SetFontSize 40
@@ -1581,7 +1549,7 @@ Hide  # Gems - Quality - 5%+
 	SetBackgroundColor 8 30 25 # Gem Quality (Low)
 	SetBorderColor 130 130 130 # Gem Quality (Low)
 
-Hide  # Gems - Drop Only - Nearly Worthless
+Show  # Gems - Drop Only - Nearly Worthless
 	Class "Skill Gems"
 	BaseType "Vaal Cyclone" "Vaal Clarity" "Vaal Lightning Trap" "Vaal Spark" "Vaal Fireball" "Added Chaos Damage"
 	SetFontSize 40
@@ -1686,21 +1654,21 @@ Show  # Maps - T11+ (Red) - Other
 # Yellow #
 #--------#
 
-Show  # Maps - T6+ (Yellow) - Silent - T6-8 in T12+ - Shaped
+Show  # Maps - T6+ (Yellow) - Silent - T6-8 in T13+ - Shaped
 	ShapedMap True
-	DropLevel <= 70
-	ItemLevel >= 79
+	DropLevel < 71
+	ItemLevel >= 80
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (Yellow)
 	SetBackgroundColor 255 255 0 200 # Map (Yellow)
 	SetBorderColor 0 0 0 # Map (Yellow)
 	DisableDropSound
 
-Show  # Maps - T6+ (Yellow) - Silent - T6-8 in T12+ - Other
+Show  # Maps - T6+ (Yellow) - Silent - T6-8 in T13+ - Other
 	Class Maps
 	DropLevel >= 73
-	DropLevel <= 75
-	ItemLevel >= 79
+	DropLevel < 76
+	ItemLevel >= 80
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (Yellow)
 	SetBackgroundColor 255 255 0 200 # Map (Yellow)
@@ -1728,26 +1696,6 @@ Show  # Maps - T6+ (Yellow) - Sound - Other
 #-------#
 # White #
 #-------#
-
-Hide  # Maps - Low Drop Level - T1-5 in T11+
-	Class Maps
-	DropLevel < 73
-	ItemLevel >= 78
-	SetFontSize 45
-	SetTextColor 0 0 0 # Map (White)
-	SetBackgroundColor 235 235 255 200 # Map (White)
-	SetBorderColor 0 0 0 # Map (White)
-	DisableDropSound
-
-Hide  # Maps - Low Drop Level - T1-3 in T9+
-	Class Maps
-	DropLevel < 71
-	ItemLevel >= 76
-	SetFontSize 45
-	SetTextColor 0 0 0 # Map (White)
-	SetBackgroundColor 235 235 255 200 # Map (White)
-	SetBorderColor 0 0 0 # Map (White)
-	DisableDropSound
 
 Show  # Maps - T1+ (White) - Silent - T1-5 in T9+
 	Class Maps
@@ -1849,7 +1797,7 @@ Show  # Uniques - 10c+
 
 Show  # Uniques - 2-10c
 	Rarity = Unique
-	BaseType "Sanctified Life Flask" "Abyssal Axe" "Amber Amulet" "Archon Kite Shield" "Assassin's Boots" "Bismuth Flask" "Cardinal Round Shield" "Citadel Bow" "Coronal Leather" "Ebony Tower Shield" "Goathide Boots" "Gold Amulet" "Gold Ring" "Granite Flask" "Harlequin Mask" "Imperial Bow" "Imperial Claw" "Jade Amulet" "Jasper Chopper" "Jingling Spirit Shield" "Lapis Amulet" "Leather Cap" "Lion Pelt" "Midnight Blade" "Necromancer Silks" "Onyx Amulet" "Paua Ring" "Prismatic Ring" "Raven Mask" "Ritual Sceptre" "Silken Hood" "Titan Greaves" "Two-Stone Ring" "Ursine Pelt" "Vanguard Belt" "Varnished Coat"
+	BaseType "Saintly Chainmail" "Sanctified Life Flask" "Abyssal Axe" "Amber Amulet" "Archon Kite Shield" "Assassin's Boots" "Bismuth Flask" "Cardinal Round Shield" "Citadel Bow" "Coronal Leather" "Ebony Tower Shield" "Goathide Boots" "Gold Amulet" "Gold Ring" "Granite Flask" "Harlequin Mask" "Imperial Bow" "Imperial Claw" "Jade Amulet" "Jasper Chopper" "Jingling Spirit Shield" "Lapis Amulet" "Leather Cap" "Lion Pelt" "Midnight Blade" "Necromancer Silks" "Onyx Amulet" "Paua Ring" "Prismatic Ring" "Raven Mask" "Ritual Sceptre" "Silken Hood" "Titan Greaves" "Two-Stone Ring" "Ursine Pelt" "Vanguard Belt" "Varnished Coat"
 	SetFontSize 45
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
@@ -1896,16 +1844,14 @@ Show  # Uniques - <1c - ilvl <67
 	SetBorderColor 180 90 45 # Unique (<1c)
 	PlayAlertSound 4 200 # Mid Value
 
-#Disabled Block Start
-#Show  # Uniques - <1c - League
-#	Rarity = Unique
-#	BaseType "Enameled Buckler" "Necromancer Circlet" "Painted Tower Shield" "Serpentscale Boots" "Shadow Sceptre" "Spiraled Wand"
-#	SetFontSize 40
-#	SetTextColor 255 128 64 # Unique
-#	SetBackgroundColor 50 25 12 # Unique
-#	SetBorderColor 180 90 45 # Unique (<1c)
-#	DisableDropSound
-#Disabled Block End
+Show  # Uniques - <1c - League
+	Rarity = Unique
+	BaseType "Enameled Buckler" "Necromancer Circlet" "Painted Tower Shield" "Serpentscale Boots" "Shadow Sceptre" "Spiraled Wand"
+	SetFontSize 40
+	SetTextColor 255 128 64 # Unique
+	SetBackgroundColor 50 25 12 # Unique
+	SetBorderColor 180 90 45 # Unique (<1c)
+	DisableDropSound
 
 Show  # Uniques - <1c - Boss Prophecy
 	Rarity = Unique
@@ -1947,7 +1893,7 @@ Show  # Uniques - <1c - Shared
 #	DisableDropSound
 #Disabled Block End
 
-Hide  # Uniques - New or Worthless
+Show  # Uniques - New or Worthless
 	Rarity = Unique
 	SetFontSize 40
 	SetTextColor 255 128 64 # Unique
@@ -2003,7 +1949,7 @@ Show  # Divination Cards - <1c
 	SetTextColor 0 0 0 # Divination Card (<1c)
 	SetBackgroundColor 255 0 175 230 # Divination Card (<1c)
 	SetBorderColor 150 30 100 # Divination Card (<1c)
-	PlayAlertSound 5 0 # Divination Card (Nearly Worthless)
+	PlayAlertSound 5 100 # Divination Card (Low)
 
 Hide  # Divination Cards - Nearly Worthless
 	Class Divination
@@ -2012,6 +1958,7 @@ Hide  # Divination Cards - Nearly Worthless
 	SetTextColor 0 0 0 # Divination Card (Nearly Worthless)
 	SetBackgroundColor 255 0 175 170 # Divination Card (Nearly Worthless)
 	SetBorderColor 0 0 0 # Divination Card (Nearly Worthless)
+	PlayAlertSound 5 0 # Divination Card (Nearly Worthless)
 	DisableDropSound
 
 Hide  # Divination Cards - Worthless
@@ -2040,7 +1987,7 @@ Show  # Divination Cards - New (Error)
 # Utility #
 #---------#
 
-Hide  # Flasks - Utility - Leveling - 5%+ Quality
+Show  # Flasks - Utility - Leveling - 5%+ Quality
 	Quality >= 5
 	Class "Utility Flasks"
 	ItemLevel < 68
@@ -2048,7 +1995,7 @@ Hide  # Flasks - Utility - Leveling - 5%+ Quality
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 200 200 200 # Quality (Bright)
 
-Hide  # Flasks - Utility - Leveling - Other
+Show  # Flasks - Utility - Leveling - Other
 	Class "Utility Flasks"
 	ItemLevel < 68
 	SetFontSize 40
@@ -2251,7 +2198,7 @@ Show  # Crafting Bases - Shaper - Amulets
 	SetBorderColor 220 0 0 # Rare Accessory
 	PlayAlertSound 4 200 # Mid Value
 
-Hide  # Crafting Bases - Shaper - 84+ Jewelry
+Show  # Crafting Bases - Shaper - 84+ Jewelry
 	ShaperItem True
 	Class Rings Amulets Belts
 	ItemLevel >= 84
@@ -2259,7 +2206,7 @@ Hide  # Crafting Bases - Shaper - 84+ Jewelry
 	SetFontSize 45
 	SetBackgroundColor 50 20 70 230 # Shaper Elder 83+
 
-Hide  # Crafting Bases - Shaper - 83+ Weapons
+Show  # Crafting Bases - Shaper - 83+ Weapons
 	ShaperItem True
 	Class "One Hand" "Two Hand" Bows Staves Daggers Wands Claws Sceptres
 	ItemLevel >= 83
@@ -2268,7 +2215,7 @@ Hide  # Crafting Bases - Shaper - 83+ Weapons
 	SetFontSize 45
 	SetBackgroundColor 50 20 70 230 # Shaper Elder 83+
 
-Hide  # Crafting Bases - Shaper - 84+ Armour Shields Quivers
+Show  # Crafting Bases - Shaper - 84+ Armour Shields Quivers
 	ShaperItem True
 	Class Gloves Boots Helmets Shields Quivers
 	ItemLevel >= 84
@@ -2277,7 +2224,7 @@ Hide  # Crafting Bases - Shaper - 84+ Armour Shields Quivers
 	SetFontSize 45
 	SetBackgroundColor 50 20 70 230 # Shaper Elder 83+
 
-Hide  # Crafting Bases - Shaper - 84+ Body Armour
+Show  # Crafting Bases - Shaper - 84+ Body Armour
 	ShaperItem True
 	Class "Body Armours"
 	ItemLevel >= 84
@@ -2306,7 +2253,7 @@ Show  # Crafting Bases - Elder - Amulets
 	SetBorderColor 220 0 0 # Rare Accessory
 	PlayAlertSound 4 200 # Mid Value
 
-Hide  # Crafting Bases - Elder - 84+ Jewelry
+Show  # Crafting Bases - Elder - 84+ Jewelry
 	ElderItem True
 	Class Rings Amulets Belts
 	ItemLevel >= 84
@@ -2314,7 +2261,7 @@ Hide  # Crafting Bases - Elder - 84+ Jewelry
 	SetFontSize 45
 	SetBackgroundColor 50 20 70 230 # Shaper Elder 83+
 
-Hide  # Crafting Bases - Elder - 83+ Weapons
+Show  # Crafting Bases - Elder - 83+ Weapons
 	ElderItem True
 	Class "One Hand" "Two Hand" Bows Staves Daggers Wands Claws Sceptres
 	ItemLevel >= 83
@@ -2323,7 +2270,7 @@ Hide  # Crafting Bases - Elder - 83+ Weapons
 	SetFontSize 45
 	SetBackgroundColor 50 20 70 230 # Shaper Elder 83+
 
-Hide  # Crafting Bases - Elder - 84+ Armour Shields Quivers
+Show  # Crafting Bases - Elder - 84+ Armour Shields Quivers
 	ElderItem True
 	Class Gloves Boots Helmets Shields Quivers
 	ItemLevel >= 84
@@ -2332,7 +2279,7 @@ Hide  # Crafting Bases - Elder - 84+ Armour Shields Quivers
 	SetFontSize 45
 	SetBackgroundColor 50 20 70 230 # Shaper Elder 83+
 
-Hide  # Crafting Bases - Elder - 84+ Body Armour
+Show  # Crafting Bases - Elder - 84+ Body Armour
 	ElderItem True
 	Class "Body Armours"
 	ItemLevel >= 84
@@ -2754,7 +2701,7 @@ Show  # Elder Rares - Accessories - 75+
 	SetBorderColor 220 0 0 # Rare Accessory
 	PlayAlertSound 4 0 # Shaper Elder Rare 75+
 
-Hide  # 75+ Rares - Accessories
+Show  # 75+ Rares - Accessories
 	Class Belts Amulets Rings
 	ItemLevel >= 75
 	SetFontSize 45
@@ -2783,7 +2730,7 @@ Show  # Elder Rares - Accessories - 60+
 	SetBorderColor 220 0 0 # Rare Accessory
 	PlayAlertSound 4 0 # Shaper Elder Rare 60+
 
-Hide  # 60+ Rares - Accessories
+Show  # 60+ Rares - Accessories
 	Class Belts Amulets Rings
 	ItemLevel >= 60
 	SetFontSize 45
@@ -2889,25 +2836,21 @@ Hide  # 60+ Rares - Low Drop Level - Elder - Weapons Shields
 #	SetBorderColor 170 170 85 # Rare Recipe 84+ (Valuable)
 #Disabled Block End
 
-#Disabled Block Start
-#Show  # Highlighted Rares - Top Tier - Body Armour - Vaal Regalia - 84+
-#	Class "Body Armour"
-#	ItemLevel >= 84
-#	BaseType "Vaal Regalia"
-#	SetFontSize 40
-#	SetBackgroundColor 20 80 55 240 # Rare Recipe 84+ (Valuable)
-#	SetBorderColor 170 170 85 # Rare Recipe 84+ (Valuable)
-#Disabled Block End
+Show  # Highlighted Rares - Top Tier - Body Armour - Vaal Regalia - 84+
+	Class "Body Armour"
+	ItemLevel >= 84
+	BaseType "Vaal Regalia"
+	SetFontSize 40
+	SetBackgroundColor 20 80 55 240 # Rare Recipe 84+ (Valuable)
+	SetBorderColor 170 170 85 # Rare Recipe 84+ (Valuable)
 
-#Disabled Block Start
-#Show  # Highlighted Rares - Top Tier - Helmets - Hubris Circlet - 84+
-#	Class Helmets
-#	ItemLevel >= 84
-#	BaseType "Hubris Circlet"
-#	SetFontSize 40
-#	SetBackgroundColor 20 80 55 240 # Rare Recipe 84+ (Valuable)
-#	SetBorderColor 170 170 85 # Rare Recipe 84+ (Valuable)
-#Disabled Block End
+Show  # Highlighted Rares - Top Tier - Helmets - Hubris Circlet - 84+
+	Class Helmets
+	ItemLevel >= 84
+	BaseType "Hubris Circlet"
+	SetFontSize 40
+	SetBackgroundColor 20 80 55 240 # Rare Recipe 84+ (Valuable)
+	SetBorderColor 170 170 85 # Rare Recipe 84+ (Valuable)
 
 #Disabled Block Start
 #Show  # Highlighted Rares - Armour - Str - 84+
@@ -3008,16 +2951,14 @@ Hide  # 60+ Rares - Low Drop Level - Elder - Weapons Shields
 #------------------------------------#
 # 83+ for T1 physical damage mods
 
-#Disabled Block Start
-#Show  # Highlighted Rares - Top Tier - Bows - Harbinger Bow - 83+
-#	Class Bows
-#	ItemLevel >= 83
-#	BaseType "Harbinger Bow"
-#	SetFontSize 40
-#	SetTextColor 255 190 75 # Rare Weapon
-#	SetBackgroundColor 20 80 55 240 # Rare Recipe 84+ (Valuable)
-#	SetBorderColor 200 150 60 # Rare Weapon 83+ (Valuable)
-#Disabled Block End
+Show  # Highlighted Rares - Top Tier - Bows - Harbinger Bow - 83+
+	Class Bows
+	ItemLevel >= 83
+	BaseType "Harbinger Bow"
+	SetFontSize 40
+	SetTextColor 255 190 75 # Rare Weapon
+	SetBackgroundColor 20 80 55 240 # Rare Recipe 84+ (Valuable)
+	SetBorderColor 200 150 60 # Rare Weapon 83+ (Valuable)
 
 #Disabled Block Start
 #Show  # Highlighted Rares - Two Hand Weapons - Axes - 83+
@@ -3079,60 +3020,50 @@ Hide  # 60+ Rares - Low Drop Level - Elder - Weapons Shields
 #------------------------------------#
 # 83+ for T1 physical damage mods
 
-#Disabled Block Start
-#Show  # Highlighted Rares - Top Tier - Wands - Imbued Wand - 83+
-#	Class Wands
-#	ItemLevel >= 83
-#	BaseType "Imbued Wand"
-#	SetFontSize 40
-#	SetTextColor 255 190 75 # Rare Weapon
-#	SetBackgroundColor 80 55 20 240 # Rare Weapon 83+ (Highlighted)
-#	SetBorderColor 170 125 50 # Rare Weapon 83+ (Highlighted)
-#Disabled Block End
+Show  # Highlighted Rares - Top Tier - Wands - Imbued Wand - 83+
+	Class Wands
+	ItemLevel >= 83
+	BaseType "Imbued Wand"
+	SetFontSize 40
+	SetTextColor 255 190 75 # Rare Weapon
+	SetBackgroundColor 80 55 20 240 # Rare Weapon 83+ (Highlighted)
+	SetBorderColor 170 125 50 # Rare Weapon 83+ (Highlighted)
 
-#Disabled Block Start
-#Show  # Highlighted Rares - Top Tier - One Hand Axes - Siege Axe - 83+
-#	Class "One Hand Axes"
-#	ItemLevel >= 83
-#	BaseType "Siege Axe"
-#	SetFontSize 40
-#	SetTextColor 255 190 75 # Rare Weapon
-#	SetBackgroundColor 80 55 20 240 # Rare Weapon 83+ (Highlighted)
-#	SetBorderColor 170 125 50 # Rare Weapon 83+ (Highlighted)
-#Disabled Block End
+Show  # Highlighted Rares - Top Tier - One Hand Axes - Siege Axe - 83+
+	Class "One Hand Axes"
+	ItemLevel >= 83
+	BaseType "Siege Axe"
+	SetFontSize 40
+	SetTextColor 255 190 75 # Rare Weapon
+	SetBackgroundColor 80 55 20 240 # Rare Weapon 83+ (Highlighted)
+	SetBorderColor 170 125 50 # Rare Weapon 83+ (Highlighted)
 
-#Disabled Block Start
-#Show  # Highlighted Rares - Top Tier - Claws - Imperial Claw - 83+
-#	Class Claws
-#	ItemLevel >= 83
-#	BaseType "Imperial Claw"
-#	SetFontSize 40
-#	SetTextColor 255 190 75 # Rare Weapon
-#	SetBackgroundColor 80 55 20 240 # Rare Weapon 83+ (Highlighted)
-#	SetBorderColor 170 125 50 # Rare Weapon 83+ (Highlighted)
-#Disabled Block End
+Show  # Highlighted Rares - Top Tier - Claws - Imperial Claw - 83+
+	Class Claws
+	ItemLevel >= 83
+	BaseType "Imperial Claw"
+	SetFontSize 40
+	SetTextColor 255 190 75 # Rare Weapon
+	SetBackgroundColor 80 55 20 240 # Rare Weapon 83+ (Highlighted)
+	SetBorderColor 170 125 50 # Rare Weapon 83+ (Highlighted)
 
-#Disabled Block Start
-#Show  # Highlighted Rares - Top Tier - Daggers - Imperial Skean - 83+
-#	Class Daggers
-#	ItemLevel >= 83
-#	BaseType "Imperial Skean"
-#	SetFontSize 40
-#	SetTextColor 255 190 75 # Rare Weapon
-#	SetBackgroundColor 80 55 20 240 # Rare Weapon 83+ (Highlighted)
-#	SetBorderColor 170 125 50 # Rare Weapon 83+ (Highlighted)
-#Disabled Block End
+Show  # Highlighted Rares - Top Tier - Daggers - Imperial Skean - 83+
+	Class Daggers
+	ItemLevel >= 83
+	BaseType "Imperial Skean"
+	SetFontSize 40
+	SetTextColor 255 190 75 # Rare Weapon
+	SetBackgroundColor 80 55 20 240 # Rare Weapon 83+ (Highlighted)
+	SetBorderColor 170 125 50 # Rare Weapon 83+ (Highlighted)
 
-#Disabled Block Start
-#Show  # Highlighted Rares - Top Tier - Daggers - Ambusher - 83+
-#	Class Daggers
-#	ItemLevel >= 83
-#	BaseType "Ambusher"
-#	SetFontSize 40
-#	SetTextColor 255 190 75 # Rare Weapon
-#	SetBackgroundColor 80 55 20 240 # Rare Weapon 83+ (Highlighted)
-#	SetBorderColor 170 125 50 # Rare Weapon 83+ (Highlighted)
-#Disabled Block End
+Show  # Highlighted Rares - Top Tier - Daggers - Ambusher - 83+
+	Class Daggers
+	ItemLevel >= 83
+	BaseType "Ambusher"
+	SetFontSize 40
+	SetTextColor 255 190 75 # Rare Weapon
+	SetBackgroundColor 80 55 20 240 # Rare Weapon 83+ (Highlighted)
+	SetBorderColor 170 125 50 # Rare Weapon 83+ (Highlighted)
 
 #Disabled Block Start
 #Show  # Highlighted Rares - Top Tier - One Hand Swords - Corsair Sword - 83+
@@ -3145,16 +3076,14 @@ Hide  # 60+ Rares - Low Drop Level - Elder - Weapons Shields
 #	SetBorderColor 170 125 50 # Rare Weapon 83+ (Highlighted)
 #Disabled Block End
 
-#Disabled Block Start
-#Show  # Highlighted Rares - Top Tier - One Hand Swords - Jewelled/Spiraled Foil - 83+
-#	Class "One Hand Swords"
-#	ItemLevel >= 83
-#	BaseType "Jewelled Foil" "Spiraled Foil"
-#	SetFontSize 40
-#	SetTextColor 255 190 75 # Rare Weapon
-#	SetBackgroundColor 80 55 20 240 # Rare Weapon 83+ (Highlighted)
-#	SetBorderColor 170 125 50 # Rare Weapon 83+ (Highlighted)
-#Disabled Block End
+Show  # Highlighted Rares - Top Tier - One Hand Swords - Jewelled/Spiraled Foil - 83+
+	Class "One Hand Swords"
+	ItemLevel >= 83
+	BaseType "Jewelled Foil" "Spiraled Foil"
+	SetFontSize 40
+	SetTextColor 255 190 75 # Rare Weapon
+	SetBackgroundColor 80 55 20 240 # Rare Weapon 83+ (Highlighted)
+	SetBorderColor 170 125 50 # Rare Weapon 83+ (Highlighted)
 
 #Disabled Block Start
 #Show  # Highlighted Rares - One Hand Weapons - Axes - 83+
@@ -3237,28 +3166,24 @@ Hide  # 60+ Rares - Low Drop Level - Elder - Weapons Shields
 # 84+ Shields (Highlighted) #
 #---------------------------#
 
-#Disabled Block Start
-#Show  # Highlighted Rares - Top Tier - Shields - Titanium Spirit Shield - 84+
-#	Class Shields
-#	ItemLevel >= 84
-#	BaseType "Titanium Spirit Shield"
-#	SetFontSize 40
-#	SetTextColor 255 190 75 # Rare Weapon
-#	SetBackgroundColor 80 55 20 240 # Rare Weapon 83+ (Valuable)
-#	SetBorderColor 200 150 60 # Rare Weapon 83+ (Valuable)
-#Disabled Block End
+Show  # Highlighted Rares - Top Tier - Shields - Titanium Spirit Shield - 84+
+	Class Shields
+	ItemLevel >= 84
+	BaseType "Titanium Spirit Shield"
+	SetFontSize 40
+	SetTextColor 255 190 75 # Rare Weapon
+	SetBackgroundColor 80 55 20 240 # Rare Weapon 83+ (Valuable)
+	SetBorderColor 200 150 60 # Rare Weapon 83+ (Valuable)
 
-#Disabled Block Start
-#Show  # Highlighted Rares - Top Tier - Shields - Lacquered Buckler - 84+
-#	Class Shields
-#	DropLevel >= 60
-#	ItemLevel >= 84
-#	BaseType "Lacquered Buckler"
-#	SetFontSize 40
-#	SetTextColor 255 190 75 # Rare Weapon
-#	SetBackgroundColor 80 55 20 240 # Rare Weapon 83+ (Highlighted)
-#	SetBorderColor 170 125 50 # Rare Weapon 83+ (Highlighted)
-#Disabled Block End
+Show  # Highlighted Rares - Top Tier - Shields - Lacquered Buckler - 84+
+	Class Shields
+	DropLevel >= 60
+	ItemLevel >= 84
+	BaseType "Lacquered Buckler"
+	SetFontSize 40
+	SetTextColor 255 190 75 # Rare Weapon
+	SetBackgroundColor 80 55 20 240 # Rare Weapon 83+ (Highlighted)
+	SetBorderColor 170 125 50 # Rare Weapon 83+ (Highlighted)
 
 #Disabled Block Start
 #Show  # Highlighted Rares - Shields - 84+
@@ -3452,7 +3377,7 @@ Show  # Elder Rares - Quivers - 84+ Valuable
 # 84+ Armour #
 #------------#
 
-Hide  # 83+ Rares - Gloves
+Show  # 83+ Rares - Gloves
 	DropLevel >= 56
 	Class Gloves
 	ItemLevel >= 84
@@ -3460,7 +3385,7 @@ Hide  # 83+ Rares - Gloves
 	SetBackgroundColor 20 80 55 240 # Rare Recipe 83+
 	SetBorderColor 0 0 0 # Rare Recipe 83+
 
-Hide  # 83+ Rares - Boots
+Show  # 83+ Rares - Boots
 	DropLevel >= 56
 	Class Boots
 	ItemLevel >= 84
@@ -3468,7 +3393,7 @@ Hide  # 83+ Rares - Boots
 	SetBackgroundColor 20 80 55 240 # Rare Recipe 83+
 	SetBorderColor 0 0 0 # Rare Recipe 83+
 
-Hide  # 83+ Rares - Helmets
+Show  # 83+ Rares - Helmets
 	DropLevel >= 59
 	Class Helmets
 	ItemLevel >= 84
@@ -3476,7 +3401,7 @@ Hide  # 83+ Rares - Helmets
 	SetBackgroundColor 20 80 55 240 # Rare Recipe 83+
 	SetBorderColor 0 0 0 # Rare Recipe 83+
 
-Hide  # 83+ Rares - Body Armour
+Show  # 83+ Rares - Body Armour
 	DropLevel >= 62
 	Class "Body Armours"
 	ItemLevel >= 84
@@ -3488,7 +3413,7 @@ Hide  # 83+ Rares - Body Armour
 # 83+ Two Hand Weapons #
 #----------------------#
 
-Hide  # 83+ Rares - Two Hand Weapons
+Show  # 83+ Rares - Two Hand Weapons
 	DropLevel >= 56
 	Class "Two Hand" Bows Staves
 	ItemLevel >= 83
@@ -3503,7 +3428,7 @@ Hide  # 83+ Rares - Two Hand Weapons
 #----------------------#
 # 83+ for T1 physical damage mods
 
-Hide  # 83+ Rares - One Hand Weapons
+Show  # 83+ Rares - One Hand Weapons
 	DropLevel >= 56
 	Class "One Hand" Daggers Wands Claws Sceptres
 	ItemLevel >= 83
@@ -3517,7 +3442,7 @@ Hide  # 83+ Rares - One Hand Weapons
 # 84+ Shields #
 #-------------#
 
-Hide  # 83+ Rares - Shields
+Show  # 83+ Rares - Shields
 	DropLevel >= 60
 	Class Shields
 	ItemLevel >= 84
@@ -3530,7 +3455,7 @@ Hide  # 83+ Rares - Shields
 # 84+ Quivers #
 #-------------#
 
-Hide  # 83+ Rares - Quivers
+Show  # 83+ Rares - Quivers
 	Class Quivers
 	ItemLevel >= 84
 	BaseType "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver"

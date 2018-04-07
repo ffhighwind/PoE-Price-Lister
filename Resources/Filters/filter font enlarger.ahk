@@ -5,8 +5,8 @@ If (A_AhkVersion <= "1.1.23")
     exit
 }
 
-filtersIn := ["S_Mapping_Highwind.filter", "S_Regular_Highwind.filter", "S_Strict_Highwind.filter", "S_Very_Strict_Highwind.filter"]
-filtersOut := ["L_Mapping_Highwind.filter", "L_Regular_Highwind.filter", "L_Strict_Highwind.filter", "L_Very_Strict_Highwind.filter"]
+filtersIn := ["S1_Regular_Highwind.filter", "S2_Mapping_Highwind.filter", "S3_Strict_Highwind.filter", "S4_Very_Strict_Highwind.filter"]
+filtersOut := ["L1_Regular_Highwind.filter", "L2_Mapping_Highwind.filter", "L3_Strict_Highwind.filter", "L4_Very_Strict_Highwind.filter"]
 
 Loop, 4
 {

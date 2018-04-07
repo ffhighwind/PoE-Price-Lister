@@ -1,7 +1,7 @@
 ############################################
-##    HIGHWIND'S MAPPING FILTER 3.2.17    ##
+##      HIGHWIND'S LOOT FILTER 3.2.18     ##
 ############################################
-## Release Date: April 4, 2018            ##
+## Release Date: April 7, 2018            ##
 ############################################
 
 #--------------#
@@ -240,7 +240,7 @@ Show  # Currency - League Specific - Perandus Coins
 
 Show  # Currency - League Specific - Essences (Low)
 	Class Currency
-	BaseType "Wailing Essence"
+	BaseType "Wailing Essence" "Weeping Essence" "Whispering Essence" "Muttering Essence"
 	SetFontSize 40
 	SetTextColor 220 190 155 # Currency (Low Essence)
 	SetBackgroundColor 55 50 40 # Currency (Low Essence)
@@ -305,32 +305,29 @@ Show  # Currency - League Specific - Harbinger (Nearly Worthless)
 	SetBackgroundColor 30 30 50 225 # Currency (Very Low Harbinger)
 	SetBorderColor 0 0 0 # Currency (Very Low Harbinger)
 
-Hide  # Currency - League Specific - Harbinger (Worthless)
+Show  # Currency - League Specific - Harbinger (Worthless)
 	Class Currency
 	BaseType "Engineer's Shard"
 	SetFontSize 36
 	SetTextColor 220 190 155 # Currency (Very Low Harbinger)
 	SetBackgroundColor 30 30 50 225 # Currency (Very Low Harbinger)
 	SetBorderColor 0 0 0 # Currency (Very Low Harbinger)
-	DisableDropSound
 
-Hide  # Currency - League Specific - Bestiary (Nearly Worthless)
+Show  # Currency - League Specific - Bestiary (Nearly Worthless)
 	Class "Stackable Currency"
-	BaseType "Simple Rope Net" "Reinforced Rope Net" "Strong Rope Net" "Simple Iron Net" "Reinforced Iron Net" "Strong Iron Net" "Simple Steel Net"
-	SetFontSize 40
+	BaseType "Simple Rope Net" "Reinforced Rope Net" "Strong Rope Net" "Simple Iron Net" "Reinforced Iron Net" "Strong Iron Net" "Simple Steel Net" "Reinforced Steel Net"
+	SetFontSize 45
 	SetTextColor 185 172 141 # Bestiary (Low)
 	SetBackgroundColor 0 0 0 225 # Bestiary (Low)
 	SetBorderColor 0 0 0 0 # Bestiary (Low)
-	DisableDropSound
 
 Show  # Currency - League Specific - Bestiary (Low)
 	Class "Stackable Currency"
 	BaseType "Reinforced Steel Net" "Strong Steel Net"
-	SetFontSize 40
+	SetFontSize 45
 	SetTextColor 185 172 141 # Bestiary (Low)
 	SetBackgroundColor 0 0 0 225 # Bestiary (Low)
 	SetBorderColor 0 0 0 0 # Bestiary (Low)
-	DisableDropSound
 
 Show  # Currency - League Specific - Bestiary (Mid)
 	Class "Stackable Currency"
@@ -355,21 +352,20 @@ Show  # Currency - League Specific - Bestiary (High)
 
 Hide  # Currency - Worthless
 	Class Currency
-	BaseType "Scroll Fragment" "Transmutation Shard" "Alteration Shard" "Whispering Essence" "Muttering Essence"
+	BaseType "Scroll Fragment" "Transmutation Shard" "Alteration Shard"
 	SetFontSize 24
 	SetTextColor 185 172 141 # Currency (Worthless)
 	SetBackgroundColor 0 0 0 180 # Currency (Worthless)
 	SetBorderColor 0 0 0 0 # Currency (Worthless)
 	DisableDropSound
 
-Hide  # Currency - Nearly Worthless (Low)
+Show  # Currency - Nearly Worthless (Low)
 	Class Currency
-	BaseType "Scroll of Wisdom" "Weeping Essence"
+	BaseType "Scroll of Wisdom"
 	SetFontSize 40
 	SetTextColor 185 172 141 # Currency (Nearly Worthless)
 	SetBackgroundColor 0 0 0 225 # Currency (Nearly Worthless)
 	SetBorderColor 0 0 0 0 # Currency (Nearly Worthless)
-	DisableDropSound
 
 Show  # Currency - Nearly Worthless (High)
 	Class Currency
@@ -592,6 +588,7 @@ Show  # 5+ Links - 5L Bows
 	SetTextColor 255 0 0 # 5+ Link
 	SetBackgroundColor 50 50 50 230 # 5+ Link (Mid)
 	SetBorderColor 255 0 0 # 5+ Link
+	PlayAlertSound 4 200 # Mid Value
 
 Show  # 5+ Links - 5L Staves
 	LinkedSockets = 5
@@ -600,6 +597,7 @@ Show  # 5+ Links - 5L Staves
 	SetTextColor 255 0 0 # 5+ Link
 	SetBackgroundColor 50 50 50 230 # 5+ Link (Mid)
 	SetBorderColor 255 0 0 # 5+ Link
+	PlayAlertSound 4 200 # Mid Value
 
 Show  # 5+ Links - 5L Body Armour (High Drop Level)
 	LinkedSockets = 5
@@ -609,6 +607,7 @@ Show  # 5+ Links - 5L Body Armour (High Drop Level)
 	SetTextColor 255 0 0 # 5+ Link
 	SetBackgroundColor 50 50 50 230 # 5+ Link (Mid)
 	SetBorderColor 255 0 0 # 5+ Link
+	PlayAlertSound 4 200 # Mid Value
 
 Show  # 5+ Links - 5L Two Hand Weapons (High Drop Level)
 	LinkedSockets = 5
@@ -620,7 +619,7 @@ Show  # 5+ Links - 5L Two Hand Weapons (High Drop Level)
 	SetBorderColor 255 0 0 # 5+ Link
 	PlayAlertSound 4 200 # Mid Value
 
-Hide  # 5+ Links - 5L (Other)
+Show  # 5+ Links - 5L (Other)
 	LinkedSockets = 5
 	SetFontSize 36
 	SetTextColor 255 0 0 # 5+ Link
@@ -1595,7 +1594,7 @@ Show  # Gems - Drop Only - Worthless
 	SetBackgroundColor 8 30 25 # Gem (Low)
 	SetBorderColor 0 150 150 # Gem (Low)
 
-Hide  # Gems - Other
+Show  # Gems - Other
 	Class "Skill Gems"
 	SetFontSize 36
 	SetTextColor 27 162 155 # Gem (Worthless)
@@ -1819,7 +1818,7 @@ Show  # Uniques - 10c+
 
 Show  # Uniques - 2-10c
 	Rarity = Unique
-	BaseType "Sanctified Life Flask" "Abyssal Axe" "Amber Amulet" "Archon Kite Shield" "Assassin's Boots" "Bismuth Flask" "Cardinal Round Shield" "Citadel Bow" "Coronal Leather" "Ebony Tower Shield" "Goathide Boots" "Gold Amulet" "Gold Ring" "Granite Flask" "Harlequin Mask" "Imperial Bow" "Imperial Claw" "Jade Amulet" "Jasper Chopper" "Jingling Spirit Shield" "Lapis Amulet" "Leather Cap" "Lion Pelt" "Midnight Blade" "Necromancer Silks" "Onyx Amulet" "Paua Ring" "Prismatic Ring" "Raven Mask" "Ritual Sceptre" "Silken Hood" "Titan Greaves" "Two-Stone Ring" "Ursine Pelt" "Vanguard Belt" "Varnished Coat"
+	BaseType "Saintly Chainmail" "Sanctified Life Flask" "Abyssal Axe" "Amber Amulet" "Archon Kite Shield" "Assassin's Boots" "Bismuth Flask" "Cardinal Round Shield" "Citadel Bow" "Coronal Leather" "Ebony Tower Shield" "Goathide Boots" "Gold Amulet" "Gold Ring" "Granite Flask" "Harlequin Mask" "Imperial Bow" "Imperial Claw" "Jade Amulet" "Jasper Chopper" "Jingling Spirit Shield" "Lapis Amulet" "Leather Cap" "Lion Pelt" "Midnight Blade" "Necromancer Silks" "Onyx Amulet" "Paua Ring" "Prismatic Ring" "Raven Mask" "Ritual Sceptre" "Silken Hood" "Titan Greaves" "Two-Stone Ring" "Ursine Pelt" "Vanguard Belt" "Varnished Coat"
 	SetFontSize 45
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
@@ -1978,10 +1977,10 @@ Show  # Divination Cards - Nearly Worthless
 	SetBorderColor 0 0 0 # Divination Card (Nearly Worthless)
 	PlayAlertSound 5 0 # Divination Card (Nearly Worthless)
 
-Hide  # Divination Cards - Worthless
+Show  # Divination Cards - Worthless
 	Class Divination
 	BaseType "Cartographer's Delight" "Destined to Crumble" "Lantador's Lost Love" "Light and Truth" "Struck by Lightning" "The Carrion Crow" "The Hermit" "The Inoculated" "The King's Blade" "The Lover" "The Metalsmith's Gift" "The Opulent" "The Rabid Rhoa" "The Surgeon" "The Warden" "The Web" "Thunderous Skies" "Turn the Other Cheek"
-	SetFontSize 24
+	SetFontSize 36
 	SetTextColor 0 0 0 # Divination Card (Worthless)
 	SetBackgroundColor 255 0 175 120 # Divination Card (Worthless)
 	SetBorderColor 255 0 175 50 # Divination Card (Worthless)
@@ -2131,7 +2130,7 @@ Show  # Flasks - Leveling - Quality
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 140 140 140 # Quality
 
-Hide  # Flasks - Leveling - Normal
+Show  # Flasks - Leveling - Normal
 	Class Flasks
 	ItemLevel < 68
 	SetFontSize 36
@@ -2511,14 +2510,14 @@ Hide  # Normal/Magic - Low Drop Level - 16+ Accessories
 	SetFontSize 36
 	DisableDropSound
 
-Hide  # Normal/Magic - Leveling - Accessories - < 10
+Show  # Normal/Magic - Leveling - Accessories - < 10
 	ItemLevel < 10
 	Class Rings Amulets Belts
 	Rarity <= Magic
 	SetFontSize 40
 	SetBorderColor 0 0 0 # Crafting Base (Mid)
 
-Hide  # Normal/Magic - Leveling - Accessories - < 16
+Show  # Normal/Magic - Leveling - Accessories - < 16
 	ItemLevel < 16
 	DropLevel >= 5
 	Class Rings Amulets Belts
@@ -2526,7 +2525,7 @@ Hide  # Normal/Magic - Leveling - Accessories - < 16
 	SetFontSize 40
 	SetBorderColor 0 0 0 # Crafting Base (Mid)
 
-Hide  # Normal/Magic - Leveling - Accessories - < 22
+Show  # Normal/Magic - Leveling - Accessories - < 22
 	ItemLevel < 22
 	DropLevel >= 16
 	Class Rings Amulets
@@ -2534,7 +2533,7 @@ Hide  # Normal/Magic - Leveling - Accessories - < 22
 	SetFontSize 40
 	SetBorderColor 0 0 0 # Crafting Base (Mid)
 
-Hide  # Normal/Magic - Leveling - Jewelry
+Show  # Normal/Magic - Leveling - Jewelry
 	Class Rings Amulets
 	Rarity = Magic
 	ItemLevel < 25
@@ -2588,7 +2587,7 @@ Hide  # Normal/Magic - Low Drop Level - 25+
 # 3-4 Link #
 #----------#
 
-Hide  # Normal/Magic - Leveling - 4 Link Armour - < 35
+Show  # Normal/Magic - Leveling - 4 Link Armour - < 35
 	LinkedSockets >= 4
 	ItemLevel < 35
 	Class Gloves Boots Helmets "Body Armours"
@@ -2596,14 +2595,14 @@ Hide  # Normal/Magic - Leveling - 4 Link Armour - < 35
 	SetFontSize 36
 	SetBorderColor 40 80 150 # 3-4 Link
 
-Hide  # Normal/Magic - Leveling - 4 Link Armour - < 60
+Show  # Normal/Magic - Leveling - 4 Link Armour - < 60
 	LinkedSockets >= 4
 	ItemLevel < 60
 	Class Gloves Boots Helmets "Body Armours"
 	Rarity <= Magic
 	SetFontSize 36
 
-Hide  # Normal/Magic - Leveling - 3 Link Armour - < 10
+Show  # Normal/Magic - Leveling - 3 Link Armour - < 10
 	LinkedSockets >= 3
 	ItemLevel < 10
 	Class Gloves Boots Helmets "Body Armours"
@@ -2611,14 +2610,14 @@ Hide  # Normal/Magic - Leveling - 3 Link Armour - < 10
 	SetFontSize 36
 	SetBorderColor 40 80 150 # 3-4 Link
 
-Hide  # Normal/Magic - Leveling - 3 Link Armour  - < 20
+Show  # Normal/Magic - Leveling - 3 Link Armour  - < 20
 	LinkedSockets >= 3
 	ItemLevel < 20
 	Class Gloves Boots Helmets "Body Armours"
 	Rarity <= Magic
 	SetFontSize 36
 
-Hide  # Normal/Magic - Leveling - 3 Link Armour - 4 Socket
+Show  # Normal/Magic - Leveling - 3 Link Armour - 4 Socket
 	LinkedSockets >= 3
 	Sockets >= 4
 	ItemLevel < 35
@@ -2626,7 +2625,7 @@ Hide  # Normal/Magic - Leveling - 3 Link Armour - 4 Socket
 	Rarity <= Magic
 	SetFontSize 36
 
-Hide  # Normal/Magic - Leveling - 3 Link Wands Sceptres
+Show  # Normal/Magic - Leveling - 3 Link Wands Sceptres
 	LinkedSockets = 3
 	ItemLevel <= 7
 	Class Wands Sceptres
@@ -2638,12 +2637,12 @@ Hide  # Normal/Magic - Leveling - 3 Link Wands Sceptres
 # Other #
 #-------#
 
-Hide  # Normal/Magic - Leveling - < 11 Normal
+Show  # Normal/Magic - Leveling - < 11 Normal
 	Rarity = Normal
 	ItemLevel <= 11
 	SetFontSize 36
 
-Hide  # Normal/Magic - Leveling - < 20 Magic
+Show  # Normal/Magic - Leveling - < 20 Magic
 	Rarity = Magic
 	ItemLevel <= 20
 	SetFontSize 36
@@ -4767,13 +4766,13 @@ Show  # Errors - 60+
 # Section: < 60 Rares
 
 # Accessories
-Hide  # < 60 Rares - Accessories
+Show  # < 60 Rares - Accessories
 	Class Belts Amulets Rings
 	SetFontSize 45
 	SetBorderColor 220 0 0 # Rare Accessory
 
 # Quivers
-Hide  # < 60 Rares - Quivers
+Show  # < 60 Rares - Quivers
 	Class Quivers
 	SetFontSize 36
 	SetTextColor 255 190 75 # Rare Weapon
@@ -4807,14 +4806,14 @@ Hide  # < 60 Rares - Very Low Drop Level - 40+
 #----------#
 
 # Armour
-Hide  # < 60 Rares - Armour - 4 Link
+Show  # < 60 Rares - Armour - 4 Link
 	LinkedSockets = 4
 	Class Gloves Boots Helmets "Body Armours"
 	ItemLevel < 60
 	SetFontSize 40
 	SetBorderColor 40 80 150 # 3-4 Link
 
-Hide  # < 60 Rares - Armour - 3 Link
+Show  # < 60 Rares - Armour - 3 Link
 	LinkedSockets = 3
 	Class Gloves Boots Helmets "Body Armours"
 	ItemLevel < 25
@@ -4822,14 +4821,14 @@ Hide  # < 60 Rares - Armour - 3 Link
 	SetBorderColor 40 80 150 # 3-4 Link
 
 # Weapons
-Hide  # < 60 Rares - Weapons - 4 Link
+Show  # < 60 Rares - Weapons - 4 Link
 	LinkedSockets = 4
 	ItemLevel < 60
 	SetFontSize 40
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBorderColor 40 80 150 # 3-4 Link
 
-Hide  # < 60 Rares - Weapons - 3 Link
+Show  # < 60 Rares - Weapons - 3 Link
 	LinkedSockets = 3
 	ItemLevel < 20
 	SetFontSize 40
@@ -4864,11 +4863,11 @@ Hide  # < 60 Rares - Low Drop Level - 40+
 # Good #
 #------#
 
-Hide  # < 60 Rares - Armour - Other
+Show  # < 60 Rares - Armour - Other
 	Class Gloves Boots Helmets "Body Armours"
 	SetFontSize 36
 
-Hide  # < 60 Rares - Weapons - Other
+Show  # < 60 Rares - Weapons - Other
 	SetFontSize 36
 	SetTextColor 255 190 75 # Rare Weapon
 

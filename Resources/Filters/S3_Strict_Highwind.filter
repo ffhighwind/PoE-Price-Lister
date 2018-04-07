@@ -1,7 +1,7 @@
 ############################################
-##     HIGHWIND'S STRICT FILTER 3.2.17    ##
+##     HIGHWIND'S STRICT FILTER 3.2.18    ##
 ############################################
-## Release Date: April 4, 2018            ##
+## Release Date: April 7, 2018            ##
 ############################################
 
 #--------------#
@@ -1797,7 +1797,7 @@ Show  # Uniques - 10c+
 
 Show  # Uniques - 2-10c
 	Rarity = Unique
-	BaseType "Sanctified Life Flask" "Abyssal Axe" "Amber Amulet" "Archon Kite Shield" "Assassin's Boots" "Bismuth Flask" "Cardinal Round Shield" "Citadel Bow" "Coronal Leather" "Ebony Tower Shield" "Goathide Boots" "Gold Amulet" "Gold Ring" "Granite Flask" "Harlequin Mask" "Imperial Bow" "Imperial Claw" "Jade Amulet" "Jasper Chopper" "Jingling Spirit Shield" "Lapis Amulet" "Leather Cap" "Lion Pelt" "Midnight Blade" "Necromancer Silks" "Onyx Amulet" "Paua Ring" "Prismatic Ring" "Raven Mask" "Ritual Sceptre" "Silken Hood" "Titan Greaves" "Two-Stone Ring" "Ursine Pelt" "Vanguard Belt" "Varnished Coat"
+	BaseType "Saintly Chainmail" "Sanctified Life Flask" "Abyssal Axe" "Amber Amulet" "Archon Kite Shield" "Assassin's Boots" "Bismuth Flask" "Cardinal Round Shield" "Citadel Bow" "Coronal Leather" "Ebony Tower Shield" "Goathide Boots" "Gold Amulet" "Gold Ring" "Granite Flask" "Harlequin Mask" "Imperial Bow" "Imperial Claw" "Jade Amulet" "Jasper Chopper" "Jingling Spirit Shield" "Lapis Amulet" "Leather Cap" "Lion Pelt" "Midnight Blade" "Necromancer Silks" "Onyx Amulet" "Paua Ring" "Prismatic Ring" "Raven Mask" "Ritual Sceptre" "Silken Hood" "Titan Greaves" "Two-Stone Ring" "Ursine Pelt" "Vanguard Belt" "Varnished Coat"
 	SetFontSize 45
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique

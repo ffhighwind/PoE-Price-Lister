@@ -97,16 +97,16 @@
     </Compile>
     <None Include="Resources\FilterNova-AutoUpdater.ahk" />
     <None Include="Resources\Filters\Filters.zip" />
-    <None Include="Resources\Filters\L_Mapping_Highwind.filter" />
-    <None Include="Resources\Filters\L_Regular_Highwind.filter" />
-    <None Include="Resources\Filters\L_Strict_Highwind.filter" />
-    <None Include="Resources\Filters\L_Very_Strict_Highwind.filter" />
-    <None Include="Resources\Filters\S_Mapping_Highwind.filter" />
-    <None Include="Resources\Filters\S_Regular_Highwind.filter">
+    <None Include="Resources\Filters\L1_Regular_Highwind.filter">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\Filters\S_Strict_Highwind.filter" />
-    <None Include="Resources\Filters\S_Very_Strict_Highwind.filter" />
+    <None Include="Resources\Filters\L2_Mapping_Highwind.filter" />
+    <None Include="Resources\Filters\L3_Strict_Highwind.filter" />
+    <None Include="Resources\Filters\L4_Very_Strict_Highwind.filter" />
+    <None Include="Resources\Filters\S1_Regular_Highwind.filter" />
+    <None Include="Resources\Filters\S2_Mapping_Highwind.filter" />
+    <None Include="Resources\Filters\S3_Strict_Highwind.filter" />
+    <None Include="Resources\Filters\S4_Very_Strict_Highwind.filter" />
     <None Include="Resources\theme validator.ahk" />
     <None Include="Resources\Themes\default.filtertheme" />
     <None Include="Resources\filter font enlarger.ahk" />
