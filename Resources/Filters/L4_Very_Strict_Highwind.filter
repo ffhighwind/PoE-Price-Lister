@@ -1,5 +1,5 @@
 ############################################
-##  HIGHWIND'S VERY STRICT FILTER 3.2.18  ##
+##  HIGHWIND'S VERY STRICT FILTER 3.2.19  ##
 ############################################
 ## Release Date: April 7, 2018            ##
 ############################################
@@ -345,8 +345,8 @@ Hide  # Currency - League Specific - Bestiary (Nearly Worthless)
 	BaseType "Simple Rope Net" "Reinforced Rope Net" "Strong Rope Net" "Simple Iron Net" "Reinforced Iron Net" "Strong Iron Net" "Simple Steel Net" "Reinforced Steel Net" "Strong Steel Net"
 	SetFontSize 40
 	SetTextColor 185 172 141 # Bestiary (Low)
-	SetBackgroundColor 0 0 0 225 # Bestiary (Low)
-	SetBorderColor 0 0 0 0 # Bestiary (Low)
+	SetBackgroundColor 75 65 25 235 # Bestiary (Low)
+	SetBorderColor 0 0 0 # Bestiary (Low)
 	DisableDropSound
 
 Show  # Currency - League Specific - Bestiary (Low)
@@ -354,8 +354,8 @@ Show  # Currency - League Specific - Bestiary (Low)
 	BaseType "Thaumaturgical Net"
 	SetFontSize 45
 	SetTextColor 185 172 141 # Bestiary (Low)
-	SetBackgroundColor 0 0 0 225 # Bestiary (Low)
-	SetBorderColor 0 0 0 0 # Bestiary (Low)
+	SetBackgroundColor 75 65 25 235 # Bestiary (Low)
+	SetBorderColor 0 0 0 # Bestiary (Low)
 	DisableDropSound
 
 Show  # Currency - League Specific - Bestiary (High)
@@ -950,7 +950,7 @@ Show  # Stygian Vises - Rare - Leveling
 #	SetBorderColor 220 0 0 # Stygian Vise
 #Disabled Block End
 
-Stygian  # Stygian Vises - Rare - Mapping (High)
+Show  # Stygian Vises - Rare - Mapping (High)
 	BaseType "Stygian Vise"
 	Rarity = Rare
 	SetFontSize 40

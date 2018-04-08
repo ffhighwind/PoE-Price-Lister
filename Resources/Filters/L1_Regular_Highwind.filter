@@ -1,5 +1,5 @@
 ############################################
-##      HIGHWIND'S LOOT FILTER 3.2.18     ##
+##      HIGHWIND'S LOOT FILTER 3.2.19     ##
 ############################################
 ## Release Date: April 7, 2018            ##
 ############################################
@@ -318,16 +318,16 @@ Show  # Currency - League Specific - Bestiary (Nearly Worthless)
 	BaseType "Simple Rope Net" "Reinforced Rope Net" "Strong Rope Net" "Simple Iron Net" "Reinforced Iron Net" "Strong Iron Net" "Simple Steel Net" "Reinforced Steel Net"
 	SetFontSize 45
 	SetTextColor 185 172 141 # Bestiary (Low)
-	SetBackgroundColor 0 0 0 225 # Bestiary (Low)
-	SetBorderColor 0 0 0 0 # Bestiary (Low)
+	SetBackgroundColor 75 65 25 235 # Bestiary (Low)
+	SetBorderColor 0 0 0 # Bestiary (Low)
 
 Show  # Currency - League Specific - Bestiary (Low)
 	Class "Stackable Currency"
 	BaseType "Reinforced Steel Net" "Strong Steel Net"
 	SetFontSize 45
 	SetTextColor 185 172 141 # Bestiary (Low)
-	SetBackgroundColor 0 0 0 225 # Bestiary (Low)
-	SetBorderColor 0 0 0 0 # Bestiary (Low)
+	SetBackgroundColor 75 65 25 235 # Bestiary (Low)
+	SetBorderColor 0 0 0 # Bestiary (Low)
 
 Show  # Currency - League Specific - Bestiary (Mid)
 	Class "Stackable Currency"

@@ -1,5 +1,5 @@
 ############################################
-##     HIGHWIND'S STRICT FILTER 3.2.18    ##
+##     HIGHWIND'S STRICT FILTER 3.2.19    ##
 ############################################
 ## Release Date: April 7, 2018            ##
 ############################################
@@ -319,8 +319,8 @@ Hide  # Currency - League Specific - Bestiary (Nearly Worthless)
 	BaseType "Simple Rope Net" "Reinforced Rope Net" "Strong Rope Net" "Simple Iron Net" "Reinforced Iron Net" "Strong Iron Net" "Simple Steel Net" "Reinforced Steel Net"
 	SetFontSize 36
 	SetTextColor 185 172 141 # Bestiary (Low)
-	SetBackgroundColor 0 0 0 225 # Bestiary (Low)
-	SetBorderColor 0 0 0 0 # Bestiary (Low)
+	SetBackgroundColor 75 65 25 235 # Bestiary (Low)
+	SetBorderColor 0 0 0 # Bestiary (Low)
 	DisableDropSound
 
 Show  # Currency - League Specific - Bestiary (Low)
@@ -328,8 +328,8 @@ Show  # Currency - League Specific - Bestiary (Low)
 	BaseType "Strong Steel Net" "Thaumaturgical Net"
 	SetFontSize 40
 	SetTextColor 185 172 141 # Bestiary (Low)
-	SetBackgroundColor 0 0 0 225 # Bestiary (Low)
-	SetBorderColor 0 0 0 0 # Bestiary (Low)
+	SetBackgroundColor 75 65 25 235 # Bestiary (Low)
+	SetBorderColor 0 0 0 # Bestiary (Low)
 	DisableDropSound
 
 Show  # Currency - League Specific - Bestiary (High)
