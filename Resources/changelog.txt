@@ -4,6 +4,7 @@
 3.2.19
 * Added a yellow background to nets.
 * Fixed a bug in the Very Strict Filter.
+* Fixed low Harbinger currency background.
 
 3.2.18
 * Modified the names of the filter files so they show up in-order in game.

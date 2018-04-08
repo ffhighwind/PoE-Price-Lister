@@ -18,7 +18,7 @@ Presets
 	Preset "Regular Large" [L1_Regular_Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/L1_Regular_Highwind.filter]
 	Preset "Mapping Large" [L2_Mapping_Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/L2_Mapping_Highwind.filter]
 	Preset "Strict Large" [L3_Strict_Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/L3_Strict_Highwind.filter]
-	Preset "Very Strict Large" [L4_Very_Strict_Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/L4_Mapping_Highwind.filter]
+	Preset "Very Strict Large" [L4_Very_Strict_Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/L4_Very_Strict_Highwind.filter]
 
 # ColorThemes filtertheme
 #	Theme "Default" DEFAULT [Highwind_Default_Theme] [https://pastebin.com/raw/TSFSZdry]
