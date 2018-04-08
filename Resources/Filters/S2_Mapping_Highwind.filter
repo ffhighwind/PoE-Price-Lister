@@ -277,7 +277,7 @@ Show  # Currency - League Specific - Harbinger (High)
 	BaseType "Orb of Annulment" "Ancient Orb" "Harbinger's Orb"
 	SetFontSize 45
 	SetTextColor 255 0 255 # Currency (High Harbinger)
-	SetBackgroundColor 255 255 255 230 # Currency (High Harbinger)
+	SetBackgroundColor 255 255 255 255 # Currency (High Harbinger)
 	SetBorderColor 255 0 255 # Currency (High Harbinger)
 	PlayAlertSound 1 200 # High Value
 
