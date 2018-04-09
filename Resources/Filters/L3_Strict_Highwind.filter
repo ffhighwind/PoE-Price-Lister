@@ -319,7 +319,7 @@ Hide  # Currency - League Specific - Bestiary (Nearly Worthless)
 	BaseType "Simple Rope Net" "Reinforced Rope Net" "Strong Rope Net" "Simple Iron Net" "Reinforced Iron Net" "Strong Iron Net" "Simple Steel Net" "Reinforced Steel Net"
 	SetFontSize 40
 	SetTextColor 185 172 141 # Bestiary (Low)
-	SetBackgroundColor 75 65 25 235 # Bestiary (Low)
+	SetBackgroundColor 65 50 20 235 # Bestiary (Low)
 	SetBorderColor 0 0 0 # Bestiary (Low)
 	DisableDropSound
 
@@ -328,7 +328,7 @@ Show  # Currency - League Specific - Bestiary (Low)
 	BaseType "Strong Steel Net" "Thaumaturgical Net"
 	SetFontSize 45
 	SetTextColor 185 172 141 # Bestiary (Low)
-	SetBackgroundColor 75 65 25 235 # Bestiary (Low)
+	SetBackgroundColor 65 50 20 235 # Bestiary (Low)
 	SetBorderColor 0 0 0 # Bestiary (Low)
 	DisableDropSound
 
