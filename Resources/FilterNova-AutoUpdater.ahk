@@ -90,16 +90,6 @@ Filters.Push(FilterSettings)
 ;FilterSettings := { fKey: FilterKey, fOnlyNotify: NotifyOnly, fFile: FilterFileName, fPresets: Presets, fCTheme: ColorTheme, fSTheme: SoundTheme, fCustomKey: CustomizationHashKey }
 ;Filters.Push(FilterSettings)
 
-FilterKey := "ffhighwind"
-NotifyOnly := "off"
-FilterFileName := "highwind"
-Presets := ["Regular", "Mapping", "Strict", "Very Strict", "Regular Large", "Mapping Large", "Strict Large", "Very Strict Large"]
-ColorTheme := ""
-SoundTheme := ""
-CustomizationHashKey := ""
-FilterSettings := { fKey: FilterKey, fOnlyNotify: NotifyOnly, fFile: FilterFileName, fPresets: Presets, fCTheme: ColorTheme, fSTheme: SoundTheme, fCustomKey: CustomizationHashKey }
-Filters.Push(FilterSettings)
-
 
 
 
