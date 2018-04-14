@@ -1,7 +1,7 @@
 ############################################
-##      HIGHWIND'S LOOT FILTER 3.2.19     ##
+##      HIGHWIND'S LOOT FILTER 3.2.20     ##
 ############################################
-## Release Date: April 7, 2018            ##
+## Release Date: April 13, 2018           ##
 ############################################
 
 #--------------#
@@ -18,8 +18,8 @@
 #    SOUNDS    #
 #--------------#
 #  1 - valuable Uniques, high tier Currency, Breachstones/Misc Map Items, valuable drops
-#  2 - Leaguestones, Map Fragments
-#  3 - Maps, Quest items, Labyrinth items, Pantheon Souls
+#  2 - Leaguestones, Map Fragments, Pantheon Souls
+#  3 - Maps, Quest items, Labyrinth items
 #  4 - mid tier Currency, 6 Sockets, Unique Maps, other Uniques
 #  5 - Divination Cards
 #  6 - Jewels, valuable Gems, Talismans
@@ -461,15 +461,6 @@ Show  # Currency - Unknown (Error)
 ##########################################
 # Section: Uncategorized
 
-Show  # Offering to the Goddess
-	Class "Map Fragments"
-	BaseType "Offering to the Goddess"
-	SetFontSize 45
-	SetTextColor 255 255 255 # Map Fragment (Mid)
-	SetBackgroundColor 0 255 255 210 # Map Fragment (Mid)
-	SetBorderColor 0 0 0 # Map Fragment (Mid)
-	PlayAlertSound 3 200 # Labyrinth
-
 Show  # Labyrinth
 	Class Labyrinth
 	SetFontSize 45
@@ -501,7 +492,7 @@ Show  # Pantheon Souls
 	SetTextColor 74 230 58 # Pantheon Soul
 	SetBackgroundColor 12 30 12 230 # Pantheon Soul
 	SetBorderColor 74 230 58 # Pantheon Soul
-	PlayAlertSound 3 200 # Pantheon Soul
+	PlayAlertSound 2 200 # Pantheon Soul
 
 Show  # Misc Map Items
 	Class "Misc Map Items"
@@ -571,6 +562,24 @@ Show  # 5+ Links - 5L (84+)
 	SetBorderColor 255 0 0 # 5+ Link
 	PlayAlertSound 4 200 # Mid Value
 
+Show  # 5+ Links - 5L (Shaper)
+	LinkedSockets = 5
+	ShaperItem True
+	SetFontSize 45
+	SetTextColor 255 0 0 # 5+ Link
+	SetBackgroundColor 50 20 70 230 # Shaper Elder 60+
+	SetBorderColor 255 0 0 # 5+ Link
+	PlayAlertSound 4 200 # Mid Value
+
+Show  # 5+ Links - 5L (Elder)
+	LinkedSockets = 5
+	ElderItem True
+	SetFontSize 45
+	SetTextColor 255 0 0 # 5+ Link
+	SetBackgroundColor 50 20 70 230 # Shaper Elder 60+
+	SetBorderColor 255 0 0 # 5+ Link
+	PlayAlertSound 4 200 # Mid Value
+
 Show  # 5+ Links - 5L (Leveling)
 	LinkedSockets = 5
 	ItemLevel < 68
@@ -580,24 +589,16 @@ Show  # 5+ Links - 5L (Leveling)
 	SetBorderColor 255 0 0 # 5+ Link
 	PlayAlertSound 4 200 # Mid Value
 
-Show  # 5+ Links - 5L Bows
+# 64 Sharpshooter's
+Show  # 5+ Links - 5L Good Bows
 	LinkedSockets = 5
 	Class Bows
+	ItemLevel >= 64
 	BaseType "Crude Bow" "Short Bow" "Royal Bow" "Grove Bow" "Thicket Bow" "Harbinger Bow"
 	SetFontSize 40
 	SetTextColor 255 0 0 # 5+ Link
 	SetBackgroundColor 50 50 50 230 # 5+ Link (Mid)
 	SetBorderColor 255 0 0 # 5+ Link
-	PlayAlertSound 4 200 # Mid Value
-
-Show  # 5+ Links - 5L Staves
-	LinkedSockets = 5
-	Class Staves
-	SetFontSize 40
-	SetTextColor 255 0 0 # 5+ Link
-	SetBackgroundColor 50 50 50 230 # 5+ Link (Mid)
-	SetBorderColor 255 0 0 # 5+ Link
-	PlayAlertSound 4 200 # Mid Value
 
 Show  # 5+ Links - 5L Body Armour (High Drop Level)
 	LinkedSockets = 5
@@ -607,20 +608,28 @@ Show  # 5+ Links - 5L Body Armour (High Drop Level)
 	SetTextColor 255 0 0 # 5+ Link
 	SetBackgroundColor 50 50 50 230 # 5+ Link (Mid)
 	SetBorderColor 255 0 0 # 5+ Link
-	PlayAlertSound 4 200 # Mid Value
 
-Show  # 5+ Links - 5L Two Hand Weapons (High Drop Level)
+Show  # 5+ Links - 5L Staves (High Drop Level)
 	LinkedSockets = 5
-	Class "Two Hand" Bows Staves
+	Class Staves
 	DropLevel >= 56
+	SetFontSize 40
+	SetTextColor 255 0 0 # 5+ Link
+	SetBackgroundColor 50 50 50 230 # 5+ Link (Mid)
+	SetBorderColor 255 0 0 # 5+ Link
+
+Show  # 5+ Links - 5L Staves (Low Drop Level)
+	LinkedSockets = 5
+	Class Staves
 	SetFontSize 36
 	SetTextColor 255 0 0 # 5+ Link
-	SetBackgroundColor 0 0 0 230 # 5+ Link (Low)
+	SetBackgroundColor 50 50 50 230 # 5+ Link (Low)
 	SetBorderColor 255 0 0 # 5+ Link
-	PlayAlertSound 4 200 # Mid Value
 
 Show  # 5+ Links - 5L (Other)
 	LinkedSockets = 5
+	ShaperItem False
+	ElderItem False
 	SetFontSize 36
 	SetTextColor 255 0 0 # 5+ Link
 	SetBackgroundColor 0 0 0 230 # 5+ Link (Low)
@@ -1641,7 +1650,7 @@ Show  # Maps - T16 (Guardians)
 	DropLevel >= 83
 	SetFontSize 45
 	SetTextColor 220 220 220 # Map (T16)
-	SetBackgroundColor 255 0 0 210 # Map (T16)
+	SetBackgroundColor 255 0 0 220 # Map (T16)
 	SetBorderColor 220 220 220 # Map (T16)
 	PlayAlertSound 3 200 # Map
 
@@ -1649,7 +1658,7 @@ Show  # Maps - T16 (Elder)
 	ElderMap True
 	SetFontSize 45
 	SetTextColor 220 220 220 # Map (T16)
-	SetBackgroundColor 255 0 0 210 # Map (T16)
+	SetBackgroundColor 255 0 0 220 # Map (T16)
 	SetBorderColor 220 220 220 # Map (T16)
 	PlayAlertSound 3 200 # Map
 
@@ -1658,7 +1667,7 @@ Show  # Maps - T11+ (Red) - Shaped
 	DropLevel >= 73
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (Red)
-	SetBackgroundColor 255 0 0 210 # Map (Red)
+	SetBackgroundColor 255 0 0 220 # Map (Red)
 	SetBorderColor 0 0 0 # Map (Red)
 	PlayAlertSound 3 200 # Map
 
@@ -1667,7 +1676,7 @@ Show  # Maps - T11+ (Red) - Other
 	DropLevel >= 78
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (Red)
-	SetBackgroundColor 255 0 0 210 # Map (Red)
+	SetBackgroundColor 255 0 0 220 # Map (Red)
 	SetBorderColor 0 0 0 # Map (Red)
 	PlayAlertSound 3 200 # Map
 
@@ -1761,7 +1770,7 @@ Show  # Maps - Fragments - High Value
 
 Show  # Maps - Fragments - Mid Value
 	Class "Map Fragments"
-	BaseType "Sacrifice at Midnight" "Inya's Key" "Eber's Key" "Volkuur's Key" "Yriel's Key" "Fragment of the Hydra" "Fragment of the Phoenix" "Fragment of the Minotaur" "Fragment of the Chimera" "Mortal Grief" "Divine Vessel" "Xoph's Breachstone" "Tul's Breachstone" "Esh's Breachstone" "Uul-Netol's Breachstone"
+	BaseType "Sacrifice at Midnight" "Inya's Key" "Eber's Key" "Volkuur's Key" "Yriel's Key" "Fragment of the Hydra" "Fragment of the Phoenix" "Fragment of the Minotaur" "Fragment of the Chimera" "Mortal Grief" "Divine Vessel" "Xoph's Breachstone" "Tul's Breachstone" "Esh's Breachstone" "Uul-Netol's Breachstone" "Offering to the Goddess"
 	SetFontSize 45
 	SetTextColor 255 255 255 # Map Fragment (Mid)
 	SetBackgroundColor 0 255 255 210 # Map Fragment (Mid)
@@ -2407,7 +2416,7 @@ Hide  # Normal/Magic - Low Drop Level - 83+ Weapons
 
 Show  # Crafting Bases - 70+ Drop Level (High) - 84+
 	DropLevel >= 72
-	BaseType "Crystal Belt" "Steel Ring" "Opal Ring" "Marble Amulet"
+	BaseType "Steel Ring" "Opal Ring" "Marble Amulet"
 	ItemLevel >= 84
 	SetFontSize 45
 	SetTextColor 0 100 220 # Crafting Base 84+ (High)
@@ -2417,7 +2426,7 @@ Show  # Crafting Bases - 70+ Drop Level (High) - 84+
 
 Show  # Crafting Bases - 70+ Drop Level (High) - Other
 	DropLevel >= 72
-	BaseType "Crystal Belt" "Steel Ring" "Opal Ring" "Marble Amulet"
+	BaseType "Steel Ring" "Opal Ring" "Marble Amulet"
 	SetFontSize 45
 	SetTextColor 255 255 255 # Crafting Base (High)
 	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
@@ -2426,7 +2435,7 @@ Show  # Crafting Bases - 70+ Drop Level (High) - Other
 
 Show  # Crafting Bases - 70+ Drop Level (Mid) - 84+ Normal/Magic
 	DropLevel >= 70
-	BaseType "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet"
+	BaseType "Crystal Belt" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet"
 	Rarity <= Magic
 	ItemLevel >= 84
 	SetFontSize 45
@@ -2435,7 +2444,7 @@ Show  # Crafting Bases - 70+ Drop Level (Mid) - 84+ Normal/Magic
 
 Show  # Crafting Bases - 70+ Drop Level (Mid) - <84 Normal/Magic
 	DropLevel >= 70
-	BaseType "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet"
+	BaseType "Crystal Belt" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet"
 	Rarity <= Magic
 	SetFontSize 36
 	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
@@ -2443,7 +2452,7 @@ Show  # Crafting Bases - 70+ Drop Level (Mid) - <84 Normal/Magic
 
 Show  # Crafting Bases - 70+ Drop Level (Mid) - Rare
 	DropLevel >= 70
-	BaseType "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet"
+	BaseType "Crystal Belt" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet"
 	SetFontSize 45
 	SetBackgroundColor 20 85 55 230 # Crafting Base Rare (Mid)
 	SetBorderColor 0 255 255 # Crafting Base Rare (Mid)

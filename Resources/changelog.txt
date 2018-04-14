@@ -1,6 +1,14 @@
 ---------------------------------------------------------------------------------------------------------------
 | Bestiary
 ---------------------------------------------------------------------------------------------------------------
+3.2.20
+* Moved Crystal Belts down a tier. They no longer make sound when they drop.
+* Removed 84+ accessories from the Very Strict filter again. I shouldn't have added these in 3.2.12.
+* Added Weeping Essences to the Mapping filter.
+* Removed some 5L two-hand weapons and bows from the mapping/strict filters.
+* Modified the 5L section to work with 5L Elder/Shaper items.
+* Changed the sound of Offering to the Goddess and Pantheon Souls to match other Map Fragments.
+
 3.2.19
 * Added a yellow background to nets.
 * Fixed a bug in the Very Strict Filter.
