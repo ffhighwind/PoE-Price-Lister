@@ -1,7 +1,7 @@
 ############################################
-##    HIGHWIND'S MAPPING FILTER 3.2.20    ##
+##    HIGHWIND'S MAPPING FILTER 3.3.1     ##
 ############################################
-## Release Date: April 14, 2018           ##
+## Release Date: May 31, 2018             ##
 ############################################
 
 #--------------#
@@ -483,7 +483,7 @@ Show  # Shaper's Orbs
 	PlayAlertSound 3 200 # Quest
 
 Show  # Quests
-	Class Quest "Hideout Doodads" Microtransactions Relics
+	Class Quest "Hideout Doodads" Microtransactions Relics "Incursion Item"
 	SetFontSize 45
 	SetTextColor 74 230 58 # Quest
 	SetBackgroundColor 12 30 12 230 # Quest
@@ -1549,6 +1549,16 @@ Show  # Gems - Quality - Drop Only
 	SetBorderColor 50 220 180 # Gem (High)
 	PlayAlertSound 6 200 # Gem
 
+Show  # Gems - Leveled - Drop Only
+	Class "Skill Gems"
+	BaseType Portal Empower Enlighten
+	GemLevel >= 2
+	SetFontSize 45
+	SetTextColor 27 162 155 # Gem (High)
+	SetBackgroundColor 255 255 255 255 # Gem (High)
+	SetBorderColor 50 220 180 # Gem (High)
+	PlayAlertSound 6 200 # Gem
+
 #-----#
 # Mid #
 #-----#
@@ -1569,6 +1579,15 @@ Show  # Gems - Quality - 10%+
 	SetTextColor 55 225 185 # Gem Quality (Mid)
 	SetBackgroundColor 50 50 50 # Gem Quality (Mid)
 	SetBorderColor 200 200 200 # Gem Quality (Mid)
+	PlayAlertSound 6 200 # Gem
+
+Show  # Gems - Leveled - Other
+	Class "Skill Gems"
+	GemLevel >= 19
+	SetFontSize 45
+	SetTextColor 55 225 185 # Gem (Mid)
+	SetBackgroundColor 10 35 30 # Gem (Mid)
+	SetBorderColor 50 220 180 # Gem (Mid)
 	PlayAlertSound 6 200 # Gem
 
 #-----#
@@ -1956,7 +1975,7 @@ Show  # Divination Cards - Nearly Worthless (Conflicts)
 
 Show  # Divination Cards - 10c+
 	Class Divination
-	BaseType "Abandoned Wealth" "Bowyer's Dream" Heterochromia "House of Mirrors" "Hunter's Reward" "Last Hope" "Mawr Blaidd" "Pride Before the Fall" "The Artist" "The Brittle Emperor" "The Celestial Justicar" "The Devastator" "The Doctor" "The Dragon's Heart" "The Dreamer" "The Enlightened" "The Ethereal" "The Fiend" "The Formless Sea" "The Hunger" "The Immortal" "The Iron Bard" "The King's Heart" "The Last One Standing" "The Offering" "The Polymath" "The Queen" "The Saint's Treasure" "The Sephirot" "The Spark and the Flame" "The Thaumaturgist" "The Valkyrie" "The Vast" "The Wind" "The Wolf" "The Wolven King's Bite" "The World Eater" "Wealth and Power"
+	BaseType "The Samurai's Eye" "The Professor" "The Mayor" "The Master" "Immortal Resolve" "Abandoned Wealth" "Bowyer's Dream" Heterochromia "House of Mirrors" "Hunter's Reward" "Last Hope" "Mawr Blaidd" "Pride Before the Fall" "The Artist" "The Brittle Emperor" "The Celestial Justicar" "The Devastator" "The Doctor" "The Dragon's Heart" "The Dreamer" "The Enlightened" "The Ethereal" "The Fiend" "The Formless Sea" "The Hunger" "The Immortal" "The Iron Bard" "The King's Heart" "The Last One Standing" "The Offering" "The Polymath" "The Queen" "The Saint's Treasure" "The Sephirot" "The Spark and the Flame" "The Thaumaturgist" "The Valkyrie" "The Vast" "The Wind" "The Wolf" "The Wolven King's Bite" "The World Eater" "Wealth and Power"
 	SetFontSize 45
 	SetTextColor 255 0 175 # Divination Card (10c+)
 	SetBackgroundColor 255 255 255 255 # Divination Card (10c+)
@@ -1965,7 +1984,7 @@ Show  # Divination Cards - 10c+
 
 Show  # Divination Cards - 1c+
 	Class Divination
-	BaseType "Blessing of God" "Chaotic Disposition" "Dialla's Subjugation" "Earth Drinker" "Emperor of Purity" "Gemcutter's Promise" Hubris Humility "Jack in the Box" "Left to Fate" "Lingering Remnants" "Lost Worlds" "Lucky Connections" "Lucky Deck" "Lysah's Respite" "Merciless Armament" "No Traces" Rebirth "Scholar of the Seas" "The Aesthete" "The Arena Champion" "The Avenger" "The Body" "The Breach" "The Cartographer" "The Chains that Bind" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Demoness" "The Dragon" "The Fletcher" "The Gladiator" "The Harvester" "The Hoarder" "The Insatiable" "The Inventor" "The Lion" "The Obscured" "The Penitent" "The Porcupine" "The Realm" "The Risk" "The Scavenger" "The Soul" "The Standoff" "The Stormcaller" "The Surveyor" "The Throne" "The Trial" "The Union" "The Valley of Steel Boxes" "The Void" "The Warlord" "The Wrath" "The Wretched" "Time-Lost Relic" "Vinia's Token" "Volatile Power"
+	BaseType "The Undisputed" "The Hale Heart" "Perfection" "The Celestial Stone" "The Witch" "The Undaunted" "The Sword King's Salute" "The Rite of Elements" "The Jeweller's Boon" "The Fathomless Depths" "The Dreamland" "The Darkest Dream" "The Beast" "The Admirer" "Harmony of Souls" "Blessing of God" "Chaotic Disposition" "Dialla's Subjugation" "Earth Drinker" "Emperor of Purity" "Gemcutter's Promise" Hubris Humility "Jack in the Box" "Left to Fate" "Lingering Remnants" "Lost Worlds" "Lucky Connections" "Lucky Deck" "Lysah's Respite" "Merciless Armament" "No Traces" Rebirth "Scholar of the Seas" "The Aesthete" "The Arena Champion" "The Avenger" "The Body" "The Breach" "The Cartographer" "The Chains that Bind" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Demoness" "The Dragon" "The Fletcher" "The Gladiator" "The Harvester" "The Hoarder" "The Insatiable" "The Inventor" "The Lion" "The Obscured" "The Penitent" "The Porcupine" "The Realm" "The Risk" "The Scavenger" "The Soul" "The Standoff" "The Stormcaller" "The Surveyor" "The Throne" "The Trial" "The Union" "The Valley of Steel Boxes" "The Void" "The Warlord" "The Wrath" "The Wretched" "Time-Lost Relic" "Vinia's Token" "Volatile Power"
 	SetFontSize 45
 	SetTextColor 255 255 255 # Divination Card (1c+)
 	SetBackgroundColor 255 0 175 255 # Divination Card (1c+)
@@ -1974,7 +1993,7 @@ Show  # Divination Cards - 1c+
 
 Show  # Divination Cards - <1c
 	Class Divination
-	BaseType "A Mother's Parting Gift" "Anarchy's Price" "Assassin's Favour" "Atziri's Arsenal" "Blind Venture" "Call to the First Ones" "Coveted Possession" "Doedre's Madness" "Forbidden Power" "Gift of the Gemling Queen" "Glimmer of Hope" "Grave Knowledge" Hope "Might is Right" Mitts Rats "Shard of Fate" "The Battle Born" "The Betrayal" "The Calling" "The Cataclysm" "The Coming Storm" "The Drunken Aristocrat" "The Encroaching Darkness" "The Explorer" "The Forsaken" "The Fox" "The Garish Power" "The Gemcutter" "The Jester" "The Lich" "The Mercenary" "The One With All" "The Pack Leader" "The Pact" "The Poet" "The Road to Power" "The Siren" "The Spoiled Prince" "The Sun" "The Survivalist" "The Tower" "The Traitor" "The Tyrant" "The Watcher" "The Wolverine" "Three Faces in the Dark" Tranquillity "Treasure Hunter"
+	BaseType "Three Voices" "A Mother's Parting Gift" "Anarchy's Price" "Assassin's Favour" "Atziri's Arsenal" "Blind Venture" "Call to the First Ones" "Coveted Possession" "Doedre's Madness" "Forbidden Power" "Gift of the Gemling Queen" "Glimmer of Hope" "Grave Knowledge" Hope "Might is Right" Mitts Rats "Shard of Fate" "The Battle Born" "The Betrayal" "The Calling" "The Cataclysm" "The Coming Storm" "The Drunken Aristocrat" "The Encroaching Darkness" "The Explorer" "The Forsaken" "The Fox" "The Garish Power" "The Gemcutter" "The Jester" "The Lich" "The Mercenary" "The One With All" "The Pack Leader" "The Pact" "The Poet" "The Road to Power" "The Siren" "The Spoiled Prince" "The Sun" "The Survivalist" "The Tower" "The Traitor" "The Tyrant" "The Watcher" "The Wolverine" "Three Faces in the Dark" Tranquillity "Treasure Hunter"
 	SetFontSize 40
 	SetTextColor 0 0 0 # Divination Card (<1c)
 	SetBackgroundColor 255 0 175 230 # Divination Card (<1c)
@@ -1983,7 +2002,7 @@ Show  # Divination Cards - <1c
 
 Show  # Divination Cards - Nearly Worthless
 	Class Divination
-	BaseType Audacity "Birth of the Three" "Boundless Realms" Death "Dying Anguish" "Emperor's Luck" "Her Mask" "Hunter's Resolve" Loyalty Prosperity "Rain of Chaos" "Rain Tempter" "The Blazing Fire" "The Catalyst" "The Conduit" "The Deceiver" "The Doppelganger" "The Endurance" "The Eye of the Dragon" "The Feast" "The Flora's Gift" "The Gambler" "The Gentleman" "The Incantation" "The Lord in Black" "The Lunaris Priestess" "The Oath" "The Puzzle" "The Ruthless Ceinture" "The Scarred Meadow" "The Scholar" "The Sigil" "The Summoner" "The Twins" "The Visionary"
+	BaseType Audacity "The Army of Blood" "Birth of the Three" "Boundless Realms" Death "Dying Anguish" "Emperor's Luck" "Her Mask" "Hunter's Resolve" Loyalty Prosperity "Rain of Chaos" "Rain Tempter" "The Blazing Fire" "The Catalyst" "The Conduit" "The Deceiver" "The Doppelganger" "The Endurance" "The Eye of the Dragon" "The Feast" "The Flora's Gift" "The Gambler" "The Gentleman" "The Incantation" "The Lord in Black" "The Lunaris Priestess" "The Oath" "The Puzzle" "The Ruthless Ceinture" "The Scarred Meadow" "The Scholar" "The Sigil" "The Summoner" "The Twins" "The Visionary"
 	SetFontSize 36
 	SetTextColor 0 0 0 # Divination Card (Nearly Worthless)
 	SetBackgroundColor 255 0 175 170 # Divination Card (Nearly Worthless)
@@ -1993,7 +2012,7 @@ Show  # Divination Cards - Nearly Worthless
 Hide  # Divination Cards - Worthless
 	Class Divination
 	BaseType "Cartographer's Delight" "Destined to Crumble" "Lantador's Lost Love" "Light and Truth" "Struck by Lightning" "The Carrion Crow" "The Hermit" "The Inoculated" "The King's Blade" "The Lover" "The Metalsmith's Gift" "The Opulent" "The Rabid Rhoa" "The Surgeon" "The Warden" "The Web" "Thunderous Skies" "Turn the Other Cheek"
-	SetFontSize 24
+	SetFontSize 32
 	SetTextColor 0 0 0 # Divination Card (Worthless)
 	SetBackgroundColor 255 0 175 120 # Divination Card (Worthless)
 	SetBorderColor 255 0 175 50 # Divination Card (Worthless)

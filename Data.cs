@@ -28,7 +28,7 @@ namespace PoE_Price_Lister
         List<string> csvUniquesBaseTypes = new List<string>();
 
         private const string csvFile = "poe_uniques.csv";
-        private const string league = "Bestiary";
+        private const string league = "Incursion";
 
         private const string filterURL = "https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/S1_Regular_Highwind.filter";
         private const string divinationJsonURL = "http://cdn.poe.ninja/api/Data/GetDivinationCardsOverview?league=";
