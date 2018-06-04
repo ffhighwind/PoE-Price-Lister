@@ -171,11 +171,11 @@
             // 
             // tabControl1
             // 
+            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Controls.Add(this.tabUniquesSC);
             this.tabControl1.Controls.Add(this.tabDivinationSC);
             this.tabControl1.Controls.Add(this.tabUniquesHC);
             this.tabControl1.Controls.Add(this.tabDivinationHC);
-            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             // 

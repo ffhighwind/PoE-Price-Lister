@@ -120,17 +120,33 @@
   <data name="columnUniqBaseType.Text" xml:space="preserve">
     <value>BaseType</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="columnUniqBaseType.Width" type="System.Int32, mscorlib">
+    <value>149</value>
+  </data>
   <data name="columnUniqSeverity.Text" xml:space="preserve">
     <value>Severity</value>
+  </data>
+  <data name="columnUniqSeverity.Width" type="System.Int32, mscorlib">
+    <value>51</value>
   </data>
   <data name="columnUniqFilter.Text" xml:space="preserve">
     <value>Filter</value>
   </data>
+  <data name="columnUniqFilter.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
   <data name="columnUniqExpect.Text" xml:space="preserve">
     <value>Expected</value>
   </data>
+  <data name="columnUniqExpect.Width" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
   <data name="columnUniqItems.Text" xml:space="preserve">
     <value>Uniques</value>
+  </data>
+  <data name="columnUniqItems.Width" type="System.Int32, mscorlib">
+    <value>184</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="listViewUniques.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -141,9 +157,8 @@
     <value>3, 3</value>
   </data>
   <data name="listViewUniques.Size" type="System.Drawing.Size, System.Drawing">
-    <value>534, 522</value>
+    <value>631, 522</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="listViewUniques.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
@@ -162,17 +177,32 @@
   <data name="columnDivName.Text" xml:space="preserve">
     <value>Name</value>
   </data>
+  <data name="columnDivName.Width" type="System.Int32, mscorlib">
+    <value>147</value>
+  </data>
   <data name="columnDivSeverity.Text" xml:space="preserve">
     <value>Severity</value>
+  </data>
+  <data name="columnDivSeverity.Width" type="System.Int32, mscorlib">
+    <value>51</value>
   </data>
   <data name="columnDivFilter.Text" xml:space="preserve">
     <value>Filter</value>
   </data>
+  <data name="columnDivFilter.Width" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
   <data name="columnDivExpect.Text" xml:space="preserve">
     <value>Expected</value>
   </data>
+  <data name="columnDivExpect.Width" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
   <data name="columnDivValue.Text" xml:space="preserve">
     <value>Value</value>
+  </data>
+  <data name="columnDivValue.Width" type="System.Int32, mscorlib">
+    <value>128</value>
   </data>
   <data name="listViewDivination.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -181,7 +211,7 @@
     <value>3, 3</value>
   </data>
   <data name="listViewDivination.Size" type="System.Drawing.Size, System.Drawing">
-    <value>534, 522</value>
+    <value>631, 522</value>
   </data>
   <data name="listViewDivination.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -198,8 +228,11 @@
   <data name="&gt;&gt;listViewDivination.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="buttonGenFilter.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="buttonGenFilter.Location" type="System.Drawing.Point, System.Drawing">
-    <value>353, 4</value>
+    <value>441, 4</value>
   </data>
   <data name="buttonGenFilter.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 26</value>
@@ -222,11 +255,14 @@
   <data name="&gt;&gt;buttonGenFilter.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="checkBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="checkBox1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="checkBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>479, 10</value>
+    <value>567, 10</value>
   </data>
   <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 17</value>
@@ -279,6 +315,9 @@
   <data name="openFileDialog1.Filter" xml:space="preserve">
     <value>Filter files|*.filter|Text files|*.txt|All files|*.*</value>
   </data>
+  <data name="tabControl1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
   <data name="tabUniquesSC.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
@@ -286,7 +325,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabUniquesSC.Size" type="System.Drawing.Size, System.Drawing">
-    <value>540, 528</value>
+    <value>637, 528</value>
   </data>
   <data name="tabUniquesSC.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -313,7 +352,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabDivinationSC.Size" type="System.Drawing.Size, System.Drawing">
-    <value>540, 528</value>
+    <value>637, 528</value>
   </data>
   <data name="tabDivinationSC.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -469,7 +508,7 @@
     <value>12, 33</value>
   </data>
   <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>548, 554</value>
+    <value>645, 554</value>
   </data>
   <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -493,7 +532,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>572, 602</value>
+    <value>669, 602</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>588, 640</value>
