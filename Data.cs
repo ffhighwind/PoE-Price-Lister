@@ -31,11 +31,11 @@ namespace PoE_Price_Lister
         private const string league = "Incursion";
 
         private const string filterURL = "https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/S1_Regular_Highwind.filter";
-        private const string divinationJsonURL = "http://cdn.poe.ninja/api/Data/GetDivinationCardsOverview?league=";
-        private const string armorJsonURL = "http://cdn.poe.ninja/api/Data/GetUniqueArmourOverview?league=";
-        private const string flaskJsonURL = "http://cdn.poe.ninja/api/Data/GetUniqueFlaskOverview?league=";
-        private const string weaponJsonURL = "http://cdn.poe.ninja/api/Data/GetUniqueWeaponOverview?league=";
-        private const string accessoryJsonURL = "http://cdn.poe.ninja/api/Data/GetUniqueAccessoryOverview?league=";
+        private const string divinationJsonURL = "http://poe.ninja/api/Data/GetDivinationCardsOverview?league=";
+        private const string armorJsonURL = "http://poe.ninja/api/Data/GetUniqueArmourOverview?league=";
+        private const string flaskJsonURL = "http://poe.ninja/api/Data/GetUniqueFlaskOverview?league=";
+        private const string weaponJsonURL = "http://poe.ninja/api/Data/GetUniqueWeaponOverview?league=";
+        private const string accessoryJsonURL = "http://poe.ninja/api/Data/GetUniqueAccessoryOverview?league=";
         private const string baseTypeRegexStr = @"""[A-Za-z'\-, ]+""|[A-Za-z'\-]+";
 
         private const string uniquesSectionStart = "# Section: Uniques";
@@ -118,7 +118,7 @@ namespace PoE_Price_Lister
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK);
+                MessageBox.Show(ex.Message, "Data.Load", MessageBoxButtons.OK);
             }
         }
 
@@ -144,7 +144,7 @@ namespace PoE_Price_Lister
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK);
+                    MessageBox.Show(ex.Message, "Data.GetData", MessageBoxButtons.OK);
                     Application.Exit();
                 }
                 SetLeague(true);
@@ -229,7 +229,7 @@ namespace PoE_Price_Lister
             }
             catch(Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK);
+                MessageBox.Show(ex.Message, "Data.GetCSVData", MessageBoxButtons.OK);
                 Application.Exit();
             }
         }
@@ -381,7 +381,7 @@ namespace PoE_Price_Lister
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK);
+                MessageBox.Show(ex.Message, "Data.FillJsonData", MessageBoxButtons.OK);
             }
         }
 
@@ -488,7 +488,7 @@ namespace PoE_Price_Lister
                 }
                 catch(Exception ex)
                 {
-                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK);
+                    MessageBox.Show("Error reading webpage " + url + "\n" + ex.Message, "Data.ReadWebPage", MessageBoxButtons.OK);
                     Application.Exit();
                 }
                 return "";
@@ -520,7 +520,7 @@ namespace PoE_Price_Lister
             }
             catch(Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK);
+                MessageBox.Show(ex.Message, "Data.GetDivinationCardConflicts", MessageBoxButtons.OK);
             }
         }
 
@@ -588,7 +588,7 @@ namespace PoE_Price_Lister
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK);
+                MessageBox.Show(ex.Message, "Data.GenerateFilterFile", MessageBoxButtons.OK);
             }
         }
 
