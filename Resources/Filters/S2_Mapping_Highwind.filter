@@ -1,7 +1,7 @@
 ############################################
-##    HIGHWIND'S MAPPING FILTER 3.3.2     ##
+##    HIGHWIND'S MAPPING FILTER 3.3.3     ##
 ############################################
-## Release Date: June 3, 2018             ##
+## Release Date: June 4, 2018             ##
 ############################################
 
 #--------------#
@@ -226,17 +226,31 @@
 #	PlayAlertSound ShGeneral 300
 #Disabled Block End
 
-#-----------------#
-# League Specific #
-#-----------------#
+#----------#
+# Perandus #
+#----------#
 
-Show  # Currency - League Specific - Perandus Coins
+Show  # Currency - League Specific - Perandus Coins (>1)
+	Class Currency
+	BaseType "Perandus Coin"
+	StackSize > 1
+	SetFontSize 36
+	SetTextColor 230 200 160 # Currency (Perandus Coin)
+	SetBackgroundColor 75 65 50 # Currency (Perandus Coin)
+	SetBorderColor 0 0 0 # Currency (Perandus Coin)
+
+Hide  # Currency - League Specific - Perandus Coins (<2)
 	Class Currency
 	BaseType "Perandus Coin"
 	SetFontSize 36
 	SetTextColor 230 200 160 # Currency (Perandus Coin)
 	SetBackgroundColor 75 65 50 # Currency (Perandus Coin)
 	SetBorderColor 0 0 0 # Currency (Perandus Coin)
+	DisableDropSound
+
+#---------#
+# Eseence #
+#---------#
 
 Show  # Currency - League Specific - Essences (Low)
 	Class Currency
@@ -245,6 +259,10 @@ Show  # Currency - League Specific - Essences (Low)
 	SetTextColor 220 190 155 # Currency (Low Essence)
 	SetBackgroundColor 55 50 40 # Currency (Low Essence)
 	SetBorderColor 0 0 0 # Currency (Low Essence)
+
+#--------#
+# Breach #
+#--------#
 
 Show  # Currency - League Specific - Splinters (Chayula)
 	Class Currency
@@ -271,6 +289,10 @@ Show  # Currency - League Specific - Blessings (Breach)
 	SetBackgroundColor 255 255 255 255 # Currency (Blessing)
 	SetBorderColor 255 0 255 # Currency (Blessing)
 	PlayAlertSound 1 200 # High Value
+
+#-----------#
+# Harbinger #
+#-----------#
 
 Show  # Currency - League Specific - Harbinger (High)
 	Class Currency
@@ -314,6 +336,10 @@ Hide  # Currency - League Specific - Harbinger (Worthless)
 	SetBorderColor 0 0 0 # Currency (Very Low Harbinger)
 	DisableDropSound
 
+#----------#
+# Bestiary #
+#----------#
+
 Hide  # Currency - League Specific - Bestiary (Nearly Worthless)
 	Class "Stackable Currency"
 	BaseType "Simple Rope Net" "Reinforced Rope Net" "Strong Rope Net" "Simple Iron Net" "Reinforced Iron Net" "Strong Iron Net" "Simple Steel Net"
@@ -348,6 +374,45 @@ Show  # Currency - League Specific - Bestiary (High)
 	SetBackgroundColor 20 0 20 230 # Bestiary (High)
 	SetBorderColor 255 0 255 # Bestiary (High)
 	PlayAlertSound 4 200 # Mid Value (Currency)
+
+#-----------#
+# Incursion #
+#-----------#
+
+Show  # Currency - League Specific - Incursion (Low)
+	Class "Stackable Currency"
+	BaseType "Vial of Consequence" "Vial of the Ritual" "Vial of Transcendence"
+	SetFontSize 40
+	SetTextColor 185 172 141 # Incursion (Low)
+	SetBackgroundColor 65 50 20 235 # Incursion (Low)
+	SetBorderColor 0 0 0 # Incursion (Low)
+
+Show  # Currency - League Specific - Incursion (Mid)
+	Class "Stackable Currency"
+	BaseType "Vial of Summoning" "Vial of Fate"
+	SetFontSize 40
+	SetTextColor 255 0 255 # Incursion (Mid)
+	SetBackgroundColor 0 0 0 230 # Incursion (Mid)
+	SetBorderColor 0 0 0 0 # Incursion (Mid)
+	PlayAlertSound 4 200 # Mid Value (Currency)
+
+Show  # Currency - League Specific - Incursion (High)
+	Class "Stackable Currency"
+	BaseType "Vial of Dominance" "Vial of Awakening"
+	SetFontSize 45
+	SetTextColor 255 0 255 # Incursion (High)
+	SetBackgroundColor 20 0 20 230 # Incursion (High)
+	SetBorderColor 255 0 255 # Incursion (High)
+	PlayAlertSound 4 200 # Mid Value (Currency)
+
+Show  # Currency - League Specific - Incursion (High)
+	Class "Stackable Currency"
+	BaseType "Vial of the Ghost" "Vial of Sacrifice"
+	SetFontSize 45
+	SetTextColor 255 0 255 # Incursion (High)
+	SetBackgroundColor 20 0 20 230 # Incursion (High)
+	SetBorderColor 255 0 255 # Incursion (High)
+	PlayAlertSound 1 200 # High Value
 
 #--------#
 # Normal #
