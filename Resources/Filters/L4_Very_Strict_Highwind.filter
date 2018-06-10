@@ -1268,6 +1268,7 @@ Hide  # Normal/Magic - Low Drop Level - 30+ Accessories Quivers
 	ItemLevel >= 30
 	ShaperItem False
 	ElderItem False
+	Identified False
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
@@ -1281,6 +1282,7 @@ Hide  # Normal/Magic - Low Drop Level - 6+ 1-2 Socket
 	ItemLevel >= 6
 	ShaperItem False
 	ElderItem False
+	Identified False
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
@@ -1293,6 +1295,7 @@ Hide  # Normal/Magic - Low Drop Level - 20+ 1-2 Link
 	ItemLevel >= 20
 	ShaperItem False
 	ElderItem False
+	Identified False
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
@@ -1302,29 +1305,6 @@ Hide  # Normal/Magic - Low Drop Level - 60+ Armour Weapons Shields
 	Class "One Hand" "Two Hand" Bows Staves Daggers Wands Claws Sceptres Gloves Boots Helmets "Body Armours" Shields
 	DropLevel < 56
 	Rarity <= Magic
-	ItemLevel >= 60
-	ShaperItem False
-	ElderItem False
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
-	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
-
-Hide  # Normal/Magic - Low Drop Level - <83 Body Armour Weapons Shields
-	Class "One Hand" "Two Hand" Bows Staves Daggers Wands Claws Sceptres "Body Armours" Shields
-	Rarity <= Magic
-	ItemLevel < 83
-	ItemLevel >= 60
-	ShaperItem False
-	ElderItem False
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
-	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
-
-Hide  # Normal/Magic - Low Drop Level - <84 Gloves Boots Helmets
-	Class Gloves Boots Helmets
-	DropLevel < 70
-	Rarity <= Magic
-	ItemLevel < 84
 	ItemLevel >= 60
 	ShaperItem False
 	ElderItem False
@@ -1481,19 +1461,31 @@ Show  # Explicit Mods - Elemental Weapons
 	SetBorderColor 0 255 255 # Crafting Base (High)
 	PlayAlertSound 4 200 # Mid Value
 
+Hide  # Explicit Mods - Incursion
+	HasExplicitMod "Tacati's" "Citaqualotl's" "Matatl's" "Topotante's" "Xopec's" "Guatelitzi's" "of Tacati" "of Citaqualotl" "of Matatl" "of Puhuarte" "of Guatelitzi"
+	Rarity = Magic
+	SetFontSize 40
+
 Show  # Explicit Mods - Incursion
 	HasExplicitMod "Tacati's" "Citaqualotl's" "Matatl's" "Topotante's" "Xopec's" "Guatelitzi's" "of Tacati" "of Citaqualotl" "of Matatl" "of Puhuarte" "of Guatelitzi"
-	Rarity <= Rare
+	Rarity = Rare
 	SetFontSize 45
 	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
 	SetBorderColor 0 255 255 # Crafting Base (High)
 
-Show  # Explicit Mods - Shaper/Elder
-	HasExplicitMod "The Shaper's" "Eldritch" "of Shaping" "of the Elder"
-	Rarity <= Rare
-	SetFontSize 45
-	SetBackgroundColor 50 20 70 230 # Shaper Elder 60+
-	SetBorderColor 200 50 255 # Shaper Elder 60+
+Show  # Explicit Mods - Warbands
+	HasExplicitMod "Mutewind" "Redblade" "Brinerot" "Betrayer's" "Deceiver's" "Turncoat's"
+	Rarity = Magic
+	SetFontSize 40
+
+#Disabled Block Start
+#Show  # Explicit Mods - Shaper/Elder
+#	HasExplicitMod "The Shaper's" "Eldritch" "of Shaping" "of the Elder"
+#	Rarity <= Rare
+#	SetFontSize 45
+#	SetBackgroundColor 50 20 70 230 # Shaper Elder 60+
+#	SetBorderColor 200 50 255 # Shaper Elder 60+
+#Disabled Block End
 
 Show  # Explicit Mods - Armor/Accessories
 	Class Gloves Boots Helmets Belts Amulets "Body Armour"
@@ -1519,6 +1511,33 @@ Show  # Explicit Mods - Jewels
 	SetBackgroundColor 0 0 0 # Jewel (Magic)
 	SetBorderColor 0 220 220 # Jewel (Magic)
 	PlayAlertSound 6 200 # Jewel
+
+##########################################
+############## PRE-FILTER 2 ##############
+##########################################
+
+Hide  # Normal/Magic - Low Drop Level - <83 Body Armour Weapons Shields
+	Class "One Hand" "Two Hand" Bows Staves Daggers Wands Claws Sceptres "Body Armours" Shields
+	Rarity <= Magic
+	ItemLevel < 83
+	ItemLevel >= 60
+	ShaperItem False
+	ElderItem False
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
+	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
+
+Hide  # Normal/Magic - Low Drop Level - <84 Gloves Boots Helmets
+	Class Gloves Boots Helmets
+	DropLevel < 70
+	Rarity <= Magic
+	ItemLevel < 84
+	ItemLevel >= 60
+	ShaperItem False
+	ElderItem False
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
+	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
 
 ##########################################
 ################# JEWELS #################
