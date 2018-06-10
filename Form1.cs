@@ -153,7 +153,7 @@ namespace PoE_Price_Lister
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Form1_Shown(object sender, EventArgs e)
         {
             data.GetData();
             FillUniqueListView(listViewUniques, data.GetUniqueEntrySC);
