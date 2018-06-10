@@ -43,6 +43,146 @@ namespace PoE_Price_Lister
         private const string divSectionStart = "# Section: Divination Cards";
         private const string divSectionEnd = "####";
 
+        private const string header10c =
+@"#------#
+# 10c+ #
+#------#
+# White background
+# High value. Do not miss these.";
+
+        private const string header2to10c =
+@"#-------#
+# 2-10c #
+#-------#
+# White border
+# Usually worth selling. Not extremely rare or valuable.
+# May share a BaseType with an extremely valuable item, League Specific, or boss drop only.";
+
+        private const string header1c =
+@"#------#
+# 1-2c #
+#------#
+# Yellow border
+# Sellable but rarely worth much.";
+
+        private const string headerLess1c =
+@"#-----#
+# <1c #
+#-----#
+# Orange border
+# Usually < 1c or nearly worthless.
+
+Show  # Uniques - <1c - ilvl <67
+	Rarity = Unique
+	ItemLevel < 67
+	SetFontSize 40
+	SetTextColor 255 128 64 # Unique
+	SetBackgroundColor 50 25 12 # Unique
+	SetBorderColor 180 90 45 # Unique (<1c)
+	PlayAlertSound 4 200 # Mid Value";
+
+        private const string loreweaveStr =
+@"# Loreweave (60x rings)
+Show  # Uniques - 1-2c
+	Rarity = Unique
+	Class Rings
+	SetFontSize 40
+	SetTextColor 255 128 64 # Unique
+	SetBackgroundColor 50 25 12 # Unique
+	SetBorderColor 255 255 0 # Unique (1-2c)
+	PlayAlertSound 4 200 # Mid Value";
+
+        private const string style10c =
+@"	SetFontSize 45
+	SetTextColor 255 128 64 # Unique (10c+)
+	SetBackgroundColor 255 255 255 255 # Unique (10c+)
+	SetBorderColor 255 128 64 # Unique (10c+)
+	PlayAlertSound 1 200 # High Value";
+
+        private const string style2to10c =
+@"	SetFontSize 45
+	SetTextColor 255 128 64 # Unique
+	SetBackgroundColor 50 25 12 # Unique
+	SetBorderColor 255 255 255 # Unique (2-10c)
+	PlayAlertSound 1 200 # High Value";
+
+        private const string style1c =
+@"	SetFontSize 40
+	SetTextColor 255 128 64 # Unique
+	SetBackgroundColor 50 25 12 # Unique
+	SetBorderColor 255 255 0 # Unique (1-2c)
+	PlayAlertSound 4 200 # Mid Value";
+
+        private const string styleLess1c =
+@"	SetFontSize 40
+	SetTextColor 255 128 64 # Unique
+	SetBackgroundColor 50 25 12 # Unique
+	SetBorderColor 180 90 45 # Unique (<1c)
+	PlayAlertSound 4 200 # Mid Value";
+
+        private const string uniqueNewOrWorthless =
+@"Show  # Uniques - New or Worthless
+	Rarity = Unique
+	SetFontSize 36
+	SetTextColor 255 128 64 # Unique
+	SetBackgroundColor 50 25 12 # Unique
+	SetBorderColor 180 90 45 # Unique (<1c)
+	PlayAlertSound 4 200 # Mid Value";
+
+        private const string styleDiv10c =
+@"	SetFontSize 45
+	SetTextColor 255 0 175 # Divination Card (10c+)
+	SetBackgroundColor 255 255 255 255 # Divination Card (10c+)
+	SetBorderColor 255 0 175 # Divination Card (10c+)
+	PlayAlertSound 1 200 # High Value";
+
+        private const string styleDiv1c =
+@"	SetFontSize 45
+	SetTextColor 255 255 255 # Divination Card (1c+)
+	SetBackgroundColor 255 0 175 255 # Divination Card (1c+)
+	SetBorderColor 255 255 255 # Divination Card (1c+)
+	PlayAlertSound 5 200 # Divination Card (1c+)";
+
+        private const string styleDivLess1c =
+@"	SetFontSize 40
+	SetTextColor 0 0 0 # Divination Card (<1c)
+	SetBackgroundColor 255 0 175 230 # Divination Card (<1c)
+	SetBorderColor 150 30 100 # Divination Card (<1c)
+	PlayAlertSound 5 100 # Divination Card (Low)";
+
+        private const string styleDivNearlyWorthless =
+@"	SetFontSize 36
+	SetTextColor 0 0 0 # Divination Card (Nearly Worthless)
+	SetBackgroundColor 255 0 175 170 # Divination Card (Nearly Worthless)
+	SetBorderColor 0 0 0 # Divination Card (Nearly Worthless)
+	PlayAlertSound 5 0 # Divination Card (Nearly Worthless)";
+
+        private const string styleDivWorthless =
+@"	SetFontSize 32
+	SetTextColor 0 0 0 # Divination Card (Worthless)
+	SetBackgroundColor 255 0 175 120 # Divination Card (Worthless)
+	SetBorderColor 255 0 175 50 # Divination Card (Worthless)
+	DisableDropSound";
+
+        private const string divNewOrWorthless =
+@"Show  # Divination Cards - New (Error)
+	Class Divination
+	SetFontSize 40
+	SetTextColor 255 255 255 # Divination Card (1c+)
+	SetBackgroundColor 255 0 175 255 # Divination Card (1c+)
+	SetBorderColor 0 255 0 # Error
+	PlayAlertSound 5 200 # Divination Card (1c+)";
+
+        private const string headerDiv =
+@"##########################################
+############ DIVINATION CARDS ############
+##########################################
+# Section: Divination Cards
+
+# Ordered most expensive first to prevent future name conflicts!
+# Prices attained from poe.ninja.
+# Future values will fluctuate based on league challenges and the meta.";
+
         private List<List<string>> conflicts = new List<List<string>>();
 
         public Data()
@@ -54,13 +194,11 @@ namespace PoE_Price_Lister
         private void SetLeague(bool hardcore)
         {
             isHardcore = hardcore;
-            if(hardcore)
-            {
+            if (hardcore) {
                 divination = divinationHC;
                 uniques = uniquesHC;
             }
-            else
-            {
+            else {
                 divination = divinationSC;
                 uniques = uniquesSC;
             }
@@ -98,11 +236,9 @@ namespace PoE_Price_Lister
 
         public void Load(string filename)
         {
-            try
-            {
+            try {
                 string[] lines = System.IO.File.ReadAllLines(filename);
-                foreach(var baseTy in csvUniquesBaseTypes)
-                {
+                foreach (var baseTy in csvUniquesBaseTypes) {
                     uniquesSC[baseTy].FilterValue.Value = UniqueValueEnum.Unknown;
                     uniquesHC[baseTy].FilterValue.Value = UniqueValueEnum.Unknown;
                 }
@@ -110,14 +246,12 @@ namespace PoE_Price_Lister
                 SetLeague(true);
                 GetFilterData(lines);
                 SetLeague(false);
-                foreach (var baseTy in csvUniquesBaseTypes)
-                {
+                foreach (var baseTy in csvUniquesBaseTypes) {
                     uniquesSC[baseTy].CalculateExpectedValue();
                     uniquesHC[baseTy].CalculateExpectedValue();
                 }
             }
-            catch (Exception ex)
-            {
+            catch (Exception ex) {
                 MessageBox.Show(ex.Message, "Data.Load", MessageBoxButtons.OK);
             }
         }
@@ -129,21 +263,17 @@ namespace PoE_Price_Lister
                 GetCSVData(!isHardcore);
                 GetJsonData();
 
-                try
-                {
+                try {
                     string filterString = ReadWebPage(filterURL, "");
-                    if (filterString.Length == 0)
-                    {
+                    if (filterString.Length == 0) {
                         MessageBox.Show("Failed to read the web URL: " + filterURL, "Error", MessageBoxButtons.OK);
                     }
-                    else
-                    {
+                    else {
                         string[] lines = filterString.Split('\n');
                         GetFilterData(lines);
                     }
                 }
-                catch (Exception ex)
-                {
+                catch (Exception ex) {
                     MessageBox.Show(ex.Message, "Data.GetData", MessageBoxButtons.OK);
                     Application.Exit();
                 }
@@ -153,15 +283,12 @@ namespace PoE_Price_Lister
 
             List<string> uniqBasesToRemove = new List<string>();
 
-            foreach(var uniq in csvUniquesBaseTypes)
-            {
-                if(uniq.EndsWith(" Piece") || uniq.EndsWith(" Talisman"))
-                {
+            foreach (var uniq in csvUniquesBaseTypes) {
+                if (uniq.EndsWith(" Piece") || uniq.EndsWith(" Talisman")) {
                     uniqBasesToRemove.Add(uniq);
                 }
             }
-            foreach(var uniq in uniqBasesToRemove)
-            {
+            foreach (var uniq in uniqBasesToRemove) {
                 uniques.Remove(uniq);
                 csvUniquesBaseTypes.Remove(uniq);
             }
@@ -172,8 +299,7 @@ namespace PoE_Price_Lister
             csvUniquesBaseTypes = csvUniquesBaseTypes.Distinct().ToList();
             csvUniquesBaseTypes.Sort();
 
-            foreach (var v in csvUniquesBaseTypes)
-            {
+            foreach (var v in csvUniquesBaseTypes) {
                 uniquesSC[v].CalculateExpectedValue();
                 uniquesHC[v].CalculateExpectedValue();
             }
@@ -192,43 +318,36 @@ namespace PoE_Price_Lister
 
         private void GetCSVData(bool addBaseTypes)
         {
-            try
-            {
+            try {
                 var engine = new FileHelperEngine<UniqueCsvData>(Encoding.UTF7);
                 UniqueCsvData[] records = engine.ReadFile(csvFile);
-                foreach (var data in records)
-                {
+                foreach (var data in records) {
                     UniqueBaseEntry entry;
-                    if (!uniques.TryGetValue(data.BaseType, out entry))
-                    {
+                    if (!uniques.TryGetValue(data.BaseType, out entry)) {
                         entry = new UniqueBaseEntry();
                         entry.BaseType = data.BaseType;
                         uniques.Add(data.BaseType, entry);
-                        if(addBaseTypes)
+                        if (addBaseTypes)
                             csvUniquesBaseTypes.Add(data.BaseType);
                     }
                     entry.Add(data);
                 }
                 List<UniqueData> resortList = new List<UniqueData>();
-                foreach (var baseTy in csvUniquesBaseTypes)
-                {
+                foreach (var baseTy in csvUniquesBaseTypes) {
                     var items = uniques[baseTy].Items;
                     items.Sort((lhs, rhs) => { return lhs.ChaosValue < rhs.ChaosValue ? -1 : 1; });
-                    foreach (var item in items)
-                    {
+                    foreach (var item in items) {
                         if (item.League.Length > 0)
                             resortList.Add(item);
                     }
-                    foreach (var item in resortList)
-                    {
+                    foreach (var item in resortList) {
                         items.Remove(item);
                         items.Add(item);
                     }
                     resortList.Clear();
                 }
             }
-            catch(Exception ex)
-            {
+            catch (Exception ex) {
                 MessageBox.Show(ex.Message, "Data.GetCSVData", MessageBoxButtons.OK);
                 Application.Exit();
             }
@@ -237,15 +356,11 @@ namespace PoE_Price_Lister
         private bool GetLines(string[] lines, ref int startIndex, out int endIndex, string startLine, string endLine)
         {
             int index = startIndex;
-            for (; index < lines.Length; index++)
-            {
-                if (lines[index].StartsWith(startLine))
-                {
+            for (; index < lines.Length; index++) {
+                if (lines[index].StartsWith(startLine)) {
                     startIndex = index;
-                    for (; index < lines.Length; index++)
-                    {
-                        if (lines[index].StartsWith(endLine))
-                        {
+                    for (; index < lines.Length; index++) {
+                        if (lines[index].StartsWith(endLine)) {
                             endIndex = index;
                             return true;
                         }
@@ -272,8 +387,7 @@ namespace PoE_Price_Lister
         private void GetFilterDivinationData(IEnumerable<string> lines)
         {
             DivinationValueEnum value;
-            while (lines.Count() > 1)
-            {
+            while (lines.Count() > 1) {
                 lines = lines.SkipWhile(aline => !aline.StartsWith("Show ") && !aline.StartsWith("Hide "));
                 if (lines.Count() == 0)
                     return;
@@ -292,9 +406,8 @@ namespace PoE_Price_Lister
                     value = DivinationValueEnum.NearlyWorthless;
                 else if (line.Contains("Worthless"))
                     value = DivinationValueEnum.Worthless;
-                else
-                {
-                    if(!line.Contains("New (Error)"))
+                else {
+                    if (!line.Contains("New (Error)"))
                         MessageBox.Show("Unexpected Divination input: " + line, "Error", MessageBoxButtons.OK);
                     lines = lines.Skip(1);
                     continue;
@@ -309,8 +422,7 @@ namespace PoE_Price_Lister
         private void GetFilterUniqueData(IEnumerable<string> lines)
         {
             UniqueValueEnum value;
-            while (lines.Count() > 0)
-            {
+            while (lines.Count() > 0) {
                 lines = lines.SkipWhile(aline => !aline.StartsWith("Show ") && !aline.StartsWith("Hide "));
                 if (lines.Count() == 0)
                     return;
@@ -325,10 +437,8 @@ namespace PoE_Price_Lister
                     value = UniqueValueEnum.Chaos2to10;
                 else if (line.Contains("1-2c"))
                     value = UniqueValueEnum.Chaos1to2;
-                else if (line.Contains("<1c") || line.Contains("< 1c"))
-                {
-                    if (line.Contains("<67"))
-                    {
+                else if (line.Contains("<1c") || line.Contains("< 1c")) {
+                    if (line.Contains("<67")) {
                         lines = lines.Skip(1);
                         continue;
                     }
@@ -345,8 +455,7 @@ namespace PoE_Price_Lister
                     else //Nearly Worthless
                         value = UniqueValueEnum.ChaosLess1;
                 }
-                else
-                {
+                else {
                     if (!line.Contains("New or Worthless"))
                         MessageBox.Show("Unexpected Unique input: " + line, "Error", MessageBoxButtons.OK);
                     lines = lines.Skip(1);
@@ -361,26 +470,21 @@ namespace PoE_Price_Lister
 
         private void FillJsonData(string url, Action<JsonData> handler)
         {
-            try
-            {
+            try {
                 string jsonURLString = ReadWebPage(url, "application/json");
-                if (jsonURLString.Length == 0)
-                {
+                if (jsonURLString.Length == 0) {
                     MessageBox.Show("Failed to read the web URL: " + url, "Error", MessageBoxButtons.OK);
                 }
-                else
-                {
+                else {
                     JObject jsonString = JObject.Parse(jsonURLString);
                     JToken results = jsonString["lines"];
-                    foreach (JToken result in results)
-                    {
+                    foreach (JToken result in results) {
                         JsonData jdata = result.ToObject<JsonData>();
                         handler(jdata);
                     }
                 }
             }
-            catch (Exception ex)
-            {
+            catch (Exception ex) {
                 MessageBox.Show(ex.Message, "Data.FillJsonData", MessageBoxButtons.OK);
             }
         }
@@ -389,8 +493,7 @@ namespace PoE_Price_Lister
         {
             UniqueBaseEntry data;
             string baseTy = jdata.BaseType;
-            if (!uniques.TryGetValue(baseTy, out data))
-            {
+            if (!uniques.TryGetValue(baseTy, out data)) {
                 data = new UniqueBaseEntry();
                 uniques.Add(baseTy, data);
                 MessageBox.Show("JSON: The CSV file is missing BaseType: " + baseTy, "Error", MessageBoxButtons.OK);
@@ -403,8 +506,7 @@ namespace PoE_Price_Lister
         {
             DivinationData data;
             string name = jdata.Name;
-            if (!divination.TryGetValue(name, out data))
-            {
+            if (!divination.TryGetValue(name, out data)) {
                 data = new DivinationData();
                 divination.Add(name, data);
                 divinationBaseTypes.Add(name);
@@ -417,8 +519,7 @@ namespace PoE_Price_Lister
             var collection = Regex.Matches(line, baseTypeRegexStr);
             List<string> output = new List<string>();
 
-            foreach (Match m in collection)
-            {
+            foreach (Match m in collection) {
                 string baseTy = m.Value;
                 if (baseTy.Length == 0)
                     continue;
@@ -433,20 +534,15 @@ namespace PoE_Price_Lister
         {
             UniqueBaseEntry data;
 
-            foreach(string baseTy in baseTypes)
-            {
-                if (!uniques.TryGetValue(baseTy, out data))
-                {
-                    if (baseTy == "Maelstr")
-                    {
-                        if(!uniques.TryGetValue("Maelström Staff", out data))
-                        {
+            foreach (string baseTy in baseTypes) {
+                if (!uniques.TryGetValue(baseTy, out data)) {
+                    if (baseTy == "Maelstr") {
+                        if (!uniques.TryGetValue("Maelström Staff", out data)) {
                             data = new UniqueBaseEntry();
                             uniques.Add("Maelström Staff", data);
                         }
                     }
-                    else
-                    {
+                    else {
                         data = new UniqueBaseEntry();
                         uniques.Add(baseTy, data);
                         MessageBox.Show("Filter: unknown basetype: " + baseTy, "Error", MessageBoxButtons.OK);
@@ -460,10 +556,8 @@ namespace PoE_Price_Lister
         {
             DivinationData data;
 
-            foreach (string baseTy in baseTypes)
-            {
-                if (!divination.TryGetValue(baseTy, out data))
-                {
+            foreach (string baseTy in baseTypes) {
+                if (!divination.TryGetValue(baseTy, out data)) {
                     data = new DivinationData(baseTy);
                     divination.Add(baseTy, data);
                     divinationBaseTypes.Add(baseTy);
@@ -474,20 +568,17 @@ namespace PoE_Price_Lister
 
         private string ReadWebPage(string url, string headerMedia)
         {
-            using (HttpClient client = new HttpClient())
-            {
+            using (HttpClient client = new HttpClient()) {
                 client.BaseAddress = new Uri(url);
-                if(headerMedia.Length > 0)
+                if (headerMedia.Length > 0)
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(headerMedia));
                 HttpResponseMessage response;
-                try
-                {
+                try {
                     response = client.GetAsync(url).Result;
                     if (response.IsSuccessStatusCode)
                         return response.Content.ReadAsStringAsync().Result;
                 }
-                catch(Exception ex)
-                {
+                catch (Exception ex) {
                     MessageBox.Show("Error reading webpage " + url + "\n" + ex.Message, "Data.ReadWebPage", MessageBoxButtons.OK);
                     Application.Exit();
                 }
@@ -497,37 +588,31 @@ namespace PoE_Price_Lister
 
         private void GetDivinationCardConflicts()
         {
-            try
-            {
+            try {
                 List<string> conflictsList = new List<string>();
-                for (int i = 0; i < divinationBaseTypes.Count(); i++)
-                {
+                for (int i = 0; i < divinationBaseTypes.Count(); i++) {
                     string divBaseTy = divinationBaseTypes[i].ToLower();
-                    for (int j = i+1; j < divinationBaseTypes.Count(); j++)
-                    {
+                    for (int j = i + 1; j < divinationBaseTypes.Count(); j++) {
                         string divBaseTy2 = divinationBaseTypes[j].ToLower();
                         if (divBaseTy.Contains(divBaseTy2) || divBaseTy2.Contains(divBaseTy))
                             conflictsList.Add(divinationBaseTypes[j]);
                     }
-                    if(conflictsList.Count() > 0)
-                    {
+                    if (conflictsList.Count() > 0) {
                         conflictsList.Add(divinationBaseTypes[i]);
-                        conflictsList.Sort((left,right)=>left.Length - right.Length);
+                        conflictsList.Sort((left, right) => left.Length - right.Length);
                         conflicts.Add(conflictsList);
                         conflictsList = new List<string>();
                     }
                 }
             }
-            catch(Exception ex)
-            {
+            catch (Exception ex) {
                 MessageBox.Show(ex.Message, "Data.GetDivinationCardConflicts", MessageBoxButtons.OK);
             }
         }
 
         public void GenerateFilterFile(string path, bool safe)
         {
-            try
-            {
+            try {
                 /*
                 var fileout = new System.IO.StreamWriter(filterOutputFile, false);
                 string[] lines = System.IO.File.ReadAllLines(filterInputFile);
@@ -561,35 +646,32 @@ namespace PoE_Price_Lister
                 fileout.Close();
                 */
 
-
                 var fileout = new System.IO.StreamWriter(path, false);
                 fileout.WriteLine();
                 fileout.WriteLine(GenerateUniquesString(safe));
-
-                fileout.WriteLine("# Potential Conflicts!!! (They have been separated but may need to be reorganized)");
-                StringBuilder sb = new StringBuilder();
-                foreach(var list in conflicts)
-                {
-                    sb.Append("# ");
-                    foreach(string str in list)
-                    {
-                        string baseTy = str;
-                        if (baseTy.Contains(' '))
-                            baseTy = "\"" + baseTy + "\"";
-                        sb.Append(baseTy).Append(' ');
-                    }
-                    sb.Remove(sb.Length - 1, 1).AppendLine();
-                }
-                fileout.WriteLine(sb.ToString());
-                fileout.WriteLine();
                 fileout.WriteLine(GenerateDivinationString(safe));
-
                 fileout.Close();
             }
-            catch (Exception ex)
-            {
+            catch (Exception ex) {
                 MessageBox.Show(ex.Message, "Data.GenerateFilterFile", MessageBoxButtons.OK);
             }
+        }
+
+        private string GenerateDivinationConflictsString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("# Potential Conflicts!!! (They have been separated but may need to be reorganized)");
+            foreach (var list in conflicts) {
+                sb.Append("# ");
+                foreach (string str in list) {
+                    string baseTy = str;
+                    if (baseTy.Contains(' '))
+                        baseTy = "\"" + baseTy + "\"";
+                    sb.Append(baseTy).Append(' ');
+                }
+                sb.Remove(sb.Length - 1, 1).AppendLine();
+            }
+            return sb.ToString();
         }
 
         //IEnumerable<string> lines
@@ -606,8 +688,7 @@ namespace PoE_Price_Lister
             List<string> listLess1cLabyrinth = new List<string>();
             StringBuilder sb = new StringBuilder();
 
-            foreach (var uniq in uniques)
-            {
+            foreach (var uniq in uniques) {
                 UniqueBaseEntry entry = uniq.Value;
                 string baseTy = uniq.Key;
                 UniqueFilterValue expectedVal = entry.ExpectedFilterValue;
@@ -617,13 +698,10 @@ namespace PoE_Price_Lister
                 if (index > 0)
                     outputBaseTy = baseTy.Substring(0, index);
 
-                if (safe && expectedVal.Value != filterVal.Value)
-                {
-                    if (expectedVal.Value == UniqueValueEnum.Unknown)
-                    {
+                if (safe && expectedVal.Value != filterVal.Value) {
+                    if (expectedVal.Value == UniqueValueEnum.Unknown) {
                         float maxVal = 0.0f;
-                        foreach (var item in entry.Items)
-                        {
+                        foreach (var item in entry.Items) {
                             if (maxVal < item.ChaosValue && !item.IsCrafted && !item.IsFated)
                                 maxVal = item.ChaosValue;
                         }
@@ -632,15 +710,13 @@ namespace PoE_Price_Lister
                     }
                     else if (filterVal.Value == UniqueValueEnum.Unknown && expectedVal.Value == UniqueValueEnum.ChaosLess1)
                         continue;
-                    else
-                    {
+                    else {
                         int expectTier = expectedVal.ValueTier;
                         if (expectTier < filterVal.ValueTier)
                             expectedVal = UniqueFilterValue.FromValueTier(expectTier + 1);
                     }
                 }
-                switch (expectedVal.Value)
-                {
+                switch (expectedVal.Value) {
                     case UniqueValueEnum.Chaos10:
                         list10c.Add(outputBaseTy);
                         break;
@@ -673,13 +749,21 @@ namespace PoE_Price_Lister
                 }
             }
 
-            if(list10c.Count > 0)
-                sb.AppendLine("Show  # Uniques - 10c+").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(list10c)).AppendLine();
-            if(list2to10c.Count > 0)
-                sb.AppendLine("Show  # Uniques - 2-10c").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(list2to10c)).AppendLine();
-            if(list1to2c.Count > 0)
-                sb.AppendLine("Show  # Uniques - 1-2c").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(list1to2c)).AppendLine();
-            if(listLess1cLeague.Count > 0)
+            if (list10c.Count > 0) {
+                sb.AppendLine(header10c).AppendLine();
+                sb.AppendLine("Show  # Uniques - 10c+").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(list10c)).AppendLine(style10c).AppendLine();
+            }
+            if (list2to10c.Count > 0) {
+                sb.AppendLine(header2to10c).AppendLine();
+                sb.AppendLine("Show  # Uniques - 2-10c").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(list2to10c)).AppendLine(style2to10c).AppendLine();
+            }
+            sb.AppendLine(header1c).AppendLine();
+            if (list1to2c.Count > 0) {
+                sb.AppendLine("Show  # Uniques - 1-2c").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(list1to2c)).AppendLine(style1c).AppendLine();
+            }
+            sb.AppendLine(loreweaveStr).AppendLine();
+            sb.AppendLine(headerLess1c).AppendLine();
+            if (listLess1cLeague.Count > 0)
                 sb.AppendLine("Show  # Uniques - <1c - League").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cLeague)).AppendLine();
             if (listLess1cBoss.Count > 0)
                 sb.AppendLine("Show  # Uniques - <1c - Boss Prophecy").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cBoss)).AppendLine();
@@ -691,6 +775,7 @@ namespace PoE_Price_Lister
                 sb.AppendLine("Show  # Uniques - <1c - Labyrinth").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cLabyrinth)).AppendLine();
             if (listLess1c.Count > 0)
                 sb.AppendLine("Show  # Uniques - <1c - Nearly Worthless").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1c)).AppendLine();
+            sb.AppendLine(uniqueNewOrWorthless);
 
             return sb.ToString();
         }
@@ -710,13 +795,11 @@ namespace PoE_Price_Lister
             List<string> listWorthless = new List<string>();
             StringBuilder sb = new StringBuilder();
 
-            foreach (var baseTy in divinationBaseTypes)
-            {
+            foreach (var baseTy in divinationBaseTypes) {
                 DivinationData data = divination[baseTy];
                 DivinationFilterValue expectedVal = data.ExpectedFilterValue;
                 DivinationFilterValue filterVal = data.FilterValue;
-                if (safe && expectedVal.Value != filterVal.Value)
-                {
+                if (safe && expectedVal.Value != filterVal.Value) {
                     int filterTier = filterVal.ValueTier;
                     int expectedTier = expectedVal.ValueTier;
                     if (filterTier > expectedTier)
@@ -725,8 +808,7 @@ namespace PoE_Price_Lister
                         expectedTier = expectedTier - 1;
                     expectedVal = DivinationFilterValue.FromValueTier(expectedTier);
                 }
-                switch (expectedVal.Value)
-                {
+                switch (expectedVal.Value) {
                     case DivinationValueEnum.Chaos10:
                         list10c.Add(baseTy);
                         break;
@@ -743,15 +825,14 @@ namespace PoE_Price_Lister
                             listLess1c.Add(baseTy);
                         break;
                     case DivinationValueEnum.NearlyWorthless:
-                        if (list10c.Exists(str => baseTy.Contains(str)) || list1to10c.Exists(str => baseTy.Contains(str)) || listLess1c.Exists(str=> baseTy.Contains(str)))
+                        if (list10c.Exists(str => baseTy.Contains(str)) || list1to10c.Exists(str => baseTy.Contains(str)) || listLess1c.Exists(str => baseTy.Contains(str)))
                             listNearlyWorthlessConflict.Add(baseTy);
                         else
                             listNearlyWorthless.Add(data.Name);
                         break;
                     case DivinationValueEnum.Worthless:
                         if (list10c.Exists(str => baseTy.Contains(str)) || list1to10c.Exists(str => baseTy.Contains(str))
-                            || listLess1c.Exists(str => baseTy.Contains(str)) || listNearlyWorthless.Exists(str => baseTy.Contains(str)))
-                        {
+                            || listLess1c.Exists(str => baseTy.Contains(str)) || listNearlyWorthless.Exists(str => baseTy.Contains(str))) {
                             listWorthlessConflict.Add(baseTy);
                         }
                         else
@@ -762,24 +843,27 @@ namespace PoE_Price_Lister
                 }
             }
 
-            if(list1to10cConflict.Count > 0)
-                sb.AppendLine("Show  # Divination Cards - 1c+ (Conflicts)").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(list1to10cConflict)).AppendLine();
+            sb.AppendLine(headerDiv).AppendLine();
+            sb.AppendLine(GenerateDivinationConflictsString()).AppendLine();
+            if (list1to10cConflict.Count > 0)
+                sb.AppendLine("Show  # Divination Cards - 1c+ (Conflicts)").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(list1to10cConflict)).AppendLine(styleDiv1c).AppendLine();
             if (listLess1cConflict.Count > 0)
                 sb.AppendLine("Show  # Divination Cards - <1c (Conflicts)").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listLess1cConflict)).AppendLine();
             if (listNearlyWorthlessConflict.Count > 0)
                 sb.AppendLine("Show  # Divination Cards - Nearly Worthless (Conflicts)").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listNearlyWorthlessConflict)).AppendLine();
             if (listWorthlessConflict.Count > 0)
-                sb.AppendLine("Hide  # Divination Cards - Worthless (Conflicts)").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listWorthlessConflict)).AppendLine();
-            if(list10c.Count > 0)
-                sb.AppendLine("Show  # Divination Cards - 10c+").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(list10c)).AppendLine();
-            if(list1to10c.Count > 0)
-                sb.AppendLine("Show  # Divination Cards - 1c+").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(list1to10c)).AppendLine();
-            if(listLess1c.Count > 0)
+                sb.AppendLine("Hide  # Divination Cards - Worthless (Conflicts)").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listWorthlessConflict)).AppendLine(styleDivWorthless).AppendLine();
+            if (list10c.Count > 0)
+                sb.AppendLine("Show  # Divination Cards - 10c+").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(list10c)).AppendLine(styleDiv10c).AppendLine();
+            if (list1to10c.Count > 0)
+                sb.AppendLine("Show  # Divination Cards - 1c+").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(list1to10c)).AppendLine(styleDiv1c).AppendLine();
+            if (listLess1c.Count > 0)
                 sb.AppendLine("Show  # Divination Cards - <1c").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listLess1c)).AppendLine();
-            if(listNearlyWorthless.Count > 0)
+            if (listNearlyWorthless.Count > 0)
                 sb.AppendLine("Show  # Divination Cards - Nearly Worthless").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listNearlyWorthless)).AppendLine();
-            if(listWorthless.Count > 0)
-                sb.AppendLine("Hide  # Divination Cards - Worthless").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listWorthless)).AppendLine();
+            if (listWorthless.Count > 0)
+                sb.AppendLine("Show  # Divination Cards - Worthless").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listWorthless)).AppendLine(styleDivWorthless).AppendLine();
+            sb.AppendLine(divNewOrWorthless).AppendLine();
 
             return sb.ToString();
         }
@@ -788,8 +872,7 @@ namespace PoE_Price_Lister
         {
             StringBuilder sb = new StringBuilder();
             sb.Append("BaseType ");
-            foreach(var baseTy in baseTypes)
-            {
+            foreach (var baseTy in baseTypes) {
                 string result = baseTy;
                 if (baseTy.Contains(' '))
                     result = "\"" + baseTy + "\"";
