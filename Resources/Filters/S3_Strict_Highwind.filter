@@ -226,6 +226,110 @@
 #	PlayAlertSound ShGeneral 300
 #Disabled Block End
 
+#--------#
+# Normal #
+#--------#
+
+Hide  # Currency - Worthless
+	Class Currency
+	BaseType "Scroll Fragment" "Transmutation Shard" "Alteration Shard" "Whispering Essence" "Muttering Essence"
+	SetFontSize 24
+	SetTextColor 185 172 141 # Currency (Worthless)
+	SetBackgroundColor 0 0 0 180 # Currency (Worthless)
+	SetBorderColor 0 0 0 0 # Currency (Worthless)
+	DisableDropSound
+
+Hide  # Currency - Nearly Worthless (Low)
+	Class Currency
+	BaseType "Scroll of Wisdom" "Weeping Essence"
+	SetFontSize 36
+	SetTextColor 185 172 141 # Currency (Nearly Worthless)
+	SetBackgroundColor 0 0 0 225 # Currency (Nearly Worthless)
+	SetBorderColor 0 0 0 0 # Currency (Nearly Worthless)
+	DisableDropSound
+
+Hide  # Currency - Nearly Worthless (High)
+	Class Currency
+	BaseType "Portal Scroll" "Armourer's Scrap"
+	SetFontSize 36
+	SetTextColor 185 172 141 # Currency (Nearly Worthless)
+	SetBackgroundColor 0 0 0 225 # Currency (Nearly Worthless)
+	SetBorderColor 0 0 0 0 # Currency (Nearly Worthless)
+	DisableDropSound
+
+Hide  # Currency - < 0.03c
+	Class Currency
+	BaseType "Orb of Transmutation" "Blacksmith's Whetstone" "Orb of Augmentation"
+	SetFontSize 36
+	SetTextColor 185 172 141 # Currency (Nearly Worthless)
+	SetBackgroundColor 0 0 0 225 # Currency (Nearly Worthless)
+	SetBorderColor 0 0 0 0 # Currency (Nearly Worthless)
+	DisableDropSound
+
+Show  # Currency - < 0.15c
+	Class Currency
+	BaseType "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb" "Orb of Chance"
+	SetFontSize 40
+	SetTextColor 185 172 141 # Currency (Nearly Worthless)
+	SetBackgroundColor 0 0 0 225 # Currency (Nearly Worthless)
+	SetBorderColor 0 0 0 0 # Currency (Nearly Worthless)
+
+Show  # Currency - < 0.25c
+	Class Currency
+	BaseType "Silver Coin" "Glassblower's Bauble"
+	SetFontSize 40
+	SetTextColor 255 0 255 # Currency (Low)
+	SetBackgroundColor 0 0 0 230 # Currency (Low)
+	SetBorderColor 0 0 0 0 # Currency (Low)
+
+Show  # Currency - < 0.5c
+	Class Currency
+	BaseType "Orb of Fusing" "Orb of Alchemy" "Cartographer's Chisel" "Blessed Orb" "Orb of Binding"
+	SetFontSize 40
+	SetTextColor 255 0 255 # Currency (Mid)
+	SetBackgroundColor 0 0 0 230 # Currency (Mid)
+	SetBorderColor 0 0 0 0 # Currency (Mid)
+
+Show  # Currency - < 3c
+	Class Currency
+	BaseType "Orb of Scouring" "Chaos Orb" "Regal Orb" "Orb of Regret" "Vaal Orb" "Gemcutter's Prism" "Apprentice Cartographer's Sextant" "Journeyman Cartographer's Sextant" "Stacked Deck" "Shrieking Essence" "Screaming Essence"
+	SetFontSize 40
+	SetTextColor 255 0 255 # Currency (High)
+	SetBackgroundColor 20 0 20 230 # Currency (High)
+	SetBorderColor 255 0 255 # Currency (High)
+	PlayAlertSound 4 200 # Mid Value (Currency)
+
+Show  # Currency - 3c+
+	Class Currency
+	BaseType "Remnant of Corruption" "Master Cartographer's Sextant" "Apprentice Cartographer's Seal" "Exalted Shard"
+	SetFontSize 45
+	SetTextColor 255 0 255 # Currency (3c+)
+	SetBackgroundColor 255 255 255 255 # Currency (3c+)
+	SetBorderColor 255 0 255 # Currency (3c+)
+	PlayAlertSound 4 200 # Mid Value (Currency)
+
+Show  # Currency - 6c+
+	Class Currency
+	BaseType "Divine Orb" "Exalted Orb" "Eternal Orb" "Imprint" "Mirror of Kalandra" "Deafening Essence" "Essence of Delirium" "Essence of Hysteria" "Essence of Horror" "Essence of Insanity" "Albino Rhoa Feather" "Journeyman Cartographer's Seal" "Master Cartographer's Seal" "Unshaping Orb" "Mirror Shard"
+	SetFontSize 45
+	SetTextColor 255 0 255 # Currency (6c+)
+	SetBackgroundColor 255 255 255 255 # Currency (6c+)
+	SetBorderColor 255 0 255 # Currency (6c+)
+	PlayAlertSound 1 200 # High Value
+
+#----------#
+# Prophecy #
+#----------#
+
+Show  # Currency - Prophecies
+	Class Currency
+	BaseType "Prophecy"
+	SetFontSize 40
+	SetTextColor 255 0 255 # Prophecy
+	SetBackgroundColor 20 0 20 # Prophecy
+	SetBorderColor 0 255 0 # Prophecy
+	PlayAlertSound 4 200 # Prophecy
+
 #----------#
 # Perandus #
 #----------#
@@ -249,7 +353,7 @@ Hide  # Currency - League Specific - Perandus Coins (<3)
 	DisableDropSound
 
 #---------#
-# Eseence #
+# Essence #
 #---------#
 
 Show  # Currency - League Specific - Essences (Low)
@@ -293,47 +397,91 @@ Show  # Currency - League Specific - Blessings (Breach)
 # Harbinger #
 #-----------#
 
-Show  # Currency - League Specific - Harbinger (High)
+# 6c+
+Show  # Currency - League Specific - Harbinger - High (6c+)
 	Class Currency
-	BaseType "Orb of Annulment" "Ancient Orb" "Harbinger's Orb"
+	BaseType "Orb of Annulment" "Ancient Orb" "Harbinger's Orb" "Mirror Shard"
 	SetFontSize 45
-	SetTextColor 255 0 255 # Currency (High Harbinger)
-	SetBackgroundColor 255 255 255 255 # Currency (High Harbinger)
-	SetBorderColor 255 0 255 # Currency (High Harbinger)
+	SetTextColor 255 0 255 # Currency (6c+)
+	SetBackgroundColor 255 255 255 255 # Currency (6c+)
+	SetBorderColor 255 0 255 # Currency (6c+)
 	PlayAlertSound 1 200 # High Value
 
-Show  # Currency - League Specific - Harbinger (Mid)
+# 0.5-6c
+Show  # Currency - League Specific - Harbinger - High
 	Class Currency
-	BaseType "Annulment Shard" "Harbinger's Shard" "Ancient Shard"
+	BaseType "Harbinger's Shard" "Ancient Shard" "Engineer's Orb" "Orb of Horizons" "Annulment Shard" "Exalted Shard"
 	SetFontSize 40
-	SetTextColor 255 0 255 # Currency (Mid Harbinger)
-	SetBackgroundColor 0 0 0 230 # Currency (Mid Harbinger)
-	SetBorderColor 255 0 255 0 # Currency (Mid Harbinger)
+	SetTextColor 255 0 255 # Currency (High)
+	SetBackgroundColor 20 0 20 230 # Currency (High)
+	SetBorderColor 255 0 255 # Currency (High)
 
-Show  # Currency - League Specific - Harbinger (Low)
+# 0.25c
+Show  # Currency - League Specific - Harbinger - Mid (1)
+	Class Currency
+	StackSize > 3
+	BaseType "Chaos Shard" "Regal Shard"
+	SetFontSize 36
+	SetTextColor 255 0 255 # Currency (Mid)
+	SetBackgroundColor 0 0 0 230 # Currency (Mid)
+	SetBorderColor 0 0 0 0 # Currency (Mid)
+
+Show  # Currency - League Specific - Harbinger - Mid (2)
+	Class Currency
+	BaseType "Orb of Binding"
+	SetFontSize 36
+	SetTextColor 255 0 255 # Currency (Mid)
+	SetBackgroundColor 0 0 0 230 # Currency (Mid)
+	SetBorderColor 0 0 0 0 # Currency (Mid)
+
+# 0.05c
+Hide  # Currency - League Specific - Harbinger - Nearly Worthless (1)
 	Class Currency
 	BaseType "Chaos Shard" "Regal Shard"
 	SetFontSize 36
-	SetTextColor 220 190 155 # Currency (Low Harbinger)
-	SetBackgroundColor 60 55 45 230 # Currency (Low Harbinger)
-	SetBorderColor 110 95 77 # Currency (Low Harbinger)
+	SetTextColor 185 172 141 # Currency (Nearly Worthless)
+	SetBackgroundColor 0 0 0 225 # Currency (Nearly Worthless)
+	SetBorderColor 0 0 0 0 # Currency (Nearly Worthless)
 
-Hide  # Currency - League Specific - Harbinger (Nearly Worthless)
+#Disabled Block Start
+#Show  # Currency - League Specific - Harbinger - Nearly Worthless (2)
+#	Class Currency
+#	BaseType "Binding Shard" "Horizon Shard" "Alchemy Shard"
+#	StackSize > 2
+#	SetFontSize 36
+#	SetTextColor 185 172 141 # Currency (Nearly Worthless)
+#	SetBackgroundColor 0 0 0 225 # Currency (Nearly Worthless)
+#	SetBorderColor 0 0 0 0 # Currency (Nearly Worthless)
+#Disabled Block End
+
+# 0.03c
+Hide  # Currency - League Specific - Harbinger - Nearly Worthless (3)
 	Class Currency
 	BaseType "Binding Shard" "Horizon Shard" "Alchemy Shard"
-	SetFontSize 32
-	SetTextColor 220 190 155 # Currency (Very Low Harbinger)
-	SetBackgroundColor 30 30 50 225 # Currency (Very Low Harbinger)
-	SetBorderColor 0 0 0 # Currency (Very Low Harbinger)
+	SetFontSize 24
+	SetTextColor 185 172 141 # Currency (Nearly Worthless)
+	SetBackgroundColor 0 0 0 225 # Currency (Nearly Worthless)
+	SetBorderColor 0 0 0 0 # Currency (Nearly Worthless)
 	DisableDropSound
 
-Hide  # Currency - League Specific - Harbinger (Worthless)
+#Disabled Block Start
+#Show  # Currency - League Specific - Harbinger - Nearly Worthless (4)
+#	Class Currency
+#	BaseType "Engineer's Shard"
+#	StackSize > 4
+#	SetFontSize 24
+#	SetTextColor 185 172 141 # Currency (Worthless)
+#	SetBackgroundColor 0 0 0 180 # Currency (Worthless)
+#	SetBorderColor 0 0 0 0 # Currency (Worthless)
+#Disabled Block End
+
+Hide  # Currency - League Specific - Harbinger - Worthless
 	Class Currency
 	BaseType "Engineer's Shard"
-	SetFontSize 32
-	SetTextColor 220 190 155 # Currency (Very Low Harbinger)
-	SetBackgroundColor 30 30 50 225 # Currency (Very Low Harbinger)
-	SetBorderColor 0 0 0 # Currency (Very Low Harbinger)
+	SetFontSize 24
+	SetTextColor 185 172 141 # Currency (Worthless)
+	SetBackgroundColor 0 0 0 180 # Currency (Worthless)
+	SetBorderColor 0 0 0 0 # Currency (Worthless)
 	DisableDropSound
 
 #----------#
@@ -371,22 +519,14 @@ Show  # Currency - League Specific - Bestiary (High)
 # Incursion #
 #-----------#
 
-Show  # Currency - League Specific - Incursion (Low)
+Show  # Currency - League Specific - Incursion (High)
 	Class "Stackable Currency"
-	BaseType "Vial of Consequence" "Vial of the Ritual" "Vial of Transcendence"
-	SetFontSize 40
-	SetTextColor 185 172 141 # Incursion (Low)
-	SetBackgroundColor 65 50 20 235 # Incursion (Low)
-	SetBorderColor 0 0 0 # Incursion (Low)
-
-Show  # Currency - League Specific - Incursion (Mid)
-	Class "Stackable Currency"
-	BaseType "Vial of Summoning" "Vial of Fate"
-	SetFontSize 40
-	SetTextColor 255 0 255 # Incursion (Mid)
-	SetBackgroundColor 0 0 0 230 # Incursion (Mid)
-	SetBorderColor 0 0 0 0 # Incursion (Mid)
-	PlayAlertSound 4 200 # Mid Value (Currency)
+	BaseType "Vial of the Ghost" "Vial of Sacrifice"
+	SetFontSize 45
+	SetTextColor 255 0 255 # Incursion (High)
+	SetBackgroundColor 20 0 20 230 # Incursion (High)
+	SetBorderColor 255 0 255 # Incursion (High)
+	PlayAlertSound 1 200 # High Value
 
 Show  # Currency - League Specific - Incursion (High)
 	Class "Stackable Currency"
@@ -397,114 +537,22 @@ Show  # Currency - League Specific - Incursion (High)
 	SetBorderColor 255 0 255 # Incursion (High)
 	PlayAlertSound 4 200 # Mid Value (Currency)
 
-Show  # Currency - League Specific - Incursion (High)
+Show  # Currency - League Specific - Incursion (Mid)
 	Class "Stackable Currency"
-	BaseType "Vial of the Ghost" "Vial of Sacrifice"
-	SetFontSize 45
-	SetTextColor 255 0 255 # Incursion (High)
-	SetBackgroundColor 20 0 20 230 # Incursion (High)
-	SetBorderColor 255 0 255 # Incursion (High)
-	PlayAlertSound 1 200 # High Value
-
-#--------#
-# Normal #
-#--------#
-
-Hide  # Currency - Worthless
-	Class Currency
-	BaseType "Scroll Fragment" "Transmutation Shard" "Alteration Shard" "Whispering Essence" "Muttering Essence"
-	SetFontSize 24
-	SetTextColor 185 172 141 # Currency (Worthless)
-	SetBackgroundColor 0 0 0 180 # Currency (Worthless)
-	SetBorderColor 0 0 0 0 # Currency (Worthless)
-	DisableDropSound
-
-Hide  # Currency - Nearly Worthless (Low)
-	Class Currency
-	BaseType "Scroll of Wisdom" "Weeping Essence"
-	SetFontSize 36
-	SetTextColor 185 172 141 # Currency (Nearly Worthless)
-	SetBackgroundColor 0 0 0 225 # Currency (Nearly Worthless)
-	SetBorderColor 0 0 0 0 # Currency (Nearly Worthless)
-	DisableDropSound
-
-Hide  # Currency - Nearly Worthless (High)
-	Class Currency
-	BaseType "Portal Scroll" "Armourer's Scrap"
-	SetFontSize 36
-	SetTextColor 185 172 141 # Currency (Nearly Worthless)
-	SetBackgroundColor 0 0 0 225 # Currency (Nearly Worthless)
-	SetBorderColor 0 0 0 0 # Currency (Nearly Worthless)
-	DisableDropSound
-
-Hide  # Currency - < 0.03c
-	Class Currency
-	BaseType "Orb of Transmutation" "Blacksmith's Whetstone" "Orb of Augmentation" "Alchemy Shard"
-	SetFontSize 36
-	SetTextColor 185 172 141 # Currency (Nearly Worthless)
-	SetBackgroundColor 0 0 0 225 # Currency (Nearly Worthless)
-	SetBorderColor 0 0 0 0 # Currency (Nearly Worthless)
-	DisableDropSound
-
-Show  # Currency - < 0.15c
-	Class Currency
-	BaseType "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb" "Orb of Chance"
+	BaseType "Vial of Summoning" "Vial of Fate"
 	SetFontSize 40
-	SetTextColor 185 172 141 # Currency (Nearly Worthless)
-	SetBackgroundColor 0 0 0 225 # Currency (Nearly Worthless)
-	SetBorderColor 0 0 0 0 # Currency (Nearly Worthless)
-
-Show  # Currency - < 0.25c
-	Class Currency
-	BaseType "Silver Coin" "Glassblower's Bauble"
-	SetFontSize 40
-	SetTextColor 255 0 255 # Currency (Low)
-	SetBackgroundColor 0 0 0 230 # Currency (Low)
-	SetBorderColor 0 0 0 0 # Currency (Low)
-
-Show  # Currency - < 0.5c
-	Class Currency
-	BaseType "Orb of Fusing" "Orb of Alchemy" "Cartographer's Chisel" "Blessed Orb" "Orb of Binding"
-	SetFontSize 40
-	SetTextColor 255 0 255 # Currency (Mid)
-	SetBackgroundColor 0 0 0 230 # Currency (Mid)
-	SetBorderColor 0 0 0 0 # Currency (Mid)
-
-Show  # Currency - < 3c
-	Class Currency
-	BaseType "Orb of Scouring" "Chaos Orb" "Regal Orb" "Orb of Regret" "Vaal Orb" "Gemcutter's Prism" "Apprentice Cartographer's Sextant" "Journeyman Cartographer's Sextant" "Stacked Deck" "Shrieking Essence" "Screaming Essence" "Orb of Horizons" "Engineer's Orb" 
-	SetFontSize 40
-	SetTextColor 255 0 255 # Currency (High)
-	SetBackgroundColor 20 0 20 230 # Currency (High)
-	SetBorderColor 255 0 255 # Currency (High)
+	SetTextColor 255 0 255 # Incursion (Mid)
+	SetBackgroundColor 0 0 0 230 # Incursion (Mid)
+	SetBorderColor 0 0 0 0 # Incursion (Mid)
 	PlayAlertSound 4 200 # Mid Value (Currency)
 
-Show  # Currency - 3c+
-	Class Currency
-	BaseType "Remnant of Corruption" "Master Cartographer's Sextant" "Apprentice Cartographer's Seal" "Exalted Shard"
-	SetFontSize 45
-	SetTextColor 255 0 255 # Currency (3c+)
-	SetBackgroundColor 255 255 255 255 # Currency (3c+)
-	SetBorderColor 255 0 255 # Currency (3c+)
-	PlayAlertSound 4 200 # Mid Value (Currency)
-
-Show  # Currency - 6c+
-	Class Currency
-	BaseType "Divine Orb" "Exalted Orb" "Eternal Orb" "Imprint" "Mirror of Kalandra" "Deafening Essence" "Essence of Delirium" "Essence of Hysteria" "Essence of Horror" "Essence of Insanity" "Albino Rhoa Feather" "Journeyman Cartographer's Seal" "Master Cartographer's Seal" "Unshaping Orb" "Mirror Shard" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb"
-	SetFontSize 45
-	SetTextColor 255 0 255 # Currency (6c+)
-	SetBackgroundColor 255 255 255 255 # Currency (6c+)
-	SetBorderColor 255 0 255 # Currency (6c+)
-	PlayAlertSound 1 200 # High Value
-
-Show  # Currency - Prophecies
-	Class Currency
-	BaseType "Prophecy"
+Show  # Currency - League Specific - Incursion (Low)
+	Class "Stackable Currency"
+	BaseType "Vial of Consequence" "Vial of the Ritual" "Vial of Transcendence"
 	SetFontSize 40
-	SetTextColor 255 0 255 # Prophecy
-	SetBackgroundColor 20 0 20 # Prophecy
-	SetBorderColor 0 255 0 # Prophecy
-	PlayAlertSound 4 200 # Prophecy
+	SetTextColor 185 172 141 # Incursion (Low)
+	SetBackgroundColor 65 50 20 235 # Incursion (Low)
+	SetBorderColor 0 0 0 # Incursion (Low)
 
 #--------#
 # Errors #
@@ -1010,81 +1058,6 @@ Show  # Stygian Vises - Rare - Mapping (High)
 	SetBackgroundColor 0 0 0 # Stygian Vise
 	SetBorderColor 220 0 0 # Stygian Vise
 
-## Magic Jewels
-
-Show  # Abyss Jewels - Magic - Leveling
-	Class "Abyss Jewel"
-	ItemLevel <= 67
-	Rarity <= Magic
-	SetFontSize 36
-	SetBackgroundColor 0 0 0 # Jewel (Abyss)
-	SetBorderColor 0 220 220 # Jewel (Magic)
-
-#Disabled Block Start
-#Show  # Abyss Jewels - Magic - Mapping (Low)
-#	Class "Abyss Jewel"
-#	ItemLevel < 73
-#	Rarity <= Magic
-#	SetFontSize 32
-#	SetBackgroundColor 0 0 0 # Jewel (Abyss)
-#	SetBorderColor 0 220 220 # Jewel (Magic)
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Abyss Jewels - Magic - Mapping (Mid)
-#	Class "Abyss Jewel"
-#	ItemLevel < 77
-#	Rarity <= Magic
-#	SetFontSize 32
-#	SetBackgroundColor 0 0 0 # Jewel (Abyss)
-#	SetBorderColor 0 220 220 # Jewel (Magic)
-#Disabled Block End
-
-Hide  # Abyss Jewels - Magic - Mapping (High)
-	Class "Abyss Jewel"
-	Rarity <= Magic
-	SetFontSize 32
-	SetBackgroundColor 0 0 0 # Jewel (Abyss)
-	SetBorderColor 0 220 220 # Jewel (Magic)
-
-## Rare Jewels
-
-Show  # Abyss Jewels - Rare - Leveling
-	Class "Abyss Jewel"
-	Rarity = Rare
-	ItemLevel < 68
-	SetFontSize 40
-	SetBackgroundColor 0 0 0 # Jewel (Abyss)
-	SetBorderColor 0 220 220 # Jewel (Rare)
-	PlayAlertSound 6 200 # Jewel
-
-#Disabled Block Start
-#Show  # Abyss Jewels - Rare - Mapping (Low)
-#	Class "Abyss Jewel"
-#	Rarity = Rare
-#	ItemLevel < 73
-#	SetFontSize 40
-#	SetBackgroundColor 0 0 0 # Jewel (Abyss)
-#	SetBorderColor 0 220 220 # Jewel (Rare)
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Abyss Jewels - Rare - Mapping (Mid)
-#	Class "Abyss Jewel"
-#	Rarity = Rare
-#	ItemLevel < 77
-#	SetFontSize 40
-#	SetBackgroundColor 0 0 0 # Jewel (Abyss)
-#	SetBorderColor 0 220 220 # Jewel (Rare)
-#Disabled Block End
-
-Show  # Abyss Jewels - Rare - Mapping (High)
-	Class "Abyss Jewel"
-	Rarity = Rare
-	SetFontSize 40
-	SetBackgroundColor 0 0 0 # Jewel (Abyss)
-	SetBorderColor 0 220 220 # Jewel (Rare)
-
 ##########################################
 ############## CHANCE BASES ##############
 ##########################################
@@ -1468,6 +1441,77 @@ Hide  # 60+ Rares - Low Drop Level - 60+ Two Hand Weapons
 	SetBorderColor 0 0 0 # Rare Recipe 60+ (Hidden)
 
 ##########################################
+############# EXPLICIT MODS ##############
+##########################################
+
+Show  # Explicit Mods - Physical Weapons
+	Class "One Hand" Daggers Wands Claws Sceptres "Two Hand" Bows Staves
+	HasExplicitMod "Tyrannical" "Merciless" "Flaring" "of Celebration" "of Incision" "of Destruction" "Dictator's"
+	Rarity <= Rare
+	SetFontSize 45
+	SetTextColor 255 255 255 # Crafting Base (High)
+	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
+	SetBorderColor 0 255 255 # Crafting Base (High)
+	PlayAlertSound 4 200 # Mid Value
+
+Show  # Explicit Mods - Elemental Weapons
+	Class "One Hand" Daggers Wands Claws Sceptres Bows
+	HasExplicitMod "Cremating" "Electrocuting" "Malicious" "Entombing" "Sharpshooter's"
+	Rarity <= Rare
+	SetFontSize 45
+	SetTextColor 255 255 255 # Crafting Base (High)
+	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
+	SetBorderColor 0 255 255 # Crafting Base (High)
+	PlayAlertSound 4 200 # Mid Value
+
+Show  # Explicit Mods - Incursion
+	HasExplicitMod "Tacati's" "Citaqualotl's" "Matatl's" "Topotante's" "Xopec's" "Guatelitzi's" "of Tacati" "of Citaqualotl" "of Matatl" "of Puhuarte" "of Guatelitzi"
+	Rarity <= Rare
+	SetFontSize 45
+	SetTextColor 255 255 255 # Crafting Base (High)
+	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
+	SetBorderColor 0 255 255 # Crafting Base (High)
+	PlayAlertSound 4 200 # Mid Value
+
+Show  # Explicit Mods - Shaper/Elder
+	HasExplicitMod "The Shaper's" "Eldritch" "of Shaping" "of the Elder"
+	Rarity <= Rare
+	SetFontSize 40
+	SetTextColor 255 255 255 # Crafting Base (High)
+	SetBackgroundColor 50 20 70 230 # Shaper Elder 60+
+	SetBorderColor 200 50 255 # Shaper Elder 60+
+	PlayAlertSound 4 200 # Mid Value
+
+Show  # Explicit Mods - Armor/Accessories
+	Class Gloves Boots Helmets Belts Amulets "Body Armour"
+	HasExplicitMod "Rapturous" "Prime" "of Haast" "of Tzteosh" "of Ephij" "of Bameth" "of the Gods" "Unfaltering" "Resplendent" "of the Genius" "of the Polymath" "of the Blur" "of the Wind" "Hellion's"
+	Rarity <= Rare
+	SetFontSize 45
+	SetTextColor 255 255 255 # Crafting Base (High)
+	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
+	SetBorderColor 0 255 255 # Crafting Base (High)
+	PlayAlertSound 4 200 # Mid Value
+
+Show  # Explicit Mods - Accessories
+	Class Belts Amulets
+	HasExplicitMod "Devastating" "Overpowering" "of Sipping" "of Overflowing" "Dazzling" "of the Godslayer" "of Destruction"
+	Rarity <= Rare
+	SetFontSize 45
+	SetTextColor 255 255 255 # Crafting Base (High)
+	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
+	SetBorderColor 0 255 255 # Crafting Base (High)
+	PlayAlertSound 4 200 # Mid Value
+
+Show  # Explicit Mods - Jewels
+	BaseType Jewel
+	HasExplicitMod "Vivid" "Shimmering" "of the Elements" "of Unmaking" "Jinxing" "Cleaving" "Fencing" "Bandit's" "Volleying" "Ripping" "Slicing" "of Demolishing" "Surging" "Arctic" "Infernal" "Piercing" 
+	Rarity <= Rare
+	SetFontSize 45
+	SetBackgroundColor 0 0 0 # Jewel (Magic)
+	SetBorderColor 0 220 220 # Jewel (Magic)
+	PlayAlertSound 6 200 # Jewel
+
+##########################################
 ################# JEWELS #################
 ##########################################
 # Section: Jewels
@@ -1493,6 +1537,85 @@ Show  # Jewels - Unique
 	SetBackgroundColor 50 25 12 # Jewel (Unique)
 	SetBorderColor 0 255 255 # Jewel (Unique)
 	PlayAlertSound 6 200 # Jewel (Unique)
+
+#-------------#
+# Abyss Magic #
+#-------------#
+
+Show  # Abyss Jewels - Magic - Leveling
+	Class "Abyss Jewel"
+	ItemLevel <= 67
+	Rarity <= Magic
+	SetFontSize 36
+	SetBackgroundColor 0 0 0 # Jewel (Abyss)
+	SetBorderColor 0 220 220 # Jewel (Magic)
+
+#Disabled Block Start
+#Show  # Abyss Jewels - Magic - Mapping (Low)
+#	Class "Abyss Jewel"
+#	ItemLevel < 73
+#	Rarity <= Magic
+#	SetFontSize 32
+#	SetBackgroundColor 0 0 0 # Jewel (Abyss)
+#	SetBorderColor 0 220 220 # Jewel (Magic)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Abyss Jewels - Magic - Mapping (Mid)
+#	Class "Abyss Jewel"
+#	ItemLevel < 77
+#	Rarity <= Magic
+#	SetFontSize 32
+#	SetBackgroundColor 0 0 0 # Jewel (Abyss)
+#	SetBorderColor 0 220 220 # Jewel (Magic)
+#Disabled Block End
+
+Hide  # Abyss Jewels - Magic - Mapping (High)
+	Class "Abyss Jewel"
+	Rarity <= Magic
+	SetFontSize 32
+	SetBackgroundColor 0 0 0 # Jewel (Abyss)
+	SetBorderColor 0 220 220 # Jewel (Magic)
+
+#------------#
+# Abyss Rare #
+#------------#
+
+Show  # Abyss Jewels - Rare - Leveling
+	Class "Abyss Jewel"
+	Rarity = Rare
+	ItemLevel < 68
+	SetFontSize 40
+	SetBackgroundColor 0 0 0 # Jewel (Abyss)
+	SetBorderColor 0 220 220 # Jewel (Rare)
+	PlayAlertSound 6 200 # Jewel
+
+#Disabled Block Start
+#Show  # Abyss Jewels - Rare - Mapping (Low)
+#	Class "Abyss Jewel"
+#	Rarity = Rare
+#	ItemLevel < 73
+#	SetFontSize 40
+#	SetBackgroundColor 0 0 0 # Jewel (Abyss)
+#	SetBorderColor 0 220 220 # Jewel (Rare)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Abyss Jewels - Rare - Mapping (Mid)
+#	Class "Abyss Jewel"
+#	Rarity = Rare
+#	ItemLevel < 77
+#	SetFontSize 40
+#	SetBackgroundColor 0 0 0 # Jewel (Abyss)
+#	SetBorderColor 0 220 220 # Jewel (Rare)
+#Disabled Block End
+
+Show  # Abyss Jewels - Rare - Mapping (High)
+	Class "Abyss Jewel"
+	Rarity = Rare
+	SetFontSize 40
+	SetBackgroundColor 0 0 0 # Jewel (Abyss)
+	SetBorderColor 0 220 220 # Jewel (Rare)
 
 #--------------#
 # Normal/Magic #

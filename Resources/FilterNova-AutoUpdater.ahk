@@ -269,7 +269,7 @@ For fID, fData in Filters {
 GuiCreate()
 FileDelete, % docPoE . "FilterUpdater*.txt" ; remove info files of previous version
 SetTimer, CheckForFilterUpdates, 3600000
-SetTimer, CheckForNovaUpdates, 14400000
+; SetTimer, CheckForNovaUpdates, 14400000
 CheckForFilterUpdates()
 CheckForNovaUpdates()
 
