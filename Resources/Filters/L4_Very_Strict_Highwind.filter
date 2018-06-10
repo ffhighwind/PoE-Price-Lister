@@ -1,7 +1,7 @@
 ############################################
-##  HIGHWIND'S VERY STRICT FILTER 3.3.5   ##
+##  HIGHWIND'S VERY STRICT FILTER 3.3.6   ##
 ############################################
-## Release Date: June 9, 2018             ##
+## Release Date: June 10, 2018            ##
 ############################################
 
 #--------------#
@@ -1485,39 +1485,31 @@ Show  # Explicit Mods - Incursion
 	HasExplicitMod "Tacati's" "Citaqualotl's" "Matatl's" "Topotante's" "Xopec's" "Guatelitzi's" "of Tacati" "of Citaqualotl" "of Matatl" "of Puhuarte" "of Guatelitzi"
 	Rarity <= Rare
 	SetFontSize 45
-	SetTextColor 255 255 255 # Crafting Base (High)
 	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
 	SetBorderColor 0 255 255 # Crafting Base (High)
-	PlayAlertSound 4 200 # Mid Value
 
 Show  # Explicit Mods - Shaper/Elder
 	HasExplicitMod "The Shaper's" "Eldritch" "of Shaping" "of the Elder"
 	Rarity <= Rare
 	SetFontSize 45
-	SetTextColor 255 255 255 # Crafting Base (High)
 	SetBackgroundColor 50 20 70 230 # Shaper Elder 60+
 	SetBorderColor 200 50 255 # Shaper Elder 60+
-	PlayAlertSound 4 200 # Mid Value
 
 Show  # Explicit Mods - Armor/Accessories
 	Class Gloves Boots Helmets Belts Amulets "Body Armour"
 	HasExplicitMod "Rapturous" "Prime" "of Haast" "of Tzteosh" "of Ephij" "of Bameth" "of the Gods" "Unfaltering" "Resplendent" "of the Genius" "of the Polymath" "of the Blur" "of the Wind" "Hellion's"
 	Rarity <= Rare
 	SetFontSize 45
-	SetTextColor 255 255 255 # Crafting Base (High)
 	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
 	SetBorderColor 0 255 255 # Crafting Base (High)
-	PlayAlertSound 4 200 # Mid Value
 
 Show  # Explicit Mods - Accessories
 	Class Belts Amulets
 	HasExplicitMod "Devastating" "Overpowering" "of Sipping" "of Overflowing" "Dazzling" "of the Godslayer" "of Destruction"
 	Rarity <= Rare
 	SetFontSize 45
-	SetTextColor 255 255 255 # Crafting Base (High)
 	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
 	SetBorderColor 0 255 255 # Crafting Base (High)
-	PlayAlertSound 4 200 # Mid Value
 
 Show  # Explicit Mods - Jewels
 	BaseType Jewel
