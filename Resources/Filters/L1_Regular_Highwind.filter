@@ -1,5 +1,5 @@
 ############################################
-##      HIGHWIND'S LOOT FILTER 3.3.6      ##
+##      HIGHWIND'S LOOT FILTER 3.3.7      ##
 ############################################
 ## Release Date: June 10, 2018            ##
 ############################################
@@ -1293,29 +1293,6 @@ Hide  # Normal/Magic - Low Drop Level - 60+ Armour Weapons Shields
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
 
-Hide  # Normal/Magic - Low Drop Level - <83 Body Armour Weapons Shields
-	Class "One Hand" "Two Hand" Bows Staves Daggers Wands Claws Sceptres "Body Armours" Shields
-	Rarity <= Magic
-	ItemLevel < 83
-	ItemLevel >= 60
-	ShaperItem False
-	ElderItem False
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
-	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
-
-Hide  # Normal/Magic - Low Drop Level - <84 Gloves Boots Helmets
-	Class Gloves Boots Helmets
-	DropLevel < 70
-	Rarity <= Magic
-	ItemLevel < 84
-	ItemLevel >= 60
-	ShaperItem False
-	ElderItem False
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
-	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
-
 Hide  # Normal/Magic - Low Drop Level - 84+ Armour Shields
 	Class Gloves Boots Helmets "Body Armours" Shields
 	DropLevel < 62
@@ -1513,6 +1490,33 @@ Show  # Explicit Mods - Jewels
 	SetBackgroundColor 0 0 0 # Jewel (Magic)
 	SetBorderColor 0 220 220 # Jewel (Magic)
 	PlayAlertSound 6 200 # Jewel
+
+##########################################
+############## PRE-FILTER 2 ##############
+##########################################
+
+Hide  # Normal/Magic - Low Drop Level - <83 Body Armour Weapons Shields
+	Class "One Hand" "Two Hand" Bows Staves Daggers Wands Claws Sceptres "Body Armours" Shields
+	Rarity <= Magic
+	ItemLevel < 83
+	ItemLevel >= 60
+	ShaperItem False
+	ElderItem False
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
+	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
+
+Hide  # Normal/Magic - Low Drop Level - <84 Gloves Boots Helmets
+	Class Gloves Boots Helmets
+	DropLevel < 70
+	Rarity <= Magic
+	ItemLevel < 84
+	ItemLevel >= 60
+	ShaperItem False
+	ElderItem False
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
+	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
 
 ##########################################
 ################# JEWELS #################
