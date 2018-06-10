@@ -1,7 +1,7 @@
 ############################################
-##     HIGHWIND'S STRICT FILTER 3.3.3     ##
+##     HIGHWIND'S STRICT FILTER 3.3.4     ##
 ############################################
-## Release Date: June 4, 2018             ##
+## Release Date: June 9, 2018             ##
 ############################################
 
 #--------------#
@@ -284,7 +284,7 @@ Show  # Currency - < 0.25c
 
 Show  # Currency - < 0.5c
 	Class Currency
-	BaseType "Orb of Fusing" "Orb of Alchemy" "Cartographer's Chisel" "Blessed Orb" "Orb of Binding"
+	BaseType "Orb of Fusing" "Orb of Alchemy" "Cartographer's Chisel" "Blessed Orb"
 	SetFontSize 40
 	SetTextColor 255 0 255 # Currency (Mid)
 	SetBackgroundColor 0 0 0 230 # Currency (Mid)
@@ -419,7 +419,7 @@ Show  # Currency - League Specific - Harbinger - High
 # 0.25c
 Show  # Currency - League Specific - Harbinger - Mid (1)
 	Class Currency
-	StackSize > 3
+	StackSize > 2
 	BaseType "Chaos Shard" "Regal Shard"
 	SetFontSize 36
 	SetTextColor 255 0 255 # Currency (Mid)
@@ -1504,7 +1504,7 @@ Show  # Explicit Mods - Accessories
 
 Show  # Explicit Mods - Jewels
 	BaseType Jewel
-	HasExplicitMod "Vivid" "Shimmering" "of the Elements" "of Unmaking" "Jinxing" "Cleaving" "Fencing" "Bandit's" "Volleying" "Ripping" "Slicing" "of Demolishing" "Surging" "Arctic" "Infernal" "Piercing" 
+	HasExplicitMod "Vivid" "Shimmering" "of the Elements" "of Unmaking" "Jinxing" "Cleaving" "Fencing" "Bandit's" "Volleying" "Ripping" "Slicing" "of Demolishing" "Surging" "Arctic" "Infernal" "Piercing" "Stalwart" "Resplendent" "Electrocuting" "Flaring" "Entombing" "Cremating" "of Unholy Might" "Sanguine" "Incandescent"
 	Rarity <= Rare
 	SetFontSize 45
 	SetBackgroundColor 0 0 0 # Jewel (Magic)
@@ -1712,7 +1712,7 @@ Show  # Gems - Quality - 17%+
 	SetBorderColor 50 220 180 # Gem (High)
 	PlayAlertSound 6 200 # Gem
 
-Show  # Gems - Leveled - Drop Only
+Show  # Gems - Leveled - High Value
 	Class "Skill Gems"
 	BaseType Portal Empower Enlighten
 	GemLevel >= 2
@@ -1720,25 +1720,34 @@ Show  # Gems - Leveled - Drop Only
 	SetTextColor 27 162 155 # Gem (High)
 	SetBackgroundColor 255 255 255 255 # Gem (High)
 	SetBorderColor 50 220 180 # Gem (High)
-	PlayAlertSound 6 200 # Gem
+	PlayAlertSound 1 200 # High Value
 
-Show  # Gems - Leveled - Drop Only
+Show  # Gems - Item Quantity
 	Class "Skill Gems"
-	BaseType Portal Empower Enlighten
+	BaseType "Item Quantity"
 	GemLevel >= 2
 	SetFontSize 45
 	SetTextColor 27 162 155 # Gem (High)
 	SetBackgroundColor 255 255 255 255 # Gem (High)
 	SetBorderColor 50 220 180 # Gem (High)
-	PlayAlertSound 6 200 # Gem
+	PlayAlertSound 1 200 # High Value
 
 #-----#
 # Mid #
 #-----#
 
-Show  # Gems - Drop Only - 1c+
+Show  # Gems - Leveled - Level 20
 	Class "Skill Gems"
-	BaseType Portal Empower Enlighten "Vaal Breach" "Vaal Haste" "Vaal Discipline" "Item Quantity"
+	GemLevel 20
+	SetFontSize 45
+	SetTextColor 55 225 185 # Gem (Mid)
+	SetBackgroundColor 10 35 30 # Gem (Mid)
+	SetBorderColor 50 220 180 # Gem (Mid)
+	PlayAlertSound 6 200 # Gem
+
+Show  # Gems - Leveled - Level 19
+	Class "Skill Gems"
+	GemLevel >= 19
 	SetFontSize 40
 	SetTextColor 55 225 185 # Gem (Mid)
 	SetBackgroundColor 10 35 30 # Gem (Mid)
@@ -1754,14 +1763,13 @@ Show  # Gems - Quality - 10%+
 	SetBorderColor 200 200 200 # Gem Quality (Mid)
 	PlayAlertSound 6 200 # Gem
 
-Show  # Gems - Leveled - Other
+Show  # Gems - Drop Only - 1c+
 	Class "Skill Gems"
-	GemLevel >= 19
-	SetFontSize 45
+	BaseType Portal Empower Enlighten "Vaal Breach" "Vaal Haste" "Vaal Discipline"
+	SetFontSize 40
 	SetTextColor 55 225 185 # Gem (Mid)
 	SetBackgroundColor 10 35 30 # Gem (Mid)
 	SetBorderColor 50 220 180 # Gem (Mid)
-	PlayAlertSound 6 200 # Gem
 
 #-----#
 # Low #
@@ -2038,7 +2046,7 @@ Show  # Uniques - 2-10c
 
 Show  # Uniques - 1-2c
 	Rarity = Unique
-	BaseType "Abyssal Axe" "Amethyst Flask" "Amethyst Ring" "Ancient Gauntlets" "Ancient Greaves" "Assassin's Mitts" Blinder "Blood Raiment" "Blue Pearl Amulet" "Bone Bow" "Carved Wand" "Cedar Tower Shield" "Champion Kite Shield" "Close Helmet" "Coiled Staff" "Conjurer Boots" "Coral Ring" "Coronal Leather" "Crystal Belt" "Demon Dagger" "Diamond Ring" "Etched Greatsword" "Ezomyte Burgonet" Gavel "Goliath Greaves" "Hellion's Paw" "Imperial Claw" "Imperial Skean" "Iron Ring" "Ironscale Gauntlets" "Judgement Staff" "Karui Sceptre" Labrys "Lacquered Garb" "Leather Belt" "Lion Pelt" Maelstr "Magistrate Crown" Meatgrinder "Midnight Blade" "Mirrored Spiked Shield" "Moonstone Ring" "Murder Boots" "Murder Mitts" "Necromancer Silks" "Nightmare Bascinet" "Nightmare Mace" "Penetrating Arrow Quiver" "Pinnacle Tower Shield" "Platinum Sceptre" "Regicide Mask" "Ruby Ring" "Sapphire Ring" "Sharkskin Tunic" "Siege Helmet" "Silver Flask" "Simple Robe" "Slink Boots" "Sorcerer Gloves" Steelhead "Stygian Vise" "Titan Gauntlets" "Topaz Ring" "Trapper Boots" "Vaal Sceptre" "Vanguard Belt" "Varnished Coat"
+	BaseType "Abyssal Axe" "Amethyst Flask" "Amethyst Ring" "Ancient Gauntlets" "Ancient Greaves" "Assassin's Mitts" Blinder "Blood Raiment" "Blue Pearl Amulet" "Bone Bow" "Carved Wand" "Cedar Tower Shield" "Champion Kite Shield" "Close Helmet" "Coiled Staff" "Conjurer Boots" "Coral Ring" "Coronal Leather" "Crystal Belt" "Demon Dagger" "Diamond Ring" "Etched Greatsword" "Ezomyte Burgonet" Gavel "Goliath Greaves" "Hellion's Paw" "Imperial Claw" "Imperial Skean" "Iron Ring" "Ironscale Gauntlets" "Judgement Staff" "Karui Sceptre" Labrys "Lacquered Garb" "Leather Belt" "Lion Pelt" Maelstr "Magistrate Crown" Meatgrinder "Midnight Blade" "Mirrored Spiked Shield" "Moonstone Ring" "Murder Boots" "Necromancer Silks" "Nightmare Bascinet" "Nightmare Mace" "Penetrating Arrow Quiver" "Pinnacle Tower Shield" "Platinum Sceptre" "Regicide Mask" "Ruby Ring" "Sapphire Ring" "Sharkskin Tunic" "Siege Helmet" "Silver Flask" "Simple Robe" "Slink Boots" "Sorcerer Gloves" Steelhead "Stygian Vise" "Titan Gauntlets" "Topaz Ring" "Trapper Boots" "Vaal Sceptre" "Vanguard Belt" "Varnished Coat"
 	SetFontSize 40
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
@@ -2136,8 +2144,9 @@ Show  # Uniques - New or Worthless
 # Prices attained from poe.ninja.
 # Future values will fluctuate based on league challenges and the meta.
 
-# Conflicts! (Be careful of the order of these when editing)
-# "Hope" "Last Hope" "Glimmer of Hope"
+# Potential Conflicts!!! (They have been separated but may need to be reorganized)
+# Hope "Glimmer of Hope"
+# Hope "Last Hope"
 # "The Dragon" "The Dragon's Heart" "The Eye of the Dragon"
 # "The Wolf" "The Wolf's Shadow"
 
@@ -2152,7 +2161,7 @@ Hide  # Divination Cards - Nearly Worthless (Conflicts)
 
 Show  # Divination Cards - 10c+
 	Class Divination
-	BaseType "Abandoned Wealth" "Bowyer's Dream" Heterochromia "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Last Hope" "Mawr Blaidd" "Pride Before the Fall" "The Artist" "The Brittle Emperor" "The Celestial Justicar" "The Celestial Stone" "The Devastator" "The Doctor" "The Dragon's Heart" "The Dreamer" "The Enlightened" "The Ethereal" "The Fiend" "The Formless Sea" "The Hunger" "The Immortal" "The Iron Bard" "The King's Heart" "The Last One Standing" "The Master" "The Mayor" "The Offering" "The Polymath" "The Professor" "The Queen" "The Saint's Treasure" "The Samurai's Eye" "The Sephirot" "The Spark and the Flame" "The Thaumaturgist" "The Undisputed" "The Valkyrie" "The Vast" "The Wind" "The Wolf" "The Wolven King's Bite" "The World Eater" "Wealth and Power"
+	BaseType "The Undaunted" "Abandoned Wealth" "Bowyer's Dream" Heterochromia "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Last Hope" "Mawr Blaidd" "Pride Before the Fall" "The Artist" "The Brittle Emperor" "The Celestial Justicar" "The Celestial Stone" "The Devastator" "The Doctor" "The Dragon's Heart" "The Dreamer" "The Enlightened" "The Ethereal" "The Fiend" "The Formless Sea" "The Hunger" "The Immortal" "The Iron Bard" "The King's Heart" "The Last One Standing" "The Master" "The Mayor" "The Offering" "The Polymath" "The Professor" "The Queen" "The Saint's Treasure" "The Samurai's Eye" "The Sephirot" "The Spark and the Flame" "The Thaumaturgist" "The Undisputed" "The Valkyrie" "The Vast" "The Wind" "The Wolf" "The Wolven King's Bite" "The World Eater" "Wealth and Power"
 	SetFontSize 45
 	SetTextColor 255 0 175 # Divination Card (10c+)
 	SetBackgroundColor 255 255 255 255 # Divination Card (10c+)
@@ -2161,7 +2170,7 @@ Show  # Divination Cards - 10c+
 
 Show  # Divination Cards - 1c+
 	Class Divination
-	BaseType "Blessing of God" "Chaotic Disposition" "Dialla's Subjugation" "Earth Drinker" "Emperor of Purity" "Gemcutter's Promise" "Harmony of Souls" Humility "Jack in the Box" "Left to Fate" "Lingering Remnants" "Lost Worlds" "Lucky Connections" "Lucky Deck" "Lysah's Respite" "Merciless Armament" "No Traces" Perfection Rebirth "Scholar of the Seas" "The Admirer" "The Aesthete" "The Arena Champion" "The Avenger" "The Beast" "The Body" "The Breach" "The Cartographer" "The Chains that Bind" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Darkest Dream" "The Demoness" "The Dragon" "The Dreamland" "The Fathomless Depths" "The Fletcher" "The Gladiator" "The Hale Heart" "The Harvester" "The Hoarder" "The Insatiable" "The Inventor" "The Jeweller's Boon" "The Lion" "The Obscured" "The Penitent" "The Porcupine" "The Realm" "The Risk" "The Rite of Elements" "The Soul" "The Standoff" "The Stormcaller" "The Surveyor" "The Sword King's Salute" "The Throne" "The Trial" "The Undaunted" "The Union" "The Valley of Steel Boxes" "The Void" "The Warlord" "The Witch" "The Wrath" "The Wretched" "Time-Lost Relic" "Vinia's Token"
+	BaseType "Blessing of God" "Chaotic Disposition" "Dialla's Subjugation" "Earth Drinker" "Emperor of Purity" "Gemcutter's Promise" "Harmony of Souls" Humility "Jack in the Box" "Left to Fate" "Lingering Remnants" "Lost Worlds" "Lucky Connections" "Lucky Deck" "Lysah's Respite" "Merciless Armament" "No Traces" Perfection Rebirth "Scholar of the Seas" "The Admirer" "The Aesthete" "The Arena Champion" "The Avenger" "The Beast" "The Body" "The Breach" "The Cartographer" "The Chains that Bind" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Darkest Dream" "The Demoness" "The Dragon" "The Dreamland" "The Fathomless Depths" "The Fletcher" "The Gladiator" "The Hale Heart" "The Harvester" "The Hoarder" "The Insatiable" "The Inventor" "The Jeweller's Boon" "The Lion" "The Obscured" "The Penitent" "The Porcupine" "The Realm" "The Risk" "The Rite of Elements" "The Soul" "The Standoff" "The Stormcaller" "The Surveyor" "The Sword King's Salute" "The Throne" "The Trial" "The Union" "The Valley of Steel Boxes" "The Void" "The Warlord" "The Witch" "The Wrath" "The Wretched" "Time-Lost Relic" "Vinia's Token"
 	SetFontSize 45
 	SetTextColor 255 255 255 # Divination Card (1c+)
 	SetBackgroundColor 255 0 175 255 # Divination Card (1c+)
