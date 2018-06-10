@@ -486,7 +486,7 @@ Hide  # Currency - League Specific - Harbinger - Worthless
 # Bestiary #
 #----------#
 
-Hide  # Currency - League Specific - Bestiary (Nearly Worthless)
+Hide  # Currency - League Specific - Bestiary - Nearly Worthless
 	Class "Stackable Currency"
 	BaseType "Simple Rope Net" "Reinforced Rope Net" "Strong Rope Net" "Simple Iron Net" "Reinforced Iron Net" "Strong Iron Net" "Simple Steel Net"
 	SetFontSize 40
@@ -495,7 +495,7 @@ Hide  # Currency - League Specific - Bestiary (Nearly Worthless)
 	SetBorderColor 0 0 0 # Bestiary (Low)
 	DisableDropSound
 
-Show  # Currency - League Specific - Bestiary (Low)
+Show  # Currency - League Specific - Bestiary - Low
 	Class "Stackable Currency"
 	BaseType "Reinforced Steel Net" "Strong Steel Net"
 	SetFontSize 40
@@ -504,7 +504,7 @@ Show  # Currency - League Specific - Bestiary (Low)
 	SetBorderColor 0 0 0 # Bestiary (Low)
 	DisableDropSound
 
-Show  # Currency - League Specific - Bestiary (Mid)
+Show  # Currency - League Specific - Bestiary - Mid
 	Class "Stackable Currency"
 	BaseType "Thaumaturgical Net"
 	SetFontSize 45
@@ -512,7 +512,7 @@ Show  # Currency - League Specific - Bestiary (Mid)
 	SetBackgroundColor 0 0 0 230 # Bestiary (Mid)
 	SetBorderColor 0 0 0 0 # Bestiary (Mid)
 
-Show  # Currency - League Specific - Bestiary (High)
+Show  # Currency - League Specific - Bestiary - High
 	Class "Stackable Currency"
 	BaseType "Necromancy Net" "Bestiary Orb" "Imprinted Bestiary Orb"
 	SetFontSize 45
@@ -525,7 +525,7 @@ Show  # Currency - League Specific - Bestiary (High)
 # Incursion #
 #-----------#
 
-Show  # Currency - League Specific - Incursion (High)
+Show  # Currency - League Specific - Incursion - Valuable
 	Class "Stackable Currency"
 	BaseType "Vial of the Ghost" "Vial of Sacrifice" "Vial of Awakening"
 	SetFontSize 45
@@ -534,7 +534,7 @@ Show  # Currency - League Specific - Incursion (High)
 	SetBorderColor 255 0 255 # Incursion (Valuable)
 	PlayAlertSound 1 200 # High Value
 
-Show  # Currency - League Specific - Incursion (High)
+Show  # Currency - League Specific - Incursion - High
 	Class "Stackable Currency"
 	BaseType "Vial of Dominance" "Vial of Summoning" "Vial of Fate" "Vial of Consequence"
 	SetFontSize 45
@@ -542,7 +542,7 @@ Show  # Currency - League Specific - Incursion (High)
 	SetBackgroundColor 20 0 20 230 # Incursion (High)
 	SetBorderColor 255 0 255 # Incursion (High)
 
-Show  # Currency - League Specific - Incursion (Low)
+Show  # Currency - League Specific - Incursion - Low
 	Class "Stackable Currency"
 	BaseType "Vial of the Ritual" "Vial of Transcendence"
 	SetFontSize 45
