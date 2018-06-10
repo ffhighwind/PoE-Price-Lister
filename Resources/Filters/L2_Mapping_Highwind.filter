@@ -1,5 +1,5 @@
 ############################################
-##    HIGHWIND'S MAPPING FILTER 3.3.4     ##
+##    HIGHWIND'S MAPPING FILTER 3.3.5     ##
 ############################################
 ## Release Date: June 9, 2018             ##
 ############################################
@@ -527,38 +527,28 @@ Show  # Currency - League Specific - Bestiary (High)
 
 Show  # Currency - League Specific - Incursion (High)
 	Class "Stackable Currency"
-	BaseType "Vial of the Ghost" "Vial of Sacrifice"
+	BaseType "Vial of the Ghost" "Vial of Sacrifice" "Vial of Awakening"
 	SetFontSize 45
-	SetTextColor 255 0 255 # Incursion (High)
-	SetBackgroundColor 20 0 20 230 # Incursion (High)
-	SetBorderColor 255 0 255 # Incursion (High)
+	SetTextColor 255 0 255 # Incursion (Valuable)
+	SetBackgroundColor 255 255 255 255 # Incursion (Valuable)
+	SetBorderColor 255 0 255 # Incursion (Valuable)
 	PlayAlertSound 1 200 # High Value
 
 Show  # Currency - League Specific - Incursion (High)
 	Class "Stackable Currency"
-	BaseType "Vial of Dominance" "Vial of Awakening"
+	BaseType "Vial of Dominance" "Vial of Summoning" "Vial of Fate" "Vial of Consequence"
 	SetFontSize 45
 	SetTextColor 255 0 255 # Incursion (High)
 	SetBackgroundColor 20 0 20 230 # Incursion (High)
 	SetBorderColor 255 0 255 # Incursion (High)
-	PlayAlertSound 4 200 # Mid Value (Currency)
 
-Show  # Currency - League Specific - Incursion (Mid)
+Show  # Currency - League Specific - Incursion (Low)
 	Class "Stackable Currency"
-	BaseType "Vial of Summoning" "Vial of Fate"
+	BaseType "Vial of the Ritual" "Vial of Transcendence"
 	SetFontSize 45
 	SetTextColor 255 0 255 # Incursion (Mid)
 	SetBackgroundColor 0 0 0 230 # Incursion (Mid)
 	SetBorderColor 0 0 0 0 # Incursion (Mid)
-	PlayAlertSound 4 200 # Mid Value (Currency)
-
-Show  # Currency - League Specific - Incursion (Low)
-	Class "Stackable Currency"
-	BaseType "Vial of Consequence" "Vial of the Ritual" "Vial of Transcendence"
-	SetFontSize 45
-	SetTextColor 185 172 141 # Incursion (Low)
-	SetBackgroundColor 65 50 20 235 # Incursion (Low)
-	SetBorderColor 0 0 0 # Incursion (Low)
 
 #--------#
 # Errors #
