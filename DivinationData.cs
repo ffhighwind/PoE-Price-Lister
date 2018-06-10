@@ -33,43 +33,35 @@ namespace PoE_Price_Lister
             count = item.Count;
         }
 
-        public bool IsLowConfidence
-        {
+        public bool IsLowConfidence {
             get { return count < 3; }
         }
 
-        public string Name
-        {
+        public string Name {
             get { return name; }
             set { name = value; }
         }
 
-        public string QuotedName
-        {
-            get
-            {
+        public string QuotedName {
+            get {
                 if (name.Contains(' '))
                     return "\"" + name + "\"";
                 return name;
             }
         }
 
-        public float ChaosValue
-        {
+        public float ChaosValue {
             get { return listedValue; }
             set { listedValue = value; }
         }
 
-        public DivinationFilterValue FilterValue
-        {
+        public DivinationFilterValue FilterValue {
             get { return filterValue; }
             set { filterValue = value; }
         }
 
-        public DivinationFilterValue ExpectedFilterValue
-        {
-            get
-            {
+        public DivinationFilterValue ExpectedFilterValue {
+            get {
                 if (listedValue < 0.01)
                     return filterValue;
                 if (filterValue.LowValue < listedValue && filterValue.HighValue > listedValue)
@@ -78,31 +70,26 @@ namespace PoE_Price_Lister
             }
         }
 
-        public int SeverityLevel
-        {
-            get
-            {
+        public int SeverityLevel {
+            get {
                 var expect = ExpectedFilterValue;
                 if (filterValue == expect || (listedValue < 0.7f && expect.Value == DivinationValueEnum.NearlyWorthless))
                     return 0;
                 int expectTier = expect.ValueTier;
                 int filterTier = filterValue.ValueTier;
                 int severity = Math.Abs(filterTier - expectTier);
-                if (severity != 0)
-                {
+                if (severity != 0) {
                     if (expectTier >= 4)
                         severity += 1;
-                    else if(expectTier == 0)
+                    else if (expectTier == 0)
                         severity -= 1;
                 }
                 return severity;
             }
         }
 
-        public int ExpectedValueTier
-        {
-            get
-            {
+        public int ExpectedValueTier {
+            get {
                 var expectVal = new DivinationData();
                 expectVal.filterValue = DivinationFilterValue.ValueOf(listedValue);
                 expectVal.listedValue = listedValue;
@@ -110,12 +97,9 @@ namespace PoE_Price_Lister
             }
         }
 
-        public int ValueTier
-        {
-            get
-            {
-                int output = filterValue.ValueTier;
-                return output;
+        public int ValueTier {
+            get {
+                return (int)filterValue.ValueTier;
             }
         }
 

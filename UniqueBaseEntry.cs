@@ -20,10 +20,8 @@ namespace PoE_Price_Lister
 
         public void Add(UniqueCsvData item)
         {
-            foreach(var i in items)
-            {
-                if(i.Name == item.Name)
-                {
+            foreach (var i in items) {
+                if (i.Name == item.Name) {
                     i.Load(item);
                     return;
                 }
@@ -33,11 +31,9 @@ namespace PoE_Price_Lister
 
         public void Add(JsonData item)
         {
-            foreach(var i in items)
-            {
-                if (i.Name == item.Name)
-                {
-                    if(i.Count == 0 || ((i.Links >= item.Links && !SIX_SOCKETS.Contains(i.Name)) || i.Links < item.Links))
+            foreach (var i in items) {
+                if (i.Name == item.Name) {
+                    if (i.Count == 0 || ((i.Links >= item.Links && !SIX_SOCKETS.Contains(i.Name)) || i.Links < item.Links))
                         i.Load(item);
                     return;
                 }
@@ -48,8 +44,7 @@ namespace PoE_Price_Lister
 
         public void CalculateExpectedValue()
         {
-            if (items.Count() == 0)
-            {
+            if (items.Count() == 0) {
                 expectedValue = filterValue;
                 return;
             }
@@ -74,15 +69,12 @@ namespace PoE_Price_Lister
             UniqueValueEnum minExpected = UniqueValueEnum.Unknown;
 
             // Determine Expected Value
-            foreach (UniqueData uniqData in items)
-            {
+            foreach (UniqueData uniqData in items) {
                 if (uniqData.Unobtainable)
                     continue;
                 isUnobtainable = false;
-                if (uniqData.IsCrafted || uniqData.IsFated || uniqData.IsPurchased)
-                {
-                    if (!uniqData.IsLowConfidence)
-                    {
+                if (uniqData.IsCrafted || uniqData.IsFated || uniqData.IsPurchased) {
+                    if (!uniqData.IsLowConfidence) {
                         if (minValueCraftedFated > uniqData.ChaosValue)
                             minValueCraftedFated = uniqData.ChaosValue;
                         if (maxValueCraftedFated < uniqData.ChaosValue)
@@ -92,29 +84,24 @@ namespace PoE_Price_Lister
                 }
                 isCraftedOnly = false;
 
-                if(uniqData.IsCoreDrop)
-                {
+                if (uniqData.IsCoreDrop) {
                     isLeagueOnly = false;
                     hasCoreLeague = hasCoreLeague || uniqData.League.Length != 0;
-                    if(uniqData.IsLimitedDrop)
-                    {
+                    if (uniqData.IsLimitedDrop) {
                         if (uniqData.IsLabyrinthDrop)
                             hasLabyrinth = true;
                         else
                             hasBoss = true;
-                        if (!uniqData.IsLowConfidence)
-                        {
+                        if (!uniqData.IsLowConfidence) {
                             if (minValueBoss > uniqData.ChaosValue)
                                 minValueBoss = uniqData.ChaosValue;
                             if (maxValueBoss < uniqData.ChaosValue)
                                 maxValueBoss = uniqData.ChaosValue;
                         }
                     }
-                    else
-                    {
+                    else {
                         isBossOnly = false;
-                        if (!uniqData.IsLowConfidence && uniqData.Links != 6)
-                        {
+                        if (!uniqData.IsLowConfidence && uniqData.Links != 6) {
                             if (minValue > uniqData.ChaosValue)
                                 minValue = uniqData.ChaosValue;
                             if (maxValue < uniqData.ChaosValue)
@@ -122,11 +109,9 @@ namespace PoE_Price_Lister
                         }
                     }
                 }
-                else
-                {
+                else {
                     hasLeague = true;
-                    if (!uniqData.IsLowConfidence)
-                    {
+                    if (!uniqData.IsLowConfidence) {
                         if (minValueLeague > uniqData.ChaosValue)
                             minValueLeague = uniqData.ChaosValue;
                         if (maxValueLeague < uniqData.ChaosValue)
@@ -135,48 +120,41 @@ namespace PoE_Price_Lister
                 }
             }
 
-            if (isUnobtainable)
-            {
+            if (isUnobtainable) {
                 expectedValue.Value = UniqueValueEnum.Chaos10; // unique exists in permanent leagues only
                 return;
             }
-            else if (isCraftedOnly)
-            {
+            else if (isCraftedOnly) {
                 minValue = minValueCraftedFated;
                 maxValue = maxValueCraftedFated;
                 minExpected = UniqueValueEnum.ChaosLess1Crafted;
             }
-            else if (isLeagueOnly)
-            {
+            else if (isLeagueOnly) {
                 minValue = minValueLeague;
                 maxValue = maxValueLeague;
                 minExpected = UniqueValueEnum.ChaosLess1League;
             }
-            else if (isBossOnly)
-            {
+            else if (isBossOnly) {
                 minValue = minValueBoss;
                 maxValue = maxValueBoss;
-                if(hasBoss)
+                if (hasBoss)
                     minExpected = UniqueValueEnum.ChaosLess1Boss;
                 else
                     minExpected = UniqueValueEnum.ChaosLess1Labyrinth;
             }
-            else if (hasLeague)
-            {
+            else if (hasLeague) {
                 if (minValueLeague > 3.5f)
                     minExpected = UniqueValueEnum.ChaosLess1Shared;
                 else
                     minExpected = UniqueValueEnum.ChaosLess1;
             }
-            else if(hasBoss)
-            {
+            else if (hasBoss) {
                 minExpected = UniqueValueEnum.ChaosLess1Boss;
             }
-            else if (hasCoreLeague)
-            {
+            else if (hasCoreLeague) {
                 minExpected = UniqueValueEnum.ChaosLess1League;
             }
-            else if(hasLabyrinth)
+            else if (hasLabyrinth)
                 minExpected = UniqueValueEnum.ChaosLess1;
             else
                 minExpectedTier = 0;
@@ -187,13 +165,12 @@ namespace PoE_Price_Lister
             else //confident value
             {
                 expectedValue = UniqueFilterValue.ValueOf(minValue);
-                if (expectedValue.ValueTier <= 1)
-                {
+                if (expectedValue.ValueTier <= 1) {
                     if (maxValue > 50.0f)
                         expectedValue.Value = UniqueValueEnum.Chaos2to10;
                     else if (maxValue > 9.0f || (minValue > 0.95f && maxValue > 1.8f))
                         expectedValue.Value = UniqueValueEnum.Chaos1to2;
-                    else if(maxValue > 2.0f || minValue > 0.95f)
+                    else if (maxValue > 2.0f || minValue > 0.95f)
                         expectedValue.Value = UniqueValueEnum.ChaosLess1;
                 }
                 else if (expectedValue.Value == UniqueValueEnum.Chaos1to2 && minValue > 1.9f && maxValue > 4.9f)
@@ -203,15 +180,12 @@ namespace PoE_Price_Lister
                 expectedValue.Value = minExpected;
         }
 
-        public UniqueFilterValue ExpectedFilterValue
-        {
+        public UniqueFilterValue ExpectedFilterValue {
             get { return expectedValue; }
         }
 
-        public int SeverityLevel
-        {
-            get
-            {
+        public int SeverityLevel {
+            get {
                 if (filterValue == expectedValue)
                     return 0;
                 int expectTier = expectedValue.ValueTier;
@@ -223,30 +197,25 @@ namespace PoE_Price_Lister
             }
         }
 
-        public string BaseType
-        {
+        public string BaseType {
             get { return baseType; }
             set { baseType = value; }
         }
 
-        public string QuotedBaseType
-        {
-            get
-            {
+        public string QuotedBaseType {
+            get {
                 if (baseType.Contains(' '))
                     return "\"" + baseType + "\"";
                 return baseType;
             }
         }
 
-        public UniqueFilterValue FilterValue
-        {
+        public UniqueFilterValue FilterValue {
             get { return filterValue; }
             set { filterValue = value; }
         }
 
-        public List<UniqueData> Items
-        {
+        public List<UniqueData> Items {
             get { return items; }
             set { this.items = value; }
         }

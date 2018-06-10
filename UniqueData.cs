@@ -51,96 +51,77 @@ namespace PoE_Price_Lister
             count = jdata.Count;
         }
 
-        public bool IsLowConfidence
-        {
+        public bool IsLowConfidence {
             get { return count < 3; }
         }
 
-        public bool IsCoreDrop
-        {
+        public bool IsCoreDrop {
             get { return isCoreDrop; }
         }
 
-        public bool IsCrafted
-        {
+        public bool IsCrafted {
             get { return source == "Crafted"; }
         }
 
-        public bool IsFated
-        {
+        public bool IsFated {
             get { return source == "Fated"; }
         }
 
-        public bool IsPurchased
-        {
+        public bool IsPurchased {
             get { return source.StartsWith("Purchased"); }
         }
 
-        public bool IsProphecyDrop
-        {
+        public bool IsProphecyDrop {
             get { return source.StartsWith("Prophecy"); }
         }
 
-        public bool IsLabyrinthDrop
-        {
+        public bool IsLabyrinthDrop {
             get { return source == "Labyrinth"; }
         }
 
-        public bool IsBossDrop
-        {
+        public bool IsBossDrop {
             get { return source.Length > 0 && !IsCrafted && !IsFated && !IsProphecyDrop && !IsLabyrinthDrop; }
         }
 
-        public bool IsLimitedDrop
-        {
+        public bool IsLimitedDrop {
             get { return source.Length > 0 && !IsCrafted && !IsFated; }
         }
 
-        public string Name
-        {
+        public string Name {
             get { return name; }
             set { name = value; }
         }
 
-        public float ChaosValue
-        {
+        public float ChaosValue {
             get { return val; }
             set { val = value; }
         }
 
-        public int ValueTier
-        {
+        public int ValueTier {
             get { return UniqueFilterValue.ValueOf(val).ValueTier; }
 
         }
 
-        public int Links
-        {
+        public int Links {
             get { return links; }
             set { links = value; }
         }
 
-        public int Count
-        {
+        public int Count {
             get { return count; }
             set { count = value; }
         }
 
-        public string League
-        {
+        public string League {
             get { return league; }
-            set
-            {
+            set {
                 league = value;
                 if (league == null || league.Length == 0)
                     isCoreDrop = true;
-                else
-                {
+                else {
                     isCoreDrop = false;
-                    foreach (string coreLeague in CORE_LEAGUES)
-                    {
-                        if (league.Contains(coreLeague))
-                        {
+                    foreach (string coreLeague in CORE_LEAGUES) {
+                        if (league.Contains(coreLeague)) {
                             isCoreDrop = true;
                             break;
                         }
@@ -149,20 +130,17 @@ namespace PoE_Price_Lister
             }
         }
 
-        public UniqueUsage Usage
-        {
+        public UniqueUsage Usage {
             get { return usage; }
             set { usage = value; }
         }
 
-        public bool Unobtainable
-        {
+        public bool Unobtainable {
             get { return unobtainable; }
             set { unobtainable = value; }
         }
 
-        public string Source
-        {
+        public string Source {
             get { return source; }
             set { source = value; }
         }

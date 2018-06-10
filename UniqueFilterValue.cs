@@ -22,19 +22,15 @@ namespace PoE_Price_Lister
             this.val = val;
         }
 
-        public UniqueValueEnum Value
-        {
+        public UniqueValueEnum Value {
             get { return val; }
             set { val = value; }
         }
 
-        public int ValueTier
-        {
-            get
-            {
+        public int ValueTier {
+            get {
                 int output;
-                switch (val)
-                {
+                switch (val) {
                     case UniqueValueEnum.Unknown:
                         output = 0;
                         break;
@@ -66,8 +62,7 @@ namespace PoE_Price_Lister
         public override string ToString()
         {
             string output;
-            switch (val)
-            {
+            switch (val) {
                 case UniqueValueEnum.Unknown:
                     output = "Unknown";
                     break;
@@ -105,13 +100,10 @@ namespace PoE_Price_Lister
             return output;
         }
 
-        public float HighValue
-        {
-            get
-            {
+        public float HighValue {
+            get {
                 float output;
-                switch (val)
-                {
+                switch (val) {
                     case UniqueValueEnum.Unknown:
                         output = 0.95f;
                         break;
@@ -140,13 +132,10 @@ namespace PoE_Price_Lister
             }
         }
 
-        public float LowValue
-        {
-            get 
-            {
+        public float LowValue {
+            get {
                 float output;
-                switch (val)
-                {
+                switch (val) {
                     case UniqueValueEnum.Unknown:
                         output = -1.0f;
                         break;
@@ -178,8 +167,7 @@ namespace PoE_Price_Lister
         public static UniqueFilterValue FromValueTier(int tier)
         {
             UniqueValueEnum output;
-            switch (tier)
-            {
+            switch (tier) {
                 case 0:
                     output = UniqueValueEnum.Unknown;
                     break;

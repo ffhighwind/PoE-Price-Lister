@@ -14,20 +14,17 @@ namespace PoE_Price_Lister
         private bool isNumeric = false;
         private bool ascending;
 
-        public int Column
-        {
+        public int Column {
             get { return column; }
             set { column = value; }
         }
 
-        public bool Ascending
-        {
+        public bool Ascending {
             get { return ascending; }
             set { ascending = value; }
         }
 
-        public bool IsNumeric
-        {
+        public bool IsNumeric {
             get { return isNumeric; }
             set { isNumeric = value; }
         }
@@ -52,23 +49,19 @@ namespace PoE_Price_Lister
                 output = 1;
             else if (itemX == itemY)
                 output = 0;
-            else if (isNumeric)
-            {
+            else if (isNumeric) {
                 decimal itemXVal, itemYVal;
 
-                if (!Decimal.TryParse(itemX.SubItems[column].Text, out itemXVal))
-                {
+                if (!Decimal.TryParse(itemX.SubItems[column].Text, out itemXVal)) {
                     itemXVal = 0;
                 }
-                if (!Decimal.TryParse(itemY.SubItems[column].Text, out itemYVal))
-                {
+                if (!Decimal.TryParse(itemY.SubItems[column].Text, out itemYVal)) {
                     itemYVal = 0;
                 }
 
                 output = Decimal.Compare(itemXVal, itemYVal);
             }
-            else
-            {
+            else {
                 string itemXText = itemX.SubItems[column].Text;
                 string itemYText = itemY.SubItems[column].Text;
 

@@ -22,8 +22,7 @@ namespace PoE_Price_Lister
             this.val = val;
         }
 
-        public DivinationValueEnum Value
-        {
+        public DivinationValueEnum Value {
             get { return val; }
             set { val = value; }
         }
@@ -31,8 +30,7 @@ namespace PoE_Price_Lister
         public override string ToString()
         {
             string output;
-            switch (val)
-            {
+            switch (val) {
                 case DivinationValueEnum.Error:
                     output = "Error";
                     break;
@@ -58,13 +56,10 @@ namespace PoE_Price_Lister
             return output;
         }
 
-        public float HighValue
-        {
-            get
-            {
+        public float HighValue {
+            get {
                 float output;
-                switch (val)
-                {
+                switch (val) {
                     case DivinationValueEnum.Error:
                         output = -1.0f;
                         break;
@@ -91,13 +86,10 @@ namespace PoE_Price_Lister
             }
         }
 
-        public float LowValue
-        {
-            get
-            {
+        public float LowValue {
+            get {
                 float output;
-                switch (val)
-                {
+                switch (val) {
                     case DivinationValueEnum.Error:
                         output = -1.0f;
                         break;
@@ -124,13 +116,10 @@ namespace PoE_Price_Lister
             }
         }
 
-        public int ValueTier
-        {
-            get
-            {
+        public int ValueTier {
+            get {
                 int output;
-                switch (val)
-                {
+                switch (val) {
                     case DivinationValueEnum.Error:
                         output = 100;
                         break;
@@ -160,8 +149,7 @@ namespace PoE_Price_Lister
         public static DivinationFilterValue FromValueTier(int tier)
         {
             DivinationValueEnum output;
-            switch (tier)
-            {
+            switch (tier) {
                 case 0:
                     output = DivinationValueEnum.Worthless;
                     break;

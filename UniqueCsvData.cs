@@ -25,38 +25,32 @@ namespace PoE_Price_Lister
         bool unobtainable;
         string source;
 
-        public string BaseType
-        {
+        public string BaseType {
             get { return baseType; }
             set { baseType = value; }
         }
 
-        public string Name
-        {
+        public string Name {
             get { return name; }
             set { name = value; }
         }
 
-        public string League
-        {
+        public string League {
             get { return league; }
             set { league = value; }
         }
 
-        public bool Unobtainable
-        {
+        public bool Unobtainable {
             get { return unobtainable; }
             set { unobtainable = value; }
         }
 
-        public string Source
-        {
+        public string Source {
             get { return source; }
             set { source = value; }
         }
 
-        public UniqueUsage Usage
-        {
+        public UniqueUsage Usage {
             get { return usage; }
             set { usage = value; }
         }
