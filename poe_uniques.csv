@@ -8,12 +8,14 @@ Amber Amulet,Blood of Corruption,,,,Crafted
 Amber Amulet,Xoph's Heart,Breach,Upgradable,,
 Amber Amulet,The Anvil,,,,
 Amber Amulet,Xoph's Blood,Breach,,,Crafted
+Ambush Mitts,Slavedriver's Hand,Incursion,,,Crafted
 Ambusher,Taproot,,,,
 Amethyst Flask,Atziri's Promise,,,,Atziri
 Amethyst Ring,Death Rush,Onslaught,,,
 Amethyst Ring,Ming's Heart,,,,
 Ancient Gauntlets,Winds of Change,,,,Labyrinth
 Ancient Greaves,Redblade Tramplers,Warbands,,,
+Ancient Spirit Shield,Apep's Slumber,Incursion,Upgradable,,T3 Poison Garden (Toxic Grove)
 Antique Rapier,Ewar's Mirage,,,,
 Arcanist Gloves,Grip of the Council,,,,Prophecy: The Unbreathing Queen
 Arcanist Slippers,Inya's Epiphany,,,,Pale Court
@@ -21,6 +23,7 @@ Archon Kite Shield,Broken Faith,Warbands,,,
 Archon Kite Shield,Invictus Solaris,,Recipe,,
 Archon Kite Shield,Prism Guardian,,,,
 Archon Kite Shield,The Unshattered Will,Harbinger,,,Crafted
+Archon Kite Shield,Unyielding Flame,,,,
 Archon Kite Shield Piece,First Piece of Focus,Harbinger,Piece,,
 Archon Kite Shield Piece,Second Piece of Focus,Harbinger,Piece,,
 Archon Kite Shield Piece,Third Piece of Focus,Harbinger,Piece,,
@@ -73,6 +76,7 @@ Callous Mask Piece,Third Piece of Storms,Harbinger,Piece,,
 Cardinal Round Shield,Vix Lunaris,,Recipe,,
 Carnal Armour,Shroud of the Lightless,Abyss,,,Lich
 Carnal Armour,The Restless Ward,,,,
+Carnal Boots,Omeyocan,Incursion,,,Crafted
 Carnal Mitts,Fenumus' Weave,Bestiary,,,Fenumus
 Carnal Mitts,The Embalmer,,,,
 Carnal Sceptre,Breath of the Council,,,,Prophecy: The Plaguemaw
@@ -82,6 +86,8 @@ Cedar Tower Shield,Trolltimber Spire,Tempest,,,
 Chain Belt,Bated Breath,,,,
 Chain Belt,Ascent From Flesh,,,,Prophecy: Thaumaturgical History
 Chain Belt,Maligaro's Restraint,,,,
+Chain Belt,Coward's Chains,Incursion,Upgradable,,T3 Hatchery (Hybridisation Chamber)
+Chain Belt,Coward's Legacy,Incursion,,,Crafted
 Chain Gloves,Shackles of the Wretched,,,,
 Champion Kite Shield,Aegis Aurora,,,,
 Charan's Sword,Oni-Goroshi,,,,Hillock
@@ -125,6 +131,7 @@ Crusader Boots,Death's Door,,,,Labyrinth
 Crusader Chainmail,Ambu's Charge,,,,
 Crusader Gloves,Repentance,,,,
 Crusader Gloves,Shaper's Touch,,,,Shaper
+Crusader Helmet,Mask of the Spirit Drinker,Incursion,Upgradable,,T3 Pools of Restoration (Sanctum of Immortality)
 Crusader Plate,Iron Heart,,,,
 Crusader Plate,Lioneye's Vision,,,,
 Crystal Belt,Auxium,,,,
@@ -178,6 +185,7 @@ Eternal Sword,Grelwood Shank,,Recipe,,The Constrictor
 Eternal Sword,The Goddess Unleashed,,,X,Crafted
 Exquisite Leather,Kintsugi,,,,Prophecy: Deadly Rivalry
 Exquisite Leather,Yriel's Fostering,,,,Pale Court
+Ezomyte Axe,Sinvicta's Mettle,,,,
 Ezomyte Blade,Kondo's Pride,,,,
 Ezomyte Burgonet,Abyssus,,,,
 Ezomyte Staff,Cane of Unravelling,,,,
@@ -195,7 +203,8 @@ Full Scale Armour,Viper's Scales,,,,Labyrinth
 Full Wyrmscale,Belly of the Beast,,,,
 Gavel,Cameria's Avarice,,,,Fated
 Gavel,Cameria's Maul,,Prophecy,,
-Gavel,Mjölner,,,,
+Gavel,MjÃ¶lner,,,,
+Gemstone Sword,Fate of the Vaal,Incursion,,,Crafted
 Gilded Sallet,Deidbell,,Prophecy,,
 Gilded Sallet,Deidbellow,,,,Fated
 Gladiator Plate,The Brass Dome,,,,Minotaur
@@ -214,10 +223,14 @@ Gold Amulet,The Ignomon,,Prophecy,,
 Gold Amulet,Bisco's Collar,,,,
 Gold Amulet,Winterheart,,,,
 Gold Amulet,The Effigon,,,,Fated
+Gold Amulet,Demigod's Presence,Closed Beta Races,,X,
 Gold Ring,Andvarius,,,,
 Gold Ring,Ventor's Gamble,,,,
+Golden Bracers,Demigod's Touch,Race Season 5|Race Season 6,,X,
 Golden Buckler,Atziri's Mirror,,Prophecy,,
 Golden Buckler,Atziri's Reflection,,,,Fated
+Golden Caligae,Demigod's Stride,Race Season 3|Race Season 4,,X,
+Golden Flame,Demigod's Beacon,Emberwake Race Season|Bloodgrip Race Season|Soulthirst Race Season,,X,
 Golden Mantle,Demigod's Dominance,Winterheart|Medallion,,X,
 Golden Mask,The Three Dragons,,,,
 Golden Obi,Demigod's Bounty,Race Season 7|Race Season 8,,X,
@@ -237,6 +250,7 @@ Great Mallet,Chober Chaber,,,,
 Great Mallet,Trypanon,Perandus,,,
 Greater Mana Flask,Doedre's Elixir,,,,
 Greatwolf Talisman,Eyes of the Greatwolf,Talisman,,,
+Grinning Fetish,Earendel's Embrace,,,,
 Gut Ripper,Advancing Fortress,,,,
 Gut Ripper,Ornament of the East,,,,
 Hallowed Hybrid Flask,The Writhing Jar,,,,
@@ -251,6 +265,7 @@ Heavy Belt,Belt of the Deceiver,,,,
 Heavy Belt,Bisco's Leash,,,,
 Heavy Belt,Dyadian Dawn,,,,
 Heavy Belt,Doryani's Invitation,,,,Atziri
+Heavy Belt,String of Servitude,Incursion,,,Vaal Omnitect
 Heavy Quiver,Broadstroke,,,X,
 Hellion's Paw,Bloodseeker,,,,
 Highborn Staff,Martyr of Innocence,,,,
@@ -361,6 +376,7 @@ Maelström Staff,Disintegrator,,,,Uber Elder
 Maelström Staff,Duskdawn,,,,Crafted
 Maelström Staff,Taryn's Shiver,,,,
 Magistrate Crown,Craiceann's Chitin,Bestiary,,,Craiceann
+Magistrate Crown,Mask of the Stitched Demon,Incursion,,,Crafted
 Marble Amulet,Bloodgrip,,,,
 Meatgrinder,Brain Rattler,,,,Minotaur
 Mesh Boots,Wake of Destruction,,,,
@@ -412,6 +428,8 @@ Painted Buckler,Kaltensoul,,,,Fated
 Painted Tower Shield,Redblade Banner,Warbands,,,
 Paua Amulet,Sidhebreath,,,,
 Paua Amulet,Atziri's Foible,,,,
+Paua Amulet,Sacrificial Heart,Incursion,Upgradable,,Vaal Omnitect
+Paua Amulet,Zerphi's Heart,Incursion,,,Crafted
 Paua Ring,Doedre's Damning,,,,
 Paua Ring,Perandus Signet,,,,
 Paua Ring,Praxis,,,,
@@ -428,6 +446,7 @@ Plated Greaves,Stormcharger,,,,
 Platinum Kris,Mark of the Doubting Knight,,,,
 Platinum Sceptre,Singularity,,,,
 Poleaxe,Wideswing,,,,
+Polished Spiked Shield,Zeel's Amplifier,,,,
 Praetor Crown,Ahn's Contempt,,,,
 Praetor Crown,Malachai's Vision,,,,Crafted
 Praetor Crown,Memory Vault,,,,The Enslaver
@@ -441,6 +460,8 @@ Prophet Crown,Speaker's Wreath,,,,
 Prophet Crown,The Brine Crown,,,,
 Prophet Crown,The Broken Crown,,,,
 Quartz Flask,Forbidden Taste,,,,
+Quartz Flask,Soul Catcher,Incursion,Upgradable,,Vaal Omnitect
+Quartz Flask,Soul Ripper,Incursion,,,Crafted
 Quartz Wand,Ashcaller,,,,
 Quicksilver Flask,Rotgut,,,,
 Ranger Bow,Hopeshredder,,,,Elder
@@ -484,6 +505,7 @@ Rustic Sash,Prismweave,,,,
 Rustic Sash,The Retch,Talisman,,,Crafted
 Sabre,The Princess,,,,
 Sacrificial Garb,Atziri's Splendour,,,,Uber Atziri
+Sacrificial Garb,Shadowstitch,Incursion,,,T3 Corruption Chamber (Locus of Corruption)
 Sadist Garb,Inpulsa's Broken Heart,,,,
 Sadist Garb,Tinkerskin,,,,
 Sage Wand,Shade of Solaris,,Recipe,,
@@ -512,6 +534,7 @@ Serpentscale Boots,Mutewind Whispersteps,Warbands,,,
 Serpentscale Gauntlets,Haemophilia,,,,
 Serrated Arrow Quiver,Cragfall,,,,Fated
 Serrated Arrow Quiver,Craghead,,Prophecy,,
+Shackled Boots,Dance of the Offered,Incursion,Upgradable,,T3 Lightning Workshop (Conduit of Lightning)
 Shadow Axe,Reaper's Pursuit,,,,
 Shadow Sceptre,Bitterdream,,,,
 Shadow Sceptre,The Dark Seer,Beyond,,,
@@ -572,6 +595,7 @@ Strapped Boots,Nomic's Storm,,,,
 Strapped Leather,Briskwrap,,Prophecy,,
 Strapped Leather,Wildwrap,,,,Fated
 Strapped Mitts,Facebreaker,,,,
+Strapped Mitts,Architect's Hand,Incursion,Upgradable,,T3 Trap Workshop (Defense Research Lab)
 Studded Belt,The Magnate,,Prophecy,,
 Studded Belt,Ryslatha's Coil,,,,
 Studded Belt,The Nomad,,,,Fated
@@ -648,7 +672,9 @@ Vaal Regalia,The Beast Fur Shawl,,,,
 Vaal Sceptre,Doon Cuebiyari,,,,
 Vaal Sceptre,Doryani's Catalyst,,,,Atziri
 Vaal Spirit Shield,Esh's Visage,Breach,,,Crafted
+Vaal Spirit Shield,Apep's Supremacy,Incursion,,,Crafted
 Vanguard Belt,Perseverance,,,,
+Variscite Blade,Story of the Vaal,Incursion,Upgradable,,T3 Flame Workshop (Crucible of Flame)
 Varnished Coat,Carcass Jack,,,,
 Velvet Gloves,Doedre's Tenure,,Prophecy,,
 Velvet Gloves,Doedre's Malevolence,,,,Fated
@@ -684,24 +710,3 @@ Zealot Gloves,Volkuur's Guidance,,,,Pale Court
 Zealot Helmet,Kitava's Thirst,,,,
 Zodiac Leather,Hyrri's Ire,,,,
 Zodiac Leather,The Perfect Form,Breach,,,Crafted
-Ancient Spirit Shield,Apep's Slumber,Incursion,Upgradable,,
-Vaal Spirit Shield,Apep's Supremacy,Incursion,,,Crafted
-Chain Belt,Coward's Chains,Incursion,Upgradable,,
-Chain Belt,Coward's Legacy,Incursion,,,Crafted
-Shackled Boots,Dance of the Offered,Incursion,Upgradable,,
-Grinning Fetish,Earendel's Embrace,,,,
-Gemstone Sword,Fate of the Vaal,Incursion,,,Crafted
-Crusader Helmet,Mask of the Spirit Drinker,Incursion,Upgradable,,
-Magistrate Crown,Mask of the Stitched Demon,Incursion,,,Crafted
-Carnal Boots,Omeyocan,Incursion,,,Crafted
-Paua Amulet,Sacrificial Heart,Incursion,Upgradable,,
-Ambush Mitts,Slavedriver's Hand,,,,Crafted
-Quartz Flask,Soul Catcher,Incursion,Upgradable,,
-Quartz Flask,Soul Ripper,Incursion,,,Crafted
-Variscite Blade,Story of the Vaal,Incursion,Upgradable,,
-Heavy Belt,String of Servitude,,,,
-Archon Kite Shield,Unyielding Flame,,,,
-Polished Spiked Shield,Zeel's Amplifier,,,,
-Paua Amulet,Zerphi's Heart,Incursion,,,Crafted
-Ezomyte Axe,Sinvicta's Mettle,,,,
-Strapped Mitts,Architect's Hand,,Upgradable,,
