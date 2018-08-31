@@ -1,34 +1,30 @@
-﻿using FileHelpers;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using FileHelpers;
+using Newtonsoft.Json.Linq;
 
 namespace PoE_Price_Lister
 {
-    class Data
+    internal class Data
     {
-        Dictionary<string, DivinationData> divination;
-        Dictionary<string, UniqueBaseEntry> uniques;
-        Dictionary<string, DivinationData> divinationHC = new Dictionary<string, DivinationData>();
-        Dictionary<string, UniqueBaseEntry> uniquesHC = new Dictionary<string, UniqueBaseEntry>();
-        Dictionary<string, DivinationData> divinationSC = new Dictionary<string, DivinationData>();
-        Dictionary<string, UniqueBaseEntry> uniquesSC = new Dictionary<string, UniqueBaseEntry>();
-        bool isHardcore = false;
-
-        List<string> divinationBaseTypes = new List<string>();
-        List<string> csvUniquesBaseTypes = new List<string>();
+        private Dictionary<string, DivinationData> divination;
+        private Dictionary<string, UniqueBaseEntry> uniques;
+        private readonly Dictionary<string, DivinationData> divinationHC = new Dictionary<string, DivinationData>();
+        private readonly Dictionary<string, UniqueBaseEntry> uniquesHC = new Dictionary<string, UniqueBaseEntry>();
+        private readonly Dictionary<string, DivinationData> divinationSC = new Dictionary<string, DivinationData>();
+        private readonly Dictionary<string, UniqueBaseEntry> uniquesSC = new Dictionary<string, UniqueBaseEntry>();
+        private bool isHardcore = false;
+        private List<string> divinationBaseTypes = new List<string>();
+        private List<string> csvUniquesBaseTypes = new List<string>();
 
         private const string csvFile = "poe_uniques.csv";
-        private const string league = "Incursion";
+        private const string league = "Delve";
 
         private const string filterURL = "https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/S1_Regular_Highwind.filter";
         private const string divinationJsonURL = "http://poe.ninja/api/Data/GetDivinationCardsOverview?league=";
@@ -73,105 +69,105 @@ namespace PoE_Price_Lister
 # Usually < 1c or nearly worthless.
 
 Show  # Uniques - <1c - ilvl <67
-	Rarity = Unique
-	ItemLevel < 67
-	SetFontSize 40
-	SetTextColor 255 128 64 # Unique
-	SetBackgroundColor 50 25 12 # Unique
-	SetBorderColor 180 90 45 # Unique (<1c)
-	PlayAlertSound 4 200 # Mid Value";
+    Rarity = Unique
+    ItemLevel < 67
+    SetFontSize 40
+    SetTextColor 255 128 64 # Unique
+    SetBackgroundColor 50 25 12 # Unique
+    SetBorderColor 180 90 45 # Unique (<1c)
+    PlayAlertSound 4 200 # Mid Value";
 
         private const string loreweaveStr =
 @"# Loreweave (60x rings)
 Show  # Uniques - 1-2c
-	Rarity = Unique
-	Class Rings
-	SetFontSize 40
-	SetTextColor 255 128 64 # Unique
-	SetBackgroundColor 50 25 12 # Unique
-	SetBorderColor 255 255 0 # Unique (1-2c)
-	PlayAlertSound 4 200 # Mid Value";
+    Rarity = Unique
+    Class Rings
+    SetFontSize 40
+    SetTextColor 255 128 64 # Unique
+    SetBackgroundColor 50 25 12 # Unique
+    SetBorderColor 255 255 0 # Unique (1-2c)
+    PlayAlertSound 4 200 # Mid Value";
 
         private const string style10c =
 @"	SetFontSize 45
-	SetTextColor 255 128 64 # Unique (10c+)
-	SetBackgroundColor 255 255 255 255 # Unique (10c+)
-	SetBorderColor 255 128 64 # Unique (10c+)
-	PlayAlertSound 1 200 # High Value";
+    SetTextColor 255 128 64 # Unique (10c+)
+    SetBackgroundColor 255 255 255 255 # Unique (10c+)
+    SetBorderColor 255 128 64 # Unique (10c+)
+    PlayAlertSound 1 200 # High Value";
 
         private const string style2to10c =
 @"	SetFontSize 45
-	SetTextColor 255 128 64 # Unique
-	SetBackgroundColor 50 25 12 # Unique
-	SetBorderColor 255 255 255 # Unique (2-10c)
-	PlayAlertSound 1 200 # High Value";
+    SetTextColor 255 128 64 # Unique
+    SetBackgroundColor 50 25 12 # Unique
+    SetBorderColor 255 255 255 # Unique (2-10c)
+    PlayAlertSound 1 200 # High Value";
 
         private const string style1c =
 @"	SetFontSize 40
-	SetTextColor 255 128 64 # Unique
-	SetBackgroundColor 50 25 12 # Unique
-	SetBorderColor 255 255 0 # Unique (1-2c)
-	PlayAlertSound 4 200 # Mid Value";
+    SetTextColor 255 128 64 # Unique
+    SetBackgroundColor 50 25 12 # Unique
+    SetBorderColor 255 255 0 # Unique (1-2c)
+    PlayAlertSound 4 200 # Mid Value";
 
         private const string styleLess1c =
 @"	SetFontSize 40
-	SetTextColor 255 128 64 # Unique
-	SetBackgroundColor 50 25 12 # Unique
-	SetBorderColor 180 90 45 # Unique (<1c)
-	PlayAlertSound 4 200 # Mid Value";
+    SetTextColor 255 128 64 # Unique
+    SetBackgroundColor 50 25 12 # Unique
+    SetBorderColor 180 90 45 # Unique (<1c)
+    PlayAlertSound 4 200 # Mid Value";
 
         private const string uniqueNewOrWorthless =
 @"Show  # Uniques - New or Worthless
-	Rarity = Unique
-	SetFontSize 36
-	SetTextColor 255 128 64 # Unique
-	SetBackgroundColor 50 25 12 # Unique
-	SetBorderColor 180 90 45 # Unique (<1c)
-	PlayAlertSound 4 200 # Mid Value";
+    Rarity = Unique
+    SetFontSize 36
+    SetTextColor 255 128 64 # Unique
+    SetBackgroundColor 50 25 12 # Unique
+    SetBorderColor 180 90 45 # Unique (<1c)
+    PlayAlertSound 4 200 # Mid Value";
 
         private const string styleDiv10c =
 @"	SetFontSize 45
-	SetTextColor 255 0 175 # Divination Card (10c+)
-	SetBackgroundColor 255 255 255 255 # Divination Card (10c+)
-	SetBorderColor 255 0 175 # Divination Card (10c+)
-	PlayAlertSound 1 200 # High Value";
+    SetTextColor 255 0 175 # Divination Card (10c+)
+    SetBackgroundColor 255 255 255 255 # Divination Card (10c+)
+    SetBorderColor 255 0 175 # Divination Card (10c+)
+    PlayAlertSound 1 200 # High Value";
 
         private const string styleDiv1c =
 @"	SetFontSize 45
-	SetTextColor 255 255 255 # Divination Card (1c+)
-	SetBackgroundColor 255 0 175 255 # Divination Card (1c+)
-	SetBorderColor 255 255 255 # Divination Card (1c+)
-	PlayAlertSound 5 200 # Divination Card (1c+)";
+    SetTextColor 255 255 255 # Divination Card (1c+)
+    SetBackgroundColor 255 0 175 255 # Divination Card (1c+)
+    SetBorderColor 255 255 255 # Divination Card (1c+)
+    PlayAlertSound 5 200 # Divination Card (1c+)";
 
         private const string styleDivLess1c =
 @"	SetFontSize 40
-	SetTextColor 0 0 0 # Divination Card (<1c)
-	SetBackgroundColor 255 0 175 230 # Divination Card (<1c)
-	SetBorderColor 150 30 100 # Divination Card (<1c)
-	PlayAlertSound 5 100 # Divination Card (Low)";
+    SetTextColor 0 0 0 # Divination Card (<1c)
+    SetBackgroundColor 255 0 175 230 # Divination Card (<1c)
+    SetBorderColor 150 30 100 # Divination Card (<1c)
+    PlayAlertSound 5 100 # Divination Card (Low)";
 
         private const string styleDivNearlyWorthless =
 @"	SetFontSize 36
-	SetTextColor 0 0 0 # Divination Card (Nearly Worthless)
-	SetBackgroundColor 255 0 175 170 # Divination Card (Nearly Worthless)
-	SetBorderColor 0 0 0 # Divination Card (Nearly Worthless)
-	PlayAlertSound 5 0 # Divination Card (Nearly Worthless)";
+    SetTextColor 0 0 0 # Divination Card (Nearly Worthless)
+    SetBackgroundColor 255 0 175 170 # Divination Card (Nearly Worthless)
+    SetBorderColor 0 0 0 # Divination Card (Nearly Worthless)
+    PlayAlertSound 5 0 # Divination Card (Nearly Worthless)";
 
         private const string styleDivWorthless =
 @"	SetFontSize 32
-	SetTextColor 0 0 0 # Divination Card (Worthless)
-	SetBackgroundColor 255 0 175 120 # Divination Card (Worthless)
-	SetBorderColor 255 0 175 50 # Divination Card (Worthless)
-	DisableDropSound";
+    SetTextColor 0 0 0 # Divination Card (Worthless)
+    SetBackgroundColor 255 0 175 120 # Divination Card (Worthless)
+    SetBorderColor 255 0 175 50 # Divination Card (Worthless)
+    DisableDropSound";
 
         private const string divNewOrWorthless =
 @"Show  # Divination Cards - New (Error)
-	Class Divination
-	SetFontSize 40
-	SetTextColor 255 255 255 # Divination Card (1c+)
-	SetBackgroundColor 255 0 175 255 # Divination Card (1c+)
-	SetBorderColor 0 255 0 # Error
-	PlayAlertSound 5 200 # Divination Card (1c+)";
+    Class Divination
+    SetFontSize 40
+    SetTextColor 255 255 255 # Divination Card (1c+)
+    SetBackgroundColor 255 0 175 255 # Divination Card (1c+)
+    SetBorderColor 0 255 0 # Error
+    PlayAlertSound 5 200 # Divination Card (1c+)";
 
         private const string headerDiv =
 @"##########################################
@@ -183,7 +179,7 @@ Show  # Uniques - 1-2c
 # Prices attained from poe.ninja.
 # Future values will fluctuate based on league challenges and the meta.";
 
-        private List<List<string>> conflicts = new List<List<string>>();
+        private readonly List<List<string>> conflicts = new List<List<string>>();
 
         public Data()
         {
@@ -238,15 +234,15 @@ Show  # Uniques - 1-2c
         {
             try {
                 string[] lines = System.IO.File.ReadAllLines(filename);
-                foreach (var baseTy in csvUniquesBaseTypes) {
-                    uniquesSC[baseTy].FilterValue.Value = UniqueValueEnum.Unknown;
-                    uniquesHC[baseTy].FilterValue.Value = UniqueValueEnum.Unknown;
+                foreach (string baseTy in csvUniquesBaseTypes) {
+                    uniquesSC[baseTy].FilterValue.Value = UniqueValue.Unknown;
+                    uniquesHC[baseTy].FilterValue.Value = UniqueValue.Unknown;
                 }
                 GetFilterData(lines);
                 SetLeague(true);
                 GetFilterData(lines);
                 SetLeague(false);
-                foreach (var baseTy in csvUniquesBaseTypes) {
+                foreach (string baseTy in csvUniquesBaseTypes) {
                     uniquesSC[baseTy].CalculateExpectedValue();
                     uniquesHC[baseTy].CalculateExpectedValue();
                 }
@@ -283,12 +279,12 @@ Show  # Uniques - 1-2c
 
             List<string> uniqBasesToRemove = new List<string>();
 
-            foreach (var uniq in csvUniquesBaseTypes) {
+            foreach (string uniq in csvUniquesBaseTypes) {
                 if (uniq.EndsWith(" Piece") || uniq.EndsWith(" Talisman")) {
                     uniqBasesToRemove.Add(uniq);
                 }
             }
-            foreach (var uniq in uniqBasesToRemove) {
+            foreach (string uniq in uniqBasesToRemove) {
                 uniques.Remove(uniq);
                 csvUniquesBaseTypes.Remove(uniq);
             }
@@ -299,7 +295,7 @@ Show  # Uniques - 1-2c
             csvUniquesBaseTypes = csvUniquesBaseTypes.Distinct().ToList();
             csvUniquesBaseTypes.Sort();
 
-            foreach (var v in csvUniquesBaseTypes) {
+            foreach (string v in csvUniquesBaseTypes) {
                 uniquesSC[v].CalculateExpectedValue();
                 uniquesHC[v].CalculateExpectedValue();
             }
@@ -319,13 +315,13 @@ Show  # Uniques - 1-2c
         private void GetCSVData(bool addBaseTypes)
         {
             try {
-                var engine = new FileHelperEngine<UniqueCsvData>(Encoding.UTF7);
+                FileHelperEngine<UniqueCsvData> engine = new FileHelperEngine<UniqueCsvData>(Encoding.UTF7);
                 UniqueCsvData[] records = engine.ReadFile(csvFile);
-                foreach (var data in records) {
-                    UniqueBaseEntry entry;
-                    if (!uniques.TryGetValue(data.BaseType, out entry)) {
-                        entry = new UniqueBaseEntry();
-                        entry.BaseType = data.BaseType;
+                foreach (UniqueCsvData data in records) {
+                    if (!uniques.TryGetValue(data.BaseType, out UniqueBaseEntry entry)) {
+                        entry = new UniqueBaseEntry {
+                            BaseType = data.BaseType
+                        };
                         uniques.Add(data.BaseType, entry);
                         if (addBaseTypes)
                             csvUniquesBaseTypes.Add(data.BaseType);
@@ -333,14 +329,14 @@ Show  # Uniques - 1-2c
                     entry.Add(data);
                 }
                 List<UniqueData> resortList = new List<UniqueData>();
-                foreach (var baseTy in csvUniquesBaseTypes) {
-                    var items = uniques[baseTy].Items;
+                foreach (string baseTy in csvUniquesBaseTypes) {
+                    List<UniqueData> items = uniques[baseTy].Items;
                     items.Sort((lhs, rhs) => { return lhs.ChaosValue < rhs.ChaosValue ? -1 : 1; });
-                    foreach (var item in items) {
+                    foreach (UniqueData item in items) {
                         if (item.League.Length > 0)
                             resortList.Add(item);
                     }
-                    foreach (var item in resortList) {
+                    foreach (UniqueData item in resortList) {
                         items.Remove(item);
                         items.Add(item);
                     }
@@ -373,9 +369,9 @@ Show  # Uniques - 1-2c
 
         private void GetFilterData(string[] lines)
         {
-            int startIndex = 0, endIndex = 0;
+            int startIndex = 0;
 
-            if (GetLines(lines, ref startIndex, out endIndex, uniquesSectionStart, uniquesSectionEnd))
+            if (GetLines(lines, ref startIndex, out int endIndex, uniquesSectionStart, uniquesSectionEnd))
                 GetFilterUniqueData(new ArraySegment<string>(lines, startIndex, endIndex - startIndex));
 
             startIndex = endIndex;
@@ -383,13 +379,12 @@ Show  # Uniques - 1-2c
                 GetFilterDivinationData(new ArraySegment<string>(lines, startIndex, endIndex - startIndex));
         }
 
-
         private void GetFilterDivinationData(IEnumerable<string> lines)
         {
             DivinationValueEnum value;
             while (lines.Count() > 1) {
                 lines = lines.SkipWhile(aline => !aline.StartsWith("Show ") && !aline.StartsWith("Hide "));
-                if (lines.Count() == 0)
+                if (!lines.Any())
                     return;
                 string line = lines.ElementAt(0);
 
@@ -421,10 +416,10 @@ Show  # Uniques - 1-2c
 
         private void GetFilterUniqueData(IEnumerable<string> lines)
         {
-            UniqueValueEnum value;
-            while (lines.Count() > 0) {
+            UniqueValue value;
+            while (lines.Any()) {
                 lines = lines.SkipWhile(aline => !aline.StartsWith("Show ") && !aline.StartsWith("Hide "));
-                if (lines.Count() == 0)
+                if (!lines.Any())
                     return;
                 string line = lines.ElementAt(0);
 
@@ -432,28 +427,28 @@ Show  # Uniques - 1-2c
                     continue;
 
                 if (line.Contains("10c+"))
-                    value = UniqueValueEnum.Chaos10;
+                    value = UniqueValue.Chaos10;
                 else if (line.Contains("2-10c"))
-                    value = UniqueValueEnum.Chaos2to10;
+                    value = UniqueValue.Chaos2to10;
                 else if (line.Contains("1-2c"))
-                    value = UniqueValueEnum.Chaos1to2;
+                    value = UniqueValue.Chaos1to2;
                 else if (line.Contains("<1c") || line.Contains("< 1c")) {
                     if (line.Contains("<67")) {
                         lines = lines.Skip(1);
                         continue;
                     }
                     else if (line.Contains("Boss"))
-                        value = UniqueValueEnum.ChaosLess1Boss;
+                        value = UniqueValue.ChaosLess1Boss;
                     else if (line.Contains("League"))
-                        value = UniqueValueEnum.ChaosLess1League;
+                        value = UniqueValue.ChaosLess1League;
                     else if (line.Contains("Shared"))
-                        value = UniqueValueEnum.ChaosLess1Shared;
+                        value = UniqueValue.ChaosLess1Shared;
                     else if (line.Contains("Crafted"))
-                        value = UniqueValueEnum.ChaosLess1Crafted;
+                        value = UniqueValue.ChaosLess1Crafted;
                     else if (line.Contains("Labyrinth"))
-                        value = UniqueValueEnum.ChaosLess1Labyrinth;
+                        value = UniqueValue.ChaosLess1Labyrinth;
                     else //Nearly Worthless
-                        value = UniqueValueEnum.ChaosLess1;
+                        value = UniqueValue.ChaosLess1;
                 }
                 else {
                     if (!line.Contains("New or Worthless"))
@@ -491,9 +486,8 @@ Show  # Uniques - 1-2c
 
         private void UniqueJsonHandler(JsonData jdata)
         {
-            UniqueBaseEntry data;
             string baseTy = jdata.BaseType;
-            if (!uniques.TryGetValue(baseTy, out data)) {
+            if (!uniques.TryGetValue(baseTy, out UniqueBaseEntry data)) {
                 data = new UniqueBaseEntry();
                 uniques.Add(baseTy, data);
                 MessageBox.Show("JSON: The CSV file is missing BaseType: " + baseTy, "Error", MessageBoxButtons.OK);
@@ -504,9 +498,8 @@ Show  # Uniques - 1-2c
 
         private void DivinationJsonHandler(JsonData jdata)
         {
-            DivinationData data;
             string name = jdata.Name;
-            if (!divination.TryGetValue(name, out data)) {
+            if (!divination.TryGetValue(name, out DivinationData data)) {
                 data = new DivinationData();
                 divination.Add(name, data);
                 divinationBaseTypes.Add(name);
@@ -516,7 +509,7 @@ Show  # Uniques - 1-2c
 
         private List<string> GetBaseTypes(string line)
         {
-            var collection = Regex.Matches(line, baseTypeRegexStr);
+            MatchCollection collection = Regex.Matches(line, baseTypeRegexStr);
             List<string> output = new List<string>();
 
             foreach (Match m in collection) {
@@ -530,12 +523,11 @@ Show  # Uniques - 1-2c
             return output;
         }
 
-        private void FillFilterUniqueData(List<string> baseTypes, UniqueValueEnum value)
+        private void FillFilterUniqueData(List<string> baseTypes, UniqueValue value)
         {
-            UniqueBaseEntry data;
 
             foreach (string baseTy in baseTypes) {
-                if (!uniques.TryGetValue(baseTy, out data)) {
+                if (!uniques.TryGetValue(baseTy, out UniqueBaseEntry data)) {
                     if (baseTy == "Maelstr") {
                         if (!uniques.TryGetValue("Maelström Staff", out data)) {
                             data = new UniqueBaseEntry();
@@ -554,10 +546,9 @@ Show  # Uniques - 1-2c
 
         private void FillFilterDivinationData(List<string> baseTypes, DivinationValueEnum value)
         {
-            DivinationData data;
 
             foreach (string baseTy in baseTypes) {
-                if (!divination.TryGetValue(baseTy, out data)) {
+                if (!divination.TryGetValue(baseTy, out DivinationData data)) {
                     data = new DivinationData(baseTy);
                     divination.Add(baseTy, data);
                     divinationBaseTypes.Add(baseTy);
@@ -590,14 +581,14 @@ Show  # Uniques - 1-2c
         {
             try {
                 List<string> conflictsList = new List<string>();
-                for (int i = 0; i < divinationBaseTypes.Count(); i++) {
+                for (int i = 0; i < divinationBaseTypes.Count; i++) {
                     string divBaseTy = divinationBaseTypes[i].ToLower();
-                    for (int j = i + 1; j < divinationBaseTypes.Count(); j++) {
+                    for (int j = i + 1; j < divinationBaseTypes.Count; j++) {
                         string divBaseTy2 = divinationBaseTypes[j].ToLower();
                         if (divBaseTy.Contains(divBaseTy2) || divBaseTy2.Contains(divBaseTy))
                             conflictsList.Add(divinationBaseTypes[j]);
                     }
-                    if (conflictsList.Count() > 0) {
+                    if (conflictsList.Count > 0) {
                         conflictsList.Add(divinationBaseTypes[i]);
                         conflictsList.Sort((left, right) => left.Length - right.Length);
                         conflicts.Add(conflictsList);
@@ -620,7 +611,7 @@ Show  # Uniques - 1-2c
 
                 if (!GetLines(lines, ref startIndex, out endIndex, uniquesSectionStart, uniquesSectionEnd))
                     throw new Exception("Missing uniques section in filter file.");
-                
+
                 //output the start of the file
                 for(int i = 0; i < startIndex; i++)
                     fileout.WriteLine(lines[i]);
@@ -646,7 +637,7 @@ Show  # Uniques - 1-2c
                 fileout.Close();
                 */
 
-                var fileout = new System.IO.StreamWriter(path, false);
+                System.IO.StreamWriter fileout = new System.IO.StreamWriter(path, false);
                 fileout.WriteLine();
                 fileout.WriteLine(GenerateUniquesString(safe));
                 fileout.WriteLine(GenerateDivinationString(safe));
@@ -661,7 +652,7 @@ Show  # Uniques - 1-2c
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("# Potential Conflicts!!! (They have been separated but may need to be reorganized)");
-            foreach (var list in conflicts) {
+            foreach (List<string> list in conflicts) {
                 sb.Append("# ");
                 foreach (string str in list) {
                     string baseTy = str;
@@ -688,7 +679,7 @@ Show  # Uniques - 1-2c
             List<string> listLess1cLabyrinth = new List<string>();
             StringBuilder sb = new StringBuilder();
 
-            foreach (var uniq in uniques) {
+            foreach (KeyValuePair<string, UniqueBaseEntry> uniq in uniques) {
                 UniqueBaseEntry entry = uniq.Value;
                 string baseTy = uniq.Key;
                 UniqueFilterValue expectedVal = entry.ExpectedFilterValue;
@@ -699,16 +690,16 @@ Show  # Uniques - 1-2c
                     outputBaseTy = baseTy.Substring(0, index);
 
                 if (safe && expectedVal.Value != filterVal.Value) {
-                    if (expectedVal.Value == UniqueValueEnum.Unknown) {
+                    if (expectedVal.Value == UniqueValue.Unknown) {
                         float maxVal = 0.0f;
-                        foreach (var item in entry.Items) {
+                        foreach (UniqueData item in entry.Items) {
                             if (maxVal < item.ChaosValue && !item.IsCrafted && !item.IsFated)
                                 maxVal = item.ChaosValue;
                         }
                         if (maxVal > 0.8f)
-                            expectedVal.Value = UniqueValueEnum.ChaosLess1;
+                            expectedVal.Value = UniqueValue.ChaosLess1;
                     }
-                    else if (filterVal.Value == UniqueValueEnum.Unknown && expectedVal.Value == UniqueValueEnum.ChaosLess1)
+                    else if (filterVal.Value == UniqueValue.Unknown && expectedVal.Value == UniqueValue.ChaosLess1)
                         continue;
                     else {
                         int expectTier = expectedVal.ValueTier;
@@ -717,31 +708,31 @@ Show  # Uniques - 1-2c
                     }
                 }
                 switch (expectedVal.Value) {
-                    case UniqueValueEnum.Chaos10:
+                    case UniqueValue.Chaos10:
                         list10c.Add(outputBaseTy);
                         break;
-                    case UniqueValueEnum.Chaos2to10:
+                    case UniqueValue.Chaos2to10:
                         list2to10c.Add(outputBaseTy);
                         break;
-                    case UniqueValueEnum.Chaos1to2:
+                    case UniqueValue.Chaos1to2:
                         list1to2c.Add(outputBaseTy);
                         break;
-                    case UniqueValueEnum.ChaosLess1:
+                    case UniqueValue.ChaosLess1:
                         listLess1c.Add(outputBaseTy);
                         break;
-                    case UniqueValueEnum.ChaosLess1League:
+                    case UniqueValue.ChaosLess1League:
                         listLess1cLeague.Add(outputBaseTy);
                         break;
-                    case UniqueValueEnum.ChaosLess1Boss:
+                    case UniqueValue.ChaosLess1Boss:
                         listLess1cBoss.Add(outputBaseTy);
                         break;
-                    case UniqueValueEnum.ChaosLess1Shared:
+                    case UniqueValue.ChaosLess1Shared:
                         listLess1cShared.Add(outputBaseTy);
                         break;
-                    case UniqueValueEnum.ChaosLess1Crafted:
+                    case UniqueValue.ChaosLess1Crafted:
                         listLess1cCrafted.Add(outputBaseTy);
                         break;
-                    case UniqueValueEnum.ChaosLess1Labyrinth:
+                    case UniqueValue.ChaosLess1Labyrinth:
                         listLess1cLabyrinth.Add(outputBaseTy);
                         break;
                     default:
@@ -795,7 +786,7 @@ Show  # Uniques - 1-2c
             List<string> listWorthless = new List<string>();
             StringBuilder sb = new StringBuilder();
 
-            foreach (var baseTy in divinationBaseTypes) {
+            foreach (string baseTy in divinationBaseTypes) {
                 DivinationData data = divination[baseTy];
                 DivinationFilterValue expectedVal = data.ExpectedFilterValue;
                 DivinationFilterValue filterVal = data.FilterValue;
@@ -872,7 +863,7 @@ Show  # Uniques - 1-2c
         {
             StringBuilder sb = new StringBuilder();
             sb.Append("BaseType ");
-            foreach (var baseTy in baseTypes) {
+            foreach (string baseTy in baseTypes) {
                 string result = baseTy;
                 if (baseTy.Contains(' '))
                     result = "\"" + baseTy + "\"";

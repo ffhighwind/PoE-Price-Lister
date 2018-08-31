@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PoE_Price_Lister
+﻿namespace PoE_Price_Lister
 {
     public enum DivinationValueEnum
     {
@@ -13,24 +7,19 @@ namespace PoE_Price_Lister
 
     public class DivinationFilterValue
     {
-        DivinationValueEnum val;
-
         public DivinationFilterValue() { }
 
         public DivinationFilterValue(DivinationValueEnum val)
         {
-            this.val = val;
+            Value = val;
         }
 
-        public DivinationValueEnum Value {
-            get { return val; }
-            set { val = value; }
-        }
+        public DivinationValueEnum Value { get; set; }
 
         public override string ToString()
         {
             string output;
-            switch (val) {
+            switch (Value) {
                 case DivinationValueEnum.Error:
                     output = "Error";
                     break;
@@ -59,7 +48,7 @@ namespace PoE_Price_Lister
         public float HighValue {
             get {
                 float output;
-                switch (val) {
+                switch (Value) {
                     case DivinationValueEnum.Error:
                         output = -1.0f;
                         break;
@@ -89,7 +78,7 @@ namespace PoE_Price_Lister
         public float LowValue {
             get {
                 float output;
-                switch (val) {
+                switch (Value) {
                     case DivinationValueEnum.Error:
                         output = -1.0f;
                         break;
@@ -119,7 +108,7 @@ namespace PoE_Price_Lister
         public int ValueTier {
             get {
                 int output;
-                switch (val) {
+                switch (Value) {
                     case DivinationValueEnum.Error:
                         output = 100;
                         break;
@@ -188,18 +177,18 @@ namespace PoE_Price_Lister
             return new DivinationFilterValue(output);
         }
 
-        public override bool Equals(Object obj)
+        public override bool Equals(object obj)
         {
             if (obj == null || GetType() != obj.GetType())
                 return false;
 
-            DivinationFilterValue other = (DivinationFilterValue)obj;
-            return other.val == val;
+            DivinationFilterValue other = (DivinationFilterValue) obj;
+            return other.Value == Value;
         }
 
         public override int GetHashCode()
         {
-            return val.GetHashCode();
+            return Value.GetHashCode();
         }
     }
 }

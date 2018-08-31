@@ -1,54 +1,43 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PoE_Price_Lister
+﻿namespace PoE_Price_Lister
 {
-    public enum UniqueValueEnum
+    public enum UniqueValue
     {
         Unknown, Chaos10, Chaos2to10, Chaos1to2, ChaosLess1, Error, ChaosLess1League, ChaosLess1Shared, ChaosLess1Boss, ChaosLess1Crafted, ChaosLess1Labyrinth
     }
 
     public class UniqueFilterValue
     {
-        UniqueValueEnum val;
-
         public UniqueFilterValue() { }
 
-        public UniqueFilterValue(UniqueValueEnum val)
+        public UniqueFilterValue(UniqueValue val)
         {
-            this.val = val;
+            Value = val;
         }
 
-        public UniqueValueEnum Value {
-            get { return val; }
-            set { val = value; }
-        }
+        public UniqueValue Value { get; set; }
 
         public int ValueTier {
             get {
                 int output;
-                switch (val) {
-                    case UniqueValueEnum.Unknown:
+                switch (Value) {
+                    case UniqueValue.Unknown:
                         output = 0;
                         break;
-                    case UniqueValueEnum.ChaosLess1:
-                    case UniqueValueEnum.ChaosLess1League:
-                    case UniqueValueEnum.ChaosLess1Shared:
-                    case UniqueValueEnum.ChaosLess1Boss:
-                    case UniqueValueEnum.ChaosLess1Crafted:
-                    case UniqueValueEnum.ChaosLess1Labyrinth:
+                    case UniqueValue.ChaosLess1:
+                    case UniqueValue.ChaosLess1League:
+                    case UniqueValue.ChaosLess1Shared:
+                    case UniqueValue.ChaosLess1Boss:
+                    case UniqueValue.ChaosLess1Crafted:
+                    case UniqueValue.ChaosLess1Labyrinth:
                         output = 1;
                         break;
-                    case UniqueValueEnum.Chaos1to2:
+                    case UniqueValue.Chaos1to2:
                         output = 2;
                         break;
-                    case UniqueValueEnum.Chaos2to10:
+                    case UniqueValue.Chaos2to10:
                         output = 3;
                         break;
-                    case UniqueValueEnum.Chaos10:
+                    case UniqueValue.Chaos10:
                         output = 4;
                         break;
                     default:
@@ -62,35 +51,35 @@ namespace PoE_Price_Lister
         public override string ToString()
         {
             string output;
-            switch (val) {
-                case UniqueValueEnum.Unknown:
+            switch (Value) {
+                case UniqueValue.Unknown:
                     output = "Unknown";
                     break;
-                case UniqueValueEnum.ChaosLess1:
+                case UniqueValue.ChaosLess1:
                     output = "<1c";
                     break;
-                case UniqueValueEnum.ChaosLess1Shared:
+                case UniqueValue.ChaosLess1Shared:
                     output = "<1c Shared";
                     break;
-                case UniqueValueEnum.ChaosLess1League:
+                case UniqueValue.ChaosLess1League:
                     output = "<1c League";
                     break;
-                case UniqueValueEnum.ChaosLess1Boss:
+                case UniqueValue.ChaosLess1Boss:
                     output = "<1c Boss";
                     break;
-                case UniqueValueEnum.ChaosLess1Crafted:
+                case UniqueValue.ChaosLess1Crafted:
                     output = "<1c Crafted";
                     break;
-                case UniqueValueEnum.ChaosLess1Labyrinth:
+                case UniqueValue.ChaosLess1Labyrinth:
                     output = "<1c Labyrinth";
                     break;
-                case UniqueValueEnum.Chaos1to2:
+                case UniqueValue.Chaos1to2:
                     output = "1-2c";
                     break;
-                case UniqueValueEnum.Chaos2to10:
+                case UniqueValue.Chaos2to10:
                     output = "2-10c";
                     break;
-                case UniqueValueEnum.Chaos10:
+                case UniqueValue.Chaos10:
                     output = "10c+";
                     break;
                 default:
@@ -103,25 +92,25 @@ namespace PoE_Price_Lister
         public float HighValue {
             get {
                 float output;
-                switch (val) {
-                    case UniqueValueEnum.Unknown:
+                switch (Value) {
+                    case UniqueValue.Unknown:
                         output = 0.95f;
                         break;
-                    case UniqueValueEnum.ChaosLess1:
-                    case UniqueValueEnum.ChaosLess1Shared:
-                    case UniqueValueEnum.ChaosLess1League:
-                    case UniqueValueEnum.ChaosLess1Boss:
-                    case UniqueValueEnum.ChaosLess1Crafted:
-                    case UniqueValueEnum.ChaosLess1Labyrinth:
+                    case UniqueValue.ChaosLess1:
+                    case UniqueValue.ChaosLess1Shared:
+                    case UniqueValue.ChaosLess1League:
+                    case UniqueValue.ChaosLess1Boss:
+                    case UniqueValue.ChaosLess1Crafted:
+                    case UniqueValue.ChaosLess1Labyrinth:
                         output = 1.5f;
                         break;
-                    case UniqueValueEnum.Chaos1to2:
+                    case UniqueValue.Chaos1to2:
                         output = 3.0f;
                         break;
-                    case UniqueValueEnum.Chaos2to10:
+                    case UniqueValue.Chaos2to10:
                         output = 13.0f;
                         break;
-                    case UniqueValueEnum.Chaos10:
+                    case UniqueValue.Chaos10:
                         output = float.MaxValue;
                         break;
                     default:
@@ -135,25 +124,25 @@ namespace PoE_Price_Lister
         public float LowValue {
             get {
                 float output;
-                switch (val) {
-                    case UniqueValueEnum.Unknown:
+                switch (Value) {
+                    case UniqueValue.Unknown:
                         output = -1.0f;
                         break;
-                    case UniqueValueEnum.ChaosLess1:
-                    case UniqueValueEnum.ChaosLess1Shared:
-                    case UniqueValueEnum.ChaosLess1League:
-                    case UniqueValueEnum.ChaosLess1Boss:
-                    case UniqueValueEnum.ChaosLess1Crafted:
-                    case UniqueValueEnum.ChaosLess1Labyrinth:
+                    case UniqueValue.ChaosLess1:
+                    case UniqueValue.ChaosLess1Shared:
+                    case UniqueValue.ChaosLess1League:
+                    case UniqueValue.ChaosLess1Boss:
+                    case UniqueValue.ChaosLess1Crafted:
+                    case UniqueValue.ChaosLess1Labyrinth:
                         output = 0.0f;
                         break;
-                    case UniqueValueEnum.Chaos1to2:
+                    case UniqueValue.Chaos1to2:
                         output = 0.8f;
                         break;
-                    case UniqueValueEnum.Chaos2to10:
+                    case UniqueValue.Chaos2to10:
                         output = 1.7f;
                         break;
-                    case UniqueValueEnum.Chaos10:
+                    case UniqueValue.Chaos10:
                         output = 8.0f;
                         break;
                     default:
@@ -166,25 +155,25 @@ namespace PoE_Price_Lister
 
         public static UniqueFilterValue FromValueTier(int tier)
         {
-            UniqueValueEnum output;
+            UniqueValue output;
             switch (tier) {
                 case 0:
-                    output = UniqueValueEnum.Unknown;
+                    output = UniqueValue.Unknown;
                     break;
                 case 1:
-                    output = UniqueValueEnum.ChaosLess1;
+                    output = UniqueValue.ChaosLess1;
                     break;
                 case 2:
-                    output = UniqueValueEnum.Chaos1to2;
+                    output = UniqueValue.Chaos1to2;
                     break;
                 case 3:
-                    output = UniqueValueEnum.Chaos2to10;
+                    output = UniqueValue.Chaos2to10;
                     break;
                 case 4:
-                    output = UniqueValueEnum.Chaos10;
+                    output = UniqueValue.Chaos10;
                     break;
                 default:
-                    output = UniqueValueEnum.Error;
+                    output = UniqueValue.Error;
                     break;
             }
             return new UniqueFilterValue(output);
@@ -192,32 +181,32 @@ namespace PoE_Price_Lister
 
         public static UniqueFilterValue ValueOf(float val)
         {
-            UniqueValueEnum output;
+            UniqueValue output;
             if (val < 0.85f)
-                output = UniqueValueEnum.Unknown;
+                output = UniqueValue.Unknown;
             else if (val < 1.1f)
-                output = UniqueValueEnum.ChaosLess1;
+                output = UniqueValue.ChaosLess1;
             else if (val < 2.5f)
-                output = UniqueValueEnum.Chaos1to2;
+                output = UniqueValue.Chaos1to2;
             else if (val < 9.0f)
-                output = UniqueValueEnum.Chaos2to10;
+                output = UniqueValue.Chaos2to10;
             else
-                output = UniqueValueEnum.Chaos10;
+                output = UniqueValue.Chaos10;
             return new UniqueFilterValue(output);
         }
 
-        public override bool Equals(Object obj)
+        public override bool Equals(object obj)
         {
             if (obj == null || GetType() != obj.GetType())
                 return false;
 
-            UniqueFilterValue other = (UniqueFilterValue)obj;
-            return other.val == val;
+            UniqueFilterValue other = (UniqueFilterValue) obj;
+            return other.Value == Value;
         }
 
         public override int GetHashCode()
         {
-            return val.GetHashCode();
+            return Value.GetHashCode();
         }
     }
 }

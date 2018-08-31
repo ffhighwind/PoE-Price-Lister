@@ -1,37 +1,19 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections;
 using System.Windows.Forms;
 
 namespace PoE_Price_Lister
 {
     public class ListViewItemComparer : IComparer
     {
-        private int column;
-        private bool isNumeric = false;
-        private bool ascending;
+        public int Column { get; set; }
 
-        public int Column {
-            get { return column; }
-            set { column = value; }
-        }
+        public bool Ascending { get; set; }
 
-        public bool Ascending {
-            get { return ascending; }
-            set { ascending = value; }
-        }
-
-        public bool IsNumeric {
-            get { return isNumeric; }
-            set { isNumeric = value; }
-        }
+        public bool IsNumeric { get; set; } = false;
 
         public ListViewItemComparer(int columnIndex)
         {
-            column = columnIndex;
+            Column = columnIndex;
         }
 
         public int Compare(object x, object y)
@@ -49,26 +31,24 @@ namespace PoE_Price_Lister
                 output = 1;
             else if (itemX == itemY)
                 output = 0;
-            else if (isNumeric) {
-                decimal itemXVal, itemYVal;
-
-                if (!Decimal.TryParse(itemX.SubItems[column].Text, out itemXVal)) {
+            else if (IsNumeric) {
+                if (!decimal.TryParse(itemX.SubItems[Column].Text, out decimal itemXVal)) {
                     itemXVal = 0;
                 }
-                if (!Decimal.TryParse(itemY.SubItems[column].Text, out itemYVal)) {
+                if (!decimal.TryParse(itemY.SubItems[Column].Text, out decimal itemYVal)) {
                     itemYVal = 0;
                 }
 
-                output = Decimal.Compare(itemXVal, itemYVal);
+                output = decimal.Compare(itemXVal, itemYVal);
             }
             else {
-                string itemXText = itemX.SubItems[column].Text;
-                string itemYText = itemY.SubItems[column].Text;
+                string itemXText = itemX.SubItems[Column].Text;
+                string itemYText = itemY.SubItems[Column].Text;
 
-                output = String.Compare(itemXText, itemYText);
+                output = string.Compare(itemXText, itemYText);
             }
 
-            if (ascending)
+            if (Ascending)
                 output = -output;
             return output;
         }

@@ -1,24 +1,16 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace PoE_Price_Lister
 {
     public class DivinationData
     {
-        DivinationFilterValue filterValue = new DivinationFilterValue();
-        string name;
-        float listedValue = -1.0f;
-        int count;
-
         public DivinationData() { }
 
         public DivinationData(string name)
         {
-            this.name = name;
+            Name = name;
         }
 
         public DivinationData(JsonData item)
@@ -28,55 +20,44 @@ namespace PoE_Price_Lister
 
         public void Load(JsonData item)
         {
-            name = item.Name;
-            listedValue = item.ChaosValue;
-            count = item.Count;
+            Name = item.Name;
+            ChaosValue = item.ChaosValue;
+            Count = item.Count;
         }
 
-        public bool IsLowConfidence {
-            get { return count < 3; }
-        }
+        public bool IsLowConfidence => Count < 3;
 
-        public string Name {
-            get { return name; }
-            set { name = value; }
-        }
+        public string Name { get; set; }
 
         public string QuotedName {
             get {
-                if (name.Contains(' '))
-                    return "\"" + name + "\"";
-                return name;
+                if (Name.Contains(' '))
+                    return "\"" + Name + "\"";
+                return Name;
             }
         }
 
-        public float ChaosValue {
-            get { return listedValue; }
-            set { listedValue = value; }
-        }
+        public float ChaosValue { get; set; } = -1.0f;
 
-        public DivinationFilterValue FilterValue {
-            get { return filterValue; }
-            set { filterValue = value; }
-        }
+        public DivinationFilterValue FilterValue { get; set; } = new DivinationFilterValue();
 
         public DivinationFilterValue ExpectedFilterValue {
             get {
-                if (listedValue < 0.01)
-                    return filterValue;
-                if (filterValue.LowValue < listedValue && filterValue.HighValue > listedValue)
-                    return filterValue;
-                return DivinationFilterValue.ValueOf(listedValue);
+                if (ChaosValue < 0.01)
+                    return FilterValue;
+                if (FilterValue.LowValue < ChaosValue && FilterValue.HighValue > ChaosValue)
+                    return FilterValue;
+                return DivinationFilterValue.ValueOf(ChaosValue);
             }
         }
 
         public int SeverityLevel {
             get {
-                var expect = ExpectedFilterValue;
-                if (filterValue == expect || (listedValue < 0.7f && expect.Value == DivinationValueEnum.NearlyWorthless))
+                DivinationFilterValue expect = ExpectedFilterValue;
+                if (FilterValue == expect || (ChaosValue < 0.7f && expect.Value == DivinationValueEnum.NearlyWorthless))
                     return 0;
                 int expectTier = expect.ValueTier;
-                int filterTier = filterValue.ValueTier;
+                int filterTier = FilterValue.ValueTier;
                 int severity = Math.Abs(filterTier - expectTier);
                 if (severity != 0) {
                     if (expectTier >= 4)
@@ -90,36 +71,35 @@ namespace PoE_Price_Lister
 
         public int ExpectedValueTier {
             get {
-                var expectVal = new DivinationData();
-                expectVal.filterValue = DivinationFilterValue.ValueOf(listedValue);
-                expectVal.listedValue = listedValue;
+                DivinationData expectVal = new DivinationData {
+                    FilterValue = DivinationFilterValue.ValueOf(ChaosValue),
+                    ChaosValue = ChaosValue
+                };
                 return expectVal.ValueTier;
             }
         }
 
-        public int ValueTier {
-            get {
-                return (int)filterValue.ValueTier;
-            }
-        }
+        public int ValueTier => FilterValue.ValueTier;
+
+        public int Count { get; set; }
 
         public override string ToString()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }
 
-        public override bool Equals(Object obj)
+        public override bool Equals(object obj)
         {
             if (obj == null || GetType() != obj.GetType())
                 return false;
 
-            DivinationData other = (DivinationData)obj;
-            return other.name == name;
+            DivinationData other = (DivinationData) obj;
+            return other.Name == Name;
         }
 
         public override int GetHashCode()
         {
-            return name.GetHashCode();
+            return Name.GetHashCode();
         }
     }
 }

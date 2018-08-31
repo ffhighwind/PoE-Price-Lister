@@ -1,7 +1,7 @@
 ############################################
-##    HIGHWIND'S MAPPING FILTER 3.3.7     ##
+##    HIGHWIND'S MAPPING FILTER 3.4.1     ##
 ############################################
-## Release Date: June 10, 2018            ##
+## Release Date: August 30, 2018          ##
 ############################################
 
 #--------------#
@@ -232,7 +232,7 @@
 
 Hide  # Currency - Worthless
 	Class Currency
-	BaseType "Scroll Fragment" "Transmutation Shard" "Alteration Shard" "Whispering Essence" "Muttering Essence"
+	BaseType "Scroll Fragment" "Transmutation Shard" "Alteration Shard"
 	SetFontSize 24
 	SetTextColor 185 172 141 # Currency (Worthless)
 	SetBackgroundColor 0 0 0 180 # Currency (Worthless)
@@ -282,39 +282,58 @@ Show  # Currency - < 0.25c
 
 Show  # Currency - < 0.5c
 	Class Currency
-	BaseType "Orb of Fusing" "Orb of Alchemy" "Cartographer's Chisel" "Blessed Orb" "Orb of Binding"
+	BaseType "Orb of Fusing" "Orb of Alchemy" "Cartographer's Chisel" "Blessed Orb"
 	SetFontSize 45
 	SetTextColor 255 0 255 # Currency (High)
 	SetBackgroundColor 20 0 20 230 # Currency (High)
 	SetBorderColor 255 0 255 # Currency (High)
 	PlayAlertSound 4 200 # Mid Value (Currency)
+	MinimapIcon 2 Yellow Circle
+	PlayEffect Yellow
 
 Show  # Currency - < 3c
 	Class Currency
-	BaseType "Orb of Scouring" "Chaos Orb" "Regal Orb" "Orb of Regret" "Vaal Orb" "Gemcutter's Prism" "Apprentice Cartographer's Sextant" "Journeyman Cartographer's Sextant" "Stacked Deck" "Shrieking Essence" "Screaming Essence"
+	BaseType "Orb of Scouring" "Chaos Orb" "Regal Orb" "Orb of Regret" "Vaal Orb" "Gemcutter's Prism" "Apprentice Cartographer's Sextant" "Journeyman Cartographer's Sextant" "Stacked Deck"
 	SetFontSize 45
 	SetTextColor 255 0 255 # Currency (High)
 	SetBackgroundColor 20 0 20 230 # Currency (High)
 	SetBorderColor 255 0 255 # Currency (High)
 	PlayAlertSound 4 200 # Mid Value (Currency)
+	MinimapIcon 2 Yellow Circle
+	PlayEffect Yellow
 
 Show  # Currency - 3c+
 	Class Currency
-	BaseType "Remnant of Corruption" "Master Cartographer's Sextant" "Apprentice Cartographer's Seal" "Exalted Shard"
+	BaseType "Master Cartographer's Sextant" "Apprentice Cartographer's Seal" "Exalted Shard"
 	SetFontSize 45
 	SetTextColor 255 0 255 # Currency (3c+)
 	SetBackgroundColor 255 255 255 255 # Currency (3c+)
 	SetBorderColor 255 0 255 # Currency (3c+)
 	PlayAlertSound 4 200 # Mid Value (Currency)
+	MinimapIcon 2 Yellow Circle
+	PlayEffect Yellow
 
 Show  # Currency - 6c+
 	Class Currency
-	BaseType "Divine Orb" "Exalted Orb" "Eternal Orb" "Imprint" "Mirror of Kalandra" "Deafening Essence" "Essence of Delirium" "Essence of Hysteria" "Essence of Horror" "Essence of Insanity" "Albino Rhoa Feather" "Journeyman Cartographer's Seal" "Master Cartographer's Seal" "Unshaping Orb" "Mirror Shard"
+	BaseType "Divine Orb" "Journeyman Cartographer's Seal" "Master Cartographer's Seal" "Unshaping Orb"
 	SetFontSize 45
 	SetTextColor 255 0 255 # Currency (6c+)
 	SetBackgroundColor 255 255 255 255 # Currency (6c+)
 	SetBorderColor 255 0 255 # Currency (6c+)
 	PlayAlertSound 1 200 # High Value
+	MinimapIcon 2 Red Circle
+	PlayEffect Red
+
+Show  # Currency - 20c+
+	Class Currency
+	BaseType "Exalted Orb" "Eternal Orb" "Imprint" "Mirror of Kalandra" "Albino Rhoa Feather" "Mirror Shard"
+	SetFontSize 45
+	SetTextColor 255 0 255 # Currency (6c+)
+	SetBackgroundColor 255 255 255 255 # Currency (6c+)
+	SetBorderColor 255 0 255 # Currency (6c+)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Circle
+	PlayEffect Red
 
 #----------#
 # Prophecy #
@@ -328,12 +347,24 @@ Show  # Currency - Prophecies
 	SetBackgroundColor 20 0 20 # Prophecy
 	SetBorderColor 0 255 0 # Prophecy
 	PlayAlertSound 4 200 # Prophecy
+	MinimapIcon 2 Cyan Circle
+	PlayEffect Cyan
 
 #----------#
 # Perandus #
 #----------#
 
-Show  # Currency - League Specific - Perandus Coins (>1)
+Show  # Currency - League Specific - Perandus Coins (>2)
+	Class Currency
+	BaseType "Perandus Coin"
+	StackSize > 10
+	SetFontSize 40
+	SetTextColor 230 200 160 # Currency (Perandus Coin)
+	SetBackgroundColor 75 65 50 # Currency (Perandus Coin)
+	SetBorderColor 0 0 0 # Currency (Perandus Coin)
+	PlayEffect Yellow Temp
+
+Show  # Currency - League Specific - Perandus Coins (>2)
 	Class Currency
 	BaseType "Perandus Coin"
 	StackSize > 1
@@ -355,6 +386,15 @@ Hide  # Currency - League Specific - Perandus Coins (<2)
 # Essence #
 #---------#
 
+Hide  # Currency - League Specific - Essences (Worthless)
+	Class Currency
+	BaseType "Whispering Essence" "Muttering Essence"
+	SetFontSize 36
+	SetTextColor 185 172 141 # Currency (Worthless)
+	SetBackgroundColor 0 0 0 180 # Currency (Worthless)
+	SetBorderColor 0 0 0 0 # Currency (Worthless)
+	DisableDropSound
+
 Show  # Currency - League Specific - Essences (Low)
 	Class Currency
 	BaseType "Wailing Essence" "Weeping Essence"
@@ -362,6 +402,29 @@ Show  # Currency - League Specific - Essences (Low)
 	SetTextColor 220 190 155 # Currency (Low Essence)
 	SetBackgroundColor 55 50 40 # Currency (Low Essence)
 	SetBorderColor 0 0 0 # Currency (Low Essence)
+
+#<3c
+Show  # Currency - League Specific - Essences (Mid)
+	Class Currency
+	BaseType "Shrieking Essence" "Screaming Essence" "Remnant of Corruption"
+	SetFontSize 45
+	SetTextColor 255 0 255 # Currency (Mid Essence)
+	SetBackgroundColor 20 0 20 230 # Currency (Mid Essence)
+	SetBorderColor 255 0 255 # Currency (Mid Essence)
+	PlayAlertSound 4 200 # Mid Value (Currency)
+	MinimapIcon 2 Blue Diamond
+
+#6c+
+Show  # Currency - League Specific - Essences (High)
+	Class Currency
+	BaseType "Deafening Essence" "Essence of Delirium" "Essence of Hysteria" "Essence of Horror" "Essence of Insanity"
+	SetFontSize 45
+	SetTextColor 255 0 255 # Currency (High Essence)
+	SetBackgroundColor 255 255 255 255 # Currency (High Essence)
+	SetBorderColor 255 0 255 # Currency (High Essence)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 1 Red Diamond
+	PlayEffect Red
 
 #--------#
 # Breach #
@@ -375,6 +438,8 @@ Show  # Currency - League Specific - Splinters (Chayula)
 	SetBackgroundColor 20 0 20 # Currency (Splinter of Chayula)
 	SetBorderColor 255 0 255 # Currency (Splinter of Chayula)
 	PlayAlertSound 4 200 # Mid Value (Currency)
+	MinimapIcon 2 Cyan Circle
+	PlayEffect Cyan
 
 Show  # Currency - League Specific - Splinters (Other)
 	Class Currency
@@ -384,6 +449,17 @@ Show  # Currency - League Specific - Splinters (Other)
 	SetBackgroundColor 0 0 0 # Currency (Splinters)
 	SetBorderColor 0 0 0 0 # Currency (Splinters)
 
+Show  # Currency - League Specific - Blessings (Chayula)
+	Class Currency
+	BaseType "Blessing of Chayula"
+	SetFontSize 45
+	SetTextColor 255 0 255 # Currency (Blessing)
+	SetBackgroundColor 255 255 255 255 # Currency (Blessing)
+	SetBorderColor 255 0 255 # Currency (Blessing)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 1 Red Star
+	PlayEffect Red
+
 Show  # Currency - League Specific - Blessings (Breach)
 	Class Currency
 	BaseType "Blessing of"
@@ -391,7 +467,39 @@ Show  # Currency - League Specific - Blessings (Breach)
 	SetTextColor 255 0 255 # Currency (Blessing)
 	SetBackgroundColor 255 255 255 255 # Currency (Blessing)
 	SetBorderColor 255 0 255 # Currency (Blessing)
-	PlayAlertSound 1 200 # High Value
+	MinimapIcon 1 Red Circle
+	PlayEffect Red
+
+#-------#
+# Delve #
+#-------#
+
+Show  # Currency - League Specific - Fossils
+	Class Currency
+	BaseType "Fossil"
+	SetFontSize 45
+	SetTextColor 255 0 255 # Currency (Mid)
+	SetBackgroundColor 0 0 0 230 # Currency (Mid)
+	SetBorderColor 0 0 0 0 # Currency (Mid)
+
+Show  # Currency - League Specific - Resonators (Low)
+	Class Currency
+	BaseType "Alchemical Resonator" "Primitive Chaotic Resonator"
+	SetFontSize 45
+	SetTextColor 255 0 255 # Currency (Low Resonator)
+	SetBackgroundColor 0 0 0 230 # Currency (Low Resonator)
+	SetBorderColor 0 0 0 0 # Currency (Low Resonator)
+
+Show  # Currency - League Specific - Resonators (High)
+	Class Currency
+	BaseType "Potent Chaotic Resonator" "Powerful Chaotic Resonator" "Prime Chaotic Resonator"
+	SetFontSize 45
+	SetTextColor 255 0 255 # Currency (High Resonator)
+	SetBackgroundColor 255 255 255 255 # Currency (High  Resonator)
+	SetBorderColor 255 0 255 # Currency (High  Resonator)
+	PlayAlertSound 4 200 # Mid Value (High  Currency)
+	MinimapIcon 2 Cyan Circle
+	PlayEffect Cyan
 
 #-----------#
 # Harbinger #
@@ -406,6 +514,8 @@ Show  # Currency - League Specific - Harbinger - High (6c+)
 	SetBackgroundColor 255 255 255 255 # Currency (6c+)
 	SetBorderColor 255 0 255 # Currency (6c+)
 	PlayAlertSound 1 200 # High Value
+	MinimapIcon 2 Red Circle
+	PlayEffect Red
 
 # 0.5-6c
 Show  # Currency - League Specific - Harbinger - High
@@ -415,6 +525,8 @@ Show  # Currency - League Specific - Harbinger - High
 	SetTextColor 255 0 255 # Currency (High)
 	SetBackgroundColor 20 0 20 230 # Currency (High)
 	SetBorderColor 255 0 255 # Currency (High)
+	MinimapIcon 2 Cyan Circle
+	PlayEffect Cyan 
 
 # 0.25c
 Show  # Currency - League Specific - Harbinger - Mid (1)
@@ -533,6 +645,8 @@ Show  # Currency - League Specific - Incursion - Valuable
 	SetBackgroundColor 255 255 255 255 # Incursion (Valuable)
 	SetBorderColor 255 0 255 # Incursion (Valuable)
 	PlayAlertSound 1 200 # High Value
+	MinimapIcon 2 Red Circle
+	PlayEffect Red
 
 Show  # Currency - League Specific - Incursion - High
 	Class "Stackable Currency"
@@ -541,6 +655,8 @@ Show  # Currency - League Specific - Incursion - High
 	SetTextColor 255 0 255 # Incursion (High)
 	SetBackgroundColor 20 0 20 230 # Incursion (High)
 	SetBorderColor 255 0 255 # Incursion (High)
+	MinimapIcon 2 Cyan Circle
+	PlayEffect Cyan
 
 Show  # Currency - League Specific - Incursion - Low
 	Class "Stackable Currency"
@@ -574,6 +690,8 @@ Show  # Labyrinth
 	SetBackgroundColor 12 30 12 230 # Labyrinth
 	SetBorderColor 74 230 58 # Labyrinth
 	PlayAlertSound 3 200 # Labyrinth
+	MinimapIcon 2 Green Circle
+	PlayEffect Green
 
 Show  # Shaper's Orbs
 	Class Quest
@@ -583,6 +701,8 @@ Show  # Shaper's Orbs
 	SetBackgroundColor 12 30 12 230 # Shaper's Orb
 	SetBorderColor 74 230 58 # Shaper's Orb
 	PlayAlertSound 3 200 # Quest
+	MinimapIcon 2 Green Circle
+	PlayEffect Green
 
 Show  # Quests
 	Class Quest "Hideout Doodads" Microtransactions Relics "Incursion Item"
@@ -591,6 +711,8 @@ Show  # Quests
 	SetBackgroundColor 12 30 12 230 # Quest
 	SetBorderColor 74 230 58 # Quest
 	PlayAlertSound 3 200 # Quest
+	MinimapIcon 2 Green Circle
+	PlayEffect Green
 
 Show  # Pantheon Souls
 	Class "Pantheon Soul"
@@ -599,6 +721,8 @@ Show  # Pantheon Souls
 	SetBackgroundColor 12 30 12 230 # Pantheon Soul
 	SetBorderColor 74 230 58 # Pantheon Soul
 	PlayAlertSound 2 200 # Pantheon Soul
+	MinimapIcon 2 Green Circle
+	PlayEffect Green
 
 Show  # Misc Map Items
 	Class "Misc Map Items"
@@ -630,6 +754,8 @@ Show  # 5+ Links - 5L+ Uniques
 	SetBackgroundColor 255 255 255 255 # Unique (10c+)
 	SetBorderColor 255 128 64 # Unique (10c+)
 	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Star
+	PlayEffect Red
 
 Show  # 5+ Links - 6 Links
 	LinkedSockets = 6
@@ -638,6 +764,8 @@ Show  # 5+ Links - 6 Links
 	SetBackgroundColor 255 255 255 255 # 6 Link
 	SetBorderColor 255 0 0 # 6 Link
 	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Star
+	PlayEffect Red
 
 Show  # 5+ Links - 5L 6 Sockets
 	LinkedSockets = 5
@@ -647,6 +775,8 @@ Show  # 5+ Links - 5L 6 Sockets
 	SetBackgroundColor 255 255 255 255 # 5+ Link (High)
 	SetBorderColor 255 0 0 # 5+ Link
 	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 2 Green Star
+	PlayEffect Green
 
 Show  # 5+ Links - 5L Top Tier (84+)
 	LinkedSockets = 5
@@ -657,6 +787,8 @@ Show  # 5+ Links - 5L Top Tier (84+)
 	SetBackgroundColor 255 255 255 255 # 5+ Link (High)
 	SetBorderColor 255 0 0 # 5+ Link
 	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 2 Green Star
+	PlayEffect Green
 
 Show  # 5+ Links - 5L (84+)
 	LinkedSockets = 5
@@ -667,6 +799,8 @@ Show  # 5+ Links - 5L (84+)
 	SetBackgroundColor 50 50 50 230 # 5+ Link (Mid)
 	SetBorderColor 255 0 0 # 5+ Link
 	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 2 Green Star
+	PlayEffect Green
 
 Show  # 5+ Links - 5L (Shaper)
 	LinkedSockets = 5
@@ -676,6 +810,8 @@ Show  # 5+ Links - 5L (Shaper)
 	SetBackgroundColor 50 20 70 230 # Shaper Elder 60+
 	SetBorderColor 255 0 0 # 5+ Link
 	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 2 Green Star
+	PlayEffect Green
 
 Show  # 5+ Links - 5L (Elder)
 	LinkedSockets = 5
@@ -685,6 +821,8 @@ Show  # 5+ Links - 5L (Elder)
 	SetBackgroundColor 50 20 70 230 # Shaper Elder 60+
 	SetBorderColor 255 0 0 # 5+ Link
 	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 2 Green Star
+	PlayEffect Green
 
 Show  # 5+ Links - 5L (Leveling)
 	LinkedSockets = 5
@@ -694,6 +832,8 @@ Show  # 5+ Links - 5L (Leveling)
 	SetBackgroundColor 50 50 50 230 # 5+ Link (Mid)
 	SetBorderColor 255 0 0 # 5+ Link
 	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 2 Green Star
+	PlayEffect Green
 
 # 64 Sharpshooter's
 Show  # 5+ Links - 5L Good Bows
@@ -705,6 +845,7 @@ Show  # 5+ Links - 5L Good Bows
 	SetTextColor 255 0 0 # 5+ Link
 	SetBackgroundColor 50 50 50 230 # 5+ Link (Mid)
 	SetBorderColor 255 0 0 # 5+ Link
+	PlayEffect Green
 
 Show  # 5+ Links - 5L Body Armour (High Drop Level)
 	LinkedSockets = 5
@@ -714,6 +855,7 @@ Show  # 5+ Links - 5L Body Armour (High Drop Level)
 	SetTextColor 255 0 0 # 5+ Link
 	SetBackgroundColor 50 50 50 230 # 5+ Link (Mid)
 	SetBorderColor 255 0 0 # 5+ Link
+	PlayEffect Green
 
 Show  # 5+ Links - 5L Staves (High Drop Level)
 	LinkedSockets = 5
@@ -723,6 +865,7 @@ Show  # 5+ Links - 5L Staves (High Drop Level)
 	SetTextColor 255 0 0 # 5+ Link
 	SetBackgroundColor 50 50 50 230 # 5+ Link (Mid)
 	SetBorderColor 255 0 0 # 5+ Link
+	PlayEffect Green
 
 Show  # 5+ Links - 5L Staves (Low Drop Level)
 	LinkedSockets = 5
@@ -731,6 +874,7 @@ Show  # 5+ Links - 5L Staves (Low Drop Level)
 	SetTextColor 255 0 0 # 5+ Link
 	SetBackgroundColor 50 50 50 230 # 5+ Link (Low)
 	SetBorderColor 255 0 0 # 5+ Link
+	PlayEffect Green
 
 Hide  # 5+ Links - 5L (Other)
 	LinkedSockets = 5
@@ -1452,6 +1596,13 @@ Show  # Explicit Mods - Elemental Weapons
 	SetBorderColor 0 255 255 # Crafting Base (High)
 	PlayAlertSound 4 200 # Mid Value
 
+Show  Explicit Mods - Mastercraft
+	HasExplicitMod "Subterranean", "of the Underground", "of Weaponcraft", "of Spellcraft", "of Crafting"
+	Rarity <= Rare
+	SetFontSize 45
+	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
+	SetBorderColor 0 255 255 # Crafting Base (High)
+
 Show  # Explicit Mods - Incursion
 	HasExplicitMod "Tacati's" "Citaqualotl's" "Matatl's" "Topotante's" "Xopec's" "Guatelitzi's" "of Tacati" "of Citaqualotl" "of Matatl" "of Puhuarte" "of Guatelitzi"
 	Rarity = Magic
@@ -2171,7 +2322,7 @@ Show  # Divination Cards - Nearly Worthless (Conflicts)
 
 Show  # Divination Cards - 10c+
 	Class Divination
-	BaseType "The Undaunted" "Abandoned Wealth" "Bowyer's Dream" Heterochromia "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Last Hope" "Mawr Blaidd" "Pride Before the Fall" "The Artist" "The Brittle Emperor" "The Celestial Justicar" "The Celestial Stone" "The Devastator" "The Doctor" "The Dragon's Heart" "The Dreamer" "The Enlightened" "The Ethereal" "The Fiend" "The Formless Sea" "The Hunger" "The Immortal" "The Iron Bard" "The King's Heart" "The Last One Standing" "The Master" "The Mayor" "The Offering" "The Polymath" "The Professor" "The Queen" "The Saint's Treasure" "The Samurai's Eye" "The Sephirot" "The Spark and the Flame" "The Thaumaturgist" "The Undisputed" "The Valkyrie" "The Vast" "The Wind" "The Wolf" "The Wolven King's Bite" "The World Eater" "Wealth and Power"
+	BaseType "The Endless Darkness" "Boon of the First Ones" "The Wilted Rose" "Beauty Through Death" "The Undaunted" "Abandoned Wealth" "Bowyer's Dream" Heterochromia "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Last Hope" "Mawr Blaidd" "Pride Before the Fall" "The Artist" "The Brittle Emperor" "The Celestial Justicar" "The Celestial Stone" "The Devastator" "The Doctor" "The Dragon's Heart" "The Dreamer" "The Enlightened" "The Ethereal" "The Fiend" "The Formless Sea" "The Hunger" "The Immortal" "The Iron Bard" "The King's Heart" "The Last One Standing" "The Master" "The Mayor" "The Offering" "The Polymath" "The Professor" "The Queen" "The Saint's Treasure" "The Samurai's Eye" "The Sephirot" "The Spark and the Flame" "The Thaumaturgist" "The Undisputed" "The Valkyrie" "The Vast" "The Wind" "The Wolf" "The Wolven King's Bite" "The World Eater" "Wealth and Power"
 	SetFontSize 45
 	SetTextColor 255 0 175 # Divination Card (10c+)
 	SetBackgroundColor 255 255 255 255 # Divination Card (10c+)
@@ -2180,7 +2331,7 @@ Show  # Divination Cards - 10c+
 
 Show  # Divination Cards - 1c+
 	Class Divination
-	BaseType "Blessing of God" "Chaotic Disposition" "Dialla's Subjugation" "Earth Drinker" "Emperor of Purity" "Gemcutter's Promise" "Harmony of Souls" Humility "Jack in the Box" "Left to Fate" "Lingering Remnants" "Lost Worlds" "Lucky Connections" "Lucky Deck" "Lysah's Respite" "Merciless Armament" "No Traces" Perfection Rebirth "Scholar of the Seas" "The Admirer" "The Aesthete" "The Arena Champion" "The Avenger" "The Beast" "The Body" "The Breach" "The Cartographer" "The Chains that Bind" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Darkest Dream" "The Demoness" "The Dragon" "The Dreamland" "The Fathomless Depths" "The Fletcher" "The Gladiator" "The Hale Heart" "The Harvester" "The Hoarder" "The Insatiable" "The Inventor" "The Jeweller's Boon" "The Lion" "The Obscured" "The Penitent" "The Porcupine" "The Realm" "The Risk" "The Rite of Elements" "The Soul" "The Standoff" "The Stormcaller" "The Surveyor" "The Sword King's Salute" "The Throne" "The Trial" "The Union" "The Valley of Steel Boxes" "The Void" "The Warlord" "The Witch" "The Wrath" "The Wretched" "Time-Lost Relic" "Vinia's Token"
+	BaseType "The Twilight Moon" "The Price of Protection" "The Innocent" "Blessing of God" "Chaotic Disposition" "Dialla's Subjugation" "Earth Drinker" "Emperor of Purity" "Gemcutter's Promise" "Harmony of Souls" Humility "Jack in the Box" "Left to Fate" "Lingering Remnants" "Lost Worlds" "Lucky Connections" "Lucky Deck" "Lysah's Respite" "Merciless Armament" "No Traces" Perfection Rebirth "Scholar of the Seas" "The Admirer" "The Aesthete" "The Arena Champion" "The Avenger" "The Beast" "The Body" "The Breach" "The Cartographer" "The Chains that Bind" "The Cursed King" "The Dapper Prodigy" "The Dark Mage" "The Darkest Dream" "The Demoness" "The Dragon" "The Dreamland" "The Fathomless Depths" "The Fletcher" "The Gladiator" "The Hale Heart" "The Harvester" "The Hoarder" "The Insatiable" "The Inventor" "The Jeweller's Boon" "The Lion" "The Obscured" "The Penitent" "The Porcupine" "The Realm" "The Risk" "The Rite of Elements" "The Soul" "The Standoff" "The Stormcaller" "The Surveyor" "The Sword King's Salute" "The Throne" "The Trial" "The Union" "The Valley of Steel Boxes" "The Void" "The Warlord" "The Witch" "The Wrath" "The Wretched" "Time-Lost Relic" "Vinia's Token"
 	SetFontSize 45
 	SetTextColor 255 255 255 # Divination Card (1c+)
 	SetBackgroundColor 255 0 175 255 # Divination Card (1c+)
