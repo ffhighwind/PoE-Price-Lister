@@ -101,6 +101,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="README.md" />
     <None Include="Resources\FilterNova-AutoUpdater.ahk" />
     <None Include="Resources\Filters\Filters.zip" />
     <None Include="Resources\Filters\L1_Regular_Highwind.filter">
@@ -149,7 +150,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="FodyWeavers.xml" />
-    <Content Include="README.txt" />
     <Content Include="Resources\changelog.txt" />
     <Content Include="Resources\changelog_archive.txt" />
     <Content Include="Resources\filterblast_config.txt" />

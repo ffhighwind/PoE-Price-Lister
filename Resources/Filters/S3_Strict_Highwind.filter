@@ -346,8 +346,8 @@ Show  # Currency - Prophecies
 	SetBackgroundColor 20 0 20 # Prophecy
 	SetBorderColor 0 255 0 # Prophecy
 	PlayAlertSound 4 200 # Prophecy
-	MinimapIcon 2 Cyan Circle
-	PlayEffect Cyan
+	MinimapIcon 2 Green Circle # Cyan
+	PlayEffect Green # Cyan
 
 #----------#
 # Perandus #
@@ -436,8 +436,8 @@ Show  # Currency - League Specific - Splinters (Chayula)
 	SetTextColor 255 0 255 # Currency (Splinter of Chayula)
 	SetBackgroundColor 20 0 20 # Currency (Splinter of Chayula)
 	SetBorderColor 255 0 255 # Currency (Splinter of Chayula)
-	MinimapIcon 2 Cyan Circle
-	PlayEffect Cyan
+	MinimapIcon 2 Green Circle # Cyan
+	PlayEffect Green # Cyan
 
 Show  # Currency - League Specific - Splinters (Other)
 	Class Currency
@@ -496,8 +496,8 @@ Show  # Currency - League Specific - Resonators (High)
 	SetBackgroundColor 255 255 255 255 # Currency (High  Resonator)
 	SetBorderColor 255 0 255 # Currency (High  Resonator)
 	PlayAlertSound 4 200 # Mid Value (High  Currency)
-	MinimapIcon 2 Cyan Circle
-	PlayEffect Cyan
+	MinimapIcon 2 Green Circle # Cyan
+	PlayEffect Green # Cyan
 
 #-----------#
 # Harbinger #
@@ -523,8 +523,8 @@ Show  # Currency - League Specific - Harbinger - High
 	SetTextColor 255 0 255 # Currency (High)
 	SetBackgroundColor 20 0 20 230 # Currency (High)
 	SetBorderColor 255 0 255 # Currency (High)
-	MinimapIcon 2 Cyan Circle
-	PlayEffect Cyan 
+	MinimapIcon 2 Green Circle # Cyan
+	PlayEffect Green # Cyan 
 
 # 0.25c
 Show  # Currency - League Specific - Harbinger - Mid (1)
@@ -647,8 +647,8 @@ Show  # Currency - League Specific - Incursion - High
 	SetTextColor 255 0 255 # Incursion (High)
 	SetBackgroundColor 20 0 20 230 # Incursion (High)
 	SetBorderColor 255 0 255 # Incursion (High)
-	MinimapIcon 2 Cyan Circle
-	PlayEffect Cyan
+	MinimapIcon 2 Green Circle # Cyan
+	PlayEffect Green # Cyan
 
 Show  # Currency - League Specific - Incursion - Low
 	Class "Stackable Currency"
@@ -1572,8 +1572,8 @@ Show  # Explicit Mods - Elemental Weapons
 	SetBorderColor 0 255 255 # Crafting Base (High)
 	PlayAlertSound 4 200 # Mid Value
 
-Show  Explicit Mods - Mastercraft
-	HasExplicitMod "Subterranean", "of the Underground", "of Weaponcraft", "of Spellcraft", "of Crafting"
+Show  # Explicit Mods - Mastercraft
+	HasExplicitMod "Subterranean" "of the Underground" "of Weaponcraft" "of Spellcraft" "of Crafting"
 	Rarity <= Rare
 	SetFontSize 40
 	SetBackgroundColor 75 75 75 255 # Crafting Base (High)

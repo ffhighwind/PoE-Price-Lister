@@ -70,7 +70,7 @@
 #   TOP TIER   #
 #--------------#
 # "One Hand" "Two Hand" Bows Staves Daggers Wands Claws Sceptres
-# Gloves Boots Helmets "Body Armours" Shields "Fishing Rods" 
+# Gloves Boots Helmets "Body Armours" Shields "Fishing Rods"
 #
 ## Gloves (56+) Boots (56+) Helmets (59+) Body Armour (62+) Shields (60+)
 #
@@ -346,8 +346,8 @@ Show  # Currency - Prophecies
 	SetBackgroundColor 20 0 20 # Prophecy
 	SetBorderColor 0 255 0 # Prophecy
 	PlayAlertSound 4 200 # Prophecy
-	MinimapIcon 2 Cyan Circle
-	PlayEffect Cyan
+	MinimapIcon 2 Green Circle # Cyan
+	PlayEffect Green # Cyan
 
 #----------#
 # Perandus #
@@ -427,8 +427,8 @@ Show  # Currency - League Specific - Splinters (Chayula)
 	SetBackgroundColor 20 0 20 # Currency (Splinter of Chayula)
 	SetBorderColor 255 0 255 # Currency (Splinter of Chayula)
 	PlayAlertSound 4 200 # Mid Value (Currency)
-	MinimapIcon 2 Cyan Circle
-	PlayEffect Cyan
+	MinimapIcon 2 Green Circle # Cyan
+	PlayEffect Green # Cyan
 
 Show  # Currency - League Specific - Splinters (Other)
 	Class Currency
@@ -487,8 +487,8 @@ Show  # Currency - League Specific - Resonators (High)
 	SetBackgroundColor 255 255 255 255 # Currency (High  Resonator)
 	SetBorderColor 255 0 255 # Currency (High  Resonator)
 	PlayAlertSound 4 200 # Mid Value (High  Currency)
-	MinimapIcon 2 Cyan Circle
-	PlayEffect Cyan
+	MinimapIcon 2 Green Circle # Cyan
+	PlayEffect Green # Cyan
 
 #-----------#
 # Harbinger #
@@ -514,8 +514,8 @@ Show  # Currency - League Specific - Harbinger - High
 	SetTextColor 255 0 255 # Currency (High)
 	SetBackgroundColor 20 0 20 230 # Currency (High)
 	SetBorderColor 255 0 255 # Currency (High)
-	MinimapIcon 2 Cyan Circle
-	PlayEffect Cyan 
+	MinimapIcon 2 Green Circle # Cyan
+	PlayEffect Green # Cyan
 
 # 0.25c
 #Disabled Block Start
@@ -645,8 +645,8 @@ Show  # Currency - League Specific - Incursion - High
 	SetTextColor 255 0 255 # Incursion (High)
 	SetBackgroundColor 20 0 20 230 # Incursion (High)
 	SetBorderColor 255 0 255 # Incursion (High)
-	MinimapIcon 2 Cyan Circle
-	PlayEffect Cyan
+	MinimapIcon 2 Green Circle # Cyan
+	PlayEffect Green # Cyan
 
 Show  # Currency - League Specific - Incursion - Low
 	Class "Stackable Currency"
@@ -1377,7 +1377,7 @@ Show  # Chance Bases - Skyforth, Sorcerer Boots
 
 # Sockets 0:
 # Class Flasks Rings Amulets Belts Quivers Jewel Leaguestones
-# Sockets >= 1: 
+# Sockets >= 1:
 # "One Hand" "Two Hand" Bows Staves Daggers Wands Claws Sceptres Gloves Boots Helmets "Body Armours" Shields "Fishing Rods"
 # All equipment except Quivers, corrupted unset rings, and socketless uniques like Kaom's Heart/Roots
 
@@ -1587,8 +1587,8 @@ Show  # Explicit Mods - Elemental Weapons
 	SetBorderColor 0 255 255 # Crafting Base (High)
 	PlayAlertSound 4 200 # Mid Value
 
-Show  Explicit Mods - Mastercraft
-	HasExplicitMod "Subterranean", "of the Underground", "of Weaponcraft", "of Spellcraft", "of Crafting"
+Show  # Explicit Mods - Mastercraft
+	HasExplicitMod "Subterranean" "of the Underground" "of Weaponcraft" "of Spellcraft" "of Crafting"
 	Rarity <= Rare
 	SetFontSize 40
 	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
@@ -2302,7 +2302,6 @@ Show  # Uniques - New or Worthless
 # "The Dragon" "The Dragon's Heart" "The Eye of the Dragon"
 # "The Wolf" "The Wolf's Shadow"
 
-
 Show  # Divination Cards - Nearly Worthless (Conflicts)
 	Class Divination
 	BaseType "The Wolf's Shadow"
@@ -2835,7 +2834,7 @@ Show  # Crafting Bases - 70+ Drop Level (Low) - <84 Normal/Magic
 	SetFontSize 32
 	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
 	SetBorderColor 0 0 0 # Crafting Base (Mid)
- 
+
 Show  # Crafting Bases - 70+ Drop Level (Low) - Rare
 	DropLevel >= 72
 	BaseType "Blue Pearl Amulet" "Vanguard Belt" "Sacrificial Garb"
@@ -4932,7 +4931,7 @@ Show  # Elder Rares - Armour - 60+
 # 60+ Two Hand Weapons #
 #----------------------#
 
-Show  # Shaper Rares - Two Hand Weapons - 60+ 
+Show  # Shaper Rares - Two Hand Weapons - 60+
 	ShaperItem True
 	Class "Two Hand" Bows Staves
 	ItemLevel >= 60
@@ -4942,7 +4941,7 @@ Show  # Shaper Rares - Two Hand Weapons - 60+
 	SetBorderColor 200 50 255 # Shaper Elder 60+
 	PlayAlertSound 4 0 # Shaper Elder Rare 60+
 
-Show  # Elder Rares - Two Hand Weapons - 60+ 
+Show  # Elder Rares - Two Hand Weapons - 60+
 	ElderItem True
 	Class "Two Hand" Bows Staves
 	ItemLevel >= 60
