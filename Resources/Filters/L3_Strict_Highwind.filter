@@ -1,7 +1,7 @@
 ############################################
-##     HIGHWIND'S STRICT FILTER 3.4.1     ##
+##     HIGHWIND'S STRICT FILTER 3.4.2     ##
 ############################################
-## Release Date: August 30, 2018          ##
+## Release Date: August 31, 2018          ##
 ############################################
 
 #--------------#
@@ -70,7 +70,7 @@
 #   TOP TIER   #
 #--------------#
 # "One Hand" "Two Hand" Bows Staves Daggers Wands Claws Sceptres
-# Gloves Boots Helmets "Body Armours" Shields "Fishing Rods" 
+# Gloves Boots Helmets "Body Armours" Shields "Fishing Rods"
 #
 ## Gloves (56+) Boots (56+) Helmets (59+) Body Armour (62+) Shields (60+)
 #
@@ -110,6 +110,8 @@
 #	SetBackgroundColor 0 0 0 230 # Currency (Mid)
 #	SetBorderColor 0 0 0 0 # Currency (Mid)
 #	PlayAlertSound ShAlchemy 300
+#   MinimapIcon 2 Yellow Circle
+#	PlayEffect Yellow
 #Disabled Block End
 
 #Disabled Block Start
@@ -121,6 +123,8 @@
 #	SetBackgroundColor 0 0 0 230 # Currency (Mid)
 #	SetBorderColor 0 0 0 0 # Currency (Mid)
 #	PlayAlertSound ShFusing 300
+#   MinimapIcon 2 Yellow Circle
+#	PlayEffect Yellow
 #Disabled Block End
 
 #Disabled Block Start
@@ -132,6 +136,8 @@
 #	SetBackgroundColor 0 0 0 230 # Currency (Mid)
 #	SetBorderColor 0 0 0 0 # Currency (Mid)
 #	PlayAlertSound ShBlessed 300
+#   MinimapIcon 2 Yellow Circle
+#	PlayEffect Yellow
 #Disabled Block End
 
 #Disabled Block Start
@@ -143,6 +149,8 @@
 #	SetBackgroundColor 20 0 20 230 # Currency (High)
 #	SetBorderColor 255 0 255 # Currency (High)
 #	PlayAlertSound ShChaos 300
+#   MinimapIcon 2 Yellow Circle
+#	PlayEffect Yellow
 #Disabled Block End
 
 #Disabled Block Start
@@ -154,6 +162,8 @@
 #	SetBackgroundColor 20 0 20 230 # Currency (High)
 #	SetBorderColor 255 0 255 # Currency (High)
 #	PlayAlertSound ShRegal 300
+#   MinimapIcon 2 Yellow Circle
+#	PlayEffect Yellow
 #Disabled Block End
 
 #Disabled Block Start
@@ -165,6 +175,8 @@
 #	SetBackgroundColor 20 0 20 230 # Currency (High)
 #	SetBorderColor 255 0 255 # Currency (High)
 #	PlayAlertSound ShVaal 300
+#   MinimapIcon 2 Yellow Circle
+#	PlayEffect Yellow
 #Disabled Block End
 
 #Disabled Block Start
@@ -176,6 +188,8 @@
 #	SetBackgroundColor 255 255 255 255 # Currency (6c+)
 #	SetBorderColor 255 0 255 # Currency (6c+)
 #	PlayAlertSound ShExalted 300
+#   MinimapIcon 0 Red Circle
+#	PlayEffect Red
 #Disabled Block End
 
 #Disabled Block Start
@@ -187,6 +201,8 @@
 #	SetBackgroundColor 255 255 255 255 # Currency (6c+)
 #	SetBorderColor 255 0 255 # Currency (6c+)
 #	PlayAlertSound ShMirror 300
+#   MinimapIcon 0 Red Circle
+#	PlayEffect Red
 #Disabled Block End
 
 #----------------#
@@ -202,28 +218,47 @@
 #	SetBackgroundColor 20 0 20 230 # Currency (High)
 #	SetBorderColor 255 0 255 # Currency (High)
 #	PlayAlertSound ShGeneral 300
+#   MinimapIcon 2 Yellow Circle
+#	PlayEffect Yellow
 #Disabled Block End
 
 #Disabled Block Start
 #Show  # Currency - Shaper Voice - General - 3c+
 #	Class Currency
-#	BaseType "Remnant of Corruption" "Master Cartographer's Sextant" "Exalted Shard"
+#	BaseType "Master Cartographer's Sextant" "Apprentice Cartographer's Seal" "Exalted Shard"
 #	SetFontSize 45
 #	SetTextColor 255 0 255 # Currency (3c+)
 #	SetBackgroundColor 255 255 255 255 # Currency (3c+)
 #	SetBorderColor 255 0 255 # Currency (3c+)
 #	PlayAlertSound ShGeneral 300
+#   MinimapIcon 2 Yellow Circle
+#	PlayEffect Yellow
 #Disabled Block End
 
 #Disabled Block Start
 #Show  # Currency - Shaper Voice - General - 6c+
 #	Class Currency
-#	BaseType "Divine Orb" "Exalted Orb" "Eternal Orb" "Imprint" "Mirror of Kalandra" "Mirror Shard" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb"
+#	BaseType "Divine Orb" "Journeyman Cartographer's Seal" "Master Cartographer's Seal" "Unshaping Orb" "Orb of Annulment" "Ancient Orb" "Harbinger's Orb"
 #	SetFontSize 45
 #	SetTextColor 255 0 255 # Currency (6c+)
 #	SetBackgroundColor 255 255 255 255 # Currency (6c+)
 #	SetBorderColor 255 0 255 # Currency (6c+)
 #	PlayAlertSound ShGeneral 300
+#   MinimapIcon 1 Red Circle
+#	PlayEffect Red
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Currency - Shaper Voice - General - 20c+
+#	Class Currency
+#	BaseType "Exalted Orb" "Eternal Orb" "Imprint" "Mirror of Kalandra" "Mirror Shard"
+#	SetFontSize 45
+#	SetTextColor 255 0 255 # Currency (6c+)
+#	SetBackgroundColor 255 255 255 255 # Currency (6c+)
+#	SetBorderColor 255 0 255 # Currency (6c+)
+#	PlayAlertSound ShGeneral 300
+#   MinimapIcon 0 Red Circle
+#	PlayEffect Red
 #Disabled Block End
 
 #--------#
@@ -346,8 +381,8 @@ Show  # Currency - Prophecies
 	SetBackgroundColor 20 0 20 # Prophecy
 	SetBorderColor 0 255 0 # Prophecy
 	PlayAlertSound 4 200 # Prophecy
-	MinimapIcon 2 Green Circle # Cyan
-	PlayEffect Green # Cyan
+	MinimapIcon 2 Green Circle
+	PlayEffect Green
 
 #----------#
 # Perandus #
@@ -412,6 +447,7 @@ Show  # Currency - League Specific - Essences (Mid)
 	SetBorderColor 255 0 255 # Currency (Mid Essence)
 	PlayAlertSound 4 200 # Mid Value (Currency)
 	MinimapIcon 2 Blue Diamond
+	PlayEffect Blue
 
 #6c+
 Show  # Currency - League Specific - Essences (High)
@@ -436,8 +472,8 @@ Show  # Currency - League Specific - Splinters (Chayula)
 	SetTextColor 255 0 255 # Currency (Splinter of Chayula)
 	SetBackgroundColor 20 0 20 # Currency (Splinter of Chayula)
 	SetBorderColor 255 0 255 # Currency (Splinter of Chayula)
-	MinimapIcon 2 Green Circle # Cyan
-	PlayEffect Green # Cyan
+	MinimapIcon 2 Blue Circle
+	PlayEffect Blue
 
 Show  # Currency - League Specific - Splinters (Other)
 	Class Currency
@@ -455,7 +491,7 @@ Show  # Currency - League Specific - Blessings (Chayula)
 	SetBackgroundColor 255 255 255 255 # Currency (Blessing)
 	SetBorderColor 255 0 255 # Currency (Blessing)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 1 Red Star
+	MinimapIcon 0 Red Circle
 	PlayEffect Red
 
 Show  # Currency - League Specific - Blessings (Breach)
@@ -496,8 +532,8 @@ Show  # Currency - League Specific - Resonators (High)
 	SetBackgroundColor 255 255 255 255 # Currency (High  Resonator)
 	SetBorderColor 255 0 255 # Currency (High  Resonator)
 	PlayAlertSound 4 200 # Mid Value (High  Currency)
-	MinimapIcon 2 Green Circle # Cyan
-	PlayEffect Green # Cyan
+	MinimapIcon 2 Blue Circle
+	PlayEffect Blue
 
 #-----------#
 # Harbinger #
@@ -512,7 +548,7 @@ Show  # Currency - League Specific - Harbinger - High (6c+)
 	SetBackgroundColor 255 255 255 255 # Currency (6c+)
 	SetBorderColor 255 0 255 # Currency (6c+)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 2 Red Circle
+	MinimapIcon 0 Red Circle
 	PlayEffect Red
 
 # 0.5-6c
@@ -523,8 +559,8 @@ Show  # Currency - League Specific - Harbinger - High
 	SetTextColor 255 0 255 # Currency (High)
 	SetBackgroundColor 20 0 20 230 # Currency (High)
 	SetBorderColor 255 0 255 # Currency (High)
-	MinimapIcon 2 Green Circle # Cyan
-	PlayEffect Green # Cyan 
+	MinimapIcon 2 Green Circle
+	PlayEffect Green
 
 # 0.25c
 Show  # Currency - League Specific - Harbinger - Mid (1)
@@ -624,6 +660,8 @@ Show  # Currency - League Specific - Bestiary - High
 	SetBackgroundColor 20 0 20 230 # Bestiary (High)
 	SetBorderColor 255 0 255 # Bestiary (High)
 	PlayAlertSound 4 200 # Mid Value (Currency)
+	MinimapIcon 2 Blue Circle
+	PlayEffect Blue
 
 #-----------#
 # Incursion #
@@ -637,7 +675,7 @@ Show  # Currency - League Specific - Incursion - Valuable
 	SetBackgroundColor 255 255 255 255 # Incursion (Valuable)
 	SetBorderColor 255 0 255 # Incursion (Valuable)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 2 Red Circle
+	MinimapIcon 0 Red Circle
 	PlayEffect Red
 
 Show  # Currency - League Specific - Incursion - High
@@ -647,8 +685,8 @@ Show  # Currency - League Specific - Incursion - High
 	SetTextColor 255 0 255 # Incursion (High)
 	SetBackgroundColor 20 0 20 230 # Incursion (High)
 	SetBorderColor 255 0 255 # Incursion (High)
-	MinimapIcon 2 Green Circle # Cyan
-	PlayEffect Green # Cyan
+	MinimapIcon 2 Blue Circle
+	PlayEffect Blue
 
 Show  # Currency - League Specific - Incursion - Low
 	Class "Stackable Currency"
@@ -657,6 +695,8 @@ Show  # Currency - League Specific - Incursion - Low
 	SetTextColor 255 0 255 # Incursion (Mid)
 	SetBackgroundColor 0 0 0 230 # Incursion (Mid)
 	SetBorderColor 0 0 0 0 # Incursion (Mid)
+	MinimapIcon 2 Blue Circle
+	PlayEffect Blue
 
 #--------#
 # Errors #
@@ -731,6 +771,8 @@ Show  # Fishing Rods
 	SetBackgroundColor 255 0 0 255 # Fishing Rod
 	SetBorderColor 255 255 255 # Fishing Rod
 	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Star
+	PlayEffect Red
 
 ##########################################
 ################ 5+ LINKS ################
@@ -767,8 +809,8 @@ Show  # 5+ Links - 5L 6 Sockets
 	SetBackgroundColor 255 255 255 255 # 5+ Link (High)
 	SetBorderColor 255 0 0 # 5+ Link
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 2 Green Star
-	PlayEffect Green
+	MinimapIcon 2 Yellow Star
+	PlayEffect Yellow
 
 Show  # 5+ Links - 5L Top Tier (84+)
 	LinkedSockets = 5
@@ -779,8 +821,8 @@ Show  # 5+ Links - 5L Top Tier (84+)
 	SetBackgroundColor 255 255 255 255 # 5+ Link (High)
 	SetBorderColor 255 0 0 # 5+ Link
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 2 Green Star
-	PlayEffect Green
+	MinimapIcon 2 Yellow Star
+	PlayEffect Yellow
 
 Show  # 5+ Links - 5L (84+)
 	LinkedSockets = 5
@@ -791,8 +833,8 @@ Show  # 5+ Links - 5L (84+)
 	SetBackgroundColor 50 50 50 230 # 5+ Link (Mid)
 	SetBorderColor 255 0 0 # 5+ Link
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 2 Green Star
-	PlayEffect Green
+	MinimapIcon 2 Yellow Star
+	PlayEffect Yellow
 
 Show  # 5+ Links - 5L (Shaper)
 	LinkedSockets = 5
@@ -802,8 +844,8 @@ Show  # 5+ Links - 5L (Shaper)
 	SetBackgroundColor 50 20 70 230 # Shaper Elder 60+
 	SetBorderColor 255 0 0 # 5+ Link
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 2 Green Star
-	PlayEffect Green
+	MinimapIcon 2 Yellow Star
+	PlayEffect Yellow
 
 Show  # 5+ Links - 5L (Elder)
 	LinkedSockets = 5
@@ -813,8 +855,8 @@ Show  # 5+ Links - 5L (Elder)
 	SetBackgroundColor 50 20 70 230 # Shaper Elder 60+
 	SetBorderColor 255 0 0 # 5+ Link
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 2 Green Star
-	PlayEffect Green
+	MinimapIcon 2 Yellow Star
+	PlayEffect Yellow
 
 Show  # 5+ Links - 5L (Leveling)
 	LinkedSockets = 5
@@ -824,8 +866,8 @@ Show  # 5+ Links - 5L (Leveling)
 	SetBackgroundColor 50 50 50 230 # 5+ Link (Mid)
 	SetBorderColor 255 0 0 # 5+ Link
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 2 Green Star
-	PlayEffect Green
+	MinimapIcon 2 Yellow Star
+	PlayEffect Yellow
 
 # 64 Sharpshooter's
 #Disabled Block Start
@@ -898,6 +940,8 @@ Show  # Vendor Recipes - Jewellers (6 Socket) - Unique
 	SetBackgroundColor 255 255 255 255 # Unique (10c+)
 	SetBorderColor 255 128 64 # Unique (10c+)
 	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Star
+	PlayEffect Red
 
 Show  # Vendor Recipes - Jewellers (6 Socket) - Normal/Magic
 	Sockets = 6
@@ -906,6 +950,8 @@ Show  # Vendor Recipes - Jewellers (6 Socket) - Normal/Magic
 	SetBackgroundColor 0 0 0 230 # 6 Socket
 	SetBorderColor 255 0 255 # 6 Socket
 	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 2 Yellow Star
+	PlayEffect Yellow
 
 #------------#
 # Chromatics #
@@ -1050,6 +1096,8 @@ Show  # Talismans - Unique
 	SetBackgroundColor 255 255 255 255 # Talisman (Unique)
 	SetBorderColor 0 255 0 # Talisman (Unique)
 	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Diamond
+	PlayEffect Red
 
 Show  # Talismans - Leveling
 	Class Amulets
@@ -1058,6 +1106,8 @@ Show  # Talismans - Leveling
 	SetFontSize 40
 	SetBackgroundColor 0 0 0 # Talisman (Low)
 	SetBorderColor 0 255 0 # Talisman (Low)
+	MinimapIcon 2 Blue Diamond
+	PlayEffect Blue
 
 Show  # Talismans - Mapping
 	Class Amulets
@@ -1066,6 +1116,8 @@ Show  # Talismans - Mapping
 	SetBackgroundColor 50 50 50 # Talisman (High)
 	SetBorderColor 0 255 0 # Talisman (High)
 	PlayAlertSound 6 200 # Talisman
+	MinimapIcon 2 Blue Diamond
+	PlayEffect Blue
 
 #--------#
 # Breach #
@@ -1126,6 +1178,8 @@ Show  # Leaguestones - Mapping
 	SetBackgroundColor 100 0 100 # Leaguestone (High)
 	SetBorderColor 150 150 150 # Leaguestone (High)
 	PlayAlertSound 2 200 # Leaguestone
+	MinimapIcon 2 Blue Diamond
+	PlayEffect Blue
 
 #-----------#
 # Harbinger #
@@ -1138,6 +1192,8 @@ Show  # Pieces
 	SetBackgroundColor 255 255 255 255 # Piece
 	SetBorderColor 200 100 50 # Piece
 	PlayAlertSound 1 200 # Piece
+	MinimapIcon 0 Red Diamond
+	PlayEffect Red
 
 #-------#
 # Abyss #
@@ -1362,7 +1418,7 @@ Hide  # Chance Bases - Skyforth, Sorcerer Boots
 
 # Sockets 0:
 # Class Flasks Rings Amulets Belts Quivers Jewel Leaguestones
-# Sockets >= 1: 
+# Sockets >= 1:
 # "One Hand" "Two Hand" Bows Staves Daggers Wands Claws Sceptres Gloves Boots Helmets "Body Armours" Shields "Fishing Rods"
 # All equipment except Quivers, corrupted unset rings, and socketless uniques like Kaom's Heart/Roots
 
@@ -1561,6 +1617,8 @@ Show  # Explicit Mods - Physical Weapons
 	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
 	SetBorderColor 0 255 255 # Crafting Base (High)
 	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 2 Blue Star
+	PlayEffect Blue
 
 Show  # Explicit Mods - Elemental Weapons
 	Class "One Hand" Daggers Wands Claws Sceptres Bows
@@ -1571,6 +1629,8 @@ Show  # Explicit Mods - Elemental Weapons
 	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
 	SetBorderColor 0 255 255 # Crafting Base (High)
 	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 2 Blue Star
+	PlayEffect Blue
 
 Show  # Explicit Mods - Mastercraft
 	HasExplicitMod "Subterranean" "of the Underground" "of Weaponcraft" "of Spellcraft" "of Crafting"
@@ -1578,11 +1638,15 @@ Show  # Explicit Mods - Mastercraft
 	SetFontSize 45
 	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
 	SetBorderColor 0 255 255 # Crafting Base (High)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 2 Blue Star
+	PlayEffect Blue
 
 Show  # Explicit Mods - Incursion
 	HasExplicitMod "Tacati's" "Citaqualotl's" "Matatl's" "Topotante's" "Xopec's" "Guatelitzi's" "of Tacati" "of Citaqualotl" "of Matatl" "of Puhuarte" "of Guatelitzi"
 	Rarity = Magic
 	SetFontSize 40
+	PlayEffect Blue
 
 Show  # Explicit Mods - Incursion
 	HasExplicitMod "Tacati's" "Citaqualotl's" "Matatl's" "Topotante's" "Xopec's" "Guatelitzi's" "of Tacati" "of Citaqualotl" "of Matatl" "of Puhuarte" "of Guatelitzi"
@@ -1590,11 +1654,13 @@ Show  # Explicit Mods - Incursion
 	SetFontSize 45
 	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
 	SetBorderColor 0 255 255 # Crafting Base (High)
+	PlayEffect Blue
 
 Show  # Explicit Mods - Warbands
 	HasExplicitMod "Mutewind" "Redblade" "Brinerot" "Betrayer's" "Deceiver's" "Turncoat's"
 	Rarity = Magic
 	SetFontSize 40
+	PlayEffect Blue
 
 Show  # Explicit Mods - Shaper/Elder
 	HasExplicitMod "The Shaper's" "Eldritch" "of Shaping" "of the Elder"
@@ -1602,6 +1668,9 @@ Show  # Explicit Mods - Shaper/Elder
 	SetFontSize 45
 	SetBackgroundColor 50 20 70 230 # Shaper Elder 60+
 	SetBorderColor 200 50 255 # Shaper Elder 60+
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 2 Blue Star
+	PlayEffect Blue
 
 Show  # Explicit Mods - Armor/Accessories
 	Class Gloves Boots Helmets Belts Amulets "Body Armour"
@@ -1610,6 +1679,9 @@ Show  # Explicit Mods - Armor/Accessories
 	SetFontSize 45
 	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
 	SetBorderColor 0 255 255 # Crafting Base (High)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 2 Blue Star
+	PlayEffect Blue
 
 Show  # Explicit Mods - Accessories
 	Class Belts Amulets
@@ -1618,6 +1690,9 @@ Show  # Explicit Mods - Accessories
 	SetFontSize 45
 	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
 	SetBorderColor 0 255 255 # Crafting Base (High)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 2 Blue Star
+	PlayEffect Blue
 
 Show  # Explicit Mods - Jewels
 	BaseType Jewel
@@ -1627,6 +1702,8 @@ Show  # Explicit Mods - Jewels
 	SetBackgroundColor 0 0 0 # Jewel (Magic)
 	SetBorderColor 0 220 220 # Jewel (Magic)
 	PlayAlertSound 6 200 # Jewel
+	MinimapIcon 2 Blue Star
+	PlayEffect Blue
 
 ##########################################
 ############## PRE-FILTER 2 ##############
@@ -1672,6 +1749,8 @@ Show  # Jewels - Prismatic
 	SetBackgroundColor 255 255 255 255 # Jewel (Prismatic)
 	SetBorderColor 0 255 255 # Jewel (Prismatic)
 	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Star
+	PlayEffect Red
 
 Show  # Jewels - Unique
 	Class Jewel
@@ -1681,6 +1760,8 @@ Show  # Jewels - Unique
 	SetBackgroundColor 50 25 12 # Jewel (Unique)
 	SetBorderColor 0 255 255 # Jewel (Unique)
 	PlayAlertSound 6 200 # Jewel (Unique)
+	MinimapIcon 2 Green Star
+	PlayEffect Green
 
 #-------------#
 # Abyss Magic #
@@ -1733,6 +1814,8 @@ Show  # Abyss Jewels - Rare - Leveling
 	SetBackgroundColor 0 0 0 # Jewel (Abyss)
 	SetBorderColor 0 220 220 # Jewel (Rare)
 	PlayAlertSound 6 200 # Jewel
+	MinimapIcon 2 Yellow Star
+	PlayEffect Yellow
 
 #Disabled Block Start
 #Show  # Abyss Jewels - Rare - Mapping (Low)
@@ -1760,6 +1843,7 @@ Show  # Abyss Jewels - Rare - Mapping (High)
 	SetFontSize 45
 	SetBackgroundColor 0 0 0 # Jewel (Abyss)
 	SetBorderColor 0 220 220 # Jewel (Rare)
+	PlayEffect Yellow
 
 #--------------#
 # Normal/Magic #
@@ -1812,6 +1896,8 @@ Show  # Jewels - Rare - Leveling
 	SetBackgroundColor 0 0 0 # Jewel (Rare)
 	SetBorderColor 0 220 220 # Jewel (Rare)
 	PlayAlertSound 6 200 # Jewel
+	MinimapIcon 2 Yellow Star
+	PlayEffect Yellow
 
 Show  # Jewels - Rare - Mapping (Low)
 	Class Jewel
@@ -1855,6 +1941,8 @@ Show  # Gems - Quality - 17%+
 	SetBackgroundColor 255 255 255 255 # Gem (High)
 	SetBorderColor 50 220 180 # Gem (High)
 	PlayAlertSound 6 200 # Gem
+	MinimapIcon 2 Yellow Star
+	PlayEffect Yellow
 
 Show  # Gems - Leveled - High Value
 	Class "Skill Gems"
@@ -1865,6 +1953,8 @@ Show  # Gems - Leveled - High Value
 	SetBackgroundColor 255 255 255 255 # Gem (High)
 	SetBorderColor 50 220 180 # Gem (High)
 	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Star
+	PlayEffect Red
 
 Show  # Gems - Item Quantity
 	Class "Skill Gems"
@@ -1875,6 +1965,8 @@ Show  # Gems - Item Quantity
 	SetBackgroundColor 255 255 255 255 # Gem (High)
 	SetBorderColor 50 220 180 # Gem (High)
 	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Star
+	PlayEffect Red
 
 #-----#
 # Mid #
@@ -1888,6 +1980,8 @@ Show  # Gems - Leveled - Level 20
 	SetBackgroundColor 10 35 30 # Gem (Mid)
 	SetBorderColor 50 220 180 # Gem (Mid)
 	PlayAlertSound 6 200 # Gem
+	MinimapIcon 2 Yellow Star
+	PlayEffect Yellow
 
 Show  # Gems - Leveled - Level 19
 	Class "Skill Gems"
@@ -1897,6 +1991,8 @@ Show  # Gems - Leveled - Level 19
 	SetBackgroundColor 10 35 30 # Gem (Mid)
 	SetBorderColor 50 220 180 # Gem (Mid)
 	PlayAlertSound 6 200 # Gem
+	MinimapIcon 2 Yellow Star
+	PlayEffect Yellow
 
 Show  # Gems - Quality - 10%+
 	Quality >= 10
@@ -1906,6 +2002,8 @@ Show  # Gems - Quality - 10%+
 	SetBackgroundColor 50 50 50 # Gem Quality (Mid)
 	SetBorderColor 200 200 200 # Gem Quality (Mid)
 	PlayAlertSound 6 200 # Gem
+	MinimapIcon 2 Yellow Star
+	PlayEffect Yellow
 
 Show  # Gems - Drop Only - 1c+
 	Class "Skill Gems"
@@ -1979,6 +2077,8 @@ Show  # Maps - Uniques - High Value
 	SetBackgroundColor 255 255 255 255 # Unique (10c+)
 	SetBorderColor 255 128 64 # Unique (10c+)
 	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
 
 Show  # Maps - Uniques - Low Value
 	Class Maps
@@ -1988,6 +2088,8 @@ Show  # Maps - Uniques - Low Value
 	SetBackgroundColor 255 128 64 220 # Map (Unique)
 	SetBorderColor 0 0 0 # Map (Unique)
 	PlayAlertSound 4 200 # Map (Unique)
+	MinimapIcon 2 Green Hexagon
+	PlayEffect Green
 
 #-----#
 # Red #
@@ -2001,6 +2103,8 @@ Show  # Maps - T16 (Guardians)
 	SetBackgroundColor 255 0 0 220 # Map (T16)
 	SetBorderColor 220 220 220 # Map (T16)
 	PlayAlertSound 3 200 # Map
+	MinimapIcon 2 Red Hexagon
+	PlayEffect Red
 
 Show  # Maps - T16 (Elder)
 	ElderMap True
@@ -2009,6 +2113,8 @@ Show  # Maps - T16 (Elder)
 	SetBackgroundColor 255 0 0 220 # Map (T16)
 	SetBorderColor 220 220 220 # Map (T16)
 	PlayAlertSound 3 200 # Map
+	MinimapIcon 2 Red Hexagon
+	PlayEffect Red
 
 Show  # Maps - T11+ (Red) - Shaped
 	ShapedMap True
@@ -2018,6 +2124,8 @@ Show  # Maps - T11+ (Red) - Shaped
 	SetBackgroundColor 255 0 0 220 # Map (Red)
 	SetBorderColor 0 0 0 # Map (Red)
 	PlayAlertSound 3 200 # Map
+	MinimapIcon 2 Red Hexagon
+	PlayEffect Red
 
 Show  # Maps - T11+ (Red) - Other
 	Class Maps
@@ -2027,6 +2135,8 @@ Show  # Maps - T11+ (Red) - Other
 	SetBackgroundColor 255 0 0 220 # Map (Red)
 	SetBorderColor 0 0 0 # Map (Red)
 	PlayAlertSound 3 200 # Map
+	MinimapIcon 2 Red Hexagon
+	PlayEffect Red
 
 #--------#
 # Yellow #
@@ -2061,6 +2171,8 @@ Show  # Maps - T6+ (Yellow) - Sound - Shaped
 	SetBackgroundColor 255 255 0 200 # Map (Yellow)
 	SetBorderColor 0 0 0 # Map (Yellow)
 	PlayAlertSound 3 200 # Map
+	MinimapIcon 2 Yellow Hexagon
+	PlayEffect Yellow
 
 Show  # Maps - T6+ (Yellow) - Sound - Other
 	Class Maps
@@ -2070,6 +2182,8 @@ Show  # Maps - T6+ (Yellow) - Sound - Other
 	SetBackgroundColor 255 255 0 200 # Map (Yellow)
 	SetBorderColor 0 0 0 # Map (Yellow)
 	PlayAlertSound 3 200 # Map
+	MinimapIcon 2 Yellow Hexagon
+	PlayEffect Yellow
 
 #-------#
 # White #
@@ -2102,6 +2216,8 @@ Show  # Maps - T1+ (White) - Sound
 	SetBackgroundColor 235 235 255 200 # Map (White)
 	SetBorderColor 0 0 0 # Map (White)
 	PlayAlertSound 3 200 # Map
+	MinimapIcon 2 Blue Hexagon
+	PlayEffect Blue
 
 #-----------#
 # Fragments #
@@ -2115,6 +2231,8 @@ Show  # Maps - Fragments - High Value
 	SetBackgroundColor 0 255 255 210 # Map Fragment (High)
 	SetBorderColor 255 255 255 # Map Fragment (High)
 	PlayAlertSound 1 200 # High Value
+	MinimapIcon 2 Blue Hexagon
+	PlayEffect Blue
 
 Show  # Maps - Fragments - Mid Value
 	Class "Map Fragments"
@@ -2124,6 +2242,8 @@ Show  # Maps - Fragments - Mid Value
 	SetBackgroundColor 0 255 255 210 # Map Fragment (Mid)
 	SetBorderColor 0 0 0 # Map Fragment (Mid)
 	PlayAlertSound 2 200 # Map Fragment
+	MinimapIcon 2 Blue Hexagon
+	PlayEffect Blue
 
 Show  # Maps - Fragments - Low Value
 	Class "Map Fragments"
@@ -2133,6 +2253,7 @@ Show  # Maps - Fragments - Low Value
 	SetBackgroundColor 0 255 255 210 # Map Fragment (Low)
 	SetBorderColor 0 0 0 # Map Fragment (Low)
 	DisableDropSound
+	PlayEffect Blue
 
 Show  # Maps - Fragments - New (Error)
 	Class "Map Fragments"
@@ -2141,6 +2262,8 @@ Show  # Maps - Fragments - New (Error)
 	SetBackgroundColor 0 255 255 210 # Map Fragment (Mid)
 	SetBorderColor 0 255 0 # Error
 	PlayAlertSound 8 200 # Error
+	MinimapIcon 2 Blue Hexagon
+	PlayEffect Blue
 
 ##########################################
 ################# UNIQUES ################
@@ -2165,6 +2288,8 @@ Show  # Uniques - 10c+
 	SetBackgroundColor 255 255 255 255 # Unique (10c+)
 	SetBorderColor 255 128 64 # Unique (10c+)
 	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Star
+	PlayEffect Red
 
 #-------#
 # 2-10c #
@@ -2181,6 +2306,8 @@ Show  # Uniques - 2-10c
 	SetBackgroundColor 50 25 12 # Unique
 	SetBorderColor 255 255 255 # Unique (2-10c)
 	PlayAlertSound 1 200 # High Value
+	MinimapIcon 2 Green Star
+	PlayEffect Green
 
 #------#
 # 1-2c #
@@ -2196,6 +2323,8 @@ Show  # Uniques - 1-2c
 	SetBackgroundColor 50 25 12 # Unique
 	SetBorderColor 255 255 0 # Unique (1-2c)
 	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 2 Green Star
+	PlayEffect Green
 
 # Loreweave (60x rings)
 Show  # Uniques - 1-2c
@@ -2206,6 +2335,8 @@ Show  # Uniques - 1-2c
 	SetBackgroundColor 50 25 12 # Unique
 	SetBorderColor 255 255 0 # Unique (1-2c)
 	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 2 Green Star
+	PlayEffect Green
 
 #-----#
 # <1c #
@@ -2221,6 +2352,8 @@ Show  # Uniques - <1c - ilvl <67
 	SetBackgroundColor 50 25 12 # Unique
 	SetBorderColor 180 90 45 # Unique (<1c)
 	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 2 Green Star
+	PlayEffect Green
 
 Show  # Uniques - <1c - League
 	Rarity = Unique
@@ -2311,6 +2444,8 @@ Show  # Divination Cards - 10c+
 	SetBackgroundColor 255 255 255 255 # Divination Card (10c+)
 	SetBorderColor 255 0 175 # Divination Card (10c+)
 	PlayAlertSound 1 200 # High Value
+	MinimapIcon 1 Red Square
+	PlayEffect Red
 
 Show  # Divination Cards - 1c+
 	Class Divination
@@ -2320,6 +2455,8 @@ Show  # Divination Cards - 1c+
 	SetBackgroundColor 255 0 175 255 # Divination Card (1c+)
 	SetBorderColor 255 255 255 # Divination Card (1c+)
 	PlayAlertSound 5 200 # Divination Card (1c+)
+	MinimapIcon 2 Green Square
+	PlayEffect Green
 
 Show  # Divination Cards - <1c
 	Class Divination
@@ -2329,6 +2466,8 @@ Show  # Divination Cards - <1c
 	SetBackgroundColor 255 0 175 230 # Divination Card (<1c)
 	SetBorderColor 150 30 100 # Divination Card (<1c)
 	PlayAlertSound 5 100 # Divination Card (Low)
+	MinimapIcon 2 Green Square
+	PlayEffect Green
 
 Hide  # Divination Cards - Nearly Worthless
 	Class Divination
@@ -2355,6 +2494,8 @@ Show  # Divination Cards - New (Error)
 	SetBackgroundColor 255 0 175 255 # Divination Card (1c+)
 	SetBorderColor 0 255 0 # Error
 	PlayAlertSound 5 200 # Divination Card (1c+)
+	MinimapIcon 2 Green Square
+	PlayEffect Green
 
 ##########################################
 ################# FLASKS #################
@@ -2833,7 +2974,7 @@ Hide  # Crafting Bases - 70+ Drop Level (Low) - <84 Normal/Magic
 	SetFontSize 36
 	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
 	SetBorderColor 0 0 0 # Crafting Base (Mid)
- 
+
 Show  # Crafting Bases - 70+ Drop Level (Low) - Rare
 	DropLevel >= 72
 	BaseType "Blue Pearl Amulet" "Vanguard Belt" "Sacrificial Garb"
@@ -4934,7 +5075,7 @@ Show  # Elder Rares - Armour - 60+
 # 60+ Two Hand Weapons #
 #----------------------#
 
-Show  # Shaper Rares - Two Hand Weapons - 60+ 
+Show  # Shaper Rares - Two Hand Weapons - 60+
 	ShaperItem True
 	Class "Two Hand" Bows Staves
 	ItemLevel >= 60
@@ -4944,7 +5085,7 @@ Show  # Shaper Rares - Two Hand Weapons - 60+
 	SetBorderColor 200 50 255 # Shaper Elder 60+
 	PlayAlertSound 4 0 # Shaper Elder Rare 60+
 
-Show  # Elder Rares - Two Hand Weapons - 60+ 
+Show  # Elder Rares - Two Hand Weapons - 60+
 	ElderItem True
 	Class "Two Hand" Bows Staves
 	ItemLevel >= 60
