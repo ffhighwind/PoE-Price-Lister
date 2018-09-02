@@ -62,112 +62,133 @@ namespace PoE_Price_Lister
 # Sellable but rarely worth much.";
 
         private const string headerLess1c =
-@"#-----#
-# <1c #
-#-----#
-# Orange border
-# Usually < 1c or nearly worthless.
+"#-----#\n" +
+"# <1c #\n" +
+"#-----#\n" +
+"# Orange border\n" +
+"# Usually < 1c or nearly worthless.\n\n" +
 
-Show  # Uniques - <1c - ilvl <67
-    Rarity = Unique
-    ItemLevel < 67
-    SetFontSize 40
-    SetTextColor 255 128 64 # Unique
-    SetBackgroundColor 50 25 12 # Unique
-    SetBorderColor 180 90 45 # Unique (<1c)
-    PlayAlertSound 4 200 # Mid Value";
+"Show  # Uniques - <1c - ilvl <67\n" +
+"\tRarity = Unique\n" +
+"\tItemLevel < 67\n" +
+"\tSetFontSize 40\n" +
+"\tSetTextColor 255 128 64 # Unique\n" +
+"\tSetBackgroundColor 50 25 12 # Unique\n" +
+"\tSetBorderColor 180 90 45 # Unique (<1c)\n" +
+"\tPlayAlertSound 4 200 # Mid Value\n" +
+"\tMinimapIcon 0 Brown Star\n" +
+"\tPlayEffect Brown";
 
         private const string loreweaveStr =
-@"# Loreweave (60x rings)
-Show  # Uniques - 1-2c
-    Rarity = Unique
-    Class Rings
-    SetFontSize 40
-    SetTextColor 255 128 64 # Unique
-    SetBackgroundColor 50 25 12 # Unique
-    SetBorderColor 255 255 0 # Unique (1-2c)
-    PlayAlertSound 4 200 # Mid Value";
+"# Loreweave (60x rings)\n" +
+"Show  # Uniques - 1-2c\n" +
+"\tRarity = Unique\n" +
+"\tClass Rings\n" +
+"\tSetFontSize 40\n" +
+"\tSetTextColor 255 128 64 # Unique\n" +
+"\tSetBackgroundColor 50 25 12 # Unique\n" +
+"\tSetBorderColor 255 255 0 # Unique (1-2c)\n" +
+"\tPlayAlertSound 4 200 # Mid Value\n" +
+"\tMinimapIcon 0 Brown Star\n" +
+"\tPlayEffect Brown";
 
         private const string style10c =
-@"	SetFontSize 45
-    SetTextColor 255 128 64 # Unique (10c+)
-    SetBackgroundColor 255 255 255 255 # Unique (10c+)
-    SetBorderColor 255 128 64 # Unique (10c+)
-    PlayAlertSound 1 200 # High Value";
+"\tSetFontSize 45\n" +
+"\tSetTextColor 255 128 64 # Unique (10c+)\n" +
+"\tSetBackgroundColor 255 255 255 255 # Unique (10c+)\n" +
+"\tSetBorderColor 255 128 64 # Unique (10c+)\n" +
+"\tPlayAlertSound 1 200 # High Value\n" +
+"\tMinimapIcon 0 Red Star\n" +
+"\tPlayEffect Red";
 
         private const string style2to10c =
-@"	SetFontSize 45
-    SetTextColor 255 128 64 # Unique
-    SetBackgroundColor 50 25 12 # Unique
-    SetBorderColor 255 255 255 # Unique (2-10c)
-    PlayAlertSound 1 200 # High Value";
+"\tSetFontSize 45\n" +
+"\tSetTextColor 255 128 64 # Unique\n" +
+"\tSetBackgroundColor 50 25 12 # Unique\n" +
+"\tSetBorderColor 255 255 255 # Unique (2-10c)\n" +
+"\tPlayAlertSound 1 200 # High Value\n" +
+"\tMinimapIcon 0 Brown Star\n" +
+"\tPlayEffect Brown";
 
         private const string style1c =
-@"	SetFontSize 40
-    SetTextColor 255 128 64 # Unique
-    SetBackgroundColor 50 25 12 # Unique
-    SetBorderColor 255 255 0 # Unique (1-2c)
-    PlayAlertSound 4 200 # Mid Value";
+"\tSetFontSize 40\n" +
+"\tSetTextColor 255 128 64 # Unique\n" +
+"\tSetBackgroundColor 50 25 12 # Unique\n" +
+"\tSetBorderColor 255 255 0 # Unique (1-2c)\n" +
+"\tPlayAlertSound 4 200 # Mid Value\n" +
+"\tMinimapIcon 0 Brown Star\n" +
+"\tPlayEffect Brown";
 
         private const string styleLess1c =
-@"	SetFontSize 40
-    SetTextColor 255 128 64 # Unique
-    SetBackgroundColor 50 25 12 # Unique
-    SetBorderColor 180 90 45 # Unique (<1c)
-    PlayAlertSound 4 200 # Mid Value";
+"\tSetFontSize 40\n" +
+"\tSetTextColor 255 128 64 # Unique\n" +
+"\tSetBackgroundColor 50 25 12 # Unique\n" +
+"\tSetBorderColor 180 90 45 # Unique (<1c)\n" +
+"\tPlayAlertSound 4 200 # Mid Value\n" +
+"\tMinimapIcon 0 Brown Star\n" +
+"\tPlayEffect Brown";
 
         private const string uniqueNewOrWorthless =
-@"Show  # Uniques - New or Worthless
-    Rarity = Unique
-    SetFontSize 36
-    SetTextColor 255 128 64 # Unique
-    SetBackgroundColor 50 25 12 # Unique
-    SetBorderColor 180 90 45 # Unique (<1c)
-    PlayAlertSound 4 200 # Mid Value";
+"Show  # Uniques - New or Worthless\n" +
+"\tRarity = Unique\n" +
+"\tSetFontSize 36\n" +
+"\tSetTextColor 255 128 64 # Unique\n" +
+"\tSetBackgroundColor 50 25 12 # Unique\n" +
+"\tSetBorderColor 180 90 45 # Unique (<1c)\n" +
+"\tPlayAlertSound 4 200 # Mid Value\n" +
+"\tMinimapIcon 0 Brown Star\n" +
+"\tPlayEffect Brown";
 
         private const string styleDiv10c =
-@"	SetFontSize 45
-    SetTextColor 255 0 175 # Divination Card (10c+)
-    SetBackgroundColor 255 255 255 255 # Divination Card (10c+)
-    SetBorderColor 255 0 175 # Divination Card (10c+)
-    PlayAlertSound 1 200 # High Value";
+"\tSetFontSize 45\n" +
+"\tSetTextColor 255 0 175 # Divination Card (10c+)\n" +
+"\tSetBackgroundColor 255 255 255 255 # Divination Card (10c+)\n" +
+"\tSetBorderColor 255 0 175 # Divination Card (10c+)\n" +
+"\tPlayAlertSound 1 200 # High Value\n" +
+"\tMinimapIcon 0 Red Square\n" +
+"\tPlayEffect Red";
 
         private const string styleDiv1c =
-@"	SetFontSize 45
-    SetTextColor 255 255 255 # Divination Card (1c+)
-    SetBackgroundColor 255 0 175 255 # Divination Card (1c+)
-    SetBorderColor 255 255 255 # Divination Card (1c+)
-    PlayAlertSound 5 200 # Divination Card (1c+)";
+"\tSetFontSize 45\n" +
+"\tSetTextColor 255 255 255 # Divination Card (1c+)\n" +
+"\tSetBackgroundColor 255 0 175 255 # Divination Card (1c+)\n" +
+"\tSetBorderColor 255 255 255 # Divination Card (1c+)\n" +
+"\tPlayAlertSound 5 200 # Divination Card (1c+)\n" +
+"\tMinimapIcon 0 Blue Square\n" +
+"\tPlayEffect Blue";
 
         private const string styleDivLess1c =
-@"	SetFontSize 40
-    SetTextColor 0 0 0 # Divination Card (<1c)
-    SetBackgroundColor 255 0 175 230 # Divination Card (<1c)
-    SetBorderColor 150 30 100 # Divination Card (<1c)
-    PlayAlertSound 5 100 # Divination Card (Low)";
+"\tSetFontSize 40\n" +
+"\tSetTextColor 0 0 0 # Divination Card (<1c)\n" +
+"\tSetBackgroundColor 255 0 175 230 # Divination Card (<1c)\n" +
+"\tSetBorderColor 150 30 100 # Divination Card (<1c)\n" +
+"\tPlayAlertSound 5 100 # Divination Card (Low)\n" +
+"\tPlayEffect Blue";
 
         private const string styleDivNearlyWorthless =
-@"	SetFontSize 36
-    SetTextColor 0 0 0 # Divination Card (Nearly Worthless)
-    SetBackgroundColor 255 0 175 170 # Divination Card (Nearly Worthless)
-    SetBorderColor 0 0 0 # Divination Card (Nearly Worthless)
-    PlayAlertSound 5 0 # Divination Card (Nearly Worthless)";
+"\tSetFontSize 36\n" +
+"\tSetTextColor 0 0 0 # Divination Card (Nearly Worthless)\n" +
+"\tSetBackgroundColor 255 0 175 170 # Divination Card (Nearly Worthless)\n" +
+"\tSetBorderColor 0 0 0 # Divination Card (Nearly Worthless)\n" +
+"\tPlayAlertSound 5 0 # Divination Card (Nearly Worthless)";
 
         private const string styleDivWorthless =
-@"	SetFontSize 32
-    SetTextColor 0 0 0 # Divination Card (Worthless)
-    SetBackgroundColor 255 0 175 120 # Divination Card (Worthless)
-    SetBorderColor 255 0 175 50 # Divination Card (Worthless)
-    DisableDropSound";
+"\tSetFontSize 32\n" +
+"\tSetTextColor 0 0 0 # Divination Card (Worthless)\n" +
+"\tSetBackgroundColor 255 0 175 120 # Divination Card (Worthless)\n" +
+"\tSetBorderColor 255 0 175 50 # Divination Card (Worthless)\n" +
+"\tDisableDropSound";
 
         private const string divNewOrWorthless =
-@"Show  # Divination Cards - New (Error)
-    Class Divination
-    SetFontSize 40
-    SetTextColor 255 255 255 # Divination Card (1c+)
-    SetBackgroundColor 255 0 175 255 # Divination Card (1c+)
-    SetBorderColor 0 255 0 # Error
-    PlayAlertSound 5 200 # Divination Card (1c+)";
+"Show  # Divination Cards - New (Error)\n" +
+"\tClass Divination\n" +
+"\tSetFontSize 40\n" +
+"\tSetTextColor 255 255 255 # Divination Card (1c+)\n" +
+"\tSetBackgroundColor 255 0 175 255 # Divination Card (1c+)\n" +
+"\tSetBorderColor 0 255 0 # Error\n" +
+"\tPlayAlertSound 5 200 # Divination Card (1c+)\n" +
+"\tMinimapIcon 0 White Square\n" +
+"\tPlayEffect White";
 
         private const string headerDiv =
 @"##########################################
@@ -222,12 +243,12 @@ Show  # Uniques - 1-2c
 
         public DivinationData GetDivinationEntrySC(string name)
         {
-            return divinationSC[name];
+            return divinationSC.TryGetValue(name, out DivinationData data) ? data : null;
         }
 
         public DivinationData GetDivinationEntryHC(string name)
         {
-            return divinationHC[name];
+            return divinationHC.TryGetValue(name, out DivinationData data) ? data : null;
         }
 
         public void Load(string filename)
@@ -755,17 +776,17 @@ Show  # Uniques - 1-2c
             sb.AppendLine(loreweaveStr).AppendLine();
             sb.AppendLine(headerLess1c).AppendLine();
             if (listLess1cLeague.Count > 0)
-                sb.AppendLine("Show  # Uniques - <1c - League").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cLeague)).AppendLine();
+                sb.AppendLine("Show  # Uniques - <1c - League").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cLeague)).AppendLine(styleLess1c).AppendLine();
             if (listLess1cBoss.Count > 0)
-                sb.AppendLine("Show  # Uniques - <1c - Boss Prophecy").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cBoss)).AppendLine();
+                sb.AppendLine("Show  # Uniques - <1c - Boss Prophecy").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cBoss)).AppendLine(styleLess1c).AppendLine();
             if (listLess1cShared.Count > 0)
-                sb.AppendLine("Show  # Uniques - <1c - Shared").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cShared)).AppendLine();
+                sb.AppendLine("Show  # Uniques - <1c - Shared").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cShared)).AppendLine(styleLess1c).AppendLine();
             if (listLess1cCrafted.Count > 0)
-                sb.AppendLine("Show  # Uniques - <1c - Crafted Fated Purchased").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cCrafted)).AppendLine();
+                sb.AppendLine("Show  # Uniques - <1c - Crafted Fated Purchased").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cCrafted)).AppendLine(styleLess1c).AppendLine();
             if (listLess1cLabyrinth.Count > 0)
-                sb.AppendLine("Show  # Uniques - <1c - Labyrinth").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cLabyrinth)).AppendLine();
+                sb.AppendLine("Show  # Uniques - <1c - Labyrinth").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cLabyrinth)).AppendLine(styleLess1c).AppendLine();
             if (listLess1c.Count > 0)
-                sb.AppendLine("Show  # Uniques - <1c - Nearly Worthless").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1c)).AppendLine();
+                sb.AppendLine("Show  # Uniques - <1c - Nearly Worthless").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1c)).AppendLine(styleLess1c).AppendLine();
             sb.AppendLine(uniqueNewOrWorthless);
 
             return sb.ToString();
@@ -839,9 +860,9 @@ Show  # Uniques - 1-2c
             if (list1to10cConflict.Count > 0)
                 sb.AppendLine("Show  # Divination Cards - 1c+ (Conflicts)").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(list1to10cConflict)).AppendLine(styleDiv1c).AppendLine();
             if (listLess1cConflict.Count > 0)
-                sb.AppendLine("Show  # Divination Cards - <1c (Conflicts)").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listLess1cConflict)).AppendLine();
+                sb.AppendLine("Show  # Divination Cards - <1c (Conflicts)").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listLess1cConflict)).AppendLine(styleDivLess1c).AppendLine();
             if (listNearlyWorthlessConflict.Count > 0)
-                sb.AppendLine("Show  # Divination Cards - Nearly Worthless (Conflicts)").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listNearlyWorthlessConflict)).AppendLine();
+                sb.AppendLine("Show  # Divination Cards - Nearly Worthless (Conflicts)").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listNearlyWorthlessConflict)).AppendLine(styleDivNearlyWorthless).AppendLine();
             if (listWorthlessConflict.Count > 0)
                 sb.AppendLine("Hide  # Divination Cards - Worthless (Conflicts)").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listWorthlessConflict)).AppendLine(styleDivWorthless).AppendLine();
             if (list10c.Count > 0)
@@ -849,9 +870,9 @@ Show  # Uniques - 1-2c
             if (list1to10c.Count > 0)
                 sb.AppendLine("Show  # Divination Cards - 1c+").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(list1to10c)).AppendLine(styleDiv1c).AppendLine();
             if (listLess1c.Count > 0)
-                sb.AppendLine("Show  # Divination Cards - <1c").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listLess1c)).AppendLine();
+                sb.AppendLine("Show  # Divination Cards - <1c").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listLess1c)).AppendLine(styleDivLess1c).AppendLine();
             if (listNearlyWorthless.Count > 0)
-                sb.AppendLine("Show  # Divination Cards - Nearly Worthless").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listNearlyWorthless)).AppendLine();
+                sb.AppendLine("Show  # Divination Cards - Nearly Worthless").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listNearlyWorthless)).AppendLine(styleDivNearlyWorthless).AppendLine();
             if (listWorthless.Count > 0)
                 sb.AppendLine("Show  # Divination Cards - Worthless").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listWorthless)).AppendLine(styleDivWorthless).AppendLine();
             sb.AppendLine(divNewOrWorthless).AppendLine();

@@ -24,6 +24,8 @@ namespace PoE_Price_Lister
             IEnumerable<string> uniquesList = data.GetUniques();
             foreach (string baseType in uniquesList) {
                 UniqueBaseEntry uniqData = getEntry(baseType);
+                if (uniqData == null)
+                    continue;
                 string values = "";
                 foreach (UniqueData udata in uniqData.Items) {
                     if (udata.Links > 4)
@@ -54,6 +56,8 @@ namespace PoE_Price_Lister
             IEnumerable<string> divinationList = data.GetDivinationCards();
             foreach (string div in divinationList) {
                 DivinationData divData = getEntry(div);
+                if (divData == null)
+                    continue;
                 DivinationFilterValue expect = divData.ExpectedFilterValue;
                 string severity = divData.SeverityLevel.ToString();
                 string filterVal = divData.FilterValue.ToString();

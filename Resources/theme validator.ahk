@@ -5,7 +5,7 @@ If (A_AhkVersion <= "1.1.23")
     exit
 }
 
-filterFiles := ["S_Mapping_Highwind.filter", "S_Regular_Highwind.filter", "S_Strict_Highwind.filter", "S_Very_Strict_Highwind.filter", "L_Mapping_Highwind.filter", "L_Regular_Highwind.filter", "L_Strict_Highwind.filter", "L_Very_Strict_Highwind.filter"]
+filterFiles := ["S1_Regular_Highwind.filter", "S2_Mapping_Highwind.filter", "S3_Strict_Highwind.filter", "S4_Very_Strict_Highwind.filter"]
 
 global filterChecks := ["SetTextColor", "SetBackgroundColor", "SetBorderColor", "PlayAlertSound"]
 
@@ -18,7 +18,11 @@ MsgBox Validation complete.
 ValidateFilters(filein)
 {
     dict := {}
-
+    IfNotExist, %filein%
+    {
+        MsgBox % "File doesn't exist: """ . filein . """."
+        return
+    }
     Loop, Read, % filein
     {
         startline := ""
