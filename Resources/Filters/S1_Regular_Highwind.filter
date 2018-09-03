@@ -1542,16 +1542,12 @@ Show  # Normal/Magic - Shaper
 	ShaperItem True
 	Rarity <= Magic
 	SetFontSize 32
-	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
-	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
 	DisableDropSound
 
 Show  # Normal/Magic - Elder
 	ElderItem True
 	Rarity <= Magic
 	SetFontSize 32
-	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
-	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
 	DisableDropSound
 
 #-------------------------------#
