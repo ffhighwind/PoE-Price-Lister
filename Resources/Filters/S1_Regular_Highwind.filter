@@ -2410,7 +2410,7 @@ Show  # Uniques - 2-10c
 
 Show  # Uniques - 1-2c
 	Rarity = Unique
-	BaseType "Amethyst Ring" "Ancient Gauntlets" "Ancient Greaves" "Assassin Bow" "Assassin's Garb" "Assassin's Mitts" "Astral Plate" "Auric Mace" "Blood Raiment" "Bone Bow" "Carnal Mitts" "Carved Wand" "Coiled Staff" "Conjurer Boots" "Coral Ring" "Coronal Leather" "Crystal Sceptre" "Destroyer Regalia" "Diamond Ring" "Elder Sword" "Elegant Ringmail" "Eternal Sword" Gavel Gladius "Goathide Gloves" "Goliath Greaves" "Great Mallet" "Heavy Belt" "Hubris Circlet" "Imperial Skean" "Laminated Kite Shield" "Lapis Amulet" "Large Hybrid Flask" "Leather Belt" "Legion Sword" "Lion Sword" Maelstr "Magistrate Crown" "Mirrored Spiked Shield" "Moonstone Ring" "Murder Boots" "Opal Sceptre" "Opal Wand" "Regicide Mask" "Rock Breaker" "Sage Wand" "Shadow Sceptre" "Short Bow" "Siege Helmet" "Silver Flask" "Simple Robe" "Sorcerer Gloves" "Spike-Point Arrow Quiver" "Spine Bow" "Stealth Boots" "Strapped Mitts" "Stygian Vise" "Throat Stabber" "Tiger Sword" "Titan Gauntlets" "Trapper Boots" "Vaal Claw" "Vaal Hatchet" "Vaal Regalia" "Void Sceptre"
+	BaseType "Amethyst Ring" "Ancient Gauntlets" "Ancient Greaves" "Assassin Bow" "Assassin's Garb" "Assassin's Mitts" "Astral Plate" "Auric Mace" "Bone Bow" "Carnal Mitts" "Carved Wand" "Coiled Staff" "Conjurer Boots" "Coral Ring" "Coronal Leather" "Crystal Sceptre" "Destroyer Regalia" "Diamond Ring" "Elder Sword" "Elegant Ringmail" "Eternal Sword" Gavel Gladius "Goathide Gloves" "Goliath Greaves" "Great Mallet" "Heavy Belt" "Hubris Circlet" "Imperial Skean" "Laminated Kite Shield" "Lapis Amulet" "Large Hybrid Flask" "Leather Belt" "Legion Sword" "Lion Sword" Maelstr "Magistrate Crown" "Mirrored Spiked Shield" "Moonstone Ring" "Murder Boots" "Opal Sceptre" "Opal Wand" "Regicide Mask" "Rock Breaker" "Sage Wand" "Shadow Sceptre" "Short Bow" "Siege Helmet" "Silver Flask" "Simple Robe" "Sorcerer Gloves" "Spike-Point Arrow Quiver" "Spine Bow" "Stealth Boots" "Strapped Mitts" "Stygian Vise" "Throat Stabber" "Tiger Sword" "Titan Gauntlets" "Trapper Boots" "Vaal Claw" "Vaal Hatchet" "Vaal Regalia" "Void Sceptre"
 	SetFontSize 40
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
@@ -2450,7 +2450,7 @@ Show  # Uniques - <1c - ilvl <67
 
 Show  # Uniques - <1c - League
 	Rarity = Unique
-	BaseType "Enameled Buckler" "Painted Tower Shield" "Serpentscale Boots" "Shackled Boots" "Spiraled Wand"
+	BaseType "Enameled Buckler" "Painted Tower Shield" "Serpentscale Boots" "Spiraled Wand"
 	SetFontSize 40
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
