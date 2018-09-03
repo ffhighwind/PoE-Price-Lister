@@ -255,17 +255,21 @@ namespace PoE_Price_Lister
 		{
 			try {
 				string[] lines = System.IO.File.ReadAllLines(filename);
-				foreach (string baseTy in csvUniquesBaseTypes) {
-					uniquesSC[baseTy].FilterValue.Value = UniqueValue.Unknown;
-					uniquesHC[baseTy].FilterValue.Value = UniqueValue.Unknown;
+				foreach (UniqueBaseEntry baseEntry in uniquesSC.Values) {
+					baseEntry.FilterValue.Value = UniqueValue.Unknown;
+				}
+				foreach (UniqueBaseEntry baseEntry in uniquesHC.Values) {
+					baseEntry.FilterValue.Value = UniqueValue.Unknown;
 				}
 				GetFilterData(lines);
 				SetLeague(true);
 				GetFilterData(lines);
 				SetLeague(false);
-				foreach (string baseTy in csvUniquesBaseTypes) {
-					uniquesSC[baseTy].CalculateExpectedValue();
-					uniquesHC[baseTy].CalculateExpectedValue();
+				foreach (UniqueBaseEntry baseEntry in uniquesSC.Values) {
+					baseEntry.CalculateExpectedValue();
+				}
+				foreach (UniqueBaseEntry baseEntry in uniquesHC.Values) {
+					baseEntry.CalculateExpectedValue();
 				}
 			}
 			catch (Exception ex) {
@@ -478,7 +482,7 @@ namespace PoE_Price_Lister
 					continue;
 				}
 				lines = lines.Skip(1).SkipWhile(aline => !aline.TrimStart().StartsWith("BaseType ") && !aline.StartsWith("Show ") && !aline.StartsWith("Hide "));
-				line = lines.ElementAt(0).TrimStart();
+				line = lines.First().TrimStart();
 				if (line.StartsWith("BaseType "))
 					FillFilterUniqueData(GetBaseTypes(line.Substring(9)), value);
 			}
