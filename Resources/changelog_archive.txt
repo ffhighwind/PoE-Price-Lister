@@ -1,3 +1,40 @@
+
+---------------------------------------------------------------------------------------------------------------
+| Incursion
+---------------------------------------------------------------------------------------------------------------
+
+3.3.7
+? Added Warband Explicit mods.
+? Reworked the pre-filter so that magic Explicit Mods are handled properly.
+
+3.3.6
+? Removed the sound and bright text from some Explicit Mods items.
+
+3.3.5
+? Updated the "Vial of" Incursion currency sounds and colors.
+? Added a new release to the Filter Value tool.
+
+3.3.4
+? Updated the unique/divination card values again.
+? Reworked the currency, gems, and jewels sections.
+? Removed some Harbinger currency based on StackSize. Recolored some of these currencies.
+? Added HasExplicitMod to items that make it past the pre-filter. These show up the same as high value crafting bases like Steel Rings. Most of these mods are ItemLevel 80+ and require the item to be identified as it drops, so don't expect to see these much.
+Spoiler 
+
+3.3.3
+? Added "Vial of" incursion currency.
+? Removed Perandus Coins based on StackSize. Stacks of 1-2 are now hidden in some filters. There is no Perandus Zana mod this league, so it really doesn't matter.
+
+3.3.2
+? Updated the uniques and divination card values. I will probably need to do this a few more times over the next couple of weeks as prices adjust to the meta.
+? Fixed the "value updater" tool poe.ninja API links.
+
+3.3.1
+? Added "Incursion Items" class
+? Added level 19+ gems and Empower/Enlighten/Enhance level 2+.
+? Updated the csv with 28/31 of the new uniques. The filter hasn't been updated yet because I cannot easily price them.
+? Added 22 new Divination cards
+
 ---------------------------------------------------------------------------------------------------------------
 | Bestiary
 ---------------------------------------------------------------------------------------------------------------
