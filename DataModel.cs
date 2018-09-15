@@ -14,16 +14,17 @@ namespace PoE_Price_Lister
     public class DataModel
     {
 
-        private const string csvFile = "poe_uniques.csv";
+        ////private const string csvFile = "poe_uniques.csv";
         private const string league = "Delve";
 
+        private const string uniquesCsvURL = "https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/poe_uniques.csv";
         private const string filterURL = "https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/S1_Regular_Highwind.filter";
         private const string jsonURL = "http://poe.ninja/api/Data/Get{0}Overview?league={1}";
         //{0} = "UniqueAccessory", "UniqueJewel", "UniqueMap", "UniqueArmour", "UniqueFlask",
         // "UniqueWeapon", "DivinationCards", "Fragment", "Currency", "Prophecy", "Essence", "SkillGem", "HelmEnchant"
         // Resonators/Fossils are not implemented as an API yet
 
-        private const string baseTypeRegexStr = @"""[A-Za-z'\-, ]+""|[A-Za-z'\-]+";
+        private static readonly Regex baseTypeRegex = new Regex(@"""[A-Za-z'\-, ]+""|[A-Za-z'\-]+", RegexOptions.Compiled);
 
         public LeagueData HC { get; private set; } = new LeagueData(true);
         public LeagueData SC { get; private set; } = new LeagueData(false);
@@ -58,7 +59,7 @@ namespace PoE_Price_Lister
                 DivinationCards = SC.DivinationCards.Keys.ToList();
                 Uniques = SC.Uniques.Keys.ToList();
                 GetDivinationCardConflicts();
-                string filterString = ReadWebPage(filterURL, "");
+                string filterString = ReadWebPage(filterURL);
                 if (filterString.Length == 0) {
                     MessageBox.Show("Failed to read the web URL: " + filterURL, "Error", MessageBoxButtons.OK);
                     Environment.Exit(1);
@@ -156,7 +157,7 @@ namespace PoE_Price_Lister
         {
             try {
                 FileHelperEngine<UniqueBaseTypeCsv> engine = new FileHelperEngine<UniqueBaseTypeCsv>(Encoding.UTF7);
-                UniqueBaseTypeCsv[] records = engine.ReadFile(csvFile);
+                UniqueBaseTypeCsv[] records = engine.ReadString(ReadWebPage(uniquesCsvURL, "", Encoding.UTF7));
                 HashSet<string> baseTypes = new HashSet<string>();
                 foreach (UniqueBaseTypeCsv data in records) {
 
@@ -339,7 +340,7 @@ namespace PoE_Price_Lister
 
         private List<string> GetBaseTypes(string line)
         {
-            MatchCollection collection = Regex.Matches(line, baseTypeRegexStr);
+            MatchCollection collection = baseTypeRegex.Matches(line);
             List<string> output = new List<string>();
 
             foreach (Match m in collection) {
@@ -386,7 +387,7 @@ namespace PoE_Price_Lister
             }
         }
 
-        private string ReadWebPage(string url, string headerMedia)
+        private string ReadWebPage(string url, string headerMedia = "", Encoding encoding = null)
         {
             using (HttpClient client = new HttpClient()) {
                 client.BaseAddress = new Uri(url);
@@ -395,8 +396,10 @@ namespace PoE_Price_Lister
                 HttpResponseMessage response;
                 try {
                     response = client.GetAsync(url).Result;
-                    if (response.IsSuccessStatusCode)
-                        return response.Content.ReadAsStringAsync().Result;
+                    if (response.IsSuccessStatusCode) {
+                        return encoding == null ? response.Content.ReadAsStringAsync().Result
+                            : encoding.GetString(response.Content.ReadAsByteArrayAsync().Result);
+                    }
                 }
                 catch (Exception ex) {
                     MessageBox.Show("Error reading webpage " + url + "\n" + ex.Message, "Data.ReadWebPage", MessageBoxButtons.OK);
