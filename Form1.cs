@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -9,6 +10,8 @@ namespace PoE_Price_Lister
     public partial class Form1 : Form
     {
         private DataModel model;
+        private ListViewItemComparer sorter = new ListViewItemComparer(0);
+        private static readonly string[] numericCols = new string[] { "Severity", "Value" };
 
         public Form1()
         {
@@ -70,7 +73,7 @@ namespace PoE_Price_Lister
             lv.EndUpdate();
         }
 
-        private void listViewUniques_ColumnClick(object sender, ColumnClickEventArgs e)
+        private void listView_ColumnClick(object sender, ColumnClickEventArgs e)
         {
             ListView lv = (ListView) sender;
 
@@ -78,26 +81,10 @@ namespace PoE_Price_Lister
                 sorter = new ListViewItemComparer(e.Column);
                 lv.ListViewItemSorter = sorter;
             }
-            else
-                sorter.Column = e.Column;
-
-            sorter.Ascending = lv.Columns[e.Column].Text == "Severity";
-
-            lv.Sort();
-        }
-
-        private void listViewDiv_ColumnClick(object sender, ColumnClickEventArgs e)
-        {
-            ListView lv = (ListView) sender;
-
-            if (!(lv.ListViewItemSorter is ListViewItemComparer sorter)) {
-                sorter = new ListViewItemComparer(e.Column);
-                lv.ListViewItemSorter = sorter;
-            }
-            else
-                sorter.Column = e.Column;
-
-            sorter.Ascending = lv.Columns[e.Column].Text == "Severity";
+            string text = lv.Columns[e.Column].Text;
+            sorter.Ascending = sorter.Column == e.Column ? !sorter.Ascending : text == "Severity";
+            sorter.Column = e.Column;
+            sorter.IsNumeric = numericCols.Contains(text);
 
             lv.Sort();
         }

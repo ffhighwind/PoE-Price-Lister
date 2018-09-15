@@ -82,7 +82,7 @@
             this.listViewUniques.Name = "listViewUniques";
             this.listViewUniques.UseCompatibleStateImageBehavior = false;
             this.listViewUniques.View = System.Windows.Forms.View.Details;
-            this.listViewUniques.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listViewUniques_ColumnClick);
+            this.listViewUniques.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listView_ColumnClick);
             this.listViewUniques.KeyUp += new System.Windows.Forms.KeyEventHandler(this.listView_KeyUp);
             //
             // columnUniqBaseType
@@ -118,7 +118,7 @@
             this.listViewDivination.Name = "listViewDivination";
             this.listViewDivination.UseCompatibleStateImageBehavior = false;
             this.listViewDivination.View = System.Windows.Forms.View.Details;
-            this.listViewDivination.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listViewDiv_ColumnClick);
+            this.listViewDivination.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listView_ColumnClick);
             this.listViewDivination.KeyUp += new System.Windows.Forms.KeyEventHandler(this.listView_KeyUp);
             //
             // columnDivName
@@ -213,7 +213,7 @@
             this.listViewUniquesHC.Name = "listViewUniquesHC";
             this.listViewUniquesHC.UseCompatibleStateImageBehavior = false;
             this.listViewUniquesHC.View = System.Windows.Forms.View.Details;
-            this.listViewUniquesHC.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listViewUniques_ColumnClick);
+            this.listViewUniquesHC.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listView_ColumnClick);
             this.listViewUniquesHC.KeyUp += new System.Windows.Forms.KeyEventHandler(this.listView_KeyUp);
             //
             // columnHeader1
@@ -256,7 +256,7 @@
             this.listViewDivinationHC.Name = "listViewDivinationHC";
             this.listViewDivinationHC.UseCompatibleStateImageBehavior = false;
             this.listViewDivinationHC.View = System.Windows.Forms.View.Details;
-            this.listViewDivinationHC.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listViewDiv_ColumnClick);
+            this.listViewDivinationHC.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listView_ColumnClick);
             this.listViewDivinationHC.KeyUp += new System.Windows.Forms.KeyEventHandler(this.listView_KeyUp);
             //
             // columnHeader6
