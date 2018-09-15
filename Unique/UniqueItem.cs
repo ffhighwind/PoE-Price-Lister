@@ -2,23 +2,21 @@
 
 namespace PoE_Price_Lister
 {
-    public class UniqueData
+    public class UniqueItem
     {
         private static readonly string[] CORE_LEAGUES = { "Abyss", "Breach", "Beyond", "Delve" };
 
-        public UniqueData() { }
-
-        public UniqueData(JsonData jdata)
+        public UniqueItem(JsonData jdata)
         {
             Load(jdata);
         }
 
-        public UniqueData(UniqueCsvData csvdata)
+        public UniqueItem(UniqueBaseTypeCsv csvdata)
         {
             Load(csvdata);
         }
 
-        public void Load(UniqueCsvData csvdata)
+        public void Load(UniqueBaseTypeCsv csvdata)
         {
             Name = csvdata.Name;
             League = csvdata.League;
@@ -53,15 +51,15 @@ namespace PoE_Price_Lister
 
         public bool IsLimitedDrop => Source.Length > 0 && !IsCrafted && !IsFated;
 
-        public string Name { get; set; }
+        public string Name { get; private set; }
 
         public float ChaosValue { get; set; } = -1.0f;
 
-        public int ValueTier => UniqueFilterValue.ValueOf(ChaosValue).ValueTier;
+        public int ValueTier => UniqueValue.ValueOf(ChaosValue).Tier;
 
         public int Links { get; set; }
 
-        public int Count { get; set; } = 0;
+        public int Count { get; set; }
 
         public string League {
             get => League1;
@@ -86,7 +84,7 @@ namespace PoE_Price_Lister
         public bool Unobtainable { get; set; }
 
         public string Source { get; set; } = "";
-        public string League1 { get; set; } = "";
+        private string League1 { get; set; } = "";
 
         public override string ToString()
         {
@@ -98,7 +96,7 @@ namespace PoE_Price_Lister
             if (obj == null || GetType() != obj.GetType())
                 return false;
 
-            UniqueData other = (UniqueData) obj;
+            UniqueItem other = (UniqueItem) obj;
             return other.Name == Name && other.Links == Links;
         }
 

@@ -2,8 +2,17 @@
 | Delve
 ---------------------------------------------------------------------------------------------------------------
 
+3.4.6
+? Updated the filter uniques/divination card values.
+? Added loud sounds to valuable Fossils/Resonators.
+? Added colors/beams to the header information.
+? Add loud sounds to Shaper/Elder items with rare bases (Opal Rings, etc) and certain 83+ bases.
+? Completely refactored the Price Lister code so it's easier to understand. This took almost a week to do. Expected values for uniques still needs a rewrite.
+? Added HC Friendly values to the price updater. Anything worth 2c+ in HC will no longer be hidden.
+
 3.4.5
-? Added all rare jewels and magic abyss jewels to the strict filter. Added all magic abyss jewels to the mapping filter.
+? Updated the filter uniques/divination card values.
+? Added many things previously hidden in the Strict filter (Jewels, Uniques, Divination cards).
 
 3.4.4
 ? Updated the filter values.

@@ -9,7 +9,7 @@ namespace PoE_Price_Lister
 
         public bool Ascending { get; set; }
 
-        public bool IsNumeric { get; set; } = false;
+        public bool IsNumeric { get; set; }
 
         public ListViewItemComparer(int columnIndex)
         {
@@ -23,14 +23,12 @@ namespace PoE_Price_Lister
 
             int output;
 
-            if (itemX == null && itemY == null)
-                output = 0;
+            if (itemX == itemY)
+                return 0;
             else if (itemX == null)
                 output = -1;
             else if (itemY == null)
                 output = 1;
-            else if (itemX == itemY)
-                output = 0;
             else if (IsNumeric) {
                 if (!decimal.TryParse(itemX.SubItems[Column].Text, out decimal itemXVal)) {
                     itemXVal = 0;

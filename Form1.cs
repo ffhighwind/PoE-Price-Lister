@@ -1,39 +1,37 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PoE_Price_Lister
 {
     public partial class Form1 : Form
     {
-        private Data data;
+        private DataModel model;
 
         public Form1()
         {
             InitializeComponent();
-            data = new Data();
+            model = new DataModel();
             openFileDialog1.InitialDirectory = Directory.GetCurrentDirectory() + "\\Resources";
         }
 
-        private void FillUniqueListView(ListView lv, Func<string, UniqueBaseEntry> getEntry)
+        private void FillUniqueListView(ListView lv, LeagueData data)
         {
             lv.BeginUpdate();
             lv.Items.Clear();
-            IEnumerable<string> uniquesList = data.GetUniques();
-            foreach (string baseType in uniquesList) {
-                UniqueBaseEntry uniqData = getEntry(baseType);
-                if (uniqData == null)
+            foreach (string baseType in model.Uniques) {
+                if (!data.Uniques.TryGetValue(baseType, out UniqueBaseType uniqData))
                     continue;
                 string values = "";
-                foreach (UniqueData udata in uniqData.Items) {
+                foreach (UniqueItem udata in uniqData.Items) {
                     if (udata.Links > 4)
                         values += "(" + udata.Links + "L)";
                     string value = udata.Count > 0 ? udata.ChaosValue.ToString() : "?";
                     values += udata.Name + ": " + value + ", ";
                 }
-                UniqueFilterValue expect = uniqData.ExpectedFilterValue;
+                UniqueValue expect = uniqData.ExpectedFilterValue;
                 string severity = uniqData.SeverityLevel.ToString();
                 string filterVal = uniqData.FilterValue.ToString();
                 string expectVal = expect.Value == uniqData.FilterValue.Value ? "" : expect.ToString();
@@ -49,20 +47,18 @@ namespace PoE_Price_Lister
             lv.EndUpdate();
         }
 
-        private void FillDivinationListView(ListView lv, Func<string, DivinationData> getEntry)
+        private void FillDivinationListView(ListView lv, LeagueData data)
         {
             lv.BeginUpdate();
             lv.Items.Clear();
-            IEnumerable<string> divinationList = data.GetDivinationCards();
-            foreach (string div in divinationList) {
-                DivinationData divData = getEntry(div);
-                if (divData == null)
+            foreach (string div in model.DivinationCards) {
+                if (!data.DivinationCards.TryGetValue(div, out DivinationCard divCard))
                     continue;
-                DivinationFilterValue expect = divData.ExpectedFilterValue;
-                string severity = divData.SeverityLevel.ToString();
-                string filterVal = divData.FilterValue.ToString();
-                string expectVal = expect.Value == divData.FilterValue.Value ? "" : expect.ToString();
-                string listedVal = divData.ChaosValue < 0.0f ? "?" : divData.ChaosValue.ToString();
+                DivinationValue expect = divCard.ExpectedFilterValue;
+                string severity = divCard.SeverityLevel.ToString();
+                string filterVal = divCard.FilterValue.ToString();
+                string expectVal = expect.Value == divCard.FilterValue.Value ? "" : expect.ToString();
+                string listedVal = divCard.ChaosValue < 0.0f ? "?" : divCard.ChaosValue.ToString();
                 lv.Items.Add(new ListViewItem(new string[] { div, severity, filterVal, expectVal, listedVal }));
             }
             lv.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
@@ -109,8 +105,10 @@ namespace PoE_Price_Lister
         private void buttonGenFilter_Click(object sender, EventArgs e)
         {
             bool safe = checkBox1.Checked;
+            bool hcFriendly = checkBox2.Checked;
             string filename = safe ? "highwind_filter_safe.txt" : "highwind_filter.txt";
-            data.GenerateFilterFile(filename, safe);
+            FilterWriter writer = new FilterWriter(model);
+            writer.Create(filename, safe, hcFriendly);
         }
 
         private void listView_KeyUp(object sender, KeyEventArgs e)
@@ -136,22 +134,27 @@ namespace PoE_Price_Lister
         private void buttonLoad_Click(object sender, EventArgs e)
         {
             if (DialogResult.OK == openFileDialog1.ShowDialog()) {
-                data.Load(openFileDialog1.FileName);
+                model.Load(openFileDialog1.FileName);
 
-                FillDivinationListView(listViewDivination, data.GetDivinationEntrySC);
-                FillUniqueListView(listViewUniques, data.GetUniqueEntrySC);
-                FillDivinationListView(listViewDivinationHC, data.GetDivinationEntryHC);
-                FillUniqueListView(listViewUniquesHC, data.GetUniqueEntryHC);
+                LoadListViews();
             }
         }
 
-        private void Form1_Shown(object sender, EventArgs e)
+        private async void Form1_Shown(object sender, EventArgs e)
         {
-            data.GetData();
-            FillUniqueListView(listViewUniques, data.GetUniqueEntrySC);
-            FillDivinationListView(listViewDivination, data.GetDivinationEntrySC);
-            FillUniqueListView(listViewUniquesHC, data.GetUniqueEntryHC);
-            FillDivinationListView(listViewDivinationHC, data.GetDivinationEntryHC);
+            await Task.Run(
+            () => {
+                model.Load();
+            });
+            LoadListViews();
+        }
+
+        private void LoadListViews()
+        {
+            FillUniqueListView(listViewUniques, model.SC);
+            FillDivinationListView(listViewDivination, model.SC);
+            FillUniqueListView(listViewUniquesHC, model.HC);
+            FillDivinationListView(listViewDivinationHC, model.HC);
         }
     }
 }

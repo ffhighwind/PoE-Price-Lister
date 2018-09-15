@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 using FileHelpers;
 using Newtonsoft.Json;
 
@@ -11,76 +6,46 @@ namespace PoE_Price_Lister
 {
     [DelimitedRecord(",")]
     [IgnoreFirst(1)]
-    public class UniqueCsvData
+    public class UniqueBaseTypeCsv
     {
-        string baseType;
+        public string BaseType { get; set; }
+
         [FieldQuoted('"', QuoteMode.OptionalForBoth, MultilineMode.AllowForRead)]
-        string name;
-        string league;
+        public string Name { get; set; }
+
+        public string League { get; set; }
+
         [FieldConverter(typeof(UniqueUsageConverter))]
         [FieldNullValue(UniqueUsage.None)]
-        UniqueUsage usage;
+        public UniqueUsage Usage { get; set; }
+
         [FieldConverter(typeof(BoolConverter))]
         [FieldNullValue(false)]
-        bool unobtainable;
-        string source;
+        public bool Unobtainable { get; set; }
 
-        public string BaseType {
-            get { return baseType; }
-            set { baseType = value; }
-        }
-
-        public string Name {
-            get { return name; }
-            set { name = value; }
-        }
-
-        public string League {
-            get { return league; }
-            set { league = value; }
-        }
-
-        public bool Unobtainable {
-            get { return unobtainable; }
-            set { unobtainable = value; }
-        }
-
-        public string Source {
-            get { return source; }
-            set { source = value; }
-        }
-
-        public UniqueUsage Usage {
-            get { return usage; }
-            set { usage = value; }
-        }
+        public string Source { get; set; }
 
         public override string ToString()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented).ToString();
         }
 
-        public override bool Equals(Object obj)
+        public override bool Equals(object obj)
         {
             if (obj == null || GetType() != obj.GetType())
                 return false;
 
-            UniqueCsvData other = (UniqueCsvData)obj;
-            return other.BaseType == this.baseType && other.Name == name;
+            UniqueBaseTypeCsv other = (UniqueBaseTypeCsv) obj;
+            return other.BaseType == BaseType && other.Name == Name;
         }
 
         public override int GetHashCode()
         {
-            return name.GetHashCode() * baseType.GetHashCode();
+            return Name.GetHashCode() * BaseType.GetHashCode();
         }
     }
 
-    public enum UniqueUsage
-    {
-        None, Prophecy, Recipe, Upgradable, Piece
-    }
-
-    public class BoolConverter : ConverterBase
+    internal class BoolConverter : ConverterBase
     {
         public override object StringToField(string from)
         {
@@ -89,11 +54,11 @@ namespace PoE_Price_Lister
 
         public override string FieldToString(object fieldValue)
         {
-            return ((bool)fieldValue).ToString();
+            return ((bool) fieldValue).ToString();
         }
     }
 
-    public class UniqueUsageConverter : ConverterBase
+    internal class UniqueUsageConverter : ConverterBase
     {
         public override object StringToField(string from)
         {
@@ -113,7 +78,7 @@ namespace PoE_Price_Lister
 
         public override string FieldToString(object fieldValue)
         {
-            return ((UniqueUsage)fieldValue).ToString();
+            return ((UniqueUsage) fieldValue).ToString();
         }
     }
 }

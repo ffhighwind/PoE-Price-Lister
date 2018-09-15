@@ -1,39 +1,41 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Windows.Forms;
 using Newtonsoft.Json;
 
 namespace PoE_Price_Lister
 {
-    public class UniqueBaseEntry
+    public class UniqueBaseType
     {
         private static string[] SIX_SOCKETS = new string[] { "Tabula Rasa", "Loreweave", "Oni-Goroshi" };
 
-        public UniqueBaseEntry() { }
-
-        public void Add(UniqueCsvData item)
+        public UniqueBaseType(string baseType)
         {
-            foreach (UniqueData i in Items) {
+            BaseType = baseType;
+        }
+
+        public void Add(UniqueBaseTypeCsv item)
+        {
+            foreach (UniqueItem i in Items) {
                 if (i.Name == item.Name) {
                     i.Load(item);
                     return;
                 }
             }
-            Items.Add(new UniqueData(item));
+            Items.Add(new UniqueItem(item));
         }
 
-        public void Add(JsonData item)
+        public bool Add(JsonData item)
         {
-            foreach (UniqueData i in Items) {
+            foreach (UniqueItem i in Items) {
                 if (i.Name == item.Name) {
                     if (i.Count == 0 || ((i.Links >= item.Links && !SIX_SOCKETS.Contains(i.Name)) || i.Links < item.Links))
                         i.Load(item);
-                    return;
+                    return true;
                 }
             }
-            MessageBox.Show("JSON: The CSV file is missing: " + item.BaseType + " " + item.Name, "Error", MessageBoxButtons.OK);
-            Items.Add(new UniqueData(item));
+            Items.Add(new UniqueItem(item));
+            return false;
         }
 
         public void CalculateExpectedValue()
@@ -63,7 +65,7 @@ namespace PoE_Price_Lister
             UniqueValue minExpected = UniqueValue.Unknown;
 
             // Determine Expected Value
-            foreach (UniqueData uniqData in Items) {
+            foreach (UniqueItem uniqData in Items) {
                 if (uniqData.Unobtainable)
                     continue;
                 isUnobtainable = false;
@@ -115,7 +117,7 @@ namespace PoE_Price_Lister
             }
 
             if (isUnobtainable) {
-                ExpectedFilterValue.Value = UniqueValue.Chaos10; // unique exists in permanent leagues only
+                ExpectedFilterValue = UniqueValue.Chaos10; // unique exists in permanent leagues only
                 return;
             }
             else if (isCraftedOnly) {
@@ -137,7 +139,7 @@ namespace PoE_Price_Lister
                     minExpected = UniqueValue.ChaosLess1Labyrinth;
             }
             else if (hasLeague) {
-                if (minValueLeague > 3.5f)
+                if (minValueLeague > 6.0f)
                     minExpected = UniqueValue.ChaosLess1Shared;
                 else
                     minExpected = UniqueValue.ChaosLess1;
@@ -158,30 +160,30 @@ namespace PoE_Price_Lister
                 ExpectedFilterValue = FilterValue;
             else //confident value
             {
-                ExpectedFilterValue = UniqueFilterValue.ValueOf(minValue);
-                if (ExpectedFilterValue.ValueTier <= 1) {
+                ExpectedFilterValue = UniqueValue.ValueOf(minValue);
+                if (ExpectedFilterValue.Tier <= 1) {
                     if (maxValue > 50.0f)
-                        ExpectedFilterValue.Value = UniqueValue.Chaos2to10;
+                        ExpectedFilterValue = UniqueValue.Chaos2to10;
                     else if (maxValue > 9.0f || (minValue > 0.95f && maxValue > 1.8f))
-                        ExpectedFilterValue.Value = UniqueValue.Chaos1to2;
+                        ExpectedFilterValue = UniqueValue.Chaos1to2;
                     else if (maxValue > 2.0f || minValue > 0.95f)
-                        ExpectedFilterValue.Value = UniqueValue.ChaosLess1;
+                        ExpectedFilterValue = UniqueValue.ChaosLess1;
                 }
-                else if (ExpectedFilterValue.Value == UniqueValue.Chaos1to2 && minValue > 1.9f && maxValue > 4.9f)
-                    ExpectedFilterValue.Value = UniqueValue.Chaos2to10;
+                else if (ExpectedFilterValue.Value == UniqueValueEnum.Chaos1to2 && minValue > 1.9f && maxValue > 4.9f)
+                    ExpectedFilterValue = UniqueValue.Chaos2to10;
             }
-            if (ExpectedFilterValue.ValueTier <= minExpectedTier)
-                ExpectedFilterValue.Value = minExpected;
+            if (ExpectedFilterValue.Tier <= minExpectedTier)
+                ExpectedFilterValue = minExpected;
         }
 
-        public UniqueFilterValue ExpectedFilterValue { get; private set; } = new UniqueFilterValue();
+        public UniqueValue ExpectedFilterValue { get; private set; } = UniqueValue.Error;
 
         public int SeverityLevel {
             get {
                 if (FilterValue == ExpectedFilterValue)
                     return 0;
-                int expectTier = ExpectedFilterValue.ValueTier;
-                int filterTier = FilterValue.ValueTier;
+                int expectTier = ExpectedFilterValue.Tier;
+                int filterTier = FilterValue.Tier;
                 int severity = Math.Abs(filterTier - expectTier);
                 if (severity != 0 && filterTier < expectTier && expectTier > 2)
                     severity += 1;
@@ -197,11 +199,11 @@ namespace PoE_Price_Lister
             }
         }
 
-        public UniqueFilterValue FilterValue { get; set; } = new UniqueFilterValue();
+        public UniqueValue FilterValue { get; set; } = UniqueValue.Unknown;
 
-        public List<UniqueData> Items { get; set; } = new List<UniqueData>();
+        public List<UniqueItem> Items { get; set; } = new List<UniqueItem>();
 
-        public string BaseType { get; set; }
+        public string BaseType { get; private set; }
 
         public override string ToString()
         {
@@ -213,7 +215,7 @@ namespace PoE_Price_Lister
             if (obj == null || GetType() != obj.GetType())
                 return false;
 
-            UniqueBaseEntry other = (UniqueBaseEntry) obj;
+            UniqueBaseType other = (UniqueBaseType) obj;
             return other.BaseType == BaseType;
         }
 
