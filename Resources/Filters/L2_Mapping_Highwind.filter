@@ -1,7 +1,7 @@
 ############################################
-##    HIGHWIND'S MAPPING FILTER 3.4.6     ##
+##    HIGHWIND'S MAPPING FILTER 3.4.7     ##
 ############################################
-## Release Date: September 14, 2018        ##
+## Release Date: September 15, 2018        ##
 ############################################
 
 #--------------#
@@ -530,7 +530,7 @@ Show  # Currency - League Specific - Blessings (Breach)
 
 # Fossils
 Show  # Currency - League Specific - Fossils (High)
-	Class "Delve Socketable Currency"
+	Class Currency
 	BaseType "Faceted Fossil" "Fractured Fossil" "Glyphic Fossil" "Hollow Fossil" "Shuddering Fossil" "Tangled Fossil" "Bloodstained Fossil" "Lucent Fossil" "Sanctified Fossil" "Gilded Fossil"
 	SetFontSize 45
 	SetTextColor 255 0 255 # Currency (Mid)
@@ -540,7 +540,7 @@ Show  # Currency - League Specific - Fossils (High)
 	PlayEffect Red
 
 Show  # Currency - League Specific - Fossils (Low)
-	Class "Delve Socketable Currency"
+	Class Currency
 	BaseType "Frigid Fossil" "Aberrant Fossil"
 	SetFontSize 45
 	SetTextColor 255 0 255 # Currency (Low)
@@ -549,8 +549,8 @@ Show  # Currency - League Specific - Fossils (Low)
 	PlayEffect Blue
 
 Show  # Currency - League Specific - Fossils (Mid)
-	Class "Delve Socketable Currency"
-	BaseType "Fossil"
+	Class Currency
+	BaseType " Fossil"
 	SetFontSize 45
 	SetTextColor 255 0 255 # Currency (High)
 	SetBackgroundColor 20 0 20 230 # Currency (High)
