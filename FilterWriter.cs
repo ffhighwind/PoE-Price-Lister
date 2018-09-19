@@ -178,7 +178,7 @@ namespace PoE_Price_Lister
         private readonly Dictionary<string, DivinationCard> DivinationHC;
         private readonly IReadOnlyList<IReadOnlyList<string>> Conflicts;
 
-        private StreamWriter writer { get; set; }
+        private StreamWriter Writer { get; set; }
 
         private bool Safe { get; set; }
         private bool HCFriendly { get; set; }
@@ -199,12 +199,12 @@ namespace PoE_Price_Lister
             try {
                 Safe = safe;
                 HCFriendly = hcFriendly;
-                using (writer = new StreamWriter(path, false, Encoding.UTF8)) {
-                    writer.WriteLine();
-                    writer.WriteLine(GenerateUniquesString());
-                    writer.Write(GenerateDivinationString());
+                using (Writer = new StreamWriter(path, false, Encoding.UTF8)) {
+                    Writer.WriteLine();
+                    Writer.WriteLine(GenerateUniquesString());
+                    Writer.Write(GenerateDivinationString());
                 }
-                writer = null;
+                Writer = null;
             }
             catch (Exception ex) {
                 MessageBox.Show(ex.Message, "FilterWriter.Create", MessageBoxButtons.OK);
@@ -248,9 +248,8 @@ namespace PoE_Price_Lister
                 UniqueValue filterVal = entry.FilterValue;
                 string outputBaseTy = baseTy;
                 //int index = baseTy.IndexOf('ö');
-                UniqueValue expectedValHC = UniquesHC[baseTy].ExpectedFilterValue;
-                //if (index > 0)
-                //    outputBaseTy = baseTy.Substring(0, index);
+                UniqueBaseType entryHC = UniquesHC[baseTy];
+                UniqueValue expectedValHC = entryHC.ExpectedFilterValue;
 
                 if (entry.SeverityLevel == 0)
                     expectedVal = filterVal;
@@ -259,8 +258,8 @@ namespace PoE_Price_Lister
                         expectedVal = UniqueValue.FromTier(expectedVal.Tier + 1);
                     }
                 }
-                //if SC <1c and HC 2c+ then 1-2c
-                if (HCFriendly && expectedVal.Tier < 2 && expectedValHC.Tier > 2) {
+                //if SC <1c and HC 5c+ then 1-2c
+                if (HCFriendly && expectedVal.Tier < 2 && expectedValHC.Tier > 2 && entryHC.Items.Any(i => i.IsCoreDrop && i.ChaosValue > 4.0f)) {
                     expectedVal = UniqueValue.Chaos1to2;
                 }
 
@@ -347,14 +346,15 @@ namespace PoE_Price_Lister
                 DivinationCard data = DivinationSC[divCard];
                 DivinationValue expectedVal = data.ExpectedFilterValue;
                 DivinationValue filterVal = data.FilterValue;
-                DivinationValue expectedValHC = DivinationHC[divCard].ExpectedFilterValue;
+                DivinationCard dataHC = DivinationHC[divCard];
+                DivinationValue expectedValHC = dataHC.ExpectedFilterValue;
                 if (data.SeverityLevel == 0)
                     expectedVal = filterVal;
                 else if (Safe && filterVal.LowValue < data.ChaosValue) {
                     expectedVal = DivinationValue.FromTier(expectedVal.Tier + 1);
                 }
                 //if SC <1c and HC 1c+ then +1 tier
-                if (HCFriendly && expectedVal.Tier < 2 && expectedValHC.Tier > 2) {
+                if (HCFriendly && expectedVal.Tier < 2 && dataHC.ChaosValue > 4.0f) {
                     expectedVal = DivinationValue.FromTier(expectedVal.Tier + 1);
                 }
 

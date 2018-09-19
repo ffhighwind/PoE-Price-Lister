@@ -1,6 +1,12 @@
 ---------------------------------------------------------------------------------------------------------------
 | Delve
 ---------------------------------------------------------------------------------------------------------------
+3.4.8
+? Fixed high value fossil colors/sounds. 
+? Reduced low value fossils/resonator colors and removed some from the Strict filters.
+? Updated the filter uniques/divination card values. Not much changed, though.
+? Changed "hardcore friendly" to only work on items worth 4c+ in hardcore instead of 2c+.
+? Fixed filter encoding so it's UTF-8, including the font enlarger. The CSV file is UTF-7. This allows Maelström Staff and Mjölner to parse correctly so I don't have to special case them.
 
 3.4.7
 ? Fixed fossils so they don't show up as errors. I used the wrong item class.

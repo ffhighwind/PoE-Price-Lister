@@ -24,7 +24,7 @@ namespace PoE_Price_Lister
         // "UniqueWeapon", "DivinationCards", "Fragment", "Currency", "Prophecy", "Essence", "SkillGem", "HelmEnchant"
         // Resonators/Fossils are not implemented as an API yet
 
-        private static readonly Regex baseTypeRegex = new Regex(@"""[A-Za-z'\-, ]+""|[A-Za-z'\-]+", RegexOptions.Compiled);
+        private static readonly Regex baseTypeRegex = new Regex(@"""[A-Za-zö'\-, ]+""|[A-Za-zö'\-]+", RegexOptions.Compiled);
 
         public LeagueData HC { get; private set; } = new LeagueData(true);
         public LeagueData SC { get; private set; } = new LeagueData(false);

@@ -129,11 +129,15 @@ namespace PoE_Price_Lister
 
         private async void Form1_Shown(object sender, EventArgs e)
         {
+            buttonGenFilter.Enabled = false;
+            buttonLoad.Enabled = false;
             await Task.Run(
             () => {
                 model.Load();
             });
             LoadListViews();
+            buttonGenFilter.Enabled = true;
+            buttonLoad.Enabled = true;
         }
 
         private void LoadListViews()
