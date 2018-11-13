@@ -258,7 +258,7 @@ namespace PoE_Price_Lister
                         expectedVal = UniqueValue.FromTier(expectedVal.Tier + 1);
                     }
                 }
-                //if SC <1c and HC 5c+ then 1-2c
+                //if SC <1c and HC 4c+ then 1-2c
                 if (HCFriendly && expectedVal.Tier < 2 && expectedValHC.Tier > 2 && entryHC.Items.Any(i => i.IsCoreDrop && i.ChaosValue > 4.0f)) {
                     expectedVal = UniqueValue.Chaos1to2;
                 }
@@ -353,7 +353,7 @@ namespace PoE_Price_Lister
                 else if (Safe && filterVal.LowValue < data.ChaosValue) {
                     expectedVal = DivinationValue.FromTier(expectedVal.Tier + 1);
                 }
-                //if SC <1c and HC 1c+ then +1 tier
+                //if SC <1c and HC 4c+ then +1 tier
                 if (HCFriendly && expectedVal.Tier < 2 && dataHC.ChaosValue > 4.0f) {
                     expectedVal = DivinationValue.FromTier(expectedVal.Tier + 1);
                 }

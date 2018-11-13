@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -75,7 +76,14 @@ namespace PoE_Price_Lister
 
         public void Load(string filename)
         {
-            Load(System.IO.File.ReadAllLines(filename));
+            using (TextReader reader = Util.TextReader(filename)) {
+                List<string> lines = new List<string>();
+                string line;
+                while ((line = reader.ReadLine()) != null) {
+                    lines.Add(line);
+                }
+                Load(lines.ToArray());
+            }
         }
 
         public void Load(string[] lines)
@@ -213,13 +221,13 @@ namespace PoE_Price_Lister
             }
         }
 
-        private bool GetLines(string[] lines, ref int startIndex, out int endIndex, string startLine, string endLine)
+        private bool GetLines(IReadOnlyList<string> lines, ref int startIndex, out int endIndex, string startLine, string endLine)
         {
             int index = startIndex;
-            for (; index < lines.Length; index++) {
+            for (; index < lines.Count; index++) {
                 if (lines[index].StartsWith(startLine)) {
                     startIndex = index;
-                    for (; index < lines.Length; index++) {
+                    for (; index < lines.Count; index++) {
                         if (lines[index].StartsWith(endLine)) {
                             endIndex = index;
                             return true;

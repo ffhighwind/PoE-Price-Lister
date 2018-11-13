@@ -76,11 +76,10 @@ namespace PoE_Price_Lister
 
         public override bool Equals(object obj)
         {
-            if (obj == null || GetType() != obj.GetType())
-                return false;
-
-            DivinationCard other = (DivinationCard) obj;
-            return other.Name == Name;
+            if (obj != null && obj is DivinationCard other) {
+                return other.Name == Name;
+            }
+            return false;
         }
 
         public override int GetHashCode()

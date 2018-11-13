@@ -94,6 +94,7 @@
     <Compile Include="Unique\UniqueBaseType.cs" />
     <Compile Include="Unique\UniqueUsage.cs" />
     <Compile Include="Unique\UniqueValueEnum.cs" />
+    <Compile Include="Util.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

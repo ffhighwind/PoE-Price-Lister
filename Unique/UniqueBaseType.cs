@@ -212,11 +212,10 @@ namespace PoE_Price_Lister
 
         public override bool Equals(object obj)
         {
-            if (obj == null || GetType() != obj.GetType())
-                return false;
-
-            UniqueBaseType other = (UniqueBaseType) obj;
-            return other.BaseType == BaseType;
+            if (obj != null && obj is UniqueBaseType other) {
+                return other.BaseType == BaseType;
+            }
+            return false;
         }
 
         public override int GetHashCode()

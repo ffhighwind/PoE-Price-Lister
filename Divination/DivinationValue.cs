@@ -67,9 +67,10 @@
 
         public override bool Equals(object obj)
         {
-            if (obj == null || GetType() != obj.GetType())
-                return false;
-            return ((DivinationValue) obj).Value == Value;
+            if (obj != null && obj is DivinationValue other) {
+                return other.Value == Value;
+            }
+            return false;
         }
 
         public override int GetHashCode()

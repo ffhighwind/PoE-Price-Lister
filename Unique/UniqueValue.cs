@@ -74,10 +74,10 @@ namespace PoE_Price_Lister
 
         public override bool Equals(object obj)
         {
-            if (obj == null || GetType() != obj.GetType())
-                return false;
-
-            return ((UniqueValue) obj).Value == Value;
+            if (obj != null && obj is UniqueValue other) {
+                return other.Value == Value;
+            }
+            return false;
         }
 
         public override int GetHashCode()
