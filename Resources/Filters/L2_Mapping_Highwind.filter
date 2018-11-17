@@ -1,7 +1,7 @@
 ﻿############################################
-##    HIGHWIND'S MAPPING FILTER 3.4.8     ##
+##    HIGHWIND'S MAPPING FILTER 3.4.10    ##
 ############################################
-## Release Date: September 16, 2018       ##
+## Release Date: November 16, 2018        ##
 ############################################
 
 #--------------#
@@ -104,9 +104,7 @@
 # (61) "Piledriver" "Meatgrinder" "Terror Maul" "Coronal Maul"
 # (59) "Reaver Sword" "Vaal Greatsword" "Lion Sword" "Infernal Sword" "Exquisite Blade"
 # (56) "Thicket Bow" "Imperial Bow" "Harbinger Bow" "Maraketh Bow"
-# (60) "Lathi" "Ezomyte Staff" "
-
-" "Eclipse Staff" "Judgement Staff"
+# (60) "Lathi" "Ezomyte Staff" "Maelstr" "Eclipse Staff" "Judgement Staff"
 
 ##########################################
 ################ CURRENCY ################
@@ -3224,6 +3222,13 @@ Hide  # Crafting Bases - 84+ Armour - High Drop Level
 ############# NORMAL / MAGIC #############
 ##########################################
 # Section: Normal/Magic
+
+Hide  # Normal/Magic - Corrupted
+	Rarity <= Magic
+	Corrupted True
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
+	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
 
 #-------------#
 # Accessories #

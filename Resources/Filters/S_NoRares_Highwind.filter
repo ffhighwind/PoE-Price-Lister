@@ -1073,25 +1073,21 @@ Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Low) - Normal (1 Width)
 	SetBackgroundColor 0 0 0 # Chromatic Recipe (RGB)
 	SetBorderColor 210 0 210 # Chromatic Recipe (RGB)
 
-#Disabled Block Start
-#Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Low) - Normal
-#	SocketGroup RGB
-#	Rarity = Normal
-#	ItemLevel < 73
-#	SetFontSize 36
-#	SetBackgroundColor 0 0 0 # Chromatic Recipe (RGB)
-#	SetBorderColor 210 0 210 # Chromatic Recipe (RGB)
-#Disabled Block End
+Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Low) - Normal
+	SocketGroup RGB
+	Rarity = Normal
+	ItemLevel < 73
+	SetFontSize 36
+	SetBackgroundColor 0 0 0 # Chromatic Recipe (RGB)
+	SetBorderColor 210 0 210 # Chromatic Recipe (RGB)
 
-#Disabled Block Start
-#Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Low) - Normal
-#	SocketGroup RGB
-#	Rarity = Normal
-#	ItemLevel < 73
-#	SetFontSize 36
-#	SetBackgroundColor 0 0 0 # Chromatic Recipe (RGB)
-#	SetBorderColor 210 0 210 # Chromatic Recipe (RGB)
-#Disabled Block End
+Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Low) - Normal
+	SocketGroup RGB
+	Rarity = Normal
+	ItemLevel < 73
+	SetFontSize 36
+	SetBackgroundColor 0 0 0 # Chromatic Recipe (RGB)
+	SetBorderColor 210 0 210 # Chromatic Recipe (RGB)
 
 #Disabled Block Start
 #Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Low) - Magic
@@ -1740,21 +1736,9 @@ Show  # Normal/Magic - Elder
 #-------------------------------#
 
 # 30 Prismatic Ring, 45 Spike-Point Arrow Quiver
-Hide  # Normal/Magic - Low Drop Level - 30+ Accessories Quivers
-	Class Amulets Rings Belts Quivers
-	DropLevel <= 45
-	Rarity <= Magic
-	ItemLevel < 84
-	ItemLevel >= 30
-	Identified False
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
-	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
-	DisableDropSound
 
-Hide  # Normal/Magic - Low Drop Level - 6+ 1-2 Socket
-	Sockets > 0
-	Sockets <= 2
+Hide  # Normal/Magic - Low Drop Level - 6+ 1 Socket
+	Sockets = 1
 	DropLevel < 56
 	Rarity <= Magic
 	ItemLevel >= 6
@@ -1763,12 +1747,22 @@ Hide  # Normal/Magic - Low Drop Level - 6+ 1-2 Socket
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
 
-Hide  # Normal/Magic - Low Drop Level - 20+ 1-2 Link
+Hide  # Normal/Magic - Low Drop Level - 20+ 2 Socket
+	Sockets = 2
+	DropLevel < 56
+	Rarity <= Magic
+	ItemLevel >= 20
+	Identified False
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
+	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
+
+Hide  # Normal/Magic - Low Drop Level - 60+ 1-2 Link
 	Sockets > 0
 	LinkedSockets <= 2
 	DropLevel < 56
 	Rarity <= Magic
-	ItemLevel >= 20
+	ItemLevel >= 60
 	Identified False
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
@@ -1784,30 +1778,11 @@ Hide  # Normal/Magic - Low Drop Level - 60+ Armour Weapons Shields
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
 
-Hide  # Normal/Magic - Low Drop Level - 84+ Armour Shields
+Hide  # Normal/Magic - Low Drop Level - 75+ Armour Shields
 	Class Gloves Boots Helmets "Body Armours" Shields
 	DropLevel < 62
 	Rarity <= Magic
-	ItemLevel >= 84
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
-	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
-
-Hide  # Normal/Magic - Low Drop Level - <83 Body Armour Weapons Shields
-	Class "One Hand" "Two Hand" Bows Staves Daggers Wands Claws Sceptres "Body Armours" Shields
-	Rarity <= Magic
-	ItemLevel < 83
-	ItemLevel >= 60
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
-	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
-
-Hide  # Normal/Magic - Low Drop Level - <84 Gloves Boots Helmets
-	Class Gloves Boots Helmets
-	DropLevel < 70
-	Rarity <= Magic
-	ItemLevel < 84
-	ItemLevel >= 60
+	ItemLevel >= 75
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
@@ -1816,7 +1791,7 @@ Hide  # Normal/Magic - Low Drop Level - <84 Gloves Boots Helmets
 # 75+ Rare (Low Drop Level) #
 #---------------------------#
 
-Hide  # 75+ Rares - Low Drop Level - 75+ Gloves Boots Helmets
+Show  # 75+ Rares - Low Drop Level - 75+ Gloves Boots Helmets
 	Class Gloves Boots Helmets
 	Rarity = Rare
 	DropLevel < 40
@@ -1827,7 +1802,7 @@ Hide  # 75+ Rares - Low Drop Level - 75+ Gloves Boots Helmets
 	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (Hidden)
 	SetBorderColor 0 0 0 # Rare Recipe 75+ (Hidden)
 
-Hide  # 75+ Rares - Low Drop Level - 75+ Body Armour
+Show  # 75+ Rares - Low Drop Level - 75+ Body Armour
 	Class "Body Armours"
 	Rarity = Rare
 	DropLevel < 59
@@ -1839,7 +1814,7 @@ Hide  # 75+ Rares - Low Drop Level - 75+ Body Armour
 	SetBorderColor 0 0 0 # Rare Recipe 75+ (Hidden)
 
 # 56 Karui Sceptre, 58 Corsair Sword
-Hide  # 75+ Rares - Low Drop Level - 75+ One Hand Weapons
+Show  # 75+ Rares - Low Drop Level - 75+ One Hand Weapons
 	Class "One Hand" Daggers Wands Claws Sceptres
 	Rarity = Rare
 	DropLevel < 56
@@ -1852,7 +1827,7 @@ Hide  # 75+ Rares - Low Drop Level - 75+ One Hand Weapons
 	SetBorderColor 0 0 0 # Rare Weapon 75+ (Hidden)
 
 # 56 Thicket Bow
-Hide  # 75+ Rares - Low Drop Level - 75+ Two Hand Weapons
+Show  # 75+ Rares - Low Drop Level - 75+ Two Hand Weapons
 	Class "Two Hand" Bows Staves
 	Rarity = Rare
 	DropLevel < 56
@@ -1864,7 +1839,7 @@ Hide  # 75+ Rares - Low Drop Level - 75+ Two Hand Weapons
 	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (Hidden)
 	SetBorderColor 0 0 0 # Rare Recipe 75+ (Hidden)
 
-Hide  # 75+ Rares - Low Drop Level - 75+ Shields
+Show  # 75+ Rares - Low Drop Level - 75+ Shields
 	Class Shields
 	Rarity = Rare
 	DropLevel < 59
@@ -1880,7 +1855,7 @@ Hide  # 75+ Rares - Low Drop Level - 75+ Shields
 # 60+ Rare (Low Drop Level) #
 #---------------------------#
 
-Hide  # 60+ Rares - Low Drop Level - 60+ Gloves Boots Helmets
+Show  # 60+ Rares - Low Drop Level - 60+ Gloves Boots Helmets
 	Class Gloves Boots Helmets
 	Rarity = Rare
 	DropLevel < 40
@@ -1891,7 +1866,7 @@ Hide  # 60+ Rares - Low Drop Level - 60+ Gloves Boots Helmets
 	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (Hidden)
 	SetBorderColor 0 0 0 # Rare Recipe 60+ (Hidden)
 
-Hide  # 60+ Rares - Low Drop Level - 60+ Body Armour
+Show  # 60+ Rares - Low Drop Level - 60+ Body Armour
 	Class "Body Armours"
 	Rarity = Rare
 	DropLevel <= 50
@@ -1902,7 +1877,7 @@ Hide  # 60+ Rares - Low Drop Level - 60+ Body Armour
 	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (Hidden)
 	SetBorderColor 0 0 0 # Rare Recipe 60+ (Hidden)
 
-Hide  # 60+ Rares - Low Drop Level - 60+ One Hand Weapons Shields
+Show  # 60+ Rares - Low Drop Level - 60+ One Hand Weapons Shields
 	Class "One Hand" Daggers Wands Claws Sceptres Shields
 	Rarity = Rare
 	DropLevel <= 50
@@ -1914,7 +1889,7 @@ Hide  # 60+ Rares - Low Drop Level - 60+ One Hand Weapons Shields
 	SetBackgroundColor 40 35 8 230 # Rare Weapon 60+ (Hidden)
 	SetBorderColor 0 0 0 # Rare Weapon 60+ (Hidden)
 
-Hide  # 60+ Rares - Low Drop Level - 60+ Two Hand Weapons
+Show  # 60+ Rares - Low Drop Level - 60+ Two Hand Weapons
 	Class "Two Hand" Bows Staves
 	Rarity = Rare
 	DropLevel <= 50
@@ -2186,7 +2161,7 @@ Show  # Jewels - Magic - Mapping (Low)
 #	SetBorderColor 0 220 220 # Jewel (Magic)
 #Disabled Block End
 
-Hide  # Jewels - Magic - Mapping (High)
+Show  # Jewels - Magic - Mapping (High)
 	Class Jewel
 	Rarity <= Magic
 	SetFontSize 32
@@ -3028,7 +3003,7 @@ Hide  # Flasks - Mapping (High) - Normal
 # Accessories #
 #-------------#
 
-Hide  # Crafting Bases - 84+ Rings
+Show  # Crafting Bases - 84+ Rings
 	Class Rings
 	ItemLevel >= 84
 	DropLevel < 72
@@ -3037,7 +3012,7 @@ Hide  # Crafting Bases - 84+ Rings
 	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
 	SetBorderColor 0 0 0 # Crafting Base (Mid)
 
-Hide  # Crafting Bases - 84+ Amulets
+Show  # Crafting Bases - 84+ Amulets
 	Class Amulets
 	ItemLevel >= 84
 	DropLevel < 72
@@ -3046,7 +3021,7 @@ Hide  # Crafting Bases - 84+ Amulets
 	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
 	SetBorderColor 0 0 0 # Crafting Base (Mid)
 
-Hide  # Crafting Bases - 84+ Belts
+Show  # Crafting Bases - 84+ Belts
 	Class Belts
 	ItemLevel >= 84
 	DropLevel < 72
@@ -3059,7 +3034,7 @@ Hide  # Crafting Bases - 84+ Belts
 # Quivers #
 #---------#
 
-Hide  # Crafting Bases - 84+ Quivers
+Show  # Crafting Bases - 84+ Quivers
 	Class Quivers
 	BaseType "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver"
 	Rarity <= Magic
@@ -3068,7 +3043,7 @@ Hide  # Crafting Bases - 84+ Quivers
 	SetBackgroundColor 40 40 40 # Crafting Base (Low)
 	SetBorderColor 0 0 0 # Crafting Base (Low)
 
-Hide  # Normal/Magic - Low Drop Level - 84+ Quivers
+Show  # Normal/Magic - Low Drop Level - 84+ Quivers
 	Class Quivers
 	Rarity <= Magic
 	ItemLevel >= 84
@@ -3092,7 +3067,7 @@ Hide  # Normal/Magic - Low Drop Level - 84+ Quivers
 #	SetBorderColor 0 0 0 # Crafting Base (Low)
 #Disabled Block End
 
-Hide  # Crafting Bases - 83+ Weapons - One Hand Weapons
+Show  # Crafting Bases - 83+ Weapons - One Hand Weapons
 	ItemLevel >= 83
 	Class "One Hand" Daggers Wands Claws Sceptres
 	BaseType "Siege Axe" "Vaal Hatchet" "Infernal Axe" "Runic Hatchet" "Legion Hammer" "Nightmare Mace" "Behemoth Mace" "Corsair Sword" "Spiraled Foil" "Eternal Sword" "Jewelled Foil" "Dragoon Sword" Ambusher "Platinum Kris" "Imperial Skean" Sai "Imbued Wand" "Opal Wand" "Tornado Wand" "Profane Wand" "Hellion's Paw" "Imperial Claw" "Terror Claw" "Gemini Claw" "Karui Sceptre" "Vaal Sceptre"
@@ -3101,7 +3076,7 @@ Hide  # Crafting Bases - 83+ Weapons - One Hand Weapons
 	SetBackgroundColor 40 40 40 # Crafting Base (Low)
 	SetBorderColor 0 0 0 # Crafting Base (Low)
 
-Hide  # Crafting Bases - 83+ Weapons - Two Hand Weapons
+Show  # Crafting Bases - 83+ Weapons - Two Hand Weapons
 	ItemLevel >= 83
 	Class "Two Hand" Bows Staves
 	BaseType "Sundering Axe" "Vaal Axe" "Ezomyte Axe" "Void Axe" "Despot Axe" Fleshripper Piledriver Meatgrinder "Terror Maul" "Coronal Maul" "Reaver Sword" "Vaal Greatsword" "Lion Sword" "Infernal Sword" "Exquisite Blade" "Thicket Bow" "Imperial Bow" "Harbinger Bow" "Maraketh Bow" Lathi "Ezomyte Staff" Maelstr "Eclipse Staff" "Judgement Staff"
@@ -3198,7 +3173,7 @@ Show  # Crafting Bases - 70+ Drop Level (Low) - Rare
 #------------#
 # Pre-Filter removed DropLevel < 62
 
-Hide  # Crafting Bases - 84+ Armour - Valuable ES Bases
+Show  # Crafting Bases - 84+ Armour - Valuable ES Bases
 	ItemLevel >= 84
 	BaseType "Hubris Circlet" "Vaal Regalia" "Titanium Spirit Shield"
 	Rarity <= Magic
@@ -3206,11 +3181,11 @@ Hide  # Crafting Bases - 84+ Armour - Valuable ES Bases
 	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
 	SetBorderColor 0 0 0 # Crafting Base (Mid)
 
-Hide  # Crafting Bases - 84+ Armour - High Drop Level
+Show  # Crafting Bases - 84+ Armour - High Drop Level
 	ItemLevel >= 84
 	Class Gloves Boots Helmets "Body Armours" Shields
 	Rarity <= Magic
-	SetFontSize 24
+	SetFontSize 36
 	SetBackgroundColor 40 40 40 # Crafting Base (Low)
 	SetBorderColor 0 0 0 # Crafting Base (Low)
 
@@ -3230,117 +3205,113 @@ Hide  # Normal/Magic - Corrupted
 # Accessories #
 #-------------#
 
-Hide  # Normal/Magic - Low Drop Level - 16+ Accessories
-	ItemLevel >= 16
-	DropLevel < 5
-	Class Rings Amulets Belts
-	Rarity <= Magic
-	SetFontSize 32
-	DisableDropSound
-
-Show  # Normal/Magic - Leveling - Accessories - < 10
-	ItemLevel < 10
-	Class Rings Amulets Belts
-	Rarity <= Magic
-	SetFontSize 36
-	SetBorderColor 0 0 0 # Crafting Base (Mid)
-
-Show  # Normal/Magic - Leveling - Accessories - < 16
-	ItemLevel < 16
-	DropLevel >= 5
-	Class Rings Amulets Belts
-	Rarity <= Magic
-	SetFontSize 36
-	SetBorderColor 0 0 0 # Crafting Base (Mid)
-
-Show  # Normal/Magic - Leveling - Accessories - < 22
-	ItemLevel < 22
-	DropLevel >= 16
-	Class Rings Amulets
-	Rarity <= Magic
-	SetFontSize 36
-	SetBorderColor 0 0 0 # Crafting Base (Mid)
-
-Show  # Normal/Magic - Leveling - Jewelry
-	Class Rings Amulets
-	Rarity = Magic
-	ItemLevel < 25
-	SetFontSize 32
-
-#----------------#
-# Low Drop Level #
-#----------------#
-
-Hide  # Normal/Magic - Low Drop Level - 55+
-	DropLevel < 30
+Hide  # Normal/Magic - Low Drop Level - Amulets
+	BaseType "Coral Amulet" "Paua Amulet" "Gold Amulet"
 	Rarity <= Magic
 	ItemLevel >= 55
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
 
-Hide  # Normal/Magic - Low Drop Level - 50+
-	DropLevel < 25
+Hide  # Normal/Magic - Low Drop Level - Rings
+	BaseType "Iron Ring" "Paua Ring" "Gold Ring"
 	Rarity <= Magic
-	ItemLevel >= 50
+	ItemLevel >= 55
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
 
-Hide  # Normal/Magic - Low Drop Level - 45+
-	DropLevel < 20
+Hide  # Normal/Magic - Low Drop Level - Belts
+	BaseType "Cloth Belt" "Chain Belt"
 	Rarity <= Magic
-	ItemLevel >= 45
+	ItemLevel >= 55
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
 
-Hide  # Normal/Magic - Low Drop Level - 35+
-	DropLevel < 15
+Show  # Normal/Magic - Accessories - High Drop Level
+	Class Rings Amulets Belts
 	Rarity <= Magic
-	ItemLevel >= 35
+	ItemLevel >= 55
+	SetFontSize 36
+	SetBorderColor 0 0 0 # Crafting Base (Mid)
+
+#---------#
+# Quivers #
+#---------#
+
+Hide  # Normal/Magic - Low Drop Level - Quivers
+	DropLevel < 23
+	Class Quivers
+	Rarity <= Magic
+	ItemLevel >= 55
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
 
-Hide  # Normal/Magic - Low Drop Level - 25+
-	DropLevel < 10
+Show  # Normal/Magic - Quivers
+	Class Quivers
 	Rarity <= Magic
-	ItemLevel >= 25
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
-	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
+	SetFontSize 32
+	SetBorderColor 0 0 0 # Crafting Base (Mid)
 
-#----------#
-# 3-4 Link #
-#----------#
+#--------#
+# 4 Link #
+#--------#
 
-Show  # Normal/Magic - Leveling - 4 Link Armour - < 35
+Show  # Normal/Magic - 4 Link Armour - < 55
 	LinkedSockets >= 4
-	ItemLevel < 35
+	ItemLevel < 55
+	Class Gloves Boots Helmets "Body Armours"
+	Rarity <= Magic
+	SetFontSize 36
+	SetBorderColor 40 80 150 # 3-4 Link
+
+Hide  # Normal/Magic - Low Drop Level - 4 Link Armour - 55+
+	LinkedSockets >= 4
+	DropLevel < 40
+	Class Gloves Boots Helmets "Body Armours"
+	Rarity <= Magic
+	SetFontSize 36
+
+Hide  # Normal/Magic - Low Drop Level - 4 Link Armour - 75+ Gloves Boots Helmets
+	ItemLevel >= 75
+	LinkedSockets >= 4
+	DropLevel < 56
+	Class Gloves Boots Helmets
+	Rarity <= Magic
+	SetFontSize 36
+
+Hide  # Normal/Magic - Low Drop Level - 4 Link Armour - 75+ Body Armours
+	ItemLevel >= 75
+	LinkedSockets >= 4
+	DropLevel < 62
+	Class "Body Armours"
+	Rarity <= Magic
+	SetFontSize 36
+
+Show  # Normal/Magic - 4 Link Armour - 55+
+	LinkedSockets >= 4
+	Class Gloves Boots Helmets "Body Armours"
+	Rarity <= Magic
+	SetFontSize 36
+	SetBorderColor 40 80 150 # 3-4 Link
+
+#--------#
+# 3 Link #
+#--------#
+
+Show  # Normal/Magic - Leveling - 3 Link Armour - < 15
+	LinkedSockets >= 3
+	ItemLevel < 15
 	Class Gloves Boots Helmets "Body Armours"
 	Rarity <= Magic
 	SetFontSize 32
 	SetBorderColor 40 80 150 # 3-4 Link
 
-Show  # Normal/Magic - Leveling - 4 Link Armour - < 60
-	LinkedSockets >= 4
-	ItemLevel < 60
-	Class Gloves Boots Helmets "Body Armours"
-	Rarity <= Magic
-	SetFontSize 32
-
-Show  # Normal/Magic - Leveling - 3 Link Armour - < 10
+Show  # Normal/Magic - Leveling - 3 Link Armour  - < 25
 	LinkedSockets >= 3
-	ItemLevel < 10
-	Class Gloves Boots Helmets "Body Armours"
-	Rarity <= Magic
-	SetFontSize 32
-	SetBorderColor 40 80 150 # 3-4 Link
-
-Show  # Normal/Magic - Leveling - 3 Link Armour  - < 20
-	LinkedSockets >= 3
-	ItemLevel < 20
+	ItemLevel < 25
 	Class Gloves Boots Helmets "Body Armours"
 	Rarity <= Magic
 	SetFontSize 32
@@ -3355,31 +3326,79 @@ Show  # Normal/Magic - Leveling - 3 Link Armour - 4 Socket
 
 Show  # Normal/Magic - Leveling - 3 Link Wands Sceptres
 	LinkedSockets = 3
-	ItemLevel <= 7
+	ItemLevel <= 8
 	Class Wands Sceptres
 	Rarity <= Magic
 	SetFontSize 32
 	SetBorderColor 40 80 150 # 3-4 Link
 
+#----------------#
+# Low Drop Level #
+#----------------#
+
+Hide  # Normal/Magic - Low Drop Level - 65+
+	DropLevel < 52
+	Rarity <= Magic
+	ItemLevel >= 55
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
+	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
+
+Hide  # Normal/Magic - Low Drop Level - 55+
+	DropLevel < 40
+	Rarity <= Magic
+	ItemLevel >= 55
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
+	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
+
+Hide  # Normal/Magic - Low Drop Level - 50+
+	DropLevel < 35
+	Rarity <= Magic
+	ItemLevel >= 50
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
+	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
+
+Hide  # Normal/Magic - Low Drop Level - 45+
+	DropLevel < 30
+	Rarity <= Magic
+	ItemLevel >= 45
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
+	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
+
+Hide  # Normal/Magic - Low Drop Level - 40+
+	DropLevel < 25
+	Rarity <= Magic
+	ItemLevel >= 35
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
+	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
+
+Hide  # Normal/Magic - Low Drop Level - 35+
+	DropLevel < 20
+	Rarity <= Magic
+	ItemLevel >= 35
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
+	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
+
+Hide  # Normal/Magic - Low Drop Level - 25+
+	DropLevel < 15
+	Rarity <= Magic
+	ItemLevel >= 25
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
+	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
+
 #-------#
 # Other #
 #-------#
 
-Show  # Normal/Magic - Leveling - < 11 Normal
-	Rarity = Normal
-	ItemLevel <= 11
-	SetFontSize 32
-
-Show  # Normal/Magic - Leveling - < 20 Magic
-	Rarity = Magic
-	ItemLevel <= 20
-	SetFontSize 32
-
-Hide  # Normal/Magic - Other
+Show  # Normal/Magic - Other
 	Rarity <= Magic
-	SetFontSize 18
-	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
-	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
+	SetFontSize 32
 	DisableDropSound
 
 ##########################################
@@ -4381,7 +4400,7 @@ Show  # 75+ Rares - Quivers - Valuable
 	SetBackgroundColor 40 35 8 230 # Rare Weapon 75+
 	SetBorderColor 0 0 0 # Rare Weapon 75+
 
-Hide  # 75+ Rares - Quivers - Other
+Show  # 75+ Rares - Quivers - Other
 	Class Quivers
 	ItemLevel >= 75
 	SetFontSize 32
@@ -4881,7 +4900,7 @@ Show  # 60+ Rares - Quivers - Valuable
 	SetBackgroundColor 40 35 8 230 # Rare Weapon 60+
 	SetBorderColor 0 0 0 # Rare Weapon 60+
 
-Hide  # 60+ Rares - Quivers - Other
+Show  # 60+ Rares - Quivers - Other
 	Class Quivers
 	ItemLevel >= 60
 	SetFontSize 32
@@ -4923,22 +4942,22 @@ Show  # < 60 Rares - Quivers
 # Very Low Drop Level #
 #---------------------#
 
-Hide  # < 60 Rares - Very Low Drop Level - 55+
+Show  # < 60 Rares - Very Low Drop Level - 55+
 	DropLevel < 30
 	ItemLevel >= 55
 	SetFontSize 32
 
-Hide  # < 60 Rares - Very Low Drop Level - 50+
+Show  # < 60 Rares - Very Low Drop Level - 50+
 	DropLevel < 25
 	ItemLevel >= 50
 	SetFontSize 32
 
-Hide  # < 60 Rares - Very Low Drop Level - 45+
+Show  # < 60 Rares - Very Low Drop Level - 45+
 	DropLevel < 20
 	ItemLevel >= 45
 	SetFontSize 32
 
-Hide  # < 60 Rares - Very Low Drop Level - 40+
+Show  # < 60 Rares - Very Low Drop Level - 40+
 	DropLevel < 15
 	ItemLevel >= 40
 	SetFontSize 32
@@ -4981,22 +5000,22 @@ Show  # < 60 Rares - Weapons - 3 Link
 # Low Drop Level #
 #----------------#
 
-Hide  # < 60 Rares - Low Drop Level - 55+
+Show  # < 60 Rares - Low Drop Level - 55+
 	DropLevel < 35
 	ItemLevel >= 55
 	SetFontSize 32
 
-Hide  # < 60 Rares - Low Drop Level - 50+
+Show  # < 60 Rares - Low Drop Level - 50+
 	DropLevel < 30
 	ItemLevel >= 50
 	SetFontSize 32
 
-Hide  # < 60 Rares - Low Drop Level - 45+
+Show  # < 60 Rares - Low Drop Level - 45+
 	DropLevel < 25
 	ItemLevel >= 45
 	SetFontSize 32
 
-Hide  # < 60 Rares - Low Drop Level - 40+
+Show  # < 60 Rares - Low Drop Level - 40+
 	DropLevel < 20
 	ItemLevel >= 40
 	SetFontSize 32

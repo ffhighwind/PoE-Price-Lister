@@ -6,10 +6,10 @@ If (A_AhkVersion <= "1.1.23")
 }
 FileEncoding,UTF-8
 
-filtersIn := ["S1_Regular_Highwind.filter", "S2_Mapping_Highwind.filter", "S3_Strict_Highwind.filter", "S4_Very_Strict_Highwind.filter"]
-filtersOut := ["L1_Regular_Highwind.filter", "L2_Mapping_Highwind.filter", "L3_Strict_Highwind.filter", "L4_Very_Strict_Highwind.filter"]
+filtersIn := ["S_NoRares_Highwind.filter", "S1_Regular_Highwind.filter", "S2_Mapping_Highwind.filter", "S3_Strict_Highwind.filter", "S4_Very_Strict_Highwind.filter"]
+filtersOut := ["L_NoRares_Highwind.filter", "L1_Regular_Highwind.filter", "L2_Mapping_Highwind.filter", "L3_Strict_Highwind.filter", "L4_Very_Strict_Highwind.filter"]
 
-Loop, 4
+Loop, % filtersIn.MaxIndex()
 {
     GenerateFilter(filtersIn[A_Index], filtersOut[A_Index])
 }

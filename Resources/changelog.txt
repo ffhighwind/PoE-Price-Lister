@@ -1,6 +1,15 @@
 ---------------------------------------------------------------------------------------------------------------
 | Delve
 ---------------------------------------------------------------------------------------------------------------
+3.4.10
+? Added a NoRares filter. I have not tested it out, but it should be better than the other filters.
+? Removed Corrupted normal/magic items. I wish I could do this with mirrored items...
+
+3.4.9
+? Fixed the load button in the Price Updater.
+? Hand edited some overvalued Divination cards (Gambler, Her Mask).
+? Changed Maelström back to Maelstr.
+
 3.4.8
 ? Fixed high value fossil colors/sounds. 
 ? Reduced low value fossils/resonator colors and removed some from the Strict filters.

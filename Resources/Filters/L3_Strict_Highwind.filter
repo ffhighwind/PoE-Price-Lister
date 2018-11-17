@@ -1,7 +1,7 @@
 ﻿############################################
-##     HIGHWIND'S STRICT FILTER 3.4.8     ##
+##     HIGHWIND'S STRICT FILTER 3.4.10    ##
 ############################################
-## Release Date: September 16, 2018       ##
+## Release Date: November 16, 2018        ##
 ############################################
 
 #--------------#
@@ -3194,6 +3194,13 @@ Hide  # Crafting Bases - 84+ Armour - High Drop Level
 ############# NORMAL / MAGIC #############
 ##########################################
 # Section: Normal/Magic
+
+Hide  # Normal/Magic - Corrupted
+	Rarity <= Magic
+	Corrupted True
+	SetFontSize 18
+	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
+	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
 
 #-------------#
 # Accessories #
