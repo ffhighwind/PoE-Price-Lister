@@ -15,12 +15,12 @@ Presets
 	Preset "Mapping" [S2_Mapping_Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/S2_Mapping_Highwind.filter]
 	Preset "Strict" [S3_Strict_Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/S3_Strict_Highwind.filter]
 	Preset "Very Strict" [S4_Very_Strict_Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/S4_Very_Strict_Highwind.filter]
-	Preset "No Rares" DEFAULT [S1_Regular_Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/S_NoRares_Highwind.filter]
+	Preset "No Rares" [S1_Regular_Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/S_NoRares_Highwind.filter]
 	Preset "Regular Large" [L1_Regular_Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/L1_Regular_Highwind.filter]
 	Preset "Mapping Large" [L2_Mapping_Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/L2_Mapping_Highwind.filter]
 	Preset "Strict Large" [L3_Strict_Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/L3_Strict_Highwind.filter]
 	Preset "Very Strict Large" [L4_Very_Strict_Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/L4_Very_Strict_Highwind.filter]
-	Preset "No Rares Large" DEFAULT [S1_Regular_Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/L_NoRares_Highwind.filter]
+	Preset "No Rares Large" [S1_Regular_Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/L_NoRares_Highwind.filter]
 
 # ColorThemes filtertheme
 #	Theme "Default" DEFAULT [Highwind_Default_Theme] [https://pastebin.com/raw/TSFSZdry]
