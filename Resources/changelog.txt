@@ -1,57 +1,9 @@
 ---------------------------------------------------------------------------------------------------------------
-| Delve
+| Betrayal
 ---------------------------------------------------------------------------------------------------------------
-3.4.10
-? Added a NoRares filter. I have not tested it out, but it should be better than the other filters.
-? Removed Corrupted normal/magic items. I wish I could do this with mirrored items...
-
-3.4.9
-? Fixed the load button in the Price Updater.
-? Hand edited some overvalued Divination cards (Gambler, Her Mask).
-? Changed Maelström back to Maelstr.
-
-3.4.8
-? Fixed high value fossil colors/sounds. 
-? Reduced low value fossils/resonator colors and removed some from the Strict filters.
-? Updated the filter uniques/divination card values. Not much changed, though.
-? Changed "hardcore friendly" to only work on items worth 4c+ in hardcore instead of 2c+.
-? Fixed filter encoding so it's UTF-8, including the font enlarger. The CSV file is UTF-7. This allows Maelström Staff and Mjölner to parse correctly so I don't have to special case them.
-
-3.4.7
-? Fixed fossils so they don't show up as errors. I used the wrong item class.
-
-3.4.6
-? Updated the filter uniques/divination card values.
-? Added loud sounds to valuable Fossils/Resonators.
-? Added colors/beams to the header information.
-? Add loud sounds to Shaper/Elder items with rare bases (Opal Rings, etc) and certain 83+ bases.
-? Completely refactored the Price Lister code so it's easier to understand. This took almost a week to do. Expected values for uniques still needs a rewrite.
-? Added HC Friendly values to the price updater. Anything worth 2c+ in HC will no longer be hidden.
-
-3.4.5
-? Updated the filter uniques/divination card values.
-? Added many things previously hidden in the Strict filter (Jewels, Uniques, Divination cards).
-
-3.4.4
-? Updated the filter values.
-? Added some uniques
-Spoiler 
-
-3.4.3
-? Increased the size of map icons and changed some icons/colors.
-? Updated filter/unique values.
-? Completely reworked the Elder/Shaper filters. There's now a lot less of them all in one place.
-? Added a missed Divination Card: The Cacophony
-? Fixed typos for uniques: "The Grey Spire" "Cerberus Limb"
-? Added 21/26 new uniques
-Spoiler 
-
-3.4.2
-? Added map icons to most items.
-? Added glowing beams to most items.
-
-3.4.1
-? Added Fossil/Resonator currency.
-? Added 5 new explicit mods: "Subterranean", "of the Underground", "of Weaponcraft", "of Spellcraft", "of Crafting"
-? Added 8 new Divination Cards: 6 of the cards The Endless Darkness, Boon of the First Ones
-? Added 6/26 new uniques to the pricing CSV. These have not been added to the filter yet.
+3.5.1
+? Added 9/14 new uniques
+? Added 5 new Divination Cards + The Nurse
+? Added new Map Fragments: Rusted/Polished/Gilded Scarabs (1) (2)
+? Added new prefix mods
+? Added new suffix mods

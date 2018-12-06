@@ -4,7 +4,7 @@ namespace PoE_Price_Lister
 {
     public class UniqueItem
     {
-        private static readonly string[] CORE_LEAGUES = { "Abyss", "Breach", "Beyond", "Delve" };
+        private static readonly string[] CORE_LEAGUES = { "Abyss", "Breach", "Beyond", "Delve", "Betrayal" };
 
         public UniqueItem(JsonData jdata)
         {
