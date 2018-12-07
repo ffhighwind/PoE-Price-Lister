@@ -1,7 +1,7 @@
 ############################################
-##     HIGHWIND'S STRICT FILTER 3.5.1     ##
+##     HIGHWIND'S STRICT FILTER 3.5.2     ##
 ############################################
-## Release Date: December 4, 2018         ##
+## Release Date: December 7, 2018         ##
 ############################################
 
 #--------------#
@@ -50,7 +50,7 @@
 # Pink   - Divination Cards
 # Purple - Leaguestones
 # Red    - Fishing Rods, Errors
-# White  - valuable items
+# White  - Valuable items
 # White/Yellow/Red/Cyan - Maps, Map Fragments
 
 #--------------#
@@ -71,8 +71,9 @@
 #--------------#
 # Circle   - Currency, Quest Items
 # Hexagon  - Maps, Map Fragments
-# Star     - Equipment, Jewels
-# Diamond  - Essence, Talisman, Leaguestones, Pieces, Gems
+# Square   - Equipment
+# Star     - Jewels, Gems
+# Diamond  - Essence, Talisman, Leaguestones, Pieces
 # Triangle - Prophecies, Divination Cards
 #
 # Red    - Valuable items, 5+ Links
@@ -457,7 +458,7 @@ Show  # Currency - League Specific - Essences (Mid)
 	SetBackgroundColor 20 0 20 230 # Currency (Mid Essence)
 	SetBorderColor 255 0 255 # Currency (Mid Essence)
 	PlayAlertSound 4 200 # Mid Value (Currency)
-	MinimapIcon 1 Blue Diamond
+	MinimapIcon 0 Blue Diamond
 	PlayEffect Blue
 
 Show  # Currency - League Specific - Essences (Low)
@@ -849,7 +850,7 @@ Show  # Fishing Rods
 	SetBackgroundColor 255 0 0 255 # Fishing Rod
 	SetBorderColor 255 255 255 # Fishing Rod
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Star
+	MinimapIcon 0 Red Square
 	PlayEffect Red
 
 ##########################################
@@ -1026,7 +1027,7 @@ Show  # Vendor Recipes - Jewellers (6 Socket) - Unique
 	SetBackgroundColor 255 255 255 255 # Unique (10c+)
 	SetBorderColor 255 128 64 # Unique (10c+)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Star
+	MinimapIcon 0 Red Square
 	PlayEffect Red
 
 Show  # Vendor Recipes - Jewellers (6 Socket) - Normal/Magic
@@ -1036,7 +1037,7 @@ Show  # Vendor Recipes - Jewellers (6 Socket) - Normal/Magic
 	SetBackgroundColor 0 0 0 230 # 6 Socket
 	SetBorderColor 255 0 255 # 6 Socket
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Yellow Star
+	MinimapIcon 0 Yellow Square
 	PlayEffect Yellow
 
 #------------#
@@ -1510,7 +1511,7 @@ Show  # Crafting Bases - Shaper - 70+ Drop Level
 	SetBackgroundColor 255 255 255 255 # Crafting Base 84+ (High)
 	SetBorderColor 0 255 255 # Crafting Base 84+ (High)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Star
+	MinimapIcon 0 Red Square
 	PlayEffect Red
 
 Show  # Crafting Bases - Elder - 70+ Drop Level
@@ -1521,7 +1522,7 @@ Show  # Crafting Bases - Elder - 70+ Drop Level
 	SetBackgroundColor 255 255 255 255 # Crafting Base 84+ (High)
 	SetBorderColor 0 255 255 # Crafting Base 84+ (High)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Star
+	MinimapIcon 0 Red Square
 	PlayEffect Red
 
 Show  # Crafting Bases - Shaper - 84+ BaseTypes
@@ -1532,7 +1533,7 @@ Show  # Crafting Bases - Shaper - 84+ BaseTypes
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 200 50 255 # Shaper Elder 83+
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Star
+	MinimapIcon 0 Red Square
 	PlayEffect Red
 
 Show  # Crafting Bases - Elder - 84+ BaseTypes
@@ -1543,7 +1544,7 @@ Show  # Crafting Bases - Elder - 84+ BaseTypes
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 200 50 255 # Shaper Elder 83+
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Star
+	MinimapIcon 0 Red Square
 	PlayEffect Red
 
 Show  # Crafting Bases - Shaper - 83+ Classes
@@ -1554,7 +1555,7 @@ Show  # Crafting Bases - Shaper - 83+ Classes
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 200 50 255 # Shaper Elder 83+
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Star
+	MinimapIcon 0 Red Square
 	PlayEffect Red
 
 Show  # Crafting Bases - Elder - 83+ BaseTypes
@@ -1566,7 +1567,7 @@ Show  # Crafting Bases - Elder - 83+ BaseTypes
 	SetBackgroundColor 255 255 255 255 # Crafting Base 84+ (High)
 	SetBorderColor 0 255 255 # Crafting Base 84+ (High)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Star
+	MinimapIcon 0 Red Square
 	PlayEffect Red
 
 Show  # Crafting Bases - Shaper - 83+ BaseTypes
@@ -1578,7 +1579,7 @@ Show  # Crafting Bases - Shaper - 83+ BaseTypes
 	SetBackgroundColor 255 255 255 255 # Crafting Base 84+ (High)
 	SetBorderColor 0 255 255 # Crafting Base 84+ (High)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Star
+	MinimapIcon 0 Red Square
 	PlayEffect Red
 
 ##########################################
@@ -1586,97 +1587,10 @@ Show  # Crafting Bases - Shaper - 83+ BaseTypes
 ##########################################
 # Section: Explicit Mods
 
-Show  # Explicit Mods - Physical Weapons
-	Class "One Hand" Daggers Wands Claws Sceptres "Two Hand" Bows Staves
-	HasExplicitMod "Tyrannical" "Merciless" "Flaring" "of Celebration" "of Incision" "of Destruction" "Dictator's"
-	Rarity <= Rare
-	SetFontSize 45
-	SetTextColor 255 255 255 # Crafting Base (High)
-	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
-	SetBorderColor 0 255 255 # Crafting Base (High)
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Green Star
-	PlayEffect Green
-
-Show  # Explicit Mods - Elemental Weapons
-	Class "One Hand" Daggers Wands Claws Sceptres Bows
-	HasExplicitMod "Cremating" "Electrocuting" "Malicious" "Entombing" "Sharpshooter's"
-	Rarity <= Rare
-	SetFontSize 45
-	SetTextColor 255 255 255 # Crafting Base (High)
-	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
-	SetBorderColor 0 255 255 # Crafting Base (High)
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Green Star
-	PlayEffect Green
-
-Show  # Explicit Mods - Mastercraft
-	HasExplicitMod "Subterranean" "of the Underground" "of Weaponcraft" "of Spellcraft" "of Crafting"
-	Rarity <= Rare
-	SetFontSize 40
-	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
-	SetBorderColor 0 255 255 # Crafting Base (High)
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Green Star
-	PlayEffect Green
-
-Show  # Explicit Mods - Incursion - Magic
-	HasExplicitMod "Tacati's" "Citaqualotl's" "Matatl's" "Topotante's" "Xopec's" "Guatelitzi's" "of Tacati" "of Citaqualotl" "of Matatl" "of Puhuarte" "of Guatelitzi"
-	Rarity = Magic
-	SetFontSize 36
-	PlayEffect Green
-
-Show  # Explicit Mods - Incursion - Rare
-	HasExplicitMod "Tacati's" "Citaqualotl's" "Matatl's" "Topotante's" "Xopec's" "Guatelitzi's" "of Tacati" "of Citaqualotl" "of Matatl" "of Puhuarte" "of Guatelitzi"
-	Rarity = Rare
-	SetFontSize 40
-	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
-	SetBorderColor 0 255 255 # Crafting Base (High)
-	PlayEffect Green
-
-Show  # Explicit Mods - Warbands
-	HasExplicitMod "Mutewind" "Redblade" "Brinerot" "Betrayer's" "Deceiver's" "Turncoat's"
-	Rarity = Magic
-	SetFontSize 36
-	PlayEffect Green
-
-Show  # Explicit Mods - Armor/Accessories
-	Class Gloves Boots Helmets Belts Amulets "Body Armour"
-	HasExplicitMod "Rapturous" "Prime" "of Haast" "of Tzteosh" "of Ephij" "of Bameth" "of the Gods" "Unfaltering" "Resplendent" "of the Genius" "of the Polymath" "of the Blur" "of the Wind" "Hellion's"
-	Rarity <= Rare
-	SetFontSize 40
-	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
-	SetBorderColor 0 255 255 # Crafting Base (High)
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Green Star
-	PlayEffect Green
-
-Show  # Explicit Mods - Accessories
-	Class Belts Amulets
-	HasExplicitMod "Devastating" "Overpowering" "of Sipping" "of Overflowing" "Dazzling" "of the Godslayer" "of Destruction"
-	Rarity <= Rare
-	SetFontSize 40
-	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
-	SetBorderColor 0 255 255 # Crafting Base (High)
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Green Star
-	PlayEffect Green
-
-Show  # Explicit Mods - Jewels
-	BaseType Jewel
-	HasExplicitMod "Vivid" "Shimmering" "of the Elements" "of Unmaking" "Jinxing" "Cleaving" "Fencing" "Bandit's" "Volleying" "Ripping" "Slicing" "of Demolishing" "Surging" "Arctic" "Infernal" "Piercing" "Stalwart" "Resplendent" "Electrocuting" "Flaring" "Entombing" "Cremating" "of Unholy Might" "Sanguine" "Incandescent"
-	Rarity <= Rare
-	SetFontSize 40
-	SetBackgroundColor 0 0 0 # Jewel (Magic)
-	SetBorderColor 0 220 220 # Jewel (Magic)
-	PlayAlertSound 6 200 # Jewel
-	MinimapIcon 0 Green Star
-	PlayEffect Green
-
 Show  # Explicit Mods - Shaper/Elder - Magic
 	HasExplicitMod "The Shaper's" "Eldritch" "of Shaping" "of the Elder"
 	Rarity <= Magic
-	SetFontSize 40
+	SetFontSize 32
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 200 50 255 # Shaper Elder 83+
 	PlayEffect Green
@@ -1685,21 +1599,176 @@ Show  # Explicit Mods - Shaper/Elder - Magic
 #Show  # Explicit Mods - Shaper/Elder - Rare
 #	HasExplicitMod "The Shaper's" "Eldritch" "of Shaping" "of the Elder"
 #	Rarity = Rare
-#	SetFontSize 40
+#	SetFontSize 36
 #	SetBackgroundColor 50 20 70 230 # Shaper Elder
 #	SetBorderColor 200 50 255 # Shaper Elder 83+
-#	MinimapIcon 0 Green Star
+#	MinimapIcon 0 Blue Green
 #	PlayEffect Green
 #Disabled Block End
+
+# Physical Weapons
+Show  # Explicit Mods - Physical Weapons - Rare
+	Class "One Hand" Daggers Wands Claws Sceptres "Two Hand" Bows Staves
+	HasExplicitMod "Tyrannical" "Merciless" "Flaring" "of Celebration" "of Incision" "of Destruction" "Dictator's"
+	Rarity = Rare
+	SetFontSize 40
+	SetTextColor 255 255 255 # Crafting Base (High)
+	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
+	SetBorderColor 0 255 255 # Crafting Base (High)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+
+Show  # Explicit Mods - Physical Weapons - Magic
+	Class "One Hand" Daggers Wands Claws Sceptres "Two Hand" Bows Staves
+	HasExplicitMod "Tyrannical" "Merciless" "Flaring" "of Celebration" "of Incision" "of Destruction" "Dictator's"
+	Rarity = Magic
+	SetFontSize 40
+	SetTextColor 255 255 255 # Crafting Base (High)
+	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
+	SetBorderColor 0 255 255 # Crafting Base (High)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+
+# Elemental Weapons
+Show  # Explicit Mods - Elemental Weapons - Magic
+	Class "One Hand" Daggers Wands Claws Sceptres Bows
+	HasExplicitMod "Cremating" "Electrocuting" "Malicious" "Entombing" "Sharpshooter's"
+	Rarity = Magic
+	SetFontSize 32
+	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
+	SetBorderColor 0 0 0 # Crafting Base (Mid)
+	PlayEffect Blue
+
+Show  # Explicit Mods - Elemental Weapons - Rare
+	Class "One Hand" Daggers Wands Claws Sceptres Bows
+	HasExplicitMod "Cremating" "Electrocuting" "Malicious" "Entombing" "Sharpshooter's"
+	Rarity = Rare
+	SetFontSize 36
+	SetTextColor 255 255 255 # Crafting Base (High)
+	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
+	SetBorderColor 0 255 255 # Crafting Base (High)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+
+# Mastercraft
+Show  # Explicit Mods - Mastercraft - Magic
+	HasExplicitMod "Subterranean" "of the Underground" "of Weaponcraft" "of Spellcraft" "of Crafting"
+	Rarity = Magic
+	SetFontSize 36
+	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
+	SetBorderColor 0 0 0 # Crafting Base (Mid)
+	PlayEffect Blue
+
+Show  # Explicit Mods - Mastercraft - Rare
+	HasExplicitMod "Subterranean" "of the Underground" "of Weaponcraft" "of Spellcraft" "of Crafting"
+	Rarity = Rare
+	SetFontSize 36
+	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
+	SetBorderColor 0 255 255 # Crafting Base (High)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+
+# Incursion
+Show  # Explicit Mods - Incursion - Magic
+	HasExplicitMod "Tacati's" "Citaqualotl's" "Matatl's" "Topotante's" "Xopec's" "Guatelitzi's" "of Tacati" "of Citaqualotl" "of Matatl" "of Puhuarte" "of Guatelitzi"
+	Rarity = Magic
+	SetFontSize 32
+	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
+	SetBorderColor 0 0 0 # Crafting Base (Mid)
+	PlayEffect Blue
+
+Show  # Explicit Mods - Incursion - Rare
+	HasExplicitMod "Tacati's" "Citaqualotl's" "Matatl's" "Topotante's" "Xopec's" "Guatelitzi's" "of Tacati" "of Citaqualotl" "of Matatl" "of Puhuarte" "of Guatelitzi"
+	Rarity = Rare
+	SetFontSize 36
+	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
+	SetBorderColor 0 0 0 # Crafting Base (Mid)
+	PlayEffect Blue
+
+# Warbands
+Show  # Explicit Mods - Warbands - Magic
+	HasExplicitMod "Mutewind" "Redblade" "Brinerot" "Betrayer's" "Deceiver's" "Turncoat's"
+	Rarity = Magic
+	SetFontSize 32
+	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
+	SetBorderColor 0 0 0 # Crafting Base (Mid)
+	PlayEffect Blue
+
+Show  # Explicit Mods - Warbands - Rare
+	HasExplicitMod "Mutewind" "Redblade" "Brinerot" "Betrayer's" "Deceiver's" "Turncoat's"
+	Rarity = Rare
+	SetFontSize 36
+	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
+	SetBorderColor 0 0 0 # Crafting Base (Mid)
+	PlayEffect Blue
+
+# Armor/Accessories
+Show  # Explicit Mods - Armor/Accessories - Magic
+	Class Gloves Boots Helmets Belts Amulets "Body Armour"
+	HasExplicitMod "Rapturous" "Prime" "of Haast" "of Tzteosh" "of Ephij" "of Bameth" "of the Gods" "Unfaltering" "Resplendent" "of the Genius" "of the Polymath" "of the Blur" "of the Wind" "Hellion's"
+	Rarity = Magic
+	SetFontSize 32
+	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
+	SetBorderColor 0 0 0 # Crafting Base (Mid)
+	PlayEffect Blue
+
+Show  # Explicit Mods - Armor/Accessories - Rare
+	Class Gloves Boots Helmets Belts Amulets "Body Armour"
+	HasExplicitMod "Rapturous" "Prime" "of Haast" "of Tzteosh" "of Ephij" "of Bameth" "of the Gods" "Unfaltering" "Resplendent" "of the Genius" "of the Polymath" "of the Blur" "of the Wind" "Hellion's"
+	Rarity = Rare
+	SetFontSize 36
+	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
+	SetBorderColor 0 255 255 # Crafting Base (High)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+
+# Accessories
+Show  # Explicit Mods - Accessories - Magic
+	Class Belts Amulets
+	HasExplicitMod "Devastating" "Overpowering" "of Sipping" "of Overflowing" "Dazzling" "of the Godslayer" "of Destruction"
+	Rarity = Magic
+	SetFontSize 32
+	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
+	SetBorderColor 0 0 0 # Crafting Base (Mid)
+	PlayEffect Blue
+
+Show  # Explicit Mods - Accessories - Rare
+	Class Belts Amulets
+	HasExplicitMod "Devastating" "Overpowering" "of Sipping" "of Overflowing" "Dazzling" "of the Godslayer" "of Destruction"
+	Rarity = Rare
+	SetFontSize 36
+	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
+	SetBorderColor 0 255 255 # Crafting Base (High)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+
+# Jewels
+Show  # Explicit Mods - Jewels
+	BaseType Jewel
+	HasExplicitMod "Vivid" "Shimmering" "of the Elements" "of Unmaking" "Jinxing" "Cleaving" "Fencing" "Bandit's" "Volleying" "Ripping" "Slicing" "of Demolishing" "Surging" "Arctic" "Infernal" "Piercing" "Stalwart" "Resplendent" "Electrocuting" "Flaring" "Entombing" "Cremating" "of Unholy Might" "Sanguine" "Incandescent"
+	Rarity <= Rare
+	SetFontSize 32
+	SetBackgroundColor 0 0 0 # Jewel (Magic)
+	SetBorderColor 0 220 220 # Jewel (Magic)
+	PlayAlertSound 6 200 # Jewel
+	MinimapIcon 0 Blue Star
+	PlayEffect Blue
 
 Show  # Explicit Mods - Veiled
 	HasExplicitMod "Veiled" "'s Veiled" "'s Veil" "of the Veil"
 	Rarity <= Rare
-	SetFontSize 40
+	SetFontSize 36
 	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
 	SetBorderColor 0 255 255 # Crafting Base (High)
-	MinimapIcon 0 Green Star
-	PlayEffect Green
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
 
 ##########################################
 ############### PRE-FILTER ###############
@@ -1931,7 +2000,7 @@ Show  # Shaper Rares - Accessories - 84+
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 220 0 0 # Rare Accessory
 	PlayAlertSound 4 200 # Shaper Elder
-	MinimapIcon 0 Green Star
+	MinimapIcon 0 Green Square
 	PlayEffect Green
 
 Show  # Shaper Rares - Accessories - 60+
@@ -1941,17 +2010,17 @@ Show  # Shaper Rares - Accessories - 60+
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 220 0 0 # Rare Accessory
 	PlayAlertSound 4 200 # Shaper Elder
-	MinimapIcon 0 Green Star
+	MinimapIcon 0 Green Square
 	PlayEffect Green
 
 Show  # Shaper Rares - 84+ - Low Drop Level
 	ShaperItem True
 	ItemLevel >= 84
-	DropLevel < 56
+	DropLevel < 58
 	SetFontSize 45
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 0 0 0 # Rare Recipe 60+
-	MinimapIcon 0 Green Star
+	MinimapIcon 0 Green Square
 	PlayEffect Green
 
 Show  # Shaper Rares - 84+ - High Drop Level
@@ -1961,12 +2030,12 @@ Show  # Shaper Rares - 84+ - High Drop Level
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 200 50 255 # Shaper Elder 83+
 	PlayAlertSound 4 200 # Shaper Elder
-	MinimapIcon 0 Green Star
+	MinimapIcon 0 Green Square
 	PlayEffect Green
 
 Show  # Shaper Rares - 60+ - Low Drop Level
 	ShaperItem True
-	DropLevel < 56
+	DropLevel < 58
 	SetFontSize 40
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 0 0 0 # Shaper Elder
@@ -1976,7 +2045,7 @@ Show  # Shaper Rares - 60+ - High Drop Level
 	SetFontSize 40
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 0 0 0 # Shaper Elder
-	MinimapIcon 0 Green Star
+	MinimapIcon 0 Green Square
 	PlayEffect Green
 
 #--------------#
@@ -1991,7 +2060,7 @@ Show  # Elder Rares - Accessories - 84+
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 220 0 0 # Rare Accessory
 	PlayAlertSound 4 200 # Shaper Elder
-	MinimapIcon 0 Green Star
+	MinimapIcon 0 Green Square
 	PlayEffect Green
 
 Show  # Elder Rares - Accessories - 60+
@@ -2000,17 +2069,17 @@ Show  # Elder Rares - Accessories - 60+
 	SetFontSize 40
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 220 0 0 # Rare Accessory
-	MinimapIcon 0 Green Star
+	MinimapIcon 0 Green Square
 	PlayEffect Green
 
 Show  # Elder Rares - 84+ - Low Drop Level
 	ElderItem True
 	ItemLevel >= 84
-	DropLevel < 56
+	DropLevel < 58
 	SetFontSize 45
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 0 0 0 # Rare Recipe 60+
-	MinimapIcon 0 Green Star
+	MinimapIcon 0 Green Square
 	PlayEffect Green
 
 Show  # Elder Rares - 84+ - High Drop Level
@@ -2020,12 +2089,12 @@ Show  # Elder Rares - 84+ - High Drop Level
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 200 50 255 # Shaper Elder 83+
 	PlayAlertSound 4 200 # Shaper Elder
-	MinimapIcon 0 Green Star
+	MinimapIcon 0 Green Square
 	PlayEffect Green
 
 Show  # Elder Rares - 60+ - Low Drop Level
 	ElderItem True
-	DropLevel < 56
+	DropLevel < 58
 	SetFontSize 40
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 0 0 0 # Shaper Elder
@@ -2035,7 +2104,7 @@ Show  # Elder Rares - 60+ - High Drop Level
 	SetFontSize 40
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 0 0 0 # Shaper Elder
-	MinimapIcon 0 Green Star
+	MinimapIcon 0 Green Square
 	PlayEffect Green
 
 ##########################################
@@ -2247,7 +2316,7 @@ Show  # Gems - Quality - 17%+
 	SetBackgroundColor 255 255 255 255 # Gem (High)
 	SetBorderColor 50 220 180 # Gem (High)
 	PlayAlertSound 6 200 # Gem
-	MinimapIcon 0 Yellow Diamond
+	MinimapIcon 0 Yellow Star
 	PlayEffect Yellow
 
 Show  # Gems - Leveled - High Value
@@ -2259,7 +2328,7 @@ Show  # Gems - Leveled - High Value
 	SetBackgroundColor 255 255 255 255 # Gem (High)
 	SetBorderColor 50 220 180 # Gem (High)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Diamond
+	MinimapIcon 0 Red Star
 	PlayEffect Red
 
 Show  # Gems - Item Quantity
@@ -2271,7 +2340,7 @@ Show  # Gems - Item Quantity
 	SetBackgroundColor 255 255 255 255 # Gem (High)
 	SetBorderColor 50 220 180 # Gem (High)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Diamond
+	MinimapIcon 0 Red Star
 	PlayEffect Red
 
 #-----#
@@ -2286,7 +2355,7 @@ Show  # Gems - Leveled - Level 20
 	SetBackgroundColor 10 35 30 # Gem (Mid)
 	SetBorderColor 50 220 180 # Gem (Mid)
 	PlayAlertSound 6 200 # Gem
-	MinimapIcon 0 Yellow Diamond
+	MinimapIcon 0 Yellow Star
 	PlayEffect Yellow
 
 Show  # Gems - Leveled - Level 19
@@ -2297,7 +2366,7 @@ Show  # Gems - Leveled - Level 19
 	SetBackgroundColor 10 35 30 # Gem (Mid)
 	SetBorderColor 50 220 180 # Gem (Mid)
 	PlayAlertSound 6 200 # Gem
-	MinimapIcon 0 Yellow Diamond
+	MinimapIcon 0 Yellow Star
 	PlayEffect Yellow
 
 Show  # Gems - Quality - 10%+
@@ -2308,7 +2377,7 @@ Show  # Gems - Quality - 10%+
 	SetBackgroundColor 50 50 50 # Gem Quality (Mid)
 	SetBorderColor 200 200 200 # Gem Quality (Mid)
 	PlayAlertSound 6 200 # Gem
-	MinimapIcon 0 Yellow Diamond
+	MinimapIcon 0 Yellow Star
 	PlayEffect Yellow
 
 Show  # Gems - Drop Only - 1c+
@@ -2573,7 +2642,6 @@ Show  # Maps - Scarabs - Low
 	MinimapIcon 0 Blue Hexagon
 	PlayEffect Blue
 
-
 Show  # Maps - Fragments - Low Value
 	Class "Map Fragments"
 	BaseType "Sacrifice at Dusk" "Sacrifice at Dawn" "Sacrifice at Noon"
@@ -2618,7 +2686,7 @@ Show  # Uniques - 10c+
 	SetBackgroundColor 255 255 255 255 # Unique (10c+)
 	SetBorderColor 255 128 64 # Unique (10c+)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Star
+	MinimapIcon 0 Red Square
 	PlayEffect Red
 
 #-------#
@@ -2636,7 +2704,7 @@ Show  # Uniques - 2-10c
 	SetBackgroundColor 50 25 12 # Unique
 	SetBorderColor 255 255 255 # Unique (2-10c)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Brown Star
+	MinimapIcon 0 Brown Square
 	PlayEffect Brown
 
 #------#
@@ -2653,7 +2721,7 @@ Show  # Uniques - 1-2c
 	SetBackgroundColor 50 25 12 # Unique
 	SetBorderColor 255 255 0 # Unique (1-2c)
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Brown Star
+	MinimapIcon 0 Brown Square
 	PlayEffect Brown
 
 # Loreweave (60x rings)
@@ -2665,7 +2733,7 @@ Show  # Uniques - 1-2c
 	SetBackgroundColor 50 25 12 # Unique
 	SetBorderColor 255 255 0 # Unique (1-2c)
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Brown Star
+	MinimapIcon 0 Brown Square
 	PlayEffect Brown
 
 #-----#
@@ -2682,7 +2750,7 @@ Show  # Uniques - <1c - ilvl <67
 	SetBackgroundColor 50 25 12 # Unique
 	SetBorderColor 180 90 45 # Unique (<1c)
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Brown Star
+	MinimapIcon 0 Brown Square
 	PlayEffect Brown
 
 Show  # Uniques - <1c - Boss Prophecy
@@ -2701,7 +2769,7 @@ Show  # Uniques - <1c - Shared
 	SetBackgroundColor 50 25 12 # Unique
 	SetBorderColor 180 90 45 # Unique (<1c)
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Brown Star
+	MinimapIcon 0 Brown Square
 	PlayEffect Brown
 
 Show  # Uniques - <1c - Crafted Fated Purchased
@@ -3139,8 +3207,8 @@ Show  # Crafting Bases - 70+ Drop Level (High) - 84+
 	SetBackgroundColor 255 255 255 255 # Crafting Base 84+ (High)
 	SetBorderColor 0 255 255 # Crafting Base 84+ (High)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Green Star
-	PlayEffect Green
+	MinimapIcon 0 Red Square
+	PlayEffect Red
 
 Show  # Crafting Bases - 70+ Drop Level (High) - Other
 	DropLevel >= 72
@@ -3150,8 +3218,8 @@ Show  # Crafting Bases - 70+ Drop Level (High) - Other
 	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
 	SetBorderColor 0 255 255 # Crafting Base (High)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Green Star
-	PlayEffect Green
+	MinimapIcon 0 Red Square
+	PlayEffect Red
 
 Show  # Crafting Bases - 70+ Drop Level (Mid) - 84+ Normal/Magic
 	DropLevel >= 70
@@ -3275,6 +3343,25 @@ Hide  # Normal/Magic - Leveling - Jewelry
 	ItemLevel < 25
 	SetFontSize 32
 
+#--------#
+# 4 Link #
+#--------#
+
+Hide  # Normal/Magic - Leveling - 4 Link Armour - < 35
+	LinkedSockets >= 4
+	ItemLevel < 35
+	Class Gloves Boots Helmets "Body Armours"
+	Rarity <= Magic
+	SetFontSize 32
+	SetBorderColor 40 80 150 # 3-4 Link
+
+Hide  # Normal/Magic - Leveling - 4 Link Armour - < 60
+	LinkedSockets >= 4
+	ItemLevel < 60
+	Class Gloves Boots Helmets "Body Armours"
+	Rarity <= Magic
+	SetFontSize 32
+
 #----------------#
 # Low Drop Level #
 #----------------#
@@ -3319,24 +3406,9 @@ Hide  # Normal/Magic - Low Drop Level - 25+
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
 
-#----------#
-# 3-4 Link #
-#----------#
-
-Hide  # Normal/Magic - Leveling - 4 Link Armour - < 35
-	LinkedSockets >= 4
-	ItemLevel < 35
-	Class Gloves Boots Helmets "Body Armours"
-	Rarity <= Magic
-	SetFontSize 32
-	SetBorderColor 40 80 150 # 3-4 Link
-
-Hide  # Normal/Magic - Leveling - 4 Link Armour - < 60
-	LinkedSockets >= 4
-	ItemLevel < 60
-	Class Gloves Boots Helmets "Body Armours"
-	Rarity <= Magic
-	SetFontSize 32
+#--------#
+# 3 Link #
+#--------#
 
 Hide  # Normal/Magic - Leveling - 3 Link Armour - < 10
 	LinkedSockets >= 3
@@ -4411,7 +4483,7 @@ Show  # Errors - 75+
 	SetBackgroundColor 255 0 0 255 # Error
 	SetBorderColor 0 255 0 # Error
 	PlayAlertSound 8 200 # Error
-	MinimapIcon 0 White Star
+	MinimapIcon 0 White Square
 	PlayEffect White
 
 ##########################################
@@ -4913,7 +4985,7 @@ Show  # Errors - 60+
 	SetBackgroundColor 255 0 0 255 # Error
 	SetBorderColor 0 255 0 # Error
 	PlayAlertSound 8 200 # Error
-	MinimapIcon 0 White Star
+	MinimapIcon 0 White Square
 	PlayEffect White
 
 ##########################################
@@ -5040,5 +5112,5 @@ Show  # Errors - Other
 	SetBackgroundColor 255 0 0 255 # Error
 	SetBorderColor 0 255 0 # Error
 	PlayAlertSound 8 200 # Error
-	MinimapIcon 0 White Star
+	MinimapIcon 0 White Square
 	PlayEffect White

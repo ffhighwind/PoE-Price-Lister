@@ -1,6 +1,15 @@
 ---------------------------------------------------------------------------------------------------------------
 | Betrayal
 ---------------------------------------------------------------------------------------------------------------
+3.5.2
+? Fixed a map fragment bug with the regular filter.
+? Fixed a few inconsistencies between filters using a diff check.
+? Changed most equipment icons from star to square.
+? Changed crafting bases from green to blue. Valuable ones like Steel Rings are now red. Shaper/Elder items are still green.
+? Changed the icon of jewels and gems to star.
+? Reduced the background color and text size of most low value crafting bases.
+? Added all 4-links when leveling. Previously some low level ones were hidden.
+
 3.5.1
 ? Added 9/14 new uniques
 ? Added 5 new Divination Cards + The Nurse
