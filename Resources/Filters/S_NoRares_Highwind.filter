@@ -1614,7 +1614,7 @@ Show  # Explicit Mods - Shaper/Elder - Magic
 #	SetFontSize 36
 #	SetBackgroundColor 50 20 70 230 # Shaper Elder
 #	SetBorderColor 200 50 255 # Shaper Elder 83+
-#	MinimapIcon 0 Blue Green
+#	MinimapIcon 0 Green Square
 #	PlayEffect Green
 #Disabled Block End
 
