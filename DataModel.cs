@@ -164,9 +164,12 @@ namespace PoE_Price_Lister
         private void LoadCsv()
         {
             try {
-                FileHelperEngine<UniqueBaseTypeCsv> engine = new FileHelperEngine<UniqueBaseTypeCsv>(Encoding.UTF7);
-                UniqueBaseTypeCsv[] records = engine.ReadString(ReadWebPage(uniquesCsvURL, "", Encoding.UTF7));
-                HashSet<string> baseTypes = new HashSet<string>();
+                FileHelperEngine<UniqueBaseTypeCsv> engine = new FileHelperEngine<UniqueBaseTypeCsv>(Encoding.UTF8);
+				string csvText = new FileInfo("poe_uniques.csv").Exists ? 
+					File.ReadAllText("poe_uniques.csv", Encoding.UTF8) 
+					: ReadWebPage(uniquesCsvURL, "", Encoding.UTF8);
+				UniqueBaseTypeCsv[] records = engine.ReadString(csvText);
+				HashSet<string> baseTypes = new HashSet<string>();
                 foreach (UniqueBaseTypeCsv data in records) {
 
                     if (!baseTypes.Contains(data.BaseType)) {

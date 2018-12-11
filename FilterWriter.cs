@@ -46,7 +46,7 @@ namespace PoE_Price_Lister
             "\tSetBackgroundColor 50 25 12 # Unique\n" +
             "\tSetBorderColor 180 90 45 # Unique (<1c)\n" +
             "\tPlayAlertSound 4 200 # Mid Value\n" +
-            "\tMinimapIcon 0 Brown Star\n" +
+            "\tMinimapIcon 0 Brown Square\n" +
             "\tPlayEffect Brown";
 
         private const string loreweaveStr =
@@ -59,7 +59,7 @@ namespace PoE_Price_Lister
             "\tSetBackgroundColor 50 25 12 # Unique\n" +
             "\tSetBorderColor 255 255 0 # Unique (1-2c)\n" +
             "\tPlayAlertSound 4 200 # Mid Value\n" +
-            "\tMinimapIcon 0 Brown Star\n" +
+			"\tMinimapIcon 0 Brown Square\n" +
             "\tPlayEffect Brown";
 
         private const string style10c =
@@ -68,7 +68,7 @@ namespace PoE_Price_Lister
             "\tSetBackgroundColor 255 255 255 255 # Unique (10c+)\n" +
             "\tSetBorderColor 255 128 64 # Unique (10c+)\n" +
             "\tPlayAlertSound 1 200 # High Value\n" +
-            "\tMinimapIcon 0 Red Star\n" +
+			"\tMinimapIcon 0 Red Square\n" +
             "\tPlayEffect Red";
 
         private const string style2to10c =
@@ -77,7 +77,7 @@ namespace PoE_Price_Lister
             "\tSetBackgroundColor 50 25 12 # Unique\n" +
             "\tSetBorderColor 255 255 255 # Unique (2-10c)\n" +
             "\tPlayAlertSound 1 200 # High Value\n" +
-            "\tMinimapIcon 0 Brown Star\n" +
+			"\tMinimapIcon 0 Brown Square\n" +
             "\tPlayEffect Brown";
 
         private const string style1c =
@@ -86,7 +86,7 @@ namespace PoE_Price_Lister
             "\tSetBackgroundColor 50 25 12 # Unique\n" +
             "\tSetBorderColor 255 255 0 # Unique (1-2c)\n" +
             "\tPlayAlertSound 4 200 # Mid Value\n" +
-            "\tMinimapIcon 0 Brown Star\n" +
+			"\tMinimapIcon 0 Brown Square\n" +
             "\tPlayEffect Brown";
 
         private const string styleLess1c =
@@ -95,7 +95,7 @@ namespace PoE_Price_Lister
             "\tSetBackgroundColor 50 25 12 # Unique\n" +
             "\tSetBorderColor 180 90 45 # Unique (<1c)\n" +
             "\tPlayAlertSound 4 200 # Mid Value\n" +
-            "\tMinimapIcon 0 Brown Star\n" +
+			"\tMinimapIcon 0 Brown Square\n" +
             "\tPlayEffect Brown";
 
         private const string uniqueNewOrWorthless =
@@ -106,7 +106,7 @@ namespace PoE_Price_Lister
             "\tSetBackgroundColor 50 25 12 # Unique\n" +
             "\tSetBorderColor 180 90 45 # Unique (<1c)\n" +
             "\tPlayAlertSound 4 200 # Mid Value\n" +
-            "\tMinimapIcon 0 Brown Star\n" +
+			"\tMinimapIcon 0 Brown Square\n" +
             "\tPlayEffect Brown";
 
         private const string styleDiv10c =

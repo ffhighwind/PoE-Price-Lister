@@ -1,4 +1,4 @@
-BaseType,Name,League,Usage,Unobtainable,Source
+ï»¿BaseType,Name,League,Usage,Unobtainable,Source
 Abyssal Axe,Ngamahu's Flame,,,,
 Agate Amulet,Extractor Mentis,,,,
 Agate Amulet,Shaper's Seed,,,,
@@ -203,7 +203,7 @@ Full Scale Armour,Viper's Scales,,,,Labyrinth
 Full Wyrmscale,Belly of the Beast,,,,
 Gavel,Cameria's Avarice,,,,Fated
 Gavel,Cameria's Maul,,Prophecy,,
-Gavel,Mjölner,,,,
+Gavel,MjÃ¶lner,,,,
 Gemstone Sword,Fate of the Vaal,Incursion,,,Crafted
 Gilded Sallet,Deidbell,,Prophecy,,
 Gilded Sallet,Deidbellow,,,,Fated
@@ -372,9 +372,9 @@ Long Bow,Storm Cloud,,Prophecy,,
 Long Bow,The Tempest,,,,Fated
 Long Staff,Pillar of the Caged God,,,,
 Lunaris Circlet,Doedre's Scorn,,,,
-Maelström Staff,Disintegrator,,,,Uber Elder
-Maelström Staff,Duskdawn,,,,Crafted
-Maelström Staff,Taryn's Shiver,,,,
+MaelstrÃ¶m Staff,Disintegrator,,,,Uber Elder
+MaelstrÃ¶m Staff,Duskdawn,,,,Crafted
+MaelstrÃ¶m Staff,Taryn's Shiver,,,,
 Magistrate Crown,Craiceann's Chitin,Bestiary,,,Craiceann
 Magistrate Crown,Mask of the Stitched Demon,Incursion,,,Crafted
 Marble Amulet,Bloodgrip,,,,
@@ -757,4 +757,4 @@ Necromancer Circlet,The Devouring Diadem,,,,
 Solaris Circlet,Thundersight,,,,
 Solaris Circlet,Galesight,,,,
 Solaris Circlet,Flamesight,,,,
-Tarnished Spirit Shield,Whakatutuki o Matua,,,Fated
+Tarnished Spirit Shield,Whakatutuki o Matua,,,,Fated
