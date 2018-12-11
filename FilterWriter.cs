@@ -247,7 +247,10 @@ namespace PoE_Price_Lister
                 UniqueValue expectedVal = entry.ExpectedFilterValue;
                 UniqueValue filterVal = entry.FilterValue;
                 string outputBaseTy = baseTy;
-                //int index = baseTy.IndexOf('ö');
+                int index = baseTy.IndexOf('ö');
+				if(index > 0) {
+					outputBaseTy = outputBaseTy.Substring(0, index);
+				}
                 UniqueBaseType entryHC = UniquesHC[baseTy];
                 UniqueValue expectedValHC = entryHC.ExpectedFilterValue;
 

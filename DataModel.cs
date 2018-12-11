@@ -378,7 +378,7 @@ namespace PoE_Price_Lister
                     else {
                         unique = new UniqueBaseType(baseTy);
                         data.Uniques.Add(baseTy, unique);
-                        MessageBox.Show("Filter: unknown basetype: " + unique.BaseType + "\n\"" + string.Join("\" \"", baseTypes) + "\"", "Error", MessageBoxButtons.OK);
+                        MessageBox.Show("Filter: unknown basetype: " + unique.BaseType, "Error", MessageBoxButtons.OK);
                         Environment.Exit(1);
                     }
                 }
