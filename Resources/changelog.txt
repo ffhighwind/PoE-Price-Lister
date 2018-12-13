@@ -1,6 +1,15 @@
 ---------------------------------------------------------------------------------------------------------------
 | Betrayal
 ---------------------------------------------------------------------------------------------------------------
+3.5.4
+? Fixed colors of all maps.
+
+3.5.3
+? Added 13/13 of the new uniques and the new fated unique.
+? Updated unique/divination card values.
+? Updated the Price Lister and changed the csv to UTF8.
+? KNOWN ISSUE: I know that the map colors are not correct. This is a bug that is also affecting Elder spawns, and has nothing to do with my filter. To fix this issue I may have to type in every map name, but I am going to wait a week in hopes that they fix it.
+
 3.5.2
 ? Fixed a map fragment bug with the regular filter.
 ? Fixed a few inconsistencies between filters using a diff check.

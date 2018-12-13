@@ -1,7 +1,7 @@
 ﻿############################################
-##     HIGHWIND'S STRICT FILTER 3.5.3     ##
+##     HIGHWIND'S STRICT FILTER 3.5.4     ##
 ############################################
-## Release Date: December 10, 2018        ##
+## Release Date: December 12, 2018        ##
 ############################################
 
 #--------------#
@@ -2493,7 +2493,7 @@ Show  # Maps - T16 (Elder)
 
 Show  # Maps - T11+ (Red) - Shaped
 	ShapedMap True
-	DropLevel >= 73
+	BaseType Volcano Precinct "Sulphur Vents" "Ashen Wood" Academy "Haunted Mansion" Phantasmagoria Temple Wharf Canyon Fields "Lava Chamber" Conservatory Geode "Primordial Pool" "Underground River" Cells Bazaar Arcade "Toxic Sewer" Ghetto Dunes "Overgrown Ruin" Sepulchre "Mineral Pools" Promenade Laboratory Shore "Arachnid Nest" "Mud Geyser" Wasteland Orchard "Infested Valley" Waterways Arena Museum Vault "Moon Temple" "Relic Chambers" "Ancient City" Scriptorium Cemetery "Waste Pool" "Tropical Island" Belfry Leyline "Coral Ruins" Coves Pit Plaza Plateau Pier "Spider Forest" Estuary
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (Red)
 	SetBackgroundColor 255 0 0 220 # Map (Red)
@@ -2504,7 +2504,7 @@ Show  # Maps - T11+ (Red) - Shaped
 
 Show  # Maps - T11+ (Red) - Other
 	Class Maps
-	DropLevel >= 78
+	BaseType "Arachnid Tomb" Mesa "Crystal Ore" "Burial Chambers" Park Siege Bog Factory Chateau Lair Villa Colonnade Necropolis "Defiled Cathedral" Malformation Arsenal "Overgrown Shrine" "Ivory Temple" "Castle Ruins" "Acid Caverns" Reef Core Racecourse Caldera Colosseum Shrine Dig "Crimson Temple" "Dark Forest" Palace "Sunken City" Basilica Courthouse Carcass Terrace Tower "Desert Spring" "Lava Lake" "Primordial Blocks" Summit
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (Red)
 	SetBackgroundColor 255 0 0 220 # Map (Red)
@@ -2519,7 +2519,7 @@ Show  # Maps - T11+ (Red) - Other
 
 Show  # Maps - T6+ (Yellow) - Silent - T6-8 in T13+ - Shaped
 	ShapedMap True
-	DropLevel < 71
+	BaseType Atoll Channel Flooded Mine Ramparts "Arid Lake" Iceberg Armoury Thicket Dungeon Pen "Fungal Hollow" Grotto "Cursed Crypt" Graveyard Excavation Desert Shipyard Peninsula "Bone Crypt" Cage 
 	ItemLevel >= 80
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (Yellow)
@@ -2529,8 +2529,7 @@ Show  # Maps - T6+ (Yellow) - Silent - T6-8 in T13+ - Shaped
 
 Show  # Maps - T6+ (Yellow) - Silent - T6-8 in T13+ - Other
 	Class Maps
-	DropLevel >= 73
-	DropLevel < 76
+	BaseType Volcano Precinct "Sulphur Vents" "Ashen Wood" Academy "Haunted Mansion" Phantasmagoria Temple Wharf Canyon Fields "Lava Chamber" Conservatory Geode "Primordial Pool" "Underground River" Cells Bazaar Arcade "Toxic Sewer" Ghetto Dunes "Overgrown Ruin" Sepulchre "Mineral Pools" Promenade Laboratory Shore "Arachnid Nest" "Mud Geyser" Wasteland Orchard "Infested Valley" 
 	ItemLevel >= 80
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (Yellow)
@@ -2540,7 +2539,7 @@ Show  # Maps - T6+ (Yellow) - Silent - T6-8 in T13+ - Other
 
 Show  # Maps - T6+ (Yellow) - Sound - Shaped
 	ShapedMap True
-	DropLevel < 73
+	BaseType Atoll Channel Flooded Mine Ramparts "Arid Lake" Iceberg Armoury Thicket Dungeon Pen "Fungal Hollow" Grotto "Cursed Crypt" Graveyard Excavation Desert Shipyard Peninsula "Bone Crypt" Cage Marshes Lighthouse Crater Glacier Strand "Spider Lair" Lookout Courtyard Barrows Beach "Underground Sea" "Jungle Valley" Mausoleum Alleyways Maze Port Residence Gardens "Vaal Pyramid" "City Square"
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (Yellow)
 	SetBackgroundColor 255 255 0 200 # Map (Yellow)
@@ -2551,7 +2550,7 @@ Show  # Maps - T6+ (Yellow) - Sound - Shaped
 
 Show  # Maps - T6+ (Yellow) - Sound - Other
 	Class Maps
-	DropLevel >= 73
+	BaseType Volcano Precinct "Sulphur Vents" "Ashen Wood" Academy "Haunted Mansion" Phantasmagoria Temple Wharf Canyon Fields "Lava Chamber" Conservatory Geode "Primordial Pool" "Underground River" Cells Bazaar Arcade "Toxic Sewer" Ghetto Dunes "Overgrown Ruin" Sepulchre "Mineral Pools" Promenade Laboratory Shore "Arachnid Nest" "Mud Geyser" Wasteland Orchard "Infested Valley" Waterways Arena Museum Vault "Moon Temple" "Relic Chambers" "Ancient City" Scriptorium Cemetery "Waste Pool" "Tropical Island" Belfry Leyline "Coral Ruins" Coves Pit Plaza Plateau Pier "Spider Forest" Estuary
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (Yellow)
 	SetBackgroundColor 255 255 0 200 # Map (Yellow)
@@ -2566,7 +2565,7 @@ Show  # Maps - T6+ (Yellow) - Sound - Other
 
 Show  # Maps - T1+ (White) - Silent - T1-5 in T9+
 	Class Maps
-	DropLevel < 73
+	BaseType Atoll Channel Flooded Mine Ramparts "Arid Lake" Iceberg Armoury Thicket Dungeon Pen "Fungal Hollow" Grotto "Cursed Crypt" Graveyard Excavation Desert Shipyard Peninsula "Bone Crypt" Cage Marshes Lighthouse Crater Glacier Strand "Spider Lair" Lookout Courtyard Barrows Beach "Underground Sea" "Jungle Valley" Mausoleum Alleyways Maze Port Residence Gardens "Vaal Pyramid" "City Square"
 	ItemLevel >= 76
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (White)
@@ -2576,7 +2575,7 @@ Show  # Maps - T1+ (White) - Silent - T1-5 in T9+
 
 Show  # Maps - T1+ (White) - Silent - T1-3 in T6+
 	Class Maps
-	DropLevel < 71
+	BaseType Atoll Channel Flooded Mine Ramparts "Arid Lake" Iceberg Armoury Thicket Dungeon Pen "Fungal Hollow" Grotto "Cursed Crypt" Graveyard Excavation Desert Shipyard Peninsula "Bone Crypt" Cage 
 	ItemLevel >= 73
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (White)
