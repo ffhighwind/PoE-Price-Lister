@@ -1,6 +1,11 @@
 ---------------------------------------------------------------------------------------------------------------
 | Betrayal
 ---------------------------------------------------------------------------------------------------------------
+3.5.5
+? Fixed map colors: Spider Lair.
+? Fixed elder/shaper unique text color.
+? Updated unique/divination card values.
+
 3.5.4
 ? Fixed colors of all maps.
 
