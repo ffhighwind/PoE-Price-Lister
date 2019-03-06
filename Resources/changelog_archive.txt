@@ -1,4 +1,59 @@
 ---------------------------------------------------------------------------------------------------------------
+| Betrayal
+---------------------------------------------------------------------------------------------------------------
+
+3.5.5
+? Fixed map colors: Spider Lair.
+? Fixed elder/shaper unique text color.
+? Updated unique/divination card values.
+? Removed the border of Veiled items.
+
+3.5.4
+? Fixed colors of all maps.
+
+3.5.3
+? Added 13/13 of the new uniques and the new fated unique.
+? Updated unique/divination card values.
+? Updated the Price Lister and changed the csv to UTF8.
+? KNOWN ISSUE: I know that the map colors are not correct. This is a bug that is also affecting Elder spawns, and has nothing to do with my filter. To fix this issue I may have to type in every map name, but I am going to wait a week in hopes that they fix it.
+
+3.5.2
+? Fixed a map fragment bug with the regular filter.
+? Fixed a few inconsistencies between filters using a diff check.
+? Changed most equipment icons from star to square.
+? Changed crafting bases from green to blue. Valuable ones like Steel Rings are now red. Shaper/Elder items are still green.
+? Changed the icon of jewels and gems to star.
+? Reduced the background color and text size of most low value crafting bases.
+? Added all 4-links when leveling. Previously some low level ones were hidden.
+
+3.5.1
+? Added 9/14 new uniques
+? Added 5 new Divination Cards + The Nurse
+? Added new Map Fragments: Rusted/Polished/Gilded Scarabs (1) (2)
+? Added new prefix mods:
+Veiled
+Leo's Veiled
+Catarina's Veiled
+Elreon's Veiled
+Vorici's Veiled
+Haku's Veiled
+Tora's Veiled
+Vagan's Veiled
+Guff's Veiled
+It That Fled's Veiled
+Gravicius' Veiled
+Korell's Veiled
+Rin's Veiled
+? Added new suffix mods:
+of the Veil
+of Janus' Veil
+of Hillock's Veil
+of Jorgin's Veil
+of Cameria's Veil
+of Aisling's Veil
+of Riker's Veil
+
+---------------------------------------------------------------------------------------------------------------
 | Delve
 ---------------------------------------------------------------------------------------------------------------
 

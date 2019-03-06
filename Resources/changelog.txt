@@ -5,6 +5,7 @@
 ? Fixed map colors: Spider Lair.
 ? Fixed elder/shaper unique text color.
 ? Updated unique/divination card values.
+? Removed the border of Veiled items.
 
 3.5.4
 ? Fixed colors of all maps.

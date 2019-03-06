@@ -1,7 +1,7 @@
 ############################################
-##  HIGHWIND'S VERY STRICT FILTER 3.5.5   ##
+##  HIGHWIND'S VERY STRICT FILTER 3.6.1   ##
 ############################################
-## Release Date: December 18, 2018        ##
+## Release Date: March 5, 2019            ##
 ############################################
 
 #--------------#
@@ -1789,10 +1789,72 @@ Show  # Explicit Mods - Jewels
 	MinimapIcon 0 Blue Star
 	PlayEffect Blue
 
-Show  # Explicit Mods - Veiled
-	HasExplicitMod "Veiled" "'s Veiled" "'s Veil" "of the Veil"
+Show  # Explicit Mods - Enchanted
+	AnyEnchantment True
 	Rarity <= Rare
+	SetFontSize 40
+	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
+	SetBorderColor 0 0 0 # Crafting Base (Mid)
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+
+# Betrayal
+Hide  # Explicit Mods - Veiled - Magic
+	HasExplicitMod "Veiled" "'s Veiled" "'s Veil" "of the Veil"
+	Rarity <= Magic
 	SetFontSize 36
+	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
+	SetBorderColor 0 0 0 # Crafting Base (Mid)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+
+Hide  # Explicit Mods - Veiled - Rare
+	HasExplicitMod "Veiled" "'s Veiled" "'s Veil" "of the Veil"
+	Rarity = Rare
+	SetFontSize 36
+	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
+	SetBorderColor 0 0 0 # Crafting Base (Mid)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+
+# Synthesis
+Show  # Explicit Mods - Synthesised - Magic
+	SynthesisedItem True
+	Rarity <= Magic
+	SetFontSize 36
+	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
+	SetBorderColor 0 0 0 # Crafting Base (Mid)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 1 Blue Square
+	PlayEffect Blue
+
+Show  # Explicit Mods - Synthesised - Rare
+	SynthesisedItem True
+	Rarity = Rare
+	SetFontSize 40
+	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
+	SetBorderColor 0 0 0 # Crafting Base (Mid)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+
+# Fractured
+Show  # Explicit Mods - Fractured - Magic
+	FracturedItem True
+	Rarity <= Magic
+	SetFontSize 36
+	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
+	SetBorderColor 0 0 0 # Crafting Base (Mid)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 1 Blue Square
+	PlayEffect Blue
+
+Show  # Explicit Mods - Fractured - Rare
+	FracturedItem True
+	Rarity = Rare
+	SetFontSize 40
 	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
 	SetBorderColor 0 0 0 # Crafting Base (Mid)
 	PlayAlertSound 4 200 # Mid Value
@@ -2558,7 +2620,7 @@ Show  # Maps - Uniques - Low Value
 # Red #
 #-----#
 
-Show  # Maps - T16 (Guardians)
+Show  # Maps - T16 (Guardians, Vaal Temple)
 	Class Maps
 	DropLevel >= 83
 	SetFontSize 45
@@ -2581,7 +2643,7 @@ Show  # Maps - T16 (Elder)
 
 Show  # Maps - T11+ (Red) - Shaped
 	ShapedMap True
-	BaseType Volcano Precinct "Sulphur Vents" "Ashen Wood" Academy "Haunted Mansion" Phantasmagoria Temple Wharf Canyon Fields "Lava Chamber" Conservatory Geode "Primordial Pool" "Underground River" Cells Bazaar Arcade "Toxic Sewer" Ghetto Dunes "Overgrown Ruin" Sepulchre "Mineral Pools" Promenade Laboratory Shore "Arachnid Nest" "Mud Geyser" Wasteland Orchard "Infested Valley" Waterways Arena Museum Vault "Moon Temple" "Relic Chambers" "Ancient City" Scriptorium Cemetery "Waste Pool" "Tropical Island" Belfry Leyline "Coral Ruins" Coves Pit Plaza Plateau Pier "Spider Forest" Estuary
+	BaseType "Residence", "Geode", "Sepulchre", "Vault", "Promenade", "Lair", "Primordial Pool", "Pit", "Overgrown Shrine", "Necropolis", "Fields", "Academy", "Bone Crypt", "Bazaar", "Mud Geyser", "Shore", "Mineral Pools", "Estuary", "Pier", "Spider Forest", "Ghetto", "Volcano", "Lighthouse", "Conservatory", "Toxic Sewer", "Phantasmagoria", "Cemetery", "Lava Chamber", "Dunes", "Arachnid Tomb", "Orchard", "Waterways", "Cells", "Canyon", "Coral Ruins", "Underground River", "Laboratory", "Vaal Pyramid", "Tropical Island", "Temple", "Museum", "Castle Ruins", "Villa", "Relic Chambers", "Chateau", "Wharf", "Arachnid Nest", "Overgrown Ruin", "Moon Temple", "Plateau", "Scriptorium", "Factory", "Mesa", "Infested Valley"
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (Red)
 	SetBackgroundColor 255 0 0 220 # Map (Red)
@@ -2592,7 +2654,7 @@ Show  # Maps - T11+ (Red) - Shaped
 
 Show  # Maps - T11+ (Red) - Other
 	Class Maps
-	BaseType "Arachnid Tomb" Mesa "Crystal Ore" "Burial Chambers" Park Siege Bog Factory Chateau Lair Villa Colonnade Necropolis "Defiled Cathedral" Malformation Arsenal "Overgrown Shrine" "Ivory Temple" "Castle Ruins" "Acid Caverns" Reef Core Racecourse Caldera Colosseum Shrine Dig "Crimson Temple" "Dark Forest" Palace "Sunken City" Basilica Courthouse Carcass Terrace Tower "Desert Spring" "Lava Lake" "Primordial Blocks" Summit
+	BaseType "Arena", "Wasteland", "Bog", "Coves", "Arsenal", "Desert Spring", "Dig", "Palace", "Basilica", "Courthouse", "Precinct", "Crystal Ore", "Malformation", "Terrace", "Acid Caverns", "Sunken City", "Reef", "Carcass", "Gardens", "Tower", "Siege", "Shipyard", "Colonnade", "Summit", "Park", "Colosseum", "Crimson Temple", "Ivory Temple", "Belfry", "Primordial Blocks", "Racecourse", "Caldera", "Shrine", "Plaza", "Waste Pool", "Defiled Cathedral", "Core", "Dark Forest", "Lava Lake"
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (Red)
 	SetBackgroundColor 255 0 0 220 # Map (Red)
@@ -2607,7 +2669,7 @@ Show  # Maps - T11+ (Red) - Other
 
 Show  # Maps - T6+ (Yellow) - Silent - T6-8 in T12+ - Shaped
 	ShapedMap True
-	BaseType Atoll Channel Flooded Mine Ramparts "Arid Lake" Iceberg Armoury Thicket Dungeon Pen "Fungal Hollow" Grotto "Cursed Crypt" Graveyard Excavation Desert Shipyard Peninsula "Bone Crypt" Cage 
+	BaseType "Iceberg", "Fungal Hollow", "Cursed Crypt", "Dungeon", "Excavation", "Peninsula", "Strand", "Haunted Mansion", "Ramparts", "Desert", "Arid Lake", "Leyline", "Maze", "Channel", "Spider Lair", "Barrows", "Jungle Valley", "Ashen Wood", "Atoll", "Lookout" 
 	ItemLevel >= 79
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (Yellow)
@@ -2617,7 +2679,7 @@ Show  # Maps - T6+ (Yellow) - Silent - T6-8 in T12+ - Shaped
 
 Show  # Maps - T6+ (Yellow) - Silent - T6-8 in T12+ - Other
 	Class Maps
-	BaseType Volcano Precinct "Sulphur Vents" "Ashen Wood" Academy "Haunted Mansion" Phantasmagoria Temple Wharf Canyon Fields "Lava Chamber" Conservatory Geode "Primordial Pool" "Underground River" Cells Bazaar Arcade "Toxic Sewer" Ghetto Dunes "Overgrown Ruin" Sepulchre "Mineral Pools" Promenade Laboratory Shore "Arachnid Nest" "Mud Geyser" Wasteland Orchard "Infested Valley" 
+	BaseType "Residence", "Geode", "Sepulchre", "Vault", "Promenade", "Lair", "Primordial Pool", "Pit", "Overgrown Shrine", "Necropolis", "Fields", "Academy", "Bone Crypt", "Bazaar", "Mud Geyser", "Shore", "Mineral Pools", "Estuary", "Pier", "Spider Forest", "Ghetto", "Volcano", "Lighthouse", "Conservatory", "Toxic Sewer", "Phantasmagoria", "Cemetery", "Lava Chamber", "Dunes", "Arachnid Tomb", "Orchard", "Waterways", "Cells"
 	ItemLevel >= 79
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (Yellow)
@@ -2627,7 +2689,7 @@ Show  # Maps - T6+ (Yellow) - Silent - T6-8 in T12+ - Other
 
 Show  # Maps - T6+ (Yellow) - Sound - Shaped
 	ShapedMap True
-	BaseType Atoll Channel Flooded Mine Ramparts "Arid Lake" Iceberg Armoury Thicket Dungeon Pen "Fungal Hollow" Grotto "Cursed Crypt" Graveyard Excavation Desert Shipyard Peninsula "Bone Crypt" Cage Marshes Lighthouse Crater Glacier Strand "Spider Lair" Lookout Courtyard Barrows Beach "Underground Sea" "Jungle Valley" Mausoleum Alleyways Maze Port Residence Gardens "Vaal Pyramid" "City Square"
+	BaseType "Iceberg", "Fungal Hollow", "Cursed Crypt", "Dungeon", "Excavation", "Peninsula", "Strand", "Haunted Mansion", "Ramparts", "Desert", "Arid Lake", "Leyline", "Maze", "Channel", "Spider Lair", "Barrows", "Jungle Valley", "Ashen Wood", "Atoll", "Lookout", "Beach", "Flooded Mine", "Port", "Arcade", "City Square", "Glacier", "Mausoleum", "Underground Sea", "Armoury", "Graveyard", "Pen", "Marshes", "Cage", "Grotto", "Sulphur Vents", "Ancient City", "Thicket", "Crater", "Courtyard", "Burial Chambers"
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (Yellow)
 	SetBackgroundColor 255 255 0 200 # Map (Yellow)
@@ -2638,7 +2700,7 @@ Show  # Maps - T6+ (Yellow) - Sound - Shaped
 
 Show  # Maps - T6+ (Yellow) - Sound - Other
 	Class Maps
-	BaseType Volcano Precinct "Sulphur Vents" "Ashen Wood" Academy "Haunted Mansion" Phantasmagoria Temple Wharf Canyon Fields "Lava Chamber" Conservatory Geode "Primordial Pool" "Underground River" Cells Bazaar Arcade "Toxic Sewer" Ghetto Dunes "Overgrown Ruin" Sepulchre "Mineral Pools" Promenade Laboratory Shore "Arachnid Nest" "Mud Geyser" Wasteland Orchard "Infested Valley" Waterways Arena Museum Vault "Moon Temple" "Relic Chambers" "Ancient City" Scriptorium Cemetery "Waste Pool" "Tropical Island" Belfry Leyline "Coral Ruins" Coves Pit Plaza Plateau Pier "Spider Forest" Estuary
+	BaseType "Residence", "Geode", "Sepulchre", "Vault", "Promenade", "Lair", "Primordial Pool", "Pit", "Overgrown Shrine", "Necropolis", "Fields", "Academy", "Bone Crypt", "Bazaar", "Mud Geyser", "Shore", "Mineral Pools", "Estuary", "Pier", "Spider Forest", "Ghetto", "Volcano", "Lighthouse", "Conservatory", "Toxic Sewer", "Phantasmagoria", "Cemetery", "Lava Chamber", "Dunes", "Arachnid Tomb", "Orchard", "Waterways", "Cells", "Canyon", "Coral Ruins", "Underground River", "Laboratory", "Vaal Pyramid", "Tropical Island", "Temple", "Museum", "Castle Ruins", "Villa", "Relic Chambers", "Chateau", "Wharf", "Arachnid Nest", "Overgrown Ruin", "Moon Temple", "Plateau", "Scriptorium", "Factory", "Mesa", "Infested Valley"
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (Yellow)
 	SetBackgroundColor 255 255 0 200 # Map (Yellow)
@@ -2653,7 +2715,7 @@ Show  # Maps - T6+ (Yellow) - Sound - Other
 
 Hide  # Maps - Low Drop Level - T1-5 in T11+
 	Class Maps
-	BaseType Atoll Channel Flooded Mine Ramparts "Arid Lake" Iceberg Armoury Thicket Dungeon Pen "Fungal Hollow" Grotto "Cursed Crypt" Graveyard Excavation Desert Shipyard Peninsula "Bone Crypt" Cage Marshes Lighthouse Crater Glacier Strand "Spider Lair" Lookout Courtyard Barrows Beach "Underground Sea" "Jungle Valley" Mausoleum Alleyways Maze Port Residence Gardens "Vaal Pyramid" "City Square"
+	BaseType "Iceberg", "Fungal Hollow", "Cursed Crypt", "Dungeon", "Excavation", "Peninsula", "Strand", "Haunted Mansion", "Ramparts", "Desert", "Arid Lake", "Leyline", "Maze", "Channel", "Spider Lair", "Barrows", "Jungle Valley", "Ashen Wood", "Atoll", "Lookout", "Beach", "Flooded Mine", "Port", "Arcade", "City Square", "Glacier", "Mausoleum", "Underground Sea", "Armoury", "Graveyard", "Pen", "Marshes", "Cage", "Grotto", "Sulphur Vents", "Ancient City", "Thicket", "Crater", "Courtyard", "Burial Chambers"
 	ItemLevel >= 78
 	SetFontSize 40
 	SetTextColor 0 0 0 # Map (White)
@@ -2663,7 +2725,7 @@ Hide  # Maps - Low Drop Level - T1-5 in T11+
 
 Hide  # Maps - Low Drop Level - T1-3 in T9+
 	Class Maps
-	BaseType Atoll Channel Flooded Mine Ramparts "Arid Lake" Iceberg Armoury Thicket Dungeon Pen "Fungal Hollow" Grotto "Cursed Crypt" Graveyard Excavation Desert Shipyard Peninsula "Bone Crypt" Cage 
+	BaseType "Iceberg", "Fungal Hollow", "Cursed Crypt", "Dungeon", "Excavation", "Peninsula", "Strand", "Haunted Mansion", "Ramparts", "Desert", "Arid Lake", "Leyline", "Maze", "Channel", "Spider Lair", "Barrows", "Jungle Valley", "Ashen Wood", "Atoll", "Lookout"
 	ItemLevel >= 76
 	SetFontSize 40
 	SetTextColor 0 0 0 # Map (White)
@@ -2673,7 +2735,7 @@ Hide  # Maps - Low Drop Level - T1-3 in T9+
 
 Show  # Maps - T1+ (White) - Silent - T1-5 in T9+
 	Class Maps
-	BaseType Atoll Channel Flooded Mine Ramparts "Arid Lake" Iceberg Armoury Thicket Dungeon Pen "Fungal Hollow" Grotto "Cursed Crypt" Graveyard Excavation Desert Shipyard Peninsula "Bone Crypt" Cage Marshes Lighthouse Crater Glacier Strand "Spider Lair" Lookout Courtyard Barrows Beach "Underground Sea" "Jungle Valley" Mausoleum Alleyways Maze Port Residence Gardens "Vaal Pyramid" "City Square"
+	BaseType "Iceberg", "Fungal Hollow", "Cursed Crypt", "Dungeon", "Excavation", "Peninsula", "Strand", "Haunted Mansion", "Ramparts", "Desert", "Arid Lake", "Leyline", "Maze", "Channel", "Spider Lair", "Barrows", "Jungle Valley", "Ashen Wood", "Atoll", "Lookout", "Beach", "Flooded Mine", "Port", "Arcade", "City Square", "Glacier", "Mausoleum", "Underground Sea", "Armoury", "Graveyard", "Pen", "Marshes", "Cage", "Grotto", "Sulphur Vents", "Ancient City", "Thicket", "Crater", "Courtyard", "Burial Chambers"
 	ItemLevel >= 76
 	SetFontSize 40
 	SetTextColor 0 0 0 # Map (White)
@@ -2683,7 +2745,7 @@ Show  # Maps - T1+ (White) - Silent - T1-5 in T9+
 
 Show  # Maps - T1+ (White) - Silent - T1-3 in T6+
 	Class Maps
-	BaseType Atoll Channel Flooded Mine Ramparts "Arid Lake" Iceberg Armoury Thicket Dungeon Pen "Fungal Hollow" Grotto "Cursed Crypt" Graveyard Excavation Desert Shipyard Peninsula "Bone Crypt" Cage 
+	BaseType "Iceberg", "Fungal Hollow", "Cursed Crypt", "Dungeon", "Excavation", "Peninsula", "Strand", "Haunted Mansion", "Ramparts", "Desert", "Arid Lake", "Leyline", "Maze", "Channel", "Spider Lair", "Barrows", "Jungle Valley", "Ashen Wood", "Atoll", "Lookout" 
 	ItemLevel >= 73
 	SetFontSize 40
 	SetTextColor 0 0 0 # Map (White)
@@ -2962,7 +3024,7 @@ Hide  # Divination Cards - Nearly Worthless (Conflicts)
 
 Show  # Divination Cards - 10c+
 	Class Divination
-	BaseType "House of Mirrors" "The Doctor" "Beauty Through Death" "The Fiend" "Immortal Resolve" "The Immortal" "The Nurse" "Abandoned Wealth" "The Spark and the Flame" "The Iron Bard" "The Samurai's Eye" "The Dragon's Heart" "Hunter's Reward" "The Mayor" "Pride Before the Fall" "The Queen" "The Wolven King's Bite" "Wealth and Power" "The Risk" "A Dab of Ink" "The World Eater" "The Artist" "The Ethereal" "The King's Heart" "The Saint's Treasure" "The Celestial Stone" "The Brittle Emperor" "Mawr Blaidd" "The Enlightened" "The Offering" "The Professor" "The Endless Darkness" "The Celestial Justicar" "The Last One Standing" "The Master" "The Polymath" "The Hunger" "The Sacrifice" "Glimmer of Hope"
+	BaseType "Seven Years Bad Luck" "The Landing" "The Mad King" "House of Mirrors" "The Doctor" "Beauty Through Death" "The Fiend" "Immortal Resolve" "The Immortal" "The Nurse" "Abandoned Wealth" "The Spark and the Flame" "The Iron Bard" "The Samurai's Eye" "The Dragon's Heart" "Hunter's Reward" "The Mayor" "Pride Before the Fall" "The Queen" "The Wolven King's Bite" "Wealth and Power" "The Risk" "A Dab of Ink" "The World Eater" "The Artist" "The Ethereal" "The King's Heart" "The Saint's Treasure" "The Celestial Stone" "The Brittle Emperor" "Mawr Blaidd" "The Enlightened" "The Offering" "The Professor" "The Endless Darkness" "The Celestial Justicar" "The Last One Standing" "The Master" "The Polymath" "The Hunger" "The Sacrifice" "Glimmer of Hope"
 	SetFontSize 45
 	SetTextColor 255 0 175 # Divination Card (10c+)
 	SetBackgroundColor 255 255 255 255 # Divination Card (10c+)
@@ -2973,7 +3035,7 @@ Show  # Divination Cards - 10c+
 
 Show  # Divination Cards - 1c+
 	Class Divination
-	BaseType "The Undaunted" "The Hoarder" "The Sephirot" "Boon of the First Ones" "Chaotic Disposition" "The Dapper Prodigy" "The Valkyrie" "The Wolf" "The Valley of Steel Boxes" "Left to Fate" "The Breach" Perfection "Bowyer's Dream" Heterochromia "The Obscured" "The Jeweller's Boon" "The Undisputed" "Last Hope" "The Dreamer" "The Cartographer" "The Vast" "The Cursed King" "The Formless Sea" "The Thaumaturgist" "The Throne" "The Void" "The Wind" "Lingering Remnants" "The Porcupine" Rebirth "The Hale Heart" "Emperor of Purity" "Lucky Deck" "The Body" "The Innocent" "The Wilted Rose" "The Price of Protection" "The Chains that Bind" "Harmony of Souls" Humility "The Penitent" "The Jester" Audacity "Jack in the Box" "Lost Worlds" "Lucky Connections" "Lysah's Respite" "Merciless Armament" "Scholar of the Seas" "The Aesthete" "The Arena Champion" "The Avenger" "The Conduit" "The Dark Mage" "The Fletcher" "The Gladiator" "The Inventor" "The Lion" "The Lord in Black" "The Road to Power" "The Scavenger" "The Soul" "The Stormcaller" "The Surveyor" "The Tower" "The Trial" "The Union" "The Warlord" "The Web" "The Wrath" "Time-Lost Relic" "Vinia's Token" "The Wretched" "The Wolverine" "No Traces" "The Realm" "The Insatiable" "Blessing of God" "Three Voices" "The Beast" "The Rite of Elements" "The Dreamland" "The Admirer" "The Twilight Moon" "Dialla's Subjugation" "The Drunken Aristocrat" "The Catalyst" "The Gentleman" "Boundless Realms" "Earth Drinker" "Gemcutter's Promise" Loyalty "The Dragon" "The Feast" "The Harvester" Tranquillity "Call to the First Ones" "The Standoff" "The Sword King's Salute" "The Witch" "The Darkest Dream" "Emperor's Luck"
+	BaseType "Sambodhi's Vow" "Monochrome" "Arrogance of the Vaal" "The Seeker" "Alone in the Darkness" "The Journey" "The Undaunted" "The Hoarder" "The Sephirot" "Boon of the First Ones" "Chaotic Disposition" "The Dapper Prodigy" "The Valkyrie" "The Wolf" "The Valley of Steel Boxes" "Left to Fate" "The Breach" Perfection "Bowyer's Dream" Heterochromia "The Obscured" "The Jeweller's Boon" "The Undisputed" "Last Hope" "The Dreamer" "The Cartographer" "The Vast" "The Cursed King" "The Formless Sea" "The Thaumaturgist" "The Throne" "The Void" "The Wind" "Lingering Remnants" "The Porcupine" Rebirth "The Hale Heart" "Emperor of Purity" "Lucky Deck" "The Body" "The Innocent" "The Wilted Rose" "The Price of Protection" "The Chains that Bind" "Harmony of Souls" Humility "The Penitent" "The Jester" Audacity "Jack in the Box" "Lost Worlds" "Lucky Connections" "Lysah's Respite" "Merciless Armament" "Scholar of the Seas" "The Aesthete" "The Arena Champion" "The Avenger" "The Conduit" "The Dark Mage" "The Fletcher" "The Gladiator" "The Inventor" "The Lion" "The Lord in Black" "The Road to Power" "The Scavenger" "The Soul" "The Stormcaller" "The Surveyor" "The Tower" "The Trial" "The Union" "The Warlord" "The Web" "The Wrath" "Time-Lost Relic" "Vinia's Token" "The Wretched" "The Wolverine" "No Traces" "The Realm" "The Insatiable" "Blessing of God" "Three Voices" "The Beast" "The Rite of Elements" "The Dreamland" "The Admirer" "The Twilight Moon" "Dialla's Subjugation" "The Drunken Aristocrat" "The Catalyst" "The Gentleman" "Boundless Realms" "Earth Drinker" "Gemcutter's Promise" Loyalty "The Dragon" "The Feast" "The Harvester" Tranquillity "Call to the First Ones" "The Standoff" "The Sword King's Salute" "The Witch" "The Darkest Dream" "Emperor's Luck"
 	SetFontSize 45
 	SetTextColor 255 255 255 # Divination Card (1c+)
 	SetBackgroundColor 255 0 175 255 # Divination Card (1c+)
@@ -2984,7 +3046,7 @@ Show  # Divination Cards - 1c+
 
 Show  # Divination Cards - <1c
 	Class Divination
-	BaseType "The Traitor" "Blind Venture" Hope "The Encroaching Darkness" "The Mercenary" "The One With All" "The Siren" "The Survivalist" "The Tyrant" "Treasure Hunter" "The Garish Power" "The Forsaken" "Atziri's Arsenal" "The Cacophony" "The Gambler" "The Spoiled Prince" "The Poet" "Her Mask" "The Pack Leader" "The Pact" "Coveted Possession" "Gift of the Gemling Queen" Hubris "Hunter's Resolve" "Rain Tempter" "The Demoness" "Three Faces in the Dark" "The Fathomless Depths" "Grave Knowledge" "The Blazing Fire"
+	BaseType "The Messenger" "The Traitor" "Blind Venture" Hope "The Encroaching Darkness" "The Mercenary" "The One With All" "The Siren" "The Survivalist" "The Tyrant" "Treasure Hunter" "The Garish Power" "The Forsaken" "Atziri's Arsenal" "The Cacophony" "The Gambler" "The Spoiled Prince" "The Poet" "Her Mask" "The Pack Leader" "The Pact" "Coveted Possession" "Gift of the Gemling Queen" Hubris "Hunter's Resolve" "Rain Tempter" "The Demoness" "Three Faces in the Dark" "The Fathomless Depths" "Grave Knowledge" "The Blazing Fire"
 	SetFontSize 40
 	SetTextColor 0 0 0 # Divination Card (<1c)
 	SetBackgroundColor 255 0 175 230 # Divination Card (<1c)
@@ -2994,7 +3056,7 @@ Show  # Divination Cards - <1c
 
 Hide  # Divination Cards - Nearly Worthless
 	Class Divination
-	BaseType "Light and Truth" Prosperity Rats "Shard of Fate" "The Calling" "The Cataclysm" "The Explorer" "The Fox" "The Gemcutter" "The Inoculated" "The Scholar" "The Sigil" "The Summoner" "The Sun" "The Twins" "The Visionary" "The Coming Storm" "The Opulent" "The Ruthless Ceinture" "The Deceiver" "The Puzzle" "Forbidden Power" "The Lover" "The Doppelganger" "The Flora's Gift" "Rain of Chaos" "A Mother's Parting Gift" "Assassin's Favour" "Cartographer's Delight" Death "Doedre's Madness" "The Battle Born" "The Endurance" "The Incantation" "The Lich" "The Oath" "The Rabid Rhoa" "The Scarred Meadow" "Turn the Other Cheek" "Volatile Power" Mitts "Struck by Lightning" "The Army of Blood" "The Lunaris Priestess" "The Betrayal"
+	BaseType "Dark Temptation" "Light and Truth" Prosperity Rats "Shard of Fate" "The Calling" "The Cataclysm" "The Explorer" "The Fox" "The Gemcutter" "The Inoculated" "The Scholar" "The Sigil" "The Summoner" "The Sun" "The Twins" "The Visionary" "The Coming Storm" "The Opulent" "The Ruthless Ceinture" "The Deceiver" "The Puzzle" "Forbidden Power" "The Lover" "The Doppelganger" "The Flora's Gift" "Rain of Chaos" "A Mother's Parting Gift" "Assassin's Favour" "Cartographer's Delight" Death "Doedre's Madness" "The Battle Born" "The Endurance" "The Incantation" "The Lich" "The Oath" "The Rabid Rhoa" "The Scarred Meadow" "Turn the Other Cheek" "Volatile Power" Mitts "Struck by Lightning" "The Army of Blood" "The Lunaris Priestess" "The Betrayal"
 	SetFontSize 36
 	SetTextColor 0 0 0 # Divination Card (Nearly Worthless)
 	SetBackgroundColor 255 0 175 170 # Divination Card (Nearly Worthless)
