@@ -1795,6 +1795,15 @@ Hide  # Explicit Mods - Veiled - Rare
 	MinimapIcon 0 Blue Square
 	PlayEffect Blue
 
+Show  # Explicit Mods - Enchanted
+	AnyEnchantment True
+	Rarity <= Rare
+	SetFontSize 45
+	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
+	SetBorderColor 0 0 0 # Crafting Base (Mid)
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+
 # Synthesis
 Show  # Explicit Mods - Synthesised - Magic
 	SynthesisedItem True
@@ -2584,7 +2593,7 @@ Show  # Maps - T16 (Elder)
 
 Show  # Maps - T11+ (Red) - Shaped
 	ShapedMap True
-	BaseType "Residence", "Geode", "Sepulchre", "Vault", "Promenade", "Lair", "Primordial Pool", "Pit", "Overgrown Shrine", "Necropolis", "Fields", "Academy", "Bone Crypt", "Bazaar", "Mud Geyser", "Shore", "Mineral Pools", "Estuary", "Pier", "Spider Forest", "Ghetto", "Volcano", "Lighthouse", "Conservatory", "Toxic Sewer", "Phantasmagoria", "Cemetery", "Lava Chamber", "Dunes", "Arachnid Tomb", "Orchard", "Waterways", "Cells", "Canyon", "Coral Ruins", "Underground River", "Laboratory", "Vaal Pyramid", "Tropical Island", "Temple", "Museum", "Castle Ruins", "Villa", "Relic Chambers", "Chateau", "Wharf", "Arachnid Nest", "Overgrown Ruin", "Moon Temple", "Plateau", "Scriptorium", "Factory", "Mesa", "Infested Valley"
+	BaseType "Residence" "Geode" "Sepulchre" "Vault" "Promenade" "Lair" "Primordial Pool" "Pit" "Overgrown Shrine" "Necropolis" "Fields" "Academy" "Bone Crypt" "Bazaar" "Mud Geyser" "Shore" "Mineral Pools" "Estuary" "Pier" "Spider Forest" "Ghetto" "Volcano" "Lighthouse" "Conservatory" "Toxic Sewer" "Phantasmagoria" "Cemetery" "Lava Chamber" "Dunes" "Arachnid Tomb" "Orchard" "Waterways" "Cells" "Canyon" "Coral Ruins" "Underground River" "Laboratory" "Vaal Pyramid" "Tropical Island" "Temple" "Museum" "Castle Ruins" "Villa" "Relic Chambers" "Chateau" "Wharf" "Arachnid Nest" "Overgrown Ruin" "Moon Temple" "Plateau" "Scriptorium" "Factory" "Mesa" "Infested Valley"
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (Red)
 	SetBackgroundColor 255 0 0 220 # Map (Red)
@@ -2595,7 +2604,7 @@ Show  # Maps - T11+ (Red) - Shaped
 
 Show  # Maps - T11+ (Red) - Other
 	Class Maps
-	BaseType "Arena", "Wasteland", "Bog", "Coves", "Arsenal", "Desert Spring", "Dig", "Palace", "Basilica", "Courthouse", "Precinct", "Crystal Ore", "Malformation", "Terrace", "Acid Caverns", "Sunken City", "Reef", "Carcass", "Gardens", "Tower", "Siege", "Shipyard", "Colonnade", "Summit", "Park", "Colosseum", "Crimson Temple", "Ivory Temple", "Belfry", "Primordial Blocks", "Racecourse", "Caldera", "Shrine", "Plaza", "Waste Pool", "Defiled Cathedral", "Core", "Dark Forest", "Lava Lake"
+	BaseType "Arena" "Wasteland" "Bog" "Coves" "Arsenal" "Desert Spring" "Dig" "Palace" "Basilica" "Courthouse" "Precinct" "Crystal Ore" "Malformation" "Terrace" "Acid Caverns" "Sunken City" "Reef" "Carcass" "Gardens" "Tower" "Siege" "Shipyard" "Colonnade" "Summit" "Park" "Colosseum" "Crimson Temple" "Ivory Temple" "Belfry" "Primordial Blocks" "Racecourse" "Caldera" "Shrine" "Plaza" "Waste Pool" "Defiled Cathedral" "Core" "Dark Forest" "Lava Lake"
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (Red)
 	SetBackgroundColor 255 0 0 220 # Map (Red)
@@ -2610,7 +2619,7 @@ Show  # Maps - T11+ (Red) - Other
 
 Show  # Maps - T6+ (Yellow) - Silent - T6-7 in T13+ - Shaped
 	ShapedMap True
-	BaseType "Iceberg", "Fungal Hollow", "Cursed Crypt", "Dungeon", "Excavation", "Peninsula", "Strand", "Haunted Mansion", "Ramparts", "Desert"
+	BaseType "Iceberg" "Fungal Hollow" "Cursed Crypt" "Dungeon" "Excavation" "Peninsula" "Strand" "Haunted Mansion" "Ramparts" "Desert"
 	ItemLevel >= 80
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (Yellow)
@@ -2620,7 +2629,7 @@ Show  # Maps - T6+ (Yellow) - Silent - T6-7 in T13+ - Shaped
 
 Show  # Maps - T6+ (Yellow) - Silent - T6-7 in T13+ - Other
 	Class Maps
-	BaseType "Residence", "Geode", "Sepulchre", "Vault", "Promenade", "Lair", "Primordial Pool", "Pit", "Overgrown Shrine", "Necropolis", "Fields", "Academy", "Bone Crypt", "Bazaar", "Mud Geyser", "Shore", "Mineral Pools", "Estuary", "Pier", "Spider Forest", "Ghetto", "Volcano"
+	BaseType "Residence" "Geode" "Sepulchre" "Vault" "Promenade" "Lair" "Primordial Pool" "Pit" "Overgrown Shrine" "Necropolis" "Fields" "Academy" "Bone Crypt" "Bazaar" "Mud Geyser" "Shore" "Mineral Pools" "Estuary" "Pier" "Spider Forest" "Ghetto" "Volcano"
 	ItemLevel >= 80
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (Yellow)
@@ -2630,7 +2639,7 @@ Show  # Maps - T6+ (Yellow) - Silent - T6-7 in T13+ - Other
 
 Show  # Maps - T6+ (Yellow) - Sound - Shaped
 	ShapedMap True
-	BaseType "Iceberg", "Fungal Hollow", "Cursed Crypt", "Dungeon", "Excavation", "Peninsula", "Strand", "Haunted Mansion", "Ramparts", "Desert", "Arid Lake", "Leyline", "Maze", "Channel", "Spider Lair", "Barrows", "Jungle Valley", "Ashen Wood", "Atoll", "Lookout", "Beach", "Flooded Mine", "Port", "Arcade", "City Square", "Glacier", "Mausoleum", "Underground Sea", "Armoury", "Graveyard", "Pen", "Marshes", "Cage", "Grotto", "Sulphur Vents", "Ancient City", "Thicket", "Crater", "Courtyard", "Burial Chambers"
+	BaseType "Iceberg" "Fungal Hollow" "Cursed Crypt" "Dungeon" "Excavation" "Peninsula" "Strand" "Haunted Mansion" "Ramparts" "Desert" "Arid Lake" "Leyline" "Maze" "Channel" "Spider Lair" "Barrows" "Jungle Valley" "Ashen Wood" "Atoll" "Lookout" "Beach" "Flooded Mine" "Port" "Arcade" "City Square" "Glacier" "Mausoleum" "Underground Sea" "Armoury" "Graveyard" "Pen" "Marshes" "Cage" "Grotto" "Sulphur Vents" "Ancient City" "Thicket" "Crater" "Courtyard" "Burial Chambers"
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (Yellow)
 	SetBackgroundColor 255 255 0 200 # Map (Yellow)
@@ -2641,7 +2650,7 @@ Show  # Maps - T6+ (Yellow) - Sound - Shaped
 
 Show  # Maps - T6+ (Yellow) - Sound - Other
 	Class Maps
-	BaseType "Residence", "Geode", "Sepulchre", "Vault", "Promenade", "Lair", "Primordial Pool", "Pit", "Overgrown Shrine", "Necropolis", "Fields", "Academy", "Bone Crypt", "Bazaar", "Mud Geyser", "Shore", "Mineral Pools", "Estuary", "Pier", "Spider Forest", "Ghetto", "Volcano", "Lighthouse", "Conservatory", "Toxic Sewer", "Phantasmagoria", "Cemetery", "Lava Chamber", "Dunes", "Arachnid Tomb", "Orchard", "Waterways", "Cells", "Canyon", "Coral Ruins", "Underground River", "Laboratory", "Vaal Pyramid", "Tropical Island", "Temple", "Museum", "Castle Ruins", "Villa", "Relic Chambers", "Chateau", "Wharf", "Arachnid Nest", "Overgrown Ruin", "Moon Temple", "Plateau", "Scriptorium", "Factory", "Mesa", "Infested Valley"
+	BaseType "Residence" "Geode" "Sepulchre" "Vault" "Promenade" "Lair" "Primordial Pool" "Pit" "Overgrown Shrine" "Necropolis" "Fields" "Academy" "Bone Crypt" "Bazaar" "Mud Geyser" "Shore" "Mineral Pools" "Estuary" "Pier" "Spider Forest" "Ghetto" "Volcano" "Lighthouse" "Conservatory" "Toxic Sewer" "Phantasmagoria" "Cemetery" "Lava Chamber" "Dunes" "Arachnid Tomb" "Orchard" "Waterways" "Cells" "Canyon" "Coral Ruins" "Underground River" "Laboratory" "Vaal Pyramid" "Tropical Island" "Temple" "Museum" "Castle Ruins" "Villa" "Relic Chambers" "Chateau" "Wharf" "Arachnid Nest" "Overgrown Ruin" "Moon Temple" "Plateau" "Scriptorium" "Factory" "Mesa" "Infested Valley"
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (Yellow)
 	SetBackgroundColor 255 255 0 200 # Map (Yellow)
@@ -2656,7 +2665,7 @@ Show  # Maps - T6+ (Yellow) - Sound - Other
 
 Show  # Maps - T1+ (White) - Silent - T1-5 in T11+
 	Class Maps
-	BaseType "Iceberg", "Fungal Hollow", "Cursed Crypt", "Dungeon", "Excavation", "Peninsula", "Strand", "Haunted Mansion", "Ramparts", "Desert", "Arid Lake", "Leyline", "Maze", "Channel", "Spider Lair", "Barrows", "Jungle Valley", "Ashen Wood", "Atoll", "Lookout", "Beach", "Flooded Mine", "Port", "Arcade", "City Square", "Glacier", "Mausoleum", "Underground Sea", "Armoury", "Graveyard", "Pen", "Marshes", "Cage", "Grotto", "Sulphur Vents", "Ancient City", "Thicket", "Crater", "Courtyard", "Burial Chambers"
+	BaseType "Iceberg" "Fungal Hollow" "Cursed Crypt" "Dungeon" "Excavation" "Peninsula" "Strand" "Haunted Mansion" "Ramparts" "Desert" "Arid Lake" "Leyline" "Maze" "Channel" "Spider Lair" "Barrows" "Jungle Valley" "Ashen Wood" "Atoll" "Lookout" "Beach" "Flooded Mine" "Port" "Arcade" "City Square" "Glacier" "Mausoleum" "Underground Sea" "Armoury" "Graveyard" "Pen" "Marshes" "Cage" "Grotto" "Sulphur Vents" "Ancient City" "Thicket" "Crater" "Courtyard" "Burial Chambers"
 	ItemLevel >= 78
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (White)
@@ -2666,7 +2675,7 @@ Show  # Maps - T1+ (White) - Silent - T1-5 in T11+
 
 Show  # Maps - T1+ (White) - Silent - T1-3 in T6+
 	Class Maps
-	BaseType "Iceberg", "Fungal Hollow", "Cursed Crypt", "Dungeon", "Excavation", "Peninsula", "Strand", "Haunted Mansion", "Ramparts", "Desert", "Arid Lake", "Leyline", "Maze", "Channel", "Spider Lair", "Barrows", "Jungle Valley", "Ashen Wood", "Atoll", "Lookout" 
+	BaseType "Iceberg" "Fungal Hollow" "Cursed Crypt" "Dungeon" "Excavation" "Peninsula" "Strand" "Haunted Mansion" "Ramparts" "Desert" "Arid Lake" "Leyline" "Maze" "Channel" "Spider Lair" "Barrows" "Jungle Valley" "Ashen Wood" "Atoll" "Lookout" 
 	ItemLevel >= 73
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (White)
