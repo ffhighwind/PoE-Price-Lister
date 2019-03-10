@@ -1,7 +1,7 @@
 ﻿############################################
-##      HIGHWIND'S LOOT FILTER 3.6.1      ##
+##      HIGHWIND'S LOOT FILTER 3.6.3      ##
 ############################################
-## Release Date: March 5, 2019            ##
+## Release Date: March 10, 2019           ##
 ############################################
 
 #--------------#
@@ -1778,33 +1778,40 @@ Show  # Explicit Mods - Jewels
 	MinimapIcon 0 Blue Star
 	PlayEffect Blue
 
-# Betrayal
-Hide  # Explicit Mods - Veiled - Magic
+# Betrayal/Syndicate
+Show  # Explicit Mods - Veiled - Magic
 	HasExplicitMod "Veiled" "'s Veiled" "'s Veil" "of the Veil"
 	Rarity <= Magic
 	SetFontSize 40
-	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
-	SetBorderColor 0 0 0 # Crafting Base (Mid)
+	SetBackgroundColor 40 40 40 # Crafting Base (Low)
+	SetBorderColor 0 0 0 # Crafting Base (Low)
+
+Show  # Explicit Mods - Veiled - Rare
+	HasExplicitMod "Veiled" "'s Veiled" "'s Veil" "of the Veil"
+	Rarity = Rare
+	ItemLevel >= 83
+	SetFontSize 45
+	SetBackgroundColor 40 40 40 # Crafting Base 84+ (Mid)
+	SetBorderColor 40 80 150 # Crafting Base 84+ (Mid)
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Blue Square
 	PlayEffect Blue
 
-Hide  # Explicit Mods - Veiled - Rare
+Show  # Explicit Mods - Veiled - Rare
 	HasExplicitMod "Veiled" "'s Veiled" "'s Veil" "of the Veil"
 	Rarity = Rare
 	SetFontSize 40
-	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
-	SetBorderColor 0 0 0 # Crafting Base (Mid)
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Blue Square
+	SetBackgroundColor 40 40 40 # Crafting Base (Explicit)
+	SetBorderColor 25 65 175 # Crafting Base (Explicit)
+	MinimapIcon 1 Blue Square
 	PlayEffect Blue
 
 Show  # Explicit Mods - Enchanted
 	AnyEnchantment True
 	Rarity <= Rare
 	SetFontSize 45
-	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
-	SetBorderColor 0 0 0 # Crafting Base (Mid)
+	SetBackgroundColor 40 40 40 # Crafting Base (Explicit)
+	SetBorderColor 25 65 175 # Crafting Base (Explicit)
 	MinimapIcon 0 Blue Square
 	PlayEffect Blue
 
@@ -1813,18 +1820,15 @@ Show  # Explicit Mods - Synthesised - Magic
 	SynthesisedItem True
 	Rarity <= Magic
 	SetFontSize 40
-	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
-	SetBorderColor 0 0 0 # Crafting Base (Mid)
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 1 Blue Square
-	PlayEffect Blue
+	SetBackgroundColor 40 40 40 # Crafting Base (Low)
+	SetBorderColor 0 0 0 # Crafting Base (Low)
 
 Show  # Explicit Mods - Synthesised - Rare
 	SynthesisedItem True
 	Rarity = Rare
 	SetFontSize 45
-	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
-	SetBorderColor 0 0 0 # Crafting Base (Mid)
+	SetBackgroundColor 40 40 40 # Crafting Base (Explicit)
+	SetBorderColor 25 65 175 # Crafting Base (Explicit)
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Blue Square
 	PlayEffect Blue
@@ -1834,20 +1838,28 @@ Show  # Explicit Mods - Fractured - Magic
 	FracturedItem True
 	Rarity <= Magic
 	SetFontSize 40
-	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
-	SetBorderColor 0 0 0 # Crafting Base (Mid)
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 1 Blue Square
-	PlayEffect Blue
+	SetBackgroundColor 40 40 40 # Crafting Base (Low)
+	SetBorderColor 0 0 0 # Crafting Base (Low)
 
-Show  # Explicit Mods - Fractured - Rare
+Show  # Explicit Mods - Fractured - Rare - 83+
 	FracturedItem True
 	Rarity = Rare
+	ItemLevel >= 83
 	SetFontSize 45
-	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
-	SetBorderColor 0 0 0 # Crafting Base (Mid)
+	SetBackgroundColor 40 40 40 # Crafting Base 84+ (Mid)
+	SetBorderColor 40 80 150 # Crafting Base 84+ (Mid)
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+
+Show  # Explicit Mods - Fractured - Rare - Other
+	FracturedItem True
+	Rarity = Rare
+	SetFontSize 40
+	SetBackgroundColor 40 40 40 # Crafting Base (Explicit)
+	SetBorderColor 25 65 175 # Crafting Base (Explicit)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 1 Blue Square
 	PlayEffect Blue
 
 ##########################################
@@ -3005,7 +3017,7 @@ Show  # Divination Cards - 10c+
 
 Show  # Divination Cards - 1c+
 	Class Divination
-	BaseType "Sambodhi's Vow" "Monochrome" "Arrogance of the Vaal" "The Seeker" "Alone in the Darkness" "The Journey" "The Undaunted" "The Hoarder" "The Sephirot" "Boon of the First Ones" "Chaotic Disposition" "The Dapper Prodigy" "The Valkyrie" "The Wolf" "The Valley of Steel Boxes" "Left to Fate" "The Breach" Perfection "Bowyer's Dream" Heterochromia "The Obscured" "The Jeweller's Boon" "The Undisputed" "Last Hope" "The Dreamer" "The Cartographer" "The Vast" "The Cursed King" "The Formless Sea" "The Thaumaturgist" "The Throne" "The Void" "The Wind" "Lingering Remnants" "The Porcupine" Rebirth "The Hale Heart" "Emperor of Purity" "Lucky Deck" "The Body" "The Innocent" "The Wilted Rose" "The Price of Protection" "The Chains that Bind" "Harmony of Souls" Humility "The Penitent" "The Jester" Audacity "Jack in the Box" "Lost Worlds" "Lucky Connections" "Lysah's Respite" "Merciless Armament" "Scholar of the Seas" "The Aesthete" "The Arena Champion" "The Avenger" "The Conduit" "The Dark Mage" "The Fletcher" "The Gladiator" "The Inventor" "The Lion" "The Lord in Black" "The Road to Power" "The Scavenger" "The Soul" "The Stormcaller" "The Surveyor" "The Tower" "The Trial" "The Union" "The Warlord" "The Web" "The Wrath" "Time-Lost Relic" "Vinia's Token" "The Wretched" "The Wolverine" "No Traces" "The Realm" "The Insatiable" "Blessing of God" "Three Voices" "The Beast" "The Rite of Elements" "The Dreamland" "The Admirer" "The Twilight Moon" "Dialla's Subjugation" "The Drunken Aristocrat" "The Catalyst" "The Gentleman" "Boundless Realms" "Earth Drinker" "Gemcutter's Promise" Loyalty "The Dragon" "The Feast" "The Harvester" Tranquillity "Call to the First Ones" "The Standoff" "The Sword King's Salute" "The Witch" "The Darkest Dream" "Emperor's Luck"
+	BaseType "Boon of Justice" "The Golden Era" "The Lord of Celebration" "Sambodhi's Vow" "Monochrome" "Arrogance of the Vaal" "The Seeker" "Alone in the Darkness" "The Journey" "The Undaunted" "The Hoarder" "The Sephirot" "Boon of the First Ones" "Chaotic Disposition" "The Dapper Prodigy" "The Valkyrie" "The Wolf" "The Valley of Steel Boxes" "Left to Fate" "The Breach" Perfection "Bowyer's Dream" Heterochromia "The Obscured" "The Jeweller's Boon" "The Undisputed" "Last Hope" "The Dreamer" "The Cartographer" "The Vast" "The Cursed King" "The Formless Sea" "The Thaumaturgist" "The Throne" "The Void" "The Wind" "Lingering Remnants" "The Porcupine" Rebirth "The Hale Heart" "Emperor of Purity" "Lucky Deck" "The Body" "The Innocent" "The Wilted Rose" "The Price of Protection" "The Chains that Bind" "Harmony of Souls" Humility "The Penitent" "The Jester" Audacity "Jack in the Box" "Lost Worlds" "Lucky Connections" "Lysah's Respite" "Merciless Armament" "Scholar of the Seas" "The Aesthete" "The Arena Champion" "The Avenger" "The Conduit" "The Dark Mage" "The Fletcher" "The Gladiator" "The Inventor" "The Lion" "The Lord in Black" "The Road to Power" "The Scavenger" "The Soul" "The Stormcaller" "The Surveyor" "The Tower" "The Trial" "The Union" "The Warlord" "The Web" "The Wrath" "Time-Lost Relic" "Vinia's Token" "The Wretched" "The Wolverine" "No Traces" "The Realm" "The Insatiable" "Blessing of God" "Three Voices" "The Beast" "The Rite of Elements" "The Dreamland" "The Admirer" "The Twilight Moon" "Dialla's Subjugation" "The Drunken Aristocrat" "The Catalyst" "The Gentleman" "Boundless Realms" "Earth Drinker" "Gemcutter's Promise" Loyalty "The Dragon" "The Feast" "The Harvester" Tranquillity "Call to the First Ones" "The Standoff" "The Sword King's Salute" "The Witch" "The Darkest Dream" "Emperor's Luck"
 	SetFontSize 45
 	SetTextColor 255 255 255 # Divination Card (1c+)
 	SetBackgroundColor 255 0 175 255 # Divination Card (1c+)
