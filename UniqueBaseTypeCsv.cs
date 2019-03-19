@@ -1,4 +1,5 @@
 ﻿
+using System;
 using FileHelpers;
 using Newtonsoft.Json;
 
@@ -23,7 +24,8 @@ namespace PoE_Price_Lister
         [FieldNullValue(false)]
         public bool Unobtainable { get; set; }
 
-        public string Source { get; set; }
+		[FieldQuoted('"', QuoteMode.OptionalForBoth, MultilineMode.AllowForRead)]
+		public string Source { get; set; }
 
         public override string ToString()
         {
@@ -63,16 +65,20 @@ namespace PoE_Price_Lister
         public override object StringToField(string from)
         {
             UniqueUsage output;
-            if (from.Equals("Prophecy"))
-                output = UniqueUsage.Prophecy;
-            else if (from.Equals("Recipe"))
-                output = UniqueUsage.Recipe;
-            else if (from.Equals("Upgradable"))
-                output = UniqueUsage.Upgradable;
-            else if (from.Equals("Piece"))
-                output = UniqueUsage.Piece;
-            else
-                output = UniqueUsage.None;
+			if (from.Equals("Prophecy"))
+				output = UniqueUsage.Prophecy;
+			else if (from.Equals("Recipe"))
+				output = UniqueUsage.Recipe;
+			else if (from.Equals("Upgradable"))
+				output = UniqueUsage.Upgradable;
+			else if (from.Equals("Piece"))
+				output = UniqueUsage.Piece;
+			else if (from.Equals("Fractured"))
+				output = UniqueUsage.Piece;
+			else if (string.IsNullOrWhiteSpace(from))
+				output = UniqueUsage.None;
+			else
+				throw new InvalidOperationException(from);
             return output;
         }
 

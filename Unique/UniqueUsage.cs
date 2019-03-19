@@ -6,6 +6,7 @@
         Prophecy = 1,
         Recipe,
         Upgradable,
-        Piece
+        Piece,
+		Fractured
     }
 }
