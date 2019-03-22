@@ -201,9 +201,20 @@ namespace PoE_Price_Lister
 
         public UniqueValue FilterValue { get; set; } = UniqueValue.Unknown;
 
-        public List<UniqueItem> Items { get; set; } = new List<UniqueItem>();
+        public List<UniqueItem> Items { get; private set; } = new List<UniqueItem>();
 
-        public string BaseType { get; private set; }
+		public IEnumerable<UniqueItem> OrderedItems {
+			get {
+				foreach(var uni in Items.Where(i => !i.IsLimitedDrop).OrderBy(it => it.ChaosValue)) {
+					yield return uni;
+				}
+				foreach (var uni in Items.Where(i => i.IsLimitedDrop).OrderBy(it => it.ChaosValue)) {
+					yield return uni;
+				}
+			}
+		}
+
+		public string BaseType { get; private set; }
 
         public override string ToString()
         {

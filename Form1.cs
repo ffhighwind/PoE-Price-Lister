@@ -28,7 +28,7 @@ namespace PoE_Price_Lister
                 if (!data.Uniques.TryGetValue(baseType, out UniqueBaseType uniqData))
                     continue;
                 string values = "";
-                foreach (UniqueItem udata in uniqData.Items) {
+                foreach (UniqueItem udata in uniqData.OrderedItems) {
                     if (udata.Links > 4)
                         values += "(" + udata.Links + "L)";
                     string value = udata.Count > 0 ? udata.ChaosValue.ToString() : "?";
