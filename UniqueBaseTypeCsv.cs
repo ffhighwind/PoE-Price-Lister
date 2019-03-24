@@ -74,7 +74,7 @@ namespace PoE_Price_Lister
 			else if (from.Equals("Piece"))
 				output = UniqueUsage.Piece;
 			else if (from.Equals("Fractured"))
-				output = UniqueUsage.Piece;
+				output = UniqueUsage.Fractured;
 			else if (string.IsNullOrWhiteSpace(from))
 				output = UniqueUsage.None;
 			else
