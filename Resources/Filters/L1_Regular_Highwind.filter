@@ -493,7 +493,7 @@ Show  # Currency - League Specific - Timeless Splinters
 
 Show  # Currency - League Specific - Timeless Emblems
 	Class Currency
-	BaseType "Timeless Karui Emblem" "Timeless Maraketh Emblem" "Timeless Eternal Empire Emblem" "Timeless Templar Emblem "Timeless Vaal Emblem" 
+	BaseType "Timeless Karui Emblem" "Timeless Maraketh Emblem" "Timeless Eternal Empire Emblem" "Timeless Templar Emblem" "Timeless Vaal Emblem" 
 	SetFontSize 45
 	SetTextColor 255 0 255 # Currency (Timeless Emblems)
 	SetBackgroundColor 20 0 20 # Currency (Timeless Emblems)
