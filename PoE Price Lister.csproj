@@ -123,9 +123,7 @@
     <None Include="Resources\Filters\S3_Strict_Highwind.filter" />
     <None Include="Resources\Filters\S4_Very_Strict_Highwind.filter" />
     <None Include="Resources\Filters\theme validator.ahk" />
-    <None Include="Resources\theme validator.ahk" />
     <None Include="Resources\Themes\default.filtertheme" />
-    <None Include="Resources\filter font enlarger.ahk" />
     <None Include="Resources\Themes\greengroove.filtertheme" />
     <None Include="packages.config" />
     <None Include="Resources\Themes\neversink.filtertheme" />
@@ -159,7 +157,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="FodyWeavers.xml" />
-    <Content Include="Resources\changelog.txt" />
     <Content Include="Resources\changelog_archive.txt" />
     <Content Include="Resources\filterblast_config.txt" />
   </ItemGroup>

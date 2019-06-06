@@ -1,4 +1,65 @@
 ---------------------------------------------------------------------------------------------------------------
+| Synthesis
+---------------------------------------------------------------------------------------------------------------
+
+3.6.5
+? Updated unique values. I mostly did this because Maloney's Mechanism wasn't priced correctly.
+
+3.6.4
+? Updated the values of Divination Cards and Uniques.
+? Updated the uniques list CSVs.
+? Updated the pricing tool.
+? Removed sound from <ilvl 83 Fractured/Veiled items.
+? Added Divination Card: The Life Thief
+? Added 17 new uniques
+
+Blood Raiment - The Eternity Shroud
+Embroidered Gloves - Vixen's Entrapment
+Legion Boots - March of the Legion
+Sulphur Flask - Bottled Faith
+Jade Amulet - Hyrri's Truth
+Ornate Quiver - Maloney's Mechanism
+
+Blood Raiment - The Eternity Shroud (Shaper)
+Ruby Ring - Circle of Anguish (Synthesis)
+Sapphire Ring - Circle of Fear (Synthesis)
+Iron Ring - Circle of Guilt (Synthesis)
+Amethyst Ring - Circle of Nostalgia (Synthesis)
+Topaz Ring - Circle of Regret (Synthesis)
+Savant's Robe - Garb of the Ephemeral (Synthesis)
+Ezomyte Spiked Shield - Perepiteia (Synthesis)
+Assassin's Mitts - Storm's Gift (Synthesis)
+Legion Gloves - Offering to the Serpent (Synthesis)
+Void Sceptre - Nebulis (Synthesis)
+Magistrate Crown - Mask of the Tribunal (Synthesis)
+
+3.6.3
+? Fixed Veiled/Syndicate items so they are visible again. They still had sounds and a map icon but were hidden.
+? Changed Veiled, Fractured, and Synthesis items slightly. Added a dark blue border around rare versions of these items. Removed the sound from the rare ones in the Strict filters except ilvl 83+. Removed the map icon and beam from the Very Strict filter except ilvl 83+.
+? Added last 3 Divination cards: Boon of Justice, The Golden Era, The Lord of Celebration
+
+3.6.2
+? Fixed some bugs.
+
+3.6.1
+? Updated maps with new map tier colors.
+? Added SynthesisedItem and FracturedItem to the explicit mods section.
+? Added AnyEnchantment to explicit mods section.
+? Added 11/14 new Divination cards:
+Spoiler 
+The Journey
+Alone in the Darkness
+Dark Temptation
+The Messenger
+The Seeker
+The Mad King
+Arrogance of the Vaal
+The Landing, 
+Seven Years Bad Luck
+Monochrome
+Sambodhi's Vow
+
+---------------------------------------------------------------------------------------------------------------
 | Betrayal
 ---------------------------------------------------------------------------------------------------------------
 

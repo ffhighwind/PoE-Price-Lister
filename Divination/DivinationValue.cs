@@ -67,9 +67,8 @@
 
         public override bool Equals(object obj)
         {
-            if (obj != null && obj is DivinationValue other) {
+            if (obj != null && obj is DivinationValue other)
                 return other.Value == Value;
-            }
             return false;
         }
 

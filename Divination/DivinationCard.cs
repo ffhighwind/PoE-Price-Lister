@@ -43,7 +43,7 @@ namespace PoE_Price_Lister
 
         public DivinationValue ExpectedFilterValue {
             get {
-                if (ChaosValue < 0.01)
+                if (ChaosValue < 0.01f)
                     return FilterValue;
                 if (FilterValue.LowValue <= ChaosValue && FilterValue.HighValue >= ChaosValue)
                     return FilterValue;
