@@ -499,7 +499,7 @@ Show  # Currency - League Specific - Timeless Emblems
 	SetBackgroundColor 20 0 20 # Currency (Timeless Emblems)
 	SetBorderColor 255 0 255 # Currency (Timeless Emblems)
 	PlayAlertSound 4 200 # Timeless Emblems
-	MinimapIcon 1 Blue Circle
+	MinimapIcon 0 Blue Circle
 	PlayEffect Blue
 
 Show  # Currency - League Specific - Incubator
@@ -510,7 +510,7 @@ Show  # Currency - League Specific - Incubator
 	SetBackgroundColor 20 0 20 # Incubator
 	SetBorderColor 255 0 255 # Incubator
 	PlayAlertSound 4 200 # Incubator
-	MinimapIcon 1 Blue Circle
+	MinimapIcon 0 Blue Circle
 	PlayEffect Blue
 
 #--------#
@@ -2580,73 +2580,6 @@ Show  # Gems - Other
 # Lair, Spider Lair
 # Shrine, Overgrown Shrine
 
-#---------------#
-# Special Cases #
-#---------------#
-
-Show  # Maps - T11+ (Red) - Shaped
-	ShapedMap True
-	BaseType "Overgrown Shrine" 
-	SetFontSize 45
-	SetTextColor 0 0 0 # Map (Red)
-	SetBackgroundColor 255 0 0 220 # Map (Red)
-	SetBorderColor 0 0 0 # Map (Red)
-	PlayAlertSound 3 200 # Map
-	MinimapIcon 0 Red Hexagon
-	PlayEffect Red
-
-Show  # Maps - T6+ (Yellow) - Sound - Other
-	Class Maps
-	BaseType "Overgrown Shrine"
-	SetFontSize 45
-	SetTextColor 0 0 0 # Map (Yellow)
-	SetBackgroundColor 255 255 0 200 # Map (Yellow)
-	SetBorderColor 0 0 0 # Map (Yellow)
-	PlayAlertSound 3 200 # Map
-	MinimapIcon 0 Yellow Hexagon
-	PlayEffect Yellow
-
-Show  # Maps - T6+ (Yellow) - Sound - Shaped
-	ShapedMap True
-	BaseType "Spider Lair" "Ivory Temple"
-	SetFontSize 45
-	SetTextColor 0 0 0 # Map (Yellow)
-	SetBackgroundColor 255 255 0 200 # Map (Yellow)
-	SetBorderColor 0 0 0 # Map (Yellow)
-	PlayAlertSound 3 200 # Map
-	MinimapIcon 0 Yellow Hexagon
-	PlayEffect Yellow
-
-Show  # Maps - T1+ (White) - Silent - T1-5 in T11+
-	Class Maps
-	BaseType "Spider Lair" "Ivory Temple"
-	ItemLevel >= 78
-	SetFontSize 40
-	SetTextColor 0 0 0 # Map (White)
-	SetBackgroundColor 235 235 255 200 # Map (White)
-	SetBorderColor 0 0 0 # Map (White)
-	DisableDropSound
-
-Show  # Maps - T6+ (Yellow) - Silent - T6-7 in T13+ - Shaped
-	ShapedMap True
-	BaseType "Ivory Temple"
-	ItemLevel >= 80
-	SetFontSize 45
-	SetTextColor 0 0 0 # Map (Yellow)
-	SetBackgroundColor 255 255 0 200 # Map (Yellow)
-	SetBorderColor 0 0 0 # Map (Yellow)
-	DisableDropSound
-
-Show  # Maps - T1+ (White) - Silent - T1-3 in T6+
-	Class Maps
-	BaseType "Ivory Temple"
-	ItemLevel >= 73
-	SetFontSize 40
-	SetTextColor 0 0 0 # Map (White)
-	SetBackgroundColor 235 235 255 200 # Map (White)
-	SetBorderColor 0 0 0 # Map (White)
-	DisableDropSound
-
 #--------#
 # Unique #
 #--------#
@@ -2698,6 +2631,77 @@ Show  # Maps - T16 (Elder)
 	PlayAlertSound 3 200 # Map
 	MinimapIcon 0 Red Hexagon
 	PlayEffect Red
+
+#---------------#
+# Special Cases #
+#---------------#
+
+Show  # Maps - T11+ (Red) - Shaped (Special Case)
+	ShapedMap True
+	BaseType "Overgrown Shrine" 
+	SetFontSize 45
+	SetTextColor 0 0 0 # Map (Red)
+	SetBackgroundColor 255 0 0 220 # Map (Red)
+	SetBorderColor 0 0 0 # Map (Red)
+	PlayAlertSound 3 200 # Map
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
+
+Show  # Maps - T6+ (Yellow) - Sound - Other (Special Case)
+	Class Maps
+	BaseType "Overgrown Shrine"
+	SetFontSize 45
+	SetTextColor 0 0 0 # Map (Yellow)
+	SetBackgroundColor 255 255 0 200 # Map (Yellow)
+	SetBorderColor 0 0 0 # Map (Yellow)
+	PlayAlertSound 3 200 # Map
+	MinimapIcon 0 Yellow Hexagon
+	PlayEffect Yellow
+
+Show  # Maps - T6+ (Yellow) - Sound - Shaped (Special Case)
+	ShapedMap True
+	BaseType "Spider Lair" "Ivory Temple"
+	SetFontSize 45
+	SetTextColor 0 0 0 # Map (Yellow)
+	SetBackgroundColor 255 255 0 200 # Map (Yellow)
+	SetBorderColor 0 0 0 # Map (Yellow)
+	PlayAlertSound 3 200 # Map
+	MinimapIcon 0 Yellow Hexagon
+	PlayEffect Yellow
+
+Show  # Maps - T1+ (White) - Silent - T1-5 in T11+ (Special Case)
+	Class Maps
+	BaseType "Spider Lair" "Ivory Temple"
+	ItemLevel >= 78
+	SetFontSize 40
+	SetTextColor 0 0 0 # Map (White)
+	SetBackgroundColor 235 235 255 200 # Map (White)
+	SetBorderColor 0 0 0 # Map (White)
+	DisableDropSound
+
+Show  # Maps - T6+ (Yellow) - Silent - T6-7 in T13+ - Shaped (Special Case)
+	ShapedMap True
+	BaseType "Ivory Temple"
+	ItemLevel >= 80
+	SetFontSize 45
+	SetTextColor 0 0 0 # Map (Yellow)
+	SetBackgroundColor 255 255 0 200 # Map (Yellow)
+	SetBorderColor 0 0 0 # Map (Yellow)
+	DisableDropSound
+
+Show  # Maps - T1+ (White) - Silent - T1-3 in T6+ (Special Case)
+	Class Maps
+	BaseType "Ivory Temple"
+	ItemLevel >= 73
+	SetFontSize 40
+	SetTextColor 0 0 0 # Map (White)
+	SetBackgroundColor 235 235 255 200 # Map (White)
+	SetBorderColor 0 0 0 # Map (White)
+	DisableDropSound
+
+#-----#
+# Red #
+#-----#
 
 Show  # Maps - T11+ (Red) - Shaped
 	ShapedMap True
