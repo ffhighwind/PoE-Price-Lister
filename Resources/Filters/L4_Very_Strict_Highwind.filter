@@ -487,7 +487,7 @@ Hide  # Currency - League Specific - Essences (Worthless)
 
 Show  # Currency - League Specific - Timeless Splinters
 	Class Currency
-	BaseType "Timeless Karui Splinter" "Timeless Maraketh Splinter" "Timeless Eternal Empire Splinter" "Timeless Templar Splinter" "Timeless Vaal Splinter"
+	BaseType "Timeless Karui Splinter" "Timeless Maraketh Splinter" " Empire Splinter" "Timeless Templar Splinter" "Timeless Vaal Splinter"
 	SetFontSize 36
 	SetTextColor 185 172 141 # Currency (Timeless Splinters)
 	SetBackgroundColor 0 0 0 225 # Currency (Timeless Splinters)
@@ -495,7 +495,7 @@ Show  # Currency - League Specific - Timeless Splinters
 
 Show  # Currency - League Specific - Timeless Emblems
 	Class Currency
-	BaseType "Timeless Karui Emblem" "Timeless Maraketh Emblem" "Timeless Eternal Empire Emblem" "Timeless Templar Emblem" "Timeless Vaal Emblem" 
+	BaseType "Timeless Karui Emblem" "Timeless Maraketh Emblem" " Emblem" "Timeless Templar Emblem" "Timeless Vaal Emblem" 
 	SetFontSize 45
 	SetTextColor 255 0 255 # Currency (Timeless Emblems)
 	SetBackgroundColor 20 0 20 # Currency (Timeless Emblems)
@@ -2257,27 +2257,6 @@ Show  # Elder Rares - 60+ - High Drop Level
 # Section: Jewels
 
 #--------#
-# Legion #
-#--------#
-
-Show  # Jewels - Timeless - Unique
-	Class "Timeless Jewel"
-	Rarity = Unique
-	SetFontSize 45
-	SetTextColor 255 128 64 # Jewel (Unique)
-	SetBackgroundColor 50 25 12 # Jewel (Unique)
-	SetBorderColor 0 255 255 # Jewel (Unique)
-	PlayAlertSound 6 200 # Jewel (Unique)
-	MinimapIcon 0 Brown Star
-	PlayEffect Brown
-
-Show  # Jewels - Timeless - Other
-	Class "Timeless Jewel"
-	SetFontSize 40
-	SetBackgroundColor 0 0 0 # Jewel (Magic)
-	SetBorderColor 0 220 220 # Jewel (Magic)
-
-#--------#
 # Unique #
 #--------#
 
@@ -2751,7 +2730,7 @@ Show  # Maps - T11+ (Red) - Shaped
 
 Show  # Maps - T11+ (Red) - Other
 	Class Maps
-	BaseType "Infested Valley" Dig Lair Malformation Siege Gardens "Crimson Temple" Precinct Colonnade Museum "Lava Lake" Cemetery "Vaal Pyramid" Park Shipyard Core Carcass Canyon Colosseum Tower "Sunken City" "Defiled Cathedral" Belfry Coves Shrine Plaza Terrace Reef "Primordial Blocks" Orchard Wasteland "Crystal Ore" Courthouse Basilica "Dark Forest" Summit Caldera "Acid Caverns" "Desert Springs" Palace
+	BaseType "Infested Valley" Dig Lair Malformation Siege Gardens "Crimson Temple" Precinct Colonnade Museum "Lava Lake" Cemetery "Vaal Pyramid" Park Shipyard Core Carcass Canyon Colosseum Tower "Sunken City" "Defiled Cathedral" Belfry Coves Shrine Plaza Terrace Reef "Primordial Blocks" Orchard Wasteland "Crystal Ore" Courthouse Basilica "Dark Forest" Summit Caldera "Acid Caverns" Desert Palace
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (Red)
 	SetBackgroundColor 255 0 0 220 # Map (Red)
@@ -3119,7 +3098,7 @@ Show  # Divination Cards - 10c+
 
 Show  # Divination Cards - 1c+
 	Class Divination
-	BaseType "Demigod's Wager" "The Primordial" "Thirst for Knowledge" "Pride of the First Ones" "The Deep Ones" "Dark Dreams" "Imperial Legacy" "The Archmage's Right Hand" "Echos of Love" "The Fool" "Vanity" "The Hoarder" "The Sephirot" "The Vast" "The Wolf" "Chaotic Disposition" "The Cartographer" "The Dapper Prodigy" "The Porcupine" "Left to Fate" "The Breach" "The Dreamer" "The Undaunted" "Boon of the First Ones" Heterochromia "Last Hope" "The Dark Mage" "The Hunger" "The Valkyrie" "The Void" "The Valley of Steel Boxes" "The Jeweller's Boon" Perfection "The Undisputed" Monochrome "The Seeker" "Bowyer's Dream" "The Aesthete" "The Thaumaturgist" "The Throne" "The Endless Darkness" "The Journey" "The Innocent" "The Hale Heart" "The Obscured" "Arrogance of the Vaal" "Emperor of Purity" "Lucky Deck" "Scholar of the Seas" "The Chains that Bind" "The Surveyor" "The Trial" "The Warlord" Rebirth "The Wilted Rose" "The Price of Protection" "The Mad King" "Alone in the Darkness" "The Twilight Moon" "The Last One Standing" "The Inventor" Humility "The Formless Sea" Audacity "Boundless Realms" "Dialla's Subjugation" "Jack in the Box" "Lost Worlds" "Lucky Connections" "Lysah's Respite" "Merciless Armament" "The Arena Champion" "The Avenger" "The Body" "The Cursed King" "The Dragon" "The Fletcher" "The Gladiator" "The Harvester" "The Jester" "The Lord in Black" "The Oath" "The Penitent" "The Road to Power" "The Scavenger" "The Soul" "The Stormcaller" "The Union" "The Wrath" "Time-Lost Relic" "Vinia's Token" "The Wretched" "Lingering Remnants" "No Traces" "The Realm" "The Insatiable" "Blessing of God" "The Beast" "The Rite of Elements" "The Dreamland" "The Admirer" "The Darkest Dream" "Harmony of Souls" "Sambodhi's Vow" "The Lord of Celebration" "The Golden Era" "Emperor's Luck" "The Wolverine" "Call to the First Ones" "The Lion" "Earth Drinker" "Gemcutter's Promise" Loyalty "The Conduit" "The Drunken Aristocrat" "The Feast" "The Gentleman" "The Tower" "The Web" Tranquillity "The Standoff" "Three Voices" "The Sword King's Salute" "The Witch" "Boon of Justice" "The Catalyst"
+	BaseType "Demigod's Wager" "The Primordial" "Thirst for Knowledge" "Pride of the First Ones" "The Deep Ones" "Dark Dreams" "Imperial Legacy" "The Archmage's Right Hand" "The Fool" "Vanity" "The Hoarder" "The Sephirot" "The Vast" "The Wolf" "Chaotic Disposition" "The Cartographer" "The Dapper Prodigy" "The Porcupine" "Left to Fate" "The Breach" "The Dreamer" "The Undaunted" "Boon of the First Ones" Heterochromia "Last Hope" "The Dark Mage" "The Hunger" "The Valkyrie" "The Void" "The Valley of Steel Boxes" "The Jeweller's Boon" Perfection "The Undisputed" Monochrome "The Seeker" "Bowyer's Dream" "The Aesthete" "The Thaumaturgist" "The Throne" "The Endless Darkness" "The Journey" "The Innocent" "The Hale Heart" "The Obscured" "Arrogance of the Vaal" "Emperor of Purity" "Lucky Deck" "Scholar of the Seas" "The Chains that Bind" "The Surveyor" "The Trial" "The Warlord" Rebirth "The Wilted Rose" "The Price of Protection" "The Mad King" "Alone in the Darkness" "The Twilight Moon" "The Last One Standing" "The Inventor" Humility "The Formless Sea" Audacity "Boundless Realms" "Dialla's Subjugation" "Jack in the Box" "Lost Worlds" "Lucky Connections" "Lysah's Respite" "Merciless Armament" "The Arena Champion" "The Avenger" "The Body" "The Cursed King" "The Dragon" "The Fletcher" "The Gladiator" "The Harvester" "The Jester" "The Lord in Black" "The Oath" "The Penitent" "The Road to Power" "The Scavenger" "The Soul" "The Stormcaller" "The Union" "The Wrath" "Time-Lost Relic" "Vinia's Token" "The Wretched" "Lingering Remnants" "No Traces" "The Realm" "The Insatiable" "Blessing of God" "The Beast" "The Rite of Elements" "The Dreamland" "The Admirer" "The Darkest Dream" "Harmony of Souls" "Sambodhi's Vow" "The Lord of Celebration" "The Golden Era" "Emperor's Luck" "The Wolverine" "Call to the First Ones" "The Lion" "Earth Drinker" "Gemcutter's Promise" Loyalty "The Conduit" "The Drunken Aristocrat" "The Feast" "The Gentleman" "The Tower" "The Web" Tranquillity "The Standoff" "Three Voices" "The Sword King's Salute" "The Witch" "Boon of Justice" "The Catalyst"
 	SetFontSize 45
 	SetTextColor 255 255 255 # Divination Card (1c+)
 	SetBackgroundColor 255 0 175 255 # Divination Card (1c+)
