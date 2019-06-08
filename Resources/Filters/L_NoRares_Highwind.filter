@@ -487,9 +487,11 @@ Show  # Currency - League Specific - Timeless Splinters
 	Class Currency
 	BaseType "Timeless Karui Splinter" "Timeless Maraketh Splinter" " Empire Splinter" "Timeless Templar Splinter" "Timeless Vaal Splinter"
 	SetFontSize 36
-	SetTextColor 185 172 141 # Currency (Timeless Splinters)
+	SetTextColor 255 0 255 # Currency (Timeless Splinters)
 	SetBackgroundColor 0 0 0 225 # Currency (Timeless Splinters)
 	SetBorderColor 0 0 0 0 # Currency (Timeless Splinters)
+	MinimapIcon 0 Blue Circle
+	PlayEffect Blue
 
 Show  # Currency - League Specific - Timeless Emblems
 	Class Currency
@@ -503,8 +505,7 @@ Show  # Currency - League Specific - Timeless Emblems
 	PlayEffect Blue
 
 Show  # Currency - League Specific - Incubator
-	Class Currency
-	BaseType " Incubator" 
+	Class Incubator
 	SetFontSize 45
 	SetTextColor 255 0 255 # Incubator
 	SetBackgroundColor 20 0 20 # Incubator
