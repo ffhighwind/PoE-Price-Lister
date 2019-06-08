@@ -75,6 +75,7 @@
     <Compile Include="Divination\DivinationCard.cs" />
     <Compile Include="Divination\DivinationValue.cs" />
     <Compile Include="Divination\DivinationValueEnum.cs" />
+    <Compile Include="FilterType.cs" />
     <Compile Include="ListViewItemComparer.cs" />
     <Compile Include="DataModel.cs" />
     <Compile Include="FilterWriter.cs" />

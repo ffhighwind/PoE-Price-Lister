@@ -93,10 +93,13 @@ namespace PoE_Price_Lister
         {
             bool safe = checkBox1.Checked;
             bool hcFriendly = checkBox2.Checked;
-            string filename = safe ? "highwind_filter_safe.txt" : "highwind_filter.txt";
             FilterWriter writer = new FilterWriter(model);
-            writer.Create(filename, safe, hcFriendly);
-        }
+
+			writer.Create("highwind_filter_leveling.txt", safe, hcFriendly, FilterType.LEVELING);
+			writer.Create("highwind_filter_mapping.txt", safe, hcFriendly, FilterType.MAPPING);
+			writer.Create("highwind_filter_strict.txt", safe, hcFriendly, FilterType.STRICT);
+			writer.Create("highwind_filter_very_strict.txt", safe, hcFriendly, FilterType.VERY_STRICT);
+		}
 
         private void listView_KeyUp(object sender, KeyEventArgs e)
         {

@@ -38,16 +38,22 @@ namespace PoE_Price_Lister
 # Orange border
 # Usually < 1c or nearly worthless.
 
-Show  # Uniques - <1c - ilvl <67
+";
+
+		private const string lessLvl67 =
+@"  # Uniques - <1c - ilvl <67
 	Rarity = Unique
 	ItemLevel < 67
 	SetFontSize 40
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
-	SetBorderColor 180 90 45 # Unique (<1c)
-	PlayAlertSound 4 200 # Mid Value
+	SetBorderColor 180 90 45 # Unique (<1c)";
+
+		private const string styleUniqueSound =
+@"	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Brown Square
-	PlayEffect Brown";
+	PlayEffect Brown
+";
 
 		private const string loreweaveStr =
 @"# Loreweave (60x rings)
@@ -90,24 +96,18 @@ Show  # Uniques - 1-2c
 	PlayEffect Brown";
 
 		private const string styleLess1c =
-@"	SetFontSize 40 
-	SetTextColor 255 128 64 # Unique 
-	SetBackgroundColor 50 25 12 # Unique 
-	SetBorderColor 180 90 45 # Unique (<1c) 
-	PlayAlertSound 4 200 # Mid Value 
-	MinimapIcon 0 Brown Square 
-	PlayEffect Brown";
+@"	SetFontSize 40
+	SetTextColor 255 128 64 # Unique
+	SetBackgroundColor 50 25 12 # Unique
+	SetBorderColor 180 90 45 # Unique (<1c)";
 
 		private const string uniqueNewOrWorthless =
-@"Show  # Uniques - New or Worthless 
-	Rarity = Unique 
-	SetFontSize 36 
-	SetTextColor 255 128 64 # Unique 
-	SetBackgroundColor 50 25 12 # Unique 
-	SetBorderColor 180 90 45 # Unique (<1c) 
-	PlayAlertSound 4 200 # Mid Value 
-	MinimapIcon 0 Brown Square 
-	PlayEffect Brown";
+@"  # Uniques - New or Worthless
+	Rarity = Unique
+	SetFontSize 36
+	SetTextColor 255 128 64 # Unique
+	SetBackgroundColor 50 25 12 # Unique
+	SetBorderColor 180 90 45 # Unique (<1c)";
 
 		private const string styleDiv10c =
 @"	SetFontSize 45 
@@ -194,22 +194,19 @@ Show  # Uniques - 1-2c
 			Conflicts = model.DivinationCardNameConflicts;
 		}
 
-		public void Create(string path, bool safe, bool hcFriendly)
+		public void Create(string path, bool safe, bool hcFriendly, FilterType type)
 		{
-			try
-			{
+			try {
 				Safe = safe;
 				HCFriendly = hcFriendly;
-				using (Writer = new StreamWriter(path, false, Encoding.UTF8))
-				{
+				using (Writer = new StreamWriter(path, false, Encoding.UTF8)) {
 					Writer.WriteLine();
-					Writer.WriteLine(GenerateUniquesString());
-					Writer.Write(GenerateDivinationString());
+					Writer.WriteLine(GenerateUniquesString(type));
+					Writer.Write(GenerateDivinationString(type));
 				}
 				Writer = null;
 			}
-			catch (Exception ex)
-			{
+			catch (Exception ex) {
 				MessageBox.Show(ex.Message, "FilterWriter.Create", MessageBoxButtons.OK);
 			}
 		}
@@ -218,11 +215,9 @@ Show  # Uniques - 1-2c
 		{
 			StringBuilder sb = new StringBuilder();
 			sb.AppendLine("# Potential Conflicts!!! (They have been separated but may need to be reorganized)");
-			foreach (List<string> list in Conflicts)
-			{
+			foreach (List<string> list in Conflicts) {
 				sb.Append("# ");
-				foreach (string str in list)
-				{
+				foreach (string str in list) {
 					string baseTy = str;
 					if (baseTy.Contains(' '))
 						baseTy = "\"" + baseTy + "\"";
@@ -233,7 +228,7 @@ Show  # Uniques - 1-2c
 			return sb.ToString();
 		}
 
-		private string GenerateUniquesString()
+		private string GenerateUniquesString(FilterType type)
 		{
 			List<string> list10c = new List<string>();
 			List<string> list2to10c = new List<string>();
@@ -246,16 +241,14 @@ Show  # Uniques - 1-2c
 			List<string> listLess1cLabyrinth = new List<string>();
 			StringBuilder sb = new StringBuilder();
 
-			foreach (KeyValuePair<string, UniqueBaseType> uniq in UniquesSC)
-			{
+			foreach (KeyValuePair<string, UniqueBaseType> uniq in UniquesSC) {
 				UniqueBaseType entry = uniq.Value;
 				string baseTy = uniq.Key;
 				UniqueValue expectedVal = entry.ExpectedFilterValue;
 				UniqueValue filterVal = entry.FilterValue;
 				string outputBaseTy = baseTy;
 				int index = baseTy.IndexOf('ö');
-				if (index > 0)
-				{
+				if (index > 0) {
 					outputBaseTy = outputBaseTy.Substring(0, index);
 				}
 				UniqueBaseType entryHC = UniquesHC[baseTy];
@@ -263,21 +256,17 @@ Show  # Uniques - 1-2c
 
 				if (entry.SeverityLevel == 0)
 					expectedVal = filterVal;
-				else if (Safe && filterVal.Tier > expectedVal.Tier)
-				{
-					if (entry.Items.Count > 1 || filterVal.LowValue < entry.Items[0].ChaosValue)
-					{
+				else if (Safe && filterVal.Tier > expectedVal.Tier) {
+					if (entry.Items.Count > 1 || filterVal.LowValue < entry.Items[0].ChaosValue) {
 						expectedVal = UniqueValue.FromTier(expectedVal.Tier + 1);
 					}
 				}
 				//if SC <1c and HC 4c+ then 1-2c
-				if (HCFriendly && expectedVal.Tier < 2 && expectedValHC.Tier > 2 && entryHC.Items.Any(i => i.IsCoreDrop && i.ChaosValue > 4.0f))
-				{
+				if (HCFriendly && expectedVal.Tier < 2 && expectedValHC.Tier > 2 && entryHC.Items.Any(i => i.IsCoreDrop && i.ChaosValue > 4.0f)) {
 					expectedVal = UniqueValue.Chaos1to2;
 				}
 
-				switch (expectedVal.Value)
-				{
+				switch (expectedVal.Value) {
 					case UniqueValueEnum.Chaos10:
 						list10c.Add(outputBaseTy);
 						break;
@@ -310,42 +299,50 @@ Show  # Uniques - 1-2c
 				}
 			}
 
-			if (list10c.Count > 0)
-			{
+			if (list10c.Count > 0) {
 				sb.AppendLine(header10c).AppendLine();
 				sb.AppendLine("Show  # Uniques - 10c+").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(list10c)).AppendLine(style10c).AppendLine();
 			}
-			if (list2to10c.Count > 0)
-			{
+			if (list2to10c.Count > 0) {
 				sb.AppendLine(header2to10c).AppendLine();
 				sb.AppendLine("Show  # Uniques - 2-10c").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(list2to10c)).AppendLine(style2to10c).AppendLine();
 			}
 			sb.AppendLine(header1c).AppendLine();
-			if (list1to2c.Count > 0)
-			{
+			if (list1to2c.Count > 0) {
 				sb.AppendLine("Show  # Uniques - 1-2c").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(list1to2c)).AppendLine(style1c).AppendLine();
 			}
 			sb.AppendLine(loreweaveStr).AppendLine();
 			sb.AppendLine(headerLess1c).AppendLine();
-			if (listLess1cLeague.Count > 0)
-				sb.AppendLine("Show  # Uniques - <1c - League").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cLeague)).AppendLine(styleLess1c).AppendLine();
-			if (listLess1cBoss.Count > 0)
-				sb.AppendLine("Show  # Uniques - <1c - Boss Prophecy").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cBoss)).AppendLine(styleLess1c).AppendLine();
-			if (listLess1cShared.Count > 0)
-				sb.AppendLine("Show  # Uniques - <1c - Shared").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cShared)).AppendLine(styleLess1c).AppendLine();
-			if (listLess1cCrafted.Count > 0)
-				sb.AppendLine("Show  # Uniques - <1c - Crafted Fated Purchased").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cCrafted)).AppendLine(styleLess1c).AppendLine();
-			if (listLess1cLabyrinth.Count > 0)
-				sb.AppendLine("Show  # Uniques - <1c - Labyrinth").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cLabyrinth)).AppendLine(styleLess1c).AppendLine();
-			if (listLess1c.Count > 0)
-				sb.AppendLine("Show  # Uniques - <1c - Nearly Worthless").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1c)).AppendLine(styleLess1c).AppendLine();
-			sb.AppendLine(uniqueNewOrWorthless);
+
+			string showHide = type == FilterType.VERY_STRICT ? "Hide" : "Show";
+			string vsSound = type == FilterType.VERY_STRICT ? styleUniqueSound : "";
+			string sSound = (type == FilterType.LEVELING || type == FilterType.MAPPING) ? styleUniqueSound : "";
+			sb.AppendLine(showHide + lessLvl67).AppendLine();
+			if (listLess1cLeague.Count > 0) {
+				sb.AppendLine("Show  # Uniques - <1c - League").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cLeague)).AppendLine(styleLess1c).Append(sSound).AppendLine();
+			}
+			if (listLess1cBoss.Count > 0) {
+				sb.AppendLine("Show  # Uniques - <1c - Boss Prophecy").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cBoss)).AppendLine(styleLess1c).Append(sSound).AppendLine();
+			}
+			if (listLess1cShared.Count > 0) {
+				sb.AppendLine("Show  # Uniques - <1c - Shared").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cShared)).AppendLine(styleLess1c).Append(vsSound).AppendLine();
+			}
+			if (listLess1cCrafted.Count > 0) {
+				sb.AppendLine("Show  # Uniques - <1c - Crafted Fated Purchased").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cCrafted)).AppendLine(styleLess1c).Append(sSound).AppendLine();
+			}
+			if (listLess1cLabyrinth.Count > 0) {
+				sb.AppendLine(showHide + "  # Uniques - <1c - Labyrinth").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cLabyrinth)).AppendLine(styleLess1c).Append(sSound).AppendLine();
+			}
+			if (listLess1c.Count > 0) {
+				sb.AppendLine(showHide + "  # Uniques - <1c - Nearly Worthless").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1c)).AppendLine(styleLess1c).Append(sSound).AppendLine();
+			}
+			sb.AppendLine(showHide + uniqueNewOrWorthless).Append(sSound).AppendLine();
 
 			return sb.ToString();
 		}
 
 		//IEnumerable<string> lines
-		private string GenerateDivinationString()
+		private string GenerateDivinationString(FilterType type)
 		{
 			List<string> list1to10cConflict = new List<string>();
 			List<string> listLess1cConflict = new List<string>();
@@ -359,8 +356,7 @@ Show  # Uniques - 1-2c
 			List<string> listWorthless = new List<string>();
 			StringBuilder sb = new StringBuilder();
 
-			foreach (string divCard in DivinationCards)
-			{
+			foreach (string divCard in DivinationCards) {
 				DivinationCard data = DivinationSC[divCard];
 				DivinationValue expectedVal = data.ExpectedFilterValue;
 				DivinationValue filterVal = data.FilterValue;
@@ -368,18 +364,15 @@ Show  # Uniques - 1-2c
 				DivinationValue expectedValHC = dataHC.ExpectedFilterValue;
 				if (data.SeverityLevel == 0)
 					expectedVal = filterVal;
-				else if (Safe && filterVal.LowValue < data.ChaosValue)
-				{
+				else if (Safe && filterVal.LowValue < data.ChaosValue) {
 					expectedVal = DivinationValue.FromTier(expectedVal.Tier + 1);
 				}
 				//if SC <1c and HC 4c+ then +1 tier
-				if (HCFriendly && expectedVal.Tier < 2 && dataHC.ChaosValue > 4.0f)
-				{
+				if (HCFriendly && expectedVal.Tier < 2 && dataHC.ChaosValue > 4.0f) {
 					expectedVal = DivinationValue.FromTier(expectedVal.Tier + 1);
 				}
 
-				switch (expectedVal.Value)
-				{
+				switch (expectedVal.Value) {
 					case DivinationValueEnum.Chaos10:
 						list10c.Add(divCard);
 						break;
@@ -403,8 +396,7 @@ Show  # Uniques - 1-2c
 						break;
 					case DivinationValueEnum.Worthless:
 						if (list10c.Exists(str => divCard.Contains(str)) || list1to10c.Exists(str => divCard.Contains(str))
-							|| listLess1c.Exists(str => divCard.Contains(str)) || listNearlyWorthless.Exists(str => divCard.Contains(str)))
-						{
+							|| listLess1c.Exists(str => divCard.Contains(str)) || listNearlyWorthless.Exists(str => divCard.Contains(str))) {
 							listWorthlessConflict.Add(divCard);
 						}
 						else
@@ -419,22 +411,34 @@ Show  # Uniques - 1-2c
 			sb.AppendLine(GenerateDivinationConflictsString()).AppendLine();
 			if (list1to10cConflict.Count > 0)
 				sb.AppendLine("Show  # Divination Cards - 1c+ (Conflicts)").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(list1to10cConflict)).AppendLine(styleDiv1c).AppendLine();
-			if (listLess1cConflict.Count > 0)
-				sb.AppendLine("Show  # Divination Cards - <1c (Conflicts)").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listLess1cConflict)).AppendLine(styleDivLess1c).AppendLine();
-			if (listNearlyWorthlessConflict.Count > 0)
-				sb.AppendLine("Show  # Divination Cards - Nearly Worthless (Conflicts)").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listNearlyWorthlessConflict)).AppendLine(styleDivNearlyWorthless).AppendLine();
-			if (listWorthlessConflict.Count > 0)
-				sb.AppendLine("Hide  # Divination Cards - Worthless (Conflicts)").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listWorthlessConflict)).AppendLine(styleDivWorthless).AppendLine();
+			if (listLess1cConflict.Count > 0) {
+				string showHide = type == FilterType.VERY_STRICT ? "Hide" : "Show";
+				sb.AppendLine(showHide + "  # Divination Cards - <1c (Conflicts)").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listLess1cConflict)).AppendLine(styleDivLess1c).AppendLine();
+			}
+			if (listNearlyWorthlessConflict.Count > 0) {
+				string showHide = (type == FilterType.LEVELING || type == FilterType.MAPPING) ? "Show" : "Hide";
+				sb.AppendLine(showHide + "  # Divination Cards - Nearly Worthless (Conflicts)").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listNearlyWorthlessConflict)).AppendLine(styleDivNearlyWorthless).AppendLine();
+			}
+			if (listWorthlessConflict.Count > 0) {
+				string showHide = type == FilterType.LEVELING ? "Show" : "Hide";
+				sb.AppendLine(showHide + "  # Divination Cards - Worthless (Conflicts)").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listWorthlessConflict)).AppendLine(styleDivWorthless).AppendLine();
+			}
 			if (list10c.Count > 0)
 				sb.AppendLine("Show  # Divination Cards - 10c+").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(list10c)).AppendLine(styleDiv10c).AppendLine();
 			if (list1to10c.Count > 0)
 				sb.AppendLine("Show  # Divination Cards - 1c+").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(list1to10c)).AppendLine(styleDiv1c).AppendLine();
-			if (listLess1c.Count > 0)
-				sb.AppendLine("Show  # Divination Cards - <1c").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listLess1c)).AppendLine(styleDivLess1c).AppendLine();
-			if (listNearlyWorthless.Count > 0)
-				sb.AppendLine("Show  # Divination Cards - Nearly Worthless").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listNearlyWorthless)).AppendLine(styleDivNearlyWorthless).AppendLine();
-			if (listWorthless.Count > 0)
-				sb.AppendLine("Show  # Divination Cards - Worthless").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listWorthless)).AppendLine(styleDivWorthless).AppendLine();
+			if (listLess1c.Count > 0) {
+				string showHide = type == FilterType.VERY_STRICT ? "Hide" : "Show";
+				sb.AppendLine(showHide + "  # Divination Cards - <1c").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listLess1c)).AppendLine(styleDivLess1c).AppendLine();
+			}
+			if (listNearlyWorthless.Count > 0) {
+				string showHide = (type == FilterType.LEVELING || type == FilterType.MAPPING) ? "Show" : "Hide";
+				sb.AppendLine(showHide + "  # Divination Cards - Nearly Worthless").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listNearlyWorthless)).AppendLine(styleDivNearlyWorthless).AppendLine();
+			}
+			if (listWorthless.Count > 0) {
+				string showHide = type == FilterType.LEVELING ? "Show" : "Hide";
+				sb.AppendLine(showHide + "  # Divination Cards - Worthless").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listWorthless)).AppendLine(styleDivWorthless).AppendLine();
+			}
 			sb.AppendLine(divNewOrWorthless);
 
 			return sb.ToString();
@@ -444,8 +448,7 @@ Show  # Uniques - 1-2c
 		{
 			StringBuilder sb = new StringBuilder();
 			sb.Append("BaseType ");
-			foreach (string baseTy in baseTypes)
-			{
+			foreach (string baseTy in baseTypes) {
 				string result = baseTy;
 				if (baseTy.Contains(' '))
 					result = "\"" + baseTy + "\"";
