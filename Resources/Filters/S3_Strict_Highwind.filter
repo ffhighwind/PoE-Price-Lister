@@ -1,5 +1,5 @@
 ############################################
-##     HIGHWIND'S STRICT FILTER 3.7.6     ##
+##     HIGHWIND'S STRICT FILTER 3.7.7     ##
 ############################################
 ## Release Date: June 10, 2019            ##
 ############################################
@@ -392,14 +392,35 @@ Show  # Currency - 20c+
 # Prophecy #
 #----------#
 
-Show  # Currency - Prophecies
+Show  # Currency - Prophecies - High Value
+	Class Currency
+	BaseType "The Queen's Sacrifice" "Fated Connections" "Trash to Treasure"
+	SetFontSize 40
+	SetTextColor 255 0 255 # Prophecy (High Value)
+	SetBackgroundColor 255 255 255 # Prophecy (High Value)
+	SetBorderColor 0 255 0 # Prophecy (High Value)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Triangle
+	PlayEffect Red
+
+Show  # Currency - Prophecies - Mid Value
+	Class Currency
+	BaseType "Flesh of the Beast" "The Jeweller's Touch" "Wind and Thunder" "Monstrous Treasure" "Cleanser of Sins" "A Master Seeks Help" "The Queen's Vaults" "The Dreaded Rhoa"
+	SetFontSize 40
+	SetTextColor 255 0 255 # Prophecy (Mid Value)
+	SetBackgroundColor 20 0 20 # Prophecy (Mid Value)
+	SetBorderColor 0 255 0 # Prophecy (Mid Value)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Red Triangle
+	PlayEffect Red
+
+Show  # Currency - Prophecies - Other
 	Class Currency
 	BaseType "Prophecy"
 	SetFontSize 40
 	SetTextColor 255 0 255 # Prophecy
 	SetBackgroundColor 20 0 20 # Prophecy
 	SetBorderColor 0 255 0 # Prophecy
-	PlayAlertSound 4 200 # Prophecy
 	MinimapIcon 0 Green Triangle
 	PlayEffect Green
 
@@ -491,27 +512,53 @@ Show  # Currency - League Specific - Timeless Splinters
 	SetTextColor 255 0 255 # Currency (Timeless Splinters)
 	SetBackgroundColor 0 0 0 225 # Currency (Timeless Splinters)
 	SetBorderColor 0 0 0 0 # Currency (Timeless Splinters)
-	MinimapIcon 0 Blue Circle
+	MinimapIcon 1 Blue Circle
 	PlayEffect Blue
 
-Show  # Currency - League Specific - Timeless Emblems
-	Class Currency
-	BaseType "Timeless Karui Emblem" "Timeless Maraketh Emblem" " Emblem" "Timeless Templar Emblem" "Timeless Vaal Emblem" 
-	SetFontSize 40
-	SetTextColor 255 0 255 # Currency (Timeless Emblems)
-	SetBackgroundColor 20 0 20 # Currency (Timeless Emblems)
-	SetBorderColor 255 0 255 # Currency (Timeless Emblems)
-	PlayAlertSound 4 200 # Timeless Emblems
-	MinimapIcon 0 Blue Circle
-	PlayEffect Blue
-
-Show  # Currency - League Specific - Incubator
+Show  # Currency - League Specific - Incubator - High Value
 	Class Incubator
-	SetFontSize 40
+	BaseType "Geomancer's Incubator" "Time-Lost Incubator""
+	SetFontSize 46
+	SetTextColor 255 0 255 # Incubator (High Value)
+	SetBackgroundColor 255 255 255 255 # Incubator (High Value)
+	SetBorderColor 255 0 255 # Incubator (High Value)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Circle
+	PlayEffect Red
+
+Show  # Currency - League Specific - Incubator - Other
+	Class Incubator
+	SetFontSize 45
 	SetTextColor 255 0 255 # Incubator
 	SetBackgroundColor 20 0 20 # Incubator
 	SetBorderColor 255 0 255 # Incubator
 	PlayAlertSound 4 200 # Incubator
+	MinimapIcon 0 Blue Circle
+	PlayEffect Blue
+
+#----------#
+# Betrayal #
+#----------#
+
+Show  # Currency - League Specific - Scarab - High Value
+	Class Currency
+	BaseType "Gilded Cartography Scarab" "Gilded Sulphite Scarab" "Polished Sulphite Scarab" "Gilded Divination Scarab" "Rusted Sulphite Scarab"
+	SetFontSize 45
+	SetTextColor 255 0 255 # Scarab (High Value)
+	SetBackgroundColor 255 255 255 255 # Scarab (High Value)
+	SetBorderColor 255 0 255 # Scarab (High Value)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Circle
+	PlayEffect Red
+
+Show  # Currency - League Specific - Scarab - Other
+	Class Currency
+	BaseType " Scarab"
+	SetFontSize 45
+	SetTextColor 255 0 255 # Scarab
+	SetBackgroundColor 20 0 20 # Scarab
+	SetBorderColor 255 0 255 # Scarab
+	PlayAlertSound 4 200 # Scarab
 	MinimapIcon 0 Blue Circle
 	PlayEffect Blue
 
@@ -576,7 +623,7 @@ Show  # Currency - League Specific - Fossils (High)
 	MinimapIcon 0 Red Circle
 	PlayEffect Red
 
-Show  # Currency - League Specific - Fossils (Low)
+Hide  # Currency - League Specific - Fossils (Low)
 	Class Currency
 	BaseType "Metallic Fossil" "Scorched Fossil" "Bound Fossil"
 	SetFontSize 36
@@ -584,7 +631,7 @@ Show  # Currency - League Specific - Fossils (Low)
 	SetBackgroundColor 0 0 0 225 # Currency (Nearly Worthless)
 	SetBorderColor 0 0 0 0 # Currency (Nearly Worthless)
 
-Show  # Currency - League Specific - Fossils (Very Low)
+Hide  # Currency - League Specific - Fossils (Very Low)
 	Class Currency
 	BaseType "Frigid Fossil" "Aberrant Fossil"
 	SetFontSize 36
@@ -2732,13 +2779,15 @@ Show  # Maps - T1+ (White) - Sound
 	MinimapIcon 0 Green Hexagon
 	PlayEffect Green
 
+	"Timeless Maraketh Emblem"
+
 #-----------#
 # Fragments #
 #-----------#
 
 Show  # Maps - Fragments - High Value
 	Class "Map Fragments"
-	BaseType "Mortal Rage" "Mortal Ignorance" "Mortal Hope" "Chayula's Breachstone"
+	BaseType "Mortal Rage" "Mortal Ignorance" "Mortal Hope" "Chayula's Breachstone" "Chayula's " "Timeless Maraketh Emblem" "Timeless Templar Emblem"
 	SetFontSize 45
 	SetTextColor 255 255 255 # Map Fragment (High)
 	SetBackgroundColor 0 255 255 210 # Map Fragment (High)
@@ -2749,7 +2798,7 @@ Show  # Maps - Fragments - High Value
 
 Show  # Maps - Fragments - Mid Value
 	Class "Map Fragments"
-	BaseType "Sacrifice at Midnight" "Inya's Key" "Eber's Key" "Volkuur's Key" "Yriel's Key" "Fragment of the Hydra" "Fragment of the Phoenix" "Fragment of the Minotaur" "Fragment of the Chimera" "Mortal Grief" "Divine Vessel" "Xoph's Breachstone" "Tul's Breachstone" "Esh's Breachstone" "Uul-Netol's Breachstone" "Offering to the Goddess"
+	BaseType "Sacrifice at Midnight" "Inya's Key" "Eber's Key" "Volkuur's Key" "Yriel's Key" "Fragment of the Hydra" "Fragment of the Phoenix" "Fragment of the Minotaur" "Fragment of the Chimera" "Mortal Grief" "Divine Vessel" "Xoph's Breachstone" "Tul's Breachstone" "Esh's Breachstone" "Uul-Netol's Breachstone" "Offering to the Goddess" " Emblem" " Breachstone"
 	SetFontSize 45
 	SetTextColor 255 255 255 # Map Fragment (Mid)
 	SetBackgroundColor 0 255 255 210 # Map Fragment (Mid)
@@ -2968,7 +3017,7 @@ Hide  # Divination Cards - Worthless (Conflicts)
 
 Show  # Divination Cards - 10c+
 	Class Divination
-	BaseType "House of Mirrors" "The Doctor" "The Fiend" "Beauty Through Death" "Alluring Bounty" "The World Eater" "Pride of the First Ones" "The Last One Standing" "Immortal Resolve" "The Life Thief" "The Nurse" "Abandoned Wealth" "The Immortal" "Burning Blood" "The Dragon's Heart" "The Celestial Justicar" "The Wolven King's Bite" "Pride Before the Fall" "The Iron Bard" "The Undisputed" "The Samurai's Eye" "The King's Heart" "The Spark and the Flame" "Wealth and Power" "Hunter's Reward" "The Saint's Treasure" "Seven Years Bad Luck" "The Enlightened" "The Queen" "The Sacrifice" "The Artist" "The Risk" "The Celestial Stone" "The Cacophony"
+	BaseType "The Devastator" "House of Mirrors" "The Doctor" "The Fiend" "Beauty Through Death" "Alluring Bounty" "The World Eater" "Pride of the First Ones" "The Last One Standing" "Immortal Resolve" "The Life Thief" "The Nurse" "Abandoned Wealth" "The Immortal" "Burning Blood" "The Dragon's Heart" "The Celestial Justicar" "The Wolven King's Bite" "Pride Before the Fall" "The Iron Bard" "The Undisputed" "The Samurai's Eye" "The King's Heart" "The Spark and the Flame" "Wealth and Power" "Hunter's Reward" "The Saint's Treasure" "Seven Years Bad Luck" "The Enlightened" "The Queen" "The Sacrifice" "The Artist" "The Risk" "The Celestial Stone" "The Cacophony"
 	SetFontSize 45 
 	SetTextColor 255 0 175 # Divination Card (10c+) 
 	SetBackgroundColor 255 255 255 255 # Divination Card (10c+) 
