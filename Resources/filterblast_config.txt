@@ -1,7 +1,7 @@
 Filter [Highwind's Loot Filter]
 
-Version [3.7.5]
-LastUpdate [6.8.2019]
+Version [3.7.6]
+LastUpdate [6.10.2019]
 PoEVersion [3.7.x]
 ForumThread [https://www.pathofexile.com/forum/view-thread/1490867]
 
