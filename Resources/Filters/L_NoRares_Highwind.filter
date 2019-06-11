@@ -392,27 +392,27 @@ Show  # Currency - 20c+
 # Prophecy #
 #----------#
 
-Show  # Currency - Prophecies - High Value
-	Class Currency
-	BaseType "The Queen's Sacrifice" "Fated Connections" "Trash to Treasure"
-	SetFontSize 45
-	SetTextColor 255 0 255 # Prophecy (High Value)
-	SetBackgroundColor 255 255 255 # Prophecy (High Value)
-	SetBorderColor 0 255 0 # Prophecy (High Value)
-	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Triangle
-	PlayEffect Red
+#Show  # Currency - Prophecies - High Value
+#	Class Currency
+#	BaseType "The Queen's Sacrifice" "Fated Connections" "Trash to Treasure"
+#	SetFontSize 45
+#	SetTextColor 255 0 255 # Prophecy (High Value)
+#	SetBackgroundColor 255 255 255 # Prophecy (High Value)
+#	SetBorderColor 0 255 0 # Prophecy (High Value)
+#	PlayAlertSound 1 200 # High Value
+#	MinimapIcon 0 Red Triangle
+#	PlayEffect Red
 
-Show  # Currency - Prophecies - Mid Value
-	Class Currency
-	BaseType "Flesh of the Beast" "The Jeweller's Touch" "Wind and Thunder" "Monstrous Treasure" "Cleanser of Sins" "A Master Seeks Help" "The Queen's Vaults" "The Dreaded Rhoa"
-	SetFontSize 45
-	SetTextColor 255 0 255 # Prophecy (Mid Value)
-	SetBackgroundColor 20 0 20 # Prophecy (Mid Value)
-	SetBorderColor 0 255 0 # Prophecy (Mid Value)
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Red Triangle
-	PlayEffect Red
+#Show  # Currency - Prophecies - Mid Value
+#	Class Currency
+#	BaseType "Flesh of the Beast" "The Jeweller's Touch" "Wind and Thunder" "Monstrous Treasure" "Cleanser of Sins" "A Master Seeks Help" "The Queen's Vaults" "The Dreaded Rhoa"
+#	SetFontSize 45
+#	SetTextColor 255 0 255 # Prophecy (Mid Value)
+#	SetBackgroundColor 20 0 20 # Prophecy (Mid Value)
+#	SetBorderColor 0 255 0 # Prophecy (Mid Value)
+#	PlayAlertSound 4 200 # Mid Value
+#	MinimapIcon 0 Red Triangle
+#	PlayEffect Red
 
 Show  # Currency - Prophecies - Other
 	Class Currency
@@ -421,6 +421,7 @@ Show  # Currency - Prophecies - Other
 	SetTextColor 255 0 255 # Prophecy
 	SetBackgroundColor 20 0 20 # Prophecy
 	SetBorderColor 0 255 0 # Prophecy
+	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Green Triangle
 	PlayEffect Green
 
@@ -516,8 +517,8 @@ Show  # Currency - League Specific - Timeless Splinters
 
 Show  # Currency - League Specific - Incubator - High Value
 	Class Incubator
-	BaseType "Geomancer's Incubator" "Time-Lost Incubator""
-	SetFontSize 46
+	BaseType "Geomancer's Incubator" "Time-Lost Incubator"
+	SetFontSize 45
 	SetTextColor 255 0 255 # Incubator (High Value)
 	SetBackgroundColor 255 255 255 255 # Incubator (High Value)
 	SetBorderColor 255 0 255 # Incubator (High Value)
