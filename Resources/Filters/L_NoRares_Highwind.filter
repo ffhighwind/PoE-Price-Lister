@@ -2648,13 +2648,13 @@ Show  # Maps - T16 (Elder)
 	PlayEffect Red
 
 Show  # Maps - T11+ (Red) - Blighted
-	ElderMap True
+	BlightedMap True
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (Blighted)
 	SetBackgroundColor 255 0 0 220 # Map (T16)
 	SetBorderColor 0 255 0 # Map (Blighted)
 	PlayAlertSound 3 200 # Map
-	MinimapIcon 0 Green Hexagon
+	MinimapIcon 0 Red Hexagon
 	PlayEffect Green
 
 Show  # Maps - T11+ (Red) - Shaped
