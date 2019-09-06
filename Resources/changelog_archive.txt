@@ -1,3 +1,86 @@
+
+---------------------------------------------------------------------------------------------------------------
+| Legion
+---------------------------------------------------------------------------------------------------------------
+
+3.7.8
+? Updated unique/divination card values.
+
+3.7.7
+? Added divination card The Devastator
+? Fixed Emblem colors/sounds
+? Hid low value fossils in the strict+ filters.
+? Distinguished high value Incubators/Scarabs
+
+3.7.6
+? Permanently fixed map colors. They should never break again.
+? Updated divination cards and unique values again.
+
+3.7.5
+? Fixed Ivory Temple color
+? Updated divination cards and unique values
+? Added 5 uniques to the CSV
+Fractal Thoughts
+Wreath of Phrecia
+Pillar of the Caged God (Iron Staff)
+Sign of the Sin Eater
+Tavukai
+
+3.7.4
+? Fixed Desert/Desert Spring map colors
+? Made timeless splinters larger
+? Added "Echoes of Love" again.
+
+3.7.3
+? Fixed incubators
+? Improved visibility of splinters
+
+3.7.2
+? fixed the filter:
+? changed "Desert Springs" to Desert
+? removed Timeless Jewel class
+? removed "eternal empire" from emblems/splinters
+
+3.7.1
+? Added War Staff and Rune Daggers to the highlighted rares sections.
+? Updated the maps with new tier colors.
+? Added Legion specific items: Timeless Jewels, Timeless Splinters, Emblems, Incubators
+? Removed the highlighted border around 75-82 ilvl Harbinger Bows from the regular/mapping filters.
+? Added 2/12 new uniques. Aukuna's Will, Maw of Conquest
+? Added 9/14 new divination cards (1) (2) (3).
+Buried Treasure
+Dark Dreams
+Alluring Bounty
+Burning Blood
+Echoes of Love
+Imperial Legacy
+The Archmage's Right Hand
+The Fool
+Vanity
+? Added other divination cards 5/5 at 1c+. This are not likely to be priced correctly at the start of the league, but they will not be hidden.
+Spoiler 
+Demigod's Wager
+The Primordial
+Thirst for Knowledge
+Pride of the First Ones
+The Deep Ones
+? Updated the uniques files for old uniques that are now legion specific
+Rathpith Globe
+Pledge of Hands
+Rebuke of the Vaal
+Kaom's Primacy
+Lavianga's Wisdom
+Marohi Erqi
+Asenath's Gentle Touch
+Darkscorn
+Al Dhih
+Voll's Protector
+The Sorrow of the Divine
+Divinarius
+Honourhome
+Lioneye's Paws
+Maligaro's Virtuosity
+
 ---------------------------------------------------------------------------------------------------------------
 | Synthesis
 ---------------------------------------------------------------------------------------------------------------

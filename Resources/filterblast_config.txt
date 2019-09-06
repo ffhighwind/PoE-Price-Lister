@@ -1,8 +1,8 @@
 Filter [Highwind's Loot Filter]
 
-Version [3.7.8]
-LastUpdate [6.21.2019]
-PoEVersion [3.7.x]
+Version [3.8.1]
+LastUpdate [9.5.2019]
+PoEVersion [3.8.x]
 ForumThread [https://www.pathofexile.com/forum/view-thread/1490867]
 
 SmartBlocks on

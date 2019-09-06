@@ -1,7 +1,7 @@
 ﻿############################################
-##    HIGHWIND'S MAPPING FILTER 3.7.8     ##
+##    HIGHWIND'S MAPPING FILTER 3.8.1     ##
 ############################################
-## Release Date: June 21, 2019            ##
+## Release Date: September 4, 2019        ##
 ############################################
 
 #--------------#
@@ -504,6 +504,19 @@ Hide  # Currency - League Specific - Essences (Worthless)
 	DisableDropSound
 
 #--------#
+# Blight #
+#--------#
+Show  # Currency - League Specific - Oils
+	Class Currency
+	BaseType "Clear Oil" "Sepia Oil" "Amber Oil" "Verdant Oil" "Teal Oil" "Azure Oil" "Violet Oil" "Crimson Oil" "Black Oil" "Opalescent Oil" "Silver Oil" "Golden Oil"
+	SetFontSize 40
+	SetTextColor 255 0 255 # Currency (Oils)
+	SetBackgroundColor 0 0 0 225 # Currency (Oils)
+	SetBorderColor 0 0 0 0 # Currency (Oils)
+	MinimapIcon 1 Blue Circle
+	PlayEffect Blue
+
+#--------#
 # Legion #
 #--------#
 
@@ -535,32 +548,6 @@ Show  # Currency - League Specific - Incubator - Other
 	SetBackgroundColor 20 0 20 # Incubator
 	SetBorderColor 255 0 255 # Incubator
 	PlayAlertSound 4 200 # Incubator
-	MinimapIcon 0 Blue Circle
-	PlayEffect Blue
-
-#----------#
-# Betrayal #
-#----------#
-
-Show  # Currency - League Specific - Scarab - High Value
-	Class Currency
-	BaseType "Gilded Cartography Scarab" "Gilded Sulphite Scarab" "Polished Sulphite Scarab" "Gilded Divination Scarab" "Rusted Sulphite Scarab"
-	SetFontSize 45
-	SetTextColor 255 0 255 # Scarab (High Value)
-	SetBackgroundColor 255 255 255 255 # Scarab (High Value)
-	SetBorderColor 255 0 255 # Scarab (High Value)
-	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Circle
-	PlayEffect Red
-
-Show  # Currency - League Specific - Scarab - Other
-	Class Currency
-	BaseType " Scarab"
-	SetFontSize 45
-	SetTextColor 255 0 255 # Scarab
-	SetBackgroundColor 20 0 20 # Scarab
-	SetBorderColor 255 0 255 # Scarab
-	PlayAlertSound 4 200 # Scarab
 	MinimapIcon 0 Blue Circle
 	PlayEffect Blue
 
@@ -655,7 +642,7 @@ Show  # Currency - League Specific - Fossils (Mid)
 
 # Resonators
 Show  # Currency - League Specific - Resonators (High)
-	Class "Delve Socketable Currency"
+	Class "Delve Stackable Socketable Currency"
 	BaseType "Prime Chaotic Resonator" "Prime Alchemical Resonator"
 	SetFontSize 45
 	SetTextColor 255 0 255 # Currency (6c+)
@@ -666,7 +653,7 @@ Show  # Currency - League Specific - Resonators (High)
 	PlayEffect Red
 
 Show  # Currency - League Specific - Resonators (Mid)
-	Class "Delve Socketable Currency"
+	Class "Delve Stackable Socketable Currency"
 	BaseType "Powerful Chaotic Resonator" "Powerful Alchemical Resonator"
 	SetFontSize 45
 	SetTextColor 255 0 255 # Currency (Low)
@@ -674,7 +661,7 @@ Show  # Currency - League Specific - Resonators (Mid)
 	SetBorderColor 0 0 0 0 # Currency (Low)
 
 Show  # Currency - League Specific - Resonators (Low)
-	Class "Delve Socketable Currency"
+	Class "Delve Stackable Socketable Currency"
 	BaseType "Primitive Alchemical Resonator" "Primitive Chaotic Resonator"
 	SetFontSize 40
 	SetTextColor 185 172 141 # Currency (Nearly Worthless)
@@ -682,7 +669,7 @@ Show  # Currency - League Specific - Resonators (Low)
 	SetBorderColor 0 0 0 0 # Currency (Nearly Worthless)
 
 Show  # Currency - League Specific - Resonators (Very Low)
-	Class "Delve Socketable Currency"
+	Class "Delve Stackable Socketable Currency"
 	BaseType "Potent Chaotic Resonator" "Potent Alchemical Resonator"
 	SetFontSize 40
 	SetTextColor 185 172 141 # Currency (Nearly Worthless)
@@ -690,7 +677,7 @@ Show  # Currency - League Specific - Resonators (Very Low)
 	SetBorderColor 0 0 0 0 # Currency (Nearly Worthless)
 
 Show  # Currency - League Specific - Resonators (Error)
-	Class "Delve Socketable Currency"
+	Class "Delve Stackable Socketable Currency"
 	BaseType " Resonator"
 	SetFontSize 40
 	SetTextColor 255 0 255 # Currency (Error)
@@ -3053,7 +3040,7 @@ Hide  # Divination Cards - Worthless (Conflicts)
 
 Show  # Divination Cards - 10c+
 	Class Divination
-	BaseType "The Doctor" "House of Mirrors" "The Fiend" "The Nurse" "Alluring Bounty" "Pride of the First Ones" "Immortal Resolve" "The World Eater" "Beauty Through Death" "The Spark and the Flame" "The Immortal" "The Wolven King's Bite" "Hunter's Reward" "The Life Thief" "Abandoned Wealth" "The Last One Standing" "The Iron Bard" "Wealth and Power" "The Dragon's Heart" "The Samurai's Eye" "The Undisputed" "Pride Before the Fall" "Seven Years Bad Luck" "Burning Blood" "The Queen" "The Celestial Justicar" "The Saint's Treasure" "The King's Heart" "The Enlightened" "The Undaunted" "The Mayor" "The Celestial Stone" "The Risk" "The Artist" "The Sacrifice"
+	BaseType "The Demon" "The Eye of Terror" "The Price of Loyalty" "Remembrance" "Void of the Elements" "The Damned" "The Bargain" "The Doctor" "House of Mirrors" "The Fiend" "The Nurse" "Alluring Bounty" "Pride of the First Ones" "Immortal Resolve" "The World Eater" "Beauty Through Death" "The Spark and the Flame" "The Immortal" "The Wolven King's Bite" "Hunter's Reward" "The Life Thief" "Abandoned Wealth" "The Last One Standing" "The Iron Bard" "Wealth and Power" "The Dragon's Heart" "The Samurai's Eye" "The Undisputed" "Pride Before the Fall" "Seven Years Bad Luck" "Burning Blood" "The Queen" "The Celestial Justicar" "The Saint's Treasure" "The King's Heart" "The Enlightened" "The Undaunted" "The Mayor" "The Celestial Stone" "The Risk" "The Artist" "The Sacrifice"
 	SetFontSize 45 
 	SetTextColor 255 0 175 # Divination Card (10c+) 
 	SetBackgroundColor 255 255 255 255 # Divination Card (10c+) 
@@ -3064,7 +3051,7 @@ Show  # Divination Cards - 10c+
 
 Show  # Divination Cards - 1c+
 	Class Divination
-	BaseType "Mawr Blaidd" "The Sephirot" "The Valkyrie" "The Wolf" "The Hoarder" "The Wind" "The Professor" "The Endless Darkness" "Dark Dreams" "The Gladiator" "The Porcupine" "Last Hope" Heterochromia "Earth Drinker" "The Dapper Prodigy" "The Landing" "Chaotic Disposition" "The Cartographer" "The Hunger" "The Void" "The Hale Heart" "Sambodhi's Vow" "Buried Treasure" "Lucky Deck" "The Cursed King" "The Ethereal" "The Vast" Rebirth "The Jeweller's Boon" "Boon of the First Ones" Monochrome "The Seeker" "The Deep Ones" "Left to Fate" "Bowyer's Dream" "Lucky Connections" "The Chains that Bind" "The Scavenger" "The Soul" "The Polymath" "The Valley of Steel Boxes" "The Standoff" "The Breach" "The Dreamer" Perfection "The Master" "The Innocent" "The Journey" "Time-Lost Relic" "The Throne" "Arrogance of the Vaal" "The Beast" "The Dark Mage" Audacity "Dialla's Subjugation" "Emperor of Purity" "Emperor's Luck" "Gemcutter's Promise" "Her Mask" Humility "Jack in the Box" "Lost Worlds" Loyalty "Lysah's Respite" "Merciless Armament" "Scholar of the Seas" "The Battle Born" "The Betrayal" "The Body" "The Brittle Emperor" "The Dragon" "The Fletcher" "The Formless Sea" "The Gemcutter" "The Harvester" "The Inventor" "The Jester" "The Lion" "The Offering" "The Penitent" "The Road to Power" "The Scholar" "The Stormcaller" "The Surveyor" "The Thaumaturgist" "The Trial" "The Tyrant" "The Warlord" "The Web" "The Wrath" "Vinia's Token" Mitts "Lingering Remnants" "No Traces" "The Realm" "The Obscured" "The Deceiver" "The Puzzle" "The Insatiable" "Blessing of God" "The Sword King's Salute" "The Rite of Elements" "The Dreamland" "The Admirer" "The Darkest Dream" "Harmony of Souls" "The Twilight Moon" "The Wilted Rose" "The Price of Protection" "Alone in the Darkness" "The Lord of Celebration" Vanity "Echoes of Love" "Demigod's Wager" "The Primordial" "The Catalyst" "The Arena Champion" "The Master Artisan" "The Ruthless Ceinture" "The Avenger" "Forbidden Power" "The Golden Era" "Rain of Chaos" "The Conduit" "Three Voices" "Boundless Realms" "The Aesthete" "The Calling" "The Drunken Aristocrat" "The Gentleman" "The Inoculated" "The Lich" "The Oath" "The Sigil" "The Visionary" "Call to the First Ones" "The Wolverine" "Struck by Lightning" "The Fool" "The Archmage's Right Hand"
+	BaseType "Akil's Prophecy" "Nook's Crown" "Azyran's Reward" "The Heroic Strike" "Vile Power" "The Wolf's Legacy" "The Old Man" "The Deal" "More is Never Enough" "Mawr Blaidd" "The Sephirot" "The Valkyrie" "The Wolf" "The Hoarder" "The Wind" "The Professor" "The Endless Darkness" "Dark Dreams" "The Gladiator" "The Porcupine" "Last Hope" Heterochromia "Earth Drinker" "The Dapper Prodigy" "The Landing" "Chaotic Disposition" "The Cartographer" "The Hunger" "The Void" "The Hale Heart" "Sambodhi's Vow" "Buried Treasure" "Lucky Deck" "The Cursed King" "The Ethereal" "The Vast" Rebirth "The Jeweller's Boon" "Boon of the First Ones" Monochrome "The Seeker" "The Deep Ones" "Left to Fate" "Bowyer's Dream" "Lucky Connections" "The Chains that Bind" "The Scavenger" "The Soul" "The Polymath" "The Valley of Steel Boxes" "The Standoff" "The Breach" "The Dreamer" Perfection "The Master" "The Innocent" "The Journey" "Time-Lost Relic" "The Throne" "Arrogance of the Vaal" "The Beast" "The Dark Mage" Audacity "Dialla's Subjugation" "Emperor of Purity" "Emperor's Luck" "Gemcutter's Promise" "Her Mask" Humility "Jack in the Box" "Lost Worlds" Loyalty "Lysah's Respite" "Merciless Armament" "Scholar of the Seas" "The Battle Born" "The Betrayal" "The Body" "The Brittle Emperor" "The Dragon" "The Fletcher" "The Formless Sea" "The Gemcutter" "The Harvester" "The Inventor" "The Jester" "The Lion" "The Offering" "The Penitent" "The Road to Power" "The Scholar" "The Stormcaller" "The Surveyor" "The Thaumaturgist" "The Trial" "The Tyrant" "The Warlord" "The Web" "The Wrath" "Vinia's Token" Mitts "Lingering Remnants" "No Traces" "The Realm" "The Obscured" "The Deceiver" "The Puzzle" "The Insatiable" "Blessing of God" "The Sword King's Salute" "The Rite of Elements" "The Dreamland" "The Admirer" "The Darkest Dream" "Harmony of Souls" "The Twilight Moon" "The Wilted Rose" "The Price of Protection" "Alone in the Darkness" "The Lord of Celebration" Vanity "Echoes of Love" "Demigod's Wager" "The Primordial" "The Catalyst" "The Arena Champion" "The Master Artisan" "The Ruthless Ceinture" "The Avenger" "Forbidden Power" "The Golden Era" "Rain of Chaos" "The Conduit" "Three Voices" "Boundless Realms" "The Aesthete" "The Calling" "The Drunken Aristocrat" "The Gentleman" "The Inoculated" "The Lich" "The Oath" "The Sigil" "The Visionary" "Call to the First Ones" "The Wolverine" "Struck by Lightning" "The Fool" "The Archmage's Right Hand"
 	SetFontSize 45 
 	SetTextColor 255 255 255 # Divination Card (1c+) 
 	SetBackgroundColor 255 0 175 255 # Divination Card (1c+) 
@@ -3075,7 +3062,7 @@ Show  # Divination Cards - 1c+
 
 Show  # Divination Cards - <1c
 	Class Divination
-	BaseType "Blind Venture" "Coveted Possession" "Glimmer of Hope" Hope "The Demoness" "The Encroaching Darkness" "The Mercenary" "The One With All" "The Poet" "The Siren" "The Spoiled Prince" "The Traitor" "The Union" "Treasure Hunter" "The Wretched" "The Garish Power" "The Forsaken" "Atziri's Arsenal" "The Cacophony" "The Messenger" "Boon of Justice" "Imperial Legacy" "The Pact" "The Gambler" "Gift of the Gemling Queen" "The Survivalist" "A Dab of Ink" "Three Faces in the Dark" "The Explorer" "The Mad King" "The Lord in Black" "Light and Truth" "Rain Tempter" "The Pack Leader" "The Fathomless Depths"
+	BaseType "The Mountain" "The Side Quest" "The Skeleton" "Blind Venture" "Coveted Possession" "Glimmer of Hope" Hope "The Demoness" "The Encroaching Darkness" "The Mercenary" "The One With All" "The Poet" "The Siren" "The Spoiled Prince" "The Traitor" "The Union" "Treasure Hunter" "The Wretched" "The Garish Power" "The Forsaken" "Atziri's Arsenal" "The Cacophony" "The Messenger" "Boon of Justice" "Imperial Legacy" "The Pact" "The Gambler" "Gift of the Gemling Queen" "The Survivalist" "A Dab of Ink" "Three Faces in the Dark" "The Explorer" "The Mad King" "The Lord in Black" "Light and Truth" "Rain Tempter" "The Pack Leader" "The Fathomless Depths"
 	SetFontSize 45 
 	SetTextColor 0 0 0 # Divination Card (<1c) 
 	SetBackgroundColor 255 0 175 230 # Divination Card (<1c) 
