@@ -2651,7 +2651,7 @@ Show  # Maps - T11+ (Red) - Blighted
 	BlightedMap True
 	MapTier >= 11
 	SetFontSize 45
-	SetTextColor 0 0 0 # Map (Blighted)
+	SetTextColor 0 230 0 # Map (Red Blighted)
 	SetBackgroundColor 255 0 0 220 # Map (T16)
 	SetBorderColor 0 255 0 # Map (Blighted)
 	PlayAlertSound 3 200 # Map
@@ -2684,12 +2684,12 @@ Show  # Maps - T11+ (Red) - Other
 # Yellow #
 #--------#
 
-Show  # Maps - T11+ (Yellow) - Blighted
+Show  # Maps - T6+ (Yellow) - Blighted
 	BlightedMap True
 	MapTier <= 10
 	MapTier >= 6
 	SetFontSize 45
-	SetTextColor 0 0 0 # Map (Blighted)
+	SetTextColor 0 100 0 # Map (Blighted)
 	SetBackgroundColor 255 255 0 200 # Map (Yellow)
 	SetBorderColor 0 255 0 # Map (Blighted)
 	PlayAlertSound 3 200 # Map
@@ -2750,7 +2750,7 @@ Show  # Maps - T1+ (White) - Blighted
 	BlightedMap True
 	MapTier <= 5
 	SetFontSize 45
-	SetTextColor 0 0 0 # Map (Blighted)
+	SetTextColor 0 100 0 # Map (Blighted)
 	SetBackgroundColor 235 235 255 200 # Map (White)
 	SetBorderColor 0 255 0 # Map (Blighted)
 	PlayAlertSound 3 200 # Map
