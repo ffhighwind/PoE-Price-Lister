@@ -2652,6 +2652,7 @@ Show  # Maps - T16 (Elder)
 
 Show  # Maps - T11+ (Red) - Blighted
 	BlightedMap True
+	MapTier >= 11
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (Blighted)
 	SetBackgroundColor 255 0 0 220 # Map (T16)
