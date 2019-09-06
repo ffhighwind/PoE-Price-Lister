@@ -1,7 +1,7 @@
 ############################################
-##  HIGHWIND'S VERY STRICT FILTER 3.8.1   ##
+##  HIGHWIND'S VERY STRICT FILTER 3.8.2   ##
 ############################################
-## Release Date: September 4, 2019        ##
+## Release Date: September 5, 2019        ##
 ############################################
 
 #--------------#
@@ -506,13 +506,15 @@ Hide  # Currency - League Specific - Essences (Worthless)
 #--------#
 # Blight #
 #--------#
+
 Show  # Currency - League Specific - Oils
 	Class Currency
 	BaseType "Clear Oil" "Sepia Oil" "Amber Oil" "Verdant Oil" "Teal Oil" "Azure Oil" "Violet Oil" "Crimson Oil" "Black Oil" "Opalescent Oil" "Silver Oil" "Golden Oil"
 	SetFontSize 36
 	SetTextColor 255 0 255 # Currency (Oils)
-	SetBackgroundColor 0 0 0 225 # Currency (Oils)
-	SetBorderColor 0 0 0 0 # Currency (Oils)
+	SetBackgroundColor 20 0 20 230 # Currency (Oils)
+	SetBorderColor 255 0 255 # Currency (Oils)
+	PlayAlertSound 4 200 # Mid Value (Currency)
 	MinimapIcon 1 Blue Circle
 	PlayEffect Blue
 
@@ -2673,6 +2675,16 @@ Show  # Maps - T16 (Elder)
 	MinimapIcon 0 Red Hexagon
 	PlayEffect Red
 
+Show  # Maps - T11+ (Red) - Blighted
+	ElderMap True
+	SetFontSize 45
+	SetTextColor 0 0 0 # Map (Blighted)
+	SetBackgroundColor 255 0 0 220 # Map (T16)
+	SetBorderColor 0 255 0 # Map (Blighted)
+	PlayAlertSound 3 200 # Map
+	MinimapIcon 0 Green Hexagon
+	PlayEffect Green
+
 Show  # Maps - T11+ (Red) - Shaped
 	ShapedMap True
 	MapTier >= 11
@@ -2698,6 +2710,18 @@ Show  # Maps - T11+ (Red) - Other
 #--------#
 # Yellow #
 #--------#
+
+Show  # Maps - T11+ (Yellow) - Blighted
+	BlightedMap True
+	MapTier <= 10
+	MapTier >= 6
+	SetFontSize 45
+	SetTextColor 0 0 0 # Map (Blighted)
+	SetBackgroundColor 255 255 0 200 # Map (Yellow)
+	SetBorderColor 0 255 0 # Map (Blighted)
+	PlayAlertSound 3 200 # Map
+	MinimapIcon 0 Green Hexagon
+	PlayEffect Green
 
 Show  # Maps - T6+ (Yellow) - Silent - T6-8 in T12+ - Shaped
 	ShapedMap True
@@ -2748,6 +2772,17 @@ Show  # Maps - T6+ (Yellow) - Sound - Other
 #-------#
 # White #
 #-------#
+
+Show  # Maps - T1+ (White) - Blighted
+	BlightedMap True
+	MapTier <= 5
+	SetFontSize 45
+	SetTextColor 0 0 0 # Map (Blighted)
+	SetBackgroundColor 235 235 255 200 # Map (White)
+	SetBorderColor 0 255 0 # Map (Blighted)
+	PlayAlertSound 3 200 # Map
+	MinimapIcon 0 Green Hexagon
+	PlayEffect Green
 
 Hide  # Maps - Low Drop Level - T1-5 in T11+
 	Class Maps
