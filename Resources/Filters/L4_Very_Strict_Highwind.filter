@@ -1,7 +1,7 @@
 ﻿############################################
-##  HIGHWIND'S VERY STRICT FILTER 3.8.3   ##
+##  HIGHWIND'S VERY STRICT FILTER 3.8.4   ##
 ############################################
-## Release Date: September 6, 2019        ##
+## Release Date: September 7, 2019        ##
 ############################################
 
 #--------------#
@@ -88,7 +88,7 @@
 #--------------#
 #   TOP TIER   #
 #--------------#
-# "One Hand" "Two Hand" Bows Staves Daggers Wands Claws Sceptres
+# "One Hand" "Two Hand" Bows Staves Warstaff Daggers "Rune Dagger" Wands Claws Sceptres
 # Gloves Boots Helmets "Body Armours" Shields "Fishing Rods"
 #
 ## Gloves (56+) Boots (56+) Helmets (59+) Body Armour (62+) Shields (60+)
@@ -1080,9 +1080,9 @@ Show  # 5+ Links - 5L (Leveling)
 #Disabled Block End
 
 #Disabled Block Start
-#Show  # 5+ Links - 5L Staves (High Drop Level)
+#Show  # 5+ Links - 5L Staves Warstaff (High Drop Level)
 #	LinkedSockets = 5
-#	Class Staves
+#	Class Staves Warstaff
 #	DropLevel >= 56
 #	SetFontSize 40
 #	SetTextColor 255 0 0 # 5+ Link
@@ -1092,9 +1092,9 @@ Show  # 5+ Links - 5L (Leveling)
 #Disabled Block End
 
 #Disabled Block Start
-#Show  # 5+ Links - 5L Staves (Low Drop Level)
+#Show  # 5+ Links - 5L Staves Warstaff (Low Drop Level)
 #	LinkedSockets = 5
-#	Class Staves
+#	Class Staves Warstaff
 #	SetFontSize 36
 #	SetTextColor 255 0 0 # 5+ Link
 #	SetBackgroundColor 50 50 50 230 # 5+ Link (Low)
@@ -1709,7 +1709,7 @@ Show  # Explicit Mods - Shaper/Elder - Magic
 
 # Physical Weapons
 Show  # Explicit Mods - Physical Weapons - Rare
-	Class "One Hand" Daggers Wands Claws Sceptres "Two Hand" Bows Staves
+	Class "One Hand" Daggers "Rune Dagger" Wands Claws Sceptres "Two Hand" Bows Staves Warstaff
 	HasExplicitMod "Tyrannical" "Merciless" "Flaring" "of Celebration" "of Incision" "of Destruction" "Dictator's"
 	Rarity = Rare
 	SetFontSize 45
@@ -1721,7 +1721,7 @@ Show  # Explicit Mods - Physical Weapons - Rare
 	PlayEffect Blue
 
 Show  # Explicit Mods - Physical Weapons - Magic
-	Class "One Hand" Daggers Wands Claws Sceptres "Two Hand" Bows Staves
+	Class "One Hand" Daggers "Rune Dagger" Wands Claws Sceptres "Two Hand" Bows Staves Warstaff
 	HasExplicitMod "Tyrannical" "Merciless" "Flaring" "of Celebration" "of Incision" "of Destruction" "Dictator's"
 	Rarity = Magic
 	SetFontSize 45
@@ -1734,7 +1734,7 @@ Show  # Explicit Mods - Physical Weapons - Magic
 
 # Elemental Weapons
 Show  # Explicit Mods - Elemental Weapons - Magic
-	Class "One Hand" Daggers Wands Claws Sceptres Bows
+	Class "One Hand" Daggers "Rune Dagger" Wands Claws Sceptres Bows
 	HasExplicitMod "Cremating" "Electrocuting" "Malicious" "Entombing" "Sharpshooter's"
 	Rarity = Magic
 	SetFontSize 36
@@ -1743,7 +1743,7 @@ Show  # Explicit Mods - Elemental Weapons - Magic
 	PlayEffect Blue
 
 Show  # Explicit Mods - Elemental Weapons - Rare
-	Class "One Hand" Daggers Wands Claws Sceptres Bows
+	Class "One Hand" Daggers "Rune Dagger" Wands Claws Sceptres Bows
 	HasExplicitMod "Cremating" "Electrocuting" "Malicious" "Entombing" "Sharpshooter's"
 	Rarity = Rare
 	SetFontSize 40
@@ -1948,7 +1948,7 @@ Show  # Explicit Mods - Fractured - Rare - Other
 # Sockets 0:
 # Class Flasks Rings Amulets Belts Quivers Jewel Leaguestones
 # Sockets >= 1:
-# "One Hand" "Two Hand" Bows Staves Daggers Wands Claws Sceptres Gloves Boots Helmets "Body Armours" Shields "Fishing Rods"
+# "One Hand" "Two Hand" Bows Staves Warstaff Daggers "Rune Dagger" Wands Claws Sceptres Gloves Boots Helmets "Body Armours" Shields "Fishing Rods"
 # All equipment except Quivers, corrupted unset rings, and socketless uniques like Kaom's Heart/Roots
 
 #-----------------------------#
@@ -2008,7 +2008,7 @@ Hide  # Normal/Magic - Low Drop Level - 20+ 1-2 Link
 
 # 56 Thicket Bow, Karui Sceptre
 Hide  # Normal/Magic - Low Drop Level - 60+ Armour Weapons Shields
-	Class "One Hand" "Two Hand" Bows Staves Daggers Wands Claws Sceptres Gloves Boots Helmets "Body Armours" Shields
+	Class "One Hand" "Two Hand" Bows Staves Warstaff Daggers "Rune Dagger" Wands Claws Sceptres Gloves Boots Helmets "Body Armours" Shields
 	DropLevel < 56
 	Rarity <= Magic
 	ItemLevel >= 60
@@ -2026,7 +2026,7 @@ Hide  # Normal/Magic - Low Drop Level - 84+ Armour Shields
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
 
 Hide  # Normal/Magic - Low Drop Level - <83 Body Armour Weapons Shields
-	Class "One Hand" "Two Hand" Bows Staves Daggers Wands Claws Sceptres "Body Armours" Shields
+	Class "One Hand" "Two Hand" Bows Staves Warstaff Daggers "Rune Dagger" Wands Claws Sceptres "Body Armours" Shields
 	Rarity <= Magic
 	ItemLevel < 83
 	ItemLevel >= 60
@@ -2072,7 +2072,7 @@ Hide  # 75+ Rares - Low Drop Level - 75+ Body Armour
 
 # 56 Karui Sceptre, 58 Corsair Sword
 Hide  # 75+ Rares - Low Drop Level - 75+ One Hand Weapons
-	Class "One Hand" Daggers Wands Claws Sceptres
+	Class "One Hand" Daggers "Rune Dagger" Wands Claws Sceptres
 	Rarity = Rare
 	DropLevel < 56
 	ItemLevel >= 75
@@ -2085,7 +2085,7 @@ Hide  # 75+ Rares - Low Drop Level - 75+ One Hand Weapons
 
 # 56 Thicket Bow
 Hide  # 75+ Rares - Low Drop Level - 75+ Two Hand Weapons
-	Class "Two Hand" Bows Staves
+	Class "Two Hand" Bows Staves Warstaff
 	Rarity = Rare
 	DropLevel < 56
 	ItemLevel >= 75
@@ -2135,7 +2135,7 @@ Hide  # 60+ Rares - Low Drop Level - 60+ Body Armour
 	SetBorderColor 0 0 0 # Rare Recipe 60+ (Hidden)
 
 Hide  # 60+ Rares - Low Drop Level - 60+ One Hand Weapons Shields
-	Class "One Hand" Daggers Wands Claws Sceptres Shields
+	Class "One Hand" Daggers "Rune Dagger" Wands Claws Sceptres Shields
 	Rarity = Rare
 	DropLevel <= 50
 	ItemLevel >= 60
@@ -2147,7 +2147,7 @@ Hide  # 60+ Rares - Low Drop Level - 60+ One Hand Weapons Shields
 	SetBorderColor 0 0 0 # Rare Weapon 60+ (Hidden)
 
 Hide  # 60+ Rares - Low Drop Level - 60+ Two Hand Weapons
-	Class "Two Hand" Bows Staves
+	Class "Two Hand" Bows Staves Warstaff
 	Rarity = Rare
 	DropLevel <= 50
 	ItemLevel >= 60
@@ -3409,7 +3409,7 @@ Hide  # Normal/Magic - Low Drop Level - 84+ Quivers
 #Disabled Block Start
 #Show  # Crafting Bases - 83+ Weapons - Top Tier
 #	ItemLevel >= 83
-#	Class "One Hand" "Two Hand" Bows Staves Daggers Wands Claws Sceptres
+#	Class "One Hand" "Two Hand" Bows Staves Warstaff Daggers "Rune Dagger" Wands Claws Sceptres
 #	BaseType "Harbinger Bow" "Imperial Skean" Ambusher "Imbued Wand" "Tornado Wand" "Opal Wand" "Imperial Claw" "Hellion's Paw" "Jewelled Foil" "Corsair Sword" "Behemoth Mace" "Vaal Sceptre" "Siege Axe"
 #	Rarity <= Magic
 #	SetFontSize 36
@@ -3419,7 +3419,7 @@ Hide  # Normal/Magic - Low Drop Level - 84+ Quivers
 
 Hide  # Crafting Bases - 83+ Weapons - One Hand Weapons
 	ItemLevel >= 83
-	Class "One Hand" Daggers Wands Claws Sceptres
+	Class "One Hand" Daggers "Rune Dagger" Wands Claws Sceptres
 	BaseType "Siege Axe" "Vaal Hatchet" "Infernal Axe" "Runic Hatchet" "Legion Hammer" "Nightmare Mace" "Behemoth Mace" "Corsair Sword" "Spiraled Foil" "Eternal Sword" "Jewelled Foil" "Dragoon Sword" Ambusher "Platinum Kris" "Imperial Skean" Sai "Imbued Wand" "Opal Wand" "Tornado Wand" "Profane Wand" "Hellion's Paw" "Imperial Claw" "Terror Claw" "Gemini Claw" "Karui Sceptre" "Vaal Sceptre"
 	Rarity <= Magic
 	SetFontSize 36
@@ -3428,7 +3428,7 @@ Hide  # Crafting Bases - 83+ Weapons - One Hand Weapons
 
 Hide  # Crafting Bases - 83+ Weapons - Two Hand Weapons
 	ItemLevel >= 83
-	Class "Two Hand" Bows Staves
+	Class "Two Hand" Bows Staves Warstaff
 	BaseType "Sundering Axe" "Vaal Axe" "Ezomyte Axe" "Void Axe" "Despot Axe" Fleshripper Piledriver Meatgrinder "Terror Maul" "Coronal Maul" "Reaver Sword" "Vaal Greatsword" "Lion Sword" "Infernal Sword" "Exquisite Blade" "Thicket Bow" "Imperial Bow" "Harbinger Bow" "Maraketh Bow" Lathi "Ezomyte Staff" Maelstr "Eclipse Staff" "Judgement Staff"
 	Rarity <= Magic
 	SetFontSize 36
@@ -3437,7 +3437,7 @@ Hide  # Crafting Bases - 83+ Weapons - Two Hand Weapons
 
 Hide  # Normal/Magic - Low Drop Level - 83+ Weapons
 	ItemLevel >= 83
-	Class "One Hand" "Two Hand" Bows Staves Daggers Wands Claws Sceptres
+	Class "One Hand" "Two Hand" Bows Staves Warstaff Daggers "Rune Dagger" Wands Claws Sceptres
 	Rarity <= Magic
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
@@ -3932,7 +3932,7 @@ Hide  # 60+ Rares - Accessories
 #Disabled Block End
 
 #Disabled Block Start
-#Show  # Highlighted Rares - Two Hand Weapons - War Staves - 83+
+#Show  # Highlighted Rares - Two Hand Weapons - War Staves Warstaff - 83+
 #	Class "War Staff"
 #	DropLevel >= 61
 #	ItemLevel >= 83
@@ -3944,7 +3944,7 @@ Hide  # 60+ Rares - Accessories
 
 #Disabled Block Start
 #Show  # Highlighted Rares - Two Hand Weapons - Staves - 83+
-#	Class Staves
+#	Class Staves Warstaff
 #	DropLevel >= 61
 #	ItemLevel >= 83
 #	SetFontSize 40
@@ -3993,7 +3993,7 @@ Hide  # 60+ Rares - Accessories
 
 #Disabled Block Start
 #Show  # Highlighted Rares - Top Tier - Daggers - Imperial Skean - 83+
-#	Class Daggers
+#	Class Daggers "Rune Dagger"
 #	ItemLevel >= 83
 #	BaseType "Imperial Skean"
 #	SetFontSize 40
@@ -4004,7 +4004,7 @@ Hide  # 60+ Rares - Accessories
 
 #Disabled Block Start
 #Show  # Highlighted Rares - Top Tier - Daggers - Ambusher - 83+
-#	Class Daggers
+#	Class Daggers "Rune Dagger"
 #	ItemLevel >= 83
 #	BaseType "Ambusher"
 #	SetFontSize 40
@@ -4081,7 +4081,7 @@ Hide  # 60+ Rares - Accessories
 
 #Disabled Block Start
 #Show  # Highlighted Rares - One Hand Weapons - Daggers - 83+
-#	Class Daggers
+#	Class Daggers "Rune Dagger"
 #	DropLevel >= 60
 #	ItemLevel >= 83
 #	SetFontSize 40
@@ -4223,7 +4223,7 @@ Hide  # 83+ Rares - Body Armour
 
 Hide  # 83+ Rares - Two Hand Weapons
 	DropLevel >= 56
-	Class "Two Hand" Bows Staves
+	Class "Two Hand" Bows Staves Warstaff
 	ItemLevel >= 83
 	BaseType "Sundering Axe" "Vaal Axe" "Ezomyte Axe" "Void Axe" "Despot Axe" Fleshripper Piledriver Meatgrinder "Terror Maul" "Coronal Maul" "Reaver Sword" "Vaal Greatsword" "Lion Sword" "Infernal Sword" "Exquisite Blade" "Thicket Bow" "Imperial Bow" "Harbinger Bow" "Maraketh Bow" Lathi "Ezomyte Staff" Maelstr "Eclipse Staff" "Judgement Staff"
 	SetFontSize 36
@@ -4238,7 +4238,7 @@ Hide  # 83+ Rares - Two Hand Weapons
 
 Hide  # 83+ Rares - One Hand Weapons
 	DropLevel >= 56
-	Class "One Hand" Daggers Wands Claws Sceptres
+	Class "One Hand" Daggers "Rune Dagger" Wands Claws Sceptres
 	ItemLevel >= 83
 	BaseType "Siege Axe" "Vaal Hatchet" "Infernal Axe" "Runic Hatchet" "Legion Hammer" "Nightmare Mace" "Behemoth Mace" "Corsair Sword" "Spiraled Foil" "Eternal Sword" "Jewelled Foil" "Dragoon Sword" Ambusher "Platinum Kris" "Imperial Skean" Sai "Imbued Wand" "Opal Wand" "Tornado Wand" "Profane Wand" "Hellion's Paw" "Imperial Claw" "Terror Claw" "Gemini Claw" "Karui Sceptre" "Vaal Sceptre"
 	SetFontSize 36
@@ -4467,7 +4467,7 @@ Hide  # 83+ Rares - Quivers
 
 #Disabled Block Start
 #Show  # Highlighted Rares - Two Hand Weapons - Staves - 75+
-#	Class Staves
+#	Class Staves Warstaff
 #	DropLevel >= 61
 #	ItemLevel >= 75
 #	SetFontSize 40
@@ -4516,7 +4516,7 @@ Hide  # 83+ Rares - Quivers
 
 #Disabled Block Start
 #Show  # Highlighted Rares - Top Tier - Daggers - Imperial Skean - 75+
-#	Class Daggers
+#	Class Daggers "Rune Dagger"
 #	ItemLevel >= 75
 #	BaseType "Imperial Skean"
 #	SetFontSize 40
@@ -4527,7 +4527,7 @@ Hide  # 83+ Rares - Quivers
 
 #Disabled Block Start
 #Show  # Highlighted Rares - Top Tier - Daggers - Ambusher - 75+
-#	Class Daggers
+#	Class Daggers "Rune Dagger"
 #	ItemLevel >= 75
 #	BaseType "Ambusher"
 #	SetFontSize 40
@@ -4593,7 +4593,7 @@ Hide  # 83+ Rares - Quivers
 
 #Disabled Block Start
 #Show  # Highlighted Rares - One Hand Weapons - Daggers - 75+
-#	Class Daggers
+#	Class Daggers "Rune Dagger"
 #	DropLevel >= 60
 #	ItemLevel >= 75
 #	SetFontSize 40
@@ -4709,7 +4709,7 @@ Hide  # 75+ Rares - Armour
 #----------------------#
 
 Hide  # 75+ Rares - Two Hand Weapons
-	Class "Two Hand" Bows Staves
+	Class "Two Hand" Bows Staves Warstaff
 	ItemLevel >= 75
 	SetFontSize 36
 	SetTextColor 255 190 75 # Rare Weapon
@@ -4722,7 +4722,7 @@ Hide  # 75+ Rares - Two Hand Weapons
 # Can be used in the Chaos/Regal recipes but they're colored differently because they take twice as many items.
 
 Hide  # 75+ Rares - One Hand Weapons
-	Class "One Hand" Daggers Wands Claws Sceptres
+	Class "One Hand" Daggers "Rune Dagger" Wands Claws Sceptres
 	ItemLevel >= 75
 	SetFontSize 36
 	SetTextColor 255 190 75 # Rare Weapon
@@ -4971,7 +4971,7 @@ Show  # Errors - 75+
 
 #Disabled Block Start
 #Show  # Highlighted Rares - Two Hand Weapons - Staves - 60+
-#	Class Staves
+#	Class Staves Warstaff
 #	DropLevel >= 61
 #	ItemLevel >= 60
 #	SetFontSize 40
@@ -5019,7 +5019,7 @@ Show  # Errors - 75+
 
 #Disabled Block Start
 #Show  # Highlighted Rares - Top Tier - Daggers - Imperial Skean - 60+
-#	Class Daggers
+#	Class Daggers "Rune Dagger"
 #	ItemLevel >= 60
 #	BaseType "Imperial Skean"
 #	SetFontSize 40
@@ -5030,7 +5030,7 @@ Show  # Errors - 75+
 
 #Disabled Block Start
 #Show  # Highlighted Rares - Top Tier - Daggers - Ambusher - 60+
-#	Class Daggers
+#	Class Daggers "Rune Dagger"
 #	ItemLevel >= 60
 #	BaseType "Ambusher"
 #	SetFontSize 40
@@ -5096,7 +5096,7 @@ Show  # Errors - 75+
 
 #Disabled Block Start
 #Show  # Highlighted Rares - One Hand Weapons - Daggers - 60+
-#	Class Daggers
+#	Class Daggers "Rune Dagger"
 #	DropLevel >= 60
 #	ItemLevel >= 60
 #	SetFontSize 40
@@ -5211,7 +5211,7 @@ Hide  # 60+ Rares - Armour
 #----------------------#
 
 Hide  # 60+ Rares - Two Hand Weapons
-	Class "Two Hand" Bows Staves
+	Class "Two Hand" Bows Staves Warstaff
 	ItemLevel >= 60
 	SetFontSize 36
 	SetTextColor 255 190 75 # Rare Weapon
@@ -5224,7 +5224,7 @@ Hide  # 60+ Rares - Two Hand Weapons
 # Can be used in the Chaos/Regal recipes but they're colored differently because they take twice as many items.
 
 Hide  # 60+ Rares - One Hand Weapons
-	Class "One Hand" Daggers Wands Claws Sceptres
+	Class "One Hand" Daggers "Rune Dagger" Wands Claws Sceptres
 	ItemLevel >= 60
 	SetFontSize 36
 	SetTextColor 255 190 75 # Rare Weapon
