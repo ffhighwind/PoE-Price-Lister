@@ -16,7 +16,7 @@ namespace PoE_Price_Lister
     {
 
         ////private const string csvFile = "poe_uniques.csv";
-        private const string league = "Legion";
+        private const string league = "Blight";
 
         private const string uniquesCsvURL = "https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/poe_uniques.csv";
         private const string filterURL = "https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/S1_Regular_Highwind.filter";
