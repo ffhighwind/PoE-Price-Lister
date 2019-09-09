@@ -1,5 +1,5 @@
 ############################################
-##    HIGHWIND'S MAPPING FILTER 3.8.6     ##
+##    HIGHWIND'S MAPPING FILTER 3.8.7     ##
 ############################################
 ## Release Date: September 8, 2019        ##
 ############################################
@@ -509,14 +509,35 @@ Hide  # Currency - League Specific - Essences (Worthless)
 
 Show  # Currency - League Specific - Oils
 	Class Currency
-	BaseType "Clear Oil" "Sepia Oil" "Amber Oil" "Verdant Oil" "Teal Oil" "Azure Oil" "Violet Oil" "Crimson Oil" "Black Oil" "Opalescent Oil" "Silver Oil" "Golden Oil"
+	BaseType "Clear Oil" "Sepia Oil" "Amber Oil" "Verdant Oil" 
 	SetFontSize 36
-	SetTextColor 255 0 255 # Currency (Oils)
-	SetBackgroundColor 20 0 20 230 # Currency (Oils)
-	SetBorderColor 255 0 255 # Currency (Oils)
+	SetTextColor 255 0 255 # Currency (Low Oils)
+	SetBackgroundColor 0 0 0 230 # Currency (Low Oils)
+	SetBorderColor 0 0 0 0 # Currency (Low Oils)
+	MinimapIcon 1 Blue Circle
+	PlayEffect Blue
+
+Show  # Currency - League Specific - Oils
+	Class Currency
+	BaseType "Teal Oil" "Azure Oil" "Violet Oil"
+	SetFontSize 40
+	SetTextColor 255 0 255 # Currency (Mid Oils)
+	SetBackgroundColor 20 0 20 230 # Currency (Mid Oils)
+	SetBorderColor 255 0 255 # Currency (Mid Oils)
 	PlayAlertSound 4 200 # Mid Value (Currency)
 	MinimapIcon 1 Blue Circle
 	PlayEffect Blue
+
+Show  # Currency - League Specific - Oils
+	Class Currency
+	BaseType "Crimson Oil" "Black Oil" "Opalescent Oil" "Silver Oil" "Golden Oil"
+	SetFontSize 45
+	SetTextColor 255 0 255 # Currency (High Oils)
+	SetBackgroundColor 255 255 255 255 # Currency (High Oils)
+	SetBorderColor 255 0 255 # Currency (High Oils)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 1 Red Circle
+	PlayEffect Red
 
 #--------#
 # Legion #
@@ -606,7 +627,7 @@ Show  # Currency - League Specific - Blessings (Breach)
 # Fossils
 Show  # Currency - League Specific - Fossils (High)
 	Class Currency
-	BaseType "Faceted Fossil" "Fractured Fossil" "Glyphic Fossil" "Hollow Fossil" "Shuddering Fossil" "Tangled Fossil" "Bloodstained Fossil" "Lucent Fossil" "Sanctified Fossil" "Gilded Fossil"
+	BaseType "Faceted Fossil" "Fractured Fossil" "Glyphic Fossil" "Hollow Fossil" "Shuddering Fossil" "Tangled Fossil" "Bloodstained Fossil" "Lucent Fossil" "Sanctified Fossil" "Gilded Fossil" "Corroded Fossil"
 	SetFontSize 45
 	SetTextColor 255 0 255 # Currency (6c+)
 	SetBackgroundColor 255 255 255 255 # Currency (6c+)
@@ -617,20 +638,13 @@ Show  # Currency - League Specific - Fossils (High)
 
 Show  # Currency - League Specific - Fossils (Low)
 	Class Currency
-	BaseType "Metallic Fossil" "Scorched Fossil" "Bound Fossil"
+	BaseType "Enchanted Fossil" "Aberrant Fossil" "Dense Fossil" "Frigid Fossil" "Jagged Fossil" "Lucent Fossil" "Metallic Fossil" "Scorched Fossil"
 	SetFontSize 36
-	SetTextColor 185 172 141 # Currency (Nearly Worthless)
-	SetBackgroundColor 0 0 0 225 # Currency (Nearly Worthless)
-	SetBorderColor 0 0 0 0 # Currency (Nearly Worthless)
+	SetTextColor 255 0 255 # Currency (Low)
+	SetBackgroundColor 0 0 0 230 # Currency (Low)
+	SetBorderColor 0 0 0 0 # Currency (Low)
 
-Show  # Currency - League Specific - Fossils (Very Low)
-	Class Currency
-	BaseType "Frigid Fossil" "Aberrant Fossil"
-	SetFontSize 36
-	SetTextColor 185 172 141 # Currency (Nearly Worthless)
-	SetBackgroundColor 0 0 0 225 # Currency (Nearly Worthless)
-	SetBorderColor 0 0 0 0 # Currency (Nearly Worthless)
-
+# BaseType "Bound Fossil" "Sanctified Fossil" "Serrated Fossil" "Gilded Fossil" "Aetheric Fossil" "Encrusted Fossil" "Perfect Fossil" "Prismatic Fossil" "Pristine Fossil" "Shuddering Fossil"
 Show  # Currency - League Specific - Fossils (Mid)
 	Class Currency
 	BaseType " Fossil"
@@ -656,7 +670,7 @@ Show  # Currency - League Specific - Resonators (High)
 
 Show  # Currency - League Specific - Resonators (Mid)
 	Class "Delve Stackable Socketable Currency"
-	BaseType "Powerful Chaotic Resonator" "Powerful Alchemical Resonator"
+	BaseType "Primitive Alchemical Resonator" "Primitive Chaotic Resonator"
 	SetFontSize 40
 	SetTextColor 255 0 255 # Currency (Low)
 	SetBackgroundColor 0 0 0 230 # Currency (Low)
@@ -664,7 +678,7 @@ Show  # Currency - League Specific - Resonators (Mid)
 
 Show  # Currency - League Specific - Resonators (Low)
 	Class "Delve Stackable Socketable Currency"
-	BaseType "Primitive Alchemical Resonator" "Primitive Chaotic Resonator"
+	BaseType "Potent Chaotic Resonator" "Potent Alchemical Resonator"
 	SetFontSize 36
 	SetTextColor 185 172 141 # Currency (Nearly Worthless)
 	SetBackgroundColor 0 0 0 225 # Currency (Nearly Worthless)
@@ -672,7 +686,7 @@ Show  # Currency - League Specific - Resonators (Low)
 
 Show  # Currency - League Specific - Resonators (Very Low)
 	Class "Delve Stackable Socketable Currency"
-	BaseType "Potent Chaotic Resonator" "Potent Alchemical Resonator"
+	BaseType "Powerful Chaotic Resonator" "Powerful Alchemical Resonator"
 	SetFontSize 36
 	SetTextColor 185 172 141 # Currency (Nearly Worthless)
 	SetBackgroundColor 0 0 0 225 # Currency (Nearly Worthless)
