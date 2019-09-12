@@ -1,7 +1,7 @@
 ############################################
-##     HIGHWIND'S STRICT FILTER 3.8.7     ##
+##     HIGHWIND'S STRICT FILTER 3.8.8     ##
 ############################################
-## Release Date: September 8, 2019        ##
+## Release Date: September 11, 2019       ##
 ############################################
 
 #--------------#
@@ -428,8 +428,9 @@ Show  # Currency - Prophecies - Other
 #----------#
 # Perandus #
 #----------#
+# Section: League Specific
 
-Show  # Currency - League Specific - Perandus Coins (6+)
+Show  # League Specific - Perandus Coins - 6+
 	Class Currency
 	BaseType "Perandus Coin"
 	StackSize >= 6
@@ -439,7 +440,7 @@ Show  # Currency - League Specific - Perandus Coins (6+)
 	SetBorderColor 0 0 0 # Currency (Perandus Coin)
 	PlayEffect Yellow Temp
 
-Show  # Currency - League Specific - Perandus Coins (3+)
+Show  # League Specific - Perandus Coins - 3+
 	Class Currency
 	BaseType "Perandus Coin"
 	StackSize >= 3
@@ -448,7 +449,7 @@ Show  # Currency - League Specific - Perandus Coins (3+)
 	SetBackgroundColor 75 65 50 # Currency (Perandus Coin)
 	SetBorderColor 0 0 0 # Currency (Perandus Coin)
 
-Hide  # Currency - League Specific - Perandus Coins (<3)
+Hide  # League Specific - Perandus Coins - <3
 	Class Currency
 	BaseType "Perandus Coin"
 	SetFontSize 36
@@ -462,7 +463,7 @@ Hide  # Currency - League Specific - Perandus Coins (<3)
 #---------#
 
 #6c+
-Show  # Currency - League Specific - Essences (High)
+Show  # League Specific - Essences - High Value
 	Class Currency
 	BaseType "Deafening Essence" "Essence of Delirium" "Essence of Hysteria" "Essence of Horror" "Essence of Insanity"
 	SetFontSize 45
@@ -474,7 +475,7 @@ Show  # Currency - League Specific - Essences (High)
 	PlayEffect Red
 
 #<3c
-Show  # Currency - League Specific - Essences (Mid)
+Show  # League Specific - Essences - Mid Value
 	Class Currency
 	BaseType "Shrieking Essence" "Screaming Essence" "Remnant of Corruption"
 	SetFontSize 40
@@ -485,7 +486,7 @@ Show  # Currency - League Specific - Essences (Mid)
 	MinimapIcon 0 Blue Diamond
 	PlayEffect Blue
 
-Show  # Currency - League Specific - Essences (Low)
+Show  # League Specific - Essences - Low Value
 	Class Currency
 	BaseType "Wailing Essence"
 	SetFontSize 36
@@ -493,7 +494,7 @@ Show  # Currency - League Specific - Essences (Low)
 	SetBackgroundColor 55 50 40 # Currency (Low Essence)
 	SetBorderColor 0 0 0 # Currency (Low Essence)
 
-Hide  # Currency - League Specific - Essences (Worthless)
+Hide  # League Specific - Essences - Worthless
 	Class Currency
 	BaseType "Whispering Essence" "Muttering Essence" "Weeping Essence"
 	SetFontSize 32
@@ -506,28 +507,7 @@ Hide  # Currency - League Specific - Essences (Worthless)
 # Blight #
 #--------#
 
-Show  # Currency - League Specific - Oils
-	Class Currency
-	BaseType "Clear Oil" "Sepia Oil" "Amber Oil" "Verdant Oil" 
-	SetFontSize 36
-	SetTextColor 255 0 255 # Currency (Low Oils)
-	SetBackgroundColor 0 0 0 230 # Currency (Low Oils)
-	SetBorderColor 0 0 0 0 # Currency (Low Oils)
-	MinimapIcon 1 Blue Circle
-	PlayEffect Blue
-
-Show  # Currency - League Specific - Oils
-	Class Currency
-	BaseType "Teal Oil" "Azure Oil" "Violet Oil"
-	SetFontSize 40
-	SetTextColor 255 0 255 # Currency (Mid Oils)
-	SetBackgroundColor 20 0 20 230 # Currency (Mid Oils)
-	SetBorderColor 255 0 255 # Currency (Mid Oils)
-	PlayAlertSound 4 200 # Mid Value (Currency)
-	MinimapIcon 1 Blue Circle
-	PlayEffect Blue
-
-Show  # Currency - League Specific - Oils
+Show  # League Specific - Oils - High Value
 	Class Currency
 	BaseType "Crimson Oil" "Black Oil" "Opalescent Oil" "Silver Oil" "Golden Oil"
 	SetFontSize 45
@@ -538,11 +518,32 @@ Show  # Currency - League Specific - Oils
 	MinimapIcon 1 Red Circle
 	PlayEffect Red
 
+Show  # League Specific - Oils - Mid Value
+	Class Currency
+	BaseType "Teal Oil" "Azure Oil" "Violet Oil"
+	SetFontSize 40
+	SetTextColor 255 0 255 # Currency (Mid Oils)
+	SetBackgroundColor 20 0 20 230 # Currency (Mid Oils)
+	SetBorderColor 255 0 255 # Currency (Mid Oils)
+	PlayAlertSound 4 200 # Mid Value (Currency)
+	MinimapIcon 1 Blue Circle
+	PlayEffect Blue
+
+Show  # League Specific - Oils - Low Value
+	Class Currency
+	BaseType "Clear Oil" "Sepia Oil" "Amber Oil" "Verdant Oil" 
+	SetFontSize 36
+	SetTextColor 255 0 255 # Currency (Low Oils)
+	SetBackgroundColor 0 0 0 230 # Currency (Low Oils)
+	SetBorderColor 0 0 0 0 # Currency (Low Oils)
+	MinimapIcon 1 Blue Circle
+	PlayEffect Blue
+
 #--------#
 # Legion #
 #--------#
 
-Show  # Currency - League Specific - Timeless Splinters
+Show  # League Specific - Timeless Splinters
 	Class Currency
 	BaseType "Timeless Karui Splinter" "Timeless Maraketh Splinter" " Empire Splinter" "Timeless Templar Splinter" "Timeless Vaal Splinter"
 	SetFontSize 36
@@ -552,7 +553,7 @@ Show  # Currency - League Specific - Timeless Splinters
 	MinimapIcon 1 Blue Circle
 	PlayEffect Blue
 
-Show  # Currency - League Specific - Incubator - High Value
+Show  # League Specific - Incubators - High Value
 	Class Incubator
 	BaseType "Geomancer's Incubator" "Time-Lost Incubator"
 	SetFontSize 45
@@ -563,7 +564,7 @@ Show  # Currency - League Specific - Incubator - High Value
 	MinimapIcon 0 Red Circle
 	PlayEffect Red
 
-Show  # Currency - League Specific - Incubator - Other
+Show  # League Specific - Incubators - Other
 	Class Incubator
 	SetFontSize 45
 	SetTextColor 255 0 255 # Incubator
@@ -577,7 +578,7 @@ Show  # Currency - League Specific - Incubator - Other
 # Breach #
 #--------#
 
-Show  # Currency - League Specific - Splinters (Chayula)
+Show  # League Specific - Splinters - Chayula
 	Class Currency
 	BaseType "Splinter of Chayula"
 	SetFontSize 40
@@ -587,7 +588,7 @@ Show  # Currency - League Specific - Splinters (Chayula)
 	MinimapIcon 0 Blue Circle
 	PlayEffect Blue
 
-Show  # Currency - League Specific - Splinters (Other)
+Show  # League Specific - Splinters - Other
 	Class Currency
 	BaseType "Splinter of Xoph" "Splinter of Tul" "Splinter of Esh" "Splinter of Uul-Netol"
 	SetFontSize 40
@@ -597,7 +598,7 @@ Show  # Currency - League Specific - Splinters (Other)
 	MinimapIcon 1 Blue Circle
 	PlayEffect Blue
 
-Show  # Currency - League Specific - Blessings (Chayula)
+Show  # League Specific - Blessings - Chayula
 	Class Currency
 	BaseType "Blessing of Chayula"
 	SetFontSize 45
@@ -608,7 +609,7 @@ Show  # Currency - League Specific - Blessings (Chayula)
 	MinimapIcon 0 Red Circle
 	PlayEffect Red
 
-Show  # Currency - League Specific - Blessings (Breach)
+Show  # League Specific - Blessings - Other
 	Class Currency
 	BaseType "Blessing of"
 	SetFontSize 45
@@ -623,7 +624,7 @@ Show  # Currency - League Specific - Blessings (Breach)
 #-------#
 
 # Fossils
-Show  # Currency - League Specific - Fossils (High)
+Show  # League Specific - Fossils - High Value
 	Class Currency
 	BaseType "Faceted Fossil" "Fractured Fossil" "Glyphic Fossil" "Hollow Fossil" "Shuddering Fossil" "Tangled Fossil" "Bloodstained Fossil" "Lucent Fossil" "Sanctified Fossil" "Gilded Fossil" "Corroded Fossil"
 	SetFontSize 45
@@ -634,7 +635,7 @@ Show  # Currency - League Specific - Fossils (High)
 	MinimapIcon 0 Red Circle
 	PlayEffect Red
 
-Show  # Currency - League Specific - Fossils (Low)
+Show  # League Specific - Fossils - Low Value
 	Class Currency
 	BaseType "Enchanted Fossil" "Aberrant Fossil" "Dense Fossil" "Frigid Fossil" "Jagged Fossil" "Lucent Fossil" "Metallic Fossil" "Scorched Fossil"
 	SetFontSize 36
@@ -643,7 +644,7 @@ Show  # Currency - League Specific - Fossils (Low)
 	SetBorderColor 0 0 0 0 # Currency (Low)
 
 # BaseType "Bound Fossil" "Sanctified Fossil" "Serrated Fossil" "Gilded Fossil" "Aetheric Fossil" "Encrusted Fossil" "Perfect Fossil" "Prismatic Fossil" "Pristine Fossil" "Shuddering Fossil"
-Show  # Currency - League Specific - Fossils (Mid)
+Show  # League Specific - Fossils - Mid Value
 	Class Currency
 	BaseType " Fossil"
 	SetFontSize 40
@@ -655,7 +656,7 @@ Show  # Currency - League Specific - Fossils (Mid)
 	PlayEffect Blue
 
 # Resonators
-Show  # Currency - League Specific - Resonators (High)
+Show  # League Specific - Resonators - High Value
 	Class "Delve Stackable Socketable Currency"
 	BaseType "Prime Chaotic Resonator" "Prime Alchemical Resonator"
 	SetFontSize 45
@@ -666,31 +667,25 @@ Show  # Currency - League Specific - Resonators (High)
 	MinimapIcon 0 Red Circle
 	PlayEffect Red
 
-Show  # Currency - League Specific - Resonators (Mid)
+Show  # League Specific - Resonators - Mid Value
 	Class "Delve Stackable Socketable Currency"
 	BaseType "Primitive Alchemical Resonator" "Primitive Chaotic Resonator"
 	SetFontSize 40
+	SetTextColor 255 0 255 # Currency (High)
+	SetBackgroundColor 20 0 20 230 # Currency (High)
+	SetBorderColor 255 0 255 # Currency (High)
+	MinimapIcon 0 Blue Circle
+	PlayEffect Blue
+
+Show  # League Specific - Resonators - Low Value
+	Class "Delve Stackable Socketable Currency"
+	BaseType "Potent Chaotic Resonator" "Potent Alchemical Resonator" "Powerful Chaotic Resonator" "Powerful Alchemical Resonator"
+	SetFontSize 36
 	SetTextColor 255 0 255 # Currency (Low)
 	SetBackgroundColor 0 0 0 230 # Currency (Low)
 	SetBorderColor 0 0 0 0 # Currency (Low)
 
-Show  # Currency - League Specific - Resonators (Low)
-	Class "Delve Stackable Socketable Currency"
-	BaseType "Potent Chaotic Resonator" "Potent Alchemical Resonator"
-	SetFontSize 36
-	SetTextColor 185 172 141 # Currency (Nearly Worthless)
-	SetBackgroundColor 0 0 0 225 # Currency (Nearly Worthless)
-	SetBorderColor 0 0 0 0 # Currency (Nearly Worthless)
-
-Hide  # Currency - League Specific - Resonators (Very Low)
-	Class "Delve Stackable Socketable Currency"
-	BaseType "Powerful Chaotic Resonator" "Powerful Alchemical Resonator"
-	SetFontSize 36
-	SetTextColor 185 172 141 # Currency (Nearly Worthless)
-	SetBackgroundColor 0 0 0 225 # Currency (Nearly Worthless)
-	SetBorderColor 0 0 0 0 # Currency (Nearly Worthless)
-
-Show  # Currency - League Specific - Resonators (Error)
+Show  # League Specific - Resonators - Error
 	Class "Delve Stackable Socketable Currency"
 	BaseType " Resonator"
 	SetFontSize 36
@@ -706,7 +701,7 @@ Show  # Currency - League Specific - Resonators (Error)
 #-----------#
 
 # 6c+
-Show  # Currency - League Specific - Harbinger - High (6c+)
+Show  # League Specific - Harbinger - High (6c+)
 	Class Currency
 	BaseType "Orb of Annulment" "Ancient Orb" "Harbinger's Orb" "Mirror Shard"
 	SetFontSize 45
@@ -718,7 +713,7 @@ Show  # Currency - League Specific - Harbinger - High (6c+)
 	PlayEffect Red
 
 # 0.5-6c
-Show  # Currency - League Specific - Harbinger - High
+Show  # League Specific - Harbinger - High
 	Class Currency
 	BaseType "Harbinger's Shard" "Ancient Shard" "Engineer's Orb" "Orb of Horizons" "Annulment Shard" "Exalted Shard"
 	SetFontSize 40
@@ -729,7 +724,7 @@ Show  # Currency - League Specific - Harbinger - High
 	PlayEffect Blue
 
 # 0.25c
-Show  # Currency - League Specific - Harbinger - Mid (2)
+Show  # League Specific - Harbinger - Mid (2)
 	Class Currency
 	StackSize >= 2
 	BaseType "Chaos Shard" "Regal Shard"
@@ -738,7 +733,7 @@ Show  # Currency - League Specific - Harbinger - Mid (2)
 	SetBackgroundColor 0 0 0 230 # Currency (Mid)
 	SetBorderColor 0 0 0 0 # Currency (Mid)
 
-Show  # Currency - League Specific - Harbinger - Mid (1)
+Show  # League Specific - Harbinger - Mid (1)
 	Class Currency
 	BaseType "Orb of Binding"
 	SetFontSize 36
@@ -747,7 +742,7 @@ Show  # Currency - League Specific - Harbinger - Mid (1)
 	SetBorderColor 0 0 0 0 # Currency (Mid)
 
 # 0.05c
-Hide  # Currency - League Specific - Harbinger - Nearly Worthless
+Hide  # League Specific - Harbinger - Nearly Worthless
 	Class Currency
 	BaseType "Chaos Shard" "Regal Shard"
 	SetFontSize 36
@@ -755,7 +750,7 @@ Hide  # Currency - League Specific - Harbinger - Nearly Worthless
 	SetBackgroundColor 0 0 0 225 # Currency (Nearly Worthless)
 	SetBorderColor 0 0 0 0 # Currency (Nearly Worthless)
 
-Show  # Currency - League Specific - Harbinger - Nearly Worthless (3)
+Show  # League Specific - Harbinger - Nearly Worthless (3)
 	Class Currency
 	BaseType "Binding Shard" "Horizon Shard" "Alchemy Shard"
 	StackSize > 2
@@ -765,7 +760,7 @@ Show  # Currency - League Specific - Harbinger - Nearly Worthless (3)
 	SetBorderColor 0 0 0 0 # Currency (Nearly Worthless)
 
 # 0.03c
-Hide  # Currency - League Specific - Harbinger - Nearly Worthless (1)
+Hide  # League Specific - Harbinger - Nearly Worthless (1)
 	Class Currency
 	BaseType "Binding Shard" "Horizon Shard" "Alchemy Shard"
 	SetFontSize 24
@@ -774,7 +769,7 @@ Hide  # Currency - League Specific - Harbinger - Nearly Worthless (1)
 	SetBorderColor 0 0 0 0 # Currency (Nearly Worthless)
 
 #Disabled Block Start
-#Show  # Currency - League Specific - Harbinger - Worthless (4)
+#Show  # League Specific - Harbinger - Worthless (4)
 #	Class Currency
 #	BaseType "Engineer's Shard"
 #	StackSize > 4
@@ -784,7 +779,7 @@ Hide  # Currency - League Specific - Harbinger - Nearly Worthless (1)
 #	SetBorderColor 0 0 0 0 # Currency (Worthless)
 #Disabled Block End
 
-Hide  # Currency - League Specific - Harbinger - Worthless (1)
+Hide  # League Specific - Harbinger - Worthless (1)
 	Class Currency
 	BaseType "Engineer's Shard"
 	SetFontSize 24
@@ -797,7 +792,7 @@ Hide  # Currency - League Specific - Harbinger - Worthless (1)
 # Bestiary #
 #----------#
 
-Hide  # Currency - League Specific - Bestiary - Nearly Worthless
+Hide  # League Specific - Bestiary - Nearly Worthless
 	Class "Stackable Currency"
 	BaseType "Simple Rope Net" "Reinforced Rope Net" "Strong Rope Net" "Simple Iron Net" "Reinforced Iron Net" "Strong Iron Net" "Simple Steel Net" "Reinforced Steel Net"
 	SetFontSize 36
@@ -806,7 +801,7 @@ Hide  # Currency - League Specific - Bestiary - Nearly Worthless
 	SetBorderColor 0 0 0 # Bestiary (Low)
 	DisableDropSound
 
-Show  # Currency - League Specific - Bestiary - Low
+Show  # League Specific - Bestiary - Low
 	Class "Stackable Currency"
 	BaseType "Strong Steel Net" "Thaumaturgical Net"
 	SetFontSize 40
@@ -815,7 +810,7 @@ Show  # Currency - League Specific - Bestiary - Low
 	SetBorderColor 0 0 0 # Bestiary (Low)
 	DisableDropSound
 
-Show  # Currency - League Specific - Bestiary - High
+Show  # League Specific - Bestiary - High
 	Class "Stackable Currency"
 	BaseType "Necromancy Net" "Bestiary Orb" "Imprinted Bestiary Orb"
 	SetFontSize 45
@@ -830,7 +825,7 @@ Show  # Currency - League Specific - Bestiary - High
 # Incursion #
 #-----------#
 
-Show  # Currency - League Specific - Incursion - Valuable
+Show  # League Specific - Incursion - Valuable
 	Class "Stackable Currency"
 	BaseType "Vial of the Ghost" "Vial of Sacrifice" "Vial of Awakening"
 	SetFontSize 45
@@ -841,7 +836,7 @@ Show  # Currency - League Specific - Incursion - Valuable
 	MinimapIcon 0 Red Circle
 	PlayEffect Red
 
-Show  # Currency - League Specific - Incursion - High
+Show  # League Specific - Incursion - High
 	Class "Stackable Currency"
 	BaseType "Vial of Dominance" "Vial of Summoning" "Vial of Fate" "Vial of Consequence"
 	SetFontSize 45
@@ -851,7 +846,7 @@ Show  # Currency - League Specific - Incursion - High
 	MinimapIcon 0 Blue Circle
 	PlayEffect Blue
 
-Show  # Currency - League Specific - Incursion - Low
+Show  # League Specific - Incursion - Low
 	Class "Stackable Currency"
 	BaseType "Vial of the Ritual" "Vial of Transcendence"
 	SetFontSize 40
@@ -1262,7 +1257,7 @@ Hide  # Vendor Recipes - Chisels - Mapping (High) - Other
 # Talisman #
 #----------#
 
-Show  # Talismans - Unique
+Show  # League Specific - Talismans - Unique
 	Class Amulets
 	Rarity = Unique
 	BaseType Talisman
@@ -1274,7 +1269,7 @@ Show  # Talismans - Unique
 	MinimapIcon 0 Red Diamond
 	PlayEffect Red
 
-Show  # Talismans - Leveling
+Show  # League Specific - Talismans - Leveling
 	Class Amulets
 	BaseType Talisman
 	ItemLevel < 60
@@ -1284,7 +1279,7 @@ Show  # Talismans - Leveling
 	MinimapIcon 0 Green Diamond
 	PlayEffect Green
 
-Show  # Talismans - Mapping
+Show  # League Specific - Talismans - Mapping
 	Class Amulets
 	BaseType Talisman
 	SetFontSize 40
@@ -1298,7 +1293,7 @@ Show  # Talismans - Mapping
 # Breach #
 #--------#
 
-Show  # Breach Rings - Leveling
+Show  # League Specific - Breach Rings - Leveling
 	Class Rings
 	BaseType "Breach Ring"
 	ItemLevel < 68
@@ -1307,7 +1302,7 @@ Show  # Breach Rings - Leveling
 	SetBorderColor 220 0 0 # Breach Ring
 
 #Disabled Block Start
-#Show  # Breach Rings - Mapping (Low)
+#Show  # League Specific - Breach Rings - Mapping (Low)
 #	Class Rings
 #	BaseType "Breach Ring"
 #	ItemLevel < 73
@@ -1317,7 +1312,7 @@ Show  # Breach Rings - Leveling
 #Disabled Block End
 
 #Disabled Block Start
-#Show  # Breach Rings - Mapping (Mid)
+#Show  # League Specific - Breach Rings - Mapping (Mid)
 #	Class Rings
 #	BaseType "Breach Ring"
 #	ItemLevel < 77
@@ -1326,7 +1321,7 @@ Show  # Breach Rings - Leveling
 #	SetBorderColor 220 0 0 # Breach Ring
 #Disabled Block End
 
-Hide  # Breach Rings - Mapping (High)
+Hide  # League Specific - Breach Rings - Mapping (High)
 	Class Rings
 	BaseType "Breach Ring"
 	SetFontSize 32
@@ -1337,7 +1332,7 @@ Hide  # Breach Rings - Mapping (High)
 # Legacy #
 #--------#
 
-Show  # Leaguestones - Leveling
+Show  # League Specific - Leaguestones - Leveling
 	Class Leaguestones
 	ItemLevel < 68
 	SetFontSize 40
@@ -1346,7 +1341,7 @@ Show  # Leaguestones - Leveling
 	SetBorderColor 0 0 0 # Leaguestone (Low)
 	PlayAlertSound 2 200 # Leaguestone
 
-Show  # Leaguestones - Mapping
+Show  # League Specific - Leaguestones - Mapping
 	Class Leaguestones
 	SetFontSize 40
 	SetTextColor 200 200 200 # Leaguestone (High)
@@ -1360,7 +1355,7 @@ Show  # Leaguestones - Mapping
 # Harbinger #
 #-----------#
 
-Show  # Pieces
+Show  # League Specific - Pieces (Harbinger)
 	Class Piece
 	SetFontSize 40
 	SetTextColor 200 100 50 # Piece
@@ -1374,7 +1369,7 @@ Show  # Pieces
 # Abyss #
 #-------#
 
-Show  # Stygian Vises - Rare - 84+
+Show  # League Specific - Stygian Vises - Rare - 84+
 	BaseType "Stygian Vise"
 	Rarity = Rare
 	ItemLevel >= 84
@@ -1382,7 +1377,7 @@ Show  # Stygian Vises - Rare - 84+
 	SetBackgroundColor 20 80 55 240 # Stygian Vise 84+
 	SetBorderColor 220 0 0 # Stygian Vise 84+
 
-Show  # Stygian Vises - Rare - Leveling
+Show  # League Specific - Stygian Vises - Rare - Leveling
 	BaseType "Stygian Vise"
 	Rarity = Rare
 	ItemLevel < 68
@@ -1391,7 +1386,7 @@ Show  # Stygian Vises - Rare - Leveling
 	SetBorderColor 220 0 0 # Stygian Vise
 
 #Disabled Block Start
-#Show  # Stygian Vises - Rare - Mapping (Low)
+#Show  # League Specific - Stygian Vises - Rare - Mapping (Low)
 #	BaseType "Stygian Vise"
 #	Rarity = Rare
 #	ItemLevel < 73
@@ -1401,7 +1396,7 @@ Show  # Stygian Vises - Rare - Leveling
 #Disabled Block End
 
 #Disabled Block Start
-#Show  # Stygian Vises - Rare - Mapping (Mid)
+#Show  # League Specific - Stygian Vises - Rare - Mapping (Mid)
 #	BaseType "Stygian Vise"
 #	Rarity = Rare
 #	ItemLevel < 78
@@ -1410,7 +1405,7 @@ Show  # Stygian Vises - Rare - Leveling
 #	SetBorderColor 220 0 0 # Stygian Vise
 #Disabled Block End
 
-Show  # Stygian Vises - Rare - Mapping (High)
+Show  # League Specific - Stygian Vises - Rare - Mapping (High)
 	BaseType "Stygian Vise"
 	Rarity = Rare
 	SetFontSize 36
@@ -1649,7 +1644,7 @@ Show  # Crafting Bases - Shaper - 83+ Classes
 Show  # Crafting Bases - Elder - 83+ BaseTypes
 	ElderItem True
 	ItemLevel >= 83
-	BaseType "Short Bow" "Thicket Bow" "Jewelled Foil"
+	BaseType "Short Bow" "Thicket Bow" "Jewelled Foil" "Exquisite Blade" "Imbued Wand" "Prophecy Wand"
 	SetFontSize 45
 	SetTextColor 0 100 220 # Crafting Base 84+ (High)
 	SetBackgroundColor 255 255 255 255 # Crafting Base 84+ (High)
@@ -1661,7 +1656,7 @@ Show  # Crafting Bases - Elder - 83+ BaseTypes
 Show  # Crafting Bases - Shaper - 83+ BaseTypes
 	ShaperItem True
 	ItemLevel >= 83
-	BaseType "Short Bow" "Platinum Kris" "Eclipse Staff" "Jewelled Foil"
+	BaseType "Short Bow" "Thicket Bow" "Platinum Kris" "Eclipse Staff" "Jewelled Foil"
 	SetFontSize 45
 	SetTextColor 0 100 220 # Crafting Base 84+ (High)
 	SetBackgroundColor 255 255 255 255 # Crafting Base 84+ (High)
@@ -1669,6 +1664,42 @@ Show  # Crafting Bases - Shaper - 83+ BaseTypes
 	PlayAlertSound 1 200 # High Value
 	MinimapIcon 0 Red Square
 	PlayEffect Red
+	
+##########################################
+############## ENCHANTMENTS ##############
+##########################################
+# Section: Enchantments
+
+# Show  # Enchantments - Mid Value
+#	Class Helmets
+#	HasEnchantment "40% increased Lightning Trap Damage" "Icicle Mine has 15% increased Throwing Speed" "Wild Strike Chains an additional 6 times" "Barrage fires an additional Projectile" "12% increased Blade Vortex Area of Effect" "40% increased Arc Damage" "Lightning Arrow hits 2 additional Enemies" "Spectres have 40% increased Damage" "Herald of Ice has 30% reduced Mana Reservation" "Blood Rage grants additional 12% increased Attack Speed" "40% increased Righteous Fire Damage" "Scourge Arrow deals 40% increased Damage"
+#	SetFontSize 45
+#	SetTextColor 255 255 255 # Crafting Base (High)
+#	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
+#	SetBorderColor 0 255 255 # Crafting Base (High)
+#	PlayAlertSound 1 200 # High Value
+#	MinimapIcon 0 Red Square
+#	PlayEffect Red
+
+# Show  # Enchantments - High Value
+#	Class Helmets
+#	HasEnchantment "Scourge Arrow creates an additional spore pod at Maximum Stages" "Tornado Shot fires an additional secondary Projectile" "Pyroclast Mine fires 2 additional Projectiles" "Arc Chains an additional time" "Toxic Rain fires 1 additional Arrow" "Herald of Agony has 30% reduced Mana Reservation" "Magma Orb Chains an additional 2 times" "Summoned Agony Crawler fires 2 additional Projectiles" "Holy Flame Totem fires 2 additional Projectiles" "15% increased Cyclone Attack Speed" "Venom Gyre has a 20% chance to inflict Withered" "Cobra Lash Chains" "Cobra Lash deals 40% increased Damage" "Ice Spear fires an additional Projectile" "40% increased Essence Drain Damage" "Storm Brand Damage Penetrates 12%" "Divine Ire deals 40% increased Damage" "Toxic Rain deals 40% increased Damage" "30% reduced Storm Call Duration" "Detonate Dead has a 45% chance to detonate" "30% increased Despair Curse Effect" "Venom Gyre has a 35% chance to keep caught Projectiles" "30% increased Blade Vortex Duration" "Venom Gyre deals 40% increased Damage" "Icicle Mine deals 40% increased Damage" "Storm Brand deals 40% increased Damage" "Chain Hook deals 40% increased Damage"
+#	SetFontSize 45
+#	SetTextColor 0 100 220 # Crafting Base 84+ (High)
+#	SetBackgroundColor 255 255 255 255 # Crafting Base 84+ (High)
+#	SetBorderColor 0 255 255 # Crafting Base 84+ (High)
+#	PlayAlertSound 1 200 # High Value
+#	MinimapIcon 0 Red Square
+#	PlayEffect Red
+
+Show  # Enchantments - Other
+	AnyEnchantment True
+	Rarity <= Rare
+	SetFontSize 40
+	SetBackgroundColor 40 40 40 # Crafting Base (Explicit)
+	SetBorderColor 25 65 175 # Crafting Base (Explicit)
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
 
 ##########################################
 ############# EXPLICIT MODS ##############
@@ -1874,15 +1905,6 @@ Show  # Explicit Mods - Veiled - Rare
 	SetBackgroundColor 40 40 40 # Crafting Base (Explicit)
 	SetBorderColor 25 65 175 # Crafting Base (Explicit)
 	MinimapIcon 1 Blue Square
-	PlayEffect Blue
-
-Show  # Explicit Mods - Enchanted
-	AnyEnchantment True
-	Rarity <= Rare
-	SetFontSize 40
-	SetBackgroundColor 40 40 40 # Crafting Base (Explicit)
-	SetBorderColor 25 65 175 # Crafting Base (Explicit)
-	MinimapIcon 0 Blue Square
 	PlayEffect Blue
 
 # Synthesis
@@ -3906,7 +3928,18 @@ Show  # Highlighted Rares - Top Tier - Bows - Harbinger Bow - 83+
 
 #Disabled Block Start
 #Show  # Highlighted Rares - Two Hand Weapons - Staves - 83+
-#	Class Staves Warstaff
+#	Class Staves
+#	DropLevel >= 61
+#	ItemLevel >= 83
+#	SetFontSize 36
+#	SetTextColor 255 190 75 # Rare Weapon
+#	SetBackgroundColor 20 80 55 240 # Rare Recipe 84+ (Highlighted)
+#	SetBorderColor 170 125 50 # Rare Weapon 83+ (Highlighted)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - Two Hand Weapons - Warstaves - 83+
+#	Class Warstaff
 #	DropLevel >= 61
 #	ItemLevel >= 83
 #	SetFontSize 36
@@ -3924,6 +3957,15 @@ Show  # Highlighted Rares - Top Tier - Wands - Imbued Wand - 83+
 	Class Wands
 	ItemLevel >= 83
 	BaseType "Imbued Wand"
+	SetFontSize 36
+	SetTextColor 255 190 75 # Rare Weapon
+	SetBackgroundColor 80 55 20 240 # Rare Weapon 83+ (Highlighted)
+	SetBorderColor 170 125 50 # Rare Weapon 83+ (Highlighted)
+
+Show  # Highlighted Rares - Top Tier - Wands - Convoking Wand - 83+
+	Class Wands
+	ItemLevel >= 83
+	BaseType "Convoking Wand"
 	SetFontSize 36
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 80 55 20 240 # Rare Weapon 83+ (Highlighted)
@@ -4020,7 +4062,7 @@ Show  # Highlighted Rares - Top Tier - One Hand Swords - Jewelled/Spiraled Foil 
 
 #Disabled Block Start
 #Show  # Highlighted Rares - One Hand Weapons - Daggers - 83+
-#	Class "Rune Dagger"
+#	Class Daggers
 #	DropLevel >= 60
 #	ItemLevel >= 83
 #	SetFontSize 36
@@ -4030,8 +4072,8 @@ Show  # Highlighted Rares - Top Tier - One Hand Swords - Jewelled/Spiraled Foil 
 #Disabled Block End
 
 #Disabled Block Start
-#Show  # Highlighted Rares - One Hand Weapons - Daggers - 83+
-#	Class Daggers "Rune Dagger"
+#Show  # Highlighted Rares - One Hand Weapons - Rune Daggers - 83+
+#	Class "Rune Dagger"
 #	DropLevel >= 60
 #	ItemLevel >= 83
 #	SetFontSize 36
@@ -4413,7 +4455,18 @@ Show  # 83+ Rares - Quivers
 
 #Disabled Block Start
 #Show  # Highlighted Rares - Two Hand Weapons - Staves - 75+
-#	Class Staves Warstaff
+#	Class Staves
+#	DropLevel >= 61
+#	ItemLevel >= 75
+#	SetFontSize 36
+#	SetTextColor 255 190 75 # Rare Weapon
+#	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (Highlighted)
+#	SetBorderColor 170 125 50 # Rare Weapon 75+ (Highlighted)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - Two Hand Weapons - Warstaves - 75+
+#	Class Warstaff
 #	DropLevel >= 61
 #	ItemLevel >= 75
 #	SetFontSize 36
@@ -4432,6 +4485,17 @@ Show  # 83+ Rares - Quivers
 #	Class Wands
 #	ItemLevel >= 75
 #	BaseType "Imbued Wand"
+#	SetFontSize 36
+#	SetTextColor 255 190 75 # Rare Weapon
+#	SetBackgroundColor 40 35 8 230 # Rare Weapon 75+ (Highlighted)
+#	SetBorderColor 170 125 50 # Rare Weapon 75+ (Highlighted)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - Top Tier - Wands - Convoking Wand - 75+
+#	Class Wands
+#	ItemLevel >= 75
+#	BaseType "Convoking Wand"
 #	SetFontSize 36
 #	SetTextColor 255 190 75 # Rare Weapon
 #	SetBackgroundColor 40 35 8 230 # Rare Weapon 75+ (Highlighted)
@@ -4539,7 +4603,18 @@ Show  # 83+ Rares - Quivers
 
 #Disabled Block Start
 #Show  # Highlighted Rares - One Hand Weapons - Daggers - 75+
-#	Class Daggers "Rune Dagger"
+#	Class Daggers
+#	DropLevel >= 60
+#	ItemLevel >= 75
+#	SetFontSize 36
+#	SetTextColor 255 190 75 # Rare Weapon
+#	SetBackgroundColor 40 35 8 230 # Rare Weapon 75+ (Highlighted)
+#	SetBorderColor 170 125 50 # Rare Weapon 75+ (Highlighted)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - One Hand Weapons - Rune Daggers - 75+
+#	Class "Rune Dagger"
 #	DropLevel >= 60
 #	ItemLevel >= 75
 #	SetFontSize 36
@@ -4917,7 +4992,18 @@ Show  # Errors - 75+
 
 #Disabled Block Start
 #Show  # Highlighted Rares - Two Hand Weapons - Staves - 60+
-#	Class Staves Warstaff
+#	Class Staves
+#	DropLevel >= 61
+#	ItemLevel >= 60
+#	SetFontSize 36
+#	SetTextColor 255 190 75 # Rare Weapon
+#	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (Highlighted)
+#	SetBorderColor 170 125 50 # Rare Weapon 60+ (Highlighted)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - Two Hand Weapons - Warstaves - 60+
+#	Class Warstaff
 #	DropLevel >= 61
 #	ItemLevel >= 60
 #	SetFontSize 36
@@ -4935,6 +5021,17 @@ Show  # Errors - 75+
 #	Class Wands
 #	ItemLevel >= 60
 #	BaseType "Imbued Wand"
+#	SetFontSize 36
+#	SetTextColor 255 190 75 # Rare Weapon
+#	SetBackgroundColor 40 35 8 230 # Rare Weapon 60+ (Highlighted)
+#	SetBorderColor 170 125 50 # Rare Weapon 60+ (Highlighted)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - Top Tier - Wands - Convoking Wand - 60+
+#	Class Wands
+#	ItemLevel >= 60
+#	BaseType "Convoking Wand"
 #	SetFontSize 36
 #	SetTextColor 255 190 75 # Rare Weapon
 #	SetBackgroundColor 40 35 8 230 # Rare Weapon 60+ (Highlighted)
@@ -5042,7 +5139,18 @@ Show  # Errors - 75+
 
 #Disabled Block Start
 #Show  # Highlighted Rares - One Hand Weapons - Daggers - 60+
-#	Class Daggers "Rune Dagger"
+#	Class Daggers
+#	DropLevel >= 60
+#	ItemLevel >= 60
+#	SetFontSize 36
+#	SetTextColor 255 190 75 # Rare Weapon
+#	SetBackgroundColor 40 35 8 230 # Rare Weapon 60+ (Highlighted)
+#	SetBorderColor 170 125 50 # Rare Weapon 60+ (Highlighted)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - One Hand Weapons - Rune Daggers - 60+
+#	Class "Rune Dagger"
 #	DropLevel >= 60
 #	ItemLevel >= 60
 #	SetFontSize 36

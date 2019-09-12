@@ -22,7 +22,7 @@ namespace PoE_Price_Lister
         private const string filterURL = "https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/S1_Regular_Highwind.filter";
         private const string jsonURL = "http://poe.ninja/api/Data/Get{0}Overview?league={1}";
         //{0} = "UniqueAccessory", "UniqueJewel", "UniqueMap", "UniqueArmour", "UniqueFlask",
-        // "UniqueWeapon", "DivinationCards", "Fragment", "Currency", "Prophecy", "Essence", "SkillGem", "HelmEnchant"
+        // "UniqueWeapon", "DivinationCards", "Fragment", "Currency", "Prophecy", "Essence", "SkillGem", "HelmetEnchant"
         // Resonators/Fossils are not implemented as an API yet
 
         private static readonly Regex baseTypeRegex = new Regex(@"""[A-Za-zö'\-, ]+""|[A-Za-zö'\-]+", RegexOptions.Compiled);
