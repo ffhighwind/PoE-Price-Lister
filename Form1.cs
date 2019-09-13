@@ -95,10 +95,11 @@ namespace PoE_Price_Lister
             bool hcFriendly = checkBox2.Checked;
             FilterWriter writer = new FilterWriter(model);
 
-			writer.Create("highwind_filter_leveling.txt", safe, hcFriendly, FilterType.LEVELING);
-			writer.Create("highwind_filter_mapping.txt", safe, hcFriendly, FilterType.MAPPING);
-			writer.Create("highwind_filter_strict.txt", safe, hcFriendly, FilterType.STRICT);
-			writer.Create("highwind_filter_very_strict.txt", safe, hcFriendly, FilterType.VERY_STRICT);
+			writer.Create(FilterType.NO_RARES, safe, hcFriendly);
+			writer.Create(FilterType.LEVELING, safe, hcFriendly);
+			writer.Create(FilterType.MAPPING, safe, hcFriendly);
+			writer.Create(FilterType.STRICT, safe, hcFriendly);
+			writer.Create(FilterType.VERY_STRICT, safe, hcFriendly);
 		}
 
         private void listView_KeyUp(object sender, KeyEventArgs e)

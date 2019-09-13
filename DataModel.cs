@@ -18,14 +18,16 @@ namespace PoE_Price_Lister
         ////private const string csvFile = "poe_uniques.csv";
         private const string league = "Blight";
 
-        private const string uniquesCsvURL = "https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/poe_uniques.csv";
-        private const string filterURL = "https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/S1_Regular_Highwind.filter";
-        private const string jsonURL = "http://poe.ninja/api/Data/Get{0}Overview?league={1}";
-        //{0} = "UniqueAccessory", "UniqueJewel", "UniqueMap", "UniqueArmour", "UniqueFlask",
-        // "UniqueWeapon", "DivinationCards", "Fragment", "Currency", "Prophecy", "Essence", "SkillGem", "HelmetEnchant"
-        // Resonators/Fossils are not implemented as an API yet
+        private const string uniquesCsvURL = @"https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/poe_uniques.csv";
+        private const string filterURL = @"https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/S1_Regular_Highwind.filter";
+        private const string jsonURL = @"http://poe.ninja/api/Data/Get{0}Overview?league={1}";
+		//{0} = "UniqueAccessory", "UniqueJewel", "UniqueMap", "UniqueArmour", "UniqueFlask",
+		// "UniqueWeapon", "DivinationCards", "Fragment", "Currency", "Prophecy", "Essence", "SkillGem", "HelmetEnchant"
+		// Resonators/Fossils are not implemented as an API yet
 
-        private static readonly Regex baseTypeRegex = new Regex(@"""[A-Za-zö'\-, ]+""|[A-Za-zö'\-]+", RegexOptions.Compiled);
+		public const string FiltersUrl = @"https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/";
+
+		private static readonly Regex baseTypeRegex = new Regex(@"""[A-Za-zö'\-, ]+""|[A-Za-zö'\-]+", RegexOptions.Compiled);
 
         public LeagueData HC { get; private set; } = new LeagueData(true);
         public LeagueData SC { get; private set; } = new LeagueData(false);
@@ -60,7 +62,7 @@ namespace PoE_Price_Lister
                 DivinationCards = SC.DivinationCards.Keys.ToList();
                 Uniques = SC.Uniques.Keys.ToList();
                 GetDivinationCardConflicts();
-                string filterString = ReadWebPage(filterURL);
+                string filterString = Util.ReadWebPage(filterURL);
                 if (filterString.Length == 0) {
                     MessageBox.Show("Failed to read the web URL: " + filterURL, "Error", MessageBoxButtons.OK);
                     Environment.Exit(1);
@@ -116,7 +118,7 @@ namespace PoE_Price_Lister
 
         private void FillJsonData(string url, LeagueData data, Action<JsonData, LeagueData> handler)
         {
-            string jsonURLString = ReadWebPage(url, "application/json");
+            string jsonURLString = Util.ReadWebPage(url, "application/json");
             if (jsonURLString.Length == 0) {
                 MessageBox.Show("Failed to read the web URL: " + url, "Error", MessageBoxButtons.OK);
                 Environment.Exit(1);
@@ -167,7 +169,7 @@ namespace PoE_Price_Lister
                 FileHelperEngine<UniqueBaseTypeCsv> engine = new FileHelperEngine<UniqueBaseTypeCsv>(Encoding.UTF8);
 				string csvText = new FileInfo("poe_uniques.csv").Exists ? 
 					File.ReadAllText("poe_uniques.csv", Encoding.UTF8) 
-					: ReadWebPage(uniquesCsvURL, "", Encoding.UTF8);
+					: Util.ReadWebPage(uniquesCsvURL, "", Encoding.UTF8);
 				UniqueBaseTypeCsv[] records = engine.ReadString(csvText);
 				HashSet<string> baseTypes = new HashSet<string>();
                 foreach (UniqueBaseTypeCsv data in records) {
@@ -397,28 +399,5 @@ namespace PoE_Price_Lister
                 divCard.FilterValue = value;
             }
         }
-
-        private string ReadWebPage(string url, string headerMedia = "", Encoding encoding = null)
-        {
-            using (HttpClient client = new HttpClient()) {
-                client.BaseAddress = new Uri(url);
-                if (headerMedia.Length > 0)
-                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(headerMedia));
-                HttpResponseMessage response;
-                try {
-                    response = client.GetAsync(url).Result;
-                    if (response.IsSuccessStatusCode) {
-                        return encoding == null ? response.Content.ReadAsStringAsync().Result
-                            : encoding.GetString(response.Content.ReadAsByteArrayAsync().Result);
-                    }
-                }
-                catch (Exception ex) {
-                    MessageBox.Show("Error reading webpage " + url + "\n" + ex.Message, "Data.ReadWebPage", MessageBoxButtons.OK);
-                    Environment.Exit(1);
-                }
-                return "";
-            }
-        }
-
     }
 }

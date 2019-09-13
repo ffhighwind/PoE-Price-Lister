@@ -9,6 +9,11 @@ namespace PoE_Price_Lister
 {
 	public class FilterWriter
 	{
+		private const string uniqueWarning =
+@"# Ordered most expensive first to prevent future name conflicts!
+# Prices attained from poe.ninja.
+# Future values will fluctuate based on league challenges and the meta.";
+
 		private const string header10c =
 @"#------#
 # 10c+ #
@@ -159,16 +164,6 @@ Show  # Uniques - 1-2c
 	MinimapIcon 0 White Triangle 
 	PlayEffect White";
 
-		private const string headerDiv =
-@"##########################################
-############ DIVINATION CARDS ############
-##########################################
-# Section: Divination Cards
-
-# Ordered most expensive first to prevent future name conflicts!
-# Prices attained from poe.ninja.
-# Future values will fluctuate based on league challenges and the meta.";
-
 		private readonly IReadOnlyList<string> Uniques;
 		private readonly IReadOnlyList<string> DivinationCards;
 		private readonly IReadOnlyDictionary<string, UniqueBaseType> UniquesSC;
@@ -193,15 +188,51 @@ Show  # Uniques - 1-2c
 			Conflicts = model.DivinationCardNameConflicts;
 		}
 
-		public void Create(string path, bool safe, bool hcFriendly, FilterType type)
+		public void Create(FilterType type, bool safe, bool hcFriendly)
 		{
+			string filterFile = null;
+			switch (type) {
+				case FilterType.NO_RARES:
+					filterFile = "S_NoRares_Highwind.filter";
+					break;
+				case FilterType.LEVELING:
+					filterFile = "S1_Regular_Highwind.filter";
+					break;
+				case FilterType.MAPPING:
+					filterFile = "S2_Mapping_Highwind.filter";
+					break;
+				case FilterType.STRICT:
+					filterFile = "S3_Strict_Highwind.filter";
+					break;
+				case FilterType.VERY_STRICT:
+					filterFile = "S4_Very_Strict_Highwind.filter";
+					break;
+			}
 			try {
 				Safe = safe;
 				HCFriendly = hcFriendly;
-				using (Writer = new StreamWriter(path, false, Encoding.UTF8)) {
-					Writer.WriteLine();
+				using (Writer = new StreamWriter(filterFile, false, Encoding.UTF8)) {
+
+					string filterData = Util.ReadWebPage(DataModel.FiltersUrl + filterFile, "text/plain");
+					Writer.Write(filterData.Substring(0, filterData.IndexOf(@"# Section: Uniques")));
+					Writer.WriteLine(@"# Section: Uniques");
 					Writer.WriteLine(GenerateUniquesString(type));
+					Writer.WriteLine(
+@"##########################################
+############ DIVINATION CARDS ############
+##########################################
+# Section: Divination Cards
+
+# Ordered most expensive first to prevent future name conflicts!
+# Prices attained from poe.ninja.
+# Future values will fluctuate based on league challenges and the meta.");
 					Writer.Write(GenerateDivinationString(type));
+					Writer.WriteLine();
+					Writer.WriteLine(
+@"##########################################
+################# FLASKS #################
+##########################################");
+					Writer.Write(filterData.Substring(filterData.IndexOf(@"# Section: Flasks")));
 				}
 				Writer = null;
 			}
@@ -298,6 +329,7 @@ Show  # Uniques - 1-2c
 				}
 			}
 
+			sb.AppendLine(uniqueWarning).AppendLine();
 			if (list10c.Count > 0) {
 				sb.AppendLine(header10c).AppendLine();
 				sb.AppendLine("Show  # Uniques - 10c+").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(list10c)).AppendLine(style10c).AppendLine();
@@ -406,7 +438,6 @@ Show  # Uniques - 1-2c
 				}
 			}
 
-			sb.AppendLine(headerDiv).AppendLine();
 			sb.AppendLine(GenerateDivinationConflictsString()).AppendLine();
 			if (list1to10cConflict.Count > 0)
 				sb.AppendLine("Show  # Divination Cards - 1c+ (Conflicts)").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(list1to10cConflict)).AppendLine(styleDiv1c).AppendLine();
