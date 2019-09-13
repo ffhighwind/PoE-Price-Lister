@@ -37,7 +37,6 @@ namespace PoE_Price_Lister
 #-----#
 # Orange border
 # Usually < 1c or nearly worthless.
-
 ";
 
 		private const string lessLvl67 =

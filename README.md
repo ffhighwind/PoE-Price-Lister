@@ -7,6 +7,6 @@ This tool is used for updating the filter colors of uniques and divination cards
 
 ## TODO
 
-* Add output for the strict filters instead of just the normal filter.
+* Add full filter output
 * Add checkboxes on the left side for "Lock Filter Value" and "Force Expected Value".
 * Add hardcore-only output.

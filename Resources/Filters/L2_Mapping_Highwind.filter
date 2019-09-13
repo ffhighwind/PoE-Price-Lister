@@ -1,7 +1,7 @@
 ﻿############################################
-##    HIGHWIND'S MAPPING FILTER 3.8.8     ##
+##    HIGHWIND'S MAPPING FILTER 3.8.9     ##
 ############################################
-## Release Date: September 11, 2019       ##
+## Release Date: September 12, 2019       ##
 ############################################
 
 #--------------#
@@ -3013,7 +3013,7 @@ Show  # Maps - Fragments - New (Error)
 
 Show  # Uniques - 10c+
 	Rarity = Unique
-	BaseType "Ambush Mitts" "Arcanist Gloves" "Arcanist Slippers" "Assassin's Boots" "Blood Raiment" "Blue Pearl Amulet" "Bronzescale Boots" "Callous Mask" "Cardinal Round Shield" "Carnal Boots" "Champion Kite Shield" "Charan's Sword" "Clasped Mitts" "Close Helmet" "Crusader Boots" Cutlass "Deerskin Gloves" "Destiny Leather" "Diamond Flask" "Ezomyte Tower Shield" "Full Dragonscale" "Gemstone Sword" "Gladiator Plate" "Glorious Plate" "Golden Bracers" "Golden Caligae" "Golden Flame" "Golden Mantle" "Golden Obi" "Golden Wreath" "Grand Mana Flask" "Heavy Quiver" "Hellion's Paw" "Highborn Staff" "Hydrascale Gauntlets" "Imperial Claw" "Imperial Maul" "Jet Amulet" "Jewelled Foil" "Jingling Spirit Shield" "Karui Maul" "Laminated Kite Shield" "Legion Gloves" "Lion Pelt" "Magistrate Crown" "Mirrored Spiked Shield" "Necromancer Silks" "Nightmare Mace" "Nubuck Boots" "Occultist's Vestment" "Opal Ring" "Prophecy Wand" "Rawhide Boots" "Rawhide Tower Shield" "Royal Axe" "Ruby Amulet" "Sacrificial Garb" "Sanctified Life Flask" "Sapphire Flask" "Savant's Robe" "Siege Axe" "Silk Gloves" "Slaughter Knife" "Soldier Helmet" "Sorcerer Boots" "Steel Ring" "Stibnite Flask" "Throat Stabber" "Timeworn Claw" "Two-Stone Ring" "Vaal Blade" "Vaal Spirit Shield" "Varnished Coat" "Wyrmscale Doublet" "Zealot Gloves" "Zodiac Leather" "Riveted Gloves" "Vaal Rapier" "Ornate Quiver" "Golden Visage" "Saint's Hauberk"
+	BaseType "Ambush Mitts" "Arcanist Gloves" "Assassin's Boots" "Blood Raiment" "Brass Spirit Shield" "Callous Mask" "Cardinal Round Shield" "Carnal Boots" "Charan's Sword" "Clasped Mitts" "Close Helmet" "Crusader Boots" Cutlass "Deerskin Gloves" "Diamond Flask" "Ezomyte Tower Shield" "Full Dragonscale" "Gemstone Sword" "Glorious Plate" "Golden Bracers" "Golden Caligae" "Golden Flame" "Golden Mantle" "Golden Obi" "Golden Wreath" "Heavy Quiver" "Highborn Staff" "Hydrascale Gauntlets" "Imperial Maul" "Jet Amulet" "Jewelled Foil" "Jingling Spirit Shield" "Karui Maul" "Laminated Kite Shield" "Legion Gloves" "Magistrate Crown" "Nubuck Boots" "Occultist's Vestment" "Prophecy Wand" "Rawhide Boots" "Royal Axe" "Ruby Amulet" "Sacrificial Garb" "Sanctified Life Flask" "Sapphire Flask" "Savant's Robe" "Siege Axe" "Silk Gloves" "Slaughter Knife" "Sorcerer Boots" "Steel Ring" "Stibnite Flask" "Timeworn Claw" "Two-Stone Ring" "Vaal Blade" "Vaal Spirit Shield" "Varnished Coat" "Wyrmscale Doublet" "Zodiac Leather" "Riveted Gloves" "Steelwood Bow" "Vaal Rapier" "Ornate Quiver" "Golden Visage" "Saint's Hauberk"
 	SetFontSize 45
 	SetTextColor 255 128 64 # Unique (10c+)
 	SetBackgroundColor 255 255 255 255 # Unique (10c+)
@@ -3031,7 +3031,7 @@ Show  # Uniques - 10c+
 
 Show  # Uniques - 2-10c
 	Rarity = Unique
-	BaseType "Amber Amulet" "Archon Kite Shield" "Bismuth Flask" "Coral Amulet" "Corsair Sword" "Demon Dagger" "Ebony Tower Shield" "Elegant Ringmail" "Exquisite Leather" "Ezomyte Burgonet" "Ezomyte Staff" "Fiend Dagger" "Full Wyrmscale" "Gold Amulet" "Gold Ring" "Granite Flask" "Harlequin Mask" "Heavy Belt" "Holy Chainmail" "Hydrascale Boots" "Imperial Bow" "Imperial Staff" "Jade Amulet" "Jasper Chopper" "Judgement Staff" "Lacquered Garb" "Lapis Amulet" "Leather Cap" "Lion Sword" Meatgrinder "Midnight Blade" "Nightmare Bascinet" "Onyx Amulet" "Paua Ring" "Penetrating Arrow Quiver" "Pinnacle Tower Shield" "Prismatic Ring" "Raven Mask" "Royal Burgonet" "Ruby Flask" "Sadist Garb" "Sanctified Mana Flask" "Silken Hood" "Slink Boots" "Stealth Boots" "Steelscale Gauntlets" "Thorium Spirit Shield" "Titanium Spirit Shield" "Topaz Flask" "Topaz Ring" "Triumphant Lamellar" "Variscite Blade" "Void Axe" "Blood Sceptre" "Steelwood Bow" "Steel Circlet" "Ezomyte Dagger"
+	BaseType "Amber Amulet" "Arcanist Slippers" "Archon Kite Shield" "Assassin Bow" "Bismuth Flask" "Blue Pearl Amulet" "Bronzescale Boots" "Carnal Sceptre" "Champion Kite Shield" "Citadel Bow" "Coral Amulet" "Coronal Leather" "Corsair Sword" "Destiny Leather" "Ebony Tower Shield" "Elegant Ringmail" "Exquisite Leather" "Ezomyte Burgonet" "Ezomyte Staff" "Festival Mask" "Fiend Dagger" "Full Wyrmscale" "Gladiator Plate" "Gold Amulet" "Gold Ring" "Grand Mana Flask" "Granite Flask" "Heavy Belt" "Hellion's Paw" "Holy Chainmail" "Hydrascale Boots" "Imperial Bow" "Imperial Claw" "Imperial Skean" "Imperial Staff" "Jade Amulet" "Jasper Chopper" "Judgement Staff" "Lacquered Garb" "Lapis Amulet" "Large Hybrid Flask" "Leather Cap" "Lion Sword" "Necromancer Silks" "Nightmare Bascinet" "Nightmare Mace" "Onyx Amulet" "Opal Ring" "Paua Ring" "Penetrating Arrow Quiver" "Pinnacle Tower Shield" "Prismatic Ring" "Raven Mask" "Rawhide Tower Shield" "Royal Burgonet" "Sadist Garb" "Sanctified Mana Flask" "Silken Hood" "Slink Boots" "Soldier Helmet" "Stealth Boots" "Steelscale Gauntlets" "Sulphur Flask" "Thorium Spirit Shield" "Throat Stabber" "Titanium Spirit Shield" "Topaz Flask" "Topaz Ring" "Triumphant Lamellar" "Variscite Blade" "Void Axe" "Zealot Gloves" "Blood Sceptre" "Steel Circlet" "Tyrant's Sekhem" "Ezomyte Dagger"
 	SetFontSize 45
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
@@ -3048,7 +3048,7 @@ Show  # Uniques - 2-10c
 
 Show  # Uniques - 1-2c
 	Rarity = Unique
-	BaseType "Amethyst Flask" "Amethyst Ring" "Ancient Gauntlets" "Ancient Spirit Shield" "Assassin Bow" "Assassin's Mitts" "Astral Plate" Blinder "Branded Kite Shield" "Carnal Armour" "Carnal Mitts" "Carnal Sceptre" "Carved Wand" "Citadel Bow" "Citrine Amulet" "Conjurer Boots" "Coronal Leather" "Corrugated Buckler" "Crystal Belt" "Diamond Ring" "Elder Sword" "Elegant Foil" "Engraved Wand" "Eternal Sword" "Fright Claw" "Goathide Boots" "Goliath Greaves" "Great Mallet" "Hallowed Hybrid Flask" "Hubris Circlet" "Imperial Skean" "Iron Gauntlets" "Iron Ring" "Karui Chopper" Labrys "Large Hybrid Flask" Lathi "Leather Belt" "Legion Boots" Maelstr "Mind Cage" "Moonstone Ring" "Murder Boots" "Murder Mitts" "Nubuck Gloves" "Prophet Crown" "Regicide Mask" "Ritual Sceptre" "Rock Breaker" "Ruby Ring" "Sage Wand" "Sapphire Ring" "Sentinel Jacket" "Shackled Boots" "Shadow Sceptre" "Siege Helmet" "Silver Flask" "Simple Robe" "Sinner Tricorne" "Soldier Boots" "Sorcerer Gloves" "Spidersilk Robe" "Spine Bow" "Strapped Mitts" "Studded Belt" "Stygian Vise" "Sulphur Flask" "Terror Claw" "Titan Gauntlets" "Titan Greaves" "Tornado Wand" "Unset Ring" "Ursine Pelt" "Vaal Axe" "Vaal Claw" "Vaal Gauntlets" "Vaal Mask" "Vaal Regalia" "Vaal Sceptre" "Vanguard Belt" "Void Sceptre" "War Sword" "Wool Shoes" "Satin Gloves" "Solaris Circlet" "Tyrant's Sekhem"
+	BaseType "Amethyst Flask" "Amethyst Ring" "Ancient Gauntlets" "Ancient Spirit Shield" "Assassin's Mitts" "Astral Plate" Blinder "Branded Kite Shield" "Carnal Armour" "Carnal Mitts" "Carved Wand" "Citrine Amulet" "Conjurer Boots" "Corrugated Buckler" "Crystal Belt" "Diamond Ring" "Elegant Foil" "Engraved Wand" "Eternal Sword" "Fright Claw" "Goathide Boots" "Goliath Greaves" "Great Mallet" "Hallowed Hybrid Flask" "Harlequin Mask" "Hubris Circlet" "Iron Gauntlets" "Iron Ring" "Karui Chopper" Labrys Lathi "Leather Belt" "Legion Boots" "Lion Pelt" Maelstr Meatgrinder "Midnight Blade" "Mind Cage" "Mirrored Spiked Shield" "Moonstone Ring" "Murder Boots" "Murder Mitts" "Nubuck Gloves" "Platinum Sceptre" "Prophet Crown" "Regicide Mask" "Ritual Sceptre" "Rock Breaker" "Ruby Flask" "Ruby Ring" "Sage Wand" "Sapphire Ring" "Sentinel Jacket" "Shackled Boots" "Shadow Sceptre" "Siege Helmet" "Silver Flask" "Simple Robe" "Sinner Tricorne" "Soldier Boots" "Soldier Gloves" "Sorcerer Gloves" "Spine Bow" "Strapped Mitts" "Studded Belt" "Stygian Vise" "Terror Claw" "Titan Gauntlets" "Titan Greaves" "Tornado Wand" "Unset Ring" "Ursine Pelt" "Vaal Axe" "Vaal Gauntlets" "Vaal Mask" "Vaal Regalia" "Vaal Sceptre" "Vanguard Belt" "Void Sceptre" "War Hammer" "War Sword" "Wool Shoes" "Satin Gloves" "Solaris Circlet" "Mesh Gloves"
 	SetFontSize 45
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
@@ -3076,7 +3076,6 @@ Show  # Uniques - 1-2c
 # Usually < 1c or nearly worthless.
 
 
-
 Show  # Uniques - <1c - ilvl <67
 	Rarity = Unique
 	ItemLevel < 67
@@ -3098,7 +3097,7 @@ Show  # Uniques - <1c - Boss Prophecy
 
 Show  # Uniques - <1c - Shared
 	Rarity = Unique
-	BaseType "Agate Amulet" "Chain Belt" "Golden Plate" "Necromancer Circlet" "Paua Amulet" "Quartz Flask" "Rustic Sash" "Soldier Gloves" "Two-Point Arrow Quiver" "Widowsilk Robe"
+	BaseType "Agate Amulet" "Chain Belt" "Golden Plate" "Necromancer Circlet" "Paua Amulet" "Quartz Flask" "Rustic Sash" "Two-Point Arrow Quiver" "Widowsilk Robe"
 	SetFontSize 45
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
@@ -3106,7 +3105,7 @@ Show  # Uniques - <1c - Shared
 
 Show  # Uniques - <1c - Crafted Fated Purchased
 	Rarity = Unique
-	BaseType "Ancient Greaves" "Bone Bow" "Cedar Tower Shield" "Crusader Helmet" "Enameled Buckler" "Etched Greatsword" "Iron Circlet" "Iron Staff" "Ironscale Gauntlets" "Painted Tower Shield" "Serpentscale Boots" "Sharkskin Tunic" "Spiraled Wand" Steelhead "Trapper Boots" "Ezomyte Spiked Shield" "Mesh Gloves" "Antique Greaves" "Loricated Ringmail"
+	BaseType "Ancient Greaves" "Bone Bow" "Cedar Tower Shield" "Crusader Helmet" "Enameled Buckler" "Etched Greatsword" "Iron Circlet" "Iron Staff" "Ironscale Gauntlets" "Painted Tower Shield" "Serpentscale Boots" "Sharkskin Tunic" "Spiraled Wand" Steelhead "Trapper Boots" "Ezomyte Spiked Shield" "Antique Greaves" "Loricated Ringmail"
 	SetFontSize 45
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
@@ -3128,7 +3127,7 @@ Show  # Uniques - <1c - Labyrinth
 
 Show  # Uniques - <1c - Nearly Worthless
 	Rarity = Unique
-	BaseType "Abyssal Axe" Ambusher "Antique Rapier" "Assassin's Garb" "Auric Mace" "Blunt Arrow Quiver" "Bone Armour" "Bone Circlet" "Brass Spirit Shield" "Bronzescale Gauntlets" "Clasped Boots" "Cloth Belt" "Colossal Tower Shield" "Conjurer Gloves" "Coral Ring" "Crusader Chainmail" "Crusader Plate" "Crystal Sceptre" "Cutthroat's Garb" "Deicide Mask" "Desert Brigandine" "Despot Axe" "Destroyer Regalia" "Dragonscale Boots" "Dragonscale Gauntlets" "Driftwood Wand" "Dusk Blade" "Elegant Sword" Estoc "Ezomyte Axe" "Ezomyte Blade" "Festival Mask" "Flaying Knife" Gavel "Gilded Sallet" Gladius "Goathide Gloves" "Goliath Gauntlets" "Grinning Fetish" "Gut Ripper" "Harmonic Spirit Shield" "Headsman Axe" "Highland Blade" "Infernal Axe" "Jade Hatchet" "Legion Sword" "Marble Amulet" "Military Staff" "Mosaic Kite Shield" "Opal Sceptre" "Opal Wand" "Ornate Mace" "Platinum Sceptre" "Polished Spiked Shield" "Primordial Staff" "Reaver Sword" "Reinforced Greaves" "Reinforced Tower Shield" "Royal Skean" "Saintly Chainmail" "Serpentine Staff" "Serpentscale Gauntlets" "Shadow Axe" "Sharkskin Boots" "Sharktooth Arrow Quiver" "Short Bow" "Silk Slippers" "Spike-Point Arrow Quiver" "Steel Gauntlets" "Sundering Axe" "Tarnished Spirit Shield" "Terror Maul" "Tiger Sword" "Turquoise Amulet" "Twilight Blade" "Vaal Hatchet" "War Hammer" "Wool Gloves" "Embroidered Gloves"
+	BaseType "Abyssal Axe" Ambusher "Antique Rapier" "Assassin's Garb" "Auric Mace" "Blunt Arrow Quiver" "Bone Armour" "Bone Circlet" "Bronze Sceptre" "Bronzescale Gauntlets" "Clasped Boots" "Cloth Belt" "Colossal Tower Shield" "Conjurer Gloves" "Coral Ring" "Crusader Chainmail" "Crusader Plate" "Crystal Sceptre" "Cutthroat's Garb" "Deicide Mask" "Demon Dagger" "Desert Brigandine" "Despot Axe" "Destroyer Regalia" "Dragonscale Boots" "Dragonscale Gauntlets" "Driftwood Wand" "Dusk Blade" "Elegant Sword" Estoc "Ezomyte Axe" "Ezomyte Blade" "Flaying Knife" Gavel "Gilded Sallet" Gladius "Goathide Gloves" "Goliath Gauntlets" "Grinning Fetish" "Gut Ripper" "Harmonic Spirit Shield" "Headsman Axe" "Highland Blade" "Infernal Axe" "Jade Hatchet" "Legion Sword" "Marble Amulet" "Military Staff" "Mosaic Kite Shield" "Opal Sceptre" "Opal Wand" "Ornate Mace" "Polished Spiked Shield" "Primordial Staff" "Reaver Sword" "Reinforced Greaves" "Reinforced Tower Shield" "Royal Skean" "Saintly Chainmail" "Serpentine Staff" "Serpentscale Gauntlets" "Shadow Axe" "Sharkskin Boots" "Sharktooth Arrow Quiver" "Short Bow" "Silk Slippers" "Spidersilk Robe" "Spike-Point Arrow Quiver" "Steel Gauntlets" "Sundering Axe" "Tarnished Spirit Shield" "Terror Maul" "Tiger Sword" "Turquoise Amulet" "Twilight Blade" "Vaal Claw" "Vaal Hatchet" "Wool Gloves" "Embroidered Gloves"
 	SetFontSize 45
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
@@ -3163,7 +3162,7 @@ Show  # Uniques - New or Worthless
 # "The Dragon" "The Dragon's Heart"
 # Loyalty "The Price of Loyalty"
 # "The Master" "The Master Artisan"
-# "The Wolf" "The Wolf's Legacy" "The Wolf's Shadow"
+# "The Wolf" "The Wolf's Shadow" "The Wolf's Legacy"
 # Hope "Last Hope"
 # Hope "Glimmer of Hope"
 # "The Dragon" "The Eye of the Dragon"
@@ -3181,7 +3180,7 @@ Show  # Divination Cards - <1c (Conflicts)
 
 Show  # Divination Cards - 10c+
 	Class Divination
-	BaseType "House of Mirrors" "The Demon" "The Doctor" "The Fiend" "Beauty Through Death" "Alluring Bounty" "Nook's Crown" "Pride of the First Ones" "Immortal Resolve" "The Nurse" "The Wolven King's Bite" "The Immortal" "Abandoned Wealth" "Hunter's Reward" "The Spark and the Flame" "The Dragon's Heart" "The Damned" "The Iron Bard" "Burning Blood" "Wealth and Power" "The Samurai's Eye" "The Price of Loyalty" "The Eye of Terror" "The World Eater" "The Polymath" "Seven Years Bad Luck" "The Wind" "The Saint's Treasure" "The Ethereal" "The Life Thief" "Dark Dreams" "The Enlightened" "The Sacrifice" "Void of the Elements" "Pride Before the Fall" "The Celestial Justicar" "The Queen" "The Mayor" "The King's Heart" "The Risk" "The Celestial Stone" "The Bargain" "A Dab of Ink" "The Pact" "The Cacophony" "Imperial Legacy"
+	BaseType "The Demon" "The Doctor" "House of Mirrors" "The Fiend" "Beauty Through Death" "Nook's Crown" "Alluring Bounty" "The Immortal" "Pride of the First Ones" "The Damned" "The Nurse" "Immortal Resolve" "The Spark and the Flame" "Hunter's Reward" "The Dragon's Heart" "The Price of Loyalty" "Abandoned Wealth" "The Iron Bard" "The Wolven King's Bite" "The Polymath" "The Samurai's Eye" "Wealth and Power" "The Eye of Terror" "Burning Blood" "Dark Dreams" "Seven Years Bad Luck" "The Saint's Treasure" "The Celestial Justicar" "Void of the Elements" "The Queen" "The World Eater" "The Mayor" "The Enlightened" "The Ethereal" "The Risk" "The Life Thief" "The Celestial Stone" "The Sacrifice" "The Bargain" "Pride Before the Fall" "The Wind" "The King's Heart"
 	SetFontSize 45 
 	SetTextColor 255 0 175 # Divination Card (10c+) 
 	SetBackgroundColor 255 255 255 255 # Divination Card (10c+) 
@@ -3192,7 +3191,7 @@ Show  # Divination Cards - 10c+
 
 Show  # Divination Cards - 1c+
 	Class Divination
-	BaseType "The Porcupine" "The Vast" "The Dapper Prodigy" "The Offering" "Mawr Blaidd" "The Old Man" "Chaotic Disposition" "The Hoarder" "The Master" "The Artist" "The Sephirot" "The Professor" "The Endless Darkness" "Azyran's Reward" "Bowyer's Dream" "Emperor of Purity" "The Last One Standing" "Left to Fate" "The Jeweller's Boon" "The Undisputed" Monochrome "The Primordial" Remembrance "Alone in the Darkness" Heterochromia "The Betrayal" "The Dark Mage" "The Gladiator" "The Hunger" "The Scavenger" "The Soul" "The Valkyrie" "The Wolf" "The Dreamer" Perfection "The Undaunted" "The Innocent" "Boon of the First Ones" "The Landing" Vanity "The Chains that Bind" Humility "Last Hope" "Lost Worlds" "Lucky Deck" "The Cartographer" "The Cursed King" "The Formless Sea" "The Lion" "The Road to Power" "The Surveyor" "The Thaumaturgist" "The Warlord" "Lingering Remnants" "The Realm" "The Obscured" "The Breach" "The Hale Heart" "The Rite of Elements" "The Darkest Dream" "Harmony of Souls" "The Price of Protection" "The Seeker" "The Deep Ones" "Buried Treasure" "The Wrath" "Sambodhi's Vow" "Merciless Armament" "The Void" "The Trial" "Assassin's Favour" Audacity "Boundless Realms" "Earth Drinker" "Gemcutter's Promise" "Her Mask" "Lysah's Respite" "Scholar of the Seas" "The Aesthete" "The Arena Champion" "The Avenger" "The Body" "The Brittle Emperor" "The Cataclysm" "The Conduit" "The Dragon" "The Drunken Aristocrat" "The Feast" "The Fletcher" "The Fox" "The Gemcutter" "The Harvester" "The Inoculated" "The Jester" "The Lich" "The Lover" "The Penitent" "The Rabid Rhoa" "The Sigil" "The Stormcaller" "The Summoner" "The Sun" "The Throne" "The Tower" "The Tyrant" "The Visionary" "The Wolf's Shadow" "Time-Lost Relic" "Vinia's Token" Mitts "The Valley of Steel Boxes" "Call to the First Ones" "The Coming Storm" "The Wolverine" "The Standoff" "Struck by Lightning" "The Ruthless Ceinture" Rebirth "The Puzzle" "The Insatiable" "Forbidden Power" "Blessing of God" "Three Voices" "The Beast" "The Dreamland" "The Admirer" "The Twilight Moon" "The Wilted Rose" "Arrogance of the Vaal" "The Lord of Celebration" "The Journey" "The Golden Era" "Echoes of Love" "The Fool" "Demigod's Wager" "The Archmage's Right Hand" "The Heroic Shot" "Akil's Prophecy" "The Wolf's Legacy" "The Deal" "More is Never Enough" "Dialla's Subjugation" "The Watcher" "The Opulent" Rats "The Twins" "Anarchy's Price" "Destined to Crumble" Tranquillity "Grave Knowledge" Loyalty "Lucky Connections" "The Calling" "The Inventor" "The Deceiver" "Thirst for Knowledge" "Vile Power" "The Surgeon" "No Traces" "Emperor's Luck" "Jack in the Box" "Rain of Chaos" "The Battle Born" "The Catalyst" "The Gentleman" "The Oath" "The Scholar" "The Web" "The Sword King's Salute" "The Master Artisan"
+	BaseType "Mawr Blaidd" "The Hoarder" "Boon of the First Ones" "Azyran's Reward" "The Artist" "The Dapper Prodigy" "The Sephirot" "The Professor" "The Undaunted" "The Landing" "The Soul" "The Porcupine" "The Master" "Buried Treasure" "Chaotic Disposition" "The Offering" "The Valkyrie" "The Jeweller's Boon" "The Primordial" Remembrance "Bowyer's Dream" "Emperor of Purity" Heterochromia "The Last One Standing" "The Wolf" "The Seeker" "A Dab of Ink" "The Betrayal" "The Chains that Bind" "The Hunger" "The Pact" "The Vast" "The Void" "Left to Fate" "The Dreamer" Perfection "The Undisputed" "Alone in the Darkness" "The Hale Heart" "Hunter's Resolve" "The Old Man" Monochrome Humility "Lucky Deck" "The Cartographer" "The Cursed King" "The Dark Mage" "The Lion" "The Thaumaturgist" "The Throne" "Time-Lost Relic" "The Obscured" "The Breach" "Blessing of God" "The Innocent" "The Twilight Moon" "The Wilted Rose" "The Endless Darkness" "The Price of Protection" "The Journey" Vanity "Akil's Prophecy" "The Heroic Shot" "The Gladiator" "The Warlord" "The Realm" "Last Hope" "Imperial Legacy" "Harmony of Souls" "Assassin's Favour" Audacity "Boundless Realms" "Cartographer's Delight" "Destined to Crumble" "Dialla's Subjugation" "Earth Drinker" "Emperor's Luck" "Gemcutter's Promise" "Grave Knowledge" Hubris "Jack in the Box" "Lost Worlds" Loyalty "Lucky Connections" "Lysah's Respite" "Merciless Armament" "Scholar of the Seas" "Shard of Fate" "The Aesthete" "The Arena Champion" "The Avenger" "The Body" "The Brittle Emperor" "The Calling" "The Cataclysm" "The Conduit" "The Dragon" "The Drunken Aristocrat" "The Feast" "The Fletcher" "The Formless Sea" "The Fox" "The Gemcutter" "The Harvester" "The Inventor" "The Jester" "The Lover" "The Oath" "The Penitent" "The Road to Power" "The Scarred Meadow" "The Scavenger" "The Stormcaller" "The Summoner" "The Surgeon" "The Surveyor" "The Tower" "The Trial" "The Tyrant" "The Wrath" "Vinia's Token" Mitts "The Valley of Steel Boxes" "Lingering Remnants" "The Wolverine" "The Standoff" "The Ruthless Ceinture" "No Traces" Rebirth "The Puzzle" "The Insatiable" "Forbidden Power" "Three Voices" "The Beast" "The Rite of Elements" "The Dreamland" "The Admirer" "The Witch" "The Darkest Dream" "Sambodhi's Vow" "Arrogance of the Vaal" "The Lord of Celebration" "Dark Temptation" "Echoes of Love" "The Deep Ones" "The Fool" "Demigod's Wager" "The Archmage's Right Hand" "The Wolf's Legacy" "The Deal" "More is Never Enough" "The Master Artisan" "The Rabid Rhoa" "The Golden Era" "Anarchy's Price" "Rain of Chaos" Rats "The Battle Born" "The Inoculated" "The Lich" "The Sigil" "The Sun" "The Visionary" "The Watcher" "The Web" "The Wolf's Shadow" Tranquillity "The Coming Storm" "The Opulent" "Struck by Lightning" "The Deceiver" "The Sword King's Salute" "Thirst for Knowledge" "Vile Power"
 	SetFontSize 45 
 	SetTextColor 255 255 255 # Divination Card (1c+) 
 	SetBackgroundColor 255 0 175 255 # Divination Card (1c+) 
@@ -3203,7 +3202,7 @@ Show  # Divination Cards - 1c+
 
 Show  # Divination Cards - <1c
 	Class Divination
-	BaseType "Blind Venture" "Coveted Possession" "Gift of the Gemling Queen" Hope "Light and Truth" "Rain Tempter" "The Encroaching Darkness" "The Explorer" "The Gambler" "The Lord in Black" "The Mercenary" "The One With All" "The Poet" "The Siren" "The Spoiled Prince" "The Survivalist" "The Traitor" "The Union" "Treasure Hunter" "The Wretched" "The Garish Power" "The Forsaken" "Atziri's Arsenal" "The Fathomless Depths" "The Mad King" "The Messenger" "Boon of Justice" "The Skeleton" "The Side Quest" "Glimmer of Hope" "The Pack Leader" "Three Faces in the Dark" "The Mountain"
+	BaseType "Blind Venture" "Coveted Possession" "Gift of the Gemling Queen" "Glimmer of Hope" Hope "Light and Truth" "Rain Tempter" "The Encroaching Darkness" "The Explorer" "The Gambler" "The Lord in Black" "The Mercenary" "The One With All" "The Poet" "The Siren" "The Spoiled Prince" "The Survivalist" "The Traitor" "The Union" "Treasure Hunter" "The Wretched" "The Garish Power" "The Forsaken" "Atziri's Arsenal" "The Fathomless Depths" "The Cacophony" "The Mad King" "The Messenger" "The Skeleton" "The Side Quest" "The Scholar" "Call to the First Ones" "The Gentleman" "The Twins" "The Catalyst" "Her Mask" "The Pack Leader" "Three Faces in the Dark" "Boon of Justice" "The Mountain"
 	SetFontSize 45 
 	SetTextColor 0 0 0 # Divination Card (<1c) 
 	SetBackgroundColor 255 0 175 230 # Divination Card (<1c) 
@@ -3213,7 +3212,7 @@ Show  # Divination Cards - <1c
 
 Hide  # Divination Cards - Worthless
 	Class Divination
-	BaseType Death Hubris "A Mother's Parting Gift" "Cartographer's Delight" "Doedre's Madness" "Hunter's Resolve" "Lantador's Lost Love" Prosperity "Shard of Fate" "The Carrion Crow" "The Doppelganger" "The Endurance" "The Flora's Gift" "The Hermit" "The Incantation" "The King's Blade" "The Lunaris Priestess" "The Metalsmith's Gift" "The Scarred Meadow" "The Warden" "Thunderous Skies" "Turn the Other Cheek" "Volatile Power" "Might is Right" "The Blazing Fire" "The Eye of the Dragon" "The Army of Blood" "The Witch" "Dark Temptation"
+	BaseType "A Mother's Parting Gift" Death "Doedre's Madness" "Lantador's Lost Love" Prosperity "The Carrion Crow" "The Doppelganger" "The Endurance" "The Flora's Gift" "The Hermit" "The Incantation" "The King's Blade" "The Lunaris Priestess" "The Metalsmith's Gift" "The Warden" "Thunderous Skies" "Turn the Other Cheek" "Volatile Power" "Might is Right" "The Blazing Fire" "The Eye of the Dragon" "The Army of Blood"
 	SetFontSize 36 
 	SetTextColor 0 0 0 # Divination Card (Worthless) 
 	SetBackgroundColor 255 0 175 120 # Divination Card (Worthless) 
@@ -4793,6 +4792,208 @@ Show  # 83+ Rares - Quivers
 #Disabled Block End
 
 ##########################################
+########## 75+ RARES (4+ LINKS) ##########
+##########################################
+# Section: 75+ Rares (4+ Links)
+
+#-----------------------#
+# 75+ Armour (4+ Links) #
+#-----------------------#
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Armour - Str - 75+
+#	ItemLevel >= 75
+#	LinkedSockets >= 4
+#	BaseType "Titan Greaves" "Vaal Greaves" "Eternal Burgonet" "Royal Burgonet" "Ezomyte Burgonet" "Spiked Gloves" "Titan Gauntlets" "Vaal Gauntlets" "Glorious Plate" "Gladiator Plate" "Astral Plate"
+#	SetFontSize 36
+#	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (4+ Links)
+#	SetBorderColor 140 140 70 # Rare Recipe 75+ (4+ Links)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Armour - Dex - 75+
+#	ItemLevel >= 75
+#	LinkedSockets >= 4
+#	BaseType "Slink Boots" "Stealth Boots" "Lion Pelt" "Sinner Tricorne" "Silken Hood" "Gripped Gloves" "Slink Gloves" "Stealth Gloves" "Assassin's Garb" "Zodiac Leather" "Exquisite Leather"
+#	SetFontSize 36
+#	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (4+ Links)
+#	SetBorderColor 140 140 70 # Rare Recipe 75+ (4+ Links)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Armour - Int - 75+
+#	ItemLevel >= 75
+#	LinkedSockets >= 4
+#	BaseType "Arcanist Slippers" "Sorcerer Boots" "Hubris Circlet" "Mind Cage" "Solaris Circlet" "Fingerless Silk Gloves" "Sorcerer Gloves" "Arcanist Gloves" "Vaal Regalia" "Widowsilk Robe" "Occultist's Vestment"
+#	SetFontSize 36
+#	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (4+ Links)
+#	SetBorderColor 140 140 70 # Rare Recipe 75+ (4+ Links)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Armour - Str Dex - 75+
+#	ItemLevel >= 75
+#	LinkedSockets >= 4
+#	BaseType "Murder Boots" "Hydrascale Boots" "Nightmare Bascinet" "Pig-Faced Bascinet" "Dragonscale Gauntlets" "Hydrascale Gauntlets" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale"
+#	SetFontSize 36
+#	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (4+ Links)
+#	SetBorderColor 140 140 70 # Rare Recipe 75+ (4+ Links)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Armour - Str Int - 75+
+#	ItemLevel >= 75
+#	LinkedSockets >= 4
+#	BaseType "Crusader Boots" "Legion Boots" "Bone Helmet" "Praetor Crown" "Prophet Crown" "Crusader Gloves" "Legion Gloves" "Saintly Chainmail" "Saint's Hauberk" "Elegant Ringmail"
+#	SetFontSize 36
+#	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (4+ Links)
+#	SetBorderColor 140 140 70 # Rare Recipe 75+ (4+ Links)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Armour - Dex Int - 75+
+#	ItemLevel >= 75
+#	LinkedSockets >= 4
+#	BaseType "Dragonscale Boots" "Assassin's Boots" "Deicide Mask" "Vaal Mask" "Murder Mitts" "Strapped Mitts" "Carnal Armour" "Sadist Garb" "Blood Raiment"
+#	SetFontSize 36
+#	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (4+ Links)
+#	SetBorderColor 140 140 70 # Rare Recipe 75+ (4+ Links)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Armour - Body Armour - 75+
+#	DropLevel >= 50
+#	Class "Body Armour"
+#	ItemLevel >= 75
+#	LinkedSockets >= 4
+#	SetFontSize 36
+#	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (4+ Links)
+#	SetBorderColor 140 140 70 # Rare Recipe 75+ (4+ Links)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Armour - Gloves - 75+
+#	DropLevel >= 40
+#	Class Gloves
+#	ItemLevel >= 75
+#	LinkedSockets >= 4
+#	SetFontSize 36
+#	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (4+ Links)
+#	SetBorderColor 140 140 70 # Rare Recipe 75+ (4+ Links)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Armour - Boots - 75+
+#	DropLevel >= 40
+#	Class Boots
+#	ItemLevel >= 75
+#	LinkedSockets >= 4
+#	SetFontSize 36
+#	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (4+ Links)
+#	SetBorderColor 140 140 70 # Rare Recipe 75+ (4+ Links)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Armour - Helmets - 75+
+#	DropLevel >= 40
+#	Class Helmets
+#	ItemLevel >= 75
+#	LinkedSockets >= 4
+#	SetFontSize 36
+#	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (4+ Links)
+#	SetBorderColor 140 140 70 # Rare Recipe 75+ (4+ Links)
+#Disabled Block End
+
+#---------------------------------#
+# 75+ Two Hand Weapons (4+ Links) #
+#---------------------------------#
+# 73+ for T2 physical damage mods
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Top Tier - Bows - Harbinger Bows - 75+
+#	Class Bows
+#	ItemLevel >= 75
+#	LinkedSockets >= 4
+#	BaseType "Harbinger Bow"
+#	SetFontSize 40
+#	SetTextColor 255 190 75 # Rare Weapon
+#	SetBackgroundColor 20 60 90 230 # Rare Recipe 75+ (Valuable)
+#	SetBorderColor 200 150 60 # Rare Weapon 75+ (Valuable)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Two Hand Weapons - Axes - 75+
+#	Class "Two Hand Axes"
+#	DropLevel >= 60
+#	ItemLevel >= 75
+#	LinkedSockets >= 4
+#	SetFontSize 40
+#	SetTextColor 255 190 75 # Rare Weapon
+#	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (4+ Links)
+#	SetBorderColor 170 125 50 # Rare Weapon 75+ (4+ Links)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Two Hand Weapons - Maces - 75+
+#	Class "Two Hand Maces"
+#	DropLevel >= 61
+#	ItemLevel >= 75
+#	LinkedSockets >= 4
+#	SetFontSize 40
+#	SetTextColor 255 190 75 # Rare Weapon
+#	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (4+ Links)
+#	SetBorderColor 170 125 50 # Rare Weapon 75+ (4+ Links)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Two Hand Weapons - Swords - 75+
+#	Class "Two Hand Swords"
+#	DropLevel >= 61
+#	ItemLevel >= 75
+#	LinkedSockets >= 4
+#	SetFontSize 40
+#	SetTextColor 255 190 75 # Rare Weapon
+#	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (4+ Links)
+#	SetBorderColor 170 125 50 # Rare Weapon 75+ (4+ Links)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Two Hand Weapons - Bows - 75+
+#	Class Bows
+#	DropLevel >= 61
+#	ItemLevel >= 75
+#	LinkedSockets >= 4
+#	SetFontSize 40
+#	SetTextColor 255 190 75 # Rare Weapon
+#	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (4+ Links)
+#	SetBorderColor 170 125 50 # Rare Weapon 75+ (4+ Links)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Two Hand Weapons - Staves - 75+
+#	Class Staves
+#	DropLevel >= 61
+#	ItemLevel >= 75
+#	LinkedSockets >= 4
+#	SetFontSize 40
+#	SetTextColor 255 190 75 # Rare Weapon
+#	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (4+ Links)
+#	SetBorderColor 170 125 50 # Rare Weapon 75+ (4+ Links)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Two Hand Weapons - Warstaves - 75+
+#	Class Warstaff
+#	DropLevel >= 61
+#	ItemLevel >= 75
+#	LinkedSockets >= 4
+#	SetFontSize 40
+#	SetTextColor 255 190 75 # Rare Weapon
+#	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (4+ Links)
+#	SetBorderColor 170 125 50 # Rare Weapon 75+ (4+ Links)
+#Disabled Block End
+
+##########################################
 ################ 75+ RARES ###############
 ##########################################
 # Section: 75+ Rares (Regal Recipe)
@@ -5323,6 +5524,195 @@ Show  # Errors - 75+
 #	SetTextColor 255 190 75 # Rare Weapon
 #	SetBackgroundColor 40 35 8 230 # Rare Weapon 60+ (Highlighted)
 #	SetBorderColor 170 125 50 # Rare Weapon 60+ (Highlighted)
+#Disabled Block End
+
+##########################################
+########## 60+ RARES (4+ LINKS) ##########
+##########################################
+# Section: 60+ Rares (4+ Links)
+
+#-----------------------#
+# 60+ Armour (4+ Links) #
+#-----------------------#
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Armour - Str - 60+
+#	ItemLevel >= 60
+#	LinkedSockets >= 4
+#	BaseType "Titan Greaves" "Vaal Greaves" "Eternal Burgonet" "Royal Burgonet" "Ezomyte Burgonet" "Spiked Gloves" "Titan Gauntlets" "Vaal Gauntlets" "Glorious Plate" "Gladiator Plate" "Astral Plate"
+#	SetFontSize 36
+#	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (4+ Links)
+#	SetBorderColor 140 140 70 # Rare Recipe 60+ (4+ Links)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Armour - Dex - 60+
+#	ItemLevel >= 60
+#	LinkedSockets >= 4
+#	BaseType "Slink Boots" "Stealth Boots" "Lion Pelt" "Sinner Tricorne" "Silken Hood" "Gripped Gloves" "Slink Gloves" "Stealth Gloves" "Assassin's Garb" "Zodiac Leather" "Exquisite Leather"
+#	SetFontSize 36
+#	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (4+ Links)
+#	SetBorderColor 140 140 70 # Rare Recipe 60+ (4+ Links)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Armour - Int - 60+
+#	ItemLevel >= 60
+#	LinkedSockets >= 4
+#	BaseType "Arcanist Slippers" "Sorcerer Boots" "Hubris Circlet" "Mind Cage" "Solaris Circlet" "Fingerless Silk Gloves" "Sorcerer Gloves" "Arcanist Gloves" "Vaal Regalia" "Widowsilk Robe" "Occultist's Vestment"
+#	SetFontSize 36
+#	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (4+ Links)
+#	SetBorderColor 140 140 70 # Rare Recipe 60+ (4+ Links)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Armour - Str Dex - 60+
+#	ItemLevel >= 60
+#	LinkedSockets >= 4
+#	BaseType "Murder Boots" "Hydrascale Boots" "Nightmare Bascinet" "Pig-Faced Bascinet" "Dragonscale Gauntlets" "Hydrascale Gauntlets" "Triumphant Lamellar" "General's Brigandine" "Full Dragonscale"
+#	SetFontSize 36
+#	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (4+ Links)
+#	SetBorderColor 140 140 70 # Rare Recipe 60+ (4+ Links)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Armour - Str Int - 60+
+#	ItemLevel >= 60
+#	LinkedSockets >= 4
+#	BaseType "Crusader Boots" "Legion Boots" "Bone Helmet" "Praetor Crown" "Prophet Crown" "Crusader Gloves" "Legion Gloves" "Saintly Chainmail" "Saint's Hauberk" "Elegant Ringmail"
+#	SetFontSize 36
+#	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (4+ Links)
+#	SetBorderColor 140 140 70 # Rare Recipe 60+ (4+ Links)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Armour - Dex Int - 60+
+#	ItemLevel >= 60
+#	LinkedSockets >= 4
+#	BaseType "Dragonscale Boots" "Assassin's Boots" "Deicide Mask" "Vaal Mask" "Murder Mitts" "Strapped Mitts" "Carnal Armour" "Sadist Garb" "Blood Raiment"
+#	SetFontSize 36
+#	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (4+ Links)
+#	SetBorderColor 140 140 70 # Rare Recipe 60+ (4+ Links)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Armour - Body Armour - 60+
+#	DropLevel >= 50
+#	Class "Body Armour"
+#	ItemLevel >= 60
+#	LinkedSockets >= 4
+#	SetFontSize 36
+#	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (4+ Links)
+#	SetBorderColor 140 140 70 # Rare Recipe 60+ (4+ Links)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Armour - Gloves - 60+
+#	DropLevel >= 40
+#	Class Gloves
+#	ItemLevel >= 60
+#	LinkedSockets >= 4
+#	SetFontSize 36
+#	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (4+ Links)
+#	SetBorderColor 140 140 70 # Rare Recipe 60+ (4+ Links)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Armour - Boots - 60+
+#	DropLevel >= 40
+#	Class Boots
+#	ItemLevel >= 60
+#	LinkedSockets >= 4
+#	SetFontSize 36
+#	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (4+ Links)
+#	SetBorderColor 140 140 70 # Rare Recipe 60+ (4+ Links)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Armour - Helmets - 60+
+#	DropLevel >= 40
+#	Class Helmets
+#	ItemLevel >= 60
+#	LinkedSockets >= 4
+#	SetFontSize 36
+#	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (4+ Links)
+#	SetBorderColor 140 140 70 # Rare Recipe 60+ (4+ Links)
+#Disabled Block End
+
+#---------------------------------#
+# 60+ Two Hand Weapons (4+ Links) #
+#---------------------------------#
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Two Hand Weapons - Axes - 60+
+#	Class "Two Hand Axes"
+#	DropLevel >= 60
+#	ItemLevel >= 60
+#	LinkedSockets >= 4
+#	SetFontSize 40
+#	SetTextColor 255 190 75 # Rare Weapon
+#	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (4+ Links)
+#	SetBorderColor 170 125 50 # Rare Weapon 60+ (4+ Links)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Two Hand Weapons - Maces - 60+
+#	Class "Two Hand Maces"
+#	DropLevel >= 61
+#	ItemLevel >= 60
+#	LinkedSockets >= 4
+#	SetFontSize 40
+#	SetTextColor 255 190 75 # Rare Weapon
+#	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (4+ Links)
+#	SetBorderColor 170 125 50 # Rare Weapon 60+ (4+ Links)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Two Hand Weapons - Swords - 60+
+#	Class "Two Hand Swords"
+#	DropLevel >= 61
+#	ItemLevel >= 60
+#	LinkedSockets >= 4
+#	SetFontSize 40
+#	SetTextColor 255 190 75 # Rare Weapon
+#	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (4+ Links)
+#	SetBorderColor 170 125 50 # Rare Weapon 60+ (4+ Links)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Two Hand Weapons - Bows - 60+
+#	Class Bows
+#	DropLevel >= 61
+#	ItemLevel >= 60
+#	LinkedSockets >= 4
+#	SetFontSize 40
+#	SetTextColor 255 190 75 # Rare Weapon
+#	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (4+ Links)
+#	SetBorderColor 170 125 50 # Rare Weapon 60+ (4+ Links)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Two Hand Weapons - Staves - 60+
+#	Class Staves
+#	DropLevel >= 61
+#	ItemLevel >= 60
+#	LinkedSockets >= 4
+#	SetFontSize 40
+#	SetTextColor 255 190 75 # Rare Weapon
+#	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (4+ Links)
+#	SetBorderColor 170 125 50 # Rare Weapon 60+ (4+ Links)
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Highlighted Rares - 4+ Links - Two Hand Weapons - Warstaves - 60+
+#	Class Warstaff
+#	DropLevel >= 61
+#	ItemLevel >= 60
+#	LinkedSockets >= 4
+#	SetFontSize 40
+#	SetTextColor 255 190 75 # Rare Weapon
+#	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (4+ Links)
+#	SetBorderColor 170 125 50 # Rare Weapon 60+ (4+ Links)
 #Disabled Block End
 
 ##########################################
