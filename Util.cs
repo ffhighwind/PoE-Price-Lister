@@ -2,12 +2,24 @@
 using System.IO;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Reflection;
 using System.Text;
+using System.Windows.Forms;
 
 namespace PoE_Price_Lister
 {
 	public static class Util
 	{
+		public static void DoubleBuffer(this DataGridView dgv)
+		{
+			typeof(DataGridView).InvokeMember(
+			   "DoubleBuffered",
+			   BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.SetProperty,
+			   null,
+			   dgv,
+			   new object[] { true });
+		}
+
 		/// <summary>
 		/// Detects the <see cref="Encoding"/> for UTF-7, UTF-8/16/32 (bom, no bom, little & big endian),
 		/// the local default codepage, and others.

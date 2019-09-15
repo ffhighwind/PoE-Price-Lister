@@ -28,118 +28,40 @@
         private void InitializeComponent()
         {
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-			this.listViewUniques = new System.Windows.Forms.ListView();
-			this.columnUniqBaseType = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.columnUniqSeverity = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.columnUniqFilter = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.columnUniqExpect = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.columnUniqItems = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.listViewDivination = new System.Windows.Forms.ListView();
-			this.columnDivName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.columnDivSeverity = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.columnDivFilter = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.columnDivExpect = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.columnDivValue = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.buttonGenFilter = new System.Windows.Forms.Button();
-			this.checkBox1 = new System.Windows.Forms.CheckBox();
+			this.saferCheckBox = new System.Windows.Forms.CheckBox();
 			this.buttonLoad = new System.Windows.Forms.Button();
-			this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-			this.tabControl1 = new System.Windows.Forms.TabControl();
+			this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+			this.enchantsSCTab = new System.Windows.Forms.TabControl();
 			this.tabUniquesSC = new System.Windows.Forms.TabPage();
+			this.uniquesScDataGridView = new System.Windows.Forms.DataGridView();
 			this.tabDivinationSC = new System.Windows.Forms.TabPage();
+			this.divinationScDataGridView = new System.Windows.Forms.DataGridView();
+			this.tabEnchantsSC = new System.Windows.Forms.TabPage();
+			this.enchantsScDataGridView = new System.Windows.Forms.DataGridView();
 			this.tabUniquesHC = new System.Windows.Forms.TabPage();
-			this.listViewUniquesHC = new System.Windows.Forms.ListView();
-			this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.uniquesHcDataGridView = new System.Windows.Forms.DataGridView();
 			this.tabDivinationHC = new System.Windows.Forms.TabPage();
-			this.listViewDivinationHC = new System.Windows.Forms.ListView();
-			this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.checkBox2 = new System.Windows.Forms.CheckBox();
-			this.tabControl1.SuspendLayout();
+			this.divinationHcDataGridView = new System.Windows.Forms.DataGridView();
+			this.tabEnchantsHC = new System.Windows.Forms.TabPage();
+			this.enchantsHcDataGridView = new System.Windows.Forms.DataGridView();
+			this.scRadioButton = new System.Windows.Forms.RadioButton();
+			this.hcRadioButton = new System.Windows.Forms.RadioButton();
+			this.hcFriendlyRadioButton = new System.Windows.Forms.RadioButton();
+			this.enchantsSCTab.SuspendLayout();
 			this.tabUniquesSC.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.uniquesScDataGridView)).BeginInit();
 			this.tabDivinationSC.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.divinationScDataGridView)).BeginInit();
+			this.tabEnchantsSC.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.enchantsScDataGridView)).BeginInit();
 			this.tabUniquesHC.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.uniquesHcDataGridView)).BeginInit();
 			this.tabDivinationHC.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.divinationHcDataGridView)).BeginInit();
+			this.tabEnchantsHC.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.enchantsHcDataGridView)).BeginInit();
 			this.SuspendLayout();
-			// 
-			// listViewUniques
-			// 
-			this.listViewUniques.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnUniqBaseType,
-            this.columnUniqSeverity,
-            this.columnUniqFilter,
-            this.columnUniqExpect,
-            this.columnUniqItems});
-			resources.ApplyResources(this.listViewUniques, "listViewUniques");
-			this.listViewUniques.GridLines = true;
-			this.listViewUniques.Name = "listViewUniques";
-			this.listViewUniques.UseCompatibleStateImageBehavior = false;
-			this.listViewUniques.View = System.Windows.Forms.View.Details;
-			this.listViewUniques.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listView_ColumnClick);
-			this.listViewUniques.KeyUp += new System.Windows.Forms.KeyEventHandler(this.listView_KeyUp);
-			// 
-			// columnUniqBaseType
-			// 
-			resources.ApplyResources(this.columnUniqBaseType, "columnUniqBaseType");
-			// 
-			// columnUniqSeverity
-			// 
-			resources.ApplyResources(this.columnUniqSeverity, "columnUniqSeverity");
-			// 
-			// columnUniqFilter
-			// 
-			resources.ApplyResources(this.columnUniqFilter, "columnUniqFilter");
-			// 
-			// columnUniqExpect
-			// 
-			resources.ApplyResources(this.columnUniqExpect, "columnUniqExpect");
-			// 
-			// columnUniqItems
-			// 
-			resources.ApplyResources(this.columnUniqItems, "columnUniqItems");
-			// 
-			// listViewDivination
-			// 
-			this.listViewDivination.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnDivName,
-            this.columnDivSeverity,
-            this.columnDivFilter,
-            this.columnDivExpect,
-            this.columnDivValue});
-			resources.ApplyResources(this.listViewDivination, "listViewDivination");
-			this.listViewDivination.GridLines = true;
-			this.listViewDivination.Name = "listViewDivination";
-			this.listViewDivination.UseCompatibleStateImageBehavior = false;
-			this.listViewDivination.View = System.Windows.Forms.View.Details;
-			this.listViewDivination.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listView_ColumnClick);
-			this.listViewDivination.KeyUp += new System.Windows.Forms.KeyEventHandler(this.listView_KeyUp);
-			// 
-			// columnDivName
-			// 
-			resources.ApplyResources(this.columnDivName, "columnDivName");
-			// 
-			// columnDivSeverity
-			// 
-			resources.ApplyResources(this.columnDivSeverity, "columnDivSeverity");
-			// 
-			// columnDivFilter
-			// 
-			resources.ApplyResources(this.columnDivFilter, "columnDivFilter");
-			// 
-			// columnDivExpect
-			// 
-			resources.ApplyResources(this.columnDivExpect, "columnDivExpect");
-			// 
-			// columnDivValue
-			// 
-			resources.ApplyResources(this.columnDivValue, "columnDivValue");
 			// 
 			// buttonGenFilter
 			// 
@@ -148,13 +70,13 @@
 			this.buttonGenFilter.UseVisualStyleBackColor = true;
 			this.buttonGenFilter.Click += new System.EventHandler(this.buttonGenFilter_Click);
 			// 
-			// checkBox1
+			// saferCheckBox
 			// 
-			resources.ApplyResources(this.checkBox1, "checkBox1");
-			this.checkBox1.Checked = true;
-			this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.checkBox1.Name = "checkBox1";
-			this.checkBox1.UseVisualStyleBackColor = true;
+			resources.ApplyResources(this.saferCheckBox, "saferCheckBox");
+			this.saferCheckBox.Checked = true;
+			this.saferCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
+			this.saferCheckBox.Name = "saferCheckBox";
+			this.saferCheckBox.UseVisualStyleBackColor = true;
 			// 
 			// buttonLoad
 			// 
@@ -163,186 +85,219 @@
 			this.buttonLoad.UseVisualStyleBackColor = true;
 			this.buttonLoad.Click += new System.EventHandler(this.buttonLoad_Click);
 			// 
-			// openFileDialog1
+			// openFileDialog
 			// 
-			this.openFileDialog1.FileName = "openFileDialog1";
-			resources.ApplyResources(this.openFileDialog1, "openFileDialog1");
-			this.openFileDialog1.RestoreDirectory = true;
+			this.openFileDialog.FileName = "openFileDialog";
+			resources.ApplyResources(this.openFileDialog, "openFileDialog");
+			this.openFileDialog.RestoreDirectory = true;
 			// 
-			// tabControl1
+			// enchantsSCTab
 			// 
-			resources.ApplyResources(this.tabControl1, "tabControl1");
-			this.tabControl1.Controls.Add(this.tabUniquesSC);
-			this.tabControl1.Controls.Add(this.tabDivinationSC);
-			this.tabControl1.Controls.Add(this.tabUniquesHC);
-			this.tabControl1.Controls.Add(this.tabDivinationHC);
-			this.tabControl1.Name = "tabControl1";
-			this.tabControl1.SelectedIndex = 0;
+			resources.ApplyResources(this.enchantsSCTab, "enchantsSCTab");
+			this.enchantsSCTab.Controls.Add(this.tabUniquesSC);
+			this.enchantsSCTab.Controls.Add(this.tabDivinationSC);
+			this.enchantsSCTab.Controls.Add(this.tabEnchantsSC);
+			this.enchantsSCTab.Controls.Add(this.tabUniquesHC);
+			this.enchantsSCTab.Controls.Add(this.tabDivinationHC);
+			this.enchantsSCTab.Controls.Add(this.tabEnchantsHC);
+			this.enchantsSCTab.Name = "enchantsSCTab";
+			this.enchantsSCTab.SelectedIndex = 0;
 			// 
 			// tabUniquesSC
 			// 
-			this.tabUniquesSC.Controls.Add(this.listViewUniques);
+			this.tabUniquesSC.Controls.Add(this.uniquesScDataGridView);
 			resources.ApplyResources(this.tabUniquesSC, "tabUniquesSC");
 			this.tabUniquesSC.Name = "tabUniquesSC";
 			this.tabUniquesSC.UseVisualStyleBackColor = true;
 			// 
+			// uniquesScDataGridView
+			// 
+			this.uniquesScDataGridView.AllowUserToAddRows = false;
+			this.uniquesScDataGridView.AllowUserToDeleteRows = false;
+			this.uniquesScDataGridView.AllowUserToResizeRows = false;
+			this.uniquesScDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+			this.uniquesScDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+			this.uniquesScDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			resources.ApplyResources(this.uniquesScDataGridView, "uniquesScDataGridView");
+			this.uniquesScDataGridView.Name = "uniquesScDataGridView";
+			this.uniquesScDataGridView.ReadOnly = true;
+			this.uniquesScDataGridView.RowHeadersVisible = false;
+			// 
 			// tabDivinationSC
 			// 
-			this.tabDivinationSC.Controls.Add(this.listViewDivination);
+			this.tabDivinationSC.Controls.Add(this.divinationScDataGridView);
 			resources.ApplyResources(this.tabDivinationSC, "tabDivinationSC");
 			this.tabDivinationSC.Name = "tabDivinationSC";
 			this.tabDivinationSC.UseVisualStyleBackColor = true;
 			// 
+			// divinationScDataGridView
+			// 
+			this.divinationScDataGridView.AllowUserToAddRows = false;
+			this.divinationScDataGridView.AllowUserToDeleteRows = false;
+			this.divinationScDataGridView.AllowUserToResizeRows = false;
+			this.divinationScDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+			this.divinationScDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+			this.divinationScDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			resources.ApplyResources(this.divinationScDataGridView, "divinationScDataGridView");
+			this.divinationScDataGridView.Name = "divinationScDataGridView";
+			this.divinationScDataGridView.ReadOnly = true;
+			this.divinationScDataGridView.RowHeadersVisible = false;
+			// 
+			// tabEnchantsSC
+			// 
+			this.tabEnchantsSC.Controls.Add(this.enchantsScDataGridView);
+			resources.ApplyResources(this.tabEnchantsSC, "tabEnchantsSC");
+			this.tabEnchantsSC.Name = "tabEnchantsSC";
+			this.tabEnchantsSC.UseVisualStyleBackColor = true;
+			// 
+			// enchantsScDataGridView
+			// 
+			this.enchantsScDataGridView.AllowUserToAddRows = false;
+			this.enchantsScDataGridView.AllowUserToDeleteRows = false;
+			this.enchantsScDataGridView.AllowUserToResizeRows = false;
+			this.enchantsScDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+			this.enchantsScDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+			this.enchantsScDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			resources.ApplyResources(this.enchantsScDataGridView, "enchantsScDataGridView");
+			this.enchantsScDataGridView.Name = "enchantsScDataGridView";
+			this.enchantsScDataGridView.ReadOnly = true;
+			this.enchantsScDataGridView.RowHeadersVisible = false;
+			// 
 			// tabUniquesHC
 			// 
-			this.tabUniquesHC.Controls.Add(this.listViewUniquesHC);
+			this.tabUniquesHC.Controls.Add(this.uniquesHcDataGridView);
 			resources.ApplyResources(this.tabUniquesHC, "tabUniquesHC");
 			this.tabUniquesHC.Name = "tabUniquesHC";
 			this.tabUniquesHC.UseVisualStyleBackColor = true;
 			// 
-			// listViewUniquesHC
+			// uniquesHcDataGridView
 			// 
-			this.listViewUniquesHC.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader5});
-			resources.ApplyResources(this.listViewUniquesHC, "listViewUniquesHC");
-			this.listViewUniquesHC.GridLines = true;
-			this.listViewUniquesHC.Name = "listViewUniquesHC";
-			this.listViewUniquesHC.UseCompatibleStateImageBehavior = false;
-			this.listViewUniquesHC.View = System.Windows.Forms.View.Details;
-			this.listViewUniquesHC.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listView_ColumnClick);
-			this.listViewUniquesHC.KeyUp += new System.Windows.Forms.KeyEventHandler(this.listView_KeyUp);
-			// 
-			// columnHeader1
-			// 
-			resources.ApplyResources(this.columnHeader1, "columnHeader1");
-			// 
-			// columnHeader2
-			// 
-			resources.ApplyResources(this.columnHeader2, "columnHeader2");
-			// 
-			// columnHeader3
-			// 
-			resources.ApplyResources(this.columnHeader3, "columnHeader3");
-			// 
-			// columnHeader4
-			// 
-			resources.ApplyResources(this.columnHeader4, "columnHeader4");
-			// 
-			// columnHeader5
-			// 
-			resources.ApplyResources(this.columnHeader5, "columnHeader5");
+			this.uniquesHcDataGridView.AllowUserToAddRows = false;
+			this.uniquesHcDataGridView.AllowUserToDeleteRows = false;
+			this.uniquesHcDataGridView.AllowUserToResizeRows = false;
+			this.uniquesHcDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+			this.uniquesHcDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+			this.uniquesHcDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			resources.ApplyResources(this.uniquesHcDataGridView, "uniquesHcDataGridView");
+			this.uniquesHcDataGridView.Name = "uniquesHcDataGridView";
+			this.uniquesHcDataGridView.ReadOnly = true;
+			this.uniquesHcDataGridView.RowHeadersVisible = false;
 			// 
 			// tabDivinationHC
 			// 
-			this.tabDivinationHC.Controls.Add(this.listViewDivinationHC);
+			this.tabDivinationHC.Controls.Add(this.divinationHcDataGridView);
 			resources.ApplyResources(this.tabDivinationHC, "tabDivinationHC");
 			this.tabDivinationHC.Name = "tabDivinationHC";
 			this.tabDivinationHC.UseVisualStyleBackColor = true;
 			// 
-			// listViewDivinationHC
+			// divinationHcDataGridView
 			// 
-			this.listViewDivinationHC.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader6,
-            this.columnHeader7,
-            this.columnHeader8,
-            this.columnHeader9,
-            this.columnHeader10});
-			resources.ApplyResources(this.listViewDivinationHC, "listViewDivinationHC");
-			this.listViewDivinationHC.GridLines = true;
-			this.listViewDivinationHC.Name = "listViewDivinationHC";
-			this.listViewDivinationHC.UseCompatibleStateImageBehavior = false;
-			this.listViewDivinationHC.View = System.Windows.Forms.View.Details;
-			this.listViewDivinationHC.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listView_ColumnClick);
-			this.listViewDivinationHC.KeyUp += new System.Windows.Forms.KeyEventHandler(this.listView_KeyUp);
+			this.divinationHcDataGridView.AllowUserToAddRows = false;
+			this.divinationHcDataGridView.AllowUserToDeleteRows = false;
+			this.divinationHcDataGridView.AllowUserToResizeRows = false;
+			this.divinationHcDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+			this.divinationHcDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+			this.divinationHcDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			resources.ApplyResources(this.divinationHcDataGridView, "divinationHcDataGridView");
+			this.divinationHcDataGridView.Name = "divinationHcDataGridView";
+			this.divinationHcDataGridView.ReadOnly = true;
+			this.divinationHcDataGridView.RowHeadersVisible = false;
 			// 
-			// columnHeader6
+			// tabEnchantsHC
 			// 
-			resources.ApplyResources(this.columnHeader6, "columnHeader6");
+			this.tabEnchantsHC.Controls.Add(this.enchantsHcDataGridView);
+			resources.ApplyResources(this.tabEnchantsHC, "tabEnchantsHC");
+			this.tabEnchantsHC.Name = "tabEnchantsHC";
+			this.tabEnchantsHC.UseVisualStyleBackColor = true;
 			// 
-			// columnHeader7
+			// enchantsHcDataGridView
 			// 
-			resources.ApplyResources(this.columnHeader7, "columnHeader7");
+			this.enchantsHcDataGridView.AllowUserToAddRows = false;
+			this.enchantsHcDataGridView.AllowUserToDeleteRows = false;
+			this.enchantsHcDataGridView.AllowUserToResizeRows = false;
+			this.enchantsHcDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+			this.enchantsHcDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+			this.enchantsHcDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			resources.ApplyResources(this.enchantsHcDataGridView, "enchantsHcDataGridView");
+			this.enchantsHcDataGridView.Name = "enchantsHcDataGridView";
+			this.enchantsHcDataGridView.ReadOnly = true;
+			this.enchantsHcDataGridView.RowHeadersVisible = false;
 			// 
-			// columnHeader8
+			// scRadioButton
 			// 
-			resources.ApplyResources(this.columnHeader8, "columnHeader8");
+			resources.ApplyResources(this.scRadioButton, "scRadioButton");
+			this.scRadioButton.Name = "scRadioButton";
+			this.scRadioButton.UseVisualStyleBackColor = true;
+			this.scRadioButton.CheckedChanged += new System.EventHandler(this.scRadioButton_CheckedChanged);
 			// 
-			// columnHeader9
+			// hcRadioButton
 			// 
-			resources.ApplyResources(this.columnHeader9, "columnHeader9");
+			resources.ApplyResources(this.hcRadioButton, "hcRadioButton");
+			this.hcRadioButton.Name = "hcRadioButton";
+			this.hcRadioButton.UseVisualStyleBackColor = true;
+			this.hcRadioButton.CheckedChanged += new System.EventHandler(this.hcRadioButton_CheckedChanged);
 			// 
-			// columnHeader10
+			// hcFriendlyRadioButton
 			// 
-			resources.ApplyResources(this.columnHeader10, "columnHeader10");
-			// 
-			// checkBox2
-			// 
-			resources.ApplyResources(this.checkBox2, "checkBox2");
-			this.checkBox2.Checked = true;
-			this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.checkBox2.Name = "checkBox2";
-			this.checkBox2.UseVisualStyleBackColor = true;
+			resources.ApplyResources(this.hcFriendlyRadioButton, "hcFriendlyRadioButton");
+			this.hcFriendlyRadioButton.Checked = true;
+			this.hcFriendlyRadioButton.Name = "hcFriendlyRadioButton";
+			this.hcFriendlyRadioButton.TabStop = true;
+			this.hcFriendlyRadioButton.UseVisualStyleBackColor = true;
+			this.hcFriendlyRadioButton.CheckedChanged += new System.EventHandler(this.hcFriendlyRadioButton_CheckedChanged);
 			// 
 			// Form1
 			// 
 			resources.ApplyResources(this, "$this");
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Controls.Add(this.checkBox2);
-			this.Controls.Add(this.tabControl1);
+			this.Controls.Add(this.hcFriendlyRadioButton);
+			this.Controls.Add(this.hcRadioButton);
+			this.Controls.Add(this.scRadioButton);
+			this.Controls.Add(this.enchantsSCTab);
 			this.Controls.Add(this.buttonLoad);
-			this.Controls.Add(this.checkBox1);
+			this.Controls.Add(this.saferCheckBox);
 			this.Controls.Add(this.buttonGenFilter);
 			this.Name = "Form1";
 			this.Shown += new System.EventHandler(this.Form1_Shown);
-			this.tabControl1.ResumeLayout(false);
+			this.enchantsSCTab.ResumeLayout(false);
 			this.tabUniquesSC.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.uniquesScDataGridView)).EndInit();
 			this.tabDivinationSC.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.divinationScDataGridView)).EndInit();
+			this.tabEnchantsSC.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.enchantsScDataGridView)).EndInit();
 			this.tabUniquesHC.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.uniquesHcDataGridView)).EndInit();
 			this.tabDivinationHC.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.divinationHcDataGridView)).EndInit();
+			this.tabEnchantsHC.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.enchantsHcDataGridView)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.ListView listViewUniques;
-        private System.Windows.Forms.ColumnHeader columnUniqBaseType;
-        private System.Windows.Forms.ColumnHeader columnUniqFilter;
-        private System.Windows.Forms.ColumnHeader columnUniqExpect;
-        private System.Windows.Forms.ColumnHeader columnUniqSeverity;
-        private System.Windows.Forms.ListView listViewDivination;
-        private System.Windows.Forms.ColumnHeader columnDivName;
-        private System.Windows.Forms.ColumnHeader columnDivFilter;
-        private System.Windows.Forms.ColumnHeader columnDivExpect;
-        private System.Windows.Forms.ColumnHeader columnDivValue;
-        private System.Windows.Forms.ColumnHeader columnUniqItems;
-        private System.Windows.Forms.ColumnHeader columnDivSeverity;
         private System.Windows.Forms.Button buttonGenFilter;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox saferCheckBox;
         private System.Windows.Forms.Button buttonLoad;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private System.Windows.Forms.TabControl enchantsSCTab;
         private System.Windows.Forms.TabPage tabUniquesSC;
         private System.Windows.Forms.TabPage tabDivinationSC;
         private System.Windows.Forms.TabPage tabUniquesHC;
         private System.Windows.Forms.TabPage tabDivinationHC;
-        private System.Windows.Forms.ListView listViewUniquesHC;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
-        private System.Windows.Forms.ListView listViewDivinationHC;
-        private System.Windows.Forms.ColumnHeader columnHeader6;
-        private System.Windows.Forms.ColumnHeader columnHeader7;
-        private System.Windows.Forms.ColumnHeader columnHeader8;
-        private System.Windows.Forms.ColumnHeader columnHeader9;
-        private System.Windows.Forms.ColumnHeader columnHeader10;
-        private System.Windows.Forms.CheckBox checkBox2;
-    }
+		private System.Windows.Forms.TabPage tabEnchantsSC;
+		private System.Windows.Forms.TabPage tabEnchantsHC;
+		private System.Windows.Forms.DataGridView uniquesScDataGridView;
+		private System.Windows.Forms.DataGridView divinationScDataGridView;
+		private System.Windows.Forms.DataGridView uniquesHcDataGridView;
+		private System.Windows.Forms.DataGridView divinationHcDataGridView;
+		private System.Windows.Forms.DataGridView enchantsScDataGridView;
+		private System.Windows.Forms.DataGridView enchantsHcDataGridView;
+		private System.Windows.Forms.RadioButton scRadioButton;
+		private System.Windows.Forms.RadioButton hcRadioButton;
+		private System.Windows.Forms.RadioButton hcFriendlyRadioButton;
+	}
 }
 

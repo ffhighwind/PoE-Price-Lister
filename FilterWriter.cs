@@ -164,60 +164,80 @@ Show  # Uniques - 1-2c
 	MinimapIcon 0 White Triangle 
 	PlayEffect White";
 
+		private readonly DataModel Model;
 		private readonly IReadOnlyList<string> Uniques;
 		private readonly IReadOnlyList<string> DivinationCards;
-		private readonly IReadOnlyDictionary<string, UniqueBaseType> UniquesSC;
-		private readonly IReadOnlyDictionary<string, UniqueBaseType> UniquesHC;
-		private readonly IReadOnlyDictionary<string, DivinationCard> DivinationSC;
-		private readonly IReadOnlyDictionary<string, DivinationCard> DivinationHC;
+		private readonly IReadOnlyList<string> Enchantments;
+		private readonly IReadOnlyDictionary<string, UniqueBaseType> UniquesA;
+		private readonly IReadOnlyDictionary<string, UniqueBaseType> UniquesB;
+		private readonly IReadOnlyDictionary<string, DivinationCard> DivinationA;
+		private readonly IReadOnlyDictionary<string, DivinationCard> DivinationB;
+		private readonly IReadOnlyDictionary<string, Enchantment> EnchantsA;
+		private readonly IReadOnlyDictionary<string, Enchantment> EnchantsB;
 		private readonly IReadOnlyList<IReadOnlyList<string>> Conflicts;
 
 		private StreamWriter Writer { get; set; }
 
 		private bool Safe { get; set; }
-		private bool HCFriendly { get; set; }
 
-		public FilterWriter(DataModel model)
+		public FilterWriter(DataModel model, LeagueData l1, LeagueData l2)
 		{
+			Model = model;
 			DivinationCards = model.DivinationCards;
 			Uniques = model.Uniques;
-			UniquesSC = model.SC.Uniques;
-			UniquesHC = model.HC.Uniques;
-			DivinationHC = model.HC.DivinationCards;
-			DivinationSC = model.SC.DivinationCards;
+			Enchantments = model.Enchantments;
+			UniquesA = l1.Uniques;
+			UniquesB = l2.Uniques;
+			DivinationA = l1.DivinationCards;
+			DivinationB = l2.DivinationCards;
+			EnchantsA = l1.Enchantments;
+			EnchantsB = l2.Enchantments;
 			Conflicts = model.DivinationCardNameConflicts;
 		}
 
-		public void Create(FilterType type, bool safe, bool hcFriendly)
+		public void Create(FilterType type, string filterFile, bool safe)
 		{
-			string filterFile = null;
-			switch (type) {
-				case FilterType.NO_RARES:
-					filterFile = "S_NoRares_Highwind.filter";
-					break;
-				case FilterType.LEVELING:
-					filterFile = "S1_Regular_Highwind.filter";
-					break;
-				case FilterType.MAPPING:
-					filterFile = "S2_Mapping_Highwind.filter";
-					break;
-				case FilterType.STRICT:
-					filterFile = "S3_Strict_Highwind.filter";
-					break;
-				case FilterType.VERY_STRICT:
-					filterFile = "S4_Very_Strict_Highwind.filter";
-					break;
+			Safe = safe;
+			string filterData = File.Exists(filterFile) ? File.ReadAllText(filterFile)
+					: Util.ReadWebPage(DataModel.FiltersUrl + filterFile, "text/plain");
+			if (filterData.Length == 0) {
+				filterData = Util.ReadWebPage(DataModel.FiltersUrl + filterFile, "text/plain");
 			}
-			try {
-				Safe = safe;
-				HCFriendly = hcFriendly;
-				using (Writer = new StreamWriter(filterFile, false, Encoding.UTF8)) {
+			using (Writer = new StreamWriter(filterFile, false, Encoding.UTF8)) {
+				string hashes = @"############################################";
+				int headerEnd = filterData.IndexOf("#-----------");
+				int enchantsStart = filterData.IndexOf("# Section: Enchantments", headerEnd);
+				int enchantsEnd = filterData.IndexOf(@"#########", enchantsStart);
+				int uniquesStart = filterData.IndexOf("# Section: Uniques");
+				int uniquesEnd = filterData.IndexOf(@"#########", uniquesStart);
+				int divStart = filterData.IndexOf("# Section: Divination Cards", uniquesEnd);
+				int divEnd = filterData.IndexOf(@"#########", divStart);
 
-					string filterData = Util.ReadWebPage(DataModel.FiltersUrl + filterFile, "text/plain");
-					Writer.Write(filterData.Substring(0, filterData.IndexOf(@"# Section: Uniques")));
-					Writer.WriteLine(@"# Section: Uniques");
-					Writer.WriteLine(GenerateUniquesString(type));
-					Writer.WriteLine(
+				int headerVersionStart = filterData.IndexOf("##  ");
+				int headerVersionEnd = filterData.IndexOf(' ', filterData.IndexOf('.') - 4) + 1;
+				string versStart = filterData.Substring(headerVersionStart, headerVersionEnd - headerVersionStart);
+				string nextVers = Model.VersionMajor + "." + Model.VersionMinor + "." + (Model.VersionRelease + 1);
+				// Header
+				Writer.WriteLine(hashes);
+				Writer.WriteLine("{0}{1}{2} ##", filterData.Substring(headerVersionStart, headerVersionEnd - headerVersionStart),
+					nextVers, new string(' ', hashes.Length - 3 - versStart.Length - nextVers.Length));
+				Writer.WriteLine(hashes);
+				string dateStr = DateTime.Today.ToString("MMMM d, yyyy");
+				Writer.WriteLine("## Release Date: {0}{1} ##", dateStr, new string(' ', hashes.Length - dateStr.Length - 17 - 3));
+				Writer.WriteLine(hashes);
+				Writer.WriteLine();
+				// Enchantments
+				Writer.Write(filterData.Substring(headerEnd, enchantsStart - headerEnd));
+				Writer.WriteLine("# Section: Enchantments");
+				Writer.WriteLine();
+				Writer.WriteLine(GenerateEnchantsString());
+				// Enchants -> Uniques
+				Writer.Write(filterData.Substring(enchantsEnd, uniquesStart - enchantsEnd));
+				// Uniques
+				Writer.WriteLine(@"# Section: Uniques");
+				Writer.WriteLine(GenerateUniquesString(type));
+				// Divination Cards
+				Writer.WriteLine(
 @"##########################################
 ############ DIVINATION CARDS ############
 ##########################################
@@ -226,36 +246,11 @@ Show  # Uniques - 1-2c
 # Ordered most expensive first to prevent future name conflicts!
 # Prices attained from poe.ninja.
 # Future values will fluctuate based on league challenges and the meta.");
-					Writer.Write(GenerateDivinationString(type));
-					Writer.WriteLine();
-					Writer.WriteLine(
-@"##########################################
-################# FLASKS #################
-##########################################");
-					Writer.Write(filterData.Substring(filterData.IndexOf(@"# Section: Flasks")));
-				}
-				Writer = null;
+				Writer.Write(GenerateDivinationString(type));
+				Writer.WriteLine();
+				Writer.Write(filterData.Substring(divEnd));
 			}
-			catch (Exception ex) {
-				MessageBox.Show(ex.Message, "FilterWriter.Create", MessageBoxButtons.OK);
-			}
-		}
-
-		private string GenerateDivinationConflictsString()
-		{
-			StringBuilder sb = new StringBuilder();
-			sb.AppendLine("# Potential Conflicts!!! (They have been separated but may need to be reorganized)");
-			foreach (List<string> list in Conflicts) {
-				sb.Append("# ");
-				foreach (string str in list) {
-					string baseTy = str;
-					if (baseTy.Contains(' '))
-						baseTy = "\"" + baseTy + "\"";
-					sb.Append(baseTy).Append(' ');
-				}
-				sb.Remove(sb.Length - 1, 1).AppendLine();
-			}
-			return sb.ToString();
+			Writer = null;
 		}
 
 		private string GenerateUniquesString(FilterType type)
@@ -271,7 +266,7 @@ Show  # Uniques - 1-2c
 			List<string> listLess1cLabyrinth = new List<string>();
 			StringBuilder sb = new StringBuilder();
 
-			foreach (KeyValuePair<string, UniqueBaseType> uniq in UniquesSC) {
+			foreach (KeyValuePair<string, UniqueBaseType> uniq in UniquesA) {
 				UniqueBaseType entry = uniq.Value;
 				string baseTy = uniq.Key;
 				UniqueValue expectedVal = entry.ExpectedFilterValue;
@@ -281,7 +276,7 @@ Show  # Uniques - 1-2c
 				if (index > 0) {
 					outputBaseTy = outputBaseTy.Substring(0, index);
 				}
-				UniqueBaseType entryHC = UniquesHC[baseTy];
+				UniqueBaseType entryHC = UniquesB[baseTy];
 				UniqueValue expectedValHC = entryHC.ExpectedFilterValue;
 
 				if (entry.SeverityLevel == 0)
@@ -292,7 +287,7 @@ Show  # Uniques - 1-2c
 					}
 				}
 				//if SC <1c and HC 4c+ then 1-2c
-				if (HCFriendly && expectedVal.Tier < 2 && expectedValHC.Tier > 2 && entryHC.Items.Any(i => i.IsCoreDrop && i.ChaosValue > 4.0f)) {
+				if (expectedVal.Tier < 2 && expectedValHC.Tier > 2 && entryHC.Items.Any(i => i.IsCoreDrop && i.ChaosValue > 4.0f)) {
 					expectedVal = UniqueValue.Chaos1to2;
 				}
 
@@ -332,15 +327,15 @@ Show  # Uniques - 1-2c
 			sb.AppendLine(uniqueWarning).AppendLine();
 			if (list10c.Count > 0) {
 				sb.AppendLine(header10c).AppendLine();
-				sb.AppendLine("Show  # Uniques - 10c+").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(list10c)).AppendLine(style10c).AppendLine();
+				sb.AppendLine("Show  # Uniques - 10c+").AppendLine("\tRarity = Unique").Append("\t BaseType ").AppendLine(ItemList(list10c)).AppendLine(style10c).AppendLine();
 			}
 			if (list2to10c.Count > 0) {
 				sb.AppendLine(header2to10c).AppendLine();
-				sb.AppendLine("Show  # Uniques - 2-10c").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(list2to10c)).AppendLine(style2to10c).AppendLine();
+				sb.AppendLine("Show  # Uniques - 2-10c").AppendLine("\tRarity = Unique").Append("\t BaseType ").AppendLine(ItemList(list2to10c)).AppendLine(style2to10c).AppendLine();
 			}
 			sb.AppendLine(header1c).AppendLine();
 			if (list1to2c.Count > 0) {
-				sb.AppendLine("Show  # Uniques - 1-2c").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(list1to2c)).AppendLine(style1c).AppendLine();
+				sb.AppendLine("Show  # Uniques - 1-2c").AppendLine("\tRarity = Unique").Append("\t BaseType ").AppendLine(ItemList(list1to2c)).AppendLine(style1c).AppendLine();
 			}
 			sb.AppendLine(loreweaveStr).AppendLine();
 			sb.AppendLine(headerLess1c).AppendLine();
@@ -350,29 +345,29 @@ Show  # Uniques - 1-2c
 			string sSound = (type == FilterType.LEVELING || type == FilterType.MAPPING) ? styleUniqueSound : "";
 			sb.AppendLine(showHide + lessLvl67).AppendLine();
 			if (listLess1cLeague.Count > 0) {
-				sb.AppendLine("Show  # Uniques - <1c - League").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cLeague)).AppendLine(styleLess1c).Append(sSound).AppendLine();
+				sb.AppendLine("Show  # Uniques - <1c - League").AppendLine("\tRarity = Unique").Append("\t BaseType ").AppendLine(ItemList(listLess1cLeague)).AppendLine(styleLess1c).Append(sSound).AppendLine();
 			}
 			if (listLess1cBoss.Count > 0) {
-				sb.AppendLine("Show  # Uniques - <1c - Boss Prophecy").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cBoss)).AppendLine(styleLess1c).Append(sSound).AppendLine();
+				sb.AppendLine("Show  # Uniques - <1c - Boss Prophecy").AppendLine("\tRarity = Unique").Append("\t BaseType ").AppendLine(ItemList(listLess1cBoss)).AppendLine(styleLess1c).Append(sSound).AppendLine();
 			}
 			if (listLess1cShared.Count > 0) {
-				sb.AppendLine("Show  # Uniques - <1c - Shared").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cShared)).AppendLine(styleLess1c).Append(vsSound).AppendLine();
+				sb.AppendLine("Show  # Uniques - <1c - Shared").AppendLine("\tRarity = Unique").Append("\t BaseType ").AppendLine(ItemList(listLess1cShared)).AppendLine(styleLess1c).Append(vsSound).AppendLine();
 			}
 			if (listLess1cCrafted.Count > 0) {
-				sb.AppendLine("Show  # Uniques - <1c - Crafted Fated Purchased").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cCrafted)).AppendLine(styleLess1c).Append(sSound).AppendLine();
+				sb.AppendLine("Show  # Uniques - <1c - Crafted Fated Purchased").AppendLine("\tRarity = Unique").Append("\t BaseType ").AppendLine(ItemList(listLess1cCrafted)).AppendLine(styleLess1c).Append(sSound).AppendLine();
 			}
 			if (listLess1cLabyrinth.Count > 0) {
-				sb.AppendLine(showHide + "  # Uniques - <1c - Labyrinth").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1cLabyrinth)).AppendLine(styleLess1c).Append(sSound).AppendLine();
+				sb.AppendLine(showHide + "  # Uniques - <1c - Labyrinth").AppendLine("\tRarity = Unique").Append("\t BaseType ").AppendLine(ItemList(listLess1cLabyrinth)).AppendLine(styleLess1c).Append(sSound).AppendLine();
 			}
 			if (listLess1c.Count > 0) {
-				sb.AppendLine(showHide + "  # Uniques - <1c - Nearly Worthless").AppendLine("\tRarity = Unique").Append('\t').AppendLine(BaseTypeList(listLess1c)).AppendLine(styleLess1c).Append(sSound).AppendLine();
+				sb.AppendLine(showHide + "  # Uniques - <1c - Nearly Worthless").AppendLine("\tRarity = Unique").Append("\t BaseType ").AppendLine(ItemList(listLess1c)).AppendLine(styleLess1c).Append(sSound).AppendLine();
 			}
 			sb.AppendLine(showHide + uniqueNewOrWorthless).Append(sSound).AppendLine();
 
 			return sb.ToString();
 		}
 
-		//IEnumerable<string> lines
+
 		private string GenerateDivinationString(FilterType type)
 		{
 			List<string> list1to10cConflict = new List<string>();
@@ -388,18 +383,17 @@ Show  # Uniques - 1-2c
 			StringBuilder sb = new StringBuilder();
 
 			foreach (string divCard in DivinationCards) {
-				DivinationCard data = DivinationSC[divCard];
+				DivinationCard data = DivinationA[divCard];
 				DivinationValue expectedVal = data.ExpectedFilterValue;
 				DivinationValue filterVal = data.FilterValue;
-				DivinationCard dataHC = DivinationHC[divCard];
-				DivinationValue expectedValHC = dataHC.ExpectedFilterValue;
+				DivinationCard dataB = DivinationB[divCard];
 				if (data.SeverityLevel == 0)
 					expectedVal = filterVal;
-				else if (Safe && filterVal.LowValue < data.ChaosValue) {
+				else if (Safe && filterVal.Tier > expectedVal.Tier && filterVal.LowValue < data.ChaosValue) {
 					expectedVal = DivinationValue.FromTier(expectedVal.Tier + 1);
 				}
-				//if SC <1c and HC 4c+ then +1 tier
-				if (HCFriendly && expectedVal.Tier < 2 && dataHC.ChaosValue > 4.0f) {
+				//if SC <1c and HC 8c+ then +1 tier
+				if (expectedVal.Tier < 2 && dataB.ChaosValue > 8.0f) {
 					expectedVal = DivinationValue.FromTier(expectedVal.Tier + 1);
 				}
 
@@ -438,50 +432,129 @@ Show  # Uniques - 1-2c
 				}
 			}
 
-			sb.AppendLine(GenerateDivinationConflictsString()).AppendLine();
+			// Name Conflicts
+			sb.AppendLine("# Potential Conflicts!!! (They have been separated but may need to be reorganized)");
+			foreach (List<string> list in Conflicts) {
+				sb.Append("# ");
+				foreach (string str in list) {
+					string baseTy = str;
+					if (baseTy.Contains(' '))
+						baseTy = "\"" + baseTy + "\"";
+					sb.Append(baseTy).Append(' ');
+				}
+				sb.Remove(sb.Length - 1, 1).AppendLine();
+			}
+
 			if (list1to10cConflict.Count > 0)
-				sb.AppendLine("Show  # Divination Cards - 1c+ (Conflicts)").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(list1to10cConflict)).AppendLine(styleDiv1c).AppendLine();
+				sb.AppendLine("Show  # Divination Cards - 1c+ (Conflicts)").AppendLine("\tClass Divination").Append("\t BaseType ").AppendLine(ItemList(list1to10cConflict)).AppendLine(styleDiv1c).AppendLine();
 			if (listLess1cConflict.Count > 0) {
 				string showHide = type == FilterType.VERY_STRICT ? "Hide" : "Show";
-				sb.AppendLine(showHide + "  # Divination Cards - <1c (Conflicts)").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listLess1cConflict)).AppendLine(styleDivLess1c).AppendLine();
+				sb.AppendLine(showHide + "  # Divination Cards - <1c (Conflicts)").AppendLine("\tClass Divination").Append("\t BaseType ").AppendLine(ItemList(listLess1cConflict)).AppendLine(styleDivLess1c).AppendLine();
 			}
 			if (listNearlyWorthlessConflict.Count > 0) {
 				string showHide = (type == FilterType.LEVELING || type == FilterType.MAPPING) ? "Show" : "Hide";
-				sb.AppendLine(showHide + "  # Divination Cards - Nearly Worthless (Conflicts)").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listNearlyWorthlessConflict)).AppendLine(styleDivNearlyWorthless).AppendLine();
+				sb.AppendLine(showHide + "  # Divination Cards - Nearly Worthless (Conflicts)").AppendLine("\tClass Divination").Append("\t BaseType ").AppendLine(ItemList(listNearlyWorthlessConflict)).AppendLine(styleDivNearlyWorthless).AppendLine();
 			}
 			if (listWorthlessConflict.Count > 0) {
 				string showHide = type == FilterType.LEVELING ? "Show" : "Hide";
-				sb.AppendLine(showHide + "  # Divination Cards - Worthless (Conflicts)").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listWorthlessConflict)).AppendLine(styleDivWorthless).AppendLine();
+				sb.AppendLine(showHide + "  # Divination Cards - Worthless (Conflicts)").AppendLine("\tClass Divination").Append("\t BaseType ").AppendLine(ItemList(listWorthlessConflict)).AppendLine(styleDivWorthless).AppendLine();
 			}
 			if (list10c.Count > 0)
-				sb.AppendLine("Show  # Divination Cards - 10c+").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(list10c)).AppendLine(styleDiv10c).AppendLine();
+				sb.AppendLine("Show  # Divination Cards - 10c+").AppendLine("\tClass Divination").Append("\t BaseType ").AppendLine(ItemList(list10c)).AppendLine(styleDiv10c).AppendLine();
 			if (list1to10c.Count > 0)
-				sb.AppendLine("Show  # Divination Cards - 1c+").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(list1to10c)).AppendLine(styleDiv1c).AppendLine();
+				sb.AppendLine("Show  # Divination Cards - 1c+").AppendLine("\tClass Divination").Append("\t BaseType ").AppendLine(ItemList(list1to10c)).AppendLine(styleDiv1c).AppendLine();
 			if (listLess1c.Count > 0) {
 				string showHide = type == FilterType.VERY_STRICT ? "Hide" : "Show";
-				sb.AppendLine(showHide + "  # Divination Cards - <1c").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listLess1c)).AppendLine(styleDivLess1c).AppendLine();
+				sb.AppendLine(showHide + "  # Divination Cards - <1c").AppendLine("\tClass Divination").Append("\t BaseType ").AppendLine(ItemList(listLess1c)).AppendLine(styleDivLess1c).AppendLine();
 			}
 			if (listNearlyWorthless.Count > 0) {
 				string showHide = (type == FilterType.LEVELING || type == FilterType.MAPPING) ? "Show" : "Hide";
-				sb.AppendLine(showHide + "  # Divination Cards - Nearly Worthless").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listNearlyWorthless)).AppendLine(styleDivNearlyWorthless).AppendLine();
+				sb.AppendLine(showHide + "  # Divination Cards - Nearly Worthless").AppendLine("\tClass Divination").Append("\t BaseType ").AppendLine(ItemList(listNearlyWorthless)).AppendLine(styleDivNearlyWorthless).AppendLine();
 			}
 			if (listWorthless.Count > 0) {
 				string showHide = type == FilterType.LEVELING ? "Show" : "Hide";
-				sb.AppendLine(showHide + "  # Divination Cards - Worthless").AppendLine("\tClass Divination").Append('\t').AppendLine(BaseTypeList(listWorthless)).AppendLine(styleDivWorthless).AppendLine();
+				sb.AppendLine(showHide + "  # Divination Cards - Worthless").AppendLine("\tClass Divination").Append("\t BaseType ").AppendLine(ItemList(listWorthless)).AppendLine(styleDivWorthless).AppendLine();
 			}
 			sb.AppendLine(divNewOrWorthless);
 
 			return sb.ToString();
 		}
 
-		private string BaseTypeList(List<string> baseTypes)
+		private string GenerateEnchantsString()
 		{
 			StringBuilder sb = new StringBuilder();
-			sb.Append("BaseType ");
-			foreach (string baseTy in baseTypes) {
-				string result = baseTy;
-				if (baseTy.Contains(' '))
-					result = "\"" + baseTy + "\"";
+
+			List<string> list20c = new List<string>();
+			List<string> list10c = new List<string>();
+			foreach (string name in Enchantments) {
+				Enchantment data = EnchantsA[name];
+				if (data.Source == EnchantmentSource.BlightOils)
+					continue;
+				Enchantment dataB = EnchantsB[name];
+				EnchantmentValue expectedVal = data.ExpectedFilterValue;
+				EnchantmentValue filterVal = data.ExpectedFilterValue;
+
+				if (data.SeverityLevel == 0)
+					expectedVal = filterVal;
+				else if (Safe && filterVal.Tier > expectedVal.Tier && filterVal.LowValue < data.ChaosValue) {
+					expectedVal = EnchantmentValue.FromTier(expectedVal.Tier + 1);
+				}
+				if (expectedVal.Tier < 1 && !dataB.IsLowConfidence && dataB.ChaosValue >= 40.0f) {
+					//if SC <10c and HC 40c+ then 10+c
+					expectedVal = EnchantmentValue.Chaos10;
+				}
+				switch (expectedVal.Value) {
+					case EnchantmentValueEnum.Chaos10:
+						list10c.Add(data.Name);
+						break;
+					case EnchantmentValueEnum.Chaos20:
+						list20c.Add(data.Name);
+						break;
+					case EnchantmentValueEnum.Worthless:
+					case EnchantmentValueEnum.Error:
+						break;
+				}
+			}
+
+			string enchStyle1 =
+@"	SetFontSize 45
+	SetTextColor 255 255 255 # Crafting Base (High)
+	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
+	SetBorderColor 0 255 255 # Crafting Base (High)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Square
+	PlayEffect Red";
+
+			string enchStyle2 =
+@"	SetFontSize 40
+	SetBackgroundColor 40 40 40 # Crafting Base (Explicit)
+	SetBorderColor 25 65 175 # Crafting Base (Explicit)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue";
+
+			if (list20c.Count > 0) {
+				sb.AppendLine(@"Show  # Enchantments - 20c+").Append("\tHasEnchantment ").AppendLine(ItemList(list20c)).AppendLine(enchStyle1).AppendLine();
+			}
+			if (list10c.Count > 0) {
+				sb.AppendLine(@"Show  # Enchantments - 10c+").Append("\tHasEnchantment ").AppendLine(ItemList(list10c)).AppendLine(enchStyle2).AppendLine();
+			}
+			sb.AppendLine(
+@"Show  # Enchantments - Other
+	AnyEnchantment True
+	SetFontSize 36
+	SetBackgroundColor 40 40 40 # Crafting Base (Explicit)
+	SetBorderColor 25 65 175 # Crafting Base (Explicit)");
+			return sb.ToString();
+		}
+
+		private string ItemList(List<string> items)
+		{
+			StringBuilder sb = new StringBuilder();
+			foreach (string item in items) {
+				string result = item;
+				if (item.Contains(' '))
+					result = "\"" + item + "\"";
 				sb.Append(result).Append(' ');
 			}
 			return sb.Remove(sb.Length - 1, 1).ToString();

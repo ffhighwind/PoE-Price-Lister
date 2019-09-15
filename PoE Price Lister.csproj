@@ -75,6 +75,11 @@
     <Compile Include="Divination\DivinationCard.cs" />
     <Compile Include="Divination\DivinationValue.cs" />
     <Compile Include="Divination\DivinationValueEnum.cs" />
+    <Compile Include="Enchants\EnchantCsv.cs" />
+    <Compile Include="Enchants\Enchantment.cs" />
+    <Compile Include="Enchants\EnchantmentSource.cs" />
+    <Compile Include="Enchants\EnchantmentValue.cs" />
+    <Compile Include="Enchants\EnchantmentValueEnum.cs" />
     <Compile Include="FilterType.cs" />
     <Compile Include="ListViewItemComparer.cs" />
     <Compile Include="DataModel.cs" />
@@ -91,7 +96,7 @@
     <Compile Include="LeagueData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UniqueBaseTypeCsv.cs" />
+    <Compile Include="Unique\UniqueBaseTypeCsv.cs" />
     <Compile Include="Unique\UniqueBaseType.cs" />
     <Compile Include="Unique\UniqueUsage.cs" />
     <Compile Include="Unique\UniqueValueEnum.cs" />

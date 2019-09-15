@@ -8,24 +8,26 @@ using Newtonsoft.Json;
 
 namespace PoE_Price_Lister
 {
-    [JsonObject(MemberSerialization = MemberSerialization.OptIn)]
-    public class JsonData
-    {
-        JsonData() { }
+	[JsonObject(MemberSerialization = MemberSerialization.OptIn)]
+	public class JsonData
+	{
+		public JsonData() { }
 
-        //[JsonProperty(PropertyName = "id")]
-        //public int Id { get; set; }
+		//[JsonProperty(PropertyName = "id")]
+		//public int Id { get; set; }
 
-        [JsonProperty(PropertyName = "name")]
-        public string Name { get; set; }
+		[JsonProperty(PropertyName = "name")]
+		[JsonConverter(typeof(TrimConverter))]
+		public string Name { get; set; }
 
-        [JsonProperty(PropertyName = "baseType")]
-        public string BaseType { get; set; } // null?
+		[JsonProperty(PropertyName = "baseType")]
+		public string BaseType { get; set; } // null?
 
-        /*
-        [JsonProperty(PropertyName = "icon")]
-        public string Icon { get; set; }
 
+		//[JsonProperty(PropertyName = "icon")]
+		//public string Icon { get; set; }
+
+		/*
         [JsonProperty(PropertyName = "mapTier")]
         public int MapTier { get; set; } // 0
 
@@ -67,26 +69,47 @@ namespace PoE_Price_Lister
         public int GemQuality { get; set; } // 0
         */
 
-        [JsonProperty(PropertyName = "links")]
-        public int Links { get; set; }
+		[JsonProperty(PropertyName = "links")]
+		public int Links { get; set; }
 
-        //[JsonProperty(PropertyName = "itemType")]
-        //public string ItemType { get; set; }
+		//[JsonProperty(PropertyName = "itemType")]
+		//public string ItemType { get; set; }
 
-        [JsonProperty(PropertyName = "chaosValue")]
-        public float ChaosValue { get; set; }
+		[JsonProperty(PropertyName = "chaosValue")]
+		public float ChaosValue { get; set; }
 
-        //[JsonProperty(PropertyName = "exaltedValue")]
-        //public float ExaltedValue { get; set; }
+		//[JsonProperty(PropertyName = "exaltedValue")]
+		//public float ExaltedValue { get; set; }
 
-        [JsonProperty(PropertyName = "count")]
-        public int Count { get; set; } // too low means low accuracy
+		[JsonProperty(PropertyName = "count")]
+		public int Count { get; set; } // too low means low accuracy
 
-        public override string ToString()
-        {
-            return JsonConvert.SerializeObject(this, Formatting.Indented);
-        }
-    }
+		public override string ToString()
+		{
+			return JsonConvert.SerializeObject(this, Formatting.Indented);
+		}
+
+		internal class TrimConverter : JsonConverter
+		{
+			public override bool CanRead => true;
+			public override bool CanWrite => false;
+
+			public override bool CanConvert(Type objectType)
+			{
+				return objectType == typeof(string);
+			}
+
+			public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
+			{
+				return ((string) reader.Value)?.Trim();
+			}
+
+			public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
+			{
+				throw new NotImplementedException();
+			}
+		}
+	}
 }
 
 /*

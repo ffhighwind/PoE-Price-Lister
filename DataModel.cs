@@ -12,392 +12,480 @@ using Newtonsoft.Json.Linq;
 
 namespace PoE_Price_Lister
 {
-    public class DataModel
-    {
+	public class DataModel
+	{
 
-        ////private const string csvFile = "poe_uniques.csv";
-        private const string league = "Blight";
+		////private const string csvFile = "poe_uniques.csv";
+		private const string league = "Blight";
 
-        private const string uniquesCsvURL = @"https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/poe_uniques.csv";
-        private const string filterURL = @"https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/S1_Regular_Highwind.filter";
-        private const string jsonURL = @"http://poe.ninja/api/Data/Get{0}Overview?league={1}";
+		private const string repoURL = @"https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/";
+		public const string FiltersUrl = repoURL + @"Resources/Filters/";
+		private const string filterFile = @"S1_Regular_Highwind.filter";
+		private const string uniquesCsvFile = "poe_uniques.csv";
+		private const string helmEnchantCsvFile = "poe_helm_enchants.csv";
+		private const string jsonURL = @"http://poe.ninja/api/Data/Get{0}Overview?league={1}";
 		//{0} = "UniqueAccessory", "UniqueJewel", "UniqueMap", "UniqueArmour", "UniqueFlask",
 		// "UniqueWeapon", "DivinationCards", "Fragment", "Currency", "Prophecy", "Essence", "SkillGem", "HelmetEnchant"
 		// Resonators/Fossils are not implemented as an API yet
+		private static readonly Regex quotedListRegex = new Regex(@"""[^""]+""|[^ ]+", RegexOptions.Compiled);
+		private static readonly Regex versionRegex = new Regex(@".+(\d+)[.](\d+)[.](\d+)\s.+", RegexOptions.Compiled);
 
-		public const string FiltersUrl = @"https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/";
+		public int VersionMajor { get; private set; }
+		public int VersionMinor { get; private set; }
+		public int VersionRelease { get; private set; }
+		public string Version { get; private set; }
 
-		private static readonly Regex baseTypeRegex = new Regex(@"""[A-Za-zö'\-, ]+""|[A-Za-zö'\-]+", RegexOptions.Compiled);
+		public LeagueData HC { get; private set; } = new LeagueData(true);
+		public LeagueData SC { get; private set; } = new LeagueData(false);
 
-        public LeagueData HC { get; private set; } = new LeagueData(true);
-        public LeagueData SC { get; private set; } = new LeagueData(false);
+		public IReadOnlyList<string> Uniques { get; private set; }
+		public IReadOnlyList<string> DivinationCards { get; private set; }
+		public IReadOnlyList<string> Enchantments { get; private set; }
 
-        public IReadOnlyList<string> Uniques { get; private set; }
-        public IReadOnlyList<string> DivinationCards { get; private set; }
+		private const int MaxErrors = 5;
+		private int ErrorCount = 0;
 
-        private const string uniquesSectionStart = "# Section: Uniques";
-        private const string uniquesSectionEnd = "####";
-        private const string divSectionStart = "# Section: Divination Cards";
-        private const string divSectionEnd = "####";
+		private List<IReadOnlyList<string>> conflicts = new List<IReadOnlyList<string>>();
+		public IReadOnlyList<IReadOnlyList<string>> DivinationCardNameConflicts => conflicts;
 
-        private const int MaxErrors = 5;
-        private int ErrorCount = 0;
+		public void Load()
+		{
+			ErrorCount = 0;
+			LoadUniquesCsv();
+			LoadEnchantsCsv();
+			GetJsonData(HC);
+			GetJsonData(SC);
+			DivinationCards = SC.DivinationCards.Keys.OrderBy(x => x).ToList();
+			GetDivinationCardConflicts();
+			string filterString = Util.ReadWebPage(FiltersUrl + filterFile);
+			if (filterString.Length == 0) {
+				MessageBox.Show("Failed to read the web URL: " + FiltersUrl + filterFile, "Error", MessageBoxButtons.OK);
+				Environment.Exit(1);
+			}
+			Load(filterString.Split('\n'));
 
-        private List<IReadOnlyList<string>> conflicts = new List<IReadOnlyList<string>>();
-        public IReadOnlyList<IReadOnlyList<string>> DivinationCardNameConflicts => conflicts;
+			List<string> uniquesToRemove = SC.Uniques.Keys.Where(uniq => uniq.EndsWith(" Piece") || uniq.EndsWith(" Talisman")).ToList();
+			foreach (string uniq in uniquesToRemove) {
+				SC.Uniques.Remove(uniq);
+				HC.Uniques.Remove(uniq);
+			}
+			List<Enchantment> enchantsToRemove = SC.Enchantments.Values.Where(x => x.Source == EnchantmentSource.BlightOils).ToList();
+			foreach (var ench in enchantsToRemove) {
+				SC.Enchantments.Remove(ench.Name);
+				SC.EnchantmentsDescriptions.Remove(ench.Description);
+				HC.Enchantments.Remove(ench.Name);
+				HC.EnchantmentsDescriptions.Remove(ench.Description);
+			}
+			Uniques = SC.Uniques.Keys.OrderBy(x => x).ToList();
+			Enchantments = SC.Enchantments.Keys.OrderBy(x => x).ToList();
 
-        public void Load()
-        {
+			Match m = versionRegex.Match(filterString);
+			VersionMajor = int.Parse(m.Groups[1].Value);
+			VersionMinor = int.Parse(m.Groups[2].Value);
+			VersionRelease = int.Parse(m.Groups[3].Value);
+			Version = VersionMajor.ToString() + "." + VersionMinor + "." + VersionRelease;
+		}
 
-            try {
-                ErrorCount = 0;
-                LoadCsv();
-                GetJsonData(HC);
-                GetJsonData(SC);
-                List<string> uniquesToRemove = SC.Uniques.Keys.Where(uniq => uniq.EndsWith(" Piece") || uniq.EndsWith(" Talisman")).ToList();
-                foreach (string uniq in uniquesToRemove) {
-                    SC.Uniques.Remove(uniq);
-                    HC.Uniques.Remove(uniq);
-                }
-                DivinationCards = SC.DivinationCards.Keys.ToList();
-                Uniques = SC.Uniques.Keys.ToList();
-                GetDivinationCardConflicts();
-                string filterString = Util.ReadWebPage(filterURL);
-                if (filterString.Length == 0) {
-                    MessageBox.Show("Failed to read the web URL: " + filterURL, "Error", MessageBoxButtons.OK);
-                    Environment.Exit(1);
-                }
-                Load(filterString.Split('\n'));
-                ////Load(@"..\..\Resources\Filters\S1_Regular_Highwind.filter");
-            }
-            catch (Exception ex) {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK);
-                Environment.Exit(1);
-            }
-        }
+		public void Load(string filename)
+		{
+			using (TextReader reader = Util.TextReader(filename)) {
+				List<string> lines = new List<string>();
+				string line;
+				while ((line = reader.ReadLine()) != null) {
+					lines.Add(line);
+				}
+				Load(lines.ToArray());
+			}
+		}
 
-        public void Load(string filename)
-        {
-            using (TextReader reader = Util.TextReader(filename)) {
-                List<string> lines = new List<string>();
-                string line;
-                while ((line = reader.ReadLine()) != null) {
-                    lines.Add(line);
-                }
-                Load(lines.ToArray());
-            }
-        }
+		public void Load(string[] lines)
+		{
+			ErrorCount = 0;
+			//HC.ClearFilterValues();
+			//SC.ClearFilterValues();
+			GetFilterData(lines);
+			foreach (UniqueBaseType baseEntry in SC.Uniques.Values) {
+				baseEntry.CalculateExpectedValue();
+			}
+			foreach (UniqueBaseType baseEntry in HC.Uniques.Values) {
+				baseEntry.CalculateExpectedValue();
+			}
+		}
 
-        public void Load(string[] lines)
-        {
-            try {
-                ErrorCount = 0;
-                GetFilterData(lines);
-                foreach (UniqueBaseType baseEntry in SC.Uniques.Values) {
-                    baseEntry.CalculateExpectedValue();
-                }
-                foreach (UniqueBaseType baseEntry in HC.Uniques.Values) {
-                    baseEntry.CalculateExpectedValue();
-                }
-            }
-            catch (Exception ex) {
-                MessageBox.Show(ex.Message, "Data.Load", MessageBoxButtons.OK);
-                Environment.Exit(1);
-            }
-        }
+		private void GetJsonData(LeagueData data)
+		{
+			string leagueStr = data.IsHardcore ? "Hardcore " + league : league;
+			data.ClearJson();
+			FillJsonData(string.Format(jsonURL, "DivinationCards", leagueStr), data, DivinationJsonHandler);
+			FillJsonData(string.Format(jsonURL, "UniqueArmour", leagueStr), data, UniqueJsonHandler);
+			FillJsonData(string.Format(jsonURL, "UniqueFlask", leagueStr), data, UniqueJsonHandler);
+			FillJsonData(string.Format(jsonURL, "UniqueWeapon", leagueStr), data, UniqueJsonHandler);
+			FillJsonData(string.Format(jsonURL, "UniqueAccessory", leagueStr), data, UniqueJsonHandler);
+			FillJsonData(string.Format(jsonURL, "HelmetEnchant", leagueStr), data, EnchantJsonHandler);
+		}
 
-        private void GetJsonData(LeagueData data)
-        {
-            string leagueStr = data.IsHardcore ? "Hardcore " + league : league;
-            FillJsonData(string.Format(jsonURL, "DivinationCards", leagueStr), data, DivinationJsonHandler);
-            FillJsonData(string.Format(jsonURL, "UniqueArmour", leagueStr), data, UniqueJsonHandler);
-            FillJsonData(string.Format(jsonURL, "UniqueFlask", leagueStr), data, UniqueJsonHandler);
-            FillJsonData(string.Format(jsonURL, "UniqueWeapon", leagueStr), data, UniqueJsonHandler);
-            FillJsonData(string.Format(jsonURL, "UniqueAccessory", leagueStr), data, UniqueJsonHandler);
-        }
+		private void FillJsonData(string url, LeagueData data, Action<JsonData, LeagueData> handler)
+		{
+			string jsonURLString = Util.ReadWebPage(url, "application/json");
+			if (jsonURLString.Length == 0) {
+				MessageBox.Show("Failed to read the web URL: " + url, "Error", MessageBoxButtons.OK);
+				Environment.Exit(1);
+			}
+			else {
+				JObject jsonString = JObject.Parse(jsonURLString);
+				JToken results = jsonString["lines"];
+				foreach (JToken result in results) {
+					JsonData jdata = result.ToObject<JsonData>();
+					handler(jdata, data);
+				}
+			}
+		}
 
-        private void FillJsonData(string url, LeagueData data, Action<JsonData, LeagueData> handler)
-        {
-            string jsonURLString = Util.ReadWebPage(url, "application/json");
-            if (jsonURLString.Length == 0) {
-                MessageBox.Show("Failed to read the web URL: " + url, "Error", MessageBoxButtons.OK);
-                Environment.Exit(1);
-            }
-            else {
-                JObject jsonString = JObject.Parse(jsonURLString);
-                JToken results = jsonString["lines"];
-                foreach (JToken result in results) {
-                    JsonData jdata = result.ToObject<JsonData>();
-                    handler(jdata, data);
-                }
-            }
-        }
+		private void EnchantJsonHandler(JsonData jdata, LeagueData data)
+		{
+			string description = jdata.Name.Trim();
+			if (!data.EnchantmentsDescriptions.TryGetValue(description, out Enchantment ench)) {
+				ench = new Enchantment(description);
+				data.EnchantmentsDescriptions.Add(description, ench);
+				MessageBox.Show("JSON: The CSV file is missing Enchantment: " + description, "Error", MessageBoxButtons.OK);
+				ErrorCount++;
+			}
+			ench.Load(jdata);
+			if (ErrorCount > MaxErrors) {
+				Environment.Exit(1);
+			}
+		}
 
-        private void UniqueJsonHandler(JsonData jdata, LeagueData data)
-        {
-            string baseTy = jdata.BaseType;
-            if (!data.Uniques.TryGetValue(baseTy, out UniqueBaseType uniq)) {
-                uniq = new UniqueBaseType(baseTy);
-                data.Uniques.Add(baseTy, uniq);
-                if (!data.IsHardcore) {
-                    MessageBox.Show("JSON: The CSV file is missing BaseType: " + baseTy, "Error", MessageBoxButtons.OK);
-                    ErrorCount++;
-                }
-            }
-            if (!uniq.Add(jdata) && !data.IsHardcore) {
-                MessageBox.Show("JSON: The CSV file is missing: " + jdata.BaseType + " " + jdata.Name, "Error", MessageBoxButtons.OK);
-                ErrorCount++;
-            }
-            if (ErrorCount > MaxErrors) {
-                Environment.Exit(1);
-            }
-        }
+		private void UniqueJsonHandler(JsonData jdata, LeagueData data)
+		{
+			string baseTy = jdata.BaseType;
+			if (!data.Uniques.TryGetValue(baseTy, out UniqueBaseType uniq)) {
+				uniq = new UniqueBaseType(baseTy);
+				data.Uniques.Add(baseTy, uniq);
+				if (!data.IsHardcore) {
+					MessageBox.Show("JSON: The CSV file is missing BaseType: " + baseTy, "Error", MessageBoxButtons.OK);
+					ErrorCount++;
+				}
+			}
+			if (!uniq.Add(jdata) && !data.IsHardcore) {
+				MessageBox.Show("JSON: The CSV file is missing: " + jdata.BaseType + " " + jdata.Name, "Error", MessageBoxButtons.OK);
+				ErrorCount++;
+			}
+			if (ErrorCount > MaxErrors) {
+				Environment.Exit(1);
+			}
+		}
 
-        private void DivinationJsonHandler(JsonData jdata, LeagueData data)
-        {
-            string name = jdata.Name;
-            if (!data.DivinationCards.TryGetValue(name, out DivinationCard div)) {
-                div = new DivinationCard();
-                data.DivinationCards.Add(name, div);
-            }
-            data.DivinationCards[name].Load(jdata);
-        }
+		private void DivinationJsonHandler(JsonData jdata, LeagueData data)
+		{
+			string name = jdata.Name;
+			if (!data.DivinationCards.TryGetValue(name, out DivinationCard div)) {
+				div = new DivinationCard();
+				data.DivinationCards.Add(name, div);
+			}
+			data.DivinationCards[name].Load(jdata);
+		}
 
-        private void LoadCsv()
-        {
-            try {
-                FileHelperEngine<UniqueBaseTypeCsv> engine = new FileHelperEngine<UniqueBaseTypeCsv>(Encoding.UTF8);
-				string csvText = new FileInfo("poe_uniques.csv").Exists ? 
-					File.ReadAllText("poe_uniques.csv", Encoding.UTF8) 
-					: Util.ReadWebPage(uniquesCsvURL, "", Encoding.UTF8);
-				UniqueBaseTypeCsv[] records = engine.ReadString(csvText);
-				HashSet<string> baseTypes = new HashSet<string>();
-                foreach (UniqueBaseTypeCsv data in records) {
+		private void LoadUniquesCsv()
+		{
+			FileHelperEngine<UniqueBaseTypeCsv> engine = new FileHelperEngine<UniqueBaseTypeCsv>(Encoding.UTF8);
+			string csvText = new FileInfo(uniquesCsvFile).Exists ?
+				File.ReadAllText("poe_uniques.csv", Encoding.UTF8)
+				: Util.ReadWebPage(repoURL + "poe_uniques.csv", "", Encoding.UTF8);
+			UniqueBaseTypeCsv[] records = engine.ReadString(csvText);
+			foreach (UniqueBaseTypeCsv csvdata in records) {
+				if (!SC.Uniques.ContainsKey(csvdata.BaseType)) {
+					SC.Uniques[csvdata.BaseType] = new UniqueBaseType(csvdata.BaseType);
+					HC.Uniques[csvdata.BaseType] = new UniqueBaseType(csvdata.BaseType);
+				}
+				SC.Uniques[csvdata.BaseType].Load(csvdata);
+				HC.Uniques[csvdata.BaseType].Load(csvdata);
+			}
+			foreach (string baseType in SC.Uniques.Keys) {
+				Sort(SC, baseType);
+				Sort(HC, baseType);
+			}
+		}
 
-                    if (!baseTypes.Contains(data.BaseType)) {
-                        baseTypes.Add(data.BaseType);
-                        SC.Uniques[data.BaseType] = new UniqueBaseType(data.BaseType);
-                        HC.Uniques[data.BaseType] = new UniqueBaseType(data.BaseType);
-                    }
-                    SC.Uniques[data.BaseType].Add(data);
-                    HC.Uniques[data.BaseType].Add(data);
-                }
-                foreach (string baseType in baseTypes) {
-                    Sort(SC, baseType);
-                    Sort(HC, baseType);
-                }
-            }
-            catch (Exception ex) {
-                MessageBox.Show(ex.Message, "Data.GetCSVData", MessageBoxButtons.OK);
-                Environment.Exit(1);
-            }
-        }
+		private void LoadEnchantsCsv()
+		{
+			FileHelperEngine<EnchantCsv> engine = new FileHelperEngine<EnchantCsv>(Encoding.UTF8);
+			string csvText = new FileInfo(helmEnchantCsvFile).Exists ?
+				File.ReadAllText(helmEnchantCsvFile, Encoding.UTF8)
+				: Util.ReadWebPage(repoURL + helmEnchantCsvFile, "", Encoding.UTF8);
+			EnchantCsv[] records = engine.ReadString(csvText);
+			foreach (EnchantCsv csvdata in records) {
+				if (!SC.Enchantments.ContainsKey(csvdata.Description)) {
+					try {
+						Enchantment scData = new Enchantment(csvdata.Name);
+						SC.Enchantments.Add(csvdata.Name, scData);
+						SC.EnchantmentsDescriptions.Add(csvdata.Description, scData);
+						Enchantment hcData = new Enchantment(csvdata.Name);
+						HC.Enchantments.Add(csvdata.Name, hcData);
+						HC.EnchantmentsDescriptions.Add(csvdata.Description, hcData);
+					}
+					catch (Exception ex) {
+						throw;
+					}
+				}
+				SC.Enchantments[csvdata.Name].Load(csvdata);
+				HC.Enchantments[csvdata.Name].Load(csvdata);
+			}
+		}
 
-        private void Sort(LeagueData data, string baseType)
-        {
-            List<UniqueItem> resortList = new List<UniqueItem>();
-            List<UniqueItem> items = data.Uniques[baseType].Items;
-            foreach (UniqueItem item in items) {
-                if (item.League.Length > 0)
-                    resortList.Add(item);
-            }
-            foreach (UniqueItem item in resortList) {
-                items.Remove(item);
-                items.Add(item);
-            }
-        }
+		private void Sort(LeagueData data, string baseType)
+		{
+			data.Uniques[baseType].Sort();
+		}
 
-        private void GetDivinationCardConflicts()
-        {
-            List<string> conflictsList = new List<string>();
-            for (int i = 0; i < DivinationCards.Count; i++) {
-                string divBaseTy = DivinationCards[i].ToLower();
-                for (int j = i + 1; j < DivinationCards.Count; j++) {
-                    string divBaseTy2 = DivinationCards[j].ToLower();
-                    if (divBaseTy.Contains(divBaseTy2) || divBaseTy2.Contains(divBaseTy))
-                        conflictsList.Add(DivinationCards[j]);
-                }
-                if (conflictsList.Count > 0) {
-                    conflictsList.Add(DivinationCards[i]);
-                    conflictsList.Sort((left, right) => left.Length - right.Length);
-                    conflicts.Add(conflictsList);
-                    conflictsList = new List<string>();
-                }
-            }
-        }
+		private void GetDivinationCardConflicts()
+		{
+			List<string> conflictsList = new List<string>();
+			for (int i = 0; i < DivinationCards.Count; i++) {
+				string divBaseTy = DivinationCards[i].ToLower();
+				for (int j = i + 1; j < DivinationCards.Count; j++) {
+					string divBaseTy2 = DivinationCards[j].ToLower();
+					if (divBaseTy.Contains(divBaseTy2) || divBaseTy2.Contains(divBaseTy))
+						conflictsList.Add(DivinationCards[j]);
+				}
+				if (conflictsList.Count > 0) {
+					conflictsList.Add(DivinationCards[i]);
+					conflictsList.Sort((left, right) => left.Length - right.Length);
+					conflicts.Add(conflictsList);
+					conflictsList = new List<string>();
+				}
+			}
+		}
 
-        private bool GetLines(IReadOnlyList<string> lines, ref int startIndex, out int endIndex, string startLine, string endLine)
-        {
-            int index = startIndex;
-            for (; index < lines.Count; index++) {
-                if (lines[index].StartsWith(startLine)) {
-                    startIndex = index;
-                    for (; index < lines.Count; index++) {
-                        if (lines[index].StartsWith(endLine)) {
-                            endIndex = index;
-                            return true;
-                        }
-                    }
-                }
-            }
-            endIndex = index;
-            return false;
-        }
+		private bool GetLines(IReadOnlyList<string> lines, ref int startIndex, out int endIndex, string startLine, string endLine)
+		{
+			int index = startIndex;
+			for (; index < lines.Count; index++) {
+				if (lines[index].StartsWith(startLine)) {
+					startIndex = index;
+					for (; index < lines.Count; index++) {
+						if (lines[index].StartsWith(endLine)) {
+							endIndex = index;
+							return true;
+						}
+					}
+				}
+			}
+			endIndex = index;
+			return false;
+		}
 
-        private void GetFilterData(string[] lines)
-        {
-            int startIndex = 0;
-            foreach (UniqueBaseType uniq in SC.Uniques.Values) {
-                uniq.FilterValue = UniqueValue.Unknown;
-            }
-            foreach (UniqueBaseType uniq in HC.Uniques.Values) {
-                uniq.FilterValue = UniqueValue.Unknown;
-            }
-            if (GetLines(lines, ref startIndex, out int endIndex, uniquesSectionStart, uniquesSectionEnd))
-                GetFilterUniqueData(new ArraySegment<string>(lines, startIndex, endIndex - startIndex));
+		private void GetFilterData(string[] lines)
+		{
+			foreach (UniqueBaseType uniq in SC.Uniques.Values) {
+				uniq.FilterValue = UniqueValue.Unknown;
+			}
+			foreach (UniqueBaseType uniq in HC.Uniques.Values) {
+				uniq.FilterValue = UniqueValue.Unknown;
+			}
+			foreach (DivinationCard div in SC.DivinationCards.Values) {
+				div.FilterValue = DivinationValue.Error;
+			}
+			foreach (DivinationCard div in HC.DivinationCards.Values) {
+				div.FilterValue = DivinationValue.Error;
+			}
+			foreach (Enchantment ench in SC.Enchantments.Values) {
+				ench.FilterValue = EnchantmentValue.Worthless;
+			}
+			foreach (Enchantment ench in HC.Enchantments.Values) {
+				ench.FilterValue = EnchantmentValue.Worthless;
+			}
+			int startIndex = 0;
+			int endIndex = 0;
+			if (GetLines(lines, ref startIndex, out endIndex, "# Section: Enchantments", "######"))
+				GetFilterEnchantsData(new ArraySegment<string>(lines, startIndex, endIndex - startIndex));
+			startIndex = endIndex;
+			if (GetLines(lines, ref startIndex, out endIndex, "# Section: Uniques", "######"))
+				GetFilterUniqueData(new ArraySegment<string>(lines, startIndex, endIndex - startIndex));
+			startIndex = endIndex;
+			if (GetLines(lines, ref startIndex, out endIndex, "# Section: Divination Cards", "######"))
+				GetFilterDivinationData(new ArraySegment<string>(lines, startIndex, endIndex - startIndex));
+		}
 
-            startIndex = endIndex;
-            if (GetLines(lines, ref startIndex, out endIndex, divSectionStart, divSectionEnd))
-                GetFilterDivinationData(new ArraySegment<string>(lines, startIndex, endIndex - startIndex));
-        }
+		private void GetFilterDivinationData(IEnumerable<string> lines)
+		{
+			DivinationValue value;
+			while (lines.Any()) {
+				lines = lines.SkipWhile(aline => !aline.StartsWith("Show ") && !aline.StartsWith("Hide "));
+				if (!lines.Any())
+					return;
+				string line = lines.First();
 
-        private void GetFilterDivinationData(IEnumerable<string> lines)
-        {
-            DivinationValue value;
-            while (lines.Any()) {
-                lines = lines.SkipWhile(aline => !aline.StartsWith("Show ") && !aline.StartsWith("Hide "));
-                if (!lines.Any())
-                    return;
-                string line = lines.First();
+				if (!line.Contains("# Divination Cards - "))
+					continue;
 
-                if (!line.Contains("# Divination Cards - "))
-                    continue;
+				if (line.Contains("10c+"))
+					value = DivinationValue.Chaos10;
+				else if (line.Contains("1c+"))
+					value = DivinationValue.Chaos1to10;
+				else if (line.Contains("<1c") || line.Contains("< 1c"))
+					value = DivinationValue.ChaosLess1;
+				else if (line.Contains("Nearly Worthless"))
+					value = DivinationValue.NearlyWorthless;
+				else if (line.Contains("Worthless"))
+					value = DivinationValue.Worthless;
+				else {
+					if (!line.Contains("New (Error)"))
+						MessageBox.Show("Unexpected Divination input: " + line, "Error", MessageBoxButtons.OK);
+					lines = lines.Skip(1);
+					continue;
+				}
+				lines = lines.Skip(1).SkipWhile(aline => !aline.TrimStart().StartsWith("BaseType ") && !aline.StartsWith("Show ") && !aline.StartsWith("Hide "));
+				line = lines.First().Trim();
+				if (line.StartsWith("BaseType ")) {
+					IEnumerable<string> baseTypes = SplitQuotedList(line).Skip(1);
+					FillFilterDivinationData(SC, baseTypes, value);
+					FillFilterDivinationData(HC, baseTypes, value);
+				}
+			}
+		}
 
-                if (line.Contains("10c+"))
-                    value = DivinationValue.Chaos10;
-                else if (line.Contains("1c+"))
-                    value = DivinationValue.Chaos1to10;
-                else if (line.Contains("<1c") || line.Contains("< 1c"))
-                    value = DivinationValue.ChaosLess1;
-                else if (line.Contains("Nearly Worthless"))
-                    value = DivinationValue.NearlyWorthless;
-                else if (line.Contains("Worthless"))
-                    value = DivinationValue.Worthless;
-                else {
-                    if (!line.Contains("New (Error)"))
-                        MessageBox.Show("Unexpected Divination input: " + line, "Error", MessageBoxButtons.OK);
-                    lines = lines.Skip(1);
-                    continue;
-                }
-                lines = lines.Skip(1).SkipWhile(aline => !aline.TrimStart().StartsWith("BaseType ") && !aline.StartsWith("Show ") && !aline.StartsWith("Hide "));
-                line = lines.First().Trim();
-                if (line.StartsWith("BaseType ")) {
-                    List<string> baseTypes = GetBaseTypes(line.Substring(9));
-                    FillFilterDivinationData(SC, baseTypes, value);
-                    FillFilterDivinationData(HC, baseTypes, value);
-                }
-            }
-        }
+		private void GetFilterEnchantsData(IEnumerable<string> lines)
+		{
+			EnchantmentValue value = null;
+			while (lines.Any()) {
+				lines = lines.SkipWhile(aline => !aline.StartsWith("Show ") && !aline.StartsWith("Hide "));
+				if (!lines.Any())
+					return;
+				string line = lines.First();
+				if (!line.Contains("# Enchantments -"))
+					continue;
 
-        private void GetFilterUniqueData(IEnumerable<string> lines)
-        {
-            UniqueValue value;
-            while (lines.Any()) {
-                lines = lines.SkipWhile(aline => !aline.StartsWith("Show ") && !aline.StartsWith("Hide "));
-                if (!lines.Any())
-                    return;
-                string line = lines.ElementAt(0);
+				if (line.Contains("20c+"))
+					value = EnchantmentValue.Chaos20;
+				else if (line.Contains("10c+"))
+					value = EnchantmentValue.Chaos10;
+				else {
+					if (!line.Contains("Other"))
+						MessageBox.Show("Unexpected Enchant input: " + line, "Error", MessageBoxButtons.OK);
+					lines = lines.Skip(1);
+					continue;
+				}
+				lines = lines.Skip(1).SkipWhile(aline => !aline.TrimStart().StartsWith("HasEnchantment ") && !aline.StartsWith("Show ") && !aline.StartsWith("Hide "));
+				line = lines.First().TrimStart();
+				if (line.StartsWith("HasEnchantment ")) {
+					IEnumerable<string> enchantTypes = SplitQuotedList(line).Skip(1);
+					FillFilterEnchantData(SC, enchantTypes, value);
+					FillFilterEnchantData(HC, enchantTypes, value);
+				}
+			}
+		}
 
-                if (!line.Contains("# Uniques -"))
-                    continue;
+		private void GetFilterUniqueData(IEnumerable<string> lines)
+		{
+			UniqueValue value;
+			while (lines.Any()) {
+				lines = lines.SkipWhile(aline => !aline.StartsWith("Show ") && !aline.StartsWith("Hide "));
+				if (!lines.Any())
+					return;
+				string line = lines.ElementAt(0);
 
-                if (line.Contains("10c+"))
-                    value = UniqueValue.Chaos10;
-                else if (line.Contains("2-10c"))
-                    value = UniqueValue.Chaos2to10;
-                else if (line.Contains("1-2c"))
-                    value = UniqueValue.Chaos1to2;
-                else if (line.Contains("<1c") || line.Contains("< 1c")) {
-                    if (line.Contains("<67")) {
-                        lines = lines.Skip(1);
-                        continue;
-                    }
-                    else if (line.Contains("Boss"))
-                        value = UniqueValue.ChaosLess1Boss;
-                    else if (line.Contains("League"))
-                        value = UniqueValue.ChaosLess1League;
-                    else if (line.Contains("Shared"))
-                        value = UniqueValue.ChaosLess1Shared;
-                    else if (line.Contains("Crafted"))
-                        value = UniqueValue.ChaosLess1Crafted;
-                    else if (line.Contains("Labyrinth"))
-                        value = UniqueValue.ChaosLess1Labyrinth;
-                    else //Nearly Worthless
-                        value = UniqueValue.ChaosLess1;
-                }
-                else {
-                    if (!line.Contains("New or Worthless"))
-                        MessageBox.Show("Unexpected Unique input: " + line, "Error", MessageBoxButtons.OK);
-                    lines = lines.Skip(1);
-                    continue;
-                }
-                lines = lines.Skip(1).SkipWhile(aline => !aline.TrimStart().StartsWith("BaseType ") && !aline.StartsWith("Show ") && !aline.StartsWith("Hide "));
-                line = lines.First().TrimStart();
-                if (line.StartsWith("BaseType ")) {
-                    List<string> baseTypes = GetBaseTypes(line.Substring(9));
-                    FillFilterUniqueData(SC, baseTypes, value);
-                    FillFilterUniqueData(HC, baseTypes, value);
-                }
-            }
-        }
+				if (!line.Contains("# Uniques -"))
+					continue;
 
-        private List<string> GetBaseTypes(string line)
-        {
-            MatchCollection collection = baseTypeRegex.Matches(line);
-            List<string> output = new List<string>();
+				if (line.Contains("10c+"))
+					value = UniqueValue.Chaos10;
+				else if (line.Contains("2-10c"))
+					value = UniqueValue.Chaos2to10;
+				else if (line.Contains("1-2c"))
+					value = UniqueValue.Chaos1to2;
+				else if (line.Contains("<1c") || line.Contains("< 1c")) {
+					if (line.Contains("<67")) {
+						lines = lines.Skip(1);
+						continue;
+					}
+					else if (line.Contains("Boss"))
+						value = UniqueValue.ChaosLess1Boss;
+					else if (line.Contains("League"))
+						value = UniqueValue.ChaosLess1League;
+					else if (line.Contains("Shared"))
+						value = UniqueValue.ChaosLess1Shared;
+					else if (line.Contains("Crafted"))
+						value = UniqueValue.ChaosLess1Crafted;
+					else if (line.Contains("Labyrinth"))
+						value = UniqueValue.ChaosLess1Labyrinth;
+					else //Nearly Worthless
+						value = UniqueValue.ChaosLess1;
+				}
+				else {
+					if (!line.Contains("New or Worthless"))
+						MessageBox.Show("Unexpected Unique input: " + line, "Error", MessageBoxButtons.OK);
+					lines = lines.Skip(1);
+					continue;
+				}
+				lines = lines.Skip(1).SkipWhile(aline => !aline.TrimStart().StartsWith("BaseType ") && !aline.StartsWith("Show ") && !aline.StartsWith("Hide "));
+				line = lines.First().TrimStart();
+				if (line.StartsWith("BaseType ")) {
+					IEnumerable<string> baseTypes = SplitQuotedList(line).Skip(1);
+					FillFilterUniqueData(SC, baseTypes, value);
+					FillFilterUniqueData(HC, baseTypes, value);
+				}
+			}
+		}
 
-            foreach (Match m in collection) {
-                string baseTy = m.Value;
-                if (baseTy.Length == 0)
-                    continue;
-                if (baseTy[0] == '"')
-                    baseTy = baseTy.Substring(1, baseTy.Length - 2);
-                output.Add(baseTy);
-            }
-            return output;
-        }
+		private List<string> SplitQuotedList(string line)
+		{
+			MatchCollection collection = quotedListRegex.Matches(line);
+			List<string> output = new List<string>();
 
-        private void FillFilterUniqueData(LeagueData data, List<string> baseTypes, UniqueValue value)
-        {
-            foreach (string baseTy in baseTypes) {
-                if (!data.Uniques.TryGetValue(baseTy, out UniqueBaseType unique)) {
-                    if (baseTy == "Maelstr") {
-                        if (!data.Uniques.TryGetValue("Maelström Staff", out unique)) {
-                            unique = new UniqueBaseType("Maelström Staff");
-                            data.Uniques.Add("Maelström Staff", unique);
-                        }
-                    }
-                    else {
-                        unique = new UniqueBaseType(baseTy);
-                        data.Uniques.Add(baseTy, unique);
-                        MessageBox.Show("Filter: unknown basetype: " + unique.BaseType, "Error", MessageBoxButtons.OK);
-                        Environment.Exit(1);
-                    }
-                }
-                unique.FilterValue = value;
-            }
-        }
+			foreach (Match m in collection) {
+				string baseTy = m.Value;
+				if (baseTy.Length == 0)
+					continue;
+				if (baseTy[0] == '"')
+					baseTy = baseTy.Substring(1, baseTy.Length - 2);
+				output.Add(baseTy);
+			}
+			return output;
+		}
 
-        private void FillFilterDivinationData(LeagueData data, List<string> baseTypes, DivinationValue value)
-        {
+		private void FillFilterUniqueData(LeagueData data, IEnumerable<string> baseTypes, UniqueValue value)
+		{
+			foreach (string baseTy in baseTypes) {
+				if (!data.Uniques.TryGetValue(baseTy, out UniqueBaseType unique)) {
+					if (baseTy == "Maelstr") {
+						if (!data.Uniques.TryGetValue("Maelström Staff", out unique)) {
+							unique = new UniqueBaseType("Maelström Staff");
+							data.Uniques.Add("Maelström Staff", unique);
+						}
+					}
+					else {
+						unique = new UniqueBaseType(baseTy);
+						data.Uniques.Add(baseTy, unique);
+						MessageBox.Show("Filter: unknown basetype: " + unique.BaseType, "Error", MessageBoxButtons.OK);
+						Environment.Exit(1);
+					}
+				}
+				unique.FilterValue = value;
+			}
+		}
 
-            foreach (string baseTy in baseTypes) {
-                if (!data.DivinationCards.TryGetValue(baseTy, out DivinationCard divCard)) {
-                    divCard = new DivinationCard(baseTy);
-                    data.DivinationCards.Add(baseTy, divCard);
-                }
-                divCard.FilterValue = value;
-            }
-        }
-    }
+		private void FillFilterEnchantData(LeagueData data, IEnumerable<string> enchantTypes, EnchantmentValue value)
+		{
+			foreach (string enchType in enchantTypes) {
+				if (!data.Enchantments.TryGetValue(enchType, out Enchantment ench)) {
+					ench = new Enchantment(enchType);
+					data.Enchantments.Add(enchType, ench);
+				}
+				ench.FilterValue = value;
+			}
+		}
+
+		private void FillFilterDivinationData(LeagueData data, IEnumerable<string> baseTypes, DivinationValue value)
+		{
+
+			foreach (string baseTy in baseTypes) {
+				if (!data.DivinationCards.TryGetValue(baseTy, out DivinationCard divCard)) {
+					divCard = new DivinationCard(baseTy);
+					data.DivinationCards.Add(baseTy, divCard);
+				}
+				divCard.FilterValue = value;
+			}
+		}
+	}
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -7,149 +8,345 @@ using System.Windows.Forms;
 
 namespace PoE_Price_Lister
 {
-    public partial class Form1 : Form
-    {
-        private DataModel model;
-        private ListViewItemComparer sorter = new ListViewItemComparer(0);
-        private static readonly string[] numericCols = new string[] { "Severity", "Value" };
+	public partial class Form1 : Form
+	{
+		private DataModel model = new DataModel();
+		private ListViewItemComparer sorter = new ListViewItemComparer(0);
+		private static readonly string[] numericCols = new string[] { "Severity", "Value" };
 
-        public Form1()
-        {
-            InitializeComponent();
-            model = new DataModel();
-            openFileDialog1.InitialDirectory = Directory.GetCurrentDirectory() + "\\Resources";
-        }
+		private DataTable scUniquesTable = new DataTable();
+		private DataTable hcUniquesTable = new DataTable();
+		private DataTable scDivinationTable = new DataTable();
+		private DataTable hcDivinationTable = new DataTable();
+		private DataTable scEnchantsTable = new DataTable();
+		private DataTable hcEnchantsTable = new DataTable();
 
-        private void FillUniqueListView(ListView lv, LeagueData data)
-        {
-            lv.BeginUpdate();
-            lv.Items.Clear();
-            foreach (string baseType in model.Uniques) {
-                if (!data.Uniques.TryGetValue(baseType, out UniqueBaseType uniqData))
-                    continue;
-                string values = "";
-                foreach (UniqueItem udata in uniqData.OrderedItems) {
-                    if (udata.Links > 4)
-                        values += "(" + udata.Links + "L)";
-                    string value = udata.Count > 0 ? udata.ChaosValue.ToString() : "?";
-                    values += udata.Name + ": " + value + ", ";
-                }
-                UniqueValue expect = uniqData.ExpectedFilterValue;
-                string severity = uniqData.SeverityLevel.ToString();
-                string filterVal = uniqData.FilterValue.ToString();
-                string expectVal = expect.Value == uniqData.FilterValue.Value ? "" : expect.ToString();
-                string listedVals = values.Substring(0, values.Length - 2);
-                lv.Items.Add(new ListViewItem(new string[] { baseType, severity, filterVal, expectVal, listedVals }));
-            }
-            lv.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
-            lv.Columns[0].AutoResize(ColumnHeaderAutoResizeStyle.ColumnContent);
-            lv.Columns[1].AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
-            lv.Columns[2].AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
-            lv.Columns[3].AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
-            lv.Columns[4].AutoResize(ColumnHeaderAutoResizeStyle.ColumnContent);
-            lv.EndUpdate();
-        }
+		public Form1()
+		{
+			InitializeComponent();
+			openFileDialog.InitialDirectory = Directory.GetCurrentDirectory() + "\\Resources";
 
-        private void FillDivinationListView(ListView lv, LeagueData data)
-        {
-            lv.BeginUpdate();
-            lv.Items.Clear();
-            foreach (string div in model.DivinationCards) {
-                if (!data.DivinationCards.TryGetValue(div, out DivinationCard divCard))
-                    continue;
-                DivinationValue expect = divCard.ExpectedFilterValue;
-                string severity = divCard.SeverityLevel.ToString();
-                string filterVal = divCard.FilterValue.ToString();
-                string expectVal = expect.Value == divCard.FilterValue.Value ? "" : expect.ToString();
-                string listedVal = divCard.ChaosValue < 0.0f ? "?" : divCard.ChaosValue.ToString();
-                lv.Items.Add(new ListViewItem(new string[] { div, severity, filterVal, expectVal, listedVal }));
-            }
-            lv.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
-            lv.Columns[0].AutoResize(ColumnHeaderAutoResizeStyle.ColumnContent);
-            lv.Columns[1].AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
-            lv.Columns[2].AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
-            lv.Columns[3].AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
-            lv.Columns[4].AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
-            lv.EndUpdate();
-        }
+			scUniquesTable.Columns.Add("BaseType");
+			scUniquesTable.Columns.Add("Severity", typeof(int));
+			scUniquesTable.Columns.Add("Filter");
+			scUniquesTable.Columns.Add("Expected");
+			scUniquesTable.Columns.Add("Uniques");
 
-        private void listView_ColumnClick(object sender, ColumnClickEventArgs e)
-        {
-            ListView lv = (ListView) sender;
+			hcUniquesTable.Columns.Add("BaseType");
+			hcUniquesTable.Columns.Add("Severity", typeof(int));
+			hcUniquesTable.Columns.Add("Filter");
+			hcUniquesTable.Columns.Add("Expected");
+			hcUniquesTable.Columns.Add("Uniques");
 
-            if (!(lv.ListViewItemSorter is ListViewItemComparer sorter)) {
-                sorter = new ListViewItemComparer(e.Column);
-                lv.ListViewItemSorter = sorter;
-            }
-            string text = lv.Columns[e.Column].Text;
-            sorter.Ascending = sorter.Column == e.Column ? !sorter.Ascending : text == "Severity";
-            sorter.Column = e.Column;
-            sorter.IsNumeric = numericCols.Contains(text);
+			scDivinationTable.Columns.Add("Divination Card");
+			scDivinationTable.Columns.Add("Severity", typeof(int));
+			scDivinationTable.Columns.Add("Filter");
+			scDivinationTable.Columns.Add("Expected");
+			scDivinationTable.Columns.Add("Value", typeof(float));
 
-            lv.Sort();
-        }
+			hcDivinationTable.Columns.Add("Divination Card");
+			hcDivinationTable.Columns.Add("Severity", typeof(int));
+			hcDivinationTable.Columns.Add("Filter");
+			hcDivinationTable.Columns.Add("Expected");
+			hcDivinationTable.Columns.Add("Value", typeof(float));
 
-        private void buttonGenFilter_Click(object sender, EventArgs e)
-        {
-            bool safe = checkBox1.Checked;
-            bool hcFriendly = checkBox2.Checked;
-            FilterWriter writer = new FilterWriter(model);
+			scEnchantsTable.Columns.Add("Gem");
+			scEnchantsTable.Columns.Add("Enchantment");
+			scEnchantsTable.Columns.Add("Severity", typeof(int));
+			scEnchantsTable.Columns.Add("Filter");
+			scEnchantsTable.Columns.Add("Expected");
+			scEnchantsTable.Columns.Add("Value", typeof(float));
+			scEnchantsTable.Columns.Add("Name");
 
-			writer.Create(FilterType.NO_RARES, safe, hcFriendly);
-			writer.Create(FilterType.LEVELING, safe, hcFriendly);
-			writer.Create(FilterType.MAPPING, safe, hcFriendly);
-			writer.Create(FilterType.STRICT, safe, hcFriendly);
-			writer.Create(FilterType.VERY_STRICT, safe, hcFriendly);
+			hcEnchantsTable.Columns.Add("Gem");
+			hcEnchantsTable.Columns.Add("Enchantment");
+			hcEnchantsTable.Columns.Add("Severity", typeof(int));
+			hcEnchantsTable.Columns.Add("Filter");
+			hcEnchantsTable.Columns.Add("Expected");
+			hcEnchantsTable.Columns.Add("Value", typeof(float));
+			hcEnchantsTable.Columns.Add("Name");
+
+			divinationHcDataGridView.DataSource = hcDivinationTable;
+			divinationScDataGridView.DataSource = scDivinationTable;
+			uniquesScDataGridView.DataSource = scUniquesTable;
+			uniquesHcDataGridView.DataSource = hcUniquesTable;
+			enchantsHcDataGridView.DataSource = hcEnchantsTable;
+			enchantsScDataGridView.DataSource = scEnchantsTable;
+
+			divinationHcDataGridView.DoubleBuffer();
+			divinationScDataGridView.DoubleBuffer();
+			uniquesScDataGridView.DoubleBuffer();
+			uniquesHcDataGridView.DoubleBuffer();
+			enchantsHcDataGridView.DoubleBuffer();
+			enchantsScDataGridView.DoubleBuffer();
 		}
 
-        private void listView_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (e.Modifiers == Keys.Control && e.KeyCode == Keys.C) {
-                ListView listView = (ListView) sender;
-                StringBuilder sb = new StringBuilder();
-                if (listView.SelectedItems.Count == 1)
-                    sb.Append(listView.SelectedItems[0].Text);
-                else {
-                    foreach (ListViewItem item in listView.SelectedItems) {
-                        if (item.Text.Contains(" "))
-                            sb.Append('\"').Append(item.Text).Append('\"');
-                        else
-                            sb.Append(item.Text);
-                        sb.Append(' ');
-                    }
-                }
-                Clipboard.SetText(sb.ToString());
-            }
-        }
+		private void buttonGenFilter_Click(object sender, EventArgs e)
+		{
+			LeagueData l1, l2;
+			if (hcFriendlyRadioButton.Checked) {
+				l1 = model.SC;
+				l2 = model.HC;
+			}
+			else if (scRadioButton.Checked) {
+				l1 = model.SC;
+				l2 = model.SC;
+			}
+			else {
+				l1 = model.HC;
+				l2 = model.HC;
+			}
+			FilterWriter writer = new FilterWriter(model, l1, l2);
+			string[] filterFiles = new string[] {
+				"S_NoRares_Highwind.filter",
+				"S1_Regular_Highwind.filter",
+				"S2_Mapping_Highwind.filter",
+				"S3_Strict_Highwind.filter",
+				"S4_Very_Strict_Highwind.filter"
+			};
+			FilterType[] filterTypes = new FilterType[] {
+				FilterType.NO_RARES,
+				FilterType.LEVELING,
+				FilterType.MAPPING,
+				FilterType.STRICT,
+				FilterType.VERY_STRICT
+			};
+			for (int i = 0; i < filterFiles.Length; i++) {
+				writer.Create(filterTypes[i], filterFiles[i], saferCheckBox.Checked);
+			}
+			model.Load(filterFiles[0]);
+			LoadDataGridViews();
+		}
 
-        private void buttonLoad_Click(object sender, EventArgs e)
-        {
-            if (DialogResult.OK == openFileDialog1.ShowDialog()) {
-                model.Load(openFileDialog1.FileName);
+		/*
+		private void listView_KeyUp(object sender, KeyEventArgs e)
+		{
+			if (e.Modifiers == Keys.Control && e.KeyCode == Keys.C) {
+				ListView listView = (ListView) sender;
+				StringBuilder sb = new StringBuilder();
+				if (listView.SelectedItems.Count == 1)
+					sb.Append(listView.SelectedItems[0].Text);
+				else {
+					foreach (ListViewItem item in listView.SelectedItems) {
+						if (item.Text.Contains(" "))
+							sb.Append('\"').Append(item.Text).Append('\"');
+						else
+							sb.Append(item.Text);
+						sb.Append(' ');
+					}
+				}
+				Clipboard.SetText(sb.ToString());
+			}
+		}
+		*/
 
-                LoadListViews();
-            }
-        }
 
-        private async void Form1_Shown(object sender, EventArgs e)
-        {
-            buttonGenFilter.Enabled = false;
-            buttonLoad.Enabled = false;
-            await Task.Run(
-            () => {
-                model.Load();
-            });
-            LoadListViews();
-            buttonGenFilter.Enabled = true;
-            buttonLoad.Enabled = true;
-        }
+		/*
+		private void FillUniqueListView(ListView lv, LeagueData data)
+		{
+			lv.BeginUpdate();
+			lv.Items.Clear();
+			foreach (string baseType in model.Uniques) {
+				if (!data.Uniques.TryGetValue(baseType, out UniqueBaseType uniqData))
+					continue;
+				string values = "";
+				foreach (UniqueItem udata in uniqData.OrderedItems) {
+					if (udata.Links > 4)
+						values += "(" + udata.Links + "L)";
+					string value = udata.Count > 0 ? udata.ChaosValue.ToString() : "?";
+					values += udata.Name + ": " + value + ", ";
+				}
+				UniqueValue expect = uniqData.ExpectedFilterValue;
+				string severity = uniqData.SeverityLevel.ToString();
+				string filterVal = uniqData.FilterValue.ToString();
+				string expectVal = expect.Value == uniqData.FilterValue.Value ? "" : expect.ToString();
+				string listedVals = values.Substring(0, values.Length - 2);
+				lv.Items.Add(new ListViewItem(new string[] { baseType, severity, filterVal, expectVal, listedVals }));
+			}
+			lv.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
+			lv.Columns[0].AutoResize(ColumnHeaderAutoResizeStyle.ColumnContent);
+			lv.Columns[1].AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
+			lv.Columns[2].AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
+			lv.Columns[3].AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
+			lv.Columns[4].AutoResize(ColumnHeaderAutoResizeStyle.ColumnContent);
+			lv.EndUpdate();
+		}
 
-        private void LoadListViews()
-        {
-            FillUniqueListView(listViewUniques, model.SC);
-            FillDivinationListView(listViewDivination, model.SC);
-            FillUniqueListView(listViewUniquesHC, model.HC);
-            FillDivinationListView(listViewDivinationHC, model.HC);
-        }
-    }
+		private void FillDivinationListView(ListView lv, LeagueData data)
+		{
+			lv.BeginUpdate();
+			lv.Items.Clear();
+			foreach (string div in model.DivinationCards) {
+				if (!data.DivinationCards.TryGetValue(div, out DivinationCard divCard))
+					continue;
+				DivinationValue expect = divCard.ExpectedFilterValue;
+				string severity = divCard.SeverityLevel.ToString();
+				string filterVal = divCard.FilterValue.ToString();
+				string expectVal = expect.Value == divCard.FilterValue.Value ? "" : expect.ToString();
+				string listedVal = divCard.ChaosValue < 0.0f ? "?" : divCard.ChaosValue.ToString();
+				lv.Items.Add(new ListViewItem(new string[] { div, severity, filterVal, expectVal, listedVal }));
+			}
+			lv.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
+			lv.Columns[0].AutoResize(ColumnHeaderAutoResizeStyle.ColumnContent);
+			lv.Columns[1].AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
+			lv.Columns[2].AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
+			lv.Columns[3].AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
+			lv.Columns[4].AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
+			lv.EndUpdate();
+		}
+
+		private void FillEnchantsListView(ListView lv, LeagueData data)
+		{
+			lv.BeginUpdate();
+			lv.Items.Clear();
+			foreach (string ench in model.Enchantments) {
+				if (!data.Enchantments.TryGetValue(ench, out Enchantment enchantment))
+					continue;
+				string severity = enchantment.SeverityLevel.ToString();
+				lv.Items.Add(new ListViewItem(new string[] { ench, severity, enchantment.Gem, "0", enchantment.Value.ToString() }));
+			}
+			lv.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
+			lv.Columns[0].AutoResize(ColumnHeaderAutoResizeStyle.ColumnContent);
+			lv.Columns[1].AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
+			lv.Columns[2].AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
+			lv.Columns[3].AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
+			lv.Columns[4].AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
+			lv.EndUpdate();
+		}
+
+		private void listView_ColumnClick(object sender, ColumnClickEventArgs e)
+		{
+			ListView lv = (ListView) sender;
+
+			if (!(lv.ListViewItemSorter is ListViewItemComparer sorter)) {
+				sorter = new ListViewItemComparer(e.Column);
+				lv.ListViewItemSorter = sorter;
+			}
+			string text = lv.Columns[e.Column].Text;
+			sorter.Ascending = sorter.Column == e.Column ? !sorter.Ascending : text == "Severity";
+			sorter.Column = e.Column;
+			sorter.IsNumeric = numericCols.Contains(text);
+
+			lv.Sort();
+		}
+		*/
+
+		private void buttonLoad_Click(object sender, EventArgs e)
+		{
+			if (DialogResult.OK == openFileDialog.ShowDialog()) {
+				model.Load(openFileDialog.FileName);
+				LoadDataGridViews();
+			}
+		}
+
+		private async void Form1_Shown(object sender, EventArgs e)
+		{
+			buttonGenFilter.Enabled = false;
+			buttonLoad.Enabled = false;
+			await Task.Run(
+			() =>
+			{
+				model.Load();
+			});
+			LoadDataGridViews();
+			buttonGenFilter.Enabled = true;
+			buttonLoad.Enabled = true;
+			Text += " (v" + model.Version + ")";
+		}
+
+		private void LoadDataGridViews()
+		{
+			SuspendLayout();
+			FillUniques(scUniquesTable, model.SC);
+			FillDivination(scDivinationTable, model.SC);
+			FillUniques(hcUniquesTable, model.HC);
+			FillDivination(hcDivinationTable, model.HC);
+			FillEnchants(scEnchantsTable, model.SC);
+			FillEnchants(hcEnchantsTable, model.HC);
+			SortDgv(uniquesScDataGridView);
+			SortDgv(uniquesHcDataGridView);
+			SortDgv(divinationScDataGridView);
+			SortDgv(divinationHcDataGridView);
+			SortDgv(enchantsScDataGridView);
+			SortDgv(enchantsHcDataGridView);
+			ResumeLayout(true);
+		}
+
+		private static void SortDgv(DataGridView dgv)
+		{
+			dgv.Sort(dgv.Columns["Severity"], System.ComponentModel.ListSortDirection.Descending);
+			dgv.FirstDisplayedScrollingRowIndex = 0;
+		}
+
+		private void FillUniques(DataTable table, LeagueData data)
+		{
+			table.Clear();
+			foreach (UniqueBaseType unique in data.Uniques.Values) {
+				DataRow row = table.NewRow();
+				UniqueValue expect = unique.ExpectedFilterValue;
+				row["BaseType"] = unique.BaseType;
+				row["Severity"] = unique.SeverityLevel;
+				row["Filter"] = unique.FilterValue.ToString();
+				row["Expected"] = expect.Value == unique.FilterValue.Value ? "" : expect.ToString();
+				row["Uniques"] = unique.GetString();
+				table.Rows.Add(row);
+			}
+		}
+
+		private void FillDivination(DataTable table, LeagueData data)
+		{
+			table.Clear();
+			foreach (DivinationCard divCard in data.DivinationCards.Values) {
+				DataRow row = table.NewRow();
+				DivinationValue expect = divCard.ExpectedFilterValue;
+				row["Divination Card"] = divCard.Name;
+				row["Severity"] = divCard.SeverityLevel;
+				row["Filter"] = divCard.FilterValue.ToString();
+				row["Expected"] = expect.Value == divCard.FilterValue.Value ? "" : expect.ToString();
+				row["Value"] = divCard.ChaosValue < 0.0f ? DBNull.Value : (object) divCard.ChaosValue;
+				table.Rows.Add(row);
+			}
+		}
+
+		private void FillEnchants(DataTable table, LeagueData data)
+		{
+			table.Clear();
+			foreach (Enchantment ench in data.Enchantments.Values) {
+				DataRow row = table.NewRow();
+				EnchantmentValue expect = ench.ExpectedFilterValue;
+				row["Gem"] = ench.Gem;
+				row["Enchantment"] = ench.Description;
+				row["Severity"] = ench.SeverityLevel;
+				row["Filter"] = ench.FilterValue.ToString();
+				row["Expected"] = expect.Value == ench.FilterValue.Value ? "" : expect.ToString();
+				row["Value"] = ench.ChaosValue < 0.0f ? DBNull.Value : (object) ench.ChaosValue;
+				row["Name"] = ench.Name;
+				table.Rows.Add(row);
+			}
+		}
+
+		private void scRadioButton_CheckedChanged(object sender, EventArgs e)
+		{
+			if (scRadioButton.Checked) {
+				hcRadioButton.Checked = false;
+				hcFriendlyRadioButton.Checked = false;
+			}
+		}
+
+		private void hcRadioButton_CheckedChanged(object sender, EventArgs e)
+		{
+			if (hcRadioButton.Checked) {
+				scRadioButton.Checked = false;
+				hcFriendlyRadioButton.Checked = false;
+			}
+		}
+
+		private void hcFriendlyRadioButton_CheckedChanged(object sender, EventArgs e)
+		{
+			if (hcFriendlyRadioButton.Checked) {
+				scRadioButton.Checked = false;
+				hcRadioButton.Checked = false;
+			}
+		}
+	}
 }
