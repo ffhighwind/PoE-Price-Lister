@@ -235,6 +235,7 @@ Show  # Uniques - 1-2c
 				Writer.Write(filterData.Substring(enchantsEnd, uniquesStart - enchantsEnd));
 				// Uniques
 				Writer.WriteLine(@"# Section: Uniques");
+				Writer.WriteLine();
 				Writer.WriteLine(GenerateUniquesString(type));
 				// Divination Cards
 				Writer.WriteLine(
@@ -327,15 +328,15 @@ Show  # Uniques - 1-2c
 			sb.AppendLine(uniqueWarning).AppendLine();
 			if (list10c.Count > 0) {
 				sb.AppendLine(header10c).AppendLine();
-				sb.AppendLine("Show  # Uniques - 10c+").AppendLine("\tRarity = Unique").Append("\t BaseType ").AppendLine(ItemList(list10c)).AppendLine(style10c).AppendLine();
+				sb.AppendLine("Show  # Uniques - 10c+").AppendLine("\tRarity = Unique").Append("\tBaseType ").AppendLine(ItemList(list10c)).AppendLine(style10c).AppendLine();
 			}
 			if (list2to10c.Count > 0) {
 				sb.AppendLine(header2to10c).AppendLine();
-				sb.AppendLine("Show  # Uniques - 2-10c").AppendLine("\tRarity = Unique").Append("\t BaseType ").AppendLine(ItemList(list2to10c)).AppendLine(style2to10c).AppendLine();
+				sb.AppendLine("Show  # Uniques - 2-10c").AppendLine("\tRarity = Unique").Append("\tBaseType ").AppendLine(ItemList(list2to10c)).AppendLine(style2to10c).AppendLine();
 			}
 			sb.AppendLine(header1c).AppendLine();
 			if (list1to2c.Count > 0) {
-				sb.AppendLine("Show  # Uniques - 1-2c").AppendLine("\tRarity = Unique").Append("\t BaseType ").AppendLine(ItemList(list1to2c)).AppendLine(style1c).AppendLine();
+				sb.AppendLine("Show  # Uniques - 1-2c").AppendLine("\tRarity = Unique").Append("\tBaseType ").AppendLine(ItemList(list1to2c)).AppendLine(style1c).AppendLine();
 			}
 			sb.AppendLine(loreweaveStr).AppendLine();
 			sb.AppendLine(headerLess1c).AppendLine();
@@ -345,22 +346,22 @@ Show  # Uniques - 1-2c
 			string sSound = (type == FilterType.LEVELING || type == FilterType.MAPPING) ? styleUniqueSound : "";
 			sb.AppendLine(showHide + lessLvl67).AppendLine();
 			if (listLess1cLeague.Count > 0) {
-				sb.AppendLine("Show  # Uniques - <1c - League").AppendLine("\tRarity = Unique").Append("\t BaseType ").AppendLine(ItemList(listLess1cLeague)).AppendLine(styleLess1c).Append(sSound).AppendLine();
+				sb.AppendLine("Show  # Uniques - <1c - League").AppendLine("\tRarity = Unique").Append("\tBaseType ").AppendLine(ItemList(listLess1cLeague)).AppendLine(styleLess1c).Append(sSound).AppendLine();
 			}
 			if (listLess1cBoss.Count > 0) {
-				sb.AppendLine("Show  # Uniques - <1c - Boss Prophecy").AppendLine("\tRarity = Unique").Append("\t BaseType ").AppendLine(ItemList(listLess1cBoss)).AppendLine(styleLess1c).Append(sSound).AppendLine();
+				sb.AppendLine("Show  # Uniques - <1c - Boss Prophecy").AppendLine("\tRarity = Unique").Append("\tBaseType ").AppendLine(ItemList(listLess1cBoss)).AppendLine(styleLess1c).Append(sSound).AppendLine();
 			}
 			if (listLess1cShared.Count > 0) {
-				sb.AppendLine("Show  # Uniques - <1c - Shared").AppendLine("\tRarity = Unique").Append("\t BaseType ").AppendLine(ItemList(listLess1cShared)).AppendLine(styleLess1c).Append(vsSound).AppendLine();
+				sb.AppendLine("Show  # Uniques - <1c - Shared").AppendLine("\tRarity = Unique").Append("\tBaseType ").AppendLine(ItemList(listLess1cShared)).AppendLine(styleLess1c).Append(vsSound).AppendLine();
 			}
 			if (listLess1cCrafted.Count > 0) {
-				sb.AppendLine("Show  # Uniques - <1c - Crafted Fated Purchased").AppendLine("\tRarity = Unique").Append("\t BaseType ").AppendLine(ItemList(listLess1cCrafted)).AppendLine(styleLess1c).Append(sSound).AppendLine();
+				sb.AppendLine("Show  # Uniques - <1c - Crafted Fated Purchased").AppendLine("\tRarity = Unique").Append("\tBaseType ").AppendLine(ItemList(listLess1cCrafted)).AppendLine(styleLess1c).Append(sSound).AppendLine();
 			}
 			if (listLess1cLabyrinth.Count > 0) {
-				sb.AppendLine(showHide + "  # Uniques - <1c - Labyrinth").AppendLine("\tRarity = Unique").Append("\t BaseType ").AppendLine(ItemList(listLess1cLabyrinth)).AppendLine(styleLess1c).Append(sSound).AppendLine();
+				sb.AppendLine(showHide + "  # Uniques - <1c - Labyrinth").AppendLine("\tRarity = Unique").Append("\tBaseType ").AppendLine(ItemList(listLess1cLabyrinth)).AppendLine(styleLess1c).Append(sSound).AppendLine();
 			}
 			if (listLess1c.Count > 0) {
-				sb.AppendLine(showHide + "  # Uniques - <1c - Nearly Worthless").AppendLine("\tRarity = Unique").Append("\t BaseType ").AppendLine(ItemList(listLess1c)).AppendLine(styleLess1c).Append(sSound).AppendLine();
+				sb.AppendLine(showHide + "  # Uniques - <1c - Nearly Worthless").AppendLine("\tRarity = Unique").Append("\tBaseType ").AppendLine(ItemList(listLess1c)).AppendLine(styleLess1c).Append(sSound).AppendLine();
 			}
 			sb.AppendLine(showHide + uniqueNewOrWorthless).Append(sSound).AppendLine();
 
@@ -393,7 +394,7 @@ Show  # Uniques - 1-2c
 					expectedVal = DivinationValue.FromTier(expectedVal.Tier + 1);
 				}
 				//if SC <1c and HC 8c+ then +1 tier
-				if (expectedVal.Tier < 2 && dataB.ChaosValue > 8.0f) {
+				if (expectedVal.Tier < 3 && dataB.ChaosValue > 8.0f) {
 					expectedVal = DivinationValue.FromTier(expectedVal.Tier + 1);
 				}
 
@@ -433,7 +434,7 @@ Show  # Uniques - 1-2c
 			}
 
 			// Name Conflicts
-			sb.AppendLine("# Potential Conflicts!!! (They have been separated but may need to be reorganized)");
+			sb.AppendLine("# Potential Conflicts!!! (They have been separated but may need to be reorganized)").AppendLine();
 			foreach (List<string> list in Conflicts) {
 				sb.Append("# ");
 				foreach (string str in list) {
@@ -444,36 +445,37 @@ Show  # Uniques - 1-2c
 				}
 				sb.Remove(sb.Length - 1, 1).AppendLine();
 			}
+			sb.AppendLine();
 
 			if (list1to10cConflict.Count > 0)
-				sb.AppendLine("Show  # Divination Cards - 1c+ (Conflicts)").AppendLine("\tClass Divination").Append("\t BaseType ").AppendLine(ItemList(list1to10cConflict)).AppendLine(styleDiv1c).AppendLine();
+				sb.AppendLine("Show  # Divination Cards - 1c+ (Conflicts)").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(list1to10cConflict)).AppendLine(styleDiv1c).AppendLine();
 			if (listLess1cConflict.Count > 0) {
 				string showHide = type == FilterType.VERY_STRICT ? "Hide" : "Show";
-				sb.AppendLine(showHide + "  # Divination Cards - <1c (Conflicts)").AppendLine("\tClass Divination").Append("\t BaseType ").AppendLine(ItemList(listLess1cConflict)).AppendLine(styleDivLess1c).AppendLine();
+				sb.AppendLine(showHide + "  # Divination Cards - <1c (Conflicts)").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(listLess1cConflict)).AppendLine(styleDivLess1c).AppendLine();
 			}
 			if (listNearlyWorthlessConflict.Count > 0) {
 				string showHide = (type == FilterType.LEVELING || type == FilterType.MAPPING) ? "Show" : "Hide";
-				sb.AppendLine(showHide + "  # Divination Cards - Nearly Worthless (Conflicts)").AppendLine("\tClass Divination").Append("\t BaseType ").AppendLine(ItemList(listNearlyWorthlessConflict)).AppendLine(styleDivNearlyWorthless).AppendLine();
+				sb.AppendLine(showHide + "  # Divination Cards - Nearly Worthless (Conflicts)").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(listNearlyWorthlessConflict)).AppendLine(styleDivNearlyWorthless).AppendLine();
 			}
 			if (listWorthlessConflict.Count > 0) {
 				string showHide = type == FilterType.LEVELING ? "Show" : "Hide";
-				sb.AppendLine(showHide + "  # Divination Cards - Worthless (Conflicts)").AppendLine("\tClass Divination").Append("\t BaseType ").AppendLine(ItemList(listWorthlessConflict)).AppendLine(styleDivWorthless).AppendLine();
+				sb.AppendLine(showHide + "  # Divination Cards - Worthless (Conflicts)").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(listWorthlessConflict)).AppendLine(styleDivWorthless).AppendLine();
 			}
 			if (list10c.Count > 0)
-				sb.AppendLine("Show  # Divination Cards - 10c+").AppendLine("\tClass Divination").Append("\t BaseType ").AppendLine(ItemList(list10c)).AppendLine(styleDiv10c).AppendLine();
+				sb.AppendLine("Show  # Divination Cards - 10c+").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(list10c)).AppendLine(styleDiv10c).AppendLine();
 			if (list1to10c.Count > 0)
-				sb.AppendLine("Show  # Divination Cards - 1c+").AppendLine("\tClass Divination").Append("\t BaseType ").AppendLine(ItemList(list1to10c)).AppendLine(styleDiv1c).AppendLine();
+				sb.AppendLine("Show  # Divination Cards - 1c+").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(list1to10c)).AppendLine(styleDiv1c).AppendLine();
 			if (listLess1c.Count > 0) {
 				string showHide = type == FilterType.VERY_STRICT ? "Hide" : "Show";
-				sb.AppendLine(showHide + "  # Divination Cards - <1c").AppendLine("\tClass Divination").Append("\t BaseType ").AppendLine(ItemList(listLess1c)).AppendLine(styleDivLess1c).AppendLine();
+				sb.AppendLine(showHide + "  # Divination Cards - <1c").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(listLess1c)).AppendLine(styleDivLess1c).AppendLine();
 			}
 			if (listNearlyWorthless.Count > 0) {
 				string showHide = (type == FilterType.LEVELING || type == FilterType.MAPPING) ? "Show" : "Hide";
-				sb.AppendLine(showHide + "  # Divination Cards - Nearly Worthless").AppendLine("\tClass Divination").Append("\t BaseType ").AppendLine(ItemList(listNearlyWorthless)).AppendLine(styleDivNearlyWorthless).AppendLine();
+				sb.AppendLine(showHide + "  # Divination Cards - Nearly Worthless").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(listNearlyWorthless)).AppendLine(styleDivNearlyWorthless).AppendLine();
 			}
 			if (listWorthless.Count > 0) {
 				string showHide = type == FilterType.LEVELING ? "Show" : "Hide";
-				sb.AppendLine(showHide + "  # Divination Cards - Worthless").AppendLine("\tClass Divination").Append("\t BaseType ").AppendLine(ItemList(listWorthless)).AppendLine(styleDivWorthless).AppendLine();
+				sb.AppendLine(showHide + "  # Divination Cards - Worthless").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(listWorthless)).AppendLine(styleDivWorthless).AppendLine();
 			}
 			sb.AppendLine(divNewOrWorthless);
 

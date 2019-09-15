@@ -27,8 +27,8 @@ namespace PoE_Price_Lister
 		//{0} = "UniqueAccessory", "UniqueJewel", "UniqueMap", "UniqueArmour", "UniqueFlask",
 		// "UniqueWeapon", "DivinationCards", "Fragment", "Currency", "Prophecy", "Essence", "SkillGem", "HelmetEnchant"
 		// Resonators/Fossils are not implemented as an API yet
-		private static readonly Regex quotedListRegex = new Regex(@"""[^""]+""|[^ ]+", RegexOptions.Compiled);
-		private static readonly Regex versionRegex = new Regex(@".+(\d+)[.](\d+)[.](\d+)\s.+", RegexOptions.Compiled);
+		private static readonly Regex quotedListRegex = new Regex(@"""[^""\r\n]+""|[^ \r\n]+", RegexOptions.Compiled);
+		private static readonly Regex versionRegex = new Regex(@".+(\d+)[.](\d+)[.](\d+) [^\r\n]+", RegexOptions.Compiled);
 
 		public int VersionMajor { get; private set; }
 		public int VersionMinor { get; private set; }

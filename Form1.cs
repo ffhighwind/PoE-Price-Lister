@@ -104,6 +104,13 @@ namespace PoE_Price_Lister
 				"S3_Strict_Highwind.filter",
 				"S4_Very_Strict_Highwind.filter"
 			};
+			string[] largeFiles = new string[] {
+				"L_NoRares_Highwind.filter",
+				"L1_Regular_Highwind.filter",
+				"L2_Mapping_Highwind.filter",
+				"L3_Strict_Highwind.filter",
+				"L4_Very_Strict_Highwind.filter"
+			};
 			FilterType[] filterTypes = new FilterType[] {
 				FilterType.NO_RARES,
 				FilterType.LEVELING,
@@ -113,8 +120,15 @@ namespace PoE_Price_Lister
 			};
 			for (int i = 0; i < filterFiles.Length; i++) {
 				writer.Create(filterTypes[i], filterFiles[i], saferCheckBox.Checked);
+				string filterData = File.ReadAllText(filterFiles[i]);
+				filterData.Replace("SetFontSize 40", "SetFontSize 45");
+				filterData.Replace("SetFontSize 36", "SetFontSize 40");
+				filterData.Replace("SetFontSize 32", "SetFontSize 36");
+				using (StreamWriter lwriter = File.CreateText(largeFiles[i])) {
+					lwriter.Write(filterData);
+				}
 			}
-			model.Load(filterFiles[0]);
+			model.Load(filterFiles[1]);
 			LoadDataGridViews();
 		}
 

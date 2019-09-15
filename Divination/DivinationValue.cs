@@ -10,11 +10,11 @@
 			LowValue = lowValue;
 		}
 
-		public static readonly DivinationValue Error = new DivinationValue(DivinationValueEnum.Error, "Error", -1.0f, float.MinValue);
+		public static readonly DivinationValue Error = new DivinationValue(DivinationValueEnum.Error, "Error", 0.0f, float.MinValue);
 		public static readonly DivinationValue Chaos10 = new DivinationValue(DivinationValueEnum.Chaos10, "10c+", float.MaxValue, 6.0f);
-		public static readonly DivinationValue Chaos1to10 = new DivinationValue(DivinationValueEnum.Chaos1to10, "1c+", 13.0f, 0.8f);
+		public static readonly DivinationValue Chaos1to10 = new DivinationValue(DivinationValueEnum.Chaos1to10, "1c+", 13.0f, 0.9f);
 		public static readonly DivinationValue ChaosLess1 = new DivinationValue(DivinationValueEnum.ChaosLess1, "<1c", 1.5f, 0.67f);
-		public static readonly DivinationValue NearlyWorthless = new DivinationValue(DivinationValueEnum.NearlyWorthless, "Nearly Worthless", 0.8f, 0.4f);
+		public static readonly DivinationValue NearlyWorthless = new DivinationValue(DivinationValueEnum.NearlyWorthless, "Nearly Worthless", 0.9f, 0.55f);
 		public static readonly DivinationValue Worthless = new DivinationValue(DivinationValueEnum.Worthless, "Worthless", 0.6f, -1.0f);
 
 		public DivinationValueEnum Value { get; private set; }

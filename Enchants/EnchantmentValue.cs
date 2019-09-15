@@ -16,7 +16,7 @@ namespace PoE_Price_Lister
 			this.toString = toString;
 		}
 
-		public static readonly EnchantmentValue Error = new EnchantmentValue(EnchantmentValueEnum.Error, "Error", -1.0f, float.MinValue);
+		public static readonly EnchantmentValue Error = new EnchantmentValue(EnchantmentValueEnum.Error, "Error", 0.0f, float.MinValue);
 		public static readonly EnchantmentValue Worthless = new EnchantmentValue(EnchantmentValueEnum.Worthless, "Worthless", 13, -1);
 		public static readonly EnchantmentValue Chaos10 = new EnchantmentValue(EnchantmentValueEnum.Chaos10, "10c+", 23, 7);
 		public static readonly EnchantmentValue Chaos20 = new EnchantmentValue(EnchantmentValueEnum.Chaos20, "20c+", float.MaxValue, 16);

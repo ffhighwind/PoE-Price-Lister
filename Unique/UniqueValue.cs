@@ -13,7 +13,7 @@ namespace PoE_Price_Lister
 			LowValue = lowValue;
 		}
 
-		public static readonly UniqueValue Error = new UniqueValue(UniqueValueEnum.Error, -1, "Error", -1.0f, float.MinValue);
+		public static readonly UniqueValue Error = new UniqueValue(UniqueValueEnum.Error, -1, "Error", 0.0f, float.MinValue);
 		public static readonly UniqueValue Unknown = new UniqueValue(UniqueValueEnum.Unknown, 0, "Unknown", 0.95f, -1.0f);
 		public static readonly UniqueValue ChaosLess1 = new UniqueValue(UniqueValueEnum.ChaosLess1, 1, "<1c", 1.5f, 0.3f);
 		public static readonly UniqueValue ChaosLess1Labyrinth = new UniqueValue(UniqueValueEnum.ChaosLess1Labyrinth, 1, "<1c Labyrinth", 1.5f, 0.3f);
