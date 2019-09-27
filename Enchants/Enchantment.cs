@@ -31,26 +31,15 @@ namespace PoE_Price_Lister
 			//}
 		}
 
-		public void ClearJson()
-		{
-			ChaosValue = -1.0f;
-			Count = 0;
-		}
-
 		public string Name { get; private set; }
 		public string Description { get; private set; }
 		public string Gem { get; private set; }
 		public int SeverityLevel {
 			get {
 				EnchantmentValue expect = ExpectedFilterValue;
-				if (FilterValue == expect || (ChaosValue < 7.0f && expect.Value == EnchantmentValueEnum.Worthless))
+				if (FilterValue == expect || (FilterValue.Tier > expect.Tier && FilterValue.LowValue <= ChaosValue))
 					return 0;
-				int severity = Math.Abs(FilterValue.Tier - expect.Tier);
-				if (severity != 0) {
-					if (expect != EnchantmentValue.Worthless && (ChaosValue < expect.LowValue || ChaosValue > expect.HighValue))
-						severity++;
-				}
-				return severity;
+				return Math.Abs(FilterValue.Tier - expect.Tier);
 			}
 		}
 

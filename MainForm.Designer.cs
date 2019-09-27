@@ -1,6 +1,6 @@
 ﻿namespace PoE_Price_Lister
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -27,9 +27,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 			this.buttonGenFilter = new System.Windows.Forms.Button();
-			this.saferCheckBox = new System.Windows.Forms.CheckBox();
 			this.buttonLoad = new System.Windows.Forms.Button();
 			this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
 			this.enchantsSCTab = new System.Windows.Forms.TabControl();
@@ -69,14 +68,6 @@
 			this.buttonGenFilter.Name = "buttonGenFilter";
 			this.buttonGenFilter.UseVisualStyleBackColor = true;
 			this.buttonGenFilter.Click += new System.EventHandler(this.buttonGenFilter_Click);
-			// 
-			// saferCheckBox
-			// 
-			resources.ApplyResources(this.saferCheckBox, "saferCheckBox");
-			this.saferCheckBox.Checked = true;
-			this.saferCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.saferCheckBox.Name = "saferCheckBox";
-			this.saferCheckBox.UseVisualStyleBackColor = true;
 			// 
 			// buttonLoad
 			// 
@@ -246,7 +237,7 @@
 			this.hcFriendlyRadioButton.UseVisualStyleBackColor = true;
 			this.hcFriendlyRadioButton.CheckedChanged += new System.EventHandler(this.hcFriendlyRadioButton_CheckedChanged);
 			// 
-			// Form1
+			// MainForm
 			// 
 			resources.ApplyResources(this, "$this");
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -255,9 +246,8 @@
 			this.Controls.Add(this.scRadioButton);
 			this.Controls.Add(this.enchantsSCTab);
 			this.Controls.Add(this.buttonLoad);
-			this.Controls.Add(this.saferCheckBox);
 			this.Controls.Add(this.buttonGenFilter);
-			this.Name = "Form1";
+			this.Name = "MainForm";
 			this.Shown += new System.EventHandler(this.Form1_Shown);
 			this.enchantsSCTab.ResumeLayout(false);
 			this.tabUniquesSC.ResumeLayout(false);
@@ -279,7 +269,6 @@
 
         #endregion
         private System.Windows.Forms.Button buttonGenFilter;
-        private System.Windows.Forms.CheckBox saferCheckBox;
         private System.Windows.Forms.Button buttonLoad;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.TabControl enchantsSCTab;

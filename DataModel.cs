@@ -104,18 +104,11 @@ namespace PoE_Price_Lister
 			//HC.ClearFilterValues();
 			//SC.ClearFilterValues();
 			GetFilterData(lines);
-			foreach (UniqueBaseType baseEntry in SC.Uniques.Values) {
-				baseEntry.CalculateExpectedValue();
-			}
-			foreach (UniqueBaseType baseEntry in HC.Uniques.Values) {
-				baseEntry.CalculateExpectedValue();
-			}
 		}
 
 		private void GetJsonData(LeagueData data)
 		{
 			string leagueStr = data.IsHardcore ? "Hardcore " + league : league;
-			data.ClearJson();
 			FillJsonData(string.Format(jsonURL, "DivinationCards", leagueStr), data, DivinationJsonHandler);
 			FillJsonData(string.Format(jsonURL, "UniqueArmour", leagueStr), data, UniqueJsonHandler);
 			FillJsonData(string.Format(jsonURL, "UniqueFlask", leagueStr), data, UniqueJsonHandler);
@@ -277,24 +270,8 @@ namespace PoE_Price_Lister
 
 		private void GetFilterData(string[] lines)
 		{
-			foreach (UniqueBaseType uniq in SC.Uniques.Values) {
-				uniq.FilterValue = UniqueValue.Unknown;
-			}
-			foreach (UniqueBaseType uniq in HC.Uniques.Values) {
-				uniq.FilterValue = UniqueValue.Unknown;
-			}
-			foreach (DivinationCard div in SC.DivinationCards.Values) {
-				div.FilterValue = DivinationValue.Error;
-			}
-			foreach (DivinationCard div in HC.DivinationCards.Values) {
-				div.FilterValue = DivinationValue.Error;
-			}
-			foreach (Enchantment ench in SC.Enchantments.Values) {
-				ench.FilterValue = EnchantmentValue.Worthless;
-			}
-			foreach (Enchantment ench in HC.Enchantments.Values) {
-				ench.FilterValue = EnchantmentValue.Worthless;
-			}
+			SC.ClearFilterValues();
+			HC.ClearFilterValues();
 			int startIndex = 0;
 			int endIndex = 0;
 			if (GetLines(lines, ref startIndex, out endIndex, "# Section: Enchantments", "######"))
@@ -390,27 +367,27 @@ namespace PoE_Price_Lister
 
 				if (line.Contains("10c+"))
 					value = UniqueValue.Chaos10;
-				else if (line.Contains("2-10c"))
-					value = UniqueValue.Chaos2to10;
-				else if (line.Contains("1-2c"))
-					value = UniqueValue.Chaos1to2;
-				else if (line.Contains("<1c") || line.Contains("< 1c")) {
+				else if (line.Contains("-10c"))
+					value = UniqueValue.Chaos3to10;
+				else if (line.Contains("1-2c") || line.Contains("2-3c"))
+					value = UniqueValue.Chaos2to3;
+				else if (line.Contains("<1c") || line.Contains("< 1c") || line.Contains("Shared")) {
 					if (line.Contains("<67")) {
 						lines = lines.Skip(1);
 						continue;
 					}
 					else if (line.Contains("Boss"))
-						value = UniqueValue.ChaosLess1Boss;
+						value = UniqueValue.Shared;
 					else if (line.Contains("League"))
-						value = UniqueValue.ChaosLess1League;
+						value = UniqueValue.Shared;
 					else if (line.Contains("Shared"))
-						value = UniqueValue.ChaosLess1Shared;
+						value = UniqueValue.Shared;
 					else if (line.Contains("Crafted"))
-						value = UniqueValue.ChaosLess1Crafted;
+						value = UniqueValue.Shared;
 					else if (line.Contains("Labyrinth"))
-						value = UniqueValue.ChaosLess1Labyrinth;
+						value = UniqueValue.Shared;
 					else //Nearly Worthless
-						value = UniqueValue.ChaosLess1;
+						value = UniqueValue.Unknown;
 				}
 				else {
 					if (!line.Contains("New or Worthless"))

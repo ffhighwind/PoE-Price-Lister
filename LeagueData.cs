@@ -15,19 +15,6 @@ namespace PoE_Price_Lister
 		public readonly Dictionary<string, Enchantment> Enchantments = new Dictionary<string, Enchantment>();
 		public readonly Dictionary<string, Enchantment> EnchantmentsDescriptions = new Dictionary<string, Enchantment>();
 
-		public void ClearJson()
-		{
-			foreach (DivinationCard div in DivinationCards.Values) {
-				div.ClearJson();
-			}
-			foreach (UniqueBaseType uniq in Uniques.Values) {
-				uniq.ClearJson();
-			}
-			foreach (Enchantment ench in Enchantments.Values) {
-				ench.ClearJson();
-			}
-		}
-
 		public void ClearFilterValues()
 		{
 			foreach (DivinationCard div in DivinationCards.Values) {

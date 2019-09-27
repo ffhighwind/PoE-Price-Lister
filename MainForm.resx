@@ -117,13 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="buttonGenFilter.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="buttonGenFilter.Location" type="System.Drawing.Point, System.Drawing">
-    <value>440, 10</value>
+    <value>84, 10</value>
   </data>
   <data name="buttonGenFilter.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 26</value>
@@ -145,36 +141,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;buttonGenFilter.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="saferCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="saferCheckBox.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="saferCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>343, 16</value>
-  </data>
-  <data name="saferCheckBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 17</value>
-  </data>
-  <data name="saferCheckBox.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="saferCheckBox.Text" xml:space="preserve">
-    <value>Safer Values</value>
-  </data>
-  <data name="&gt;&gt;saferCheckBox.Name" xml:space="preserve">
-    <value>saferCheckBox</value>
-  </data>
-  <data name="&gt;&gt;saferCheckBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;saferCheckBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;saferCheckBox.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="buttonLoad.Location" type="System.Drawing.Point, System.Drawing">
@@ -207,6 +173,7 @@
   <data name="openFileDialog.Filter" xml:space="preserve">
     <value>Filter files|*.filter|Text files|*.txt|All files|*.*</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="enchantsSCTab.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
@@ -541,7 +508,7 @@
     <value>True</value>
   </data>
   <data name="scRadioButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>87, 15</value>
+    <value>230, 15</value>
   </data>
   <data name="scRadioButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 17</value>
@@ -571,7 +538,7 @@
     <value>NoControl</value>
   </data>
   <data name="hcRadioButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>141, 15</value>
+    <value>284, 15</value>
   </data>
   <data name="hcRadioButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 17</value>
@@ -601,7 +568,7 @@
     <value>NoControl</value>
   </data>
   <data name="hcFriendlyRadioButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 15</value>
+    <value>337, 15</value>
   </data>
   <data name="hcFriendlyRadioButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 17</value>
@@ -1778,7 +1745,7 @@
     <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Form1</value>
+    <value>MainForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

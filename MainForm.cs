@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace PoE_Price_Lister
 {
-	public partial class Form1 : Form
+	public partial class MainForm : Form
 	{
 		private DataModel model = new DataModel();
 		private ListViewItemComparer sorter = new ListViewItemComparer(0);
@@ -21,7 +21,7 @@ namespace PoE_Price_Lister
 		private DataTable scEnchantsTable = new DataTable();
 		private DataTable hcEnchantsTable = new DataTable();
 
-		public Form1()
+		public MainForm()
 		{
 			InitializeComponent();
 			openFileDialog.InitialDirectory = Directory.GetCurrentDirectory() + "\\Resources";
@@ -119,7 +119,7 @@ namespace PoE_Price_Lister
 				FilterType.VERY_STRICT
 			};
 			for (int i = 0; i < filterFiles.Length; i++) {
-				writer.Create(filterTypes[i], filterFiles[i], saferCheckBox.Checked);
+				writer.Create(filterTypes[i], filterFiles[i]);
 				string filterData = File.ReadAllText(filterFiles[i]);
 				filterData.Replace("SetFontSize 40", "SetFontSize 45");
 				filterData.Replace("SetFontSize 36", "SetFontSize 40");

@@ -20,13 +20,6 @@ namespace PoE_Price_Lister
 			Count = item.Count;
 		}
 
-		public void ClearJson()
-		{
-			ChaosValue = -1.0f;
-			FilterValue = DivinationValue.Error;
-			Count = 0;
-		}
-
 		public bool IsLowConfidence => Count < 3;
 
 		public string Name { get; set; }
@@ -56,14 +49,9 @@ namespace PoE_Price_Lister
 		public int SeverityLevel {
 			get {
 				DivinationValue expect = ExpectedFilterValue;
-				if (FilterValue == expect || (ChaosValue < 0.7f && expect.Value == DivinationValueEnum.NearlyWorthless))
+				if (FilterValue == expect || (FilterValue.Tier > expect.Tier && FilterValue.LowValue <= ChaosValue))
 					return 0;
-				int severity = Math.Abs(FilterValue.Tier - expect.Tier);
-				if (severity != 0) {
-					if (expect != DivinationValue.Worthless && (ChaosValue < expect.LowValue || ChaosValue > expect.HighValue))
-						severity++;
-				}
-				return severity;
+				return Math.Abs(FilterValue.Tier - expect.Tier);
 			}
 		}
 

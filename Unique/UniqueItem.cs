@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Newtonsoft.Json;
 
 namespace PoE_Price_Lister
 {
@@ -19,9 +21,9 @@ namespace PoE_Price_Lister
 		public void Load(UniqueBaseTypeCsv csvdata)
 		{
 			Name = csvdata.Name;
-			League = csvdata.League;
+			SetLeague(csvdata.League);
 			Usage = csvdata.Usage;
-			Unobtainable = csvdata.Unobtainable;
+			IsUnobtainable = csvdata.Unobtainable;
 			Source = csvdata.Source;
 		}
 
@@ -31,13 +33,6 @@ namespace PoE_Price_Lister
 			ChaosValue = jdata.ChaosValue;
 			Links = jdata.Links;
 			Count = jdata.Count;
-		}
-
-		public void Clear()
-		{
-			ChaosValue = -1.0f;
-			Count = 0;
-			Links = 0;
 		}
 
 		public bool IsLowConfidence => Count < 3;
@@ -68,30 +63,25 @@ namespace PoE_Price_Lister
 
 		public int Count { get; private set; }
 
-		public string League {
-			get => _League;
-			set {
-				_League = value;
-				if (string.IsNullOrWhiteSpace(_League))
+		private List<string> _Leagues { get; set; } = new List<string>();
+		public IReadOnlyList<string> Leagues => _Leagues;
+
+		public void SetLeague(string league)
+		{
+			_Leagues = league.Split('|').ToList();
+			foreach (string l in Leagues) {
+				if (string.IsNullOrWhiteSpace(l) || CORE_LEAGUES.Any(le => le.StartsWith(l))) {
 					IsCoreDrop = true;
-				else {
-					IsCoreDrop = false;
-					foreach (string coreLeague in CORE_LEAGUES) {
-						if (_League.Contains(coreLeague)) {
-							IsCoreDrop = true;
-							break;
-						}
-					}
+					break;
 				}
 			}
 		}
 
 		public UniqueUsage Usage { get; private set; }
 
-		public bool Unobtainable { get; private set; }
+		public bool IsUnobtainable { get; private set; }
 
 		public string Source { get; private set; } = "";
-		private string _League { get; set; } = "";
 
 		public override string ToString()
 		{
