@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Data;
 
 namespace PoE_Price_Lister
 {
@@ -13,16 +15,11 @@ namespace PoE_Price_Lister
 			LowValue = lowValue;
 		}
 
-		//public static readonly UniqueValue Error = new UniqueValue(UniqueValueEnum.Error, -1, "Error", 0.0f, float.MinValue);
-		public static readonly UniqueValue Unknown = new UniqueValue(UniqueValueEnum.Unknown, 0, "Unknown", 2.0f, -1.0f);
-		//public static readonly UniqueValue Labyrinth = new UniqueValue(UniqueValueEnum.Labyrinth, 1, "Labyrinth", 2.5f, 0.0f);
-		//public static readonly UniqueValue Boss = new UniqueValue(UniqueValueEnum.Boss, 1, "Boss", 2.5f, 0.0f);
-		//public static readonly UniqueValue League = new UniqueValue(UniqueValueEnum.League, 1, "League", 2.5f, 0.0f);
-		public static readonly UniqueValue Shared = new UniqueValue(UniqueValueEnum.Shared, 1, "Shared", 2.5f, 0.0f);
-		//public static readonly UniqueValue Crafted = new UniqueValue(UniqueValueEnum.Crafted, 1, "Crafted", 2.5f, 0.0f);
-		public static readonly UniqueValue Chaos2to3 = new UniqueValue(UniqueValueEnum.Chaos2to3, 2, "2-3c", 3.0f, 1.6f);
-		public static readonly UniqueValue Chaos3to10 = new UniqueValue(UniqueValueEnum.Chaos3to10, 3, "3-10c", 13.0f, 2.7f);
-		public static readonly UniqueValue Chaos10 = new UniqueValue(UniqueValueEnum.Chaos10, 4, "10c+", float.MaxValue, 8.0f);
+		public static readonly UniqueValue Worthless = new UniqueValue(UniqueValueEnum.Unknown, 0, "Worthless", 2.0f, -1.0f);
+		public static readonly UniqueValue Limited = new UniqueValue(UniqueValueEnum.Limited, 1, "Limited", 3.5f, 0.0f);
+		public static readonly UniqueValue Chaos3to5 = new UniqueValue(UniqueValueEnum.Chaos3to5, 2, "3-5c", 5.5f, 2.6f);
+		public static readonly UniqueValue Chaos5to15 = new UniqueValue(UniqueValueEnum.Chaos5to15, 3, "5-15c", 16.0f, 4.5f);
+		public static readonly UniqueValue Chaos15 = new UniqueValue(UniqueValueEnum.Chaos15, 4, "15c+", float.MaxValue, 12.0f);
 
 		public UniqueValueEnum Value { get; private set; }
 
@@ -42,33 +39,29 @@ namespace PoE_Price_Lister
 		{
 			switch (tier) {
 				case 0:
-					return Unknown;
+					return Worthless;
 				case 1:
-					return Shared;
+					return Limited;
 				case 2:
-					return Chaos2to3;
+					return Chaos3to5;
 				case 3:
-					return Chaos3to10;
+					return Chaos5to15;
 				case 4:
-					return Chaos10;
+					return Chaos15;
 				default:
-					if (tier < 0)
-						return Unknown;
-					return Chaos10;
+					return tier < 0 ? Worthless : Chaos15;
 			}
 		}
 
 		public static UniqueValue ValueOf(float val)
 		{
-			if (val <= 1.7f)
-				return Unknown;
-			//else if (val < 1.1f)
-			//	return ChaosLess1;
-			else if (val < 3.2f)
-				return Chaos2to3;
-			else if (val < 9.0f)
-				return Chaos3to10;
-			return Chaos10;
+			if (val <= 2.9f)
+				return Worthless;
+			else if (val < 5.2f)
+				return Chaos3to5;
+			else if (val < 14.5f)
+				return Chaos5to15;
+			return Chaos15;
 		}
 
 		public override bool Equals(object obj)
@@ -84,9 +77,9 @@ namespace PoE_Price_Lister
 			return Value.GetHashCode();
 		}
 
-		int IComparable<UniqueValue>.CompareTo(UniqueValue other)
+		public int CompareTo(UniqueValue other)
 		{
-			return Tier.CompareTo(other.Tier);
+			return Value.CompareTo(other.Value);
 		}
 	}
 }

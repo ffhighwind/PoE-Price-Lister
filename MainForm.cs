@@ -28,41 +28,45 @@ namespace PoE_Price_Lister
 
 			scUniquesTable.Columns.Add("BaseType");
 			scUniquesTable.Columns.Add("Severity", typeof(int));
-			scUniquesTable.Columns.Add("Filter");
-			scUniquesTable.Columns.Add("Expected");
+			scUniquesTable.Columns.Add("Filter", typeof(UniqueValue));
+			scUniquesTable.Columns.Add("Expected", typeof(UniqueValue));
+			scUniquesTable.Columns.Add("Min", typeof(float));
+			scUniquesTable.Columns.Add("Max", typeof(float));
 			scUniquesTable.Columns.Add("Uniques");
 
 			hcUniquesTable.Columns.Add("BaseType");
 			hcUniquesTable.Columns.Add("Severity", typeof(int));
-			hcUniquesTable.Columns.Add("Filter");
-			hcUniquesTable.Columns.Add("Expected");
+			hcUniquesTable.Columns.Add("Filter", typeof(UniqueValue));
+			hcUniquesTable.Columns.Add("Expected", typeof(UniqueValue));
+			hcUniquesTable.Columns.Add("Max", typeof(float));
+			hcUniquesTable.Columns.Add("Min", typeof(float));
 			hcUniquesTable.Columns.Add("Uniques");
 
 			scDivinationTable.Columns.Add("Divination Card");
 			scDivinationTable.Columns.Add("Severity", typeof(int));
-			scDivinationTable.Columns.Add("Filter");
-			scDivinationTable.Columns.Add("Expected");
+			scDivinationTable.Columns.Add("Filter", typeof(DivinationValue));
+			scDivinationTable.Columns.Add("Expected", typeof(DivinationValue));
 			scDivinationTable.Columns.Add("Value", typeof(float));
 
 			hcDivinationTable.Columns.Add("Divination Card");
 			hcDivinationTable.Columns.Add("Severity", typeof(int));
-			hcDivinationTable.Columns.Add("Filter");
-			hcDivinationTable.Columns.Add("Expected");
+			hcDivinationTable.Columns.Add("Filter", typeof(DivinationValue));
+			hcDivinationTable.Columns.Add("Expected", typeof(DivinationValue));
 			hcDivinationTable.Columns.Add("Value", typeof(float));
 
 			scEnchantsTable.Columns.Add("Gem");
 			scEnchantsTable.Columns.Add("Enchantment");
 			scEnchantsTable.Columns.Add("Severity", typeof(int));
-			scEnchantsTable.Columns.Add("Filter");
-			scEnchantsTable.Columns.Add("Expected");
+			scEnchantsTable.Columns.Add("Filter", typeof(EnchantmentValue));
+			scEnchantsTable.Columns.Add("Expected", typeof(EnchantmentValue));
 			scEnchantsTable.Columns.Add("Value", typeof(float));
 			scEnchantsTable.Columns.Add("Name");
 
 			hcEnchantsTable.Columns.Add("Gem");
 			hcEnchantsTable.Columns.Add("Enchantment");
 			hcEnchantsTable.Columns.Add("Severity", typeof(int));
-			hcEnchantsTable.Columns.Add("Filter");
-			hcEnchantsTable.Columns.Add("Expected");
+			hcEnchantsTable.Columns.Add("Filter", typeof(EnchantmentValue));
+			hcEnchantsTable.Columns.Add("Expected", typeof(EnchantmentValue));
 			hcEnchantsTable.Columns.Add("Value", typeof(float));
 			hcEnchantsTable.Columns.Add("Name");
 
@@ -72,6 +76,21 @@ namespace PoE_Price_Lister
 			uniquesHcDataGridView.DataSource = hcUniquesTable;
 			enchantsHcDataGridView.DataSource = hcEnchantsTable;
 			enchantsScDataGridView.DataSource = scEnchantsTable;
+
+			divinationHcDataGridView.Columns["Filter"].SortMode = DataGridViewColumnSortMode.Programmatic;
+			divinationHcDataGridView.Columns["Expected"].SortMode = DataGridViewColumnSortMode.Programmatic;
+			divinationScDataGridView.Columns["Filter"].SortMode = DataGridViewColumnSortMode.Programmatic;
+			divinationScDataGridView.Columns["Expected"].SortMode = DataGridViewColumnSortMode.Programmatic;
+
+			uniquesScDataGridView.Columns["Filter"].SortMode = DataGridViewColumnSortMode.Programmatic;
+			uniquesScDataGridView.Columns["Expected"].SortMode = DataGridViewColumnSortMode.Programmatic;
+			uniquesHcDataGridView.Columns["Filter"].SortMode = DataGridViewColumnSortMode.Programmatic;
+			uniquesHcDataGridView.Columns["Expected"].SortMode = DataGridViewColumnSortMode.Programmatic;
+
+			enchantsHcDataGridView.Columns["Filter"].SortMode = DataGridViewColumnSortMode.Programmatic;
+			enchantsHcDataGridView.Columns["Expected"].SortMode = DataGridViewColumnSortMode.Programmatic;
+			enchantsScDataGridView.Columns["Filter"].SortMode = DataGridViewColumnSortMode.Programmatic;
+			enchantsScDataGridView.Columns["Expected"].SortMode = DataGridViewColumnSortMode.Programmatic;
 
 			divinationHcDataGridView.DoubleBuffer();
 			divinationScDataGridView.DoubleBuffer();
@@ -297,11 +316,12 @@ namespace PoE_Price_Lister
 			table.Clear();
 			foreach (UniqueBaseType unique in data.Uniques.Values) {
 				DataRow row = table.NewRow();
-				UniqueValue expect = unique.ExpectedFilterValue;
 				row["BaseType"] = unique.BaseType;
 				row["Severity"] = unique.SeverityLevel;
-				row["Filter"] = unique.FilterValue.ToString();
-				row["Expected"] = expect.Value == unique.FilterValue.Value ? "" : expect.ToString();
+				row["Filter"] = unique.FilterValue;
+				row["Expected"] = unique.ExpectedFilterValue; // expect.Value == unique.FilterValue.Value ? "" : expect.ToString();
+				row["Min"] = (object) unique.MinValue ?? DBNull.Value;
+				row["Max"] = (object) unique.MaxValue ?? DBNull.Value;
 				row["Uniques"] = unique.GetString();
 				table.Rows.Add(row);
 			}
@@ -312,11 +332,10 @@ namespace PoE_Price_Lister
 			table.Clear();
 			foreach (DivinationCard divCard in data.DivinationCards.Values) {
 				DataRow row = table.NewRow();
-				DivinationValue expect = divCard.ExpectedFilterValue;
 				row["Divination Card"] = divCard.Name;
 				row["Severity"] = divCard.SeverityLevel;
-				row["Filter"] = divCard.FilterValue.ToString();
-				row["Expected"] = expect.Value == divCard.FilterValue.Value ? "" : expect.ToString();
+				row["Filter"] = divCard.FilterValue;
+				row["Expected"] = divCard.ExpectedFilterValue; // expect.Value == divCard.FilterValue.Value ? "" : expect.ToString();
 				row["Value"] = divCard.ChaosValue < 0.0f ? DBNull.Value : (object) divCard.ChaosValue;
 				table.Rows.Add(row);
 			}
@@ -327,12 +346,11 @@ namespace PoE_Price_Lister
 			table.Clear();
 			foreach (Enchantment ench in data.Enchantments.Values) {
 				DataRow row = table.NewRow();
-				EnchantmentValue expect = ench.ExpectedFilterValue;
 				row["Gem"] = ench.Gem;
 				row["Enchantment"] = ench.Description;
 				row["Severity"] = ench.SeverityLevel;
-				row["Filter"] = ench.FilterValue.ToString();
-				row["Expected"] = expect.Value == ench.FilterValue.Value ? "" : expect.ToString();
+				row["Filter"] = ench.FilterValue;
+				row["Expected"] = ench.ExpectedFilterValue; // expect.Value == ench.FilterValue.Value ? "" : expect.ToString();
 				row["Value"] = ench.ChaosValue < 0.0f ? DBNull.Value : (object) ench.ChaosValue;
 				row["Name"] = ench.Name;
 				table.Rows.Add(row);

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PoE_Price_Lister
 {
-	public class EnchantmentValue
+	public class EnchantmentValue : IComparable<EnchantmentValue>
 	{
 		protected EnchantmentValue(EnchantmentValueEnum value, string toString, float highValue, float lowValue)
 		{
@@ -73,6 +73,11 @@ namespace PoE_Price_Lister
 		public override int GetHashCode()
 		{
 			return Value.GetHashCode();
+		}
+
+		public int CompareTo(EnchantmentValue other)
+		{
+			return Value.CompareTo(other.Value);
 		}
 	}
 }

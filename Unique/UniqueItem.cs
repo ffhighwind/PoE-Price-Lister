@@ -40,18 +40,12 @@ namespace PoE_Price_Lister
 		public bool IsCoreDrop { get; private set; } = false;
 
 		public bool IsCrafted => Source == "Crafted";
-
 		public bool IsFated => Source == "Fated";
-
-		public bool IsPurchased => Source.StartsWith("Purchased");
-
-		public bool IsProphecyDrop => Source.StartsWith("Prophecy");
-
 		public bool IsLabyrinthDrop => Source == "Labyrinth";
-
-		public bool IsBossDrop => Source.Length > 0 && !IsCrafted && !IsFated && !IsProphecyDrop && !IsLabyrinthDrop;
-
-		public bool IsLimitedDrop => Source.Length > 0 && !IsCrafted && !IsFated;
+		public bool IsPurchased => Source.StartsWith("Purchased");
+		public bool IsProphecyDrop => Source.StartsWith("Prophecy");
+		public bool IsBossDrop => Source.Length > 0 && !IsCrafted && !IsFated && !IsProphecyDrop && !IsLabyrinthDrop && !IsPurchased;
+		public bool IsLimitedDrop => IsUnobtainable || (Source.Length > 0 && !IsProphecyDrop && !IsLabyrinthDrop);
 
 		public string Name { get; private set; }
 
@@ -68,7 +62,8 @@ namespace PoE_Price_Lister
 
 		public void SetLeague(string league)
 		{
-			_Leagues = league.Split('|').ToList();
+			IsCoreDrop = false;
+			_Leagues = league.Split('|').Select(x => x.Trim()).ToList();
 			foreach (string l in Leagues) {
 				if (string.IsNullOrWhiteSpace(l) || CORE_LEAGUES.Any(le => le.StartsWith(l))) {
 					IsCoreDrop = true;

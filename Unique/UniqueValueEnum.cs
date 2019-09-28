@@ -9,9 +9,9 @@
 		//Boss,
 		//League,
 		//Crafted,
-		Shared,
-		Chaos2to3,
-		Chaos3to10,
-		Chaos10
+		Limited,
+		Chaos3to5,
+		Chaos5to15,
+		Chaos15
 	}
 }

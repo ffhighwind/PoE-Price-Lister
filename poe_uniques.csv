@@ -1,4 +1,4 @@
-﻿BaseType,Name,League,Usage,Unobtainable,Source
+BaseType,Name,League,Usage,Unobtainable,Source
 Abyssal Axe,Ngamahu's Flame,,,,
 Agate Amulet,Extractor Mentis,,,,
 Agate Amulet,Shaper's Seed,,,,
@@ -759,21 +759,21 @@ Solaris Circlet,Flamesight,,,,
 Tarnished Spirit Shield,Whakatutuki o Matua,,,,Fated
 Embroidered Gloves,Vixen's Entrapment,,,,
 Blood Raiment,The Eternity Shroud,,,,Shaper
-Legion Boots,March of the Legion,,,,
-Sulphur Flask,Bottled Faith,,,,
-Jade Amulet,Hyrri's Truth,,,,
-Ornate Quiver,Maloney's Mechanism,,,,
-Ruby Ring,Circle of Anguish,Synthesis,Fractured,,
-Sapphire Ring,Circle of Fear,Synthesis,Fractured,,
-Iron Ring,Circle of Guilt,Synthesis,Fractured,,
-Amethyst Ring,Circle of Nostalgia,Synthesis,Fractured,,
-Topaz Ring,Circle of Regret,Synthesis,Fractured,,
-Savant's Robe,Garb of the Ephemeral,Synthesis,Fractured,,
-Ezomyte Spiked Shield,Perepiteia,Synthesis,Fractured,,
+Legion Boots,March of the Legion,Synthesis,,,
+Sulphur Flask,Bottled Faith,Synthesis,,,Cortex Boss
+Jade Amulet,Hyrri's Truth,Synthesis,,,
+Ornate Quiver,Maloney's Mechanism,Synthesis,,,Cortex Boss
+Ruby Ring,Circle of Anguish,Synthesis,Fractured,,Cortex Boss
+Sapphire Ring,Circle of Fear,Synthesis,Fractured,,Cortex Boss
+Iron Ring,Circle of Guilt,Synthesis,Fractured,,Cortex Boss
+Amethyst Ring,Circle of Nostalgia,Synthesis,Fractured,,Cortex Boss
+Topaz Ring,Circle of Regret,Synthesis,Fractured,,Cortex Boss
+Savant's Robe,Garb of the Ephemeral,Synthesis,Fractured,,Cortex Boss
+Ezomyte Spiked Shield,Perepiteia,Synthesis,Fractured,,Cortex Boss
 Assassin's Mitts,Storm's Gift,Synthesis,Fractured,,
-Legion Gloves,Offering to the Serpent,Synthesis,Fractured,,
+Legion Gloves,Offering to the Serpent,Synthesis,Fractured,,Cortex Boss
 Void Sceptre,Nebulis,Synthesis,Fractured,,
-Magistrate Crown,Mask of the Tribunal,Synthesis,Fractured,,
+Magistrate Crown,Mask of the Tribunal,Synthesis,Fractured,,Cortex Boss
 Clasped Mitts,Aukuna's Will,Legion,,,
 Steel Circlet,Maw of Conquest,Legion,,,
 Vaal Mask,Fractal Thoughts,Legion,,,

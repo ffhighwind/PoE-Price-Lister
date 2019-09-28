@@ -1,6 +1,8 @@
-﻿namespace PoE_Price_Lister
+﻿using System;
+
+namespace PoE_Price_Lister
 {
-	public class DivinationValue
+	public class DivinationValue : IComparable<DivinationValue>
 	{
 		protected DivinationValue(DivinationValueEnum value, string toString, float highValue, float lowValue)
 		{
@@ -75,6 +77,11 @@
 		public override int GetHashCode()
 		{
 			return Value.GetHashCode();
+		}
+
+		public int CompareTo(DivinationValue other)
+		{
+			return Value.CompareTo(other.Value);
 		}
 	}
 }

@@ -55,29 +55,12 @@ namespace PoE_Price_Lister
 			LoadEnchantsCsv();
 			GetJsonData(HC);
 			GetJsonData(SC);
-			DivinationCards = SC.DivinationCards.Keys.OrderBy(x => x).ToList();
-			GetDivinationCardConflicts();
 			string filterString = Util.ReadWebPage(FiltersUrl + filterFile);
 			if (filterString.Length == 0) {
 				MessageBox.Show("Failed to read the web URL: " + FiltersUrl + filterFile, "Error", MessageBoxButtons.OK);
 				Environment.Exit(1);
 			}
 			Load(filterString.Split('\n'));
-
-			List<string> uniquesToRemove = SC.Uniques.Keys.Where(uniq => uniq.EndsWith(" Piece") || uniq.EndsWith(" Talisman")).ToList();
-			foreach (string uniq in uniquesToRemove) {
-				SC.Uniques.Remove(uniq);
-				HC.Uniques.Remove(uniq);
-			}
-			List<Enchantment> enchantsToRemove = SC.Enchantments.Values.Where(x => x.Source == EnchantmentSource.BlightOils).ToList();
-			foreach (var ench in enchantsToRemove) {
-				SC.Enchantments.Remove(ench.Name);
-				SC.EnchantmentsDescriptions.Remove(ench.Description);
-				HC.Enchantments.Remove(ench.Name);
-				HC.EnchantmentsDescriptions.Remove(ench.Description);
-			}
-			Uniques = SC.Uniques.Keys.OrderBy(x => x).ToList();
-			Enchantments = SC.Enchantments.Keys.OrderBy(x => x).ToList();
 
 			Match m = versionRegex.Match(filterString);
 			VersionMajor = int.Parse(m.Groups[1].Value);
@@ -104,6 +87,24 @@ namespace PoE_Price_Lister
 			//HC.ClearFilterValues();
 			//SC.ClearFilterValues();
 			GetFilterData(lines);
+
+			DivinationCards = SC.DivinationCards.Keys.OrderBy(x => x).ToList();
+			GetDivinationCardConflicts();
+
+			List<string> uniquesToRemove = SC.Uniques.Keys.Where(uniq => uniq.EndsWith(" Piece") || uniq.EndsWith(" Talisman")).ToList();
+			foreach (string uniq in uniquesToRemove) {
+				SC.Uniques.Remove(uniq);
+				HC.Uniques.Remove(uniq);
+			}
+			List<Enchantment> enchantsToRemove = SC.Enchantments.Values.Where(x => x.Source == EnchantmentSource.BlightOils).ToList();
+			foreach (Enchantment ench in enchantsToRemove) {
+				SC.Enchantments.Remove(ench.Name);
+				SC.EnchantmentsDescriptions.Remove(ench.Description);
+				HC.Enchantments.Remove(ench.Name);
+				HC.EnchantmentsDescriptions.Remove(ench.Description);
+			}
+			Uniques = SC.Uniques.Keys.OrderBy(x => x).ToList();
+			Enchantments = SC.Enchantments.Keys.OrderBy(x => x).ToList();
 		}
 
 		private void GetJsonData(LeagueData data)
@@ -237,8 +238,8 @@ namespace PoE_Price_Lister
 			for (int i = 0; i < DivinationCards.Count; i++) {
 				string divBaseTy = DivinationCards[i].ToLower();
 				for (int j = i + 1; j < DivinationCards.Count; j++) {
-					string divBaseTy2 = DivinationCards[j].ToLower();
-					if (divBaseTy.Contains(divBaseTy2) || divBaseTy2.Contains(divBaseTy))
+					if (DivinationCards[i].IndexOf(DivinationCards[j], StringComparison.OrdinalIgnoreCase) >= 0
+							|| DivinationCards[j].IndexOf(DivinationCards[i], StringComparison.OrdinalIgnoreCase) >= 0)
 						conflictsList.Add(DivinationCards[j]);
 				}
 				if (conflictsList.Count > 0) {
@@ -365,33 +366,16 @@ namespace PoE_Price_Lister
 				if (!line.Contains("# Uniques -"))
 					continue;
 
-				if (line.Contains("10c+"))
-					value = UniqueValue.Chaos10;
-				else if (line.Contains("-10c"))
-					value = UniqueValue.Chaos3to10;
-				else if (line.Contains("1-2c") || line.Contains("2-3c"))
-					value = UniqueValue.Chaos2to3;
-				else if (line.Contains("<1c") || line.Contains("< 1c") || line.Contains("Shared")) {
-					if (line.Contains("<67")) {
-						lines = lines.Skip(1);
-						continue;
-					}
-					else if (line.Contains("Boss"))
-						value = UniqueValue.Shared;
-					else if (line.Contains("League"))
-						value = UniqueValue.Shared;
-					else if (line.Contains("Shared"))
-						value = UniqueValue.Shared;
-					else if (line.Contains("Crafted"))
-						value = UniqueValue.Shared;
-					else if (line.Contains("Labyrinth"))
-						value = UniqueValue.Shared;
-					else //Nearly Worthless
-						value = UniqueValue.Unknown;
-				}
+				if (line.Contains("15c+"))
+					value = UniqueValue.Chaos15;
+				else if (line.Contains("5-15c"))
+					value = UniqueValue.Chaos5to15;
+				else if (line.Contains("3-5c"))
+					value = UniqueValue.Chaos3to5;
+				else if (line.Contains("Limited"))
+					value = UniqueValue.Limited;
 				else {
-					if (!line.Contains("New or Worthless"))
-						MessageBox.Show("Unexpected Unique input: " + line, "Error", MessageBoxButtons.OK);
+					//(line.Contains("<67")
 					lines = lines.Skip(1);
 					continue;
 				}
@@ -455,7 +439,6 @@ namespace PoE_Price_Lister
 
 		private void FillFilterDivinationData(LeagueData data, IEnumerable<string> baseTypes, DivinationValue value)
 		{
-
 			foreach (string baseTy in baseTypes) {
 				if (!data.DivinationCards.TryGetValue(baseTy, out DivinationCard divCard)) {
 					divCard = new DivinationCard(baseTy);

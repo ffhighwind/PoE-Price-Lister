@@ -177,18 +177,6 @@
   <data name="enchantsSCTab.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="uniquesScDataGridView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="uniquesScDataGridView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="uniquesScDataGridView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>534, 266</value>
-  </data>
-  <data name="uniquesScDataGridView.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
   <data name="&gt;&gt;uniquesScDataGridView.Name" xml:space="preserve">
     <value>uniquesScDataGridView</value>
   </data>
@@ -228,18 +216,6 @@
   <data name="&gt;&gt;tabUniquesSC.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="divinationScDataGridView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="divinationScDataGridView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="divinationScDataGridView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>534, 266</value>
-  </data>
-  <data name="divinationScDataGridView.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
   <data name="&gt;&gt;divinationScDataGridView.Name" xml:space="preserve">
     <value>divinationScDataGridView</value>
   </data>
@@ -277,18 +253,6 @@
     <value>enchantsSCTab</value>
   </data>
   <data name="&gt;&gt;tabDivinationSC.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="enchantsScDataGridView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="enchantsScDataGridView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="enchantsScDataGridView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>534, 266</value>
-  </data>
-  <data name="enchantsScDataGridView.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="&gt;&gt;enchantsScDataGridView.Name" xml:space="preserve">
@@ -330,18 +294,6 @@
   <data name="&gt;&gt;tabEnchantsSC.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="uniquesHcDataGridView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="uniquesHcDataGridView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="uniquesHcDataGridView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>534, 266</value>
-  </data>
-  <data name="uniquesHcDataGridView.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
   <data name="&gt;&gt;uniquesHcDataGridView.Name" xml:space="preserve">
     <value>uniquesHcDataGridView</value>
   </data>
@@ -380,18 +332,6 @@
   </data>
   <data name="&gt;&gt;tabUniquesHC.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="divinationHcDataGridView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="divinationHcDataGridView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="divinationHcDataGridView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>534, 266</value>
-  </data>
-  <data name="divinationHcDataGridView.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
   </data>
   <data name="&gt;&gt;divinationHcDataGridView.Name" xml:space="preserve">
     <value>divinationHcDataGridView</value>
@@ -503,6 +443,126 @@
   </data>
   <data name="&gt;&gt;enchantsSCTab.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="uniquesScDataGridView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="uniquesScDataGridView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="uniquesScDataGridView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>534, 266</value>
+  </data>
+  <data name="uniquesScDataGridView.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;uniquesScDataGridView.Name" xml:space="preserve">
+    <value>uniquesScDataGridView</value>
+  </data>
+  <data name="&gt;&gt;uniquesScDataGridView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;uniquesScDataGridView.Parent" xml:space="preserve">
+    <value>tabUniquesSC</value>
+  </data>
+  <data name="&gt;&gt;uniquesScDataGridView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="divinationScDataGridView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="divinationScDataGridView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="divinationScDataGridView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>534, 266</value>
+  </data>
+  <data name="divinationScDataGridView.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;divinationScDataGridView.Name" xml:space="preserve">
+    <value>divinationScDataGridView</value>
+  </data>
+  <data name="&gt;&gt;divinationScDataGridView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;divinationScDataGridView.Parent" xml:space="preserve">
+    <value>tabDivinationSC</value>
+  </data>
+  <data name="&gt;&gt;divinationScDataGridView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="enchantsScDataGridView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="enchantsScDataGridView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="enchantsScDataGridView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>534, 266</value>
+  </data>
+  <data name="enchantsScDataGridView.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;enchantsScDataGridView.Name" xml:space="preserve">
+    <value>enchantsScDataGridView</value>
+  </data>
+  <data name="&gt;&gt;enchantsScDataGridView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;enchantsScDataGridView.Parent" xml:space="preserve">
+    <value>tabEnchantsSC</value>
+  </data>
+  <data name="&gt;&gt;enchantsScDataGridView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="uniquesHcDataGridView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="uniquesHcDataGridView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="uniquesHcDataGridView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>534, 266</value>
+  </data>
+  <data name="uniquesHcDataGridView.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;uniquesHcDataGridView.Name" xml:space="preserve">
+    <value>uniquesHcDataGridView</value>
+  </data>
+  <data name="&gt;&gt;uniquesHcDataGridView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;uniquesHcDataGridView.Parent" xml:space="preserve">
+    <value>tabUniquesHC</value>
+  </data>
+  <data name="&gt;&gt;uniquesHcDataGridView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="divinationHcDataGridView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="divinationHcDataGridView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="divinationHcDataGridView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>534, 266</value>
+  </data>
+  <data name="divinationHcDataGridView.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;divinationHcDataGridView.Name" xml:space="preserve">
+    <value>divinationHcDataGridView</value>
+  </data>
+  <data name="&gt;&gt;divinationHcDataGridView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;divinationHcDataGridView.Parent" xml:space="preserve">
+    <value>tabDivinationHC</value>
+  </data>
+  <data name="&gt;&gt;divinationHcDataGridView.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="scRadioButton.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>

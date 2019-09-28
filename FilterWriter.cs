@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace PoE_Price_Lister
@@ -14,44 +15,49 @@ namespace PoE_Price_Lister
 # Prices attained from poe.ninja.
 # Future values will fluctuate based on league challenges and the meta.";
 
-		private const string header10c =
+		private const string header15c =
 @"#------#
-# 10c+ #
+# 15c+ #
 #------#
 # White background
 # High value. Do not miss these.";
 
-		private const string header3to10c =
+		private const string header5to15c =
 @"#-------#
-# 2-10c #
+# 5-15c #
 #-------#
 # White border
 # Usually worth selling. Not extremely rare or valuable.
-# May share a BaseType with an extremely valuable item, League Specific, or boss drop only.";
+# May share a BaseType with an extremely valuable item, League specific, or boss drop only.";
 
-		private const string header2c =
+		private const string header3c =
 @"#------#
-# 1-2c #
+# 3-5c #
 #------#
 # Yellow border
-# Sellable but rarely worth much.";
+# Sellable but rarely worth much.
+# May share a BaseType with an extremely valuable item, League specific, or boss drop only.";
 
-		private const string headerLess1c =
+		private const string headerLess3c =
 @"#-----#
-# <1c #
+# <3c #
 #-----#
 # Orange border
-# Usually < 1c or nearly worthless.
+# Usually < 3c or nearly worthless.
+";
+
+		private const string headerLimited =
+@"# Limited drop. May share a BaseType with an extremely valuable item, League specific, or boss drop only.
 ";
 
 		private const string lessLvl67 =
-@"Show  # Uniques - <1c - ilvl <67
+@"Show  # Uniques - <3c - ilvl <67
 	Rarity = Unique
 	ItemLevel < 67
 	SetFontSize 40
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
-	SetBorderColor 180 90 45 # Unique (<1c)";
+	SetBorderColor 180 90 45 # Unique (<3c)";
 
 		private const string styleUniqueSound =
 @"	PlayAlertSound 4 200 # Mid Value
@@ -61,49 +67,46 @@ namespace PoE_Price_Lister
 
 		private const string loreweaveStr =
 @"# Loreweave (60x rings)
-Show  # Uniques - 1-2c
+Show  # Uniques - <3c - Unique Rings
 	Rarity = Unique
 	Class Rings
 	SetFontSize 40
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
-	SetBorderColor 255 255 0 # Unique (1-2c)
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Brown Square
-	PlayEffect Brown";
+	SetBorderColor 180 90 45 # Unique (<3c)";
 
-		private const string style10c =
+		private const string style15c =
 @"	SetFontSize 45
-	SetTextColor 255 128 64 # Unique (10c+)
-	SetBackgroundColor 255 255 255 255 # Unique (10c+)
-	SetBorderColor 255 128 64 # Unique (10c+)
+	SetTextColor 255 128 64 # Unique (15c+)
+	SetBackgroundColor 255 255 255 255 # Unique (15c+)
+	SetBorderColor 255 128 64 # Unique (15c+)
 	PlayAlertSound 1 200 # High Value
 	MinimapIcon 0 Red Square
 	PlayEffect Red";
 
-		private const string style3to10c =
+		private const string style5to15c =
 @"	SetFontSize 45
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
-	SetBorderColor 255 255 255 # Unique (2-10c)
+	SetBorderColor 255 255 255 # Unique (5-15c)
 	PlayAlertSound 1 200 # High Value
 	MinimapIcon 0 Brown Square
 	PlayEffect Brown";
 
-		private const string style2c =
+		private const string style3c =
 @"	SetFontSize 40
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
-	SetBorderColor 255 255 0 # Unique (1-2c)
+	SetBorderColor 255 255 0 # Unique (3-5c)
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Brown Square
 	PlayEffect Brown";
 
-		private const string styleShared =
+		private const string styleLimited =
 @"	SetFontSize 40
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
-	SetBorderColor 180 90 45 # Unique (<1c)";
+	SetBorderColor 180 90 45 # Unique (<3c)";
 
 		private const string uniqueNewOrWorthless =
 @"  # Uniques - New or Worthless
@@ -200,7 +203,10 @@ Show  # Uniques - 1-2c
 			if (filterData.Length == 0) {
 				filterData = Util.ReadWebPage(DataModel.FiltersUrl + filterFile, "text/plain");
 			}
-			using (Writer = new StreamWriter(filterFile, false, Encoding.UTF8)) {
+
+			string str;
+			using (var memoryStream = new MemoryStream())
+			using (Writer = new StreamWriter(memoryStream, Encoding.UTF8)) {
 				string hashes = @"############################################";
 				int headerEnd = filterData.IndexOf("#-----------");
 				int enchantsStart = filterData.IndexOf("# Section: Enchantments", headerEnd);
@@ -247,19 +253,24 @@ Show  # Uniques - 1-2c
 				Writer.Write(GenerateDivinationString(type));
 				Writer.WriteLine();
 				Writer.Write(filterData.Substring(divEnd));
+				Writer.Flush();
+				str = Encoding.UTF8.GetString(memoryStream.ToArray());
+			}
+			using (Writer = new StreamWriter(filterFile, false, Encoding.UTF8)) {
+				Writer.Write(Regex.Replace(str, "(?<!\r)\n", "\r\n"));
 			}
 			Writer = null;
 		}
 
 		private string GenerateUniquesString(FilterType type)
 		{
-			List<string> list10c = new List<string>();
-			List<string> list3to10c = new List<string>();
-			List<string> list2to3c = new List<string>();
-			List<string> listShared = new List<string>();
+			List<string> list15c = new List<string>();
+			List<string> list5to15c = new List<string>();
+			List<string> list3to5c = new List<string>();
+			List<string> listLimited = new List<string>();
 			StringBuilder sb = new StringBuilder();
 
-			foreach (KeyValuePair<string, UniqueBaseType> uniq in UniquesA) {
+			foreach (var uniq in UniquesA) {
 				UniqueBaseType entry = uniq.Value;
 				string baseTy = uniq.Key;
 				UniqueValue expectedVal = entry.ExpectedFilterValue;
@@ -274,24 +285,24 @@ Show  # Uniques - 1-2c
 
 				if (entry.SeverityLevel == 0)
 					expectedVal = filterVal;
-				//if is only core drop and SC <2c and HC 7c+ then Shared
+				//if is only core drop and SC <3c and HC 15c+ then Limited
 				if (expectedVal.Tier == 0 && expectedValHC.Tier > 0) {
-					if (expectedValHC.Tier > 3 || !entry.Items.All(x => x.IsCoreDrop))
-						expectedVal = UniqueValue.Shared;
+					if (expectedValHC.Tier > 2 || !entry.Items.All(x => x.IsCoreDrop))
+						expectedVal = UniqueValue.Limited;
 				}
 
 				switch (expectedVal.Value) {
-					case UniqueValueEnum.Chaos10:
-						list10c.Add(outputBaseTy);
+					case UniqueValueEnum.Chaos15:
+						list15c.Add(outputBaseTy);
 						break;
-					case UniqueValueEnum.Chaos3to10:
-						list3to10c.Add(outputBaseTy);
+					case UniqueValueEnum.Chaos5to15:
+						list5to15c.Add(outputBaseTy);
 						break;
-					case UniqueValueEnum.Chaos2to3:
-						list2to3c.Add(outputBaseTy);
+					case UniqueValueEnum.Chaos3to5:
+						list3to5c.Add(outputBaseTy);
 						break;
-					case UniqueValueEnum.Shared:
-						listShared.Add(outputBaseTy);
+					case UniqueValueEnum.Limited:
+						listLimited.Add(outputBaseTy);
 						break;
 					default:
 						break;
@@ -299,20 +310,20 @@ Show  # Uniques - 1-2c
 			}
 
 			sb.AppendLine(uniqueWarning).AppendLine();
-			if (list10c.Count > 0) {
-				sb.AppendLine(header10c).AppendLine();
-				sb.AppendLine("Show  # Uniques - 10c+").AppendLine("\tRarity = Unique").Append("\tBaseType ").AppendLine(ItemList(list10c)).AppendLine(style10c).AppendLine();
+			if (list15c.Count > 0) {
+				sb.AppendLine(header15c).AppendLine();
+				sb.AppendLine("Show  # Uniques - 15c+").AppendLine("\tRarity = Unique").Append("\tBaseType ").AppendLine(ItemList(list15c)).AppendLine(style15c).AppendLine();
 			}
-			if (list3to10c.Count > 0) {
-				sb.AppendLine(header3to10c).AppendLine();
-				sb.AppendLine("Show  # Uniques - 3-10c").AppendLine("\tRarity = Unique").Append("\tBaseType ").AppendLine(ItemList(list3to10c)).AppendLine(style3to10c).AppendLine();
+			if (list5to15c.Count > 0) {
+				sb.AppendLine(header5to15c).AppendLine();
+				sb.AppendLine("Show  # Uniques - 5-15c").AppendLine("\tRarity = Unique").Append("\tBaseType ").AppendLine(ItemList(list5to15c)).AppendLine(style5to15c).AppendLine();
 			}
-			sb.AppendLine(header2c).AppendLine();
-			if (list2to3c.Count > 0) {
-				sb.AppendLine("Show  # Uniques - 2-3c").AppendLine("\tRarity = Unique").Append("\tBaseType ").AppendLine(ItemList(list2to3c)).AppendLine(style2c).AppendLine();
+			sb.AppendLine(header3c).AppendLine();
+			if (list3to5c.Count > 0) {
+				sb.AppendLine("Show  # Uniques - 3-5c").AppendLine("\tRarity = Unique").Append("\tBaseType ").AppendLine(ItemList(list3to5c)).AppendLine(style3c).AppendLine();
 			}
 			sb.AppendLine(loreweaveStr).AppendLine();
-			sb.AppendLine(headerLess1c).AppendLine();
+			sb.AppendLine(headerLess3c).AppendLine();
 
 			string showHide = type == FilterType.VERY_STRICT ? "Hide" : "Show";
 			string vsSound = type == FilterType.VERY_STRICT ? styleUniqueSound : "";
@@ -321,86 +332,14 @@ Show  # Uniques - 1-2c
 			if (type != FilterType.VERY_STRICT) {
 				sb.AppendLine(lessLvl67).AppendLine();
 			}
-			if (listShared.Count > 0) {
-				sb.AppendLine("Show  # Uniques - Shared").AppendLine("\tRarity = Unique").Append("\tBaseType ").AppendLine(ItemList(listShared)).AppendLine(styleShared).Append(vsSound).AppendLine();
+			if (listLimited.Count > 0) {
+				sb.AppendLine(headerLimited);
+				sb.AppendLine("Show  # Uniques - Limited").AppendLine("\tRarity = Unique").Append("\tBaseType ").AppendLine(ItemList(listLimited)).AppendLine(styleLimited).Append(vsSound).AppendLine();
 			}
 			sb.AppendLine(showHide + uniqueNewOrWorthless).Append(sSound).AppendLine();
 
 			return sb.ToString();
 		}
-
-		private readonly Dictionary<string, DivinationValue> DivinationCardsValueMap = new Dictionary<string, DivinationValue>()
-		{
-			// < 0.2c
-			{ "Prosperity", DivinationValue.Worthless},
-			{ "Struck by Lightning", DivinationValue.Worthless },
-			{ "The Inoculated", DivinationValue.Worthless },
-			{ "The Metalsmith's Gift", DivinationValue.Worthless },
-			{ "The Surgeon", DivinationValue.Worthless },
-			{ "Lantador's Lost Love", DivinationValue.Worthless },
-			{ "The Carrion Crow", DivinationValue.Worthless },
-			{ "The Lover", DivinationValue.Worthless },
-			{ "The Rabid Rhoa", DivinationValue.Worthless },
-			{ "The Warden", DivinationValue.Worthless },
-			{ "The Gambler", DivinationValue.Worthless },
-			{ "Turn the Other Cheek", DivinationValue.Worthless },
-			{ "Thunderous Skies", DivinationValue.Worthless },
-
-			// 0.2c+
-			{ "Destined to Crumble", DivinationValue.NearlyWorthless },
-			{ "The Lord in Black", DivinationValue.NearlyWorthless },
-			{ "Rain of Chaos", DivinationValue.NearlyWorthless },
-			{ "Her Mask", DivinationValue.NearlyWorthless },
-			{ "Loyalty", DivinationValue.NearlyWorthless },
-			{ "The Gemcutter", DivinationValue.NearlyWorthless },
-			{ "The Scholar", DivinationValue.NearlyWorthless},
-			{ "The Survivalist", DivinationValue.NearlyWorthless},
-			{ "Three Voices", DivinationValue.NearlyWorthless},
-			{ "Cartographer's Delight", DivinationValue.NearlyWorthless },
-			{ "The Puzzle", DivinationValue.NearlyWorthless },
-			{ "The Hermit", DivinationValue.NearlyWorthless },
-			{ "Boon of Justice", DivinationValue.NearlyWorthless },
-			{ "The Mountain", DivinationValue.NearlyWorthless },
-			{ "Shard of Fate", DivinationValue.NearlyWorthless },
-			{ "The Doppelganger", DivinationValue.NearlyWorthless },
-
-			// 0.4c+
-			{ "The Catalyst", DivinationValue.ChaosLess1 },
-			{ "Boundless Realms", DivinationValue.ChaosLess1 },
-			{ "Coveted Possession", DivinationValue.ChaosLess1 },
-			{ "Emperor's Luck", DivinationValue.ChaosLess1 },
-			{ "Three Faces in the Dark", DivinationValue.ChaosLess1 },
-			{ "The Master Artisan", DivinationValue.ChaosLess1 },
-
-			// 1.1c+
-			{ "No Traces", DivinationValue.Chaos1to10 },
-			{ "The Fool", DivinationValue.Chaos1to10 },
-			{ "The Heroic Shot", DivinationValue.Chaos1to10 },
-			{ "The Inventor", DivinationValue.Chaos1to10 },
-			{ "The Wrath", DivinationValue.Chaos1to10 },
-			{ "Lucky Connections", DivinationValue.Chaos1to10 },
-			{ "The Innocent", DivinationValue.Chaos1to10 },
-			{ "Vinia's Token", DivinationValue.Chaos1to10 },
-			{ "The Cartographer", DivinationValue.Chaos1to10 },
-			{ "Chaotic Disposition", DivinationValue.Chaos1to10 },
-			{ "Demigod's Wager", DivinationValue.Chaos1to10 },
-
-			// 10c+
-			{ "Wealth and Power", DivinationValue.Chaos10 },
-			{ "Alluring Bounty", DivinationValue.Chaos10 },
-			{ "The Dragon's Heart",DivinationValue.Chaos10 },
-			{ "House of Mirrors",DivinationValue.Chaos10 },
-			{ "The Doctor", DivinationValue.Chaos10 },
-			{ "The Demon", DivinationValue.Chaos10 },
-			{ "The Fiend", DivinationValue.Chaos10 },
-			{ "The Immortal", DivinationValue.Chaos10 },
-			{ "The Nurse", DivinationValue.Chaos10 },
-			{ "The Iron Bard", DivinationValue.Chaos10 },
-			{ "Seven Years Bad Luck", DivinationValue.Chaos10 },
-			{ "The Saint's Treasure", DivinationValue.Chaos10 },
-			{ "The Eye of Terror", DivinationValue.Chaos10 },
-		};
-
 
 		private string GenerateDivinationString(FilterType type)
 		{
@@ -418,8 +357,8 @@ Show  # Uniques - 1-2c
 
 			foreach (string divCard in DivinationCards) {
 				DivinationCard data = DivinationA[divCard];
-				if (!DivinationCardsValueMap.TryGetValue(divCard, out DivinationValue expectedVal)) {
-					expectedVal = data.ExpectedFilterValue;
+				DivinationValue expectedVal = data.ExpectedFilterValue;
+				if (!data.HasHardCodedValue) {
 					DivinationValue filterVal = data.FilterValue;
 					DivinationCard dataB = DivinationB[divCard];
 					if (data.SeverityLevel == 0)
@@ -430,10 +369,12 @@ Show  # Uniques - 1-2c
 					}
 				}
 				else if (data.ChaosValue - 0.5f > expectedVal.HighValue) {
-					throw new InvalidOperationException(divCard + " is more valuable than expected"); // card is somehow valuable?
+					//MessageBox.Show(divCard + " is more valuable than expected");
+					//throw new InvalidOperationException(divCard + " is more valuable than expected"); // card is somehow valuable?
 				}
 
 				switch (expectedVal.Value) {
+					case DivinationValueEnum.Error:
 					case DivinationValueEnum.Chaos10:
 						list10c.Add(divCard);
 						break;
@@ -464,7 +405,7 @@ Show  # Uniques - 1-2c
 							listWorthless.Add(divCard);
 						break;
 					default:
-						break;
+						throw new InvalidOperationException("Unknown Divination Value: " + expectedVal.Value);
 				}
 			}
 

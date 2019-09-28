@@ -21,7 +21,7 @@ namespace PoE_Price_Lister
 				div.FilterValue = DivinationValue.Error;
 			}
 			foreach (UniqueBaseType uniq in Uniques.Values) {
-				uniq.FilterValue = UniqueValue.Unknown;
+				uniq.FilterValue = UniqueValue.Worthless;
 			}
 			foreach (Enchantment ench in Enchantments.Values) {
 				ench.FilterValue = EnchantmentValue.Worthless;
