@@ -13,11 +13,11 @@ namespace PoE_Price_Lister
 		}
 
 		public static readonly DivinationValue Error = new DivinationValue(DivinationValueEnum.Error, "Error", 0.0f, float.MinValue);
-		public static readonly DivinationValue Chaos10 = new DivinationValue(DivinationValueEnum.Chaos10, "10c+", float.MaxValue, 6.0f);
-		public static readonly DivinationValue Chaos1to10 = new DivinationValue(DivinationValueEnum.Chaos1to10, "1c+", 13.0f, 0.9f);
-		public static readonly DivinationValue ChaosLess1 = new DivinationValue(DivinationValueEnum.ChaosLess1, "<1c", 1.5f, 0.9f);
-		public static readonly DivinationValue NearlyWorthless = new DivinationValue(DivinationValueEnum.NearlyWorthless, "Nearly Worthless", 0.9f, 0.2f);
-		public static readonly DivinationValue Worthless = new DivinationValue(DivinationValueEnum.Worthless, "Worthless", 0.66f, -1.0f);
+		public static readonly DivinationValue Chaos10 = new DivinationValue(DivinationValueEnum.Chaos10, "10c+", float.MaxValue, 8.5f);
+		public static readonly DivinationValue Chaos2to10 = new DivinationValue(DivinationValueEnum.Chaos2to10, "2-10c", 13.0f, 1.7f);
+		public static readonly DivinationValue ChaosLess2 = new DivinationValue(DivinationValueEnum.ChaosLess2, "<2c", 2.5f, 0.9f);
+		public static readonly DivinationValue NearlyWorthless = new DivinationValue(DivinationValueEnum.NearlyWorthless, "Nearly Worthless", 0.995f, 0.0f);
+		public static readonly DivinationValue Worthless = new DivinationValue(DivinationValueEnum.Worthless, "Worthless", 0.85f, -1.0f);
 
 		public DivinationValueEnum Value { get; private set; }
 
@@ -41,10 +41,10 @@ namespace PoE_Price_Lister
 					return Worthless;
 				case (int) DivinationValueEnum.NearlyWorthless: // 1
 					return NearlyWorthless;
-				case (int) DivinationValueEnum.ChaosLess1: // 2
-					return ChaosLess1;
-				case (int) DivinationValueEnum.Chaos1to10: // 3
-					return Chaos1to10;
+				case (int) DivinationValueEnum.ChaosLess2: // 2
+					return ChaosLess2;
+				case (int) DivinationValueEnum.Chaos2to10: // 3
+					return Chaos2to10;
 				case (int) DivinationValueEnum.Chaos10: // 4
 					return Chaos10;
 				default:
@@ -56,14 +56,14 @@ namespace PoE_Price_Lister
 
 		public static DivinationValue ValueOf(float val)
 		{
-			if (val < 0.4f)
-				return Worthless;
-			else if (val < 0.65f)
+			//if (val < 0.4f)
+			//	return Worthless;
+			if (val <= 0.80f)
 				return NearlyWorthless;
-			else if (val < 1.01f)
-				return ChaosLess1;
-			else if (val < 9.0f)
-				return Chaos1to10;
+			else if (val < 2.1f)
+				return ChaosLess2;
+			else if (val < 9.5f)
+				return Chaos2to10;
 			return Chaos10;
 		}
 

@@ -44,6 +44,12 @@ namespace PoE_Price_Lister
 			if (!Items.Any()) {
 				return FilterValue;
 			}
+			if(Items.Count == 1) {
+				float val = Items[0].ChaosValue;
+				if (val < 0.01 || Items[0].IsLowConfidence || (val >= FilterValue.LowValue && val <= FilterValue.HighValue))
+					return FilterValue;
+				return UniqueValue.ValueOf(val);
+			}
 			bool isUnobtainable = true;
 			float minVal = float.MaxValue;
 			float maxVal = float.MinValue;
@@ -89,11 +95,11 @@ namespace PoE_Price_Lister
 							minVal = filterVal;
 							maxVal = filterVal;
 						}
-						if (uniq.ChaosValue > 40.0f)
+						if (uniq.ChaosValue >= 40.0f)
 							minTier = Math.Max(minTier, 3);
-						if (uniq.ChaosValue > 20.0f)
+						if (uniq.ChaosValue >= 20.0f)
 							minTier = Math.Max(minTier, 2);
-						else if (uniq.ChaosValue > 10.0f)
+						else if (uniq.ChaosValue >= 7.0f)
 							minTier = Math.Max(minTier, 1);
 						continue;
 					}
@@ -105,9 +111,9 @@ namespace PoE_Price_Lister
 				else {
 					minValLimited = Math.Min(minValLimited, uniq.ChaosValue);
 					maxValLimited = Math.Max(maxValLimited, uniq.ChaosValue);
-					if (uniq.ChaosValue > 15.0f)
+					if (uniq.ChaosValue >= 15.0f)
 						minTier = Math.Max(minTier, 2);
-					if (uniq.ChaosValue > 5.0f)
+					if (uniq.ChaosValue >= 5.0f)
 						minTier = Math.Max(minTier, 1);
 				}
 			}
@@ -133,13 +139,13 @@ namespace PoE_Price_Lister
 					return FilterValue;
 			}
 
-			if (minVal > 14.0f)
+			if (minVal >= 14.0f)
 				return UniqueValue.Chaos15;
-			if (minVal > 4.7f || maxVal > 100.0f || minTier == 3)
+			if (minVal >= 4.7f || maxVal >= 100.0f || minTier == 3)
 				return UniqueValue.Chaos5to15;
-			if (minVal > 2.9f || maxVal > 15.0f || minTier == 2)
+			if (minVal >= 2.95f || maxVal >= 15.0f || minTier == 2)
 				return UniqueValue.Chaos3to5;
-			if (maxVal > 7.0f || minTier == 1)
+			if (maxVal >= 7.0f || minTier == 1)
 				return UniqueValue.Limited;
 			return UniqueValue.Worthless;
 		}

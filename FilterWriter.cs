@@ -125,21 +125,21 @@ Show  # Uniques - <3c - Unique Rings
 	MinimapIcon 0 Red Triangle 
 	PlayEffect Red";
 
-		private const string styleDiv1c =
+		private const string styleDiv2c =
 @"	SetFontSize 45 
-	SetTextColor 255 255 255 # Divination Card (1c+) 
-	SetBackgroundColor 255 0 175 255 # Divination Card (1c+) 
-	SetBorderColor 255 255 255 # Divination Card (1c+) 
-	PlayAlertSound 5 200 # Divination Card (1c+) 
+	SetTextColor 255 255 255 # Divination Card (2-10c) 
+	SetBackgroundColor 255 0 175 255 # Divination Card (2-10c) 
+	SetBorderColor 255 255 255 # Divination Card (2-10c) 
+	PlayAlertSound 5 200 # Divination Card (2-10c) 
 	MinimapIcon 0 Brown Triangle 
 	PlayEffect Brown";
 
-		private const string styleDivLess1c =
+		private const string styleDivLess2c =
 @"	SetFontSize 40 
-	SetTextColor 0 0 0 # Divination Card (<1c) 
-	SetBackgroundColor 255 0 175 230 # Divination Card (<1c) 
-	SetBorderColor 150 30 100 # Divination Card (<1c) 
-	PlayAlertSound 5 100 # Divination Card (Low) 
+	SetTextColor 0 0 0 # Divination Card (<2c) 
+	SetBackgroundColor 255 0 175 230 # Divination Card (<2c) 
+	SetBorderColor 150 30 100 # Divination Card (<2c) 
+	PlayAlertSound 5 100 # Divination Card (<2c) 
 	PlayEffect Brown";
 
 		private const string styleDivNearlyWorthless =
@@ -160,10 +160,10 @@ Show  # Uniques - <3c - Unique Rings
 @"Show  # Divination Cards - New (Error) 
 	Class Divination 
 	SetFontSize 40 
-	SetTextColor 255 255 255 # Divination Card (1c+) 
-	SetBackgroundColor 255 0 175 255 # Divination Card (1c+) 
+	SetTextColor 255 255 255 # Divination Card (2c+) 
+	SetBackgroundColor 255 0 175 255 # Divination Card (2c+) 
 	SetBorderColor 0 255 0 # Error 
-	PlayAlertSound 5 200 # Divination Card (1c+) 
+	PlayAlertSound 5 200 # Divination Card (2c+) 
 	MinimapIcon 0 White Triangle 
 	PlayEffect White";
 
@@ -343,14 +343,14 @@ Show  # Uniques - <3c - Unique Rings
 
 		private string GenerateDivinationString(FilterType type)
 		{
-			List<string> list1to10cConflict = new List<string>();
-			List<string> listLess1cConflict = new List<string>();
+			List<string> list2to10cConflict = new List<string>();
+			List<string> listLess2cConflict = new List<string>();
 			List<string> listNearlyWorthlessConflict = new List<string>();
 			List<string> listWorthlessConflict = new List<string>();
 
 			List<string> list10c = new List<string>();
-			List<string> list1to10c = new List<string>();
-			List<string> listLess1c = new List<string>();
+			List<string> list2to10c = new List<string>();
+			List<string> listLess2c = new List<string>();
 			List<string> listNearlyWorthless = new List<string>();
 			List<string> listWorthless = new List<string>();
 			StringBuilder sb = new StringBuilder();
@@ -378,27 +378,27 @@ Show  # Uniques - <3c - Unique Rings
 					case DivinationValueEnum.Chaos10:
 						list10c.Add(divCard);
 						break;
-					case DivinationValueEnum.Chaos1to10:
+					case DivinationValueEnum.Chaos2to10:
 						if (list10c.Exists(str => divCard.Contains(str)))
-							list1to10cConflict.Add(divCard);
+							list2to10cConflict.Add(divCard);
 						else
-							list1to10c.Add(divCard);
+							list2to10c.Add(divCard);
 						break;
-					case DivinationValueEnum.ChaosLess1:
-						if (list10c.Exists(str => divCard.Contains(str)) || list1to10c.Exists(str => divCard.Contains(str)))
-							listLess1cConflict.Add(divCard);
+					case DivinationValueEnum.ChaosLess2:
+						if (list10c.Exists(str => divCard.Contains(str)) || list2to10c.Exists(str => divCard.Contains(str)))
+							listLess2cConflict.Add(divCard);
 						else
-							listLess1c.Add(divCard);
+							listLess2c.Add(divCard);
 						break;
 					case DivinationValueEnum.NearlyWorthless:
-						if (list10c.Exists(str => divCard.Contains(str)) || list1to10c.Exists(str => divCard.Contains(str)) || listLess1c.Exists(str => divCard.Contains(str)))
+						if (list10c.Exists(str => divCard.Contains(str)) || list2to10c.Exists(str => divCard.Contains(str)) || listLess2c.Exists(str => divCard.Contains(str)))
 							listNearlyWorthlessConflict.Add(divCard);
 						else
 							listNearlyWorthless.Add(data.Name);
 						break;
 					case DivinationValueEnum.Worthless:
-						if (list10c.Exists(str => divCard.Contains(str)) || list1to10c.Exists(str => divCard.Contains(str))
-							|| listLess1c.Exists(str => divCard.Contains(str)) || listNearlyWorthless.Exists(str => divCard.Contains(str))) {
+						if (list10c.Exists(str => divCard.Contains(str)) || list2to10c.Exists(str => divCard.Contains(str))
+							|| listLess2c.Exists(str => divCard.Contains(str)) || listNearlyWorthless.Exists(str => divCard.Contains(str))) {
 							listWorthlessConflict.Add(divCard);
 						}
 						else
@@ -423,14 +423,14 @@ Show  # Uniques - <3c - Unique Rings
 			}
 			sb.AppendLine();
 
-			if (list1to10cConflict.Count > 0)
-				sb.AppendLine("Show  # Divination Cards - 1c+ (Conflicts)").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(list1to10cConflict)).AppendLine(styleDiv1c).AppendLine();
-			if (listLess1cConflict.Count > 0) {
+			if (list2to10cConflict.Count > 0)
+				sb.AppendLine("Show  # Divination Cards - 2-10c (Conflicts)").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(list2to10cConflict)).AppendLine(styleDiv2c).AppendLine();
+			if (listLess2cConflict.Count > 0) {
 				string showHide = type == FilterType.VERY_STRICT ? "Hide" : "Show";
-				sb.AppendLine(showHide + "  # Divination Cards - <1c (Conflicts)").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(listLess1cConflict)).AppendLine(styleDivLess1c).AppendLine();
+				sb.AppendLine(showHide + "  # Divination Cards - <2c (Conflicts)").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(listLess2cConflict)).AppendLine(styleDivLess2c).AppendLine();
 			}
 			if (listNearlyWorthlessConflict.Count > 0) {
-				string showHide = (type == FilterType.LEVELING || type == FilterType.MAPPING) ? "Show" : "Hide";
+				string showHide = (type == FilterType.STRICT || type == FilterType.VERY_STRICT) ? "Hide" : "Show";
 				sb.AppendLine(showHide + "  # Divination Cards - Nearly Worthless (Conflicts)").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(listNearlyWorthlessConflict)).AppendLine(styleDivNearlyWorthless).AppendLine();
 			}
 			if (listWorthlessConflict.Count > 0) {
@@ -439,14 +439,14 @@ Show  # Uniques - <3c - Unique Rings
 			}
 			if (list10c.Count > 0)
 				sb.AppendLine("Show  # Divination Cards - 10c+").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(list10c)).AppendLine(styleDiv10c).AppendLine();
-			if (list1to10c.Count > 0)
-				sb.AppendLine("Show  # Divination Cards - 1c+").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(list1to10c)).AppendLine(styleDiv1c).AppendLine();
-			if (listLess1c.Count > 0) {
+			if (list2to10c.Count > 0)
+				sb.AppendLine("Show  # Divination Cards - 2-10c").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(list2to10c)).AppendLine(styleDiv2c).AppendLine();
+			if (listLess2c.Count > 0) {
 				string showHide = type == FilterType.VERY_STRICT ? "Hide" : "Show";
-				sb.AppendLine(showHide + "  # Divination Cards - <1c").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(listLess1c)).AppendLine(styleDivLess1c).AppendLine();
+				sb.AppendLine(showHide + "  # Divination Cards - <2c").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(listLess2c)).AppendLine(styleDivLess2c).AppendLine();
 			}
 			if (listNearlyWorthless.Count > 0) {
-				string showHide = (type == FilterType.LEVELING || type == FilterType.MAPPING) ? "Show" : "Hide";
+				string showHide = (type == FilterType.STRICT || type == FilterType.VERY_STRICT) ? "Hide" : "Show";
 				sb.AppendLine(showHide + "  # Divination Cards - Nearly Worthless").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(listNearlyWorthless)).AppendLine(styleDivNearlyWorthless).AppendLine();
 			}
 			if (listWorthless.Count > 0) {

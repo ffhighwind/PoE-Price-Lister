@@ -73,26 +73,26 @@ namespace PoE_Price_Lister
 			{ "The Doppelganger", DivinationValue.NearlyWorthless },
 
 			// 0.4c+
-			{ "Three Voices", DivinationValue.ChaosLess1},
-			{ "The Catalyst", DivinationValue.ChaosLess1 },
-			{ "Boundless Realms", DivinationValue.ChaosLess1 },
-			{ "Coveted Possession", DivinationValue.ChaosLess1 },
-			{ "Emperor's Luck", DivinationValue.ChaosLess1 },
-			{ "Three Faces in the Dark", DivinationValue.ChaosLess1 },
-			{ "The Master Artisan", DivinationValue.ChaosLess1 },
+			{ "Three Voices", DivinationValue.ChaosLess2},
+			{ "The Catalyst", DivinationValue.ChaosLess2 },
+			{ "Boundless Realms", DivinationValue.ChaosLess2 },
+			{ "Coveted Possession", DivinationValue.ChaosLess2 },
+			{ "Emperor's Luck", DivinationValue.ChaosLess2 },
+			{ "Three Faces in the Dark", DivinationValue.ChaosLess2 },
+			{ "The Master Artisan", DivinationValue.ChaosLess2 },
 
 			// 1.1c+
-			{ "No Traces", DivinationValue.Chaos1to10 },
-			{ "The Fool", DivinationValue.Chaos1to10 },
-			{ "The Heroic Shot", DivinationValue.Chaos1to10 },
-			{ "The Inventor", DivinationValue.Chaos1to10 },
-			{ "The Wrath", DivinationValue.Chaos1to10 },
-			{ "Lucky Connections", DivinationValue.Chaos1to10 },
-			{ "The Innocent", DivinationValue.Chaos1to10 },
-			{ "Vinia's Token", DivinationValue.Chaos1to10 },
-			{ "The Cartographer", DivinationValue.Chaos1to10 },
-			{ "Chaotic Disposition", DivinationValue.Chaos1to10 },
-			{ "Demigod's Wager", DivinationValue.Chaos1to10 },
+			{ "No Traces", DivinationValue.Chaos2to10 },
+			{ "The Fool", DivinationValue.Chaos2to10 },
+			{ "The Heroic Shot", DivinationValue.Chaos2to10 },
+			{ "The Inventor", DivinationValue.Chaos2to10 },
+			{ "The Wrath", DivinationValue.Chaos2to10 },
+			{ "Lucky Connections", DivinationValue.Chaos2to10 },
+			{ "The Innocent", DivinationValue.Chaos2to10 },
+			{ "Vinia's Token", DivinationValue.Chaos2to10 },
+			{ "The Cartographer", DivinationValue.Chaos2to10 },
+			{ "Chaotic Disposition", DivinationValue.Chaos2to10 },
+			{ "Demigod's Wager", DivinationValue.Chaos2to10 },
 
 			// 10c+
 			{ "Wealth and Power", DivinationValue.Chaos10 },
@@ -114,25 +114,15 @@ namespace PoE_Price_Lister
 
 		public DivinationValue ExpectedFilterValue {
 			get {
-				if(DivinationCardsValueMap.TryGetValue(Name, out DivinationValue val)) {
+				if(DivinationCardsValueMap.TryGetValue(Name, out DivinationValue val))
 					return val;
-				}
-				if (ChaosValue < 0.01f || IsLowConfidence)
-					return FilterValue;
-				if (FilterValue.LowValue <= ChaosValue && FilterValue.HighValue >= ChaosValue)
+				if (ChaosValue < 0.01f || IsLowConfidence || (ChaosValue >= FilterValue.LowValue && ChaosValue <= FilterValue.HighValue))
 					return FilterValue;
 				return DivinationValue.ValueOf(ChaosValue);
 			}
 		}
 
-		public int SeverityLevel {
-			get {
-				DivinationValue expect = ExpectedFilterValue;
-				if (FilterValue == expect || (FilterValue.Tier > expect.Tier && FilterValue.LowValue <= ChaosValue))
-					return 0;
-				return Math.Abs(FilterValue.Tier - expect.Tier);
-			}
-		}
+		public int SeverityLevel =>	Math.Abs(FilterValue.Tier - ExpectedFilterValue.Tier);
 
 		public int Tier => FilterValue.Tier;
 

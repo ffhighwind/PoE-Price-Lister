@@ -77,21 +77,6 @@ namespace PoE_Price_Lister
 			enchantsHcDataGridView.DataSource = hcEnchantsTable;
 			enchantsScDataGridView.DataSource = scEnchantsTable;
 
-			divinationHcDataGridView.Columns["Filter"].SortMode = DataGridViewColumnSortMode.Programmatic;
-			divinationHcDataGridView.Columns["Expected"].SortMode = DataGridViewColumnSortMode.Programmatic;
-			divinationScDataGridView.Columns["Filter"].SortMode = DataGridViewColumnSortMode.Programmatic;
-			divinationScDataGridView.Columns["Expected"].SortMode = DataGridViewColumnSortMode.Programmatic;
-
-			uniquesScDataGridView.Columns["Filter"].SortMode = DataGridViewColumnSortMode.Programmatic;
-			uniquesScDataGridView.Columns["Expected"].SortMode = DataGridViewColumnSortMode.Programmatic;
-			uniquesHcDataGridView.Columns["Filter"].SortMode = DataGridViewColumnSortMode.Programmatic;
-			uniquesHcDataGridView.Columns["Expected"].SortMode = DataGridViewColumnSortMode.Programmatic;
-
-			enchantsHcDataGridView.Columns["Filter"].SortMode = DataGridViewColumnSortMode.Programmatic;
-			enchantsHcDataGridView.Columns["Expected"].SortMode = DataGridViewColumnSortMode.Programmatic;
-			enchantsScDataGridView.Columns["Filter"].SortMode = DataGridViewColumnSortMode.Programmatic;
-			enchantsScDataGridView.Columns["Expected"].SortMode = DataGridViewColumnSortMode.Programmatic;
-
 			divinationHcDataGridView.DoubleBuffer();
 			divinationScDataGridView.DoubleBuffer();
 			uniquesScDataGridView.DoubleBuffer();

@@ -34,14 +34,7 @@ namespace PoE_Price_Lister
 		public string Name { get; private set; }
 		public string Description { get; private set; }
 		public string Gem { get; private set; }
-		public int SeverityLevel {
-			get {
-				EnchantmentValue expect = ExpectedFilterValue;
-				if (FilterValue == expect || (FilterValue.Tier > expect.Tier && FilterValue.LowValue <= ChaosValue))
-					return 0;
-				return Math.Abs(FilterValue.Tier - expect.Tier);
-			}
-		}
+		public int SeverityLevel => Math.Abs(FilterValue.Tier - ExpectedFilterValue.Tier);
 
 		public string QuotedName {
 			get {
@@ -57,9 +50,7 @@ namespace PoE_Price_Lister
 		public EnchantmentValue FilterValue { get; set; } = EnchantmentValue.Worthless;
 		public EnchantmentValue ExpectedFilterValue {
 			get {
-				if (ChaosValue < 0.01f || IsLowConfidence)
-					return FilterValue;
-				if (FilterValue.LowValue <= ChaosValue && FilterValue.HighValue >= ChaosValue)
+				if (ChaosValue < 0.01f || IsLowConfidence || (ChaosValue >= FilterValue.LowValue && ChaosValue <= FilterValue.HighValue))
 					return FilterValue;
 				return EnchantmentValue.ValueOf(ChaosValue);
 			}

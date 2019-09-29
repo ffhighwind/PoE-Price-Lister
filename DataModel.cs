@@ -293,23 +293,19 @@ namespace PoE_Price_Lister
 				if (!lines.Any())
 					return;
 				string line = lines.First();
-
 				if (!line.Contains("# Divination Cards - "))
 					continue;
-
-				if (line.Contains("10c+"))
+				else if (line.Contains("10c+"))
 					value = DivinationValue.Chaos10;
-				else if (line.Contains("1c+"))
-					value = DivinationValue.Chaos1to10;
-				else if (line.Contains("<1c") || line.Contains("< 1c"))
-					value = DivinationValue.ChaosLess1;
+				else if (line.Contains("2-10c"))
+					value = DivinationValue.Chaos2to10;
+				else if (line.Contains("<2c") || line.Contains("< 2c"))
+					value = DivinationValue.ChaosLess2;
 				else if (line.Contains("Nearly Worthless"))
 					value = DivinationValue.NearlyWorthless;
 				else if (line.Contains("Worthless"))
 					value = DivinationValue.Worthless;
 				else {
-					if (!line.Contains("New (Error)"))
-						MessageBox.Show("Unexpected Divination input: " + line, "Error", MessageBoxButtons.OK);
 					lines = lines.Skip(1);
 					continue;
 				}
