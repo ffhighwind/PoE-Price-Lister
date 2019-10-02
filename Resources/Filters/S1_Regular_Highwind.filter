@@ -1,7 +1,7 @@
 ﻿﻿############################################
-##      HIGHWIND'S LOOT FILTER 3.8.14     ##
+##      HIGHWIND'S LOOT FILTER 3.8.15     ##
 ############################################
-## Release Date: September 28, 2019       ##
+## Release Date: October 2, 2019          ##
 ############################################
 
 #--------------#
@@ -554,7 +554,7 @@ Show  # League Specific - Timeless Splinters
 
 Show  # League Specific - Incubators - High Value
 	Class Incubator
-	BaseType "Geomancer's Incubator" "Time-Lost Incubator"
+	BaseType "Geomancer's Incubator" "Time-Lost Incubator" "Eldritch Incubator"
 	SetFontSize 45
 	SetTextColor 255 0 255 # Incubator (High Value)
 	SetBackgroundColor 255 255 255 255 # Incubator (High Value)
@@ -934,9 +934,9 @@ Show  # Misc Map Items
 Show  # Fishing Rods
 	Class "Fishing Rods"
 	SetFontSize 45
-	SetTextColor 255 255 255 # Fishing Rod
-	SetBackgroundColor 255 0 0 255 # Fishing Rod
-	SetBorderColor 255 255 255 # Fishing Rod
+	SetTextColor 255 128 64 # Unique (10c+)
+	SetBackgroundColor 255 255 255 255 # Unique (10c+)
+	SetBorderColor 255 128 64 # Unique (10c+)
 	PlayAlertSound 1 200 # High Value
 	MinimapIcon 0 Red Square
 	PlayEffect Red
@@ -1604,7 +1604,7 @@ Show  # Chance Bases - Skyforth, Sorcerer Boots
 
 Show  # Crafting Bases - Shaper - 70+ Drop Level
 	ShaperItem True
-	BaseType "Opal Ring" "Steel Ring" "Bone Helmet" "Marble Amulet" "Blue Pearl Amulet" "Spiked Gloves" "Fingerless Silk Gloves" "Gripped Gloves" "Two-Toned Boots"
+	BaseType "Opal Ring" "Steel Ring" "Vermillion Ring" "Cerulean Ring" "Marble Amulet" "Blue Pearl Amulet" "Spiked Gloves" "Fingerless Silk Gloves" "Gripped Gloves" "Bone Helmet" "Two-Toned Boots" "Crystal Belt" "Stygian Vise"
 	SetFontSize 45
 	SetTextColor 0 100 220 # Crafting Base 84+ (High)
 	SetBackgroundColor 255 255 255 255 # Crafting Base 84+ (High)
@@ -1615,7 +1615,7 @@ Show  # Crafting Bases - Shaper - 70+ Drop Level
 
 Show  # Crafting Bases - Elder - 70+ Drop Level
 	ElderItem True
-	BaseType "Opal Ring" "Steel Ring" "Bone Helmet" "Marble Amulet" "Blue Pearl Amulet" "Spiked Gloves" "Fingerless Silk Gloves" "Gripped Gloves" "Two-Toned Boots"
+	BaseType "Opal Ring" "Steel Ring" "Vermillion Ring" "Cerulean Ring" "Marble Amulet" "Blue Pearl Amulet" "Spiked Gloves" "Fingerless Silk Gloves" "Gripped Gloves" "Bone Helmet" "Two-Toned Boots" "Crystal Belt" "Stygian Vise"
 	SetFontSize 45
 	SetTextColor 0 100 220 # Crafting Base 84+ (High)
 	SetBackgroundColor 255 255 255 255 # Crafting Base 84+ (High)
@@ -1624,62 +1624,144 @@ Show  # Crafting Bases - Elder - 70+ Drop Level
 	MinimapIcon 0 Red Square
 	PlayEffect Red
 
+# 84+ Shaper Amulets (phys as extra, ele pen, quant, charge on kill)
+# 84+ Shaper Rings (curse on hit, crit%, spell damage)
+Show  # Crafting Bases - Shaper - 75+ Jewelry
+	ShaperItem True
+	ItemLevel >= 75
+	Class Amulets Rings
+	SetFontSize 45
+	SetBackgroundColor 50 20 70 230 # Shaper Elder
+	SetBorderColor 220 0 0 # Rare Accessory
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 1 Green Square
+	PlayEffect Green
+
+# 84+ Elder Amulets (phys as extra, ele pen, quant, charge on kill)
+# 84+ Elder Rings (curse on hit)
+Show  # Crafting Bases - Elder - 75+ Jewelry
+	ElderItem True
+	ItemLevel >= 75
+	Class Amulets Rings
+	SetFontSize 45
+	SetBackgroundColor 50 20 70 230 # Shaper Elder
+	SetBorderColor 220 0 0 # Rare Accessory
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 1 Green Square
+	PlayEffect Green
+
+# 86+ Shaper Body Armour (attack crit%, +1 gem level, life%)
+Show  # Crafting Bases - Elder - 86+ BaseTypes
+	ElderItem True
+	ItemLevel >= 86
+	BaseType "Vaal Regalia" "Glorious Plate" "Astral Plate" "Zodiac Leather" "Carnal Armour"
+	SetFontSize 45
+	SetBackgroundColor 50 20 70 230 # Shaper Elder
+	SetBorderColor 200 50 255 # Shaper Elder 83+
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Square
+	PlayEffect Red
+
+# 86+ Shaper Body Armour (spell crit%, +1 gem level, life%)
+Show  # Crafting Bases - Shaper - 86+ BaseTypes
+	ShaperItem True
+	ItemLevel >= 86
+	BaseType "Vaal Regalia" "Astral Plate" "Zodiac Leather" "Carnal Armour"
+	SetFontSize 45
+	SetBackgroundColor 50 20 70 230 # Shaper Elder
+	SetBorderColor 200 50 255 # Shaper Elder 83+
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Square
+	PlayEffect Red
+
+# 85+ Shaper - Wands/Sceptres/Daggers (phys as extra) phys spells e.g. Blade Vortex, Blade Fall, EK
+Show  # Crafting Bases - Shaper - 85+ Sceptres Wands Daggers
+	ShaperItem True
+	ItemLevel >= 85
+	Class Sceptres Wands Daggers
+	SetFontSize 45
+	SetBackgroundColor 50 20 70 230 # Shaper Elder
+	SetBorderColor 200 50 255 # Shaper Elder 83+
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Green Square
+	PlayEffect Green
+
+# 84+ Shaper Shields (max res)
+# 84+ Shaper Boots (cooldown recovery, ranged attack totems)
+# 84+ Shaper Belts (cooldown recovery, remove chill/freeze, reduced crit taken, energy shield)
+# 84+ Shaper Helmets (mines, power charge on kill, added spell damage, spell crit)
 Show  # Crafting Bases - Shaper - 84+ BaseTypes
 	ShaperItem True
 	ItemLevel >= 84
-	BaseType "Titanium Spirit Shield" "Vaal Regalia" "Slink Boots"
+	BaseType "Titanium Spirit Shield" "Harmonic Spirit Shield" "Imperial Buckler" "Archon Kite Shield" "Slink Boots" "Sorcerer Boots" "Vaal Mask" "Lion Pelt" "Leather Belt" "Heavy Belt"
 	SetFontSize 45
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 200 50 255 # Shaper Elder 83+
-	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Square
-	PlayEffect Red
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Green Square
+	PlayEffect Green
 
+# 84+ Elder Helmets (righteous fire)
 Show  # Crafting Bases - Elder - 84+ BaseTypes
 	ElderItem True
 	ItemLevel >= 84
-	BaseType "Hubris Circlet" "Titanium Spirit Shield"
+	BaseType "Royal Burgonet" "Hubris Circlet"
 	SetFontSize 45
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 200 50 255 # Shaper Elder 83+
-	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Square
-	PlayEffect Red
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Green Square
+	PlayEffect Green
 
-Show  # Crafting Bases - Shaper - 83+ Classes
+# 85+ Shaper Bows (phys as extra, ele pen, coc)
+Show  # Crafting Bases - Shaper - 85+ BaseTypes
 	ShaperItem True
-	ItemLevel >= 83
-	Class Sceptres Quivers
+	ItemLevel >= 85
+	BaseType "Thicket Bow" "Imperial Bow" "Short Bow"
 	SetFontSize 45
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 200 50 255 # Shaper Elder 83+
-	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Square
-	PlayEffect Red
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Green Square
+	PlayEffect Green
 
-Show  # Crafting Bases - Elder - 83+ BaseTypes
-	ElderItem True
-	ItemLevel >= 83
-	BaseType "Short Bow" "Thicket Bow" "Jewelled Foil" "Exquisite Blade"
-	SetFontSize 45
-	SetTextColor 0 100 220 # Crafting Base 84+ (High)
-	SetBackgroundColor 255 255 255 255 # Crafting Base 84+ (High)
-	SetBorderColor 0 255 255 # Crafting Base 84+ (High)
-	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Square
-	PlayEffect Red
-
+# 83+ Shaper Swords/Claws (phys as extra, ele pen)
 Show  # Crafting Bases - Shaper - 83+ BaseTypes
 	ShaperItem True
 	ItemLevel >= 83
-	BaseType "Short Bow" "Platinum Kris" "Eclipse Staff" "Jewelled Foil"
+	BaseType "Jewelled Foil" "Spiraled Foil" "Imperial Claw" "Eclipse Staff"
 	SetFontSize 45
-	SetTextColor 0 100 220 # Crafting Base 84+ (High)
-	SetBackgroundColor 255 255 255 255 # Crafting Base 84+ (High)
-	SetBorderColor 0 255 255 # Crafting Base 84+ (High)
-	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Square
-	PlayEffect Red
+	SetBackgroundColor 50 20 70 230 # Shaper Elder
+	SetBorderColor 200 50 255 # Shaper Elder 83+
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Green Square
+	PlayEffect Green
+
+# 80+ Shaper - Quivers (+1 arrow, phys as extra cold)
+Show  # Crafting Bases - Shaper - 80+ Quivers
+	ShaperItem True
+	ItemLevel >= 80
+	Class Quivers
+	SetFontSize 45
+	SetBackgroundColor 50 20 70 230 # Shaper Elder
+	SetBorderColor 200 50 255 # Shaper Elder 83+
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Green Square
+	PlayEffect Green
+
+Show  # Crafting Bases - Shaper - 86+
+	ShaperItem True
+	ItemLevel >= 86
+	SetFontSize 40
+	SetBackgroundColor 50 20 70 230 # Shaper Elder
+	SetBorderColor 200 50 255 # Shaper Elder 83+
+
+Show  # Crafting Bases - Elder - 86+
+	ElderItem True
+	ItemLevel >= 86
+	SetFontSize 40
+	SetBackgroundColor 50 20 70 230 # Shaper Elder
+	SetBorderColor 200 50 255 # Shaper Elder 83+
 
 ##########################################
 ############## ENCHANTMENTS ##############
@@ -1891,14 +1973,14 @@ Show  # Explicit Mods - Jewels
 
 # Betrayal/Syndicate
 Show  # Explicit Mods - Veiled - Magic
-	HasExplicitMod "Veiled" "'s Veiled" "'s Veil" "of the Veil"
+	HasExplicitMod "Veiled" "'s Veiled" "'s Veil" "of the Veil" "of Janus' Veil"
 	Rarity <= Magic
 	SetFontSize 36
 	SetBackgroundColor 40 40 40 # Crafting Base (Low)
 	SetBorderColor 0 0 0 # Crafting Base (Low)
 
-Show  # Explicit Mods - Veiled - Rare
-	HasExplicitMod "Veiled" "'s Veiled" "'s Veil" "of the Veil"
+Show  # Explicit Mods - Veiled - Rare - 83+
+	HasExplicitMod "Veiled" "'s Veiled" "'s Veil" "of the Veil" "of Janus' Veil"
 	Rarity = Rare
 	ItemLevel >= 83
 	SetFontSize 40
@@ -1908,8 +1990,25 @@ Show  # Explicit Mods - Veiled - Rare
 	MinimapIcon 0 Blue Square
 	PlayEffect Blue
 
-Show  # Explicit Mods - Veiled - Rare
-	HasExplicitMod "Veiled" "'s Veiled" "'s Veil" "of the Veil"
+Show  # Explicit Mods - Veiled - Rare - Other
+	HasExplicitMod "Veiled" "'s Veiled" "'s Veil" "of the Veil" "of Janus' Veil"
+	Rarity = Rare
+	SetFontSize 36
+	SetBackgroundColor 40 40 40 # Crafting Base (Explicit)
+	SetBorderColor 25 65 175 # Crafting Base (Explicit)
+	MinimapIcon 1 Blue Square
+	PlayEffect Blue
+
+# Bestiary
+Hide  # Explicit Mods - Bestiary - Magic
+	HasExplicitMod "of Farrul" "of Craiceann" "of Saqawal" "of Fenumus"
+	Rarity <= Magic
+	SetFontSize 36
+	SetBackgroundColor 40 40 40 # Crafting Base (Low)
+	SetBorderColor 0 0 0 # Crafting Base (Low)
+
+Show  # Explicit Mods - Bestiary - Rare
+	HasExplicitMod "of Farrul" "of Craiceann" "of Saqawal" "of Fenumus"
 	Rarity = Rare
 	SetFontSize 36
 	SetBackgroundColor 40 40 40 # Crafting Base (Explicit)
@@ -2204,48 +2303,38 @@ Show  # Shaper Rares - Accessories - 60+
 	SetFontSize 40
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 220 0 0 # Rare Accessory
-	PlayAlertSound 4 200 # Shaper Elder
-	MinimapIcon 0 Green Square
-	PlayEffect Green
 
 Show  # Shaper Rares - 84+ - Low Drop Level
 	ShaperItem True
 	Rarity = Rare
 	ItemLevel >= 84
 	DropLevel < 58
-	SetFontSize 45
+	SetFontSize 32
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 0 0 0 # Rare Recipe 60+
-	MinimapIcon 0 Green Square
-	PlayEffect Green
 
 Show  # Shaper Rares - 84+ - High Drop Level
 	ShaperItem True
 	Rarity = Rare
 	ItemLevel >= 84
-	SetFontSize 45
+	SetFontSize 36
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 200 50 255 # Shaper Elder 83+
-	PlayAlertSound 4 200 # Shaper Elder
-	MinimapIcon 0 Green Square
-	PlayEffect Green
 
 Show  # Shaper Rares - 60+ - Low Drop Level
 	ShaperItem True
 	Rarity = Rare
 	DropLevel < 58
-	SetFontSize 40
+	SetFontSize 32
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 0 0 0 # Shaper Elder
 
 Show  # Shaper Rares - 60+ - High Drop Level
 	ShaperItem True
 	Rarity = Rare
-	SetFontSize 40
+	SetFontSize 36
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 0 0 0 # Shaper Elder
-	MinimapIcon 0 Green Square
-	PlayEffect Green
 
 #--------------#
 # Rare (Elder) #
@@ -2270,47 +2359,38 @@ Show  # Elder Rares - Accessories - 60+
 	SetFontSize 40
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 220 0 0 # Rare Accessory
-	MinimapIcon 0 Green Square
-	PlayEffect Green
 
 Show  # Elder Rares - 84+ - Low Drop Level
 	ElderItem True
 	Rarity = Rare
 	ItemLevel >= 84
 	DropLevel < 58
-	SetFontSize 45
+	SetFontSize 32
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 0 0 0 # Rare Recipe 60+
-	MinimapIcon 0 Green Square
-	PlayEffect Green
 
 Show  # Elder Rares - 84+ - High Drop Level
 	ElderItem True
 	Rarity = Rare
 	ItemLevel >= 84
-	SetFontSize 45
+	SetFontSize 36
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 200 50 255 # Shaper Elder 83+
-	PlayAlertSound 4 200 # Shaper Elder
-	MinimapIcon 0 Green Square
-	PlayEffect Green
 
 Show  # Elder Rares - 60+ - Low Drop Level
 	ElderItem True
 	Rarity = Rare
 	DropLevel < 58
-	SetFontSize 40
+	SetFontSize 32
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 0 0 0 # Shaper Elder
 
 Show  # Elder Rares - 60+ - High Drop Level
 	ElderItem True
 	Rarity = Rare
-	SetFontSize 40
+	SetFontSize 36
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 0 0 0 # Shaper Elder
-	MinimapIcon 0 Green Square
-	PlayEffect Green
 
 ##########################################
 ################# JEWELS #################
@@ -2650,7 +2730,7 @@ Show  # Gems - Other
 Show  # Maps - Uniques - High Value
 	Class Maps
 	Rarity = Unique
-	BaseType "Moon Temple" Temple Harbinger Courtyard Chateau Museum
+	BaseType "Moon Temple" Temple Harbinger Courtyard Chateau Museum Maze
 	SetFontSize 45
 	SetTextColor 255 128 64 # Unique (10c+)
 	SetBackgroundColor 255 255 255 255 # Unique (10c+)
@@ -2884,8 +2964,8 @@ Show  # Maps - Scarabs - High
 	SetBackgroundColor 0 255 255 210 # Map Fragment (Mid)
 	SetBorderColor 0 0 0 # Map Fragment (Mid)
 	PlayAlertSound 2 200 # Map Fragment
-	MinimapIcon 0 Blue Hexagon
-	PlayEffect Blue
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
 
 Show  # Maps - Scarabs - Low
 	Class "Map Fragments"
@@ -2895,7 +2975,7 @@ Show  # Maps - Scarabs - Low
 	SetBackgroundColor 0 255 255 210 # Map Fragment (Low)
 	SetBorderColor 0 0 0 # Map Fragment (Low)
 	PlayAlertSound 2 200 # Map Fragment
-	MinimapIcon 0 Blue Hexagon
+	MinimapIcon 1 Blue Hexagon
 	PlayEffect Blue
 
 Show  # Maps - Fragments - Low Value

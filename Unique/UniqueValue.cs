@@ -16,9 +16,9 @@ namespace PoE_Price_Lister
 		}
 
 		public static readonly UniqueValue Worthless = new UniqueValue(UniqueValueEnum.Unknown, 0, "Worthless", 2.0f, -1.0f);
-		public static readonly UniqueValue Limited = new UniqueValue(UniqueValueEnum.Limited, 1, "Limited", 3.5f, 1.1f);
-		public static readonly UniqueValue Chaos3to5 = new UniqueValue(UniqueValueEnum.Chaos3to5, 2, "3-5c", 5.5f, 2.6f);
-		public static readonly UniqueValue Chaos5to15 = new UniqueValue(UniqueValueEnum.Chaos5to15, 3, "5-15c", 16.0f, 4.5f);
+		public static readonly UniqueValue Limited = new UniqueValue(UniqueValueEnum.Limited, 1, "Limited", 3.2f, 1.1f);
+		public static readonly UniqueValue Chaos3to5 = new UniqueValue(UniqueValueEnum.Chaos3to5, 2, "3-5c", 6.0f, 2.5f);
+		public static readonly UniqueValue Chaos5to15 = new UniqueValue(UniqueValueEnum.Chaos5to15, 3, "5-15c", 16.0f, 4.7f);
 		public static readonly UniqueValue Chaos15 = new UniqueValue(UniqueValueEnum.Chaos15, 4, "15c+", float.MaxValue, 12.0f);
 
 		public UniqueValueEnum Value { get; private set; }

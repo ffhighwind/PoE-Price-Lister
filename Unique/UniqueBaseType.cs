@@ -44,7 +44,7 @@ namespace PoE_Price_Lister
 			if (!Items.Any()) {
 				return FilterValue;
 			}
-			if(Items.Count == 1) {
+			if (Items.Count == 1) {
 				float val = Items[0].ChaosValue;
 				if (val < 0.01 || Items[0].IsLowConfidence || (val >= FilterValue.LowValue && val <= FilterValue.HighValue))
 					return FilterValue;
@@ -66,23 +66,25 @@ namespace PoE_Price_Lister
 				if (uniq.IsUnobtainable)
 					continue;
 				isUnobtainable = false;
-				if (uniq.Count == 0)
-					continue;
 				if (uniq.IsPurchased || uniq.IsCrafted || uniq.IsFated) {
-					minValCrafted = Math.Min(minValCrafted, uniq.ChaosValue);
-					maxValCrafted = Math.Max(maxValCrafted, uniq.ChaosValue);
+					if (uniq.Count > 0) {
+						minValCrafted = Math.Min(minValCrafted, uniq.ChaosValue);
+						maxValCrafted = Math.Max(maxValCrafted, uniq.ChaosValue);
+					}
+					continue;
+				}
+				if (uniq.Count == 0) {
+					minTier = Math.Min(minTier, 1);
 					continue;
 				}
 				if (!uniq.IsCoreDrop) {
 					minValLeague = Math.Min(minValLeague, uniq.ChaosValue);
 					maxValLeague = Math.Max(maxValLeague, uniq.ChaosValue);
-					if (uniq.ChaosValue >= 100.0f)
-						minTier = 2;
-					else if (uniq.ChaosValue >= 15.0f)
+					if (uniq.ChaosValue >= 8.0f)
 						minTier = Math.Max(minTier, 1);
 					continue;
 				}
-				if (uniq.Source.Length > 0) { // IsProphecyDrop || uniq.IsLabyrinthDrop || uniq.IsBossDrop
+				if (uniq.Source.Length > 0 && !uniq.IsProphecyDrop) { // IsProphecyDrop || uniq.IsLabyrinthDrop || uniq.IsBossDrop
 					minValLimited = Math.Min(minValLimited, uniq.ChaosValue);
 					maxValLimited = Math.Max(maxValLimited, uniq.ChaosValue);
 					if (uniq.ChaosValue >= 5.0f)
@@ -97,9 +99,9 @@ namespace PoE_Price_Lister
 						}
 						if (uniq.ChaosValue >= 40.0f)
 							minTier = Math.Max(minTier, 3);
-						if (uniq.ChaosValue >= 20.0f)
+						if (uniq.ChaosValue >= 15.0f)
 							minTier = Math.Max(minTier, 2);
-						else if (uniq.ChaosValue >= 7.0f)
+						else if (uniq.ChaosValue >= 5.0f)
 							minTier = Math.Max(minTier, 1);
 						continue;
 					}
@@ -117,7 +119,7 @@ namespace PoE_Price_Lister
 						minTier = Math.Max(minTier, 1);
 				}
 			}
-
+			
 			if (isUnobtainable)
 				return UniqueValue.Chaos15;
 			if (minVal > maxVal) {
@@ -128,12 +130,12 @@ namespace PoE_Price_Lister
 				else if (minValLeague <= maxValLeague) {
 					minVal = minValLeague;
 					maxVal = maxValLeague;
-					minTier = Math.Max(minTier, 1);
+					minTier = Math.Max(minTier, 2);
 				}
 				else if (minValCrafted <= maxValCrafted) {
 					minVal = minValCrafted;
 					maxVal = maxValCrafted;
-					minTier = Math.Max(minTier, 1);
+					minTier = Math.Max(minTier, 2);
 				}
 				else
 					return FilterValue;

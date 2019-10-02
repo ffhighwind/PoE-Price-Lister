@@ -714,13 +714,13 @@ Crusader Plate,The Iron Fortress,,,,Fated
 Gold Amulet,Perquil's Toe,,,,
 Plague Mask,Curtain Call,,,,
 Judgement Staff,The Grey Spire,,,,
-Blood Sceptre,Cerberus Limb,,,,"Ahuatotli, the Blind"
-Onyx Amulet,Aul's Uprising,,,,"Aul, the Crystal King"
-Riveted Gloves,Command of the Pit,,,,"Kurgal, the Blackblooded"
-Magistrate Crown,Crown of the Tyrant,,,,"Aul, the Crystal King"
+Blood Sceptre,Cerberus Limb,Delve,,,"Ahuatotli, the Blind"
+Onyx Amulet,Aul's Uprising,Delve,,,"Aul, the Crystal King"
+Riveted Gloves,Command of the Pit,Delve,,,"Kurgal, the Blackblooded"
+Magistrate Crown,Crown of the Tyrant,Delve,,,"Aul, the Crystal King"
 Satin Gloves,Demon Stitcher,,,,
 Titan Greaves,Doryani's Delusion,,,,Doryani's Machinarium
-Mind Cage,Hale Negator,,,,"Kurgal, the Blackblooded"
+Mind Cage,Hale Negator,Delve,,,"Kurgal, the Blackblooded"
 Unset Ring,Mark of Submission,,,,
 Ezomyte Staff,Soulwrest,,,,
 Chiming Spirit Shield,The Eternal Apple,,,,
@@ -734,25 +734,25 @@ Two-Stone Ring,Precursor's Emblem,,,,Crafted
 Topaz Ring,Precursor's Emblem,,,,Crafted
 Sapphire Ring,Precursor's Emblem,,,,Crafted
 Ruby Ring,Precursor's Emblem,,,,Crafted
-Topaz Ring,Putembo's Valley,,Recipe,,"Ahuatotli, the Blind"
-Topaz Ring,Putembo's Meadow,,Recipe,,"Kurgal, the Blackblooded"
-Topaz Ring,Putembo's Mountain,,Recipe,,"Aul, the Crystal King"
-Ruby Ring,Ahkeli's Valley,,Recipe,,"Kurgal, the Blackblooded"
-Ruby Ring,Ahkeli's Mountain,,Recipe,,"Ahuatotli, the Blind"
-Ruby Ring,Ahkeli's Meadow,,Recipe,,"Aul, the Crystal King"
-Sapphire Ring,Uzaza's Meadow,,Recipe,,"Ahuatotli, the Blind"
-Sapphire Ring,Uzaza's Mountain,,Recipe,,"Kurgal, the Blackblooded"
-Sapphire Ring,Uzaza's Valley,,Recipe,,"Aul, the Crystal King"
-Steelwood Bow,The Crimson Storm,,,,
-Unset Ring,Vivinsect,,,,
+Topaz Ring,Putembo's Valley,Delve,Recipe,,"Ahuatotli, the Blind"
+Topaz Ring,Putembo's Meadow,Delve,Recipe,,"Kurgal, the Blackblooded"
+Topaz Ring,Putembo's Mountain,Delve,Recipe,,"Aul, the Crystal King"
+Ruby Ring,Ahkeli's Valley,Delve,Recipe,,"Kurgal, the Blackblooded"
+Ruby Ring,Ahkeli's Mountain,Delve,Recipe,,"Ahuatotli, the Blind"
+Ruby Ring,Ahkeli's Meadow,Delve,Recipe,,"Aul, the Crystal King"
+Sapphire Ring,Uzaza's Meadow,Delve,Recipe,,"Ahuatotli, the Blind"
+Sapphire Ring,Uzaza's Mountain,Delve,Recipe,,"Kurgal, the Blackblooded"
+Sapphire Ring,Uzaza's Valley,Delve,Recipe,,"Aul, the Crystal King"
+Steelwood Bow,The Crimson Storm,Betrayal,,,
+Unset Ring,Vivinsect,Betrayal,,,
 Onyx Amulet,Solstice Vigil,,,,Shaper
-Titanium Spirit Shield,Bitterbind Point,,,,"Catarina, Master of Undeath"
-Silver Flask,Cinderswallow Urn,,,,"Catarina, Master of Undeath"
+Titanium Spirit Shield,Bitterbind Point,Betrayal,,,"Catarina, Master of Undeath"
+Silver Flask,Cinderswallow Urn,Betrayal,,,"Catarina, Master of Undeath"
 Dragonscale Gauntlets,Worldcarver,,,,
-Vaal Rapier,Paradoxica,,,,
-Vaal Regalia,The Queen's Hunger,,,,"Catarina, Master of Undeath"
-Leather Belt,Hyperboreus,,,,
-Necromancer Circlet,The Devouring Diadem,,,,"Catarina, Master of Undeath"
+Vaal Rapier,Paradoxica,Betrayal,,,
+Vaal Regalia,The Queen's Hunger,Betrayal,,,"Catarina, Master of Undeath"
+Leather Belt,Hyperboreus,Betrayal,,,
+Necromancer Circlet,The Devouring Diadem,Betrayal,,,"Catarina, Master of Undeath"
 Solaris Circlet,Thundersight,,,,
 Solaris Circlet,Galesight,,,,
 Solaris Circlet,Flamesight,,,,

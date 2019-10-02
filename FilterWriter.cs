@@ -59,9 +59,14 @@ namespace PoE_Price_Lister
 	SetBackgroundColor 50 25 12 # Unique
 	SetBorderColor 180 90 45 # Unique (<3c)";
 
-		private const string styleUniqueSound =
+		private const string styleUniqueIconSound =
 @"	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Brown Square
+	PlayEffect Brown
+";
+
+		private const string styleUniqueIcon =
+@"	MinimapIcon 0 Brown Square
 	PlayEffect Brown
 ";
 
@@ -106,7 +111,8 @@ Show  # Uniques - <3c - Unique Rings
 @"	SetFontSize 40
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
-	SetBorderColor 180 90 45 # Unique (<3c)";
+	SetBorderColor 180 90 45 # Unique (<3c)
+";
 
 		private const string uniqueNewOrWorthless =
 @"  # Uniques - New or Worthless
@@ -326,8 +332,8 @@ Show  # Uniques - <3c - Unique Rings
 			sb.AppendLine(headerLess3c).AppendLine();
 
 			string showHide = type == FilterType.VERY_STRICT ? "Hide" : "Show";
-			string vsSound = type == FilterType.VERY_STRICT ? styleUniqueSound : "";
-			string sSound = (type != FilterType.VERY_STRICT && type != FilterType.STRICT) ? styleUniqueSound : "";
+			string vsSound = type == FilterType.VERY_STRICT ? styleUniqueIconSound : styleUniqueIcon;
+			string sSound = (type != FilterType.VERY_STRICT && type != FilterType.STRICT) ? styleUniqueIconSound : "";
 
 			if (type != FilterType.VERY_STRICT) {
 				sb.AppendLine(lessLvl67).AppendLine();
