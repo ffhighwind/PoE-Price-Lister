@@ -1,7 +1,7 @@
 ﻿﻿############################################
-##  HIGHWIND'S VERY STRICT FILTER 3.8.15  ##
+##  HIGHWIND'S VERY STRICT FILTER 3.8.16  ##
 ############################################
-## Release Date: October 2, 2019          ##
+## Release Date: October 3, 2019          ##
 ############################################
 
 #--------------#
@@ -97,8 +97,9 @@
 # (59) "Siege Axe" "Butcher Axe" "Vaal Hatchet" "Infernal Axe" "Runic Hatchet"
 # (62) "Legion Hammer" "Nightmare Mace" "Behemoth Mace"
 # (58) "Corsair Sword" "Spiraled Foil" "Eternal Sword" "Jewelled Foil" "Dragoon Sword"
-# (60) "Ambusher" "Platinum Kris" "Imperial Skean" "Sai"
-# (59) "Imbued Wand" "Opal Wand" "Tornado Wand" "Profane Wand"
+# (60) "Ambusher" "Sai"
+# (64) "Platinum Kris" "Imperial Skean"
+# (59) "Imbued Wand" "Opal Wand" "Tornado Wand" "Profane Wand" "Prophecy Wand" "Convoking Wand"
 # (60) "Hellion's Paw" "Imperial Claw" "Terror Claw" "Gemini Claw"
 # (56) "Karui Sceptre" "Vaal Sceptre"
 #
@@ -107,7 +108,8 @@
 # (61) "Piledriver" "Meatgrinder" "Terror Maul" "Coronal Maul"
 # (59) "Reaver Sword" "Vaal Greatsword" "Lion Sword" "Infernal Sword" "Exquisite Blade"
 # (56) "Thicket Bow" "Imperial Bow" "Harbinger Bow" "Maraketh Bow"
-# (60) "Lathi" "Ezomyte Staff" "Maelstr" "Eclipse Staff" "Judgement Staff"
+# (57) "Moon Staff" "Primordial Staff" "Lathi" "Imperial Staff" "Eclipse Staff" 
+# (60) "Ezomyte Staff" "Maelstr" "Judgement Staff"
 
 ##########################################
 ################ CURRENCY ################
@@ -415,7 +417,7 @@ Show  # Currency - 20c+
 #	MinimapIcon 0 Red Triangle
 #	PlayEffect Red
 
-Show  # Currency - Prophecies - Other
+Show  # Currency - Prophecies
 	Class Currency
 	BaseType "Prophecy"
 	SetFontSize 40
@@ -431,7 +433,7 @@ Show  # Currency - Prophecies - Other
 #----------#
 # Section: League Specific
 
-Show  # League Specific - Perandus Coins - 6+
+Show  # League Specific - Perandus Coins (6+)
 	Class Currency
 	BaseType "Perandus Coin"
 	StackSize >= 6
@@ -441,7 +443,7 @@ Show  # League Specific - Perandus Coins - 6+
 	SetBorderColor 0 0 0 # Currency (Perandus Coin)
 	PlayEffect Yellow Temp
 
-Show  # League Specific - Perandus Coins - 3+
+Show  # League Specific - Perandus Coins (3+)
 	Class Currency
 	BaseType "Perandus Coin"
 	StackSize >= 3
@@ -450,7 +452,7 @@ Show  # League Specific - Perandus Coins - 3+
 	SetBackgroundColor 75 65 50 # Currency (Perandus Coin)
 	SetBorderColor 0 0 0 # Currency (Perandus Coin)
 
-Hide  # League Specific - Perandus Coins - <3
+Hide  # League Specific - Perandus Coins <3
 	Class Currency
 	BaseType "Perandus Coin"
 	SetFontSize 36
@@ -487,13 +489,14 @@ Show  # League Specific - Essences - Mid Value
 	MinimapIcon 0 Blue Diamond
 	PlayEffect Blue
 
-Show  # League Specific - Essences - Low Value
+Hide  # League Specific - Essences - Low Value
 	Class Currency
 	BaseType "Wailing Essence"
 	SetFontSize 36
 	SetTextColor 220 190 155 # Currency (Low Essence)
 	SetBackgroundColor 55 50 40 # Currency (Low Essence)
 	SetBorderColor 0 0 0 # Currency (Low Essence)
+	DisableDropSound
 
 Hide  # League Specific - Essences - Worthless
 	Class Currency
@@ -589,18 +592,18 @@ Show  # League Specific - Splinters - Chayula
 	MinimapIcon 0 Blue Circle
 	PlayEffect Blue
 
-Show  # League Specific - Splinters - Uul-Netol
+Hide  # League Specific - Splinters - Uul-Netol
 	Class Currency
 	BaseType "Splinter of Uul-Netol"
-	SetFontSize 40
+	SetFontSize 36
 	SetTextColor 255 0 255 # Currency (Splinters)
 	SetBackgroundColor 0 0 0 # Currency (Splinters)
 	SetBorderColor 0 0 0 0 # Currency (Splinters)
 
-Show  # League Specific - Splinters - Xoph
+Hide  # League Specific - Splinters - Xoph
 	Class Currency
 	BaseType "Splinter of Xoph"
-	SetFontSize 40
+	SetFontSize 36
 	SetTextColor 255 0 255 # Currency (Splinters)
 	SetBackgroundColor 0 0 0 # Currency (Splinters)
 	SetBorderColor 0 0 0 0 # Currency (Splinters)
@@ -608,20 +611,18 @@ Show  # League Specific - Splinters - Xoph
 Hide  # League Specific - Splinters - Tul
 	Class Currency
 	BaseType "Splinter of Tul"
-	SetFontSize 40
+	SetFontSize 36
 	SetTextColor 255 0 255 # Currency (Splinters)
 	SetBackgroundColor 0 0 0 # Currency (Splinters)
 	SetBorderColor 0 0 0 0 # Currency (Splinters)
-	DisableDropSound
 
 Hide  # League Specific - Splinters - Esh
 	Class Currency
 	BaseType "Splinter of Esh"
-	SetFontSize 40
+	SetFontSize 36
 	SetTextColor 255 0 255 # Currency (Splinters)
 	SetBackgroundColor 0 0 0 # Currency (Splinters)
 	SetBorderColor 0 0 0 0 # Currency (Splinters)
-	DisableDropSound
 
 Show  # League Specific - Blessings - Chayula
 	Class Currency
@@ -662,7 +663,7 @@ Show  # League Specific - Fossils - High Value
 
 Hide  # League Specific - Fossils - Low Value
 	Class Currency
-	BaseType "Enchanted Fossil" "Aberrant Fossil" "Dense Fossil" "Frigid Fossil" "Jagged Fossil" "Lucent Fossil" "Metallic Fossil" "Scorched Fossil"
+	BaseType "Aberrant Fossil" "Dense Fossil" "Frigid Fossil" "Jagged Fossil" "Lucent Fossil" "Metallic Fossil" "Scorched Fossil"
 	SetFontSize 36
 	SetTextColor 255 0 255 # Currency (Low)
 	SetBackgroundColor 0 0 0 230 # Currency (Low)
@@ -819,28 +820,35 @@ Hide  # League Specific - Harbinger - Worthless (1)
 # Bestiary #
 #----------#
 
-Hide  # League Specific - Bestiary - Nearly Worthless
+Hide  # League Specific - Bestiary - Very Low
 	Class "Stackable Currency"
-	BaseType "Simple Rope Net" "Reinforced Rope Net" "Strong Rope Net" "Simple Iron Net" "Reinforced Iron Net" "Strong Iron Net" "Simple Steel Net" "Reinforced Steel Net" "Strong Steel Net"
+	BaseType "Simple Rope Net" "Reinforced Rope Net" "Strong Rope Net" "Simple Iron Net" "Reinforced Iron Net" "Strong Iron Net" "Simple Steel Net" "Reinforced Steel Net"
 	SetFontSize 36
 	SetTextColor 185 172 141 # Bestiary (Low)
 	SetBackgroundColor 65 50 20 235 # Bestiary (Low)
 	SetBorderColor 0 0 0 # Bestiary (Low)
 	DisableDropSound
 
-Show  # League Specific - Bestiary - Low
+Hide  # League Specific - Bestiary - Low
 	Class "Stackable Currency"
-	BaseType "Thaumaturgical Net"
-	SetFontSize 40
+	BaseType "Strong Steel Net"
+	SetFontSize 36
 	SetTextColor 185 172 141 # Bestiary (Low)
 	SetBackgroundColor 65 50 20 235 # Bestiary (Low)
 	SetBorderColor 0 0 0 # Bestiary (Low)
-	DisableDropSound
+
+Show  # League Specific - Bestiary - Mid
+	Class "Stackable Currency"
+	BaseType "Thaumaturgical Net"
+	SetFontSize 36
+	SetTextColor 255 0 255 # Bestiary (Mid)
+	SetBackgroundColor 0 0 0 230 # Bestiary (Mid)
+	SetBorderColor 0 0 0 0 # Bestiary (Mid)
 
 Show  # League Specific - Bestiary - High
 	Class "Stackable Currency"
 	BaseType "Necromancy Net" "Bestiary Orb" "Imprinted Bestiary Orb"
-	SetFontSize 45
+	SetFontSize 40
 	SetTextColor 255 0 255 # Bestiary (High)
 	SetBackgroundColor 20 0 20 230 # Bestiary (High)
 	SetBorderColor 255 0 255 # Bestiary (High)
@@ -968,6 +976,10 @@ Show  # Fishing Rods
 ##########################################
 # Section: 5+ Links
 
+#------#
+# High #
+#------#
+
 # Tabula Rasa, Skin of the Loyal/Lords, 5-6L Unique
 Show  # 5+ Links - 5L+ Uniques
 	LinkedSockets >= 5
@@ -990,7 +1002,11 @@ Show  # 5+ Links - 6 Links
 	MinimapIcon 0 Red Square
 	PlayEffect Red
 
-Show  # 5+ Links - 5L 6 Sockets
+#-----#
+# Mid #
+#-----#
+
+Show  # 5+ Links - 6 Sockets
 	LinkedSockets = 5
 	Sockets = 6
 	SetFontSize 45
@@ -1001,10 +1017,10 @@ Show  # 5+ Links - 5L 6 Sockets
 	MinimapIcon 0 Yellow Square
 	PlayEffect Red
 
-Show  # 5+ Links - 5L Top Tier (84+)
+Show  # 5+ Links - Body Armour (86+)
 	LinkedSockets = 5
-	ItemLevel >= 84
-	BaseType "Astral Plate" "Occultist's Vestment" "Widowsilk Robe" "Vaal Regalia" "Zodiac Leather" "Harbinger Bow"
+	BaseType "Astral Plate" "Glorious Plate" "Occultist's Vestment" "Widowsilk Robe" "Vaal Regalia" "Zodiac Leather" "Sadist Garb" "Carnal Armour"
+	ItemLevel >= 86
 	SetFontSize 45
 	SetTextColor 255 0 0 # 5+ Link
 	SetBackgroundColor 255 255 255 255 # 5+ Link (High)
@@ -1013,43 +1029,32 @@ Show  # 5+ Links - 5L Top Tier (84+)
 	MinimapIcon 0 Yellow Square
 	PlayEffect Red
 
-Show  # 5+ Links - 5L (84+)
-	LinkedSockets = 5
-	ItemLevel >= 84
-	DropLevel >= 56
-	SetFontSize 45
-	SetTextColor 255 0 0 # 5+ Link
-	SetBackgroundColor 50 50 50 230 # 5+ Link (Mid)
-	SetBorderColor 255 0 0 # 5+ Link
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Yellow Square
-	PlayEffect Red
-
-Show  # 5+ Links - 5L (Shaper)
+Show  # 5+ Links - Shaper
 	LinkedSockets = 5
 	ShaperItem True
-	SetFontSize 45
+	SetFontSize 40
 	SetTextColor 255 0 0 # 5+ Link
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 255 0 0 # 5+ Link
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Yellow Square
+	MinimapIcon 0 Green Square
 	PlayEffect Red
 
-Show  # 5+ Links - 5L (Elder)
+Show  # 5+ Links - Elder
 	LinkedSockets = 5
 	ElderItem True
-	SetFontSize 45
+	SetFontSize 40
 	SetTextColor 255 0 0 # 5+ Link
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 255 0 0 # 5+ Link
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Yellow Square
+	MinimapIcon 0 Green Square
 	PlayEffect Red
 
-Show  # 5+ Links - 5L (Leveling)
+Show  # 5+ Links - Body Armour (84+)
 	LinkedSockets = 5
-	ItemLevel < 68
+	Class "Body Armour"
+	ItemLevel >= 84
 	SetFontSize 40
 	SetTextColor 255 0 0 # 5+ Link
 	SetBackgroundColor 50 50 50 230 # 5+ Link (Mid)
@@ -1058,60 +1063,62 @@ Show  # 5+ Links - 5L (Leveling)
 	MinimapIcon 0 Yellow Square
 	PlayEffect Red
 
+#Disabled Block Start
+#Show  # 5+ Links - Leveling
+#	LinkedSockets = 5
+#	ItemLevel < 68
+#	SetFontSize 40
+#	SetTextColor 255 0 0 # 5+ Link
+#	SetBackgroundColor 50 50 50 230 # 5+ Link (Mid)
+#	SetBorderColor 255 0 0 # 5+ Link
+#	PlayAlertSound 4 200 # Mid Value
+#	MinimapIcon 0 Yellow Square
+#	PlayEffect Red
+#Disabled Block End
+
+#-----#
+# Low #
+#-----#
+
+Hide  # 5+ Links - Body Armour
+	LinkedSockets = 5
+	Class "Body Armour"
+	SetFontSize 36
+	SetTextColor 255 0 0 # 5+ Link
+	SetBackgroundColor 0 0 0 230 # 5+ Link (Low)
+	SetBorderColor 255 0 0 # 5+ Link
+
 # 64 Sharpshooter's
-#Disabled Block Start
-#Show  # 5+ Links - 5L Good Bows
-#	LinkedSockets = 5
-#	Class Bows
-#	ItemLevel >= 64
-#	BaseType "Crude Bow" "Short Bow" "Royal Bow" "Grove Bow" "Thicket Bow" "Harbinger Bow"
-#	SetFontSize 36
-#	SetTextColor 255 0 0 # 5+ Link
-#	SetBackgroundColor 50 50 50 230 # 5+ Link (Mid)
-#	SetBorderColor 255 0 0 # 5+ Link
-#	PlayAlertSound 4 200 # Mid Value
-#	MinimapIcon 0 Yellow Square
-#	PlayEffect Red
-#Disabled Block End
+Hide  # 5+ Links - 3 Skill Bows (64+)
+	LinkedSockets = 5
+	Class Bows
+	ItemLevel >= 64
+	BaseType "Crude Bow" "Short Bow" "Royal Bow" "Grove Bow" "Thicket Bow" "Imperial Bow"
+	SetFontSize 36
+	SetTextColor 255 0 0 # 5+ Link
+	SetBackgroundColor 0 0 0 230 # 5+ Link (Low)
+	SetBorderColor 255 0 0 # 5+ Link
 
-#Disabled Block Start
-#Show  # 5+ Links - 5L Body Armour (High Drop Level)
-#	LinkedSockets = 5
-#	Class "Body Armour"
-#	DropLevel >= 56
-#	SetFontSize 36
-#	SetTextColor 255 0 0 # 5+ Link
-#	SetBackgroundColor 50 50 50 230 # 5+ Link (Mid)
-#	SetBorderColor 255 0 0 # 5+ Link
-#	PlayAlertSound 4 200 # Mid Value
-#	MinimapIcon 0 Yellow Square
-#	PlayEffect Red
-#Disabled Block End
+# Not Warstaves
+Hide  # 5+ Links - 5 Skill Staves (77+)
+	LinkedSockets = 5
+	Class Staves
+	ItemLevel >= 77
+	SetFontSize 36
+	SetTextColor 255 0 0 # 5+ Link
+	SetBackgroundColor 0 0 0 230 # 5+ Link (Low)
+	SetBorderColor 255 0 0 # 5+ Link
 
-#Disabled Block Start
-#Show  # 5+ Links - 5L Staves Warstaff (High Drop Level)
-#	LinkedSockets = 5
-#	Class Staves Warstaff
-#	DropLevel >= 56
-#	SetFontSize 36
-#	SetTextColor 255 0 0 # 5+ Link
-#	SetBackgroundColor 50 50 50 230 # 5+ Link (Mid)
-#	SetBorderColor 255 0 0 # 5+ Link
-#	PlayEffect Red
-#Disabled Block End
+Hide  # 5+ Links - 4 Skill Staves (55+)
+	LinkedSockets = 5
+	Class Staves
+	ItemLevel >= 55
+	SetFontSize 32
+	SetTextColor 255 0 0 # 5+ Link
+	SetBackgroundColor 0 0 0 230 # 5+ Link (Low)
+	SetBorderColor 255 0 0 # 5+ Link
 
-#Disabled Block Start
-#Show  # 5+ Links - 5L Staves Warstaff (Low Drop Level)
-#	LinkedSockets = 5
-#	Class Staves Warstaff
-#	SetFontSize 32
-#	SetTextColor 255 0 0 # 5+ Link
-#	SetBackgroundColor 50 50 50 230 # 5+ Link (Low)
-#	SetBorderColor 255 0 0 # 5+ Link
-#	PlayEffect Red
-#Disabled Block End
-
-Hide  # 5+ Links - 5L (Other)
+Hide  # 5+ Links - Other
 	LinkedSockets = 5
 	ShaperItem False
 	ElderItem False
@@ -1234,12 +1241,49 @@ Hide  # Vendor Recipes - Chromatics (RGB) - Leveling - Normal
 # Chisels #
 #---------#
 
+Hide  # Vendor Recipes - Chisels - 20% Quality
+	Class "One Hand Maces"
+	BaseType Gavel "Rock Breaker" "Stone Hammer"
+	Quality >= 20
+	SetFontSize 36
+	SetBackgroundColor 30 30 30 # Chisel Recipe
+	SetBorderColor 140 140 140 # Quality
+
+Hide  # Vendor Recipes - Chisels - 18% Quality Magic
+	Class "One Hand Maces"
+	BaseType Gavel "Rock Breaker" "Stone Hammer"
+	Quality >= 18
+	Rarity <= Magic
+	SetFontSize 32
+	SetBackgroundColor 30 30 30 # Chisel Recipe
+	SetBorderColor 0 0 0 # Chisel Recipe
+
+Hide  # Vendor Recipes - Chisels - 15% Quality Normal
+	Class "One Hand Maces"
+	BaseType Gavel "Rock Breaker" "Stone Hammer"
+	Quality >= 15
+	Rarity = Normal
+	SetFontSize 32
+	SetBackgroundColor 30 30 30 # Chisel Recipe
+	SetBorderColor 0 0 0 # Chisel Recipe
+
 #Disabled Block Start
-#Hide  # Vendor Recipes - Chisels - Leveling - Other
+#Show  # Vendor Recipes - Chisels - 10% Quality
 #	Class "One Hand Maces"
 #	BaseType Gavel "Rock Breaker" "Stone Hammer"
+#	Quality >= 15
 #	Rarity = Normal
-#	ItemLevel < 67
+#	SetFontSize 32
+#	SetBackgroundColor 30 30 30 # Chisel Recipe
+#	SetBorderColor 0 0 0 # Chisel Recipe
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Vendor Recipes - Chisels - 5% Quality
+#	Class "One Hand Maces"
+#	BaseType Gavel "Rock Breaker" "Stone Hammer"
+#	Quality >= 5
+#	Rarity = Normal
 #	SetFontSize 32
 #	SetBackgroundColor 30 30 30 # Chisel Recipe
 #	SetBorderColor 0 0 0 # Chisel Recipe
@@ -1267,13 +1311,15 @@ Hide  # Vendor Recipes - Chromatics (RGB) - Leveling - Normal
 #	SetBorderColor 0 0 0 # Chisel Recipe
 #Disabled Block End
 
-Hide  # Vendor Recipes - Chisels - Mapping (High) - Other
-	Class "One Hand Maces"
-	BaseType Gavel "Rock Breaker" "Stone Hammer"
-	Rarity = Normal
-	SetFontSize 32
-	SetBackgroundColor 30 30 30 # Chisel Recipe
-	SetBorderColor 0 0 0 # Chisel Recipe
+#Disabled Block Start
+#Show  # Vendor Recipes - Chisels - Mapping (High) - Other
+#	Class "One Hand Maces"
+#	BaseType Gavel "Rock Breaker" "Stone Hammer"
+#	Rarity = Normal
+#	SetFontSize 32
+#	SetBackgroundColor 30 30 30 # Chisel Recipe
+#	SetBorderColor 0 0 0 # Chisel Recipe
+#Disabled Block End
 
 ##########################################
 ################# LEAGUES ################
@@ -1444,12 +1490,54 @@ Show  # League Specific - Stygian Vises - Rare - Mapping (High)
 ##########################################
 # Section: Chance Bases
 
-Hide  # Chance Bases - Skyforth, Sorcerer Boots
-	Rarity = Normal
-	BaseType "Sorcerer Boots"
-	SetFontSize 40
-	SetBackgroundColor 50 50 50 # Chance Base
-	SetBorderColor 0 0 0 # Chance Base
+#Show  # Chance Bases - Gruthkul's Pelt, Wyrmscale Doublet
+#	Rarity = Normal
+#	BaseType "Wyrmscale Doublet"
+#	SetFontSize 40
+#	SetBackgroundColor 50 50 50 # Chance Base
+#	SetBorderColor 0 0 0 # Chance Base
+#Disabled Block End
+
+#Show  # Chance Bases - Darkscorn, Assassin Bow
+#	Rarity = Normal
+#	BaseType "Assassin Bow"
+#	SetFontSize 40
+#	SetBackgroundColor 50 50 50 # Chance Base
+#	SetBorderColor 0 0 0 # Chance Base
+#Disabled Block End
+
+#Show  # Chance Bases - Cospri's Malice, Jewelled Foil
+#	Rarity = Normal
+#	BaseType "Jewelled Foil"
+#	SetFontSize 40
+#	SetBackgroundColor 50 50 50 # Chance Base
+#	SetBorderColor 0 0 0 # Chance Base
+#Disabled Block End
+
+#Show  # Chance Bases - The Poet's Pen, Carved Wand
+#	Rarity = Normal
+#	BaseType "Carved Wand"
+#	SetFontSize 40
+#	SetBackgroundColor 50 50 50 # Chance Base
+#	SetBorderColor 0 0 0 # Chance Base
+#Disabled Block End
+
+#Show  # Chance Bases - Zodiac Leather, Hyrii's Ire
+#	Rarity = Normal
+#	BaseType "Zodiac Leather"
+#	SetFontSize 40
+#	SetBackgroundColor 50 50 50 # Chance Base
+#	SetBorderColor 0 0 0 # Chance Base
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Chance Bases - Skyforth, Sorcerer Boots
+#	Rarity = Normal
+#	BaseType "Sorcerer Boots"
+#	SetFontSize 40
+#	SetBackgroundColor 50 50 50 # Chance Base
+#	SetBorderColor 0 0 0 # Chance Base
+#Disabled Block End
 
 #Disabled Block Start
 #Show  # Chance Bases - Kaom's Heart, Glorious Plate
@@ -1464,15 +1552,6 @@ Hide  # Chance Bases - Skyforth, Sorcerer Boots
 #Show  # Chance Bases - Taste of Hate, Sapphire Flask
 #	Rarity = Normal
 #	BaseType "Sapphire Flask"
-#	SetFontSize 40
-#	SetBackgroundColor 50 50 50 # Chance Base
-#	SetBorderColor 0 0 0 # Chance Base
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Chance Bases - Heretic's Veil, Deicide Mask
-#	Rarity = Normal
-#	BaseType "Deicide Mask"
 #	SetFontSize 40
 #	SetBackgroundColor 50 50 50 # Chance Base
 #	SetBorderColor 0 0 0 # Chance Base
@@ -1500,24 +1579,6 @@ Hide  # Chance Bases - Skyforth, Sorcerer Boots
 #Show  # Chance Bases - Soul Taker, Siege Axe
 #	Rarity = Normal
 #	BaseType "Siege Axe"
-#	SetFontSize 40
-#	SetBackgroundColor 50 50 50 # Chance Base
-#	SetBorderColor 0 0 0 # Chance Base
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Chance Bases - Ebony Tower Shield, Tukohama's Fortress
-#	Rarity = Normal
-#	BaseType "Ebony Tower Shield"
-#	SetFontSize 40
-#	SetBackgroundColor 50 50 50 # Chance Base
-#	SetBorderColor 0 0 0 # Chance Base
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Chance Bases - Abberath's Hooves, Goathide Boots
-#	Rarity = Normal
-#	BaseType "Goathide Boots"
 #	SetFontSize 40
 #	SetBackgroundColor 50 50 50 # Chance Base
 #	SetBorderColor 0 0 0 # Chance Base
@@ -1564,15 +1625,6 @@ Hide  # Chance Bases - Skyforth, Sorcerer Boots
 #Disabled Block End
 
 #Disabled Block Start
-#Show  # Chance Bases - League Specific - Feastbind and Faminebind, Rustic Sash (Talisman)
-#	Rarity = Normal
-#	BaseType "Rustic Sash"
-#	SetFontSize 40
-#	SetBackgroundColor 50 50 50 # Chance Base
-#	SetBorderColor 0 0 0 # Chance Base
-#Disabled Block End
-
-#Disabled Block Start
 #Show  # Chance Bases - League Specific - Brutus' Lead Sprinkler, Ritual Sceptre (Torment)
 #	Rarity = Normal
 #	BaseType "Ritual Sceptre"
@@ -1599,14 +1651,35 @@ Hide  # Chance Bases - Skyforth, Sorcerer Boots
 #	SetBorderColor 0 0 0 # Chance Base
 #Disabled Block End
 
-#Disabled Block Start
-#Show  # Chance Bases - League Specific - Shavronne's Revelation, Moonstone Ring (Anarchy/Onslaught)
-#	Rarity = Normal
-#	BaseType "Moonstone Ring"
-#	SetFontSize 40
-#	SetBackgroundColor 50 50 50 # Chance Base
-#	SetBorderColor 0 0 0 # Chance Base
-#Disabled Block End
+##########################################
+############## ENCHANTMENTS ##############
+##########################################
+# Section: Enchantments
+
+Show  # Enchantments - 20c+
+	HasEnchantment "Enchantment Arc Num Of Additional Projectiles In Chain 1" "Enchantment Ball Lightning Additional Projectiles 1" "Enchantment Barrage Num Of Additional Projectiles 1" "Enchantment Blade Vortex Duration 2" "Enchantment Blood Rage Attack Speed 2" "Enchantment Cobra Lash Damage 2" "Enchantment Cobra Lash Number Of Additional Chains 2" "Enchantment Cyclone Attack Speed 2" "Enchantment Cyclone Damage 2" "Enchantment Earthquake Duration 2" "Enchantment Essence Drain Damage 2" "Enchantment Flicker Strike Damage Per Frenzy Charge 2" "Enchantment Freezing Pulse Projectile Speed 2" "Enchantment Frost Blades Damage 2" "Enchantment Frost Fury Additional Max Number Of Stages 1" "Enchantment Herald Of Agony Mana Reservation 2" "Enchantment Herald Of Agony Num Of Secondary Projectiles 1" "Enchantment Ice Nova Damage 2" "Enchantment Ice Shot Damage 2" "Enchantment Ice Spear Additional Projectile 1" "Enchantment Icicle Mine Critical Multiplier 2" "Enchantment Icicle Mine Damage 2" "Enchantment Incinerate Maximum Stages 2" "Enchantment Lightning Trap Penetration 2" "Enchantment Magma Orb Num Of Additional Projectiles In Chain 2" "Enchantment Molten Strike Num Of Additional Projectiles 2" "Enchantment Orb Of Storms Cast Speed 2" "Enchantment Plague Bearer Stored Poison Damage To Deal Per Second 2" "Enchantment Pyroclast Mine Additional Projectiles 2" "Enchantment Scourge Arrow Additional Spore 1" "Enchantment Static Strike Duration 2" "Enchantment Storm Burst Additional Object Chance 2" "Enchantment Temporal Chains Curse Effect 2" "Enchantment Tornado Shot Num Of Secondary Projectiles 2" "Enchantment Toxic Rain Num Of Additional Projectiles 1" "Enchantment Venom Gyre Withering On Hit Chance 2" "Enchantment Volatile Dead Orbs 3" "Enchantment Wild Strike Num Of Additional Projectiles In Chain 2" "Storm Brand Attached Target Lightning Penetration 2"
+	SetFontSize 45
+	SetTextColor 255 255 255 # Crafting Base (High)
+	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
+	SetBorderColor 0 255 255 # Crafting Base (High)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Square
+	PlayEffect Red
+
+Show  # Enchantments - 10c+
+	HasEnchantment "Enchantment Animate Weapon Chance To Create Additional Copy 2" "Enchantment Arc Damage 2" "Enchantment Ball Lightning Damage 2" "Enchantment Bear Trap Damage Taken 2" "Enchantment Caustic Arrow Damage 2" "Enchantment Cobra Lash Number Of Additional Chains 1" "Enchantment Divine Ire Damage 2" "Enchantment Elemental Hit Attack Speed 2" "Enchantment Fireball Damage 2" "Enchantment Flame Totem Damage 2" "Enchantment Flame Totem Num Of Additional Projectiles 2" "Enchantment Flame Totem Projectile Speed 2" "Enchantment Flamethrower Additional Flamethrowers 2" "Enchantment Freezing Pulse Damage 2" "Enchantment Frost Bolt Cast Speed 2" "Enchantment Frost Bolt Damage 2" "Enchantment Glacial Cascade Physical Damage Percent To Convert To Cold 2" "Enchantment Hatred Mana Reservation 2" "Enchantment Herald Of Ash Mana Reservation 2" "Enchantment Herald Of Ice Mana Reservation 2" "Enchantment Herald Of Purity Additional Minion 1" "Enchantment Ice Trap Cold Penetration 2" "Enchantment Icicle MineThrowing Speed 2" "Enchantment Kinetic Blast Explosions 2" "Enchantment Lightning Arrow Extra Targets 2" "Enchantment Malevolence Mana Reservation 2" "Enchantment Plague Bearer Poison Dot Multiplier While Aura Active 2" "Enchantment Purifying Flame Consecrated Ground Enemy Damage Taken 2" "Enchantment Raise Spectre Damage 2" "Enchantment Scourge Arrow Damage 2" "Enchantment Shrapnel Trap Secondary Explosions 2" "Enchantment Spark Num Of Additional Projectiles 2" "Enchantment Static Strike Maximum Beam Targets 2" "Enchantment Storm Brand Damage 2" "Enchantment Storm Call Duration 2" "Enchantment Summon Ice Golem Damage 2" "Enchantment Summon Raging Spirit Damage 2" "Enchantment Summon Skitterbots Mana Reservation 2" "Enchantment Tectonic Slam Chance To Charged Slam 2" "Enchantment Toxic Rain Damage 2" "Enchantment Venom Gyre Chance To Retain Projectile On Release 2" "Enchantment Venom Gyre Damage 2" "Enchantment Volatile Dead Damage 2" "Enchantment Zombie Attack Speed 2"
+	SetFontSize 40
+	SetBackgroundColor 40 40 40 # Crafting Base (Explicit)
+	SetBorderColor 25 65 175 # Crafting Base (Explicit)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue
+
+Show  # Enchantments - Other
+	AnyEnchantment True
+	SetFontSize 36
+	SetBackgroundColor 40 40 40 # Crafting Base (Explicit)
+	SetBorderColor 25 65 175 # Crafting Base (Explicit)
 
 ##########################################
 ########### SHAPER ELDER MODS ############
@@ -1704,7 +1777,7 @@ Show  # Crafting Bases - Shaper - 85+ Sceptres Wands Daggers
 Show  # Crafting Bases - Shaper - 84+ BaseTypes
 	ShaperItem True
 	ItemLevel >= 84
-	BaseType "Titanium Spirit Shield" "Harmonic Spirit Shield" "Imperial Buckler" "Archon Kite Shield" "Slink Boots" "Sorcerer Boots" "Vaal Mask" "Lion Pelt" "Leather Belt" "Heavy Belt"
+	BaseType "Titanium Spirit Shield" "Harmonic Spirit Shield" "Lacquered Buckler" "Archon Kite Shield" "Slink Boots" "Sorcerer Boots" "Vaal Mask" "Lion Pelt" "Leather Belt" "Heavy Belt"
 	SetFontSize 45
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 200 50 255 # Shaper Elder 83+
@@ -1773,36 +1846,6 @@ Show  # Crafting Bases - Elder - 86+
 	SetFontSize 40
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 200 50 255 # Shaper Elder 83+
-
-##########################################
-############## ENCHANTMENTS ##############
-##########################################
-# Section: Enchantments
-
-Show  # Enchantments - 20c+
-	HasEnchantment "Enchantment Arc Num Of Additional Projectiles In Chain 1" "Enchantment Ball Lightning Additional Projectiles 1" "Enchantment Barrage Num Of Additional Projectiles 1" "Enchantment Blade Vortex Duration 2" "Enchantment Blood Rage Attack Speed 2" "Enchantment Cobra Lash Damage 2" "Enchantment Cobra Lash Number Of Additional Chains 2" "Enchantment Cyclone Attack Speed 2" "Enchantment Cyclone Damage 2" "Enchantment Earthquake Duration 2" "Enchantment Essence Drain Damage 2" "Enchantment Flicker Strike Damage Per Frenzy Charge 2" "Enchantment Freezing Pulse Projectile Speed 2" "Enchantment Frost Blades Damage 2" "Enchantment Frost Fury Additional Max Number Of Stages 1" "Enchantment Herald Of Agony Mana Reservation 2" "Enchantment Herald Of Agony Num Of Secondary Projectiles 1" "Enchantment Ice Nova Damage 2" "Enchantment Ice Shot Damage 2" "Enchantment Ice Spear Additional Projectile 1" "Enchantment Icicle Mine Critical Multiplier 2" "Enchantment Icicle Mine Damage 2" "Enchantment Incinerate Maximum Stages 2" "Enchantment Lightning Trap Penetration 2" "Enchantment Magma Orb Num Of Additional Projectiles In Chain 2" "Enchantment Molten Strike Num Of Additional Projectiles 2" "Enchantment Orb Of Storms Cast Speed 2" "Enchantment Plague Bearer Stored Poison Damage To Deal Per Second 2" "Enchantment Pyroclast Mine Additional Projectiles 2" "Enchantment Scourge Arrow Additional Spore 1" "Enchantment Static Strike Duration 2" "Enchantment Storm Burst Additional Object Chance 2" "Enchantment Temporal Chains Curse Effect 2" "Enchantment Tornado Shot Num Of Secondary Projectiles 2" "Enchantment Toxic Rain Num Of Additional Projectiles 1" "Enchantment Venom Gyre Withering On Hit Chance 2" "Enchantment Volatile Dead Orbs 3" "Enchantment Wild Strike Num Of Additional Projectiles In Chain 2" "Storm Brand Attached Target Lightning Penetration 2"
-	SetFontSize 45
-	SetTextColor 255 255 255 # Crafting Base (High)
-	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
-	SetBorderColor 0 255 255 # Crafting Base (High)
-	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Square
-	PlayEffect Red
-
-Show  # Enchantments - 10c+
-	HasEnchantment "Enchantment Animate Weapon Chance To Create Additional Copy 2" "Enchantment Arc Damage 2" "Enchantment Ball Lightning Damage 2" "Enchantment Bear Trap Damage Taken 2" "Enchantment Caustic Arrow Damage 2" "Enchantment Cobra Lash Number Of Additional Chains 1" "Enchantment Divine Ire Damage 2" "Enchantment Elemental Hit Attack Speed 2" "Enchantment Fireball Damage 2" "Enchantment Flame Totem Damage 2" "Enchantment Flame Totem Num Of Additional Projectiles 2" "Enchantment Flame Totem Projectile Speed 2" "Enchantment Flamethrower Additional Flamethrowers 2" "Enchantment Freezing Pulse Damage 2" "Enchantment Frost Bolt Cast Speed 2" "Enchantment Frost Bolt Damage 2" "Enchantment Glacial Cascade Physical Damage Percent To Convert To Cold 2" "Enchantment Hatred Mana Reservation 2" "Enchantment Herald Of Ash Mana Reservation 2" "Enchantment Herald Of Ice Mana Reservation 2" "Enchantment Herald Of Purity Additional Minion 1" "Enchantment Ice Trap Cold Penetration 2" "Enchantment Icicle MineThrowing Speed 2" "Enchantment Kinetic Blast Explosions 2" "Enchantment Lightning Arrow Extra Targets 2" "Enchantment Malevolence Mana Reservation 2" "Enchantment Plague Bearer Poison Dot Multiplier While Aura Active 2" "Enchantment Purifying Flame Consecrated Ground Enemy Damage Taken 2" "Enchantment Raise Spectre Damage 2" "Enchantment Scourge Arrow Damage 2" "Enchantment Shrapnel Trap Secondary Explosions 2" "Enchantment Spark Num Of Additional Projectiles 2" "Enchantment Static Strike Maximum Beam Targets 2" "Enchantment Storm Brand Damage 2" "Enchantment Storm Call Duration 2" "Enchantment Summon Ice Golem Damage 2" "Enchantment Summon Raging Spirit Damage 2" "Enchantment Summon Skitterbots Mana Reservation 2" "Enchantment Tectonic Slam Chance To Charged Slam 2" "Enchantment Toxic Rain Damage 2" "Enchantment Venom Gyre Chance To Retain Projectile On Release 2" "Enchantment Venom Gyre Damage 2" "Enchantment Volatile Dead Damage 2" "Enchantment Zombie Attack Speed 2"
-	SetFontSize 40
-	SetBackgroundColor 40 40 40 # Crafting Base (Explicit)
-	SetBorderColor 25 65 175 # Crafting Base (Explicit)
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Blue Square
-	PlayEffect Blue
-
-Show  # Enchantments - Other
-	AnyEnchantment True
-	SetFontSize 36
-	SetBackgroundColor 40 40 40 # Crafting Base (Explicit)
-	SetBorderColor 25 65 175 # Crafting Base (Explicit)
 
 ##########################################
 ############# EXPLICIT MODS ##############
@@ -2055,7 +2098,7 @@ Show  # Explicit Mods - Fractured - Rare - 83+
 	FracturedItem True
 	Rarity = Rare
 	ItemLevel >= 83
-	SetFontSize 40
+	SetFontSize 36
 	SetBackgroundColor 40 40 40 # Crafting Base 84+ (Mid)
 	SetBorderColor 40 80 150 # Crafting Base 84+ (Mid)
 	PlayAlertSound 4 200 # Mid Value
@@ -2068,6 +2111,8 @@ Show  # Explicit Mods - Fractured - Rare - Other
 	SetFontSize 36
 	SetBackgroundColor 40 40 40 # Crafting Base (Explicit)
 	SetBorderColor 25 65 175 # Crafting Base (Explicit)
+	MinimapIcon 1 Blue Square		
+	PlayEffect Blue
 
 ##########################################
 ############### PRE-FILTER ###############
@@ -2434,11 +2479,11 @@ Show  # Jewels - Unique
 # Abyss Magic #
 #-------------#
 
-Show  # Abyss Jewels - Magic - Leveling
+Hide  # Abyss Jewels - Magic - Leveling
 	Class "Abyss Jewel"
 	ItemLevel <= 67
 	Rarity <= Magic
-	SetFontSize 36
+	SetFontSize 32
 	SetBackgroundColor 0 0 0 # Jewel (Abyss)
 	SetBorderColor 0 220 220 # Jewel (Magic)
 
@@ -2473,22 +2518,20 @@ Hide  # Abyss Jewels - Magic - Mapping (High)
 # Abyss Rare #
 #------------#
 
-Show  # Abyss Jewels - Rare - Leveling
+Hide  # Abyss Jewels - Rare - Leveling
 	Class "Abyss Jewel"
 	Rarity = Rare
 	ItemLevel < 68
-	SetFontSize 40
+	SetFontSize 36
 	SetBackgroundColor 0 0 0 # Jewel (Abyss)
 	SetBorderColor 0 220 220 # Jewel (Rare)
-	MinimapIcon 0 Yellow Star
-	PlayEffect Yellow
 
 #Disabled Block Start
 #Show  # Abyss Jewels - Rare - Mapping (Low)
 #	Class "Abyss Jewel"
 #	Rarity = Rare
 #	ItemLevel < 73
-#	SetFontSize 40
+#	SetFontSize 36
 #	SetBackgroundColor 0 0 0 # Jewel (Abyss)
 #	SetBorderColor 0 220 220 # Jewel (Rare)
 #Disabled Block End
@@ -2498,15 +2541,15 @@ Show  # Abyss Jewels - Rare - Leveling
 #	Class "Abyss Jewel"
 #	Rarity = Rare
 #	ItemLevel < 77
-#	SetFontSize 40
+#	SetFontSize 36
 #	SetBackgroundColor 0 0 0 # Jewel (Abyss)
 #	SetBorderColor 0 220 220 # Jewel (Rare)
 #Disabled Block End
 
-Show  # Abyss Jewels - Rare - Mapping (High)
+Hide  # Abyss Jewels - Rare - Mapping (High)
 	Class "Abyss Jewel"
 	Rarity = Rare
-	SetFontSize 40
+	SetFontSize 36
 	SetBackgroundColor 0 0 0 # Jewel (Abyss)
 	SetBorderColor 0 220 220 # Jewel (Rare)
 
@@ -2514,11 +2557,11 @@ Show  # Abyss Jewels - Rare - Mapping (High)
 # Normal/Magic #
 #--------------#
 
-Show  # Jewels - Magic - Leveling
+Hide  # Jewels - Magic - Leveling
 	Class Jewel
 	Rarity <= Magic
 	ItemLevel < 68
-	SetFontSize 36
+	SetFontSize 32
 	SetBackgroundColor 0 0 0 # Jewel (Magic)
 	SetBorderColor 0 220 220 # Jewel (Magic)
 
@@ -2553,23 +2596,20 @@ Hide  # Jewels - Magic - Mapping (High)
 # Rare #
 #------#
 
-Show  # Jewels - Rare - Leveling
+Hide  # Jewels - Rare - Leveling
 	Class Jewel
 	Rarity = Rare
 	ItemLevel < 68
-	SetFontSize 40
+	SetFontSize 36
 	SetBackgroundColor 0 0 0 # Jewel (Rare)
 	SetBorderColor 0 220 220 # Jewel (Rare)
-	PlayAlertSound 6 200 # Jewel
-	MinimapIcon 0 Yellow Star
-	PlayEffect Yellow
 
 #Disabled Block Start
 #Show  # Jewels - Rare - Mapping (Low)
 #	Class Jewel
 #	Rarity = Rare
 #	ItemLevel < 73
-#	SetFontSize 40
+#	SetFontSize 36
 #	SetBackgroundColor 0 0 0 # Jewel (Rare)
 #	SetBorderColor 0 220 220 # Jewel (Rare)
 #Disabled Block End
@@ -2579,7 +2619,7 @@ Show  # Jewels - Rare - Leveling
 #	Class Jewel
 #	Rarity = Rare
 #	ItemLevel < 77
-#	SetFontSize 40
+#	SetFontSize 36
 #	SetBackgroundColor 0 0 0 # Jewel (Rare)
 #	SetBorderColor 0 220 220 # Jewel (Rare)
 #Disabled Block End
@@ -2587,7 +2627,7 @@ Show  # Jewels - Rare - Leveling
 Hide  # Jewels - Rare - Mapping (High)
 	Class Jewel
 	Rarity = Rare
-	SetFontSize 40
+	SetFontSize 36
 	SetBackgroundColor 0 0 0 # Jewel (Rare)
 	SetBorderColor 0 220 220 # Jewel (Rare)
 
@@ -2599,17 +2639,6 @@ Hide  # Jewels - Rare - Mapping (High)
 #------#
 # High #
 #------#
-
-Show  # Gems - Quality - 17%+
-	Quality >= 17
-	Class "Skill Gems"
-	SetFontSize 45
-	SetTextColor 27 162 155 # Gem (High)
-	SetBackgroundColor 255 255 255 255 # Gem (High)
-	SetBorderColor 50 220 180 # Gem (High)
-	PlayAlertSound 6 200 # Gem
-	MinimapIcon 0 Yellow Star
-	PlayEffect Yellow
 
 Show  # Gems - Leveled - High Value
 	Class "Skill Gems"
@@ -2626,7 +2655,6 @@ Show  # Gems - Leveled - High Value
 Show  # Gems - Item Quantity
 	Class "Skill Gems"
 	BaseType "Item Quantity"
-	GemLevel >= 2
 	SetFontSize 45
 	SetTextColor 27 162 155 # Gem (High)
 	SetBackgroundColor 255 255 255 255 # Gem (High)
@@ -2635,83 +2663,112 @@ Show  # Gems - Item Quantity
 	MinimapIcon 0 Red Star
 	PlayEffect Red
 
-#-----#
-# Mid #
-#-----#
-
-Show  # Gems - Leveled - Level 20
+Show  # Gems - Leveled - Level 21+
 	Class "Skill Gems"
-	GemLevel 20
+	GemLevel >= 21
 	SetFontSize 45
-	SetTextColor 55 225 185 # Gem (Mid)
-	SetBackgroundColor 10 35 30 # Gem (Mid)
-	SetBorderColor 50 220 180 # Gem (Mid)
+	SetTextColor 27 162 155 # Gem (High)
+	SetBackgroundColor 255 255 255 255 # Gem (High)
+	SetBorderColor 50 220 180 # Gem (High)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Star
+	PlayEffect Red
+
+Show  # Gems - Quality - 21%+
+	Quality >= 21
+	Class "Skill Gems"
+	SetFontSize 45
+	SetTextColor 27 162 155 # Gem (High)
+	SetBackgroundColor 255 255 255 255 # Gem (High)
+	SetBorderColor 50 220 180 # Gem (High)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Star
+	PlayEffect Red
+
+Show  # Gems - Quality - 17%+
+	Quality >= 17
+	Class "Skill Gems"
+	SetFontSize 40
+	SetTextColor 27 162 155 # Gem (High)
+	SetBackgroundColor 255 255 255 255 # Gem (High)
+	SetBorderColor 50 220 180 # Gem (High)
 	PlayAlertSound 6 200 # Gem
 	MinimapIcon 0 Yellow Star
 	PlayEffect Yellow
 
-Show  # Gems - Leveled - Level 19
+#-----#
+# Mid #
+#-----#
+
+Show  # Gems - Leveled - Level 19+
 	Class "Skill Gems"
 	GemLevel >= 19
 	SetFontSize 40
 	SetTextColor 55 225 185 # Gem (Mid)
 	SetBackgroundColor 10 35 30 # Gem (Mid)
-	SetBorderColor 50 220 180 # Gem (Mid)
 	PlayAlertSound 6 200 # Gem
 	MinimapIcon 0 Yellow Star
 	PlayEffect Yellow
 
-Show  # Gems - Quality - 10%+
-	Quality >= 10
+Show  # Gems - Quality - 14%+
+	Quality >= 14
 	Class "Skill Gems"
-	SetFontSize 40
+	SetFontSize 36
 	SetTextColor 55 225 185 # Gem Quality (Mid)
 	SetBackgroundColor 50 50 50 # Gem Quality (Mid)
 	SetBorderColor 200 200 200 # Gem Quality (Mid)
-	PlayAlertSound 6 200 # Gem
-	MinimapIcon 0 Yellow Star
-	PlayEffect Yellow
 
-Show  # Gems - Drop Only - 1c+
+Show  # Gems - Drop Only - 5c+
 	Class "Skill Gems"
-	BaseType Portal Empower Enlighten "Vaal Breach" "Vaal Haste" "Vaal Discipline"
+	BaseType Portal Empower Enlighten "Vaal Breach"
 	SetFontSize 40
 	SetTextColor 55 225 185 # Gem (Mid)
 	SetBackgroundColor 10 35 30 # Gem (Mid)
 	SetBorderColor 50 220 180 # Gem (Mid)
+	PlayAlertSound 6 200 # Gem
+	MinimapIcon 0 Yellow Star
+	PlayEffect Yellow
 
 #-----#
 # Low #
 #-----#
 
-Hide  # Gems - Quality - 5%+
-	Quality >= 5
+Hide  # Gems - Drop Only - 1c+
+	Class "Skill Gems"
+	BaseType "Vaal Haste" "Vaal Discipline"
+	SetFontSize 36
+	SetTextColor 55 225 185 # Gem (Mid)
+	SetBackgroundColor 10 35 30 # Gem (Mid)
+	SetBorderColor 50 220 180 # Gem (Mid)
+
+Show  # Gems - Quality - 10%+
+	Quality >= 10
 	Class "Skill Gems"
 	SetFontSize 36
 	SetTextColor 27 162 155 # Gem Quality (Low)
 	SetBackgroundColor 8 30 25 # Gem Quality (Low)
 	SetBorderColor 130 130 130 # Gem Quality (Low)
 
-Hide  # Gems - Drop Only - Nearly Worthless
+Hide  # Gems - Quality - 5%+
+	Quality >= 5
 	Class "Skill Gems"
-	BaseType "Vaal Cyclone" "Vaal Clarity" "Vaal Lightning Trap" "Vaal Spark" "Vaal Fireball" "Added Chaos Damage"
-	SetFontSize 36
-	SetTextColor 27 162 155 # Gem (Low)
-	SetBackgroundColor 8 30 25 # Gem (Low)
-	SetBorderColor 0 150 150 # Gem (Low)
+	SetFontSize 32
+	SetTextColor 27 162 155 # Gem Quality (Low)
+	SetBackgroundColor 8 30 25 # Gem Quality (Low)
+	SetBorderColor 130 130 130 # Gem Quality (Low)
 
 Hide  # Gems - Quality - 1%+
 	Quality > 0
 	Class "Skill Gems"
-	SetFontSize 36
+	SetFontSize 32
 	SetTextColor 27 162 155 # Gem Quality (Low)
 	SetBackgroundColor 8 30 25 # Gem Quality (Low)
 	SetBorderColor 130 130 130 # Gem Quality (Low)
 
 Hide  # Gems - Drop Only - Worthless
 	Class "Skill Gems"
-	BaseType Vaal "Detonate Mines" Enhance
-	SetFontSize 36
+	BaseType Vaal Enhance
+	SetFontSize 32
 	SetTextColor 27 162 155 # Gem (Low)
 	SetBackgroundColor 8 30 25 # Gem (Low)
 	SetBorderColor 0 150 150 # Gem (Low)
@@ -3015,7 +3072,6 @@ Show  # Maps - Fragments - Low Value
 	SetTextColor 0 0 0 # Map Fragment (Low)
 	SetBackgroundColor 0 255 255 210 # Map Fragment (Low)
 	SetBorderColor 0 0 0 # Map Fragment (Low)
-	DisableDropSound
 	MinimapIcon 0 Blue Hexagon
 	PlayEffect Blue
 
@@ -3226,63 +3282,70 @@ Show  # Divination Cards - New (Error)
 # Utility #
 #---------#
 
-Hide  # Flasks - Utility - Leveling - 5%+ Quality
-	Quality >= 5
-	Class "Utility Flasks"
-	ItemLevel < 68
-	SetFontSize 36
-	SetBackgroundColor 30 60 60 # Flask
-	SetBorderColor 200 200 200 # Quality (Bright)
-
-Hide  # Flasks - Utility - Leveling - Other
+Show  # Flasks - Utility - Leveling
 	Class "Utility Flasks"
 	ItemLevel < 68
 	SetFontSize 36
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 75 75 255 # Flask (Utility)
 
-#Disabled Block Start
-#Show  # Flasks - Utility - Mapping (Low) - 5%+ Quality
-#	Quality >= 5
-#	Class "Utility Flasks"
-#	ItemLevel < 73
-#	SetFontSize 36
-#	SetBackgroundColor 30 60 60 # Flask
-#	SetBorderColor 200 200 200 # Quality (Bright)
-#Disabled Block End
+Hide  # Flasks - Utility - Mapping (Low)
+	Class "Utility Flasks"
+	ItemLevel < 73
+	SetFontSize 36
+	SetBackgroundColor 30 60 60 # Flask
+	SetBorderColor 75 75 255 # Flask (Utility)
 
 #Disabled Block Start
-#Show  # Flasks - Utility - Mapping (Low) - Other
+#Show  # Flasks - Utility - Mapping (Mid)
 #	Class "Utility Flasks"
-#	ItemLevel < 73
+#	ItemLevel < 78
 #	SetFontSize 36
 #	SetBackgroundColor 30 60 60 # Flask
 #	SetBorderColor 75 75 255 # Flask (Utility)
 #Disabled Block End
 
-Hide  # Flasks - Utility - Mapping (High) - 5%+ Quality
-	Quality >= 5
-	Class "Utility Flasks"
-	SetFontSize 36
-	SetBackgroundColor 30 60 60 # Flask
-	SetBorderColor 200 200 200 # Quality (Bright)
-
-Hide  # Flasks - Utility - Mapping (High) - Other
+Hide  # Flasks - Utility - Mapping (High)
 	Class "Utility Flasks"
 	SetFontSize 36
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 75 75 255 # Flask (Utility)
 
-#-------------#
-# 5%+ Quality #
-#-------------#
-
+#---------#
+# Quality #
+#---------#
 # Glassblower's Bauble Recipe
-Hide  # Flasks - Leveling - 5%+ Quality
+
+Hide  # Flasks - Quality - Leveling
 	Quality >= 5
 	Class Flasks
 	ItemLevel < 68
-	SetFontSize 36
+	SetFontSize 32
+	SetBackgroundColor 30 60 60 # Flask
+	SetBorderColor 140 140 140 # Quality
+
+Hide  # Flasks - Quality - Mapping (Low)
+	Quality >= 5
+	Class Flasks
+	ItemLevel < 73
+	SetFontSize 32
+	SetBackgroundColor 30 60 60 # Flask
+	SetBorderColor 140 140 140 # Quality
+
+#Disabled Block Start
+#Show  # Flasks - Quality - Mapping (Mid)
+#	Quality >= 5
+#	Class Flasks
+#	ItemLevel < 78
+#	SetFontSize 32
+#	SetBackgroundColor 30 60 60 # Flask
+#	SetBorderColor 140 140 140 # Quality
+#Disabled Block End
+
+Hide  # Flasks - Quality - Mapping (High)
+	Quality >= 5
+	Class Flasks
+	SetFontSize 32
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 140 140 140 # Quality
 
@@ -3290,15 +3353,15 @@ Hide  # Flasks - Leveling - 5%+ Quality
 # Low Drop Level #
 #----------------#
 
-Hide  # Flasks - Low Drop Level - 65+
+Hide  # Flasks - Normal - Low Drop Level - 65+
 	Class Flasks
 	DropLevel < 60
 	ItemLevel > 65
-	SetFontSize 32
+	SetFontSize 24
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 0 0 0 # Flask
 
-Hide  # Flasks - Low Drop Level - 60+
+Hide  # Flasks - Normal - Low Drop Level - 60+
 	Class Flasks
 	DropLevel < 50
 	ItemLevel > 60
@@ -3306,7 +3369,7 @@ Hide  # Flasks - Low Drop Level - 60+
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 0 0 0 # Flask
 
-Hide  # Flasks - Low Drop Level - 50+
+Hide  # Flasks - Normal - Low Drop Level - 50+
 	Class Flasks
 	DropLevel < 40
 	ItemLevel > 50
@@ -3314,7 +3377,7 @@ Hide  # Flasks - Low Drop Level - 50+
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 0 0 0 # Flask
 
-Hide  # Flasks - Low Drop Level - 40+
+Hide  # Flasks - Normal - Low Drop Level - 40+
 	Class Flasks
 	DropLevel < 30
 	ItemLevel > 40
@@ -3322,7 +3385,7 @@ Hide  # Flasks - Low Drop Level - 40+
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 0 0 0 # Flask
 
-Hide  # Flasks - Low Drop Level - 30+
+Hide  # Flasks - Normal - Low Drop Level - 30+
 	Class Flasks
 	DropLevel < 20
 	ItemLevel > 30
@@ -3330,7 +3393,7 @@ Hide  # Flasks - Low Drop Level - 30+
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 0 0 0 # Flask
 
-Hide  # Flasks - Low Drop Level - 20+
+Hide  # Flasks - Normal - Low Drop Level - 20+
 	Class Flasks
 	DropLevel < 10
 	ItemLevel > 20
@@ -3338,82 +3401,49 @@ Hide  # Flasks - Low Drop Level - 20+
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 0 0 0 # Flask
 
-#----------#
-# Leveling #
-#----------#
+#--------#
+# Normal #
+#--------#
 
-Hide  # Flasks - Leveling - Hybrid
+Hide  # Flasks - Normal - Leveling - Hybrid
 	Class "Hybrid Flasks"
 	ItemLevel < 68
 	SetFontSize 32
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 0 0 0 # Flask
 
-Hide  # Flasks - Leveling - Quality
-	Quality > 0
-	Class Flasks
-	ItemLevel < 68
-	SetFontSize 32
-	SetBackgroundColor 30 60 60 # Flask
-	SetBorderColor 140 140 140 # Quality
-
-Hide  # Flasks - Leveling - Normal
-	Class Flasks
+Hide  # Flasks - Normal - Leveling - Life
+	Class "Life Flasks"
 	ItemLevel < 68
 	SetFontSize 32
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 0 0 0 # Flask
 
-#---------#
-# Mapping #
-#---------#
-
-#Disabled Block Start
-#Show  # Flasks - Mapping (Low) - Quality
-#	Quality > 0
-#	Class Flasks
-#	ItemLevel < 73
-#	SetFontSize 32
-#	SetBackgroundColor 30 60 60 # Flask
-#	SetBorderColor 140 140 140 # Quality
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Flasks - Mapping (Low) - Normal
-#	Class Flasks
-#	ItemLevel < 73
-#	SetFontSize 32
-#	SetBackgroundColor 30 60 60 # Flask
-#	SetBorderColor 0 0 0 # Flask
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Flasks - Mapping (Mid) - Quality
-#	Quality > 0
-#	Class Flasks
-#	ItemLevel < 77
-#	SetFontSize 32
-#	SetBackgroundColor 30 60 60 # Flask
-#	SetBorderColor 140 140 140 # Quality
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Flasks - Mapping (Mid) - Normal
-#	Class Flasks
-#	ItemLevel < 77
-#	SetFontSize 32
-#	SetBackgroundColor 30 60 60 # Flask
-#	SetBorderColor 0 0 0 # Flask
-#Disabled Block End
-
-Hide  # Flasks - Mapping (High) - Quality
-	Quality > 0
-	Class Flasks
+Hide  # Flasks - Normal - Leveling - Mana
+	Class "Mana Flasks"
+	ItemLevel < 68
 	SetFontSize 32
 	SetBackgroundColor 30 60 60 # Flask
-	SetBorderColor 140 140 140 # Quality
+	SetBorderColor 0 0 0 # Flask
 
-Hide  # Flasks - Mapping (High) - Normal
+#Disabled Block Start
+#Show  # Flasks - Normal - Mapping (Low)
+#	Class Flasks
+#	ItemLevel < 73
+#	SetFontSize 32
+#	SetBackgroundColor 30 60 60 # Flask
+#	SetBorderColor 0 0 0 # Flask
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Flasks - Normal - Mapping (Mid)
+#	Class Flasks
+#	ItemLevel < 77
+#	SetFontSize 32
+#	SetBackgroundColor 30 60 60 # Flask
+#Disabled Block End
+
+Hide  # Flasks - Normal - Mapping (High)
 	Class Flasks
 	SetFontSize 32
 	SetBackgroundColor 30 60 60 # Flask
@@ -3955,17 +3985,6 @@ Hide  # 60+ Rares - Accessories
 # 83+ for T1 physical damage mods
 
 #Disabled Block Start
-#Show  # Highlighted Rares - Top Tier - Bows - Harbinger Bow - 83+
-#	Class Bows
-#	ItemLevel >= 83
-#	BaseType "Harbinger Bow"
-#	SetFontSize 36
-#	SetTextColor 255 190 75 # Rare Weapon
-#	SetBackgroundColor 20 80 55 240 # Rare Recipe 84+ (Valuable)
-#	SetBorderColor 200 150 60 # Rare Weapon 83+ (Valuable)
-#Disabled Block End
-
-#Disabled Block Start
 #Show  # Highlighted Rares - Two Hand Weapons - Axes - 83+
 #	Class "Two Hand Axes"
 #	DropLevel >= 60
@@ -4010,20 +4029,9 @@ Hide  # 60+ Rares - Accessories
 #Disabled Block End
 
 #Disabled Block Start
-#Show  # Highlighted Rares - Two Hand Weapons - War Staves Warstaff - 83+
-#	Class "War Staff"
-#	DropLevel >= 61
-#	ItemLevel >= 83
-#	SetFontSize 36
-#	SetTextColor 255 190 75 # Rare Weapon
-#	SetBackgroundColor 20 80 55 240 # Rare Recipe 84+ (Highlighted)
-#	SetBorderColor 170 125 50 # Rare Weapon 83+ (Highlighted)
-#Disabled Block End
-
-#Disabled Block Start
 #Show  # Highlighted Rares - Two Hand Weapons - Staves - 83+
 #	Class Staves
-#	DropLevel >= 61
+#	DropLevel >= 57
 #	ItemLevel >= 83
 #	SetFontSize 36
 #	SetTextColor 255 190 75 # Rare Weapon
@@ -4034,7 +4042,7 @@ Hide  # 60+ Rares - Accessories
 #Disabled Block Start
 #Show  # Highlighted Rares - Two Hand Weapons - Warstaves - 83+
 #	Class Warstaff
-#	DropLevel >= 61
+#	DropLevel >= 60
 #	ItemLevel >= 83
 #	SetFontSize 36
 #	SetTextColor 255 190 75 # Rare Weapon
@@ -4093,7 +4101,7 @@ Hide  # 60+ Rares - Accessories
 
 #Disabled Block Start
 #Show  # Highlighted Rares - Top Tier - Daggers - Imperial Skean - 83+
-#	Class Daggers "Rune Dagger"
+#	Class "Rune Dagger"
 #	ItemLevel >= 83
 #	BaseType "Imperial Skean"
 #	SetFontSize 36
@@ -4104,7 +4112,7 @@ Hide  # 60+ Rares - Accessories
 
 #Disabled Block Start
 #Show  # Highlighted Rares - Top Tier - Daggers - Ambusher - 83+
-#	Class Daggers "Rune Dagger"
+#	Class Daggers
 #	ItemLevel >= 83
 #	BaseType "Ambusher"
 #	SetFontSize 36
@@ -4511,17 +4519,6 @@ Hide  # 83+ Rares - Quivers
 # 73+ for T2 physical damage mods
 
 #Disabled Block Start
-#Show  # Highlighted Rares - Top Tier - Bows - Harbinger Bows - 75+
-#	Class Bows
-#	ItemLevel >= 75
-#	BaseType "Harbinger Bow"
-#	SetFontSize 36
-#	SetTextColor 255 190 75 # Rare Weapon
-#	SetBackgroundColor 20 60 90 230 # Rare Recipe 75+ (Valuable)
-#	SetBorderColor 200 150 60 # Rare Weapon 75+ (Valuable)
-#Disabled Block End
-
-#Disabled Block Start
 #Show  # Highlighted Rares - Two Hand Weapons - Axes - 75+
 #	Class "Two Hand Axes"
 #	DropLevel >= 60
@@ -4568,7 +4565,7 @@ Hide  # 83+ Rares - Quivers
 #Disabled Block Start
 #Show  # Highlighted Rares - Two Hand Weapons - Staves - 75+
 #	Class Staves
-#	DropLevel >= 61
+#	DropLevel >= 57
 #	ItemLevel >= 75
 #	SetFontSize 36
 #	SetTextColor 255 190 75 # Rare Weapon
@@ -4579,7 +4576,7 @@ Hide  # 83+ Rares - Quivers
 #Disabled Block Start
 #Show  # Highlighted Rares - Two Hand Weapons - Warstaves - 75+
 #	Class Warstaff
-#	DropLevel >= 61
+#	DropLevel >= 60
 #	ItemLevel >= 75
 #	SetFontSize 36
 #	SetTextColor 255 190 75 # Rare Weapon
@@ -4638,7 +4635,7 @@ Hide  # 83+ Rares - Quivers
 
 #Disabled Block Start
 #Show  # Highlighted Rares - Top Tier - Daggers - Imperial Skean - 75+
-#	Class Daggers "Rune Dagger"
+#	Class "Rune Dagger"
 #	ItemLevel >= 75
 #	BaseType "Imperial Skean"
 #	SetFontSize 36
@@ -4649,7 +4646,7 @@ Hide  # 83+ Rares - Quivers
 
 #Disabled Block Start
 #Show  # Highlighted Rares - Top Tier - Daggers - Ambusher - 75+
-#	Class Daggers "Rune Dagger"
+#	Class Daggers
 #	ItemLevel >= 75
 #	BaseType "Ambusher"
 #	SetFontSize 36
@@ -5161,17 +5158,6 @@ Show  # Errors - 75+
 #------------------------------------#
 
 #Disabled Block Start
-#Show  # Highlighted Rares - Top Tier - Bows - Harbinger Bows - 60+
-#	Class Bows
-#	ItemLevel >= 60
-#	BaseType "Harbinger Bow"
-#	SetFontSize 36
-#	SetTextColor 255 190 75 # Rare Weapon
-#	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (Highlighted)
-#	SetBorderColor 170 125 50 # Rare Weapon 60+ (Highlighted)
-#Disabled Block End
-
-#Disabled Block Start
 #Show  # Highlighted Rares - Two Hand Weapons - Axes - 60+
 #	Class "Two Hand Axes"
 #	DropLevel >= 60
@@ -5218,7 +5204,7 @@ Show  # Errors - 75+
 #Disabled Block Start
 #Show  # Highlighted Rares - Two Hand Weapons - Staves - 60+
 #	Class Staves
-#	DropLevel >= 61
+#	DropLevel >= 57
 #	ItemLevel >= 60
 #	SetFontSize 36
 #	SetTextColor 255 190 75 # Rare Weapon
@@ -5229,7 +5215,7 @@ Show  # Errors - 75+
 #Disabled Block Start
 #Show  # Highlighted Rares - Two Hand Weapons - Warstaves - 60+
 #	Class Warstaff
-#	DropLevel >= 61
+#	DropLevel >= 60
 #	ItemLevel >= 60
 #	SetFontSize 36
 #	SetTextColor 255 190 75 # Rare Weapon
@@ -5287,7 +5273,7 @@ Show  # Errors - 75+
 
 #Disabled Block Start
 #Show  # Highlighted Rares - Top Tier - Daggers - Imperial Skean - 60+
-#	Class Daggers "Rune Dagger"
+#	Class "Rune Dagger"
 #	ItemLevel >= 60
 #	BaseType "Imperial Skean"
 #	SetFontSize 36
@@ -5298,7 +5284,7 @@ Show  # Errors - 75+
 
 #Disabled Block Start
 #Show  # Highlighted Rares - Top Tier - Daggers - Ambusher - 60+
-#	Class Daggers "Rune Dagger"
+#	Class Daggers
 #	ItemLevel >= 60
 #	BaseType "Ambusher"
 #	SetFontSize 36
