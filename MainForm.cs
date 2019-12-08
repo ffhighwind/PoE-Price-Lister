@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Data;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -10,16 +8,16 @@ namespace PoE_Price_Lister
 {
 	public partial class MainForm : Form
 	{
-		private DataModel model = new DataModel();
-		private ListViewItemComparer sorter = new ListViewItemComparer(0);
+		private readonly DataModel model = new DataModel();
+		private readonly ListViewItemComparer sorter = new ListViewItemComparer(0);
 		private static readonly string[] numericCols = new string[] { "Severity", "Value" };
 
-		private DataTable scUniquesTable = new DataTable();
-		private DataTable hcUniquesTable = new DataTable();
-		private DataTable scDivinationTable = new DataTable();
-		private DataTable hcDivinationTable = new DataTable();
-		private DataTable scEnchantsTable = new DataTable();
-		private DataTable hcEnchantsTable = new DataTable();
+		private readonly DataTable scUniquesTable = new DataTable();
+		private readonly DataTable hcUniquesTable = new DataTable();
+		private readonly DataTable scDivinationTable = new DataTable();
+		private readonly DataTable hcDivinationTable = new DataTable();
+		private readonly DataTable scEnchantsTable = new DataTable();
+		private readonly DataTable hcEnchantsTable = new DataTable();
 
 		public MainForm()
 		{
@@ -102,21 +100,18 @@ namespace PoE_Price_Lister
 			}
 			FilterWriter writer = new FilterWriter(model, l1, l2);
 			string[] filterFiles = new string[] {
-				"S_NoRares_Highwind.filter",
 				"S1_Regular_Highwind.filter",
 				"S2_Mapping_Highwind.filter",
 				"S3_Strict_Highwind.filter",
 				"S4_Very_Strict_Highwind.filter"
 			};
 			string[] largeFiles = new string[] {
-				"L_NoRares_Highwind.filter",
 				"L1_Regular_Highwind.filter",
 				"L2_Mapping_Highwind.filter",
 				"L3_Strict_Highwind.filter",
 				"L4_Very_Strict_Highwind.filter"
 			};
 			FilterType[] filterTypes = new FilterType[] {
-				FilterType.NO_RARES,
 				FilterType.LEVELING,
 				FilterType.MAPPING,
 				FilterType.STRICT,

@@ -1,9 +1,25 @@
-﻿using System;
+﻿#region License
+// Copyright © 2018 Wesley Hamilton
+// 
+// Licensed under the Apache License, Version 2.0 (the "License"); 
+// you may not use this file except in compliance with the License. 
+// You may obtain a copy of the License at 
+// 
+// http://www.apache.org/licenses/LICENSE-2.0 
+// 
+// Unless required by applicable law or agreed to in writing, software 
+// distributed under the License is distributed on an "AS IS" BASIS, 
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+// See the License for the specific language governing permissions and 
+// limitations under the License.
+// 
+// The latest version of this file can be found at https://github.com/ffhighwind/PoE-Price-Lister
+#endregion
+
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Net.Http;
-using System.Net.Http.Headers;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
@@ -45,7 +61,7 @@ namespace PoE_Price_Lister
 		private const int MaxErrors = 5;
 		private int ErrorCount = 0;
 
-		private List<IReadOnlyList<string>> conflicts = new List<IReadOnlyList<string>>();
+		private readonly List<IReadOnlyList<string>> conflicts = new List<IReadOnlyList<string>>();
 		public IReadOnlyList<IReadOnlyList<string>> DivinationCardNameConflicts => conflicts;
 
 		public void Load()
@@ -210,17 +226,12 @@ namespace PoE_Price_Lister
 			EnchantCsv[] records = engine.ReadString(csvText);
 			foreach (EnchantCsv csvdata in records) {
 				if (!SC.Enchantments.ContainsKey(csvdata.Description)) {
-					try {
-						Enchantment scData = new Enchantment(csvdata.Name);
-						SC.Enchantments.Add(csvdata.Name, scData);
-						SC.EnchantmentsDescriptions.Add(csvdata.Description, scData);
-						Enchantment hcData = new Enchantment(csvdata.Name);
-						HC.Enchantments.Add(csvdata.Name, hcData);
-						HC.EnchantmentsDescriptions.Add(csvdata.Description, hcData);
-					}
-					catch (Exception ex) {
-						throw;
-					}
+					Enchantment scData = new Enchantment(csvdata.Name);
+					SC.Enchantments.Add(csvdata.Name, scData);
+					SC.EnchantmentsDescriptions.Add(csvdata.Description, scData);
+					Enchantment hcData = new Enchantment(csvdata.Name);
+					HC.Enchantments.Add(csvdata.Name, hcData);
+					HC.EnchantmentsDescriptions.Add(csvdata.Description, hcData);
 				}
 				SC.Enchantments[csvdata.Name].Load(csvdata);
 				HC.Enchantments[csvdata.Name].Load(csvdata);
