@@ -8,7 +8,6 @@ namespace PoE_Price_Lister
 {
 	public enum FilterType
 	{
-		NO_RARES,
 		LEVELING,
 		MAPPING,
 		STRICT,
