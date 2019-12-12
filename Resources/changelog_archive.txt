@@ -1,3 +1,147 @@
+ï»¿---------------------------------------------------------------------------------------------------------------
+| Blight
+---------------------------------------------------------------------------------------------------------------
+
+3.8.17
+? Updated the filter values.
+
+3.8.16
+? Reworked Gems and Jewels.
+? Reworked the 5+ links section.
+? Reworked the Chance bases section. Removed Sorcerer Boots from the normal filter.
+? Reworked the Chisels section. Now only 15%+ quality hammers are shown.
+? Reworked the Flasks section. Removed the white border from quality utility flasks.
+? Moved Enchanted Fossil up a tier.
+? Changed staves range to 57+ and Warstaves to 60+.
+? Removed the NoRares filter (for custom leagues with no rares). This filter requires too many changes to be useful.
+? Removed Wailing Essences from the Very Strict filter.
+? Removed breach splinters except Chayula from the Very Strict filter.
+? Removed the highlight for Harbinger bows.
+? Other fixes.
+
+3.8.15
+? Added Doryani's Machinarium (Maze) to the high value unique maps.
+? Changed Fishing Rods colors to the high value unique colors.
+? Added Eldritch Incubator to the high value incubators.
+? Changed Gilded Scarabs colors to red. Slightly reduced the size of the map icon for other scarabs.
+? Added more items to the ilvl 83+ Shaper/Elder crafting bases.
+? Greatly reduced the visibility of low value Shaper/Elder items. Reduced the size and removed sounds/beams/map icons.
+? Removed low drop level Shaper/Elder items from the Strict filters.
+? Added explicit mods: "of Janus' Veil", "of Craiceann", "of Farrul", "of Saqawal"
+? Updated the CSVs for some Betrayal/Delve items.
+
+3.8.14
+? Updated filter values.
+? Reworked divination card value ranges. They are now Worthless (hand picked), Nearly Worthless (<0.8c), <2c, 2-10c, and 10c+.
+
+3.8.13
+? Updated filter values.
+? Updated some Synthesis unique CSV data.
+? Reworked uniques value ranges. They are now Worthless (orange), Limited (orange), 3-5c (yellow), 5-15c (white border), and 15c+ (solid white).
+? Added unobtainable divination cards: The Devastator, Dying Anguish, Birth of the Three, Luck of the Vaal.
+? Moved "The Gambler" and "Three Voices" divination cards up a tier.
+
+3.8.12
+? Updated filter values.
+? Heavily reworked the colors and value ranges for uniques, divination cards, and enchantments.
+? Uniques are now shown in the Very Strict filter if they are 2c+ instead of 1c+. The yellow border around uniques should have more significance now.
+? Some divination cards now have their values set in stone (not affected by poe.ninja). This was mainly to prevent certain worthless divination cards from being shown.
+? Removed "Safer Values" from the filter updater. This is now always on and prevents an item's value from changing if it's within 0.5-2c of the current value.
+? Increased the map icon size for mid/high value Blight oils.
+
+3.8.11
+? Updated values for unique, divination cards, and enchantments.
+? Added divination cards: The Devastator, Dying Anguish
+? Fixed FilterBlast so the "Regular" filter does not show up as the "No Rares" filter.
+? The filter updater now generates large filters as well as small ones.
+
+3.8.10
+? Updated unique/divination card values.
+? Added helmet enchants to the filter. I tried other enchants (blight oils & corrupts) but they do not work.
+? Removed 2h weapons from the highlighted rares 4+ links section.
+? Added HC support to the filter updater.
+
+3.8.9
+? Updated uniques/divination card values.
+? Added 4+ links to highlighted section.
+
+3.8.8
+? Reworked category names for items.
+? Added a lot of Elder/Shaper crafting bases.
+? Modified the colors of Resonators. These are now always shown, even in the strict filters.
+? Added convoking wand to the highlights section.
+? Separated Warstaves/Staves and Daggers/Rune Daggers in the highlighted rares sections.
+
+3.8.7
+? Modified the colors/sounds of oils.
+? Modified the colors/sounds of fossils. All fossils are now shown in the strict filter.
+? Modified the colors of Resonators.
+
+3.8.6
+? Added more Blight uniques.
+? Updated uniques and divination cards values.
+? Updated the price lister.
+
+3.8.5
+? Added "The Heroic Shot" divination card.
+? Fixed the yellow map sounds in the Strict filter.
+
+3.8.4
+? Added Warstaff and Rune Dagger class types.
+
+3.8.3
+? Removed "The Heroic Strike" divination card.
+
+3.8.2
+? Added a green border, text, and beam to Blighted maps.
+? Added a green icon to Blighted maps except red tier (T11+).
+? Added a purple border, sound, and beam to oils.
+
+3.8.1
+? New Incubators/Scarabs - no change
+Oils 
+Clear Oil
+Sepia Oil
+Amber Oil
+Verdant Oil
+Teal Oil
+Azure Oil
+Violet Oil
+Crimson Oil
+Black Oil
+Opalescent Oil
+Silver Oil
+Golden Oil
+7/16 new Unique Items 
+The Stampede - Assassin's Boots
+Triad Grip - Mesh Gloves
+Cold Iron Point - Ezomyte Dagger
+Cowl of the Cryophile - Silken Hood
+Badge of the Brotherhood - Turquoise Amulet
+Machina Mitts - Murder Mitts
+Icefang Orbit - Iron Ring
+Torchoak Step - Antique Greaves
+19 new Divination Cards 
+(10) (6) (2)
+The Mountain
+More is Never Enough
+The Bargain
+The Deal
+The Damned
+The Old Man
+The Skeleton
+The Wolf's Legacy
+Vile Power
+Void of the Elements
+Akil's Prophecy
+Nook's Crown
+Azyran's Reward
+The Side Quest
+The Demon
+The Price of Loyalty
+The Eye of Terror
+The Heroic Shot
+Remembrance
 
 ---------------------------------------------------------------------------------------------------------------
 | Legion
@@ -208,14 +352,14 @@ of Riker's Veil
 3.4.9
 ? Fixed the load button in the Price Updater.
 ? Hand edited some overvalued Divination cards (Gambler, Her Mask).
-? Changed Maelström back to Maelstr.
+? Changed MaelstrÃ¶m back to Maelstr.
 
 3.4.8
 ? Fixed high value fossil colors/sounds.
 ? Reduced low value fossils/resonator colors and removed some from the Strict filters.
 ? Updated the filter uniques/divination card values. Not much changed, though.
 ? Changed "hardcore friendly" to only work on items worth 4c+ in hardcore instead of 2c+.
-? Fixed filter encoding so it's UTF-8, including the font enlarger. The CSV file is UTF-7. This allows Maelström Staff and Mjölner to parse correctly so I don't have to special case them.
+? Fixed filter encoding so it's UTF-8, including the font enlarger. The CSV file is UTF-7. This allows MaelstrÃ¶m Staff and MjÃ¶lner to parse correctly so I don't have to special case them.
 
 3.4.7
 ? Fixed fossils so they don't show up as errors. I used the wrong item class.

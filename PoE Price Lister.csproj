@@ -122,8 +122,6 @@
     <None Include="Resources\Filters\L2_Mapping_Highwind.filter" />
     <None Include="Resources\Filters\L3_Strict_Highwind.filter" />
     <None Include="Resources\Filters\L4_Very_Strict_Highwind.filter" />
-    <None Include="Resources\Filters\L_NoRares_Highwind.filter" />
-    <None Include="Resources\Filters\S_NoRares_Highwind.filter" />
     <None Include="Resources\Filters\S1_Regular_Highwind.filter" />
     <None Include="Resources\Filters\S2_Mapping_Highwind.filter" />
     <None Include="Resources\Filters\S3_Strict_Highwind.filter" />
