@@ -1,6 +1,6 @@
 Filter [Highwind's Loot Filter]
 
-Version [3.9.1]
+Version [3.9.2]
 LastUpdate [12.11.2019]
 PoEVersion [3.9.x]
 ForumThread [https://www.pathofexile.com/forum/view-thread/1490867]

@@ -1,5 +1,5 @@
 ﻿﻿############################################
-##  HIGHWIND'S VERY STRICT FILTER 3.9.1  ##
+##  HIGHWIND'S VERY STRICT FILTER 3.9.2   ##
 ############################################
 ## Release Date: December 11, 2019        ##
 ############################################
@@ -2417,6 +2417,20 @@ Hide  # Jewels - Rare - Mapping (High)
 ################## GEMS ##################
 ##########################################
 # Section: Gems
+
+#----------#
+# Awakened #
+#----------#
+
+Show  # Gems - Awakened
+	Class "Support Skill Gems"
+	BaseType "Awakened "
+	SetFontSize 45
+	SetTextColor 55 225 185 # Gem (Mid)
+	SetBackgroundColor 10 35 30 # Gem (Mid)
+	PlayAlertSound 6 200 # Gem
+	MinimapIcon 0 Yellow Star
+	PlayEffect Yellow
 
 #------#
 # High #
