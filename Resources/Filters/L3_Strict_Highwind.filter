@@ -1,7 +1,7 @@
 ﻿﻿############################################
-##     HIGHWIND'S STRICT FILTER 3.9.2     ##
+##     HIGHWIND'S STRICT FILTER 3.9.3     ##
 ############################################
-## Release Date: December 11, 2019        ##
+## Release Date: December 12, 2019        ##
 ############################################
 
 #--------------#
@@ -1705,6 +1705,18 @@ Show  # Crafting Bases - Elder - 86+
 	SetFontSize 45
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 200 50 255 # Shaper Elder 83+
+
+##########################################
+############# INFLUENCE MODS #############
+##########################################
+
+Show  # Crafting Bases - Influence - Conquerers of the Atlas
+	HasInfluence Crusader Hunter Redeemer Warlord
+	SetFontSize 45
+	SetBackgroundColor 50 20 70 230 # Shaper Elder
+	SetBorderColor 200 50 255 # Shaper Elder 83+
+	MinimapIcon 0 Green Square
+	PlayEffect Green
 
 ##########################################
 ############# EXPLICIT MODS ##############

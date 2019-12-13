@@ -1,7 +1,7 @@
 ;
 ; FilterNova v2.1c: Item Filter Auto-Updater/Notifier
 ;
-; Homepage: http://filterblast.oversoul.xyz/filternova.html
+; Homepage: https://filterblast.xyz/filternova.html
 ;
 ; This script uses FilterBlast API to check version of your favourite filter(s) and auto-update filter files on your PC if there is new version (or optionally only notify you about updates). The script checks for updates each hour.
 ; All you need to do is just configure this script by editing SETTINGS below or using Configuration UI at the tool's homepage.
@@ -37,7 +37,7 @@ global ToolTipMode := "bottom"
 FilterKey := "ffhighwind"
 
 ; You can find it in API-Key column at this page:
-; http://filterblast.oversoul.xyz/extended-list-of-filters.html
+; https://filterblast.xyz/extended-list-of-filters.html
 
 NotifyOnly := "off"
 
@@ -96,8 +96,8 @@ Filters.Push(FilterSettings)
 ; ######## MAIN CODE
 
 global docPoE := A_MyDocuments . "\My Games\Path of Exile\"
-global urlAPI := "http://filterblast.oversoul.xyz/api/"
-global urlHomepage := "http://filterblast.oversoul.xyz/filternova.html"
+global urlAPI := "https://filterblast.xyz/api/"
+global urlHomepage := "https://filterblast.xyz/filternova.html"
 global NovaVersion := "2.1"
 global NovaTitle := "FilterNova v" . NovaVersion
 global GuiEmpty := true
@@ -155,7 +155,7 @@ GuiCreate() {
 	Gui, NovaMsgs:-SysMenu
 	Gui, NovaMsgs:Margin, 8, 5
 	Gui, NovaMsgs:Font, s9, Verdana
-	Gui, NovaMsgs:Add, Link,, %NovaTitle% :: <a href="%urlHomepage%">Homepage</a> | <a href="https://www.pathofexile.com/forum/view-thread/2051783">PoE forum thread</a> | <a href="https://www.patreon.com/oversoul_xyz">Patreon</a>
+	Gui, NovaMsgs:Add, Link,, %NovaTitle% :: <a href="%urlHomepage%">Homepage</a> | <a href="https://www.pathofexile.com/forum/view-thread/2051783">PoE forum thread</a> | <a href="https://www.patreon.com/dissolator">Patreon</a>
 	Gui, NovaMsgs:Add, Button, ym vbtnClose gGuiClose, Close
 	Gui, NovaMsgs:Add, Text, x8 y29, ----------------------
 }
