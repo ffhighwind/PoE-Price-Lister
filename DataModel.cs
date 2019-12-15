@@ -32,7 +32,7 @@ namespace PoE_Price_Lister
 	{
 
 		////private const string csvFile = "poe_uniques.csv";
-		private const string league = "Blight";
+		private const string league = "Metamorph";
 
 		private const string repoURL = @"https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/";
 		public const string FiltersUrl = repoURL + @"Resources/Filters/";

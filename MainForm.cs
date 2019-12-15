@@ -120,9 +120,9 @@ namespace PoE_Price_Lister
 			for (int i = 0; i < filterFiles.Length; i++) {
 				writer.Create(filterTypes[i], filterFiles[i]);
 				string filterData = File.ReadAllText(filterFiles[i]);
-				filterData.Replace("SetFontSize 40", "SetFontSize 45");
-				filterData.Replace("SetFontSize 36", "SetFontSize 40");
-				filterData.Replace("SetFontSize 32", "SetFontSize 36");
+				filterData = filterData.Replace("SetFontSize 40", "SetFontSize 45");
+				filterData = filterData.Replace("SetFontSize 36", "SetFontSize 40");
+				filterData = filterData.Replace("SetFontSize 32", "SetFontSize 36");
 				using (StreamWriter lwriter = File.CreateText(largeFiles[i])) {
 					lwriter.Write(filterData);
 				}
