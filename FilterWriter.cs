@@ -163,6 +163,7 @@ Show  # Uniques - <3c - Unique Rings
 	SetBackgroundColor 255 0 175 230 # Divination Card (<2c) 
 	SetBorderColor 150 30 100 # Divination Card (<2c) 
 	PlayAlertSound 5 100 # Divination Card (<2c) 
+	MinimapIcon 0 Brown Triangle 
 	PlayEffect Brown";
 
 		private const string styleDivNearlyWorthless =
@@ -191,7 +192,6 @@ Show  # Uniques - <3c - Unique Rings
 	PlayEffect White";
 
 		private readonly DataModel Model;
-		private readonly IReadOnlyList<string> Uniques;
 		private readonly IReadOnlyList<string> DivinationCards;
 		private readonly IReadOnlyList<string> Enchantments;
 		private readonly IReadOnlyDictionary<string, UniqueBaseType> UniquesA;
@@ -208,7 +208,6 @@ Show  # Uniques - <3c - Unique Rings
 		{
 			Model = model;
 			DivinationCards = model.DivinationCards;
-			Uniques = model.Uniques;
 			Enchantments = model.Enchantments;
 			UniquesA = l1.Uniques;
 			UniquesB = l2.Uniques;
