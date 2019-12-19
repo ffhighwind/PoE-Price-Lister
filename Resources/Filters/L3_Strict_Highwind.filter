@@ -122,7 +122,7 @@
 # Metamorph #
 #-----------#
 
-Show  # League Specific - Metamorph Currency
+Show  # League Specific - Metamorph - Currency
 	Class Currency
 	BaseType "Crusader's Exalted Orb" "Redeemer's Exalted Orb" "Hunter's Exalted Orb" "Warlord's Exalted Orb" "Awakener's Orb"
 	SetFontSize 45
@@ -278,12 +278,47 @@ Show  # Currency - Prophecies
 	MinimapIcon 0 Green Triangle
 	PlayEffect Green
 
+#--------#
+# Legion #
+#--------#
+
+Show  # League Specific - Timeless Splinters
+	Class Currency
+	BaseType "Timeless Karui Splinter" "Timeless Maraketh Splinter" " Empire Splinter" "Timeless Templar Splinter" "Timeless Vaal Splinter"
+	SetFontSize 40
+	SetTextColor 255 0 255 # Currency (Timeless Splinters)
+	SetBackgroundColor 0 0 0 225 # Currency (Timeless Splinters)
+	SetBorderColor 0 0 0 0 # Currency (Timeless Splinters)
+	MinimapIcon 1 Blue Circle
+	PlayEffect Blue
+
+Show  # League Specific - Incubators - High Value
+	Class Incubator
+	BaseType "Geomancer's Incubator" "Time-Lost Incubator" "Eldritch Incubator"
+	SetFontSize 45
+	SetTextColor 255 0 255 # Incubator (High Value)
+	SetBackgroundColor 255 255 255 255 # Incubator (High Value)
+	SetBorderColor 255 0 255 # Incubator (High Value)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Circle
+	PlayEffect Red
+
+Show  # League Specific - Incubators - Other
+	Class Incubator
+	SetFontSize 45
+	SetTextColor 255 0 255 # Incubator
+	SetBackgroundColor 20 0 20 # Incubator
+	SetBorderColor 255 0 255 # Incubator
+	PlayAlertSound 4 200 # Incubator
+	MinimapIcon 0 Blue Circle
+	PlayEffect Blue
+
 #----------#
 # Perandus #
 #----------#
 # Section: League Specific
 
-Show  # League Specific - Perandus Coins (6+)
+Show  # League Specific - Perandus - Coins (6+)
 	Class Currency
 	BaseType "Perandus Coin"
 	StackSize >= 6
@@ -293,7 +328,7 @@ Show  # League Specific - Perandus Coins (6+)
 	SetBorderColor 0 0 0 # Currency (Perandus Coin)
 	PlayEffect Yellow Temp
 
-Show  # League Specific - Perandus Coins (3+)
+Show  # League Specific - Perandus - Coins (3+)
 	Class Currency
 	BaseType "Perandus Coin"
 	StackSize >= 3
@@ -302,7 +337,7 @@ Show  # League Specific - Perandus Coins (3+)
 	SetBackgroundColor 75 65 50 # Currency (Perandus Coin)
 	SetBorderColor 0 0 0 # Currency (Perandus Coin)
 
-Hide  # League Specific - Perandus Coins <3
+Hide  # League Specific - Perandus - Coins <3
 	Class Currency
 	BaseType "Perandus Coin"
 	SetFontSize 40
@@ -360,7 +395,7 @@ Hide  # League Specific - Essences - Worthless
 # Metamorph #
 #-----------#
 
-Show  # League Specific - Catalysts
+Show  # League Specific - Metamorph - Catalysts
 	Class Currency
 	BaseType "Turbulent Catalyst" "Imbued Catalyst" "Abrasive Catalyst" "Tempering Catalyst" "Fertile Catalyst" "Prismatic Catalyst" "Intrinsic Catalyst"
 	SetFontSize 45
@@ -371,7 +406,7 @@ Show  # League Specific - Catalysts
 	MinimapIcon 0 Blue Circle
 	PlayEffect Blue
 
-Show  # League Specific - Metamorph Samples
+Show  # League Specific - Metamorph - Metamorph Samples
 	Class "Metamorph Sample"
 	BaseType "Metamorph Brain" "Metamorph Eye" "Metamorph Liver" "Metamorph Lung" "Metamorph Heart"
 	SetFontSize 45
@@ -386,7 +421,7 @@ Show  # League Specific - Metamorph Samples
 # Blight #
 #--------#
 
-Show  # League Specific - Oils - High Value
+Show  # League Specific - Blight Oils - High Value
 	Class Currency
 	BaseType "Crimson Oil" "Black Oil" "Opalescent Oil" "Silver Oil" "Golden Oil"
 	SetFontSize 45
@@ -397,7 +432,7 @@ Show  # League Specific - Oils - High Value
 	MinimapIcon 0 Red Circle
 	PlayEffect Red
 
-Show  # League Specific - Oils - Mid Value
+Show  # League Specific - Blight Oils - Mid Value
 	Class Currency
 	BaseType "Teal Oil" "Azure Oil" "Violet Oil"
 	SetFontSize 45
@@ -408,7 +443,7 @@ Show  # League Specific - Oils - Mid Value
 	MinimapIcon 0 Blue Circle
 	PlayEffect Blue
 
-Show  # League Specific - Oils - Low Value
+Show  # League Specific - Blight Oils - Low Value
 	Class Currency
 	BaseType "Clear Oil" "Sepia Oil" "Amber Oil" "Verdant Oil" 
 	SetFontSize 40
@@ -416,41 +451,6 @@ Show  # League Specific - Oils - Low Value
 	SetBackgroundColor 0 0 0 230 # Currency (Low Oils)
 	SetBorderColor 0 0 0 0 # Currency (Low Oils)
 	MinimapIcon 1 Blue Circle
-	PlayEffect Blue
-
-#--------#
-# Legion #
-#--------#
-
-Show  # League Specific - Timeless Splinters
-	Class Currency
-	BaseType "Timeless Karui Splinter" "Timeless Maraketh Splinter" " Empire Splinter" "Timeless Templar Splinter" "Timeless Vaal Splinter"
-	SetFontSize 40
-	SetTextColor 255 0 255 # Currency (Timeless Splinters)
-	SetBackgroundColor 0 0 0 225 # Currency (Timeless Splinters)
-	SetBorderColor 0 0 0 0 # Currency (Timeless Splinters)
-	MinimapIcon 1 Blue Circle
-	PlayEffect Blue
-
-Show  # League Specific - Incubators - High Value
-	Class Incubator
-	BaseType "Geomancer's Incubator" "Time-Lost Incubator" "Eldritch Incubator"
-	SetFontSize 45
-	SetTextColor 255 0 255 # Incubator (High Value)
-	SetBackgroundColor 255 255 255 255 # Incubator (High Value)
-	SetBorderColor 255 0 255 # Incubator (High Value)
-	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Circle
-	PlayEffect Red
-
-Show  # League Specific - Incubators - Other
-	Class Incubator
-	SetFontSize 45
-	SetTextColor 255 0 255 # Incubator
-	SetBackgroundColor 20 0 20 # Incubator
-	SetBorderColor 255 0 255 # Incubator
-	PlayAlertSound 4 200 # Incubator
-	MinimapIcon 0 Blue Circle
 	PlayEffect Blue
 
 #--------#
@@ -1323,7 +1323,7 @@ Show  # League Specific - Pieces (Harbinger)
 # Abyss #
 #-------#
 
-Show  # League Specific - Stygian Vises - Rare - 84+
+Show  # League Specific - Stygian Vises - 84+
 	BaseType "Stygian Vise"
 	Rarity = Rare
 	ItemLevel >= 84
@@ -1331,7 +1331,7 @@ Show  # League Specific - Stygian Vises - Rare - 84+
 	SetBackgroundColor 20 80 55 240 # Stygian Vise 84+
 	SetBorderColor 220 0 0 # Stygian Vise 84+
 
-Show  # League Specific - Stygian Vises - Rare - Leveling
+Show  # League Specific - Stygian Vises - Leveling
 	BaseType "Stygian Vise"
 	Rarity = Rare
 	ItemLevel < 68
@@ -1340,7 +1340,7 @@ Show  # League Specific - Stygian Vises - Rare - Leveling
 	SetBorderColor 220 0 0 # Stygian Vise
 
 #Disabled Block Start
-#Show  # League Specific - Stygian Vises - Rare - Mapping (Low)
+#Show  # League Specific - Stygian Vises - Mapping (Low)
 #	BaseType "Stygian Vise"
 #	Rarity = Rare
 #	ItemLevel < 73
@@ -1350,7 +1350,7 @@ Show  # League Specific - Stygian Vises - Rare - Leveling
 #Disabled Block End
 
 #Disabled Block Start
-#Show  # League Specific - Stygian Vises - Rare - Mapping (Mid)
+#Show  # League Specific - Stygian Vises - Mapping (Mid)
 #	BaseType "Stygian Vise"
 #	Rarity = Rare
 #	ItemLevel < 78
@@ -1359,7 +1359,7 @@ Show  # League Specific - Stygian Vises - Rare - Leveling
 #	SetBorderColor 220 0 0 # Stygian Vise
 #Disabled Block End
 
-Show  # League Specific - Stygian Vises - Rare - Mapping (High)
+Show  # League Specific - Stygian Vises - Mapping (High)
 	BaseType "Stygian Vise"
 	Rarity = Rare
 	SetFontSize 40
