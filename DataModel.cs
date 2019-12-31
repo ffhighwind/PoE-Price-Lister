@@ -30,6 +30,12 @@ namespace PoE_Price_Lister
 {
 	public class DataModel
 	{
+		// All URLs for poe.ninja/api are here:
+		// https://github.com/5k-mirrors/misc-poe-tools/blob/master/doc/poe-ninja-api.md
+
+		// Alternate API (POE watch)
+		// https://api.poe.watch/get?league=Metamorph&category=armour
+		// https://api.poe.watch/compact?league=Metamorph&category=armour
 
 		////private const string csvFile = "poe_uniques.csv";
 		private const string league = "Metamorph";
@@ -39,10 +45,14 @@ namespace PoE_Price_Lister
 		private const string filterFile = @"S1_Regular_Highwind.filter";
 		private const string uniquesCsvFile = "poe_uniques.csv";
 		private const string helmEnchantCsvFile = "poe_helm_enchants.csv";
-		private const string jsonURL = @"http://poe.ninja/api/Data/Get{0}Overview?league={1}";
-		//{0} = "UniqueAccessory", "UniqueJewel", "UniqueMap", "UniqueArmour", "UniqueFlask",
-		// "UniqueWeapon", "DivinationCards", "Fragment", "Currency", "Prophecy", "Essence", "SkillGem", "HelmetEnchant"
-		// Resonators/Fossils are not implemented as an API yet
+		//private const string jsonURL = @"http://poe.ninja/api/Data/Get{0}Overview?league={1}";
+		private const string jsonURL = @"https://poe.ninja/api/data/itemoverview?league={1}&type={0}";
+		//ALTERNATE API? https://poe.watch/prices?category=enchantment&league=Metamorph
+
+		//{0} = "UniqueAccessory", "UniqueFlask", "UniqueArmour", "UniqueWeapon", "UniqueJewel", "UniqueMap"
+		// "DivinationCard", "HelmetEnchant", "Fragment", "Prophecy", "Essence", "SkillGem", "Beast"
+		// "Fossil", "Resonator", "Scarab", "Incubator", "Oil", "Prophecy", "BaseType"
+		// currencyoverview? "Fragment", "Currency"
 		private static readonly Regex quotedListRegex = new Regex(@"""[^""\r\n]+""|[^ \r\n]+", RegexOptions.Compiled);
 		private static readonly Regex versionRegex = new Regex(@".+(\d+)[.](\d+)[.](\d+) [^\r\n]+", RegexOptions.Compiled);
 
@@ -126,7 +136,7 @@ namespace PoE_Price_Lister
 		private void GetJsonData(LeagueData data)
 		{
 			string leagueStr = data.IsHardcore ? "Hardcore " + league : league;
-			FillJsonData(string.Format(jsonURL, "DivinationCards", leagueStr), data, DivinationJsonHandler);
+			FillJsonData(string.Format(jsonURL, "DivinationCard", leagueStr), data, DivinationJsonHandler);
 			FillJsonData(string.Format(jsonURL, "UniqueArmour", leagueStr), data, UniqueJsonHandler);
 			FillJsonData(string.Format(jsonURL, "UniqueFlask", leagueStr), data, UniqueJsonHandler);
 			FillJsonData(string.Format(jsonURL, "UniqueWeapon", leagueStr), data, UniqueJsonHandler);

@@ -140,55 +140,61 @@ Show  # Uniques - <3c - Unique Rings
 	SetBorderColor 180 90 45 # Unique (<1c)";
 
 		private const string styleDiv10c =
-@"	SetFontSize 45 
-	SetTextColor 255 0 175 # Divination Card (10c+) 
-	SetBackgroundColor 255 255 255 255 # Divination Card (10c+) 
-	SetBorderColor 255 0 175 # Divination Card (10c+) 
-	PlayAlertSound 1 200 # High Value 
-	MinimapIcon 0 Red Triangle 
+@"	SetFontSize 45
+	SetTextColor 255 0 175 # Divination Card (10c+)
+	SetBackgroundColor 255 255 255 255 # Divination Card (10c+)
+	SetBorderColor 255 0 175 # Divination Card (10c+)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Triangle
 	PlayEffect Red";
 
 		private const string styleDiv2c =
-@"	SetFontSize 45 
-	SetTextColor 255 255 255 # Divination Card (2-10c) 
-	SetBackgroundColor 255 0 175 255 # Divination Card (2-10c) 
-	SetBorderColor 255 255 255 # Divination Card (2-10c) 
-	PlayAlertSound 5 200 # Divination Card (2-10c) 
+@"	SetFontSize 45
+	SetTextColor 255 255 255 # Divination Card (2-10c)
+	SetBackgroundColor 255 0 175 255 # Divination Card (2-10c)
+	SetBorderColor 255 255 255 # Divination Card (2-10c)
+	PlayAlertSound 5 200 # Divination Card (2-10c)
 	MinimapIcon 0 Brown Triangle 
 	PlayEffect Brown";
 
-		private const string styleDivLess2c =
+		private const string styleDivLess2cShow =
 @"	SetFontSize 40 
-	SetTextColor 0 0 0 # Divination Card (<2c) 
-	SetBackgroundColor 255 0 175 230 # Divination Card (<2c) 
-	SetBorderColor 150 30 100 # Divination Card (<2c) 
-	PlayAlertSound 5 100 # Divination Card (<2c) 
+	SetTextColor 0 0 0 # Divination Card (<2c)
+	SetBackgroundColor 255 0 175 230 # Divination Card (<2c)
+	SetBorderColor 150 30 100 # Divination Card (<2c)
+	PlayAlertSound 5 100 # Divination Card (<2c)
 	MinimapIcon 0 Brown Triangle 
 	PlayEffect Brown";
+
+		private const string styleDivLess2cHide =
+@"	SetFontSize 40 
+	SetTextColor 0 0 0 # Divination Card (<2c)
+	SetBackgroundColor 255 0 175 230 # Divination Card (<2c)
+	SetBorderColor 150 30 100 # Divination Card (<2c)";
 
 		private const string styleDivNearlyWorthless =
 @"	SetFontSize 36 
-	SetTextColor 0 0 0 # Divination Card (Nearly Worthless) 
-	SetBackgroundColor 255 0 175 170 # Divination Card (Nearly Worthless) 
-	SetBorderColor 0 0 0 # Divination Card (Nearly Worthless) 
+	SetTextColor 0 0 0 # Divination Card (Nearly Worthless)
+	SetBackgroundColor 255 0 175 170 # Divination Card (Nearly Worthless)
+	SetBorderColor 0 0 0 # Divination Card (Nearly Worthless)
 	PlayAlertSound 5 0 # Divination Card (Nearly Worthless)";
 
 		private const string styleDivWorthless =
-@"	SetFontSize 32 
-	SetTextColor 0 0 0 # Divination Card (Worthless) 
-	SetBackgroundColor 255 0 175 120 # Divination Card (Worthless) 
-	SetBorderColor 255 0 175 50 # Divination Card (Worthless) 
+@"	SetFontSize 32
+	SetTextColor 0 0 0 # Divination Card (Worthless)
+	SetBackgroundColor 255 0 175 120 # Divination Card (Worthless)
+	SetBorderColor 255 0 175 50 # Divination Card (Worthless)
 	DisableDropSound";
 
 		private const string divNewOrWorthless =
-@"Show  # Divination Cards - New (Error) 
-	Class Divination 
-	SetFontSize 40 
-	SetTextColor 255 255 255 # Divination Card (2c+) 
-	SetBackgroundColor 255 0 175 255 # Divination Card (2c+) 
-	SetBorderColor 0 255 0 # Error 
-	PlayAlertSound 5 200 # Divination Card (2c+) 
-	MinimapIcon 0 White Triangle 
+@"Show  # Divination Cards - New (Error)
+	Class Divination
+	SetFontSize 40
+	SetTextColor 255 255 255 # Divination Card (2c+)
+	SetBackgroundColor 255 0 175 255 # Divination Card (2c+)
+	SetBorderColor 0 255 0 # Error
+	PlayAlertSound 5 200 # Divination Card (2c+)
+	MinimapIcon 0 White Triangle
 	PlayEffect White";
 
 		private readonly DataModel Model;
@@ -449,7 +455,8 @@ Show  # Uniques - <3c - Unique Rings
 				sb.AppendLine("Show  # Divination Cards - 2-10c (Conflicts)").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(list2to10cConflict)).AppendLine(styleDiv2c).AppendLine();
 			if (listLess2cConflict.Count > 0) {
 				string showHide = type == FilterType.VERY_STRICT ? "Hide" : "Show";
-				sb.AppendLine(showHide + "  # Divination Cards - <2c (Conflicts)").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(listLess2cConflict)).AppendLine(styleDivLess2c).AppendLine();
+				string style = type == FilterType.VERY_STRICT ? styleDivLess2cHide : styleDivLess2cShow;
+				sb.AppendLine(showHide + "  # Divination Cards - <2c (Conflicts)").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(listLess2cConflict)).AppendLine(style).AppendLine();
 			}
 			if (listNearlyWorthlessConflict.Count > 0) {
 				string showHide = (type == FilterType.STRICT || type == FilterType.VERY_STRICT) ? "Hide" : "Show";
@@ -465,7 +472,8 @@ Show  # Uniques - <3c - Unique Rings
 				sb.AppendLine("Show  # Divination Cards - 2-10c").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(list2to10c)).AppendLine(styleDiv2c).AppendLine();
 			if (listLess2c.Count > 0) {
 				string showHide = type == FilterType.VERY_STRICT ? "Hide" : "Show";
-				sb.AppendLine(showHide + "  # Divination Cards - <2c").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(listLess2c)).AppendLine(styleDivLess2c).AppendLine();
+				string style = type == FilterType.VERY_STRICT ? styleDivLess2cHide : styleDivLess2cShow;
+				sb.AppendLine(showHide + "  # Divination Cards - <2c").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(listLess2c)).AppendLine(style).AppendLine();
 			}
 			if (listNearlyWorthless.Count > 0) {
 				string showHide = (type == FilterType.STRICT || type == FilterType.VERY_STRICT) ? "Hide" : "Show";
