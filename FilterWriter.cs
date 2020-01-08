@@ -132,7 +132,7 @@ Show  # Uniques - <3c - Unique Rings
 	SetFontSize 36
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
-	SetBorderColor 180 90 45 # Unique (<1c)";
+	SetBorderColor 180 90 45 # Unique (<3c)";
 
 		private const string styleDiv10c =
 @"	SetFontSize 45
