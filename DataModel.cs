@@ -348,16 +348,17 @@ namespace PoE_Price_Lister
 				if (!lines.Any())
 					return;
 				string line = lines.First();
-				if (!line.Contains("# Enchantments -"))
+				if (!line.Contains("# Enchantments -") || line.Contains("Unique")) {
+					lines = lines.Skip(1);
 					continue;
-
+				}
 				if (line.Contains("20c+"))
 					value = EnchantmentValue.Chaos20;
 				else if (line.Contains("10c+"))
 					value = EnchantmentValue.Chaos10;
 				else {
-					if (!line.Contains("Other"))
-						MessageBox.Show("Unexpected Enchant input: " + line, "Error", MessageBoxButtons.OK);
+					//if (!line.Contains("Other"))
+					//	MessageBox.Show("Unexpected Enchant input: " + line, "Error", MessageBoxButtons.OK);
 					lines = lines.Skip(1);
 					continue;
 				}

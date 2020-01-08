@@ -1,7 +1,7 @@
-﻿############################################
-##     HIGHWIND'S STRICT FILTER 3.9.8     ##
+﻿﻿############################################
+##     HIGHWIND'S STRICT FILTER 3.9.9     ##
 ############################################
-## Release Date: December 31, 2019        ##
+## Release Date: January 6, 2020          ##
 ############################################
 
 #--------------#
@@ -658,6 +658,7 @@ Hide  # League Specific - Harbinger - Nearly Worthless
 	SetTextColor 185 172 141 # Currency (Nearly Worthless)
 	SetBackgroundColor 0 0 0 225 # Currency (Nearly Worthless)
 	SetBorderColor 0 0 0 0 # Currency (Nearly Worthless)
+	DisableDropSound
 
 Show  # League Specific - Harbinger - Nearly Worthless (3)
 	Class Currency
@@ -676,6 +677,7 @@ Hide  # League Specific - Harbinger - Nearly Worthless (1)
 	SetTextColor 185 172 141 # Currency (Nearly Worthless)
 	SetBackgroundColor 0 0 0 225 # Currency (Nearly Worthless)
 	SetBorderColor 0 0 0 0 # Currency (Nearly Worthless)
+	DisableDropSound
 
 #Disabled Block Start
 #Show  # League Specific - Harbinger - Worthless (4)
@@ -968,6 +970,7 @@ Hide  # 5+ Links - Body Armour
 	SetTextColor 255 0 0 # 5+ Link
 	SetBackgroundColor 0 0 0 230 # 5+ Link (Low)
 	SetBorderColor 255 0 0 # 5+ Link
+	DisableDropSound
 
 # 64 Sharpshooter's
 Hide  # 5+ Links - 3 Skill Bows (64+)
@@ -979,6 +982,7 @@ Hide  # 5+ Links - 3 Skill Bows (64+)
 	SetTextColor 255 0 0 # 5+ Link
 	SetBackgroundColor 0 0 0 230 # 5+ Link (Low)
 	SetBorderColor 255 0 0 # 5+ Link
+	DisableDropSound
 
 # Not Warstaves
 Hide  # 5+ Links - 5 Skill Staves (77+)
@@ -989,6 +993,7 @@ Hide  # 5+ Links - 5 Skill Staves (77+)
 	SetTextColor 255 0 0 # 5+ Link
 	SetBackgroundColor 0 0 0 230 # 5+ Link (Low)
 	SetBorderColor 255 0 0 # 5+ Link
+	DisableDropSound
 
 Hide  # 5+ Links - 4 Skill Staves (55+)
 	LinkedSockets = 5
@@ -998,6 +1003,7 @@ Hide  # 5+ Links - 4 Skill Staves (55+)
 	SetTextColor 255 0 0 # 5+ Link
 	SetBackgroundColor 0 0 0 230 # 5+ Link (Low)
 	SetBorderColor 255 0 0 # 5+ Link
+	DisableDropSound
 
 Hide  # 5+ Links - Other
 	LinkedSockets = 5
@@ -1007,6 +1013,7 @@ Hide  # 5+ Links - Other
 	SetTextColor 255 0 0 # 5+ Link
 	SetBackgroundColor 0 0 0 230 # 5+ Link (Low)
 	SetBorderColor 255 0 0 # 5+ Link
+	DisableDropSound
 
 ##########################################
 ############# VENDOR RECIPES #############
@@ -1049,6 +1056,7 @@ Hide  # Vendor Recipes - Chromatics (RGB) - Leveling - Normal
 	SetFontSize 40
 	SetBackgroundColor 0 0 0 # Chromatic Recipe (RGB)
 	SetBorderColor 210 0 210 # Chromatic Recipe (RGB)
+	DisableDropSound
 
 #Disabled Block Start
 #Show  # Vendor Recipes - Chromatics (RGB) - Leveling - Magic
@@ -1138,6 +1146,7 @@ Hide  # Vendor Recipes - Chisels - 18% Quality Magic
 	SetFontSize 36
 	SetBackgroundColor 30 30 30 # Chisel Recipe
 	SetBorderColor 0 0 0 # Chisel Recipe
+	DisableDropSound
 
 Hide  # Vendor Recipes - Chisels - 15% Quality Normal
 	Class "One Hand Maces"
@@ -1147,6 +1156,7 @@ Hide  # Vendor Recipes - Chisels - 15% Quality Normal
 	SetFontSize 36
 	SetBackgroundColor 30 30 30 # Chisel Recipe
 	SetBorderColor 0 0 0 # Chisel Recipe
+	DisableDropSound
 
 #Disabled Block Start
 #Show  # Vendor Recipes - Chisels - 10% Quality
@@ -1281,6 +1291,7 @@ Hide  # League Specific - Breach Rings - Mapping (High)
 	SetFontSize 36
 	SetBackgroundColor 0 0 0 # Breach Ring
 	SetBorderColor 220 0 0 # Breach Ring
+	DisableDropSound
 
 #--------#
 # Legacy #
@@ -1312,9 +1323,9 @@ Show  # League Specific - Leaguestones - Mapping
 Show  # League Specific - Pieces (Harbinger)
 	Class Piece
 	SetFontSize 45
-	SetTextColor 200 100 50 # Piece
+	SetTextColor 255 128 64 # Piece
 	SetBackgroundColor 255 255 255 255 # Piece
-	SetBorderColor 200 100 50 # Piece
+	SetBorderColor 255 128 64 # Piece
 	PlayAlertSound 1 200 # Piece
 	MinimapIcon 0 Red Diamond
 	PlayEffect Red
@@ -1537,8 +1548,19 @@ Show  # League Specific - Stygian Vises - Mapping (High)
 ##########################################
 # Section: Enchantments
 
-Show  # Enchantments - 20c+
-	HasEnchantment "Enchantment Arc Damage 2" "Enchantment Arc Num Of Additional Projectiles In Chain 1" "Enchantment Ball Lightning Additional Projectiles 1" "Enchantment Ball Lightning Damage 2" "Enchantment Barrage Num Of Additional Projectiles 1" "Enchantment Caustic Arrow Damage 2" "Enchantment Cyclone Attack Speed 2" "Enchantment Cyclone Damage 2" "Enchantment Detonate Dead Percent Chance To Detonate Additional Corpse 2" "Enchantment Explosive Arrow Attack Speed 2" "Enchantment Explosive Arrow Increased Duration 2" "Enchantment Freezing Pulse Projectile Speed 2" "Enchantment Ice Nova Damage 1" "Enchantment Ice Nova Damage 2" "Enchantment Ice Shot Damage 2" "Enchantment Molten Strike Num Of Additional Projectiles 2" "Enchantment Power Siphon Additional Projectiles 2" "Enchantment Purifying Flame Consecrated Ground Enemy Damage Taken 2" "Enchantment Pyroclast Mine Additional Projectiles 2" "Enchantment Scourge Arrow Additional Spore 1" "Enchantment Storm Burst Additional Object Chance 2" "Enchantment Temporal Chains Curse Effect 2" "Enchantment Tornado Shot Num Of Secondary Projectiles 2" "Enchantment Toxic Rain Num Of Additional Projectiles 1" "Enchantment Volatile Dead Orbs 3" "Storm Brand Attached Target Lightning Penetration 2"
+Show  # Enchantments - 20c+ Unique
+	HasEnchantment "Enchantment Animate Weapon Chance To Create Additional Copy 2" "Enchantment Arc Damage 2" "Enchantment Arc Num Of Additional Projectiles In Chain 1" "Enchantment Ball Lightning Additional Projectiles 1" "Enchantment Barrage Num Of Additional Projectiles 1" "Enchantment Caustic Arrow Damage 2" "Enchantment Cyclone Attack Speed 2" "Enchantment Cyclone Damage 2" "Enchantment Detonate Dead Percent Chance To Detonate Additional Corpse 2" "Enchantment Discharge Consume Charges 2" "Enchantment Double Strike Double Damage Vs Bleeding 2" "Enchantment Explosive Arrow Attack Speed 2" "Enchantment Explosive Arrow Increased Duration 2" "Enchantment Freezing Pulse Projectile Speed 2" "Enchantment Herald Of Purity Additional Minion 1" "Enchantment Ice Nova Damage 1" "Enchantment Ice Nova Damage 2" "Enchantment Ice Shot Damage 2" "Enchantment Molten Strike Num Of Additional Projectiles 2" "Enchantment Power Siphon Additional Projectiles 2" "Enchantment Pyroclast Mine Additional Projectiles 2" "Enchantment Scourge Arrow Additional Spore 1" "Enchantment Temporal Chains Curse Effect 2" "Enchantment Tornado Shot Num Of Secondary Projectiles 2" "Enchantment Toxic Rain Num Of Additional Projectiles 1" "Enchantment Volatile Dead Orbs 3" "Storm Brand Attached Target Lightning Penetration 2"
+	Rarity = Unique
+	SetFontSize 45
+	SetTextColor 255 128 64 # Unique (15c+)
+	SetBackgroundColor 255 255 255 255 # Unique (15c+)
+	SetBorderColor 255 128 64 # Unique (15c+)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Square
+	PlayEffect Red
+
+Show  # Enchantments - 20c+ Other
+	HasEnchantment "Enchantment Animate Weapon Chance To Create Additional Copy 2" "Enchantment Arc Damage 2" "Enchantment Arc Num Of Additional Projectiles In Chain 1" "Enchantment Ball Lightning Additional Projectiles 1" "Enchantment Barrage Num Of Additional Projectiles 1" "Enchantment Caustic Arrow Damage 2" "Enchantment Cyclone Attack Speed 2" "Enchantment Cyclone Damage 2" "Enchantment Detonate Dead Percent Chance To Detonate Additional Corpse 2" "Enchantment Discharge Consume Charges 2" "Enchantment Double Strike Double Damage Vs Bleeding 2" "Enchantment Explosive Arrow Attack Speed 2" "Enchantment Explosive Arrow Increased Duration 2" "Enchantment Freezing Pulse Projectile Speed 2" "Enchantment Herald Of Purity Additional Minion 1" "Enchantment Ice Nova Damage 1" "Enchantment Ice Nova Damage 2" "Enchantment Ice Shot Damage 2" "Enchantment Molten Strike Num Of Additional Projectiles 2" "Enchantment Power Siphon Additional Projectiles 2" "Enchantment Pyroclast Mine Additional Projectiles 2" "Enchantment Scourge Arrow Additional Spore 1" "Enchantment Temporal Chains Curse Effect 2" "Enchantment Tornado Shot Num Of Secondary Projectiles 2" "Enchantment Toxic Rain Num Of Additional Projectiles 1" "Enchantment Volatile Dead Orbs 3" "Storm Brand Attached Target Lightning Penetration 2"
 	SetFontSize 45
 	SetTextColor 255 255 255 # Crafting Base (High)
 	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
@@ -1547,8 +1569,19 @@ Show  # Enchantments - 20c+
 	MinimapIcon 0 Red Square
 	PlayEffect Red
 
-Show  # Enchantments - 10c+
-	HasEnchantment "Enchantment Animate Weapon Duration 2" "Enchantment Ball Lightning Area Of Effect 2" "Enchantment Blade Vortex Duration 2" "Enchantment Bladestorm Maximum Number Of Storms Allowed 1" "Enchantment Blood Rage Attack Speed 2" "Enchantment Burning Arrow Debuff Effect 2" "Enchantment Conductivity Duration 2" "Enchantment Cremation Damage 2" "Enchantment Double Slash Added Phys To Bleeding 2" "Enchantment Double Strike Double Damage Vs Bleeding 2" "Enchantment Essence Drain Damage 2" "Enchantment Freezing Pulse Damage 2" "Enchantment Frost Blades Damage 2" "Enchantment Frost Bolt Damage 2" "Enchantment Frost Fury Additional Max Number Of Stages 1" "Enchantment Herald Of Agony Mana Reservation 2" "Enchantment Herald Of Purity Additional Minion 1" "Enchantment Ice Spear Additional Projectile 1" "Enchantment Incinerate Maximum Stages 2" "Enchantment Lacerate Damage 2" "Enchantment Malevolence Mana Reservation 2" "Enchantment Shrapnel Shot Damage 2" "Enchantment Split Arrow Num Of Additional Projectiles 2" "Enchantment Storm Brand Damage 2" "Enchantment Summon Skeletons Damage 2" "Enchantment Toxic Rain Damage 2" "Enchantment Wild Strike Num Of Additional Projectiles In Chain 2"
+Show  # Enchantments - 10c+ Unique
+	HasEnchantment "Enchantment Ball Lightning Damage 2" "Enchantment Blade Vortex Duration 2" "Enchantment Bladestorm Maximum Number Of Storms Allowed 1" "Enchantment Burning Arrow Debuff Effect 2" "Enchantment Cremation Maximum Geysers 1" "Enchantment Double Slash Added Phys To Bleeding 2" "Enchantment Earthquake Duration 2" "Enchantment Freezing Pulse Damage 2" "Enchantment Frost Blades Damage 2" "Enchantment Frost Bolt Damage 2" "Enchantment Frost Fury Additional Max Number Of Stages 1" "Enchantment Herald Of Agony Mana Reservation 2" "Enchantment Herald Of Thunder Mana Reservation 2" "Enchantment Incinerate Maximum Stages 2" "Enchantment Lacerate Damage 2" "Enchantment Malevolence Mana Reservation 2" "Enchantment Purifying Flame Consecrated Ground Enemy Damage Taken 2" "Enchantment Shattering Steel Additional Projectile 1" "Enchantment Shrapnel Shot Damage 2" "Enchantment Split Arrow Num Of Additional Projectiles 2" "Enchantment Storm Brand Damage 2" "Enchantment Storm Burst Additional Object Chance 2" "Enchantment Summon Skeletons Damage 2" "Enchantment Toxic Rain Damage 2" "Enchantment Wild Strike Num Of Additional Projectiles In Chain 2"
+	Rarity = Unique
+	SetFontSize 45
+	SetTextColor 255 128 64 # Unique (15c+)
+	SetBackgroundColor 255 255 255 255 # Unique (15c+)
+	SetBorderColor 255 128 64 # Unique (15c+)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Square
+	PlayEffect Red
+
+Show  # Enchantments - 10c+ Other
+	HasEnchantment "Enchantment Ball Lightning Damage 2" "Enchantment Blade Vortex Duration 2" "Enchantment Bladestorm Maximum Number Of Storms Allowed 1" "Enchantment Burning Arrow Debuff Effect 2" "Enchantment Cremation Maximum Geysers 1" "Enchantment Double Slash Added Phys To Bleeding 2" "Enchantment Earthquake Duration 2" "Enchantment Freezing Pulse Damage 2" "Enchantment Frost Blades Damage 2" "Enchantment Frost Bolt Damage 2" "Enchantment Frost Fury Additional Max Number Of Stages 1" "Enchantment Herald Of Agony Mana Reservation 2" "Enchantment Herald Of Thunder Mana Reservation 2" "Enchantment Incinerate Maximum Stages 2" "Enchantment Lacerate Damage 2" "Enchantment Malevolence Mana Reservation 2" "Enchantment Purifying Flame Consecrated Ground Enemy Damage Taken 2" "Enchantment Shattering Steel Additional Projectile 1" "Enchantment Shrapnel Shot Damage 2" "Enchantment Split Arrow Num Of Additional Projectiles 2" "Enchantment Storm Brand Damage 2" "Enchantment Storm Burst Additional Object Chance 2" "Enchantment Summon Skeletons Damage 2" "Enchantment Toxic Rain Damage 2" "Enchantment Wild Strike Num Of Additional Projectiles In Chain 2"
 	SetFontSize 45
 	SetBackgroundColor 40 40 40 # Crafting Base (Explicit)
 	SetBorderColor 25 65 175 # Crafting Base (Explicit)
@@ -1558,6 +1591,7 @@ Show  # Enchantments - 10c+
 
 Show  # Enchantments - Other
 	AnyEnchantment True
+	Rarity <= Rare
 	SetFontSize 40
 	SetBackgroundColor 40 40 40 # Crafting Base (Explicit)
 	SetBorderColor 25 65 175 # Crafting Base (Explicit)
@@ -1892,6 +1926,7 @@ Hide  # Explicit Mods - Veiled - Magic
 	SetFontSize 40
 	SetBackgroundColor 40 40 40 # Crafting Base (Low)
 	SetBorderColor 0 0 0 # Crafting Base (Low)
+	DisableDropSound
 
 Show  # Explicit Mods - Veiled - Rare - 83+
 	HasExplicitMod "Veiled" "'s Veiled" "'s Veil" "of the Veil" "of Janus' Veil"
@@ -1920,6 +1955,7 @@ Hide  # Explicit Mods - Bestiary - Magic
 	SetFontSize 40
 	SetBackgroundColor 40 40 40 # Crafting Base (Low)
 	SetBorderColor 0 0 0 # Crafting Base (Low)
+	DisableDropSound
 
 Show  # Explicit Mods - Bestiary - Rare
 	HasExplicitMod "of Farrul" "of Craiceann" "of Saqawal" "of Fenumus"
@@ -1937,6 +1973,7 @@ Hide  # Explicit Mods - Synthesised - Magic
 	SetFontSize 40
 	SetBackgroundColor 40 40 40 # Crafting Base (Low)
 	SetBorderColor 0 0 0 # Crafting Base (Low)
+	DisableDropSound
 
 Show  # Explicit Mods - Synthesised - Rare
 	SynthesisedItem True
@@ -1955,6 +1992,7 @@ Hide  # Explicit Mods - Fractured - Magic
 	SetFontSize 40
 	SetBackgroundColor 40 40 40 # Crafting Base (Low)
 	SetBorderColor 0 0 0 # Crafting Base (Low)
+	DisableDropSound
 
 Show  # Explicit Mods - Fractured - Rare - 83+
 	FracturedItem True
@@ -2024,6 +2062,7 @@ Hide  # Normal/Magic - Low Drop Level - 6+ 1-2 Socket
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
+	DisableDropSound
 
 Hide  # Normal/Magic - Low Drop Level - 20+ 1-2 Link
 	Sockets > 0
@@ -2035,6 +2074,7 @@ Hide  # Normal/Magic - Low Drop Level - 20+ 1-2 Link
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
+	DisableDropSound
 
 # 56 Thicket Bow, Karui Sceptre
 Hide  # Normal/Magic - Low Drop Level - 60+ Armour Weapons Shields
@@ -2045,6 +2085,7 @@ Hide  # Normal/Magic - Low Drop Level - 60+ Armour Weapons Shields
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
+	DisableDropSound
 
 Hide  # Normal/Magic - Low Drop Level - 84+ Armour Shields
 	Class Gloves Boots Helmets "Body Armours" Shields
@@ -2054,6 +2095,7 @@ Hide  # Normal/Magic - Low Drop Level - 84+ Armour Shields
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
+	DisableDropSound
 
 Hide  # Normal/Magic - Low Drop Level - <83 Body Armour Weapons Shields
 	Class "One Hand" "Two Hand" Bows Staves Warstaves Daggers "Rune Dagger" Wands Claws Sceptres "Body Armours" Shields
@@ -2063,6 +2105,7 @@ Hide  # Normal/Magic - Low Drop Level - <83 Body Armour Weapons Shields
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
+	DisableDropSound
 
 Hide  # Normal/Magic - Low Drop Level - <84 Gloves Boots Helmets
 	Class Gloves Boots Helmets
@@ -2073,6 +2116,7 @@ Hide  # Normal/Magic - Low Drop Level - <84 Gloves Boots Helmets
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
+	DisableDropSound
 
 #---------------------------#
 # 75+ Rare (Low Drop Level) #
@@ -2088,6 +2132,7 @@ Hide  # 75+ Rares - Low Drop Level - 75+ Gloves Boots Helmets
 	SetFontSize 36
 	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (Hidden)
 	SetBorderColor 0 0 0 # Rare Recipe 75+ (Hidden)
+	DisableDropSound
 
 Hide  # 75+ Rares - Low Drop Level - 75+ Body Armour
 	Class "Body Armours"
@@ -2099,6 +2144,7 @@ Hide  # 75+ Rares - Low Drop Level - 75+ Body Armour
 	SetFontSize 36
 	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (Hidden)
 	SetBorderColor 0 0 0 # Rare Recipe 75+ (Hidden)
+	DisableDropSound
 
 # 56 Karui Sceptre, 58 Corsair Sword
 Hide  # 75+ Rares - Low Drop Level - 75+ One Hand Weapons
@@ -2112,6 +2158,7 @@ Hide  # 75+ Rares - Low Drop Level - 75+ One Hand Weapons
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 40 35 8 230 # Rare Weapon 75+ (Hidden)
 	SetBorderColor 0 0 0 # Rare Weapon 75+ (Hidden)
+	DisableDropSound
 
 # 56 Thicket Bow
 Hide  # 75+ Rares - Low Drop Level - 75+ Two Hand Weapons
@@ -2125,6 +2172,7 @@ Hide  # 75+ Rares - Low Drop Level - 75+ Two Hand Weapons
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+ (Hidden)
 	SetBorderColor 0 0 0 # Rare Recipe 75+ (Hidden)
+	DisableDropSound
 
 Hide  # 75+ Rares - Low Drop Level - 75+ Shields
 	Class Shields
@@ -2137,6 +2185,7 @@ Hide  # 75+ Rares - Low Drop Level - 75+ Shields
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 40 35 8 230 # Rare Weapon 75+ (Hidden)
 	SetBorderColor 0 0 0 # Rare Weapon 75+ (Hidden)
+	DisableDropSound
 
 #---------------------------#
 # 60+ Rare (Low Drop Level) #
@@ -2152,6 +2201,7 @@ Hide  # 60+ Rares - Low Drop Level - 60+ Gloves Boots Helmets
 	SetFontSize 36
 	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (Hidden)
 	SetBorderColor 0 0 0 # Rare Recipe 60+ (Hidden)
+	DisableDropSound
 
 Hide  # 60+ Rares - Low Drop Level - 60+ Body Armour
 	Class "Body Armours"
@@ -2163,6 +2213,7 @@ Hide  # 60+ Rares - Low Drop Level - 60+ Body Armour
 	SetFontSize 36
 	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (Hidden)
 	SetBorderColor 0 0 0 # Rare Recipe 60+ (Hidden)
+	DisableDropSound
 
 Hide  # 60+ Rares - Low Drop Level - 60+ One Hand Weapons Shields
 	Class "One Hand" Daggers "Rune Dagger" Wands Claws Sceptres Shields
@@ -2175,6 +2226,7 @@ Hide  # 60+ Rares - Low Drop Level - 60+ One Hand Weapons Shields
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 40 35 8 230 # Rare Weapon 60+ (Hidden)
 	SetBorderColor 0 0 0 # Rare Weapon 60+ (Hidden)
+	DisableDropSound
 
 Hide  # 60+ Rares - Low Drop Level - 60+ Two Hand Weapons
 	Class "Two Hand" Bows Staves Warstaves
@@ -2187,6 +2239,7 @@ Hide  # 60+ Rares - Low Drop Level - 60+ Two Hand Weapons
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+ (Hidden)
 	SetBorderColor 0 0 0 # Rare Recipe 60+ (Hidden)
+	DisableDropSound
 
 #---------------------#
 # Rare (Shaper/Elder) #
@@ -2220,6 +2273,7 @@ Hide  # Shaper Elder Rares - 84+ - Low Drop Level
 	SetFontSize 36
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 0 0 0 # Rare Recipe 60+
+	DisableDropSound
 
 Show  # Shaper Elder Rares - 84+ - High Drop Level
 	HasInfluence Shaper Elder
@@ -2236,6 +2290,7 @@ Hide  # Shaper Elder Rares - 60+ - Low Drop Level
 	SetFontSize 36
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 0 0 0 # Shaper Elder
+	DisableDropSound
 
 Show  # Shaper Elder Rares - 60+ - High Drop Level
 	HasInfluence Shaper Elder
@@ -2286,6 +2341,7 @@ Hide  # Abyss Jewels - Magic - Leveling
 	SetFontSize 36
 	SetBackgroundColor 0 0 0 # Jewel (Abyss)
 	SetBorderColor 0 220 220 # Jewel (Magic)
+	DisableDropSound
 
 #Disabled Block Start
 #Show  # Abyss Jewels - Magic - Mapping (Low)
@@ -2313,6 +2369,7 @@ Hide  # Abyss Jewels - Magic - Mapping (High)
 	SetFontSize 36
 	SetBackgroundColor 0 0 0 # Jewel (Abyss)
 	SetBorderColor 0 220 220 # Jewel (Magic)
+	DisableDropSound
 
 #------------#
 # Abyss Rare #
@@ -2364,6 +2421,7 @@ Hide  # Jewels - Magic - Leveling
 	SetFontSize 36
 	SetBackgroundColor 0 0 0 # Jewel (Magic)
 	SetBorderColor 0 220 220 # Jewel (Magic)
+	DisableDropSound
 
 #Disabled Block Start
 #Show  # Jewels - Magic - Mapping (Low)
@@ -2391,6 +2449,7 @@ Hide  # Jewels - Magic - Mapping (High)
 	SetFontSize 36
 	SetBackgroundColor 0 0 0 # Jewel (Magic)
 	SetBorderColor 0 220 220 # Jewel (Magic)
+	DisableDropSound
 
 #------#
 # Rare #
@@ -2581,6 +2640,7 @@ Hide  # Gems - Quality - 1%+
 	SetTextColor 27 162 155 # Gem Quality (Low)
 	SetBackgroundColor 8 30 25 # Gem Quality (Low)
 	SetBorderColor 130 130 130 # Gem Quality (Low)
+	DisableDropSound
 
 Hide  # Gems - Drop Only - Worthless
 	Class "Skill Gems"
@@ -2589,6 +2649,7 @@ Hide  # Gems - Drop Only - Worthless
 	SetTextColor 27 162 155 # Gem (Low)
 	SetBackgroundColor 8 30 25 # Gem (Low)
 	SetBorderColor 0 150 150 # Gem (Low)
+	DisableDropSound
 
 Hide  # Gems - Other
 	Class "Skill Gems"
@@ -2596,6 +2657,7 @@ Hide  # Gems - Other
 	SetTextColor 27 162 155 # Gem (Worthless)
 	SetBackgroundColor 0 0 0 200 # Gem (Worthless)
 	SetBorderColor 0 0 0 0 # Gem (Worthless)
+	DisableDropSound
 
 ##########################################
 ################## MAPS ##################
@@ -2899,7 +2961,7 @@ Show  # Maps - Fragments - New (Error)
 
 Show  # Uniques - 15c+
 	Rarity = Unique
-	BaseType "Ambush Mitts" "Blood Raiment" "Carnal Boots" "Charan's Sword" "Clasped Mitts" "Crusader Boots" "Deerskin Gloves" "Ezomyte Tower Shield" "Gemstone Sword" "Glorious Plate" "Golden Bracers" "Golden Caligae" "Golden Flame" "Golden Mantle" "Golden Obi" "Golden Wreath" "Heavy Quiver" "Jet Amulet" "Jewelled Foil" "Jingling Spirit Shield" "Nightmare Mace" "Occultist's Vestment" "Prophecy Wand" "Rawhide Boots" "Ruby Amulet" "Sanctified Life Flask" "Sapphire Flask" "Savant's Robe" "Siege Axe" "Silk Gloves" "Sorcerer Boots" "Steel Ring" "Vaal Blade" "Wyrmscale Doublet" "Zodiac Leather" "Riveted Gloves" "Vaal Rapier" "Ornate Quiver" "Golden Visage" "Saint's Hauberk"
+	BaseType "Ambush Mitts" "Blood Raiment" "Carnal Boots" "Charan's Sword" "Crusader Boots" "Crusader Helmet" "Deerskin Gloves" "Elegant Ringmail" "Ezomyte Tower Shield" "Gemstone Sword" "Glorious Plate" "Golden Bracers" "Golden Caligae" "Golden Flame" "Golden Mantle" "Golden Obi" "Golden Wreath" "Hallowed Hybrid Flask" "Heavy Quiver" "Jet Amulet" "Jewelled Foil" "Jingling Spirit Shield" "Nightmare Mace" "Occultist's Vestment" "Prophecy Wand" "Rawhide Boots" "Ritual Sceptre" "Ruby Amulet" "Sanctified Life Flask" "Sapphire Flask" "Savant's Robe" "Siege Axe" "Silk Gloves" "Sorcerer Boots" "Steel Ring" "Vaal Blade" "Wyrmscale Doublet" "Zodiac Leather" "Riveted Gloves" "Vaal Rapier" "Ornate Quiver" "Golden Visage" "Saint's Hauberk"
 	SetFontSize 45
 	SetTextColor 255 128 64 # Unique (15c+)
 	SetBackgroundColor 255 255 255 255 # Unique (15c+)
@@ -2917,7 +2979,7 @@ Show  # Uniques - 15c+
 
 Show  # Uniques - 5-15c
 	Rarity = Unique
-	BaseType "Arcanist Gloves" "Arcanist Slippers" "Assassin's Boots" "Bismuth Flask" "Blue Pearl Amulet" "Close Helmet" "Coiled Staff" "Crusader Helmet" "Elegant Ringmail" "Full Wyrmscale" "Gold Ring" "Granite Flask" "Highborn Staff" "Karui Maul" "Legion Gloves" "Legion Sword" "Magistrate Crown" "Nubuck Boots" "Onyx Amulet" "Rawhide Tower Shield" "Royal Axe" "Steelscale Gauntlets" "Studded Belt" "Timeworn Claw" "Two-Stone Ring" "Vaal Spirit Shield" "Steelwood Bow"
+	BaseType "Arcanist Gloves" "Arcanist Slippers" "Assassin's Boots" "Bismuth Flask" "Blue Pearl Amulet" "Bronzescale Boots" "Clasped Mitts" "Close Helmet" "Coiled Staff" "Ezomyte Burgonet" "Full Wyrmscale" "Gold Ring" "Granite Flask" "Highborn Staff" "Holy Chainmail" "Karui Maul" "Legion Gloves" "Legion Sword" "Magistrate Crown" "Nubuck Boots" "Onyx Amulet" "Rawhide Tower Shield" "Royal Axe" "Studded Belt" "Timeworn Claw" "Two-Stone Ring" "Vaal Spirit Shield"
 	SetFontSize 45
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
@@ -2935,7 +2997,7 @@ Show  # Uniques - 5-15c
 
 Show  # Uniques - 3-5c
 	Rarity = Unique
-	BaseType "Amber Amulet" "Assassin Bow" "Bronzescale Boots" "Callous Mask" "Carved Wand" "Champion Kite Shield" "Coral Amulet" Cutlass "Fiend Dagger" Gavel "Gladiator Plate" "Gold Amulet" "Hallowed Hybrid Flask" "Holy Chainmail" "Imperial Maul" "Imperial Skean" "Imperial Staff" "Iron Sceptre" "Jade Amulet" "Jasper Chopper" "Large Hybrid Flask" "Midnight Blade" "Murder Mitts" "Nubuck Gloves" "Sacrificial Garb" "Sadist Garb" "Simple Robe" "Stibnite Flask" "Sulphur Flask" "Turquoise Amulet" "Varnished Coat" "Void Axe" "Ezomyte Spiked Shield" "Steel Circlet" "Tyrant's Sekhem"
+	BaseType "Amber Amulet" "Assassin Bow" "Brass Spirit Shield" "Callous Mask" "Chain Gloves" "Champion Kite Shield" "Corsair Sword" Cutlass "Festival Mask" "Fiend Dagger" Gavel "Gladiator Plate" "Imperial Maul" "Imperial Skean" "Imperial Staff" "Infernal Sword" "Iron Sceptre" "Jade Amulet" "Jasper Chopper" "Judgement Staff" "Midnight Blade" "Murder Mitts" "Nubuck Gloves" "Prophet Crown" "Sacrificial Garb" "Simple Robe" "Steelscale Gauntlets" "Stibnite Flask" "Sulphur Flask" "Titan Greaves" "Turquoise Amulet" "Variscite Blade" "Varnished Coat" "Void Axe" "Steelwood Bow" "Ezomyte Spiked Shield" "Steel Circlet" "Tyrant's Sekhem" "Ezomyte Dagger"
 	SetFontSize 45
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
@@ -2951,14 +3013,16 @@ Show  # Uniques - <3c - Unique Rings
 	SetFontSize 45
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
-	SetBorderColor 180 90 45 # Unique (<3c)
+	SetBorderColor 255 255 0 # Unique (3-5c)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Brown Square
+	PlayEffect Brown
 
 #-----#
 # <3c #
 #-----#
 # Orange border
 # Usually < 3c or nearly worthless.
-
 
 Show  # Uniques - <3c - ilvl <67
 	Rarity = Unique
@@ -2967,17 +3031,19 @@ Show  # Uniques - <3c - ilvl <67
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
 	SetBorderColor 180 90 45 # Unique (<3c)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Brown Square
+	PlayEffect Brown
 
 # Limited drop. May share a BaseType with an extremely valuable item, League specific, or boss drop only.
-
 Show  # Uniques - Limited
 	Rarity = Unique
-	BaseType "Agate Amulet" "Amethyst Ring" "Ancient Greaves" "Ancient Spirit Shield" "Archon Kite Shield" "Assassin's Mitts" "Branded Kite Shield" "Cardinal Round Shield" "Carnal Armour" "Carnal Mitts" "Chain Belt" "Citadel Bow" "Citrine Amulet" "Colossal Tower Shield" "Conjurer Boots" "Crusader Gloves" "Crystal Belt" "Ebony Tower Shield" "Eternal Sword" "Goathide Boots" "Golden Plate" "Goliath Greaves" "Grand Mana Flask" "Harlequin Mask" "Heavy Belt" "Hubris Circlet" "Hydrascale Boots" "Hydrascale Gauntlets" "Infernal Sword" "Iron Ring" "Judgement Staff" "Karui Chopper" "Lapis Amulet" "Leather Belt" "Leather Cap" "Lion Pelt" Maelstr Meatgrinder "Mind Cage" "Moonstone Ring" "Necromancer Circlet" "Nightmare Bascinet" "Opal Ring" "Penetrating Arrow Quiver" "Pinnacle Tower Shield" "Praetor Crown" "Prismatic Ring" "Prophet Crown" "Raven Mask" "Ritual Sceptre" "Royal Burgonet" "Ruby Flask" "Ruby Ring" "Sage Wand" "Sapphire Ring" "Shackled Boots" "Silver Flask" "Slink Boots" "Soldier Helmet" "Stealth Boots" "Terror Claw" "Titan Gauntlets" "Titan Greaves" "Topaz Ring" "Trapper Boots" "Triumphant Lamellar" "Two-Point Arrow Quiver" "Unset Ring" "Vaal Axe" "Vaal Gauntlets" "Vaal Mask" "Vaal Regalia" "Vaal Sceptre" "Variscite Blade" "Void Sceptre" "Widowsilk Robe" "Zealot Gloves" "Blood Sceptre" "Ezomyte Dagger" "Fossilised Spirit Shield" "Lacquered Buckler" "Shagreen Gloves" "Royal Sceptre"
+	BaseType "Agate Amulet" "Amethyst Ring" "Ancient Greaves" "Ancient Spirit Shield" "Branded Kite Shield" "Cardinal Round Shield" "Carnal Armour" "Carnal Mitts" "Carved Wand" "Chain Belt" "Citadel Bow" "Citrine Amulet" "Cloth Belt" "Conjurer Boots" "Coral Amulet" "Crusader Gloves" "Crystal Belt" "Eternal Sword" "Goathide Boots" "Gold Amulet" "Golden Plate" "Grand Mana Flask" "Heavy Belt" "Hubris Circlet" "Hydrascale Boots" "Hydrascale Gauntlets" "Iron Ring" "Karui Chopper" "Leather Belt" "Leather Cap" "Lion Pelt" Maelstr "Moonstone Ring" "Necromancer Circlet" "Opal Ring" "Penetrating Arrow Quiver" "Pinnacle Tower Shield" "Praetor Crown" "Prismatic Ring" "Raven Mask" "Royal Burgonet" "Ruby Flask" "Ruby Ring" "Sadist Garb" "Sage Wand" "Sapphire Ring" "Serpentscale Gauntlets" "Shackled Boots" "Silver Flask" "Slink Boots" "Soldier Helmet" "Stealth Boots" "Topaz Ring" "Trapper Boots" "Triumphant Lamellar" "Two-Point Arrow Quiver" "Unset Ring" "Vaal Axe" "Vaal Gauntlets" "Vaal Mask" "Vaal Regalia" "Widowsilk Robe" "Zealot Gloves" "Blood Sceptre" "Fossilised Spirit Shield" "Lacquered Buckler" "Shagreen Gloves" "Royal Sceptre"
 	SetFontSize 45
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
 	SetBorderColor 180 90 45 # Unique (<3c)
-
+	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Brown Square
 	PlayEffect Brown
 
@@ -2986,8 +3052,8 @@ Show  # Uniques - New or Worthless
 	SetFontSize 40
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
-	SetBorderColor 180 90 45 # Unique (<1c)
-
+	SetBorderColor 180 90 45 # Unique (<3c)
+	DisableDropSound
 
 ##########################################
 ############ DIVINATION CARDS ############
@@ -3012,7 +3078,7 @@ Show  # Uniques - New or Worthless
 
 Show  # Divination Cards - <2c (Conflicts)
 	Class Divination
-	BaseType "The Demoness" "The Wolf's Legacy" "The Wolf's Shadow"
+	BaseType "The Demoness"
 	SetFontSize 45 
 	SetTextColor 0 0 0 # Divination Card (<2c)
 	SetBackgroundColor 255 0 175 230 # Divination Card (<2c)
@@ -3023,7 +3089,7 @@ Show  # Divination Cards - <2c (Conflicts)
 
 Show  # Divination Cards - 10c+
 	Class Divination
-	BaseType "Abandoned Wealth" "Alluring Bounty" "Beauty Through Death" "Birth of the Three" "Burning Blood" "Dark Dreams" "Dying Anguish" "Etched in Blood" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Luck of the Vaal" "Nook's Crown" "Pride Before the Fall" "Pride of the First Ones" "Seven Years Bad Luck" "Squandered Prosperity" "Succor of the Sinless" "The Bargain" "The Celestial Justicar" "The Celestial Stone" "The Craving" "The Damned" "The Demon" "The Devastator" "The Doctor" "The Dragon's Heart" "The Enlightened" "The Escape" "The Ethereal" "The Eye of Terror" "The Fiend" "The Immortal" "The Iron Bard" "The Mayor" "The Nurse" "The Offering" "The Polymath" "The Price of Loyalty" "The Queen" "The Saint's Treasure" "The Samurai's Eye" "The Soul" "The Spark and the Flame" "The Wolven King's Bite" "The World Eater" "Void of the Elements" "Wealth and Power"
+	BaseType "Abandoned Wealth" "Alluring Bounty" "Beauty Through Death" "Birth of the Three" "Burning Blood" "Dying Anguish" "Etched in Blood" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Luck of the Vaal" "Nook's Crown" "Pride Before the Fall" "Pride of the First Ones" "Seven Years Bad Luck" "Squandered Prosperity" "Succor of the Sinless" "The Bargain" "The Celestial Justicar" "The Celestial Stone" "The Craving" "The Damned" "The Demon" "The Devastator" "The Doctor" "The Dragon's Heart" "The Enlightened" "The Escape" "The Eye of Terror" "The Fiend" "The Immortal" "The Iron Bard" "The Mayor" "The Nurse" "The Polymath" "The Price of Loyalty" "The Queen" "The Saint's Treasure" "The Samurai's Eye" "The Soul" "The Spark and the Flame" "The Warlord" "The World Eater" "Void of the Elements" "Wealth and Power"
 	SetFontSize 45
 	SetTextColor 255 0 175 # Divination Card (10c+)
 	SetBackgroundColor 255 255 255 255 # Divination Card (10c+)
@@ -3034,7 +3100,7 @@ Show  # Divination Cards - 10c+
 
 Show  # Divination Cards - 2-10c
 	Class Divination
-	BaseType "Akil's Prophecy" "Azyran's Reward" "Baited Expectations" "Blessing of God" "Boon of the First Ones" "Bowyer's Dream" "Buried Treasure" "Chaotic Disposition" "Deathly Designs" "Demigod's Wager" "Dialla's Subjugation" "Divine Justice" "Emperor of Purity" Friendship Heterochromia "Left to Fate" "Lucky Connections" "Lucky Deck" "Mawr Blaidd" "No Traces" Perfection Rebirth Remembrance "The Artist" "The Bones" "The Breach" "The Brittle Emperor" "The Cartographer" "The Cursed King" "The Dapper Prodigy" "The Dreamer" "The Endless Darkness" "The Fishmonger" "The Fool" "The Hale Heart" "The Heroic Shot" "The Hoarder" "The Hunger" "The Innocent" "The Inventor" "The Jeweller's Boon" "The King's Heart" "The Landing" "The Last One Standing" "The Life Thief" "The Old Man" "The Porcupine" "The Professor" "The Risk" "The Rite of Elements" "The Sacrifice" "The Sephirot" "The Skeleton" "The Undaunted" "The Undisputed" "The Valkyrie" "The Vast" "The Void" "The Warlord" "The Wilted Rose" "The Wolf" "The Wrath" "Time-Lost Relic" "Underground Forest" "Vinia's Token" "Volatile Power"
+	BaseType "Akil's Prophecy" "Azyran's Reward" "Baited Expectations" "Blessing of God" "Boon of the First Ones" "Bowyer's Dream" "Buried Treasure" "Chaotic Disposition" "Dark Dreams" "Deathly Designs" "Demigod's Wager" "Dialla's Subjugation" "Divine Justice" Friendship Heterochromia "Left to Fate" "Lucky Connections" "Lucky Deck" "Mawr Blaidd" "No Traces" Perfection Rebirth Remembrance "The Artist" "The Betrayal" "The Bones" "The Breach" "The Brittle Emperor" "The Cartographer" "The Dapper Prodigy" "The Dreamer" "The Endless Darkness" "The Ethereal" "The Fishmonger" "The Fool" "The Hale Heart" "The Heroic Shot" "The Hoarder" "The Innocent" "The Inventor" "The Jeweller's Boon" "The King's Heart" "The Landing" "The Life Thief" "The Offering" "The Old Man" "The Porcupine" "The Professor" "The Risk" "The Rite of Elements" "The Sacrifice" "The Sephirot" "The Skeleton" "The Throne" "The Undaunted" "The Undisputed" "The Valkyrie" "The Vast" "The Void" "The Wilted Rose" "The Wolven King's Bite" "The Wrath" "Time-Lost Relic" "Underground Forest" "Vinia's Token" "Volatile Power"
 	SetFontSize 45
 	SetTextColor 255 255 255 # Divination Card (2-10c)
 	SetBackgroundColor 255 0 175 255 # Divination Card (2-10c)
@@ -3045,7 +3111,7 @@ Show  # Divination Cards - 2-10c
 
 Show  # Divination Cards - <2c
 	Class Divination
-	BaseType "A Dab of Ink" "Alone in the Darkness" "Arrogance of the Vaal" "Atziri's Arsenal" Audacity "Blind Venture" "Boundless Realms" "Call to the First Ones" "Cameria's Cut" "Coveted Possession" Death "Earth Drinker" "Echoes of Love" "Emperor's Luck" "Forbidden Power" "Gemcutter's Promise" "Gift of the Gemling Queen" "Glimmer of Hope" "Harmony of Souls" Hope Humility "Hunter's Resolve" "Imperial Legacy" "Jack in the Box" "Last Hope" "Lingering Remnants" "Lost Worlds" "Lysah's Respite" "Merciless Armament" Mitts Monochrome "More is Never Enough" "Rain Tempter" "Sambodhi's Vow" "Scholar of the Seas" "The Admirer" "The Aesthete" "The Archmage's Right Hand" "The Arena Champion" "The Avenger" "The Beast" "The Betrayal" "The Body" "The Cacophony" "The Calling" "The Cataclysm" "The Catalyst" "The Chains that Bind" "The Chosen" "The Conduit" "The Dark Mage" "The Darkest Dream" "The Deal" "The Deep Ones" "The Dragon" "The Dreamland" "The Drunken Aristocrat" "The Encroaching Darkness" "The Endurance" "The Explorer" "The Eye of the Dragon" "The Fathomless Depths" "The Feast" "The Fletcher" "The Formless Sea" "The Forsaken" "The Fox" "The Garish Power" "The Gentleman" "The Gladiator" "The Golden Era" "The Harvester" "The Insatiable" "The Jester" "The Journey" "The Lion" "The Lord of Celebration" "The Mad King" "The Master" "The Master Artisan" "The Mercenary" "The Messenger" "The Oath" "The Obscured" "The One With All" "The Pact" "The Penitent" "The Poet" "The Price of Protection" "The Primordial" "The Realm" "The Road to Power" "The Ruthless Ceinture" "The Scavenger" "The Seeker" "The Side Quest" "The Siren" "The Spoiled Prince" "The Standoff" "The Stormcaller" "The Summoner" "The Sun" "The Surveyor" "The Sword King's Salute" "The Thaumaturgist" "The Throne" "The Traitor" "The Trial" "The Twilight Moon" "The Tyrant" "The Union" "The Valley of Steel Boxes" "The Visionary" "The Wind" "The Wolverine" "The Wretched" "Thirst for Knowledge" "Three Faces in the Dark" "Three Voices" Tranquillity "Treasure Hunter" Vanity "Vile Power"
+	BaseType "A Dab of Ink" "Alone in the Darkness" "Anarchy's Price" "Arrogance of the Vaal" "Assassin's Favour" "Atziri's Arsenal" Audacity "Blind Venture" "Boundless Realms" "Call to the First Ones" "Cameria's Cut" "Coveted Possession" Death "Doedre's Madness" "Earth Drinker" "Echoes of Love" "Emperor of Purity" "Emperor's Luck" "Forbidden Power" "Gemcutter's Promise" "Gift of the Gemling Queen" "Glimmer of Hope" "Harmony of Souls" Hope Hubris Humility "Hunter's Resolve" "Imperial Legacy" "Jack in the Box" "Last Hope" "Lingering Remnants" "Lost Worlds" "Lysah's Respite" "Merciless Armament" Mitts Monochrome "More is Never Enough" "Rain Tempter" Rats "Sambodhi's Vow" "Scholar of the Seas" "The Admirer" "The Aesthete" "The Archmage's Right Hand" "The Arena Champion" "The Army of Blood" "The Avenger" "The Battle Born" "The Beast" "The Body" "The Cacophony" "The Calling" "The Cataclysm" "The Catalyst" "The Chains that Bind" "The Chosen" "The Conduit" "The Cursed King" "The Dark Mage" "The Darkest Dream" "The Deal" "The Deceiver" "The Deep Ones" "The Dragon" "The Dreamland" "The Drunken Aristocrat" "The Encroaching Darkness" "The Endurance" "The Explorer" "The Eye of the Dragon" "The Fathomless Depths" "The Feast" "The Fletcher" "The Flora's Gift" "The Formless Sea" "The Forsaken" "The Fox" "The Garish Power" "The Gentleman" "The Gladiator" "The Golden Era" "The Harvester" "The Hunger" "The Insatiable" "The Jester" "The Journey" "The Last One Standing" "The Lion" "The Lord of Celebration" "The Mad King" "The Master" "The Master Artisan" "The Mercenary" "The Messenger" "The Oath" "The Obscured" "The One With All" "The Opulent" "The Pack Leader" "The Pact" "The Penitent" "The Poet" "The Price of Protection" "The Primordial" "The Realm" "The Road to Power" "The Ruthless Ceinture" "The Scavenger" "The Seeker" "The Side Quest" "The Sigil" "The Siren" "The Spoiled Prince" "The Standoff" "The Stormcaller" "The Summoner" "The Sun" "The Surveyor" "The Sword King's Salute" "The Thaumaturgist" "The Tower" "The Traitor" "The Trial" "The Twilight Moon" "The Twins" "The Tyrant" "The Union" "The Valley of Steel Boxes" "The Visionary" "The Wind" "The Wolf" "The Wolf's Legacy" "The Wolf's Shadow" "The Wolverine" "The Wretched" "Thirst for Knowledge" "Three Faces in the Dark" "Three Voices" Tranquillity "Treasure Hunter" Vanity "Vile Power"
 	SetFontSize 45 
 	SetTextColor 0 0 0 # Divination Card (<2c)
 	SetBackgroundColor 255 0 175 230 # Divination Card (<2c)
@@ -3056,7 +3122,7 @@ Show  # Divination Cards - <2c
 
 Hide  # Divination Cards - Nearly Worthless
 	Class Divination
-	BaseType "A Mother's Parting Gift" "Anarchy's Price" "Assassin's Favour" "Boon of Justice" "Cartographer's Delight" "Dark Temptation" "Destined to Crumble" "Doedre's Madness" "Grave Knowledge" "Her Mask" Hubris "Light and Truth" Loyalty "Might is Right" "Rain of Chaos" Rats "Shard of Fate" "The Army of Blood" "The Battle Born" "The Blazing Fire" "The Coming Storm" "The Deceiver" "The Doppelganger" "The Flora's Gift" "The Gambler" "The Gemcutter" "The Hermit" "The Incantation" "The Lich" "The Lord in Black" "The Mountain" "The Opulent" "The Pack Leader" "The Puzzle" "The Scarred Meadow" "The Scholar" "The Sigil" "The Survivalist" "The Tower" "The Twins" "The Watcher" "The Web" "The Witch"
+	BaseType "A Mother's Parting Gift" "Boon of Justice" "Cartographer's Delight" "Dark Temptation" "Destined to Crumble" "Grave Knowledge" "Her Mask" "Light and Truth" Loyalty "Might is Right" "Rain of Chaos" "Shard of Fate" "The Blazing Fire" "The Coming Storm" "The Doppelganger" "The Gambler" "The Gemcutter" "The Hermit" "The Incantation" "The Lich" "The Lord in Black" "The Mountain" "The Puzzle" "The Scarred Meadow" "The Scholar" "The Survivalist" "The Watcher" "The Web" "The Witch"
 	SetFontSize 40 
 	SetTextColor 0 0 0 # Divination Card (Nearly Worthless)
 	SetBackgroundColor 255 0 175 170 # Divination Card (Nearly Worthless)
@@ -3104,6 +3170,7 @@ Hide  # Flasks - Utility - Mapping (Low)
 	SetFontSize 40
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 75 75 255 # Flask (Utility)
+	DisableDropSound
 
 #Disabled Block Start
 #Show  # Flasks - Utility - Mapping (Mid)
@@ -3119,6 +3186,7 @@ Hide  # Flasks - Utility - Mapping (High)
 	SetFontSize 40
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 75 75 255 # Flask (Utility)
+	DisableDropSound
 
 #---------#
 # Quality #
@@ -3132,6 +3200,7 @@ Hide  # Flasks - Quality - Leveling
 	SetFontSize 36
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 140 140 140 # Quality
+	DisableDropSound
 
 Hide  # Flasks - Quality - Mapping (Low)
 	Quality >= 5
@@ -3140,6 +3209,7 @@ Hide  # Flasks - Quality - Mapping (Low)
 	SetFontSize 36
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 140 140 140 # Quality
+	DisableDropSound
 
 #Disabled Block Start
 #Show  # Flasks - Quality - Mapping (Mid)
@@ -3157,6 +3227,7 @@ Hide  # Flasks - Quality - Mapping (High)
 	SetFontSize 36
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 140 140 140 # Quality
+	DisableDropSound
 
 #----------------#
 # Low Drop Level #
@@ -3169,6 +3240,7 @@ Hide  # Flasks - Normal - Low Drop Level - 65+
 	SetFontSize 24
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 0 0 0 # Flask
+	DisableDropSound
 
 Hide  # Flasks - Normal - Low Drop Level - 60+
 	Class Flasks
@@ -3177,6 +3249,7 @@ Hide  # Flasks - Normal - Low Drop Level - 60+
 	SetFontSize 24
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 0 0 0 # Flask
+	DisableDropSound
 
 Hide  # Flasks - Normal - Low Drop Level - 50+
 	Class Flasks
@@ -3185,6 +3258,7 @@ Hide  # Flasks - Normal - Low Drop Level - 50+
 	SetFontSize 24
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 0 0 0 # Flask
+	DisableDropSound
 
 Hide  # Flasks - Normal - Low Drop Level - 40+
 	Class Flasks
@@ -3193,6 +3267,7 @@ Hide  # Flasks - Normal - Low Drop Level - 40+
 	SetFontSize 24
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 0 0 0 # Flask
+	DisableDropSound
 
 Hide  # Flasks - Normal - Low Drop Level - 30+
 	Class Flasks
@@ -3201,6 +3276,7 @@ Hide  # Flasks - Normal - Low Drop Level - 30+
 	SetFontSize 24
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 0 0 0 # Flask
+	DisableDropSound
 
 Hide  # Flasks - Normal - Low Drop Level - 20+
 	Class Flasks
@@ -3209,6 +3285,7 @@ Hide  # Flasks - Normal - Low Drop Level - 20+
 	SetFontSize 24
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 0 0 0 # Flask
+	DisableDropSound
 
 #--------#
 # Normal #
@@ -3220,6 +3297,7 @@ Hide  # Flasks - Normal - Leveling - Hybrid
 	SetFontSize 36
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 0 0 0 # Flask
+	DisableDropSound
 
 Hide  # Flasks - Normal - Leveling - Life
 	Class "Life Flasks"
@@ -3227,6 +3305,7 @@ Hide  # Flasks - Normal - Leveling - Life
 	SetFontSize 36
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 0 0 0 # Flask
+	DisableDropSound
 
 Hide  # Flasks - Normal - Leveling - Mana
 	Class "Mana Flasks"
@@ -3234,6 +3313,7 @@ Hide  # Flasks - Normal - Leveling - Mana
 	SetFontSize 36
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 0 0 0 # Flask
+	DisableDropSound
 
 #Disabled Block Start
 #Show  # Flasks - Normal - Mapping (Low)
@@ -3257,6 +3337,7 @@ Hide  # Flasks - Normal - Mapping (High)
 	SetFontSize 36
 	SetBackgroundColor 30 60 60 # Flask
 	SetBorderColor 0 0 0 # Flask
+	DisableDropSound
 
 ##########################################
 ############# CRAFTING BASES #############
@@ -3309,6 +3390,7 @@ Hide  # Crafting Bases - 84+ Quivers
 	SetFontSize 24
 	SetBackgroundColor 40 40 40 # Crafting Base (Low)
 	SetBorderColor 0 0 0 # Crafting Base (Low)
+	DisableDropSound
 
 Hide  # Normal/Magic - Low Drop Level - 84+ Quivers
 	Class Quivers
@@ -3317,6 +3399,7 @@ Hide  # Normal/Magic - Low Drop Level - 84+ Quivers
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
+	DisableDropSound
 
 #-------------#
 # 83+ Weapons #
@@ -3342,6 +3425,7 @@ Hide  # Crafting Bases - 83+ Weapons - One Hand Weapons
 	SetFontSize 36
 	SetBackgroundColor 40 40 40 # Crafting Base (Low)
 	SetBorderColor 0 0 0 # Crafting Base (Low)
+	DisableDropSound
 
 Hide  # Crafting Bases - 83+ Weapons - Two Hand Weapons
 	ItemLevel >= 83
@@ -3351,6 +3435,7 @@ Hide  # Crafting Bases - 83+ Weapons - Two Hand Weapons
 	SetFontSize 36
 	SetBackgroundColor 40 40 40 # Crafting Base (Low)
 	SetBorderColor 0 0 0 # Crafting Base (Low)
+	DisableDropSound
 
 Hide  # Normal/Magic - Low Drop Level - 83+ Weapons
 	ItemLevel >= 83
@@ -3359,6 +3444,7 @@ Hide  # Normal/Magic - Low Drop Level - 83+ Weapons
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
+	DisableDropSound
 
 #----------------#
 # 70+ Drop Level #
@@ -3403,6 +3489,7 @@ Hide  # Crafting Bases - 70+ Drop Level (Mid) - <84 Normal/Magic
 	SetFontSize 36
 	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
 	SetBorderColor 0 0 0 # Crafting Base (Mid)
+	DisableDropSound
 
 Show  # Crafting Bases - 70+ Drop Level (Mid) - Rare
 	DropLevel >= 70
@@ -3427,6 +3514,7 @@ Hide  # Crafting Bases - 70+ Drop Level (Low) - <84 Normal/Magic
 	SetFontSize 36
 	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
 	SetBorderColor 0 0 0 # Crafting Base (Mid)
+	DisableDropSound
 
 Show  # Crafting Bases - 70+ Drop Level (Low) - Rare
 	DropLevel >= 72
@@ -3447,6 +3535,7 @@ Hide  # Crafting Bases - 84+ Armour - Valuable ES Bases
 	SetFontSize 40
 	SetBackgroundColor 40 40 40 # Crafting Base (Mid)
 	SetBorderColor 0 0 0 # Crafting Base (Mid)
+	DisableDropSound
 
 Hide  # Crafting Bases - 84+ Armour - High Drop Level
 	ItemLevel >= 84
@@ -3455,6 +3544,7 @@ Hide  # Crafting Bases - 84+ Armour - High Drop Level
 	SetFontSize 24
 	SetBackgroundColor 40 40 40 # Crafting Base (Low)
 	SetBorderColor 0 0 0 # Crafting Base (Low)
+	DisableDropSound
 
 ##########################################
 ############# NORMAL / MAGIC #############
@@ -3467,6 +3557,7 @@ Hide  # Normal/Magic - Corrupted
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
+	DisableDropSound
 
 #-------------#
 # Accessories #
@@ -3486,6 +3577,7 @@ Hide  # Normal/Magic - Leveling - Accessories - < 10
 	Rarity <= Magic
 	SetFontSize 40
 	SetBorderColor 0 0 0 # Crafting Base (Mid)
+	DisableDropSound
 
 Hide  # Normal/Magic - Leveling - Accessories - < 16
 	ItemLevel < 16
@@ -3494,6 +3586,7 @@ Hide  # Normal/Magic - Leveling - Accessories - < 16
 	Rarity <= Magic
 	SetFontSize 40
 	SetBorderColor 0 0 0 # Crafting Base (Mid)
+	DisableDropSound
 
 Hide  # Normal/Magic - Leveling - Accessories - < 22
 	ItemLevel < 22
@@ -3502,12 +3595,14 @@ Hide  # Normal/Magic - Leveling - Accessories - < 22
 	Rarity <= Magic
 	SetFontSize 40
 	SetBorderColor 0 0 0 # Crafting Base (Mid)
+	DisableDropSound
 
 Hide  # Normal/Magic - Leveling - Jewelry
 	Class Rings Amulets
 	Rarity = Magic
 	ItemLevel < 25
 	SetFontSize 36
+	DisableDropSound
 
 #--------#
 # 4 Link #
@@ -3520,6 +3615,7 @@ Hide  # Normal/Magic - Leveling - 4 Link Armour - < 35
 	Rarity <= Magic
 	SetFontSize 36
 	SetBorderColor 40 80 150 # 3-4 Link
+	DisableDropSound
 
 Hide  # Normal/Magic - Leveling - 4 Link Armour - < 60
 	LinkedSockets >= 4
@@ -3527,6 +3623,7 @@ Hide  # Normal/Magic - Leveling - 4 Link Armour - < 60
 	Class Gloves Boots Helmets "Body Armours"
 	Rarity <= Magic
 	SetFontSize 36
+	DisableDropSound
 
 #----------------#
 # Low Drop Level #
@@ -3539,6 +3636,7 @@ Hide  # Normal/Magic - Low Drop Level - 55+
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
+	DisableDropSound
 
 Hide  # Normal/Magic - Low Drop Level - 50+
 	DropLevel < 25
@@ -3547,6 +3645,7 @@ Hide  # Normal/Magic - Low Drop Level - 50+
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
+	DisableDropSound
 
 Hide  # Normal/Magic - Low Drop Level - 45+
 	DropLevel < 20
@@ -3555,6 +3654,7 @@ Hide  # Normal/Magic - Low Drop Level - 45+
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
+	DisableDropSound
 
 Hide  # Normal/Magic - Low Drop Level - 35+
 	DropLevel < 15
@@ -3563,6 +3663,7 @@ Hide  # Normal/Magic - Low Drop Level - 35+
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
+	DisableDropSound
 
 Hide  # Normal/Magic - Low Drop Level - 25+
 	DropLevel < 10
@@ -3571,6 +3672,7 @@ Hide  # Normal/Magic - Low Drop Level - 25+
 	SetFontSize 18
 	SetBackgroundColor 0 0 0 100 # Normal Magic (Hidden)
 	SetBorderColor 0 0 0 0 # Normal Magic (Hidden)
+	DisableDropSound
 
 #--------#
 # 3 Link #
@@ -3583,6 +3685,7 @@ Hide  # Normal/Magic - Leveling - 3 Link Armour - < 10
 	Rarity <= Magic
 	SetFontSize 36
 	SetBorderColor 40 80 150 # 3-4 Link
+	DisableDropSound
 
 Hide  # Normal/Magic - Leveling - 3 Link Armour  - < 20
 	LinkedSockets >= 3
@@ -3590,6 +3693,7 @@ Hide  # Normal/Magic - Leveling - 3 Link Armour  - < 20
 	Class Gloves Boots Helmets "Body Armours"
 	Rarity <= Magic
 	SetFontSize 36
+	DisableDropSound
 
 Hide  # Normal/Magic - Leveling - 3 Link Armour - 4 Socket
 	LinkedSockets >= 3
@@ -3598,6 +3702,7 @@ Hide  # Normal/Magic - Leveling - 3 Link Armour - 4 Socket
 	Class Gloves Boots Helmets "Body Armours"
 	Rarity <= Magic
 	SetFontSize 36
+	DisableDropSound
 
 Hide  # Normal/Magic - Leveling - 3 Link Wands Sceptres
 	LinkedSockets = 3
@@ -3606,6 +3711,7 @@ Hide  # Normal/Magic - Leveling - 3 Link Wands Sceptres
 	Rarity <= Magic
 	SetFontSize 36
 	SetBorderColor 40 80 150 # 3-4 Link
+	DisableDropSound
 
 #-------#
 # Other #
@@ -3615,11 +3721,13 @@ Hide  # Normal/Magic - Leveling - < 11 Normal
 	Rarity = Normal
 	ItemLevel <= 11
 	SetFontSize 36
+	DisableDropSound
 
 Hide  # Normal/Magic - Leveling - < 20 Magic
 	Rarity = Magic
 	ItemLevel <= 20
 	SetFontSize 36
+	DisableDropSound
 
 Hide  # Normal/Magic - Other
 	Rarity <= Magic
@@ -4733,6 +4841,7 @@ Hide  # 75+ Rares - Armour
 	SetFontSize 36
 	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+
 	SetBorderColor 0 0 0 # Rare Recipe 75+
+	DisableDropSound
 
 #----------------------#
 # 75+ Two Hand Weapons #
@@ -4745,6 +4854,7 @@ Hide  # 75+ Rares - Two Hand Weapons
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 15 45 70 230 # Rare Recipe 75+
 	SetBorderColor 0 0 0 # Rare Recipe 75+
+	DisableDropSound
 
 #----------------------#
 # 75+ One Hand Weapons #
@@ -4758,6 +4868,7 @@ Hide  # 75+ Rares - One Hand Weapons
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 40 35 8 230 # Rare Weapon 75+
 	SetBorderColor 0 0 0 # Rare Weapon 75+
+	DisableDropSound
 
 #-------------#
 # 75+ Shields #
@@ -4770,6 +4881,7 @@ Hide  # 75+ Rares - Shields
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 40 35 8 230 # Rare Weapon 75+
 	SetBorderColor 0 0 0 # Rare Weapon 75+
+	DisableDropSound
 
 #-------------#
 # 75+ Quivers #
@@ -4793,6 +4905,7 @@ Hide  # 75+ Rares - Quivers - Other
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 40 35 8 230 # Rare Weapon 75+ (Hidden)
 	SetBorderColor 0 0 0 # Rare Weapon 75+ (Hidden)
+	DisableDropSound
 
 #--------#
 # Errors #
@@ -5381,6 +5494,7 @@ Hide  # 60+ Rares - Armour
 	SetFontSize 36
 	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+
 	SetBorderColor 0 0 0 # Rare Recipe 60+
+	DisableDropSound
 
 #----------------------#
 # 60+ Two Hand Weapons #
@@ -5393,6 +5507,7 @@ Hide  # 60+ Rares - Two Hand Weapons
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 20 60 0 230 # Rare Recipe 60+
 	SetBorderColor 0 0 0 # Rare Recipe 60+
+	DisableDropSound
 
 #----------------------#
 # 60+ One Hand Weapons #
@@ -5406,6 +5521,7 @@ Hide  # 60+ Rares - One Hand Weapons
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 40 35 8 230 # Rare Weapon 60+
 	SetBorderColor 0 0 0 # Rare Weapon 60+
+	DisableDropSound
 
 #-------------#
 # 60+ Shields #
@@ -5418,6 +5534,7 @@ Hide  # 60+ Rares - Shields
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 40 35 8 230 # Rare Weapon 60+
 	SetBorderColor 0 0 0 # Rare Weapon 60+
+	DisableDropSound
 
 #-------------#
 # 60+ Quivers #
@@ -5441,6 +5558,7 @@ Hide  # 60+ Rares - Quivers - Other
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBackgroundColor 40 35 8 230 # Rare Weapon 60+ (Hidden)
 	SetBorderColor 0 0 0 # Rare Weapon 60+ (Hidden)
+	DisableDropSound
 
 #--------#
 # Errors #
@@ -5465,12 +5583,14 @@ Hide  # < 60 Rares - Accessories
 	Class Belts Amulets Rings
 	SetFontSize 45
 	SetBorderColor 220 0 0 # Rare Accessory
+	DisableDropSound
 
 # Quivers
 Hide  # < 60 Rares - Quivers
 	Class Quivers
 	SetFontSize 36
 	SetTextColor 255 190 75 # Rare Weapon
+	DisableDropSound
 
 #---------------------#
 # Very Low Drop Level #
@@ -5480,21 +5600,25 @@ Hide  # < 60 Rares - Very Low Drop Level - 55+
 	DropLevel < 30
 	ItemLevel >= 55
 	SetFontSize 36
+	DisableDropSound
 
 Hide  # < 60 Rares - Very Low Drop Level - 50+
 	DropLevel < 25
 	ItemLevel >= 50
 	SetFontSize 36
+	DisableDropSound
 
 Hide  # < 60 Rares - Very Low Drop Level - 45+
 	DropLevel < 20
 	ItemLevel >= 45
 	SetFontSize 36
+	DisableDropSound
 
 Hide  # < 60 Rares - Very Low Drop Level - 40+
 	DropLevel < 15
 	ItemLevel >= 40
 	SetFontSize 36
+	DisableDropSound
 
 #----------#
 # 3-4 Link #
@@ -5507,6 +5631,7 @@ Hide  # < 60 Rares - Armour - 4 Link
 	ItemLevel < 60
 	SetFontSize 40
 	SetBorderColor 40 80 150 # 3-4 Link
+	DisableDropSound
 
 Hide  # < 60 Rares - Armour - 3 Link
 	LinkedSockets = 3
@@ -5514,6 +5639,7 @@ Hide  # < 60 Rares - Armour - 3 Link
 	ItemLevel < 25
 	SetFontSize 40
 	SetBorderColor 40 80 150 # 3-4 Link
+	DisableDropSound
 
 # Weapons
 Hide  # < 60 Rares - Weapons - 4 Link
@@ -5522,6 +5648,7 @@ Hide  # < 60 Rares - Weapons - 4 Link
 	SetFontSize 40
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBorderColor 40 80 150 # 3-4 Link
+	DisableDropSound
 
 Hide  # < 60 Rares - Weapons - 3 Link
 	LinkedSockets = 3
@@ -5529,6 +5656,7 @@ Hide  # < 60 Rares - Weapons - 3 Link
 	SetFontSize 40
 	SetTextColor 255 190 75 # Rare Weapon
 	SetBorderColor 40 80 150 # 3-4 Link
+	DisableDropSound
 
 #----------------#
 # Low Drop Level #
@@ -5538,21 +5666,25 @@ Hide  # < 60 Rares - Low Drop Level - 55+
 	DropLevel < 35
 	ItemLevel >= 55
 	SetFontSize 36
+	DisableDropSound
 
 Hide  # < 60 Rares - Low Drop Level - 50+
 	DropLevel < 30
 	ItemLevel >= 50
 	SetFontSize 36
+	DisableDropSound
 
 Hide  # < 60 Rares - Low Drop Level - 45+
 	DropLevel < 25
 	ItemLevel >= 45
 	SetFontSize 36
+	DisableDropSound
 
 Hide  # < 60 Rares - Low Drop Level - 40+
 	DropLevel < 20
 	ItemLevel >= 40
 	SetFontSize 36
+	DisableDropSound
 
 #------#
 # Good #
@@ -5561,10 +5693,12 @@ Hide  # < 60 Rares - Low Drop Level - 40+
 Hide  # < 60 Rares - Armour - Other
 	Class Gloves Boots Helmets "Body Armours"
 	SetFontSize 36
+	DisableDropSound
 
 Hide  # < 60 Rares - Weapons - Other
 	SetFontSize 36
 	SetTextColor 255 190 75 # Rare Weapon
+	DisableDropSound
 
 ##########################################
 ##########################################
@@ -5581,3 +5715,9 @@ Show  # Errors - Other
 	PlayAlertSound 8 200 # Error
 	MinimapIcon 0 White Square
 	PlayEffect White
+
+
+
+
+
+

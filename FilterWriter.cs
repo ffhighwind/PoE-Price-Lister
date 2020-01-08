@@ -60,12 +60,10 @@ namespace PoE_Price_Lister
 # <3c #
 #-----#
 # Orange border
-# Usually < 3c or nearly worthless.
-";
+# Usually < 3c or nearly worthless.";
 
 		private const string headerLimited =
-@"# Limited drop. May share a BaseType with an extremely valuable item, League specific, or boss drop only.
-";
+@"# Limited drop. May share a BaseType with an extremely valuable item, League specific, or boss drop only.";
 
 		private const string lessLvl67 =
 @"Show  # Uniques - <3c - ilvl <67
@@ -74,28 +72,26 @@ namespace PoE_Price_Lister
 	SetFontSize 40
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
-	SetBorderColor 180 90 45 # Unique (<3c)";
+	SetBorderColor 180 90 45 # Unique (<3c)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Brown Square
+	PlayEffect Brown";
 
 		private const string styleUniqueIconSound =
 @"	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Brown Square
-	PlayEffect Brown
-";
+	PlayEffect Brown";
 
 		private const string styleUniqueIcon =
 @"	MinimapIcon 0 Brown Square
 	PlayEffect Brown
-";
+	DisableDropSound";
 
 		private const string loreweaveStr =
 @"# Loreweave (60x rings)
 Show  # Uniques - <3c - Unique Rings
 	Rarity = Unique
-	Class Rings
-	SetFontSize 40
-	SetTextColor 255 128 64 # Unique
-	SetBackgroundColor 50 25 12 # Unique
-	SetBorderColor 180 90 45 # Unique (<3c)";
+	Class Rings";
 
 		private const string style15c =
 @"	SetFontSize 45
@@ -128,8 +124,7 @@ Show  # Uniques - <3c - Unique Rings
 @"	SetFontSize 40
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
-	SetBorderColor 180 90 45 # Unique (<3c)
-";
+	SetBorderColor 180 90 45 # Unique (<3c)";
 
 		private const string uniqueNewOrWorthless =
 @"  # Uniques - New or Worthless
@@ -350,19 +345,19 @@ Show  # Uniques - <3c - Unique Rings
 			if (list3to5c.Count > 0) {
 				sb.AppendLine("Show  # Uniques - 3-5c").AppendLine("\tRarity = Unique").Append("\tBaseType ").AppendLine(ItemList(list3to5c)).AppendLine(style3c).AppendLine();
 			}
-			sb.AppendLine(loreweaveStr).AppendLine();
+			sb.AppendLine(loreweaveStr).AppendLine(style3c).AppendLine();
 			sb.AppendLine(headerLess3c).AppendLine();
 
 			string showHide = type == FilterType.VERY_STRICT ? "Hide" : "Show";
-			string vsSound = type == FilterType.VERY_STRICT ? styleUniqueIconSound : styleUniqueIcon;
-			string sSound = (type != FilterType.VERY_STRICT && type != FilterType.STRICT) ? styleUniqueIconSound : "";
+			string vsSound = type == FilterType.VERY_STRICT ? styleUniqueIcon : styleUniqueIconSound;
+			string sSound = (type != FilterType.VERY_STRICT && type != FilterType.STRICT) ? styleUniqueIconSound : "	DisableDropSound";
 
 			if (type != FilterType.VERY_STRICT) {
 				sb.AppendLine(lessLvl67).AppendLine();
 			}
 			if (listLimited.Count > 0) {
 				sb.AppendLine(headerLimited);
-				sb.AppendLine("Show  # Uniques - Limited").AppendLine("\tRarity = Unique").Append("\tBaseType ").AppendLine(ItemList(listLimited)).AppendLine(styleLimited).Append(vsSound).AppendLine();
+				sb.AppendLine("Show  # Uniques - Limited").AppendLine("\tRarity = Unique").Append("\tBaseType ").AppendLine(ItemList(listLimited)).AppendLine(styleLimited).AppendLine(vsSound).AppendLine();
 			}
 			sb.AppendLine(showHide + uniqueNewOrWorthless).Append(sSound).AppendLine();
 
@@ -521,7 +516,17 @@ Show  # Uniques - <3c - Unique Rings
 				}
 			}
 
-			string enchStyle1 =
+			string enchStyleUniq =
+@"	Rarity = Unique
+	SetFontSize 45
+	SetTextColor 255 128 64 # Unique (15c+)
+	SetBackgroundColor 255 255 255 255 # Unique (15c+)
+	SetBorderColor 255 128 64 # Unique (15c+)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Square
+	PlayEffect Red";
+
+			string enchStyleRare20 =
 @"	SetFontSize 45
 	SetTextColor 255 255 255 # Crafting Base (High)
 	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
@@ -530,7 +535,7 @@ Show  # Uniques - <3c - Unique Rings
 	MinimapIcon 0 Red Square
 	PlayEffect Red";
 
-			string enchStyle2 =
+			string enchStyle10 =
 @"	SetFontSize 40
 	SetBackgroundColor 40 40 40 # Crafting Base (Explicit)
 	SetBorderColor 25 65 175 # Crafting Base (Explicit)
@@ -539,14 +544,17 @@ Show  # Uniques - <3c - Unique Rings
 	PlayEffect Blue";
 
 			if (list20c.Count > 0) {
-				sb.AppendLine(@"Show  # Enchantments - 20c+").Append("\tHasEnchantment ").AppendLine(ItemList(list20c)).AppendLine(enchStyle1).AppendLine();
+				sb.AppendLine(@"Show  # Enchantments - 20c+ Unique").Append("\tHasEnchantment ").AppendLine(ItemList(list20c)).AppendLine(enchStyleUniq).AppendLine();
+				sb.AppendLine(@"Show  # Enchantments - 20c+ Other").Append("\tHasEnchantment ").AppendLine(ItemList(list20c)).AppendLine(enchStyleRare20).AppendLine();
 			}
 			if (list10c.Count > 0) {
-				sb.AppendLine(@"Show  # Enchantments - 10c+").Append("\tHasEnchantment ").AppendLine(ItemList(list10c)).AppendLine(enchStyle2).AppendLine();
+				sb.AppendLine(@"Show  # Enchantments - 10c+ Unique").Append("\tHasEnchantment ").AppendLine(ItemList(list10c)).AppendLine(enchStyleUniq).AppendLine();
+				sb.AppendLine(@"Show  # Enchantments - 10c+ Other").Append("\tHasEnchantment ").AppendLine(ItemList(list10c)).AppendLine(enchStyle10).AppendLine();
 			}
 			sb.AppendLine(
 @"Show  # Enchantments - Other
 	AnyEnchantment True
+	Rarity <= Rare
 	SetFontSize 36
 	SetBackgroundColor 40 40 40 # Crafting Base (Explicit)
 	SetBorderColor 25 65 175 # Crafting Base (Explicit)");
