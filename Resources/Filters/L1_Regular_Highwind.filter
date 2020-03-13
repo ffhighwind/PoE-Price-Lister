@@ -1,7 +1,7 @@
 ﻿﻿############################################
-##      HIGHWIND'S LOOT FILTER 3.9.10     ##
+##      HIGHWIND'S LOOT FILTER 3.10.1     ##
 ############################################
-## Release Date: February 24, 2020        ##
+## Release Date: March 13, 2020           ##
 ############################################
 
 #--------------#
@@ -34,10 +34,10 @@
 #     TEXT     #
 #--------------#
 # Green  - Quest items, Labyrinth items, Pantheon Souls
-# Orange - Unique items, Harbinger Pieces
+# Orange - Unique items
 # Purple - Breachstones/Misc Map Items
 # Red    - impossible drops, 5+ Links
-# Violet - Currency, 6 Sockets
+# Purple - Currency, 6 Sockets
 # White/Blue/Yellow/Green/Cyan/Tan - defaults
 # Yellow Orange - rare weapon/shield/quiver
 
@@ -45,7 +45,7 @@
 #  BACKGROUND  #
 #--------------#
 # Blue   - Flasks, Rare 2h-weapon/armour/accessory ilvl 75+
-# Brown  - Unique items, Harbinger Pieces
+# Orange - Unique items
 # Green  - Rare 2h-weapon/armour/accessory ilvl 60+
 # Grey   - Crafting bases, Chance bases, uncommon useful items
 # Orange - Rare 1h-weapon/shield/quiver ilvl 60+
@@ -64,8 +64,8 @@
 # Grey   - Quality recipe
 # Orange - worthless Uniques
 # Red    - Rare Accessories
-# Violet - Chromatic recipe, mid tier Currency, high tier Essences
-# White  - mid value Uniques, mid value Divination Cards, high tier Map Fragments, Harbinger Pieces
+# Purple - Chromatic recipe, mid tier Currency, high tier Essences
+# White  - mid value Uniques, mid value Divination Cards, high tier Map Fragments
 # Yellow - low value Uniques, valuable or ilvl 83+ Rares
 
 #--------------#
@@ -73,16 +73,21 @@
 #--------------#
 # Circle   - Currency, Quest Items
 # Hexagon  - Maps, Map Fragments
-# Square   - Equipment
-# Star     - Jewels, Gems
-# Diamond  - Essence, Talisman, Leaguestones, Pieces
-# Triangle - Prophecies, Divination Cards
+# Cross    - Jewels
+# Star     - Gems
+# Diamond  - Essence, Talisman, Leaguestones
+# Triangle - Prophecies
+# Square   - Divination Cards
+# UpsideDownHouse - Equipment, Pieces
 #
 # Red    - Valuable items, 5+ Links
 # Yellow - common Currency, 6 sockets, Gems
-# Green  - Quest Items, Rare Crafting bases, Shaper/Elder items, Talismans
-# Blue   - League Currency, Essences, Map Fragments, mid Crafting bases
-# Brown  - mid/low value Uniques, Divination Cards
+# Green  - Quest Items, Rare Crafting bases, Shaper/Elder items, Talismans, Cluster Jewels
+# Blue   - League Currency, Essences, mid Crafting bases
+# Cyan   - Gems, Jewels, Map Fragments
+# Purple - Chayula splinters
+# Pink   - Divination Cards
+# Orange - mid/low value Uniques
 # White  - Errors, <T6 Maps
 
 #--------------#
@@ -278,6 +283,31 @@ Show  # Currency - Prophecies
 	MinimapIcon 0 Green Triangle
 	PlayEffect Green
 
+#----------#
+# Delirium #
+#----------#
+
+Show  # League Specific - Simulacrum Splinters
+	Class Currency
+	BaseType "Simulacrum Splinter"
+	SetFontSize 40
+	SetTextColor 255 0 255 # Currency (Simulacrum Splinters)
+	SetBackgroundColor 0 0 0 225 # Currency (Simulacrum Splinters)
+	SetBorderColor 0 0 0 0 # Currency (Simulacrum Splinters)
+	MinimapIcon 1 Blue Kite
+	PlayEffect Blue
+
+Show  # League Specific - Delirium Orbs
+	Class Currency
+	BaseType "Fine Delirium Orb" "Singular Delirium Orb" "Thaumaturge's Delirium Orb" "Blacksmith's Delirium Orb" "Armoursmith's Delirium Orb" "Cartographer's Delirium Orb" "Jeweller's Delirium Orb" "Abyssal Delirium Orb" "Decadent Delirium Orb" "Foreboding Delirium Orb" "Obscured Delirium Orb" "Whispering Delirium Orb" "Fragmented Delirium Orb" "Skittering Delirium Orb" "Fossilised Delirium Orb" "Portentous Delirium Orb" "Diviner's Delirium Orb" "Primal Delirium Orb" "Imperial Delirium Orb" "Timeless Delirium Orb" "Blighted Delirium Orb" "Amorphous Delirium Orb" "Delirium Orb"
+	SetFontSize 45
+	SetTextColor 255 0 255 # Delirium Orb
+	SetBackgroundColor 20 0 20 # Delirium Orb
+	SetBorderColor 255 0 255 # Delirium Orb
+	PlayAlertSound 4 200 # Delirium Orb
+	MinimapIcon 0 Blue Circle
+	PlayEffect Blue
+
 #--------#
 # Legion #
 #--------#
@@ -463,8 +493,8 @@ Show  # League Specific - Splinters - Chayula
 	SetTextColor 255 0 255 # Currency (Splinter of Chayula)
 	SetBackgroundColor 20 0 20 # Currency (Splinter of Chayula)
 	SetBorderColor 255 0 255 # Currency (Splinter of Chayula)
-	MinimapIcon 0 Blue Circle
-	PlayEffect Blue
+	MinimapIcon 0 Purple Kite
+	PlayEffect Purple
 
 Show  # League Specific - Splinters - Uul-Netol
 	Class Currency
@@ -473,7 +503,7 @@ Show  # League Specific - Splinters - Uul-Netol
 	SetTextColor 255 0 255 # Currency (Splinters)
 	SetBackgroundColor 0 0 0 # Currency (Splinters)
 	SetBorderColor 0 0 0 0 # Currency (Splinters)
-	MinimapIcon 2 Blue Circle
+	MinimapIcon 2 Blue Kite
 	PlayEffect Blue
 
 Show  # League Specific - Splinters - Xoph
@@ -483,7 +513,7 @@ Show  # League Specific - Splinters - Xoph
 	SetTextColor 255 0 255 # Currency (Splinters)
 	SetBackgroundColor 0 0 0 # Currency (Splinters)
 	SetBorderColor 0 0 0 0 # Currency (Splinters)
-	MinimapIcon 2 Blue Circle
+	MinimapIcon 2 Blue Kite
 	PlayEffect Blue
 
 Show  # League Specific - Splinters - Tul
@@ -493,7 +523,7 @@ Show  # League Specific - Splinters - Tul
 	SetTextColor 255 0 255 # Currency (Splinters)
 	SetBackgroundColor 0 0 0 # Currency (Splinters)
 	SetBorderColor 0 0 0 0 # Currency (Splinters)
-	MinimapIcon 2 Blue Circle
+	MinimapIcon 2 Blue Kite
 	PlayEffect Blue
 
 Show  # League Specific - Splinters - Esh
@@ -503,7 +533,7 @@ Show  # League Specific - Splinters - Esh
 	SetTextColor 255 0 255 # Currency (Splinters)
 	SetBackgroundColor 0 0 0 # Currency (Splinters)
 	SetBorderColor 0 0 0 0 # Currency (Splinters)
-	MinimapIcon 2 Blue Circle
+	MinimapIcon 2 Blue Kite
 	PlayEffect Blue
 
 Show  # League Specific - Blessings - Chayula
@@ -846,7 +876,7 @@ Show  # Fishing Rods
 	SetBackgroundColor 255 255 255 255 # Unique (10c+)
 	SetBorderColor 255 128 64 # Unique (10c+)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Square
+	MinimapIcon 0 Red UpsideDownHouse
 	PlayEffect Red
 
 ##########################################
@@ -867,7 +897,7 @@ Show  # 5+ Links - 5L+ Uniques
 	SetBackgroundColor 255 255 255 255 # Unique (10c+)
 	SetBorderColor 255 128 64 # Unique (10c+)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Square
+	MinimapIcon 0 Red UpsideDownHouse
 	PlayEffect Red
 
 Show  # 5+ Links - 6 Links
@@ -877,7 +907,7 @@ Show  # 5+ Links - 6 Links
 	SetBackgroundColor 255 255 255 255 # 6 Link
 	SetBorderColor 255 0 0 # 6 Link
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Square
+	MinimapIcon 0 Red UpsideDownHouse
 	PlayEffect Red
 
 #-----#
@@ -892,7 +922,7 @@ Show  # 5+ Links - 6 Sockets
 	SetBackgroundColor 255 255 255 255 # 5+ Link (High)
 	SetBorderColor 255 0 0 # 5+ Link
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Yellow Square
+	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayEffect Red
 
 Show  # 5+ Links - Body Armour (86+)
@@ -904,7 +934,7 @@ Show  # 5+ Links - Body Armour (86+)
 	SetBackgroundColor 255 255 255 255 # 5+ Link (High)
 	SetBorderColor 255 0 0 # 5+ Link
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Yellow Square
+	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayEffect Red
 
 Show  # 5+ Links - Shaper
@@ -915,7 +945,7 @@ Show  # 5+ Links - Shaper
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 255 0 0 # 5+ Link
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Green Square
+	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Red
 
 Show  # 5+ Links - Elder
@@ -926,7 +956,7 @@ Show  # 5+ Links - Elder
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 255 0 0 # 5+ Link
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Green Square
+	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Red
 
 Show  # 5+ Links - Body Armour (84+)
@@ -938,7 +968,7 @@ Show  # 5+ Links - Body Armour (84+)
 	SetBackgroundColor 50 50 50 230 # 5+ Link (Mid)
 	SetBorderColor 255 0 0 # 5+ Link
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Yellow Square
+	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayEffect Red
 
 Show  # 5+ Links - Leveling
@@ -949,7 +979,7 @@ Show  # 5+ Links - Leveling
 	SetBackgroundColor 50 50 50 230 # 5+ Link (Mid)
 	SetBorderColor 255 0 0 # 5+ Link
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Yellow Square
+	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayEffect Red
 
 #-----#
@@ -1020,7 +1050,7 @@ Show  # Vendor Recipes - Jewellers (6 Socket) - Unique
 	SetBackgroundColor 255 255 255 255 # Unique (10c+)
 	SetBorderColor 255 128 64 # Unique (10c+)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Square
+	MinimapIcon 0 Red UpsideDownHouse
 	PlayEffect Red
 
 Show  # Vendor Recipes - Jewellers (6 Socket) - Normal/Magic
@@ -1030,7 +1060,7 @@ Show  # Vendor Recipes - Jewellers (6 Socket) - Normal/Magic
 	SetBackgroundColor 0 0 0 230 # 6 Socket
 	SetBorderColor 255 0 255 # 6 Socket
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Yellow Square
+	MinimapIcon 0 Yellow UpsideDownHouse
 	PlayEffect Yellow
 
 #------------#
@@ -1335,7 +1365,7 @@ Show  # League Specific - Pieces (Harbinger)
 	SetBackgroundColor 255 255 255 255 # Piece
 	SetBorderColor 255 128 64 # Piece
 	PlayAlertSound 1 200 # Piece
-	MinimapIcon 0 Red Diamond
+	MinimapIcon 0 Red UpsideDownHouse
 	PlayEffect Red
 
 #-------#
@@ -1564,7 +1594,7 @@ Show  # Enchantments - 20c+ Unique
 	SetBackgroundColor 255 255 255 255 # Unique (15c+)
 	SetBorderColor 255 128 64 # Unique (15c+)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Square
+	MinimapIcon 0 Red UpsideDownHouse
 	PlayEffect Red
 
 Show  # Enchantments - 20c+ Other
@@ -1574,7 +1604,7 @@ Show  # Enchantments - 20c+ Other
 	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
 	SetBorderColor 0 255 255 # Crafting Base (High)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Square
+	MinimapIcon 0 Red UpsideDownHouse
 	PlayEffect Red
 
 Show  # Enchantments - 10c+ Unique
@@ -1585,7 +1615,7 @@ Show  # Enchantments - 10c+ Unique
 	SetBackgroundColor 255 255 255 255 # Unique (15c+)
 	SetBorderColor 255 128 64 # Unique (15c+)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Square
+	MinimapIcon 0 Red UpsideDownHouse
 	PlayEffect Red
 
 Show  # Enchantments - 10c+ Other
@@ -1594,7 +1624,7 @@ Show  # Enchantments - 10c+ Other
 	SetBackgroundColor 40 40 40 # Crafting Base (Explicit)
 	SetBorderColor 25 65 175 # Crafting Base (Explicit)
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Blue Square
+	MinimapIcon 0 Blue UpsideDownHouse
 	PlayEffect Blue
 
 Show  # Enchantments - Other
@@ -1617,7 +1647,7 @@ Show  # Crafting Bases - Shaper Elder - 70+ Drop Level
 	SetBackgroundColor 255 255 255 255 # Crafting Base 84+ (High)
 	SetBorderColor 0 255 255 # Crafting Base 84+ (High)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Square
+	MinimapIcon 0 Red UpsideDownHouse
 	PlayEffect Red
 
 # 84+ Shaper Amulets (phys as extra, ele pen, quant, charge on kill)
@@ -1632,7 +1662,7 @@ Show  # Crafting Bases - Shaper - 75+ Jewelry
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 220 0 0 # Rare Accessory
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 1 Green Square
+	MinimapIcon 1 Green UpsideDownHouse
 	PlayEffect Green
 
 # 86+ Shaper Body Armour (attack crit%, +1 gem level, life%)
@@ -1644,7 +1674,7 @@ Show  # Crafting Bases - Elder - 86+ BaseTypes
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 200 50 255 # Shaper Elder 83+
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Square
+	MinimapIcon 0 Red UpsideDownHouse
 	PlayEffect Red
 
 # 86+ Shaper Body Armour (spell crit%, +1 gem level, life%)
@@ -1656,7 +1686,7 @@ Show  # Crafting Bases - Shaper - 86+ BaseTypes
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 200 50 255 # Shaper Elder 83+
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Square
+	MinimapIcon 0 Red UpsideDownHouse
 	PlayEffect Red
 
 # 85+ Shaper - Wands/Sceptres/Daggers (phys as extra) phys spells e.g. Blade Vortex, Blade Fall, EK
@@ -1668,7 +1698,7 @@ Show  # Crafting Bases - Shaper - 85+ Sceptres Wands Daggers
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 200 50 255 # Shaper Elder 83+
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Green Square
+	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Green
 
 # 84+ Shaper Shields (max res)
@@ -1683,7 +1713,7 @@ Show  # Crafting Bases - Shaper - 84+ BaseTypes
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 200 50 255 # Shaper Elder 83+
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Green Square
+	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Green
 
 # 84+ Elder Helmets (righteous fire)
@@ -1695,7 +1725,7 @@ Show  # Crafting Bases - Elder - 84+ BaseTypes
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 200 50 255 # Shaper Elder 83+
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Green Square
+	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Green
 
 # 85+ Shaper Bows (phys as extra, ele pen, coc)
@@ -1707,7 +1737,7 @@ Show  # Crafting Bases - Shaper - 85+ BaseTypes
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 200 50 255 # Shaper Elder 83+
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Green Square
+	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Green
 
 # 83+ Shaper Swords/Claws (phys as extra, ele pen)
@@ -1719,7 +1749,7 @@ Show  # Crafting Bases - Shaper - 83+ BaseTypes
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 200 50 255 # Shaper Elder 83+
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Green Square
+	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Green
 
 # 80+ Shaper - Quivers (+1 arrow, phys as extra cold)
@@ -1731,7 +1761,7 @@ Show  # Crafting Bases - Shaper - 80+ Quivers
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 200 50 255 # Shaper Elder 83+
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Green Square
+	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Green
 
 Show  # Crafting Bases - Shaper - 86+
@@ -1757,7 +1787,7 @@ Show  # Crafting Bases - Influence - Conquerers of the Atlas
 	SetFontSize 45
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 200 50 255 # Shaper Elder 83+
-	MinimapIcon 0 Green Square
+	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Green
 
 ##########################################
@@ -1783,7 +1813,7 @@ Show  # Explicit Mods - Physical Weapons - Rare
 	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
 	SetBorderColor 0 255 255 # Crafting Base (High)
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Blue Square
+	MinimapIcon 0 Blue UpsideDownHouse
 	PlayEffect Blue
 
 Show  # Explicit Mods - Physical Weapons - Magic
@@ -1795,7 +1825,7 @@ Show  # Explicit Mods - Physical Weapons - Magic
 	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
 	SetBorderColor 0 255 255 # Crafting Base (High)
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Blue Square
+	MinimapIcon 0 Blue UpsideDownHouse
 	PlayEffect Blue
 
 # Elemental Weapons
@@ -1817,7 +1847,7 @@ Show  # Explicit Mods - Elemental Weapons - Rare
 	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
 	SetBorderColor 0 255 255 # Crafting Base (High)
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Blue Square
+	MinimapIcon 0 Blue UpsideDownHouse
 	PlayEffect Blue
 
 # Mastercraft
@@ -1836,7 +1866,7 @@ Show  # Explicit Mods - Mastercraft - Rare
 	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
 	SetBorderColor 0 255 255 # Crafting Base (High)
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Blue Square
+	MinimapIcon 0 Blue UpsideDownHouse
 	PlayEffect Blue
 
 # Incursion
@@ -1891,7 +1921,7 @@ Show  # Explicit Mods - Armor/Accessories - Rare
 	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
 	SetBorderColor 0 255 255 # Crafting Base (High)
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Blue Square
+	MinimapIcon 0 Blue UpsideDownHouse
 	PlayEffect Blue
 
 # Accessories
@@ -1912,7 +1942,7 @@ Show  # Explicit Mods - Accessories - Rare
 	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
 	SetBorderColor 0 255 255 # Crafting Base (High)
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Blue Square
+	MinimapIcon 0 Blue UpsideDownHouse
 	PlayEffect Blue
 
 # Jewels
@@ -1924,7 +1954,7 @@ Show  # Explicit Mods - Jewels
 	SetBackgroundColor 0 0 0 # Jewel (Magic)
 	SetBorderColor 0 220 220 # Jewel (Magic)
 	PlayAlertSound 6 200 # Jewel
-	MinimapIcon 0 Blue Star
+	MinimapIcon 0 Blue Cross
 	PlayEffect Blue
 
 # Betrayal/Syndicate
@@ -1943,7 +1973,7 @@ Show  # Explicit Mods - Veiled - Rare - 83+
 	SetBackgroundColor 40 40 40 # Crafting Base 84+ (Mid)
 	SetBorderColor 40 80 150 # Crafting Base 84+ (Mid)
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Blue Square
+	MinimapIcon 0 Blue UpsideDownHouse
 	PlayEffect Blue
 
 Show  # Explicit Mods - Veiled - Rare - Other
@@ -1952,7 +1982,7 @@ Show  # Explicit Mods - Veiled - Rare - Other
 	SetFontSize 40
 	SetBackgroundColor 40 40 40 # Crafting Base (Explicit)
 	SetBorderColor 25 65 175 # Crafting Base (Explicit)
-	MinimapIcon 1 Blue Square
+	MinimapIcon 1 Blue UpsideDownHouse
 	PlayEffect Blue
 
 # Bestiary
@@ -1970,7 +2000,7 @@ Show  # Explicit Mods - Bestiary - Rare
 	SetFontSize 40
 	SetBackgroundColor 40 40 40 # Crafting Base (Explicit)
 	SetBorderColor 25 65 175 # Crafting Base (Explicit)
-	MinimapIcon 1 Blue Square
+	MinimapIcon 1 Blue UpsideDownHouse
 	PlayEffect Blue
 
 # Synthesis
@@ -1988,7 +2018,7 @@ Show  # Explicit Mods - Synthesised - Rare
 	SetBackgroundColor 40 40 40 # Crafting Base (Explicit)
 	SetBorderColor 25 65 175 # Crafting Base (Explicit)
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Blue Square
+	MinimapIcon 0 Blue UpsideDownHouse
 	PlayEffect Blue
 
 # Fractured
@@ -2007,7 +2037,7 @@ Show  # Explicit Mods - Fractured - Rare - 83+
 	SetBackgroundColor 40 40 40 # Crafting Base 84+ (Mid)
 	SetBorderColor 40 80 150 # Crafting Base 84+ (Mid)
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Blue Square
+	MinimapIcon 0 Blue UpsideDownHouse
 	PlayEffect Blue
 
 Show  # Explicit Mods - Fractured - Rare - Other
@@ -2016,7 +2046,7 @@ Show  # Explicit Mods - Fractured - Rare - Other
 	SetFontSize 40
 	SetBackgroundColor 40 40 40 # Crafting Base (Explicit)
 	SetBorderColor 25 65 175 # Crafting Base (Explicit)
-	MinimapIcon 1 Blue Square
+	MinimapIcon 1 Blue UpsideDownHouse
 	PlayEffect Blue
 
 ##########################################
@@ -2259,7 +2289,7 @@ Show  # Shaper Rares - Accessories - 84+
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 220 0 0 # Rare Accessory
 	PlayAlertSound 4 200 # Shaper Elder
-	MinimapIcon 0 Green Square
+	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Green
 
 Show  # Shaper Rares - Accessories - 60+
@@ -2307,6 +2337,53 @@ Show  # Shaper Rares - 60+ - High Drop Level
 ##########################################
 # Section: Jewels
 
+#----------#
+# Clusters #
+#----------#
+
+Show  # Jewels - Cluster - Unique
+	Class Jewel
+	BaseType "Cluster Jewel"
+	Rarity = Unique
+	SetFontSize 45
+	SetTextColor 255 128 64 # Jewel (Unique Cluster)
+	SetBackgroundColor 255 255 255 255 # Jewel (Unique Cluster)
+	SetBorderColor 0 255 255 # Jewel (Unique Cluster)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Cross
+	PlayEffect Red
+
+Show  # Jewels - Cluster - Large
+	Class Jewel
+	BaseType "Large Cluster Jewel"
+	Rarity <= Rare
+	SetFontSize 45
+	SetBackgroundColor 0 0 0 # Jewel (Cluster)
+	SetBorderColor 0 220 220 # Jewel (Rare)
+	PlayAlertSound 6 200 # Jewel
+	MinimapIcon 0 Green Cross
+	PlayEffect Green
+
+Show  # Jewels - Cluster - Medium
+	Class Jewel
+	BaseType "Medium Cluster Jewel"
+	Rarity <= Rare
+	SetFontSize 40
+	SetBackgroundColor 0 0 0 # Jewel (Cluster)
+	SetBorderColor 0 220 220 # Jewel (Rare)
+	MinimapIcon 1 Green Cross
+	PlayEffect Green
+
+Show  # Jewels - Cluster - Small
+	Class Jewel
+	BaseType "Small Cluster Jewel"
+	Rarity <= Rare
+	SetFontSize 40
+	SetBackgroundColor 0 0 0 # Jewel (Cluster)
+	SetBorderColor 0 220 220 # Jewel (Rare)
+	MinimapIcon 2 Green Cross
+	PlayEffect Green
+
 #--------#
 # Unique #
 #--------#
@@ -2319,10 +2396,10 @@ Show  # Jewels - Prismatic
 	SetBackgroundColor 255 255 255 255 # Jewel (Prismatic)
 	SetBorderColor 0 255 255 # Jewel (Prismatic)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Star
+	MinimapIcon 0 Red Cross
 	PlayEffect Red
 
-Show  # Jewels - Unique
+Show  # Jewels - Unique - Other
 	Class Jewel
 	Rarity = Unique
 	SetFontSize 45
@@ -2330,8 +2407,8 @@ Show  # Jewels - Unique
 	SetBackgroundColor 50 25 12 # Jewel (Unique)
 	SetBorderColor 0 255 255 # Jewel (Unique)
 	PlayAlertSound 6 200 # Jewel (Unique)
-	MinimapIcon 0 Brown Star
-	PlayEffect Brown
+	MinimapIcon 0 Orange Cross
+	PlayEffect Orange
 
 #-------------#
 # Abyss Magic #
@@ -2383,7 +2460,7 @@ Show  # Abyss Jewels - Rare - Leveling
 	SetFontSize 40
 	SetBackgroundColor 0 0 0 # Jewel (Abyss)
 	SetBorderColor 0 220 220 # Jewel (Rare)
-	MinimapIcon 0 Yellow Star
+	MinimapIcon 0 Yellow Cross
 	PlayEffect Yellow
 
 #Disabled Block Start
@@ -2465,7 +2542,7 @@ Show  # Jewels - Rare - Leveling
 	SetBackgroundColor 0 0 0 # Jewel (Rare)
 	SetBorderColor 0 220 220 # Jewel (Rare)
 	PlayAlertSound 6 200 # Jewel
-	MinimapIcon 0 Yellow Star
+	MinimapIcon 0 Yellow Cross
 	PlayEffect Yellow
 
 #Disabled Block Start
@@ -2508,11 +2585,12 @@ Show  # Gems - Awakened
 	Class "Support Skill Gems"
 	BaseType "Awakened "
 	SetFontSize 45
-	SetTextColor 55 225 185 # Gem (Mid)
-	SetBackgroundColor 10 35 30 # Gem (Mid)
-	PlayAlertSound 6 200 # Gem
-	MinimapIcon 0 Yellow Star
-	PlayEffect Yellow
+	SetTextColor 27 162 155 # Gem (High)
+	SetBackgroundColor 255 255 255 255 # Gem (High)
+	SetBorderColor 50 220 180 # Gem (High)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Star
+	PlayEffect Red
 
 #------#
 # High #
@@ -2571,8 +2649,8 @@ Show  # Gems - Quality - 17%+
 	SetBackgroundColor 255 255 255 255 # Gem (High)
 	SetBorderColor 50 220 180 # Gem (High)
 	PlayAlertSound 6 200 # Gem
-	MinimapIcon 0 Yellow Star
-	PlayEffect Yellow
+	MinimapIcon 0 Cyan Star
+	PlayEffect Cyan
 
 #-----#
 # Mid #
@@ -2585,8 +2663,8 @@ Show  # Gems - Leveled - Level 19+
 	SetTextColor 55 225 185 # Gem (Mid)
 	SetBackgroundColor 10 35 30 # Gem (Mid)
 	PlayAlertSound 6 200 # Gem
-	MinimapIcon 0 Yellow Star
-	PlayEffect Yellow
+	MinimapIcon 0 Cyan Star
+	PlayEffect Cyan
 
 Show  # Gems - Quality - 14%+
 	Quality >= 14
@@ -2596,8 +2674,8 @@ Show  # Gems - Quality - 14%+
 	SetBackgroundColor 50 50 50 # Gem Quality (Mid)
 	SetBorderColor 200 200 200 # Gem Quality (Mid)
 	PlayAlertSound 6 200 # Gem
-	MinimapIcon 0 Yellow Star
-	PlayEffect Yellow
+	MinimapIcon 0 Cyan Star
+	PlayEffect Cyan
 
 Show  # Gems - Drop Only - 5c+
 	Class "Skill Gems"
@@ -2607,8 +2685,8 @@ Show  # Gems - Drop Only - 5c+
 	SetBackgroundColor 10 35 30 # Gem (Mid)
 	SetBorderColor 50 220 180 # Gem (Mid)
 	PlayAlertSound 6 200 # Gem
-	MinimapIcon 0 Yellow Star
-	PlayEffect Yellow
+	MinimapIcon 0 Cyan Star
+	PlayEffect Cyan
 
 #-----#
 # Low #
@@ -2696,8 +2774,8 @@ Show  # Maps - Uniques - Low Value
 	SetBackgroundColor 255 128 64 220 # Map (Unique)
 	SetBorderColor 0 0 0 # Map (Unique)
 	PlayAlertSound 4 200 # Map (Unique)
-	MinimapIcon 0 Brown Hexagon
-	PlayEffect Brown
+	MinimapIcon 0 Orange Hexagon
+	PlayEffect Orange
 
 #-----#
 # Red #
@@ -2885,7 +2963,7 @@ Show  # Maps - T1+ (White) - Sound
 
 Show  # Maps - Fragments - High Value
 	Class "Map Fragments"
-	BaseType "Mortal Rage" "Mortal Ignorance" "Mortal Hope" "Chayula's Breachstone" "Chayula's " "Timeless Maraketh Emblem" "Timeless Templar Emblem"
+	BaseType "Mortal Rage" "Mortal Ignorance" "Mortal Hope" "Chayula's Breachstone" "Chayula's " "Timeless Maraketh Emblem" "Timeless Templar Emblem" "Simulacrum"
 	SetFontSize 45
 	SetTextColor 255 255 255 # Map Fragment (High)
 	SetBackgroundColor 0 255 255 210 # Map Fragment (High)
@@ -2902,8 +2980,8 @@ Show  # Maps - Fragments - Mid Value
 	SetBackgroundColor 0 255 255 210 # Map Fragment (Mid)
 	SetBorderColor 0 0 0 # Map Fragment (Mid)
 	PlayAlertSound 2 200 # Map Fragment
-	MinimapIcon 0 Blue Hexagon
-	PlayEffect Blue
+	MinimapIcon 0 Cyan Hexagon
+	PlayEffect Cyan
 
 Show  # Maps - Scarabs - High
 	Class "Map Fragments"
@@ -2924,8 +3002,8 @@ Show  # Maps - Scarabs - Low
 	SetBackgroundColor 0 255 255 210 # Map Fragment (Low)
 	SetBorderColor 0 0 0 # Map Fragment (Low)
 	PlayAlertSound 2 200 # Map Fragment
-	MinimapIcon 1 Blue Hexagon
-	PlayEffect Blue
+	MinimapIcon 1 Cyan Hexagon
+	PlayEffect Cyan
 
 Show  # Maps - Fragments - Low Value
 	Class "Map Fragments"
@@ -2935,8 +3013,8 @@ Show  # Maps - Fragments - Low Value
 	SetBackgroundColor 0 255 255 210 # Map Fragment (Low)
 	SetBorderColor 0 0 0 # Map Fragment (Low)
 	PlayAlertSound 2 200 # Map Fragment
-	MinimapIcon 0 Blue Hexagon
-	PlayEffect Blue
+	MinimapIcon 1 Cyan Hexagon
+	PlayEffect Cyan
 
 Show  # Maps - Fragments - New (Error)
 	Class "Map Fragments"
@@ -2945,8 +3023,8 @@ Show  # Maps - Fragments - New (Error)
 	SetBackgroundColor 0 255 255 210 # Map Fragment (Mid)
 	SetBorderColor 0 255 0 # Error
 	PlayAlertSound 8 200 # Error
-	MinimapIcon 0 Blue Hexagon
-	PlayEffect Blue
+	MinimapIcon 0 Cyan Hexagon
+	PlayEffect Cyan
 
 ##########################################
 ################# UNIQUES ################
@@ -2965,13 +3043,13 @@ Show  # Maps - Fragments - New (Error)
 
 Show  # Uniques - 15c+
 	Rarity = Unique
-	BaseType "Ambush Mitts" "Assassin's Boots" "Blood Raiment" "Carnal Boots" "Charan's Sword" "Crusader Boots" "Crusader Helmet" "Deerskin Gloves" "Ezomyte Tower Shield" "Gemstone Sword" "Glorious Plate" "Golden Bracers" "Golden Caligae" "Golden Flame" "Golden Mantle" "Golden Obi" "Golden Wreath" "Heavy Quiver" "Imperial Maul" "Jet Amulet" "Jewelled Foil" "Jingling Spirit Shield" "Nubuck Boots" "Occultist's Vestment" "Prophecy Wand" "Rawhide Boots" "Ruby Amulet" "Sapphire Flask" "Savant's Robe" "Siege Axe" "Silk Gloves" "Sorcerer Boots" "Vaal Blade" "Wyrmscale Doublet" "Zodiac Leather" "Riveted Gloves" "Vaal Rapier" "Ornate Quiver" "Tyrant's Sekhem" "Golden Visage" "Saint's Hauberk"
+	BaseType "Sinner Tricorne" "Ambush Mitts" "Assassin's Boots" "Blood Raiment" "Carnal Boots" "Charan's Sword" "Crusader Boots" "Crusader Helmet" "Deerskin Gloves" "Ezomyte Tower Shield" "Gemstone Sword" "Glorious Plate" "Golden Bracers" "Golden Caligae" "Golden Flame" "Golden Mantle" "Golden Obi" "Golden Wreath" "Heavy Quiver" "Imperial Maul" "Jet Amulet" "Jewelled Foil" "Jingling Spirit Shield" "Nubuck Boots" "Occultist's Vestment" "Prophecy Wand" "Rawhide Boots" "Ruby Amulet" "Sapphire Flask" "Savant's Robe" "Siege Axe" "Silk Gloves" "Sorcerer Boots" "Vaal Blade" "Wyrmscale Doublet" "Zodiac Leather" "Riveted Gloves" "Vaal Rapier" "Ornate Quiver" "Tyrant's Sekhem" "Golden Visage" "Saint's Hauberk"
 	SetFontSize 45
 	SetTextColor 255 128 64 # Unique (15c+)
 	SetBackgroundColor 255 255 255 255 # Unique (15c+)
 	SetBorderColor 255 128 64 # Unique (15c+)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Square
+	MinimapIcon 0 Red UpsideDownHouse
 	PlayEffect Red
 
 #-------#
@@ -2989,8 +3067,8 @@ Show  # Uniques - 5-15c
 	SetBackgroundColor 50 25 12 # Unique
 	SetBorderColor 255 255 255 # Unique (5-15c)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Brown Square
-	PlayEffect Brown
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Orange
 
 #------#
 # 3-5c #
@@ -3001,14 +3079,14 @@ Show  # Uniques - 5-15c
 
 Show  # Uniques - 3-5c
 	Rarity = Unique
-	BaseType "Amber Amulet" "Ancient Gauntlets" "Ancient Spirit Shield" "Assassin Bow" "Bismuth Flask" "Blue Pearl Amulet" "Callous Mask" "Carved Wand" "Chain Belt" "Champion Kite Shield" "Corsair Sword" Cutlass "Elegant Foil" "Fiend Dagger" "Full Dragonscale" Gavel "Gladiator Plate" "Goathide Boots" "Gold Amulet" "Golden Plate" "Grand Mana Flask" "Hallowed Hybrid Flask" "Holy Chainmail" "Hydrascale Gauntlets" "Imperial Skean" "Jade Amulet" "Jasper Chopper" "Judgement Staff" "Murder Mitts" "Nubuck Gloves" "Onyx Amulet" "Prophet Crown" "Ritual Sceptre" "Sacrificial Garb" "Sage Wand" "Simple Robe" "Soldier Helmet" "Stealth Boots" "Stibnite Flask" "Sulphur Flask" "Topaz Flask" "Turquoise Amulet" "Variscite Blade" "Varnished Coat" "Void Axe" "Steelwood Bow" "Steel Circlet" "Loricated Ringmail"
+	BaseType "Two-Toned Boots" "Amber Amulet" "Ancient Gauntlets" "Ancient Spirit Shield" "Assassin Bow" "Bismuth Flask" "Blue Pearl Amulet" "Callous Mask" "Carved Wand" "Chain Belt" "Champion Kite Shield" "Corsair Sword" Cutlass "Elegant Foil" "Fiend Dagger" "Full Dragonscale" Gavel "Gladiator Plate" "Goathide Boots" "Gold Amulet" "Golden Plate" "Grand Mana Flask" "Hallowed Hybrid Flask" "Holy Chainmail" "Hydrascale Gauntlets" "Imperial Skean" "Jade Amulet" "Jasper Chopper" "Judgement Staff" "Murder Mitts" "Nubuck Gloves" "Onyx Amulet" "Prophet Crown" "Ritual Sceptre" "Sacrificial Garb" "Sage Wand" "Simple Robe" "Soldier Helmet" "Stealth Boots" "Stibnite Flask" "Sulphur Flask" "Topaz Flask" "Turquoise Amulet" "Variscite Blade" "Varnished Coat" "Void Axe" "Steelwood Bow" "Steel Circlet" "Loricated Ringmail"
 	SetFontSize 45
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
 	SetBorderColor 255 255 0 # Unique (3-5c)
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Brown Square
-	PlayEffect Brown
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Orange
 
 # Loreweave (60x rings)
 Show  # Uniques - <3c - Unique Rings
@@ -3019,8 +3097,8 @@ Show  # Uniques - <3c - Unique Rings
 	SetBackgroundColor 50 25 12 # Unique
 	SetBorderColor 255 255 0 # Unique (3-5c)
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Brown Square
-	PlayEffect Brown
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Orange
 
 #-----#
 # <3c #
@@ -3036,8 +3114,8 @@ Show  # Uniques - <3c - ilvl <67
 	SetBackgroundColor 50 25 12 # Unique
 	SetBorderColor 180 90 45 # Unique (<3c)
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Brown Square
-	PlayEffect Brown
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Orange
 
 # Limited drop. May share a BaseType with an extremely valuable item, League specific, or boss drop only.
 Show  # Uniques - Limited
@@ -3048,8 +3126,8 @@ Show  # Uniques - Limited
 	SetBackgroundColor 50 25 12 # Unique
 	SetBorderColor 180 90 45 # Unique (<3c)
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Brown Square
-	PlayEffect Brown
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Orange
 
 Show  # Uniques - New or Worthless
 	Rarity = Unique
@@ -3058,8 +3136,8 @@ Show  # Uniques - New or Worthless
 	SetBackgroundColor 50 25 12 # Unique
 	SetBorderColor 180 90 45 # Unique (<3c)
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Brown Square
-	PlayEffect Brown
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Orange
 
 ##########################################
 ############ DIVINATION CARDS ############
@@ -3090,41 +3168,41 @@ Show  # Divination Cards - <2c (Conflicts)
 	SetBackgroundColor 255 0 175 230 # Divination Card (<2c)
 	SetBorderColor 150 30 100 # Divination Card (<2c)
 	PlayAlertSound 5 100 # Divination Card (<2c)
-	MinimapIcon 0 Brown Triangle 
-	PlayEffect Brown
+	MinimapIcon 0 Pink Square 
+	PlayEffect Pink
 
 Show  # Divination Cards - 10c+
 	Class Divination
-	BaseType "Abandoned Wealth" "Alluring Bounty" "Azyran's Reward" "Beauty Through Death" "Birth of the Three" "Blessing of God" "Dying Anguish" "Etched in Blood" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Luck of the Vaal" "Nook's Crown" "Pride Before the Fall" "Pride of the First Ones" Remembrance "Seven Years Bad Luck" "Squandered Prosperity" "Succor of the Sinless" "The Bargain" "The Celestial Justicar" "The Celestial Stone" "The Damned" "The Demon" "The Devastator" "The Doctor" "The Dragon's Heart" "The Enlightened" "The Escape" "The Eye of Terror" "The Fiend" "The Immortal" "The Iron Bard" "The Landing" "The Mayor" "The Nurse" "The Old Man" "The Polymath" "The Price of Loyalty" "The Queen" "The Saint's Treasure" "The Samurai's Eye" "The Sephirot" "The Soul" "The Spark and the Flame" "The Undaunted" "The World Eater" "Void of the Elements" "Wealth and Power"
+	BaseType "The Strategist" "The Cheater" "The Eldritch Decay" "Council of Cats" "The Progeny of Lunaris" "Abandoned Wealth" "Alluring Bounty" "Azyran's Reward" "Beauty Through Death" "Birth of the Three" "Blessing of God" "Dying Anguish" "Etched in Blood" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Luck of the Vaal" "Nook's Crown" "Pride Before the Fall" "Pride of the First Ones" Remembrance "Seven Years Bad Luck" "Squandered Prosperity" "Succor of the Sinless" "The Bargain" "The Celestial Justicar" "The Celestial Stone" "The Damned" "The Demon" "The Devastator" "The Doctor" "The Dragon's Heart" "The Enlightened" "The Escape" "The Eye of Terror" "The Fiend" "The Immortal" "The Iron Bard" "The Landing" "The Mayor" "The Nurse" "The Old Man" "The Polymath" "The Price of Loyalty" "The Queen" "The Saint's Treasure" "The Samurai's Eye" "The Sephirot" "The Soul" "The Spark and the Flame" "The Undaunted" "The World Eater" "Void of the Elements" "Wealth and Power"
 	SetFontSize 45
 	SetTextColor 255 0 175 # Divination Card (10c+)
 	SetBackgroundColor 255 255 255 255 # Divination Card (10c+)
 	SetBorderColor 255 0 175 # Divination Card (10c+)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Triangle
+	MinimapIcon 0 Red Square
 	PlayEffect Red
 
 Show  # Divination Cards - 2-10c
 	Class Divination
-	BaseType "Akil's Prophecy" "Baited Expectations" "Boon of the First Ones" "Bowyer's Dream" "Buried Treasure" "Burning Blood" "Chaotic Disposition" "Dark Dreams" "Deathly Designs" "Demigod's Wager" "Dialla's Subjugation" "Divine Justice" Friendship Heterochromia "Left to Fate" "Lucky Connections" "Lucky Deck" "Mawr Blaidd" "No Traces" Perfection Rebirth "The Artist" "The Betrayal" "The Bones" "The Brittle Emperor" "The Cartographer" "The Chosen" "The Craving" "The Dapper Prodigy" "The Dreamer" "The Endless Darkness" "The Ethereal" "The Fishmonger" "The Fool" "The Hale Heart" "The Heroic Shot" "The Hoarder" "The Innocent" "The Inventor" "The Jeweller's Boon" "The King's Heart" "The Life Thief" "The Mad King" "The Offering" "The Porcupine" "The Professor" "The Risk" "The Rite of Elements" "The Sacrifice" "The Seeker" "The Side Quest" "The Skeleton" "The Throne" "The Undisputed" "The Valkyrie" "The Valley of Steel Boxes" "The Vast" "The Void" "The Warlord" "The Wilted Rose" "The Wolven King's Bite" "The Wrath" "Time-Lost Relic" "Underground Forest" "Vile Power" "Vinia's Token" "Volatile Power"
+	BaseType "The Easy Stroll" "Akil's Prophecy" "Baited Expectations" "Boon of the First Ones" "Bowyer's Dream" "Buried Treasure" "Burning Blood" "Chaotic Disposition" "Dark Dreams" "Deathly Designs" "Demigod's Wager" "Dialla's Subjugation" "Divine Justice" Friendship Heterochromia "Left to Fate" "Lucky Connections" "Lucky Deck" "Mawr Blaidd" "No Traces" Perfection Rebirth "The Artist" "The Betrayal" "The Bones" "The Brittle Emperor" "The Cartographer" "The Chosen" "The Craving" "The Dapper Prodigy" "The Dreamer" "The Endless Darkness" "The Ethereal" "The Fishmonger" "The Fool" "The Hale Heart" "The Heroic Shot" "The Hoarder" "The Innocent" "The Inventor" "The Jeweller's Boon" "The King's Heart" "The Life Thief" "The Mad King" "The Offering" "The Porcupine" "The Professor" "The Risk" "The Rite of Elements" "The Sacrifice" "The Seeker" "The Side Quest" "The Skeleton" "The Throne" "The Undisputed" "The Valkyrie" "The Valley of Steel Boxes" "The Vast" "The Void" "The Warlord" "The Wilted Rose" "The Wolven King's Bite" "The Wrath" "Time-Lost Relic" "Underground Forest" "Vile Power" "Vinia's Token" "Volatile Power"
 	SetFontSize 45
 	SetTextColor 255 255 255 # Divination Card (2-10c)
 	SetBackgroundColor 255 0 175 255 # Divination Card (2-10c)
 	SetBorderColor 255 255 255 # Divination Card (2-10c)
 	PlayAlertSound 5 200 # Divination Card (2-10c)
-	MinimapIcon 0 Brown Triangle 
-	PlayEffect Brown
+	MinimapIcon 0 Pink Square 
+	PlayEffect Pink
 
 Show  # Divination Cards - <2c
 	Class Divination
-	BaseType "A Dab of Ink" "A Mother's Parting Gift" "Alone in the Darkness" "Anarchy's Price" "Arrogance of the Vaal" "Atziri's Arsenal" Audacity "Blind Venture" "Boundless Realms" "Call to the First Ones" "Cameria's Cut" "Coveted Possession" Death "Doedre's Madness" "Earth Drinker" "Echoes of Love" "Emperor of Purity" "Emperor's Luck" "Forbidden Power" "Gemcutter's Promise" "Gift of the Gemling Queen" "Glimmer of Hope" "Grave Knowledge" "Harmony of Souls" Hope Hubris Humility "Hunter's Resolve" "Imperial Legacy" "Jack in the Box" "Last Hope" "Light and Truth" "Lingering Remnants" "Lost Worlds" "Lysah's Respite" "Merciless Armament" "Might is Right" Mitts Monochrome "More is Never Enough" "Rain Tempter" Rats "Sambodhi's Vow" "Scholar of the Seas" "The Admirer" "The Aesthete" "The Archmage's Right Hand" "The Arena Champion" "The Army of Blood" "The Avenger" "The Battle Born" "The Beast" "The Blazing Fire" "The Body" "The Breach" "The Cacophony" "The Calling" "The Cataclysm" "The Catalyst" "The Chains that Bind" "The Coming Storm" "The Conduit" "The Cursed King" "The Dark Mage" "The Darkest Dream" "The Deal" "The Deceiver" "The Deep Ones" "The Dragon" "The Dreamland" "The Drunken Aristocrat" "The Encroaching Darkness" "The Endurance" "The Explorer" "The Eye of the Dragon" "The Fathomless Depths" "The Feast" "The Fletcher" "The Formless Sea" "The Forsaken" "The Fox" "The Garish Power" "The Gentleman" "The Gladiator" "The Golden Era" "The Harvester" "The Hunger" "The Incantation" "The Insatiable" "The Jester" "The Journey" "The King's Blade" "The Last One Standing" "The Lich" "The Lion" "The Lord of Celebration" "The Master" "The Master Artisan" "The Mercenary" "The Messenger" "The Oath" "The Obscured" "The One With All" "The Opulent" "The Pack Leader" "The Pact" "The Penitent" "The Poet" "The Price of Protection" "The Primordial" "The Realm" "The Road to Power" "The Ruthless Ceinture" "The Scarred Meadow" "The Scavenger" "The Sigil" "The Siren" "The Spoiled Prince" "The Standoff" "The Stormcaller" "The Summoner" "The Sun" "The Surveyor" "The Sword King's Salute" "The Thaumaturgist" "The Tower" "The Traitor" "The Trial" "The Twilight Moon" "The Tyrant" "The Union" "The Visionary" "The Watcher" "The Web" "The Wind" "The Witch" "The Wolf" "The Wolf's Legacy" "The Wolf's Shadow" "The Wolverine" "The Wretched" "Thirst for Knowledge" "Three Faces in the Dark" "Three Voices" Tranquillity "Treasure Hunter" Vanity
+	BaseType "The Tinkerer's Table" "A Dab of Ink" "A Mother's Parting Gift" "Alone in the Darkness" "Anarchy's Price" "Arrogance of the Vaal" "Atziri's Arsenal" Audacity "Blind Venture" "Boundless Realms" "Call to the First Ones" "Cameria's Cut" "Coveted Possession" Death "Doedre's Madness" "Earth Drinker" "Echoes of Love" "Emperor of Purity" "Emperor's Luck" "Forbidden Power" "Gemcutter's Promise" "Gift of the Gemling Queen" "Glimmer of Hope" "Grave Knowledge" "Harmony of Souls" Hope Hubris Humility "Hunter's Resolve" "Imperial Legacy" "Jack in the Box" "Last Hope" "Light and Truth" "Lingering Remnants" "Lost Worlds" "Lysah's Respite" "Merciless Armament" "Might is Right" Mitts Monochrome "More is Never Enough" "Rain Tempter" Rats "Sambodhi's Vow" "Scholar of the Seas" "The Admirer" "The Aesthete" "The Archmage's Right Hand" "The Arena Champion" "The Army of Blood" "The Avenger" "The Battle Born" "The Beast" "The Blazing Fire" "The Body" "The Breach" "The Cacophony" "The Calling" "The Cataclysm" "The Catalyst" "The Chains that Bind" "The Coming Storm" "The Conduit" "The Cursed King" "The Dark Mage" "The Darkest Dream" "The Deal" "The Deceiver" "The Deep Ones" "The Dragon" "The Dreamland" "The Drunken Aristocrat" "The Encroaching Darkness" "The Endurance" "The Explorer" "The Eye of the Dragon" "The Fathomless Depths" "The Feast" "The Fletcher" "The Formless Sea" "The Forsaken" "The Fox" "The Garish Power" "The Gentleman" "The Gladiator" "The Golden Era" "The Harvester" "The Hunger" "The Incantation" "The Insatiable" "The Jester" "The Journey" "The King's Blade" "The Last One Standing" "The Lich" "The Lion" "The Lord of Celebration" "The Master" "The Master Artisan" "The Mercenary" "The Messenger" "The Oath" "The Obscured" "The One With All" "The Opulent" "The Pack Leader" "The Pact" "The Penitent" "The Poet" "The Price of Protection" "The Primordial" "The Realm" "The Road to Power" "The Ruthless Ceinture" "The Scarred Meadow" "The Scavenger" "The Sigil" "The Siren" "The Spoiled Prince" "The Standoff" "The Stormcaller" "The Summoner" "The Sun" "The Surveyor" "The Sword King's Salute" "The Thaumaturgist" "The Tower" "The Traitor" "The Trial" "The Twilight Moon" "The Tyrant" "The Union" "The Visionary" "The Watcher" "The Web" "The Wind" "The Witch" "The Wolf" "The Wolf's Legacy" "The Wolf's Shadow" "The Wolverine" "The Wretched" "Thirst for Knowledge" "Three Faces in the Dark" "Three Voices" Tranquillity "Treasure Hunter" Vanity
 	SetFontSize 45 
 	SetTextColor 0 0 0 # Divination Card (<2c)
 	SetBackgroundColor 255 0 175 230 # Divination Card (<2c)
 	SetBorderColor 150 30 100 # Divination Card (<2c)
 	PlayAlertSound 5 100 # Divination Card (<2c)
-	MinimapIcon 0 Brown Triangle 
-	PlayEffect Brown
+	MinimapIcon 0 Pink Square 
+	PlayEffect Pink
 
 Show  # Divination Cards - Nearly Worthless
 	Class Divination
@@ -3151,8 +3229,8 @@ Show  # Divination Cards - New (Error)
 	SetBackgroundColor 255 0 175 255 # Divination Card (2c+)
 	SetBorderColor 0 255 0 # Error
 	PlayAlertSound 5 200 # Divination Card (2c+)
-	MinimapIcon 0 White Triangle
-	PlayEffect White
+	MinimapIcon 0 Pink Square
+	PlayEffect Pink
 
 ##########################################
 ################# FLASKS #################
@@ -3460,7 +3538,7 @@ Show  # Crafting Bases - 70+ Drop Level (High) - 84+
 	SetBackgroundColor 255 255 255 255 # Crafting Base 84+ (High)
 	SetBorderColor 0 255 255 # Crafting Base 84+ (High)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Square
+	MinimapIcon 0 Red UpsideDownHouse
 	PlayEffect Red
 
 Show  # Crafting Bases - 70+ Drop Level (High) - Other
@@ -3471,7 +3549,7 @@ Show  # Crafting Bases - 70+ Drop Level (High) - Other
 	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
 	SetBorderColor 0 255 255 # Crafting Base (High)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Square
+	MinimapIcon 0 Red UpsideDownHouse
 	PlayEffect Red
 
 Show  # Crafting Bases - 70+ Drop Level (Mid) - 84+ Normal/Magic
@@ -4898,7 +4976,7 @@ Show  # Errors - 75+
 	SetBackgroundColor 255 0 0 255 # Error
 	SetBorderColor 0 255 0 # Error
 	PlayAlertSound 8 200 # Error
-	MinimapIcon 0 White Square
+	MinimapIcon 0 White UpsideDownHouse
 	PlayEffect White
 
 ##########################################
@@ -5534,7 +5612,7 @@ Show  # Errors - 60+
 	SetBackgroundColor 255 0 0 255 # Error
 	SetBorderColor 0 255 0 # Error
 	PlayAlertSound 8 200 # Error
-	MinimapIcon 0 White Square
+	MinimapIcon 0 White UpsideDownHouse
 	PlayEffect White
 
 ##########################################
@@ -5669,12 +5747,8 @@ Show  # Errors - Other
 	SetBackgroundColor 255 0 0 255 # Error
 	SetBorderColor 0 255 0 # Error
 	PlayAlertSound 8 200 # Error
-	MinimapIcon 0 White Square
+	MinimapIcon 0 White UpsideDownHouse
 	PlayEffect White
-
-
-
-
 
 
 

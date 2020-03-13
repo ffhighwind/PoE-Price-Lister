@@ -1,104 +1,203 @@
-﻿---------------------------------------------------------------------------------------------------------------
+﻿----------------------------------------------------------------
+| Metamorph 
+----------------------------------------------------------------
+
+3.9.10
+▻ Updated the filter values.
+
+3.9.9
+▻ Added DisableDropSound to all hidden items.
+▻ Fixed enchanted uniques.
+▻ Fixed sound for low value uniques.
+▻ Changed "piece" items to the same as 15+c uniques.
+
+3.9.8
+▻ Removed the sounds/beams/icon from <2c divination cards for the Very Strict Filter.
+▻ Updated the filter updater tool.
+▻ Updated the filter values.
+
+3.9.7
+▻ Added unique Legion Sword - The Saviour to the CSV.
+▻ Updated the filter values.
+
+3.9.6
+▻ Updated the filter values.
+
+3.9.5
+▻ Updated the filter values.
+▻ Fixed low value divination cards so that they have a map icon again.
+
+3.9.4
+▻ Updated the filter values for uniques, divination cards, and helmet enchants. Please check for updates soon because the values will fluctuate heavily.
+▻ Released a Metamorph version of the update tool.
+▻ Fixed the update tool so L sized filters have the correct font size.
+▻ Add 15/16 new uniques to the uniques CSV.
+▻ Updated the helmet enchants CSV.
+
+3.9.3
+▻ Added HasInfluence: Crusader, Hunter, Redeemer, Warlord
+▻ Added 4/16 uniques to the CSV
+Spoiler 
+league page
+Astral Projector
+
+3.9.2
+▻ Added Awakened Gems
+
+3.9.1
+▻ Removed Shaper's voice currency section
+▻ Changed Warstaff class to Warstaves.
+▻ Changed sextant base types.
+New Divination Cards 
+Baited Expectations
+Succor of the Sinless
+Underground Forest
+The Escape
+Deathly Designs
+The Chosen
+Cameria's Cut
+Divine Justice
+The Fishmonger
+The Bones
+Friendship
+The Craving
+Etched in Blood
+Squandered Prosperity
+Metamorph Samples 
+Metamorph Brain
+Metamorph Eye
+Metamorph Liver
+Metamorph Lung
+Metamorph Heart
+New Currency 
+Turbulent Catalyst
+Imbued Catalyst
+Abrasive Catalyst
+Tempering Catalyst
+Fertile Catalyst
+Prismatic Catalyst
+Intrinsic Catalyst
+
+Crusader's Exalted Orb
+Redeemer's Exalted Orb
+Hunter's Exalted Orb
+Warlord's Exalted Orb
+Awakener's Orb
+
+Simple Sextant
+Prime Sextant
+Awakened Sextant
+New Map Fragments 
+Fragment of Enslavement
+Fragment of Eradication
+Fragment of Constriction
+Fragment of Purification
+Fragment of Shape
+Fragment of Knowledge
+Fragment of Terror
+Fragment of Emptiness
+
+----------------------------------------------------------------
 | Blight
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
 
 3.8.17
-? Updated the filter values.
+▻ Updated the filter values.
 
 3.8.16
-? Reworked Gems and Jewels.
-? Reworked the 5+ links section.
-? Reworked the Chance bases section. Removed Sorcerer Boots from the normal filter.
-? Reworked the Chisels section. Now only 15%+ quality hammers are shown.
-? Reworked the Flasks section. Removed the white border from quality utility flasks.
-? Moved Enchanted Fossil up a tier.
-? Changed staves range to 57+ and Warstaves to 60+.
-? Removed the NoRares filter (for custom leagues with no rares). This filter requires too many changes to be useful.
-? Removed Wailing Essences from the Very Strict filter.
-? Removed breach splinters except Chayula from the Very Strict filter.
-? Removed the highlight for Harbinger bows.
-? Other fixes.
+▻ Reworked Gems and Jewels.
+▻ Reworked the 5+ links section.
+▻ Reworked the Chance bases section. Removed Sorcerer Boots from the normal filter.
+▻ Reworked the Chisels section. Now only 15%+ quality hammers are shown.
+▻ Reworked the Flasks section. Removed the white border from quality utility flasks.
+▻ Moved Enchanted Fossil up a tier.
+▻ Changed staves range to 57+ and Warstaves to 60+.
+▻ Removed the NoRares filter (for custom leagues with no rares). This filter requires too many changes to be useful.
+▻ Removed Wailing Essences from the Very Strict filter.
+▻ Removed breach splinters except Chayula from the Very Strict filter.
+▻ Removed the highlight for Harbinger bows.
+▻ Other fixes.
 
 3.8.15
-? Added Doryani's Machinarium (Maze) to the high value unique maps.
-? Changed Fishing Rods colors to the high value unique colors.
-? Added Eldritch Incubator to the high value incubators.
-? Changed Gilded Scarabs colors to red. Slightly reduced the size of the map icon for other scarabs.
-? Added more items to the ilvl 83+ Shaper/Elder crafting bases.
-? Greatly reduced the visibility of low value Shaper/Elder items. Reduced the size and removed sounds/beams/map icons.
-? Removed low drop level Shaper/Elder items from the Strict filters.
-? Added explicit mods: "of Janus' Veil", "of Craiceann", "of Farrul", "of Saqawal"
-? Updated the CSVs for some Betrayal/Delve items.
+▻ Added Doryani's Machinarium (Maze) to the high value unique maps.
+▻ Changed Fishing Rods colors to the high value unique colors.
+▻ Added Eldritch Incubator to the high value incubators.
+▻ Changed Gilded Scarabs colors to red. Slightly reduced the size of the map icon for other scarabs.
+▻ Added more items to the ilvl 83+ Shaper/Elder crafting bases.
+▻ Greatly reduced the visibility of low value Shaper/Elder items. Reduced the size and removed sounds/beams/map icons.
+▻ Removed low drop level Shaper/Elder items from the Strict filters.
+▻ Added explicit mods: "of Janus' Veil", "of Craiceann", "of Farrul", "of Saqawal"
+▻ Updated the CSVs for some Betrayal/Delve items.
 
 3.8.14
-? Updated filter values.
-? Reworked divination card value ranges. They are now Worthless (hand picked), Nearly Worthless (<0.8c), <2c, 2-10c, and 10c+.
+▻ Updated filter values.
+▻ Reworked divination card value ranges. They are now Worthless (hand picked), Nearly Worthless (<0.8c), <2c, 2-10c, and 10c+.
 
 3.8.13
-? Updated filter values.
-? Updated some Synthesis unique CSV data.
-? Reworked uniques value ranges. They are now Worthless (orange), Limited (orange), 3-5c (yellow), 5-15c (white border), and 15c+ (solid white).
-? Added unobtainable divination cards: The Devastator, Dying Anguish, Birth of the Three, Luck of the Vaal.
-? Moved "The Gambler" and "Three Voices" divination cards up a tier.
+▻ Updated filter values.
+▻ Updated some Synthesis unique CSV data.
+▻ Reworked uniques value ranges. They are now Worthless (orange), Limited (orange), 3-5c (yellow), 5-15c (white border), and 15c+ (solid white).
+▻ Added unobtainable divination cards: The Devastator, Dying Anguish, Birth of the Three, Luck of the Vaal.
+▻ Moved "The Gambler" and "Three Voices" divination cards up a tier.
 
 3.8.12
-? Updated filter values.
-? Heavily reworked the colors and value ranges for uniques, divination cards, and enchantments.
-? Uniques are now shown in the Very Strict filter if they are 2c+ instead of 1c+. The yellow border around uniques should have more significance now.
-? Some divination cards now have their values set in stone (not affected by poe.ninja). This was mainly to prevent certain worthless divination cards from being shown.
-? Removed "Safer Values" from the filter updater. This is now always on and prevents an item's value from changing if it's within 0.5-2c of the current value.
-? Increased the map icon size for mid/high value Blight oils.
+▻ Updated filter values.
+▻ Heavily reworked the colors and value ranges for uniques, divination cards, and enchantments.
+▻ Uniques are now shown in the Very Strict filter if they are 2c+ instead of 1c+. The yellow border around uniques should have more significance now.
+▻ Some divination cards now have their values set in stone (not affected by poe.ninja). This was mainly to prevent certain worthless divination cards from being shown.
+▻ Removed "Safer Values" from the filter updater. This is now always on and prevents an item's value from changing if it's within 0.5-2c of the current value.
+▻ Increased the map icon size for mid/high value Blight oils.
 
 3.8.11
-? Updated values for unique, divination cards, and enchantments.
-? Added divination cards: The Devastator, Dying Anguish
-? Fixed FilterBlast so the "Regular" filter does not show up as the "No Rares" filter.
-? The filter updater now generates large filters as well as small ones.
+▻ Updated values for unique, divination cards, and enchantments.
+▻ Added divination cards: The Devastator, Dying Anguish
+▻ Fixed FilterBlast so the "Regular" filter does not show up as the "No Rares" filter.
+▻ The filter updater now generates large filters as well as small ones.
 
 3.8.10
-? Updated unique/divination card values.
-? Added helmet enchants to the filter. I tried other enchants (blight oils & corrupts) but they do not work.
-? Removed 2h weapons from the highlighted rares 4+ links section.
-? Added HC support to the filter updater.
+▻ Updated unique/divination card values.
+▻ Added helmet enchants to the filter. I tried other enchants (blight oils & corrupts) but they do not work.
+▻ Removed 2h weapons from the highlighted rares 4+ links section.
+▻ Added HC support to the filter updater.
 
 3.8.9
-? Updated uniques/divination card values.
-? Added 4+ links to highlighted section.
+▻ Updated uniques/divination card values.
+▻ Added 4+ links to highlighted section.
 
 3.8.8
-? Reworked category names for items.
-? Added a lot of Elder/Shaper crafting bases.
-? Modified the colors of Resonators. These are now always shown, even in the strict filters.
-? Added convoking wand to the highlights section.
-? Separated Warstaves/Staves and Daggers/Rune Daggers in the highlighted rares sections.
+▻ Reworked category names for items.
+▻ Added a lot of Elder/Shaper crafting bases.
+▻ Modified the colors of Resonators. These are now always shown, even in the strict filters.
+▻ Added convoking wand to the highlights section.
+▻ Separated Warstaves/Staves and Daggers/Rune Daggers in the highlighted rares sections.
 
 3.8.7
-? Modified the colors/sounds of oils.
-? Modified the colors/sounds of fossils. All fossils are now shown in the strict filter.
-? Modified the colors of Resonators.
+▻ Modified the colors/sounds of oils.
+▻ Modified the colors/sounds of fossils. All fossils are now shown in the strict filter.
+▻ Modified the colors of Resonators.
 
 3.8.6
-? Added more Blight uniques.
-? Updated uniques and divination cards values.
-? Updated the price lister.
+▻ Added more Blight uniques.
+▻ Updated uniques and divination cards values.
+▻ Updated the price lister.
 
 3.8.5
-? Added "The Heroic Shot" divination card.
-? Fixed the yellow map sounds in the Strict filter.
+▻ Added "The Heroic Shot" divination card.
+▻ Fixed the yellow map sounds in the Strict filter.
 
 3.8.4
-? Added Warstaff and Rune Dagger class types.
+▻ Added Warstaff and Rune Dagger class types.
 
 3.8.3
-? Removed "The Heroic Strike" divination card.
+▻ Removed "The Heroic Strike" divination card.
 
 3.8.2
-? Added a green border, text, and beam to Blighted maps.
-? Added a green icon to Blighted maps except red tier (T11+).
-? Added a purple border, sound, and beam to oils.
+▻ Added a green border, text, and beam to Blighted maps.
+▻ Added a green icon to Blighted maps except red tier (T11+).
+▻ Added a purple border, sound, and beam to oils.
 
 3.8.1
-? New Incubators/Scarabs - no change
+▻ New Incubators/Scarabs - no change
 Oils 
 Clear Oil
 Sepia Oil
@@ -143,27 +242,27 @@ The Eye of Terror
 The Heroic Shot
 Remembrance
 
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
 | Legion
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
 
 3.7.8
-? Updated unique/divination card values.
+▻ Updated unique/divination card values.
 
 3.7.7
-? Added divination card The Devastator
-? Fixed Emblem colors/sounds
-? Hid low value fossils in the strict+ filters.
-? Distinguished high value Incubators/Scarabs
+▻ Added divination card The Devastator
+▻ Fixed Emblem colors/sounds
+▻ Hid low value fossils in the strict+ filters.
+▻ Distinguished high value Incubators/Scarabs
 
 3.7.6
-? Permanently fixed map colors. They should never break again.
-? Updated divination cards and unique values again.
+▻ Permanently fixed map colors. They should never break again.
+▻ Updated divination cards and unique values again.
 
 3.7.5
-? Fixed Ivory Temple color
-? Updated divination cards and unique values
-? Added 5 uniques to the CSV
+▻ Fixed Ivory Temple color
+▻ Updated divination cards and unique values
+▻ Added 5 uniques to the CSV
 Fractal Thoughts
 Wreath of Phrecia
 Pillar of the Caged God (Iron Staff)
@@ -171,27 +270,27 @@ Sign of the Sin Eater
 Tavukai
 
 3.7.4
-? Fixed Desert/Desert Spring map colors
-? Made timeless splinters larger
-? Added "Echoes of Love" again.
+▻ Fixed Desert/Desert Spring map colors
+▻ Made timeless splinters larger
+▻ Added "Echoes of Love" again.
 
 3.7.3
-? Fixed incubators
-? Improved visibility of splinters
+▻ Fixed incubators
+▻ Improved visibility of splinters
 
 3.7.2
-? fixed the filter:
-? changed "Desert Springs" to Desert
-? removed Timeless Jewel class
-? removed "eternal empire" from emblems/splinters
+▻ fixed the filter:
+▻ changed "Desert Springs" to Desert
+▻ removed Timeless Jewel class
+▻ removed "eternal empire" from emblems/splinters
 
 3.7.1
-? Added War Staff and Rune Daggers to the highlighted rares sections.
-? Updated the maps with new tier colors.
-? Added Legion specific items: Timeless Jewels, Timeless Splinters, Emblems, Incubators
-? Removed the highlighted border around 75-82 ilvl Harbinger Bows from the regular/mapping filters.
-? Added 2/12 new uniques. Aukuna's Will, Maw of Conquest
-? Added 9/14 new divination cards (1) (2) (3).
+▻ Added War Staff and Rune Daggers to the highlighted rares sections.
+▻ Updated the maps with new tier colors.
+▻ Added Legion specific items: Timeless Jewels, Timeless Splinters, Emblems, Incubators
+▻ Removed the highlighted border around 75-82 ilvl Harbinger Bows from the regular/mapping filters.
+▻ Added 2/12 new uniques. Aukuna's Will, Maw of Conquest
+▻ Added 9/14 new divination cards (1) (2) (3).
 Buried Treasure
 Dark Dreams
 Alluring Bounty
@@ -201,14 +300,14 @@ Imperial Legacy
 The Archmage's Right Hand
 The Fool
 Vanity
-? Added other divination cards 5/5 at 1c+. This are not likely to be priced correctly at the start of the league, but they will not be hidden.
+▻ Added other divination cards 5/5 at 1c+. This are not likely to be priced correctly at the start of the league, but they will not be hidden.
 Spoiler 
 Demigod's Wager
 The Primordial
 Thirst for Knowledge
 Pride of the First Ones
 The Deep Ones
-? Updated the uniques files for old uniques that are now legion specific
+▻ Updated the uniques files for old uniques that are now legion specific
 Rathpith Globe
 Pledge of Hands
 Rebuke of the Vaal
@@ -225,20 +324,20 @@ Honourhome
 Lioneye's Paws
 Maligaro's Virtuosity
 
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
 | Synthesis
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
 
 3.6.5
-? Updated unique values. I mostly did this because Maloney's Mechanism wasn't priced correctly.
+▻ Updated unique values. I mostly did this because Maloney's Mechanism wasn't priced correctly.
 
 3.6.4
-? Updated the values of Divination Cards and Uniques.
-? Updated the uniques list CSVs.
-? Updated the pricing tool.
-? Removed sound from <ilvl 83 Fractured/Veiled items.
-? Added Divination Card: The Life Thief
-? Added 17 new uniques
+▻ Updated the values of Divination Cards and Uniques.
+▻ Updated the uniques list CSVs.
+▻ Updated the pricing tool.
+▻ Removed sound from <ilvl 83 Fractured/Veiled items.
+▻ Added Divination Card: The Life Thief
+▻ Added 17 new uniques
 
 Blood Raiment - The Eternity Shroud
 Embroidered Gloves - Vixen's Entrapment
@@ -261,18 +360,18 @@ Void Sceptre - Nebulis (Synthesis)
 Magistrate Crown - Mask of the Tribunal (Synthesis)
 
 3.6.3
-? Fixed Veiled/Syndicate items so they are visible again. They still had sounds and a map icon but were hidden.
-? Changed Veiled, Fractured, and Synthesis items slightly. Added a dark blue border around rare versions of these items. Removed the sound from the rare ones in the Strict filters except ilvl 83+. Removed the map icon and beam from the Very Strict filter except ilvl 83+.
-? Added last 3 Divination cards: Boon of Justice, The Golden Era, The Lord of Celebration
+▻ Fixed Veiled/Syndicate items so they are visible again. They still had sounds and a map icon but were hidden.
+▻ Changed Veiled, Fractured, and Synthesis items slightly. Added a dark blue border around rare versions of these items. Removed the sound from the rare ones in the Strict filters except ilvl 83+. Removed the map icon and beam from the Very Strict filter except ilvl 83+.
+▻ Added last 3 Divination cards: Boon of Justice, The Golden Era, The Lord of Celebration
 
 3.6.2
-? Fixed some bugs.
+▻ Fixed some bugs.
 
 3.6.1
-? Updated maps with new map tier colors.
-? Added SynthesisedItem and FracturedItem to the explicit mods section.
-? Added AnyEnchantment to explicit mods section.
-? Added 11/14 new Divination cards:
+▻ Updated maps with new map tier colors.
+▻ Added SynthesisedItem and FracturedItem to the explicit mods section.
+▻ Added AnyEnchantment to explicit mods section.
+▻ Added 11/14 new Divination cards:
 Spoiler 
 The Journey
 Alone in the Darkness
@@ -286,39 +385,38 @@ Seven Years Bad Luck
 Monochrome
 Sambodhi's Vow
 
----------------------------------------------------------------------------------------------------------------
-| Betrayal
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------| Betrayal
+----------------------------------------------------------------
 
 3.5.5
-? Fixed map colors: Spider Lair.
-? Fixed elder/shaper unique text color.
-? Updated unique/divination card values.
-? Removed the border of Veiled items.
+▻ Fixed map colors: Spider Lair.
+▻ Fixed elder/shaper unique text color.
+▻ Updated unique/divination card values.
+▻ Removed the border of Veiled items.
 
 3.5.4
-? Fixed colors of all maps.
+▻ Fixed colors of all maps.
 
 3.5.3
-? Added 13/13 of the new uniques and the new fated unique.
-? Updated unique/divination card values.
-? Updated the Price Lister and changed the csv to UTF8.
-? KNOWN ISSUE: I know that the map colors are not correct. This is a bug that is also affecting Elder spawns, and has nothing to do with my filter. To fix this issue I may have to type in every map name, but I am going to wait a week in hopes that they fix it.
+▻ Added 13/13 of the new uniques and the new fated unique.
+▻ Updated unique/divination card values.
+▻ Updated the Price Lister and changed the csv to UTF8.
+▻ KNOWN ISSUE: I know that the map colors are not correct. This is a bug that is also affecting Elder spawns, and has nothing to do with my filter. To fix this issue I may have to type in every map name, but I am going to wait a week in hopes that they fix it.
 
 3.5.2
-? Fixed a map fragment bug with the regular filter.
-? Fixed a few inconsistencies between filters using a diff check.
-? Changed most equipment icons from star to square.
-? Changed crafting bases from green to blue. Valuable ones like Steel Rings are now red. Shaper/Elder items are still green.
-? Changed the icon of jewels and gems to star.
-? Reduced the background color and text size of most low value crafting bases.
-? Added all 4-links when leveling. Previously some low level ones were hidden.
+▻ Fixed a map fragment bug with the regular filter.
+▻ Fixed a few inconsistencies between filters using a diff check.
+▻ Changed most equipment icons from star to square.
+▻ Changed crafting bases from green to blue. Valuable ones like Steel Rings are now red. Shaper/Elder items are still green.
+▻ Changed the icon of jewels and gems to star.
+▻ Reduced the background color and text size of most low value crafting bases.
+▻ Added all 4-links when leveling. Previously some low level ones were hidden.
 
 3.5.1
-? Added 9/14 new uniques
-? Added 5 new Divination Cards + The Nurse
-? Added new Map Fragments: Rusted/Polished/Gilded Scarabs (1) (2)
-? Added new prefix mods:
+▻ Added 9/14 new uniques
+▻ Added 5 new Divination Cards + The Nurse
+▻ Added new Map Fragments: Rusted/Polished/Gilded Scarabs (1) (2)
+▻ Added new prefix mods:
 Veiled
 Leo's Veiled
 Catarina's Veiled
@@ -332,7 +430,7 @@ It That Fled's Veiled
 Gravicius' Veiled
 Korell's Veiled
 Rin's Veiled
-? Added new suffix mods:
+▻ Added new suffix mods:
 of the Veil
 of Janus' Veil
 of Hillock's Veil
@@ -341,951 +439,958 @@ of Cameria's Veil
 of Aisling's Veil
 of Riker's Veil
 
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
 | Delve
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
 
 3.4.10
-? Added a NoRares filter. I have not tested it out, but it should be better than the other filters.
-? Removed Corrupted normal/magic items. I wish I could do this with mirrored items...
+▻ Added a NoRares filter. I have not tested it out, but it should be better than the other filters.
+▻ Removed Corrupted normal/magic items. I wish I could do this with mirrored items...
 
 3.4.9
-? Fixed the load button in the Price Updater.
-? Hand edited some overvalued Divination cards (Gambler, Her Mask).
-? Changed Maelström back to Maelstr.
+▻ Fixed the load button in the Price Updater.
+▻ Hand edited some overvalued Divination cards (Gambler, Her Mask).
+▻ Changed Maelström back to Maelstr.
 
 3.4.8
-? Fixed high value fossil colors/sounds.
-? Reduced low value fossils/resonator colors and removed some from the Strict filters.
-? Updated the filter uniques/divination card values. Not much changed, though.
-? Changed "hardcore friendly" to only work on items worth 4c+ in hardcore instead of 2c+.
-? Fixed filter encoding so it's UTF-8, including the font enlarger. The CSV file is UTF-7. This allows Maelström Staff and Mjölner to parse correctly so I don't have to special case them.
+▻ Fixed high value fossil colors/sounds.
+▻ Reduced low value fossils/resonator colors and removed some from the Strict filters.
+▻ Updated the filter uniques/divination card values. Not much changed, though.
+▻ Changed "hardcore friendly" to only work on items worth 4c+ in hardcore instead of 2c+.
+▻ Fixed filter encoding so it's UTF-8, including the font enlarger. The CSV file is UTF-7. This allows Maelström Staff and Mjölner to parse correctly so I don't have to special case them.
 
 3.4.7
-? Fixed fossils so they don't show up as errors. I used the wrong item class.
+▻ Fixed fossils so they don't show up as errors. I used the wrong item class.
 
 3.4.6
-? Updated the filter uniques/divination card values.
-? Added loud sounds to valuable Fossils/Resonators.
-? Added colors/beams to the header information.
-? Added loud sounds to Shaper/Elder items with rare bases (Opal Rings, etc) and certain 83+ bases.
-? Completely refactored the Price Lister code so it's easier to understand. This took almost a week to do. Expected values for uniques still needs a rewrite.
-? Added HC Friendly values to the price updater. Anything worth 2c+ in HC will no longer be hidden.
+▻ Updated the filter uniques/divination card values.
+▻ Added loud sounds to valuable Fossils/Resonators.
+▻ Added colors/beams to the header information.
+▻ Added loud sounds to Shaper/Elder items with rare bases (Opal Rings, etc) and certain 83+ bases.
+▻ Completely refactored the Price Lister code so it's easier to understand. This took almost a week to do. Expected values for uniques still needs a rewrite.
+▻ Added HC Friendly values to the price updater. Anything worth 2c+ in HC will no longer be hidden.
 
 3.4.5
-? Updated the filter uniques/divination card values.
-? Added many things previously hidden in the Strict filter (Jewels, Uniques, Divination cards).
+▻ Updated the filter uniques/divination card values.
+▻ Added many things previously hidden in the Strict filter (Jewels, Uniques, Divination cards).
 
 3.4.4
-? Updated the filter values.
-? Added some uniques
+▻ Updated the filter values.
+▻ Added some uniques
 
 3.4.3
-? Increased the size of map icons and changed some icons/colors.
-? Updated filter/unique values.
-? Completely reworked the Elder/Shaper filters. There's now a lot less of them all in one place.
-? Added a missed Divination Card: The Cacophony
-? Fixed typos for uniques: "The Grey Spire" "Cerberus Limb"
-? Added 21/26 new uniques
+▻ Increased the size of map icons and changed some icons/colors.
+▻ Updated filter/unique values.
+▻ Completely reworked the Elder/Shaper filters. There's now a lot less of them all in one place.
+▻ Added a missed Divination Card: The Cacophony
+▻ Fixed typos for uniques: "The Grey Spire" "Cerberus Limb"
+▻ Added 21/26 new uniques
 
 3.4.2
-? Added map icons to most items.
-? Added glowing beams to most items.
+▻ Added map icons to most items.
+▻ Added glowing beams to most items.
 
 3.4.1
-? Added Fossil/Resonator currency.
-? Added 5 new explicit mods: "Subterranean", "of the Underground", "of Weaponcraft", "of Spellcraft", "of Crafting"
-? Added 8 new Divination Cards: 6 of the cards The Endless Darkness, Boon of the First Ones
-? Added 6/26 new uniques to the pricing CSV. These have not been added to the filter yet.
+▻ Added Fossil/Resonator currency.
+▻ Added 5 new explicit mods: "Subterranean", "of the Underground", "of Weaponcraft", "of Spellcraft", "of Crafting"
+▻ Added 8 new Divination Cards: 6 of the cards The Endless Darkness, Boon of the First Ones
+▻ Added 6/26 new uniques to the pricing CSV. These have not been added to the filter yet.
 
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
 | Incursion
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
 
 3.3.7
-? Added Warband Explicit mods.
-? Reworked the pre-filter so that magic Explicit Mods are handled properly.
+▻ Added Warband Explicit mods.
+▻ Reworked the pre-filter so that magic Explicit Mods are handled properly.
 
 3.3.6
-? Removed the sound and bright text from some Explicit Mods items.
+▻ Removed the sound and bright text from some Explicit Mods items.
 
 3.3.5
-? Updated the "Vial of" Incursion currency sounds and colors.
-? Added a new release to the Filter Value tool.
+▻ Updated the "Vial of" Incursion currency sounds and colors.
+▻ Added a new release to the Filter Value tool.
 
 3.3.4
-? Updated the unique/divination card values again.
-? Reworked the currency, gems, and jewels sections.
-? Removed some Harbinger currency based on StackSize. Recolored some of these currencies.
-? Added HasExplicitMod to items that make it past the pre-filter. These show up the same as high value crafting bases like Steel Rings. Most of these mods are ItemLevel 80+ and require the item to be identified as it drops, so don't expect to see these much.
+▻ Updated the unique/divination card values again.
+▻ Reworked the currency, gems, and jewels sections.
+▻ Removed some Harbinger currency based on StackSize. Recolored some of these currencies.
+▻ Added HasExplicitMod to items that make it past the pre-filter. These show up the same as high value crafting bases like Steel Rings. Most of these mods are ItemLevel 80+ and require the item to be identified as it drops, so don't expect to see these much.
 Spoiler 
 
 3.3.3
-? Added "Vial of" incursion currency.
-? Removed Perandus Coins based on StackSize. Stacks of 1-2 are now hidden in some filters. There is no Perandus Zana mod this league, so it really doesn't matter.
+▻ Added "Vial of" incursion currency.
+▻ Removed Perandus Coins based on StackSize. Stacks of 1-2 are now hidden in some filters. There is no Perandus Zana mod this league, so it really doesn't matter.
 
 3.3.2
-? Updated the uniques and divination card values. I will probably need to do this a few more times over the next couple of weeks as prices adjust to the meta.
-? Fixed the "value updater" tool poe.ninja API links.
+▻ Updated the uniques and divination card values. I will probably need to do this a few more times over the next couple of weeks as prices adjust to the meta.
+▻ Fixed the "value updater" tool poe.ninja API links.
 
 3.3.1
-? Added "Incursion Items" class
-? Added level 19+ gems and Empower/Enlighten/Enhance level 2+.
-? Updated the csv with 28/31 of the new uniques. The filter hasn't been updated yet because I cannot easily price them.
-? Added 22 new Divination cards
+▻ Added "Incursion Items" class
+▻ Added level 19+ gems and Empower/Enlighten/Enhance level 2+.
+▻ Updated the csv with 28/31 of the new uniques. The filter hasn't been updated yet because I cannot easily price them.
+▻ Added 22 new Divination cards
 
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
 | Bestiary
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
+
 3.2.20
-? Moved Crystal Belts down a tier. They no longer make sound when they drop.
-? Removed 84+ accessories from the Very Strict filter again. I shouldn't have added these in 3.2.12.
-? Added Weeping Essences to the Mapping filter.
-? Removed some 5L two-hand weapons and bows from the mapping/strict filters.
-? Modified the 5L section to work with 5L Elder/Shaper items.
-? Changed the sound of Offering to the Goddess and Pantheon Souls to match other Map Fragments.
+▻ Moved Crystal Belts down a tier. They no longer make sound when they drop.
+▻ Removed 84+ accessories from the Very Strict filter again. I shouldn't have added these in 3.2.12.
+▻ Added Weeping Essences to the Mapping filter.
+▻ Removed some 5L two-hand weapons and bows from the mapping/strict filters.
+▻ Modified the 5L section to work with 5L Elder/Shaper items.
+▻ Changed the sound of Offering to the Goddess and Pantheon Souls to match other Map Fragments.
 
 3.2.19
-? Added a yellow background to nets.
-? Fixed a bug in the Very Strict Filter.
-? Fixed Harbinger currency background.
+▻ Added a yellow background to nets.
+▻ Fixed a bug in the Very Strict Filter.
+▻ Fixed Harbinger currency background.
 
 3.2.18
-? Modified the names of the filter files so they show up in-order in game.
-? Added uniques: Corona Solaris, Gluttony, Chains of Command.
+▻ Modified the names of the filter files so they show up in-order in game.
+▻ Added uniques: Corona Solaris, Gluttony, Chains of Command.
 
 3.2.17
-? Added Stygian Vises to Strict and Very Strict filters.
+▻ Added Stygian Vises to Strict and Very Strict filters.
 
 3.2.16
-? Increased the tier/value of some Harbinger currencies: Orb of Annulment, Ancient Orb, Harbinger's Orb, Annulment Shard, Ancient Shard, Harbinger's Shard, Exalted Shard.
+▻ Increased the tier/value of some Harbinger currencies: Orb of Annulment, Ancient Orb, Harbinger's Orb, Annulment Shard, Ancient Shard, Harbinger's Shard, Exalted Shard.
 
 3.2.15
-? Added a purple background color to normal/magic Elder/Shaper items.
-? Added normal/magic Elder/Shaper Amulets to all filters and added sound.
-? Added normal/magic 83/84+ Elder/Shaper items to the all but the very strict filter.
-? Added DisableDropSound to hidden normal/magic accessories.
+▻ Added a purple background color to normal/magic Elder/Shaper items.
+▻ Added normal/magic Elder/Shaper Amulets to all filters and added sound.
+▻ Added normal/magic 83/84+ Elder/Shaper items to the all but the very strict filter.
+▻ Added DisableDropSound to hidden normal/magic accessories.
 
 3.2.14
-? Added DisableDropSound to hidden currency/uniques/divcards as well as hidden/silent maps. This may not work for maps currently.
-? Modified a few unique values.
-? Fixed the filenames in the helper scripts.
+▻ Added DisableDropSound to hidden currency/uniques/divcards as well as hidden/silent maps. This may not work for maps currently.
+▻ Modified a few unique values.
+▻ Fixed the filenames in the helper scripts.
 
 3.2.13
-? Fixed a minor color theme issue with low 70+ drop level items (Vanguard Belts, etc).
-? Added a theme validator to the repository.
-? Removed leveling normal/magic items from the mapping/strict filters. The previous patch only removed the leveling rares, flasks, and recipe items.
+▻ Fixed a minor color theme issue with low 70+ drop level items (Vanguard Belts, etc).
+▻ Added a theme validator to the repository.
+▻ Removed leveling normal/magic items from the mapping/strict filters. The previous patch only removed the leveling rares, flasks, and recipe items.
 
 3.2.12
-? Fixed a naming inconsistency with highlighted harbinger bows.
-? Added 84+ rare accessories to the Very Strict Filter. I'm not sure why these were hidden.
-? Added rare Abyss jewels to the Very Strict filter.
-? Removed leveling items and flasks from the mapping, strict, and very strict filters. Removed chromatic and glassblower recipe items from the strict and very strict filters. I was tired of seeing these while doing prophecies.
-? Added SetFontSize to everything to enable a larger fonts.
-? Added a new "Large" font version of all of the filters.
-? Modified severity in the pricing tool. Any divination card that is "worthless" in the filter has 1 less severity.
-? Fixed the tool so it doesn't spam the user if the csv file is missing or a website is down.
-? Fixed 6S/6L (e.g. Tabula) prices in the tool. Previously it was finding the item with the least sockets instead of special casing these uniques.
+▻ Fixed a naming inconsistency with highlighted harbinger bows.
+▻ Added 84+ rare accessories to the Very Strict Filter. I'm not sure why these were hidden.
+▻ Added rare Abyss jewels to the Very Strict filter.
+▻ Removed leveling items and flasks from the mapping, strict, and very strict filters. Removed chromatic and glassblower recipe items from the strict and very strict filters. I was tired of seeing these while doing prophecies.
+▻ Added SetFontSize to everything to enable a larger fonts.
+▻ Added a new "Large" font version of all of the filters.
+▻ Modified severity in the pricing tool. Any divination card that is "worthless" in the filter has 1 less severity.
+▻ Fixed the tool so it doesn't spam the user if the csv file is missing or a website is down.
+▻ Fixed 6S/6L (e.g. Tabula) prices in the tool. Previously it was finding the item with the least sockets instead of special casing these uniques.
 
 3.2.11
-? Increased the size of mid tier Breach splinters (Esh/Tul/Xoph).
-? Added Elder Shaper Rare sound themes.
-? Added sound and increased the size of 83+ Elder/Shaper rares.
-? Added most Elder/Shaper rares to the Very Strict filter. This was because of sound themes issues.
-? Fixed some minor inconsistencies.
+▻ Increased the size of mid tier Breach splinters (Esh/Tul/Xoph).
+▻ Added Elder Shaper Rare sound themes.
+▻ Added sound and increased the size of 83+ Elder/Shaper rares.
+▻ Added most Elder/Shaper rares to the Very Strict filter. This was because of sound themes issues.
+▻ Fixed some minor inconsistencies.
 
 3.2.10
-? Updated unique values to be hardcore friendly: Pinnacle Tower Shield, Close Helmet, Sorcerer Gloves
-? Added very basic hardcore support to the tool. You can compare the filter data with hardcore values.
+▻ Updated unique values to be hardcore friendly: Pinnacle Tower Shield, Close Helmet, Sorcerer Gloves
+▻ Added very basic hardcore support to the tool. You can compare the filter data with hardcore values.
 
 3.2.9
-? Added Elder Maps (T16 Elder's Orb).
-? Updated the Breachstone colors and sounds. They changed from "Misc Map Items" to "Map Fragments."
+▻ Added Elder Maps (T16 Elder's Orb).
+▻ Updated the Breachstone colors and sounds. They changed from "Misc Map Items" to "Map Fragments."
 
 3.2.8
-? Updated the uniques section for all filters.
-? Modified the update tool so it includes more filters. Always Show has been replaced with League/Labyrinth/Boss/etc. Fewer useless items should be shown in the Very Strict Filter as a result.
+▻ Updated the uniques section for all filters.
+▻ Modified the update tool so it includes more filters. Always Show has been replaced with League/Labyrinth/Boss/etc. Fewer useless items should be shown in the Very Strict Filter as a result.
 
 3.2.7
-? Added all [url=https://www.pathofexile.com/forum/view-thread/2101247?utm_source=gameclient&utm_medium=motd&utm_campaign=motd]3.2 uniques[/url] and [url=https://www.reddit.com/r/pathofexile/comments/83mhnr/loreweave_elegant_ringmail_new_secret_uniq_also/]Loreweave[/url].
-? Overhauled/updated the uniques and divination cards sections.
-? Added a tool for updating divination cards and unique values. This took 3-4 days of work... and it still needs tweaking.
+▻ Added all [url=https://www.pathofexile.com/forum/view-thread/2101247?utm_source=gameclient&utm_medium=motd&utm_campaign=motd]3.2 uniques[/url] and [url=https://www.reddit.com/r/pathofexile/comments/83mhnr/loreweave_elegant_ringmail_new_secret_uniq_also/]Loreweave[/url].
+▻ Overhauled/updated the uniques and divination cards sections.
+▻ Added a tool for updating divination cards and unique values. This took 3-4 days of work... and it still needs tweaking.
 
 3.2.6
-? Lowered the visibility of nets even further. Another net has been removed from the Strict filters.
-? Added Necromancy Net.
-? Added all 5+ links to the normal filter but not mapping filter.
+▻ Lowered the visibility of nets even further. Another net has been removed from the Strict filters.
+▻ Added Necromancy Net.
+▻ Added all 5+ links to the normal filter but not mapping filter.
 
 3.2.5
-? Increased the size of all nets.
-? Removed Reinforced Steel Nets from the Very Strict Filter.
-? Modified the colors slightly and removed the sounds for nets in all filters.
+▻ Increased the size of all nets.
+▻ Removed Reinforced Steel Nets from the Very Strict Filter.
+▻ Modified the colors slightly and removed the sounds for nets in all filters.
 
 3.2.4
-? Updated divination card prices: Blessing of God, The Obscured, The Lion
-? Removed low tier nets from the mapping filter.
-? Added unique: Cardinal Round Shield
-? Modified unique value: Prophet Crown
+▻ Updated divination card prices: Blessing of God, The Obscured, The Lion
+▻ Removed low tier nets from the mapping filter.
+▻ Added unique: Cardinal Round Shield
+▻ Modified unique value: Prophet Crown
 
 3.2.3
-? Changed the color and sound of Bestiary nets slightly. Most have been hidden in the strict filters. They're very common and not worth much.
+▻ Changed the color and sound of Bestiary nets slightly. Most have been hidden in the strict filters. They're very common and not worth much.
 
 3.2.2
-? Added Divination Card: The Iron Bard to all of the filters. Only the Very Strict filter got this in the last update.
-? Added a blue border to most 83+ shaper/elder normal and magic items. They are still hidden but can be seen while holding ALT.
-? Changed the class of Offering to the Goddess from Labyrinth to Map Fragment.
-? Changed the colors of Offering to the Goddess from green to cyan to match the new class.
+▻ Added Divination Card: The Iron Bard to all of the filters. Only the Very Strict filter got this in the last update.
+▻ Added a blue border to most 83+ shaper/elder normal and magic items. They are still hidden but can be seen while holding ALT.
+▻ Changed the class of Offering to the Goddess from Labyrinth to Map Fragment.
+▻ Changed the colors of Offering to the Goddess from green to cyan to match the new class.
 
 3.2.1
-? Added [url=http://www.pathofexile.com/forum/view-thread/2093501]nets and bestiary orbs[/url].
-? Added 10 new divination cards: [url=http://www.pathofexile.com/forum/view-thread/2091003]link 1[/url], [url=https://web.poecdn.com/public/news/2018-02-22/TheIronBard.jpg]link 2[/url]
+▻ Added [url=http://www.pathofexile.com/forum/view-thread/2093501]nets and bestiary orbs[/url].
+▻ Added 10 new divination cards: [url=http://www.pathofexile.com/forum/view-thread/2091003]link 1[/url], [url=https://web.poecdn.com/public/news/2018-02-22/TheIronBard.jpg]link 2[/url]
 [spoiler]
 10c+ The Iron Bard, The Dreamer, The Obscured, The World Eater
 1c+ The Insatiable, The Breach
 <1c Forbidden Power, Blessing of God
 nearly worthless The Deceiver, The Puzzle[/spoiler][/spoiler]
 
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
 | Abyss
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
+
 3.1.16
-? Added uniques: Carnal Armour (Shroud of the Lightless). Sorry I didn't do this earlier.
-? Removed duplicate uniques: Vaal Sceptre, Arcanist Slippers
-? Reorganized uniques by price to make parsing easier.
+▻ Added uniques: Carnal Armour (Shroud of the Lightless). Sorry I didn't do this earlier.
+▻ Removed duplicate uniques: Vaal Sceptre, Arcanist Slippers
+▻ Reorganized uniques by price to make parsing easier.
 
 3.1.15
-? Splinter of Esh/Tul are now hidden in the Very Strict filter.
-? Increased the size of Chayula splinters.
-? Modified uniques: Nubuck Gloves, Sadist Garb, Elegant Sword
+▻ Splinter of Esh/Tul are now hidden in the Very Strict filter.
+▻ Increased the size of Chayula splinters.
+▻ Modified uniques: Nubuck Gloves, Sadist Garb, Elegant Sword
 
 3.1.14
-? Modified unique value: Necromancer Silks
-? Yellow maps in the Very Strict filter are no longer hidden.
-? Removed Utility flasks from the Strict/Very Strict filters in maps.
-? Added a blue border back to 70+ drop level 84+ ilvl mid-value items (Fingerless Silk Gloves, etc).
-? Fixed some typos and minor copy-paste errors.
+▻ Modified unique value: Necromancer Silks
+▻ Yellow maps in the Very Strict filter are no longer hidden.
+▻ Removed Utility flasks from the Strict/Very Strict filters in maps.
+▻ Added a blue border back to 70+ drop level 84+ ilvl mid-value items (Fingerless Silk Gloves, etc).
+▻ Fixed some typos and minor copy-paste errors.
 
 3.1.13
-? Added Rebirth divination card.
-? Maps are no longer hidden in the Strict filter.
+▻ Added Rebirth divination card.
+▻ Maps are no longer hidden in the Strict filter.
 
 3.1.12
-? Removed the blue border from DropLevel 70+ low value items (Spiked Gloves, etc). I'm debating moving Crystal Belts here.
-? Reduced the border brightness of Jewels, Belts, Rings, and Amulets.
-? Increased the size of low currency in the Normal filter (not Mapping).
-? Fixed the blue border for 3-link wands/sceptres. Reduced the highlight range to ilvl 7.
-? Maps in the Strict filter are hidden even later. T8 maps are no longer hidden in the Very Strict filter.
-? Removed the background color for <84 Stygian Vises and reduced their size.
-? Removed ilvl 60-83 Stygian Vises from the Strict filter.
-? Removed the sound from rare jewels and Abyss jewels in yellow maps and above.
-? Removed rare jewels and Abyss Jewels from the Very Strict filter in all maps.
-? Removed rare jewels (not Abyss) from the Strict filter in yellow tier maps and above.
+▻ Removed the blue border from DropLevel 70+ low value items (Spiked Gloves, etc). I'm debating moving Crystal Belts here.
+▻ Reduced the border brightness of Jewels, Belts, Rings, and Amulets.
+▻ Increased the size of low currency in the Normal filter (not Mapping).
+▻ Fixed the blue border for 3-link wands/sceptres. Reduced the highlight range to ilvl 7.
+▻ Maps in the Strict filter are hidden even later. T8 maps are no longer hidden in the Very Strict filter.
+▻ Removed the background color for <84 Stygian Vises and reduced their size.
+▻ Removed ilvl 60-83 Stygian Vises from the Strict filter.
+▻ Removed the sound from rare jewels and Abyss jewels in yellow maps and above.
+▻ Removed rare jewels and Abyss Jewels from the Very Strict filter in all maps.
+▻ Removed rare jewels (not Abyss) from the Strict filter in yellow tier maps and above.
 
 3.1.11
-? Maps are now hidden 2 tiers later in the Strict filter.
-? Updated uniques: Carved Wand, Sadist Garb, Assassin Bow, Eternal Sword, Void Sceptre
-? Added uniques: Demon Dagger, Ranger Bow
+▻ Maps are now hidden 2 tiers later in the Strict filter.
+▻ Updated uniques: Carved Wand, Sadist Garb, Assassin Bow, Eternal Sword, Void Sceptre
+▻ Added uniques: Demon Dagger, Ranger Bow
 
 3.1.10
-? Increased the size of some Shaper/Elder rares.
-? Added more color customization to Shaper/Elder rares.
+▻ Increased the size of some Shaper/Elder rares.
+▻ Added more color customization to Shaper/Elder rares.
 
 3.1.9
-? Added purple coloring to Shaper/Elder rares.
-? Added all Shaper/Elder items to the filters. Higher tier items are larger with a border. The Very Strict filter hides some ilvl <75.
-? Removed <83 Harbinger Bows from the Strict and Very Strict filters.
+▻ Added purple coloring to Shaper/Elder rares.
+▻ Added all Shaper/Elder items to the filters. Higher tier items are larger with a border. The Very Strict filter hides some ilvl <75.
+▻ Removed <83 Harbinger Bows from the Strict and Very Strict filters.
 
 3.1.8
-? Updated Divination Cards: The Dragon, The Throne, Coveted Possession, The One With All.
-? Added uniques: Carved Wand, Nightmare Mace, Nubuck Gloves, Sadist Garb, Mirrored Spiked Shield
-? Updated uniques: Great Crown, Serpentscale Gauntlets, Pinnacle Tower Shield, Necromancer Silks, Rawhide Tower Shield, Close Helmet, Steelscale Gauntlets
-? Added Moon Temple unique map.
-? Reduced the size of magic jewels in maps. Now they match the Abyss Jewels.
-? Fixed white maps in the Strict filter.
-? Added the Very Strict filter but it currently shows all uniques like the Strict filter. The wiki is broken so I can't fix this yet.
-? Fixed Prismatic Jewel coloring.
+▻ Updated Divination Cards: The Dragon, The Throne, Coveted Possession, The One With All.
+▻ Added uniques: Carved Wand, Nightmare Mace, Nubuck Gloves, Sadist Garb, Mirrored Spiked Shield
+▻ Updated uniques: Great Crown, Serpentscale Gauntlets, Pinnacle Tower Shield, Necromancer Silks, Rawhide Tower Shield, Close Helmet, Steelscale Gauntlets
+▻ Added Moon Temple unique map.
+▻ Reduced the size of magic jewels in maps. Now they match the Abyss Jewels.
+▻ Fixed white maps in the Strict filter.
+▻ Added the Very Strict filter but it currently shows all uniques like the Strict filter. The wiki is broken so I can't fix this yet.
+▻ Fixed Prismatic Jewel coloring.
 
 3.1.7
-? Fixed Shaped map colors. DropLevel on Shaped maps acts differently than last patch. This is considered a bug by Neversink. FilterBlast currently shows incorrect coloring, but that may change in the future.
+▻ Fixed Shaped map colors. DropLevel on Shaped maps acts differently than last patch. This is considered a bug by Neversink. FilterBlast currently shows incorrect coloring, but that may change in the future.
 
 3.1.6
-? Moved Elder/Shaper to a lower priority than highlighted rares.
-? Removed the border from Elder/Shaper items. They already have +/* symbols so it's redundant.
-? Changed the mapping filters. You should now see more maps. See "Filter Details" more information. The new map tab and Shaper/Elder randomization makes low tier maps worth picking up.
+▻ Moved Elder/Shaper to a lower priority than highlighted rares.
+▻ Removed the border from Elder/Shaper items. They already have +/* symbols so it's redundant.
+▻ Changed the mapping filters. You should now see more maps. See "Filter Details" more information. The new map tab and Shaper/Elder randomization makes low tier maps worth picking up.
 
 3.1.5
-? Removed Stygian Vise from 70+ drop level bases. This was useless code.
-? Added sceptres to the 3 link wands. Reduced the shown level range from 13 to 11.
-? Reduced the size of magic jewels and magic Abyss jewels in maps. Abyss jewels are now treated like normal Jewels and hidden in higher maps.
+▻ Removed Stygian Vise from 70+ drop level bases. This was useless code.
+▻ Added sceptres to the 3 link wands. Reduced the shown level range from 13 to 11.
+▻ Reduced the size of magic jewels and magic Abyss jewels in maps. Abyss jewels are now treated like normal Jewels and hidden in higher maps.
 
 3.1.4
-? Increased level range for 3 link wands from 9 to 13. I never saw one.
-? Reduced level range for normal items from 13 to 10.
-? Removed the background color for Abyss Jewels again. I may give them a very subtle background color in the future.
-? Removed magic Abyss Jewels from 73+ (yellow) maps in the mapping filter.
-? Added Whispering/Muttering essences to the normal filter.
+▻ Increased level range for 3 link wands from 9 to 13. I never saw one.
+▻ Reduced level range for normal items from 13 to 10.
+▻ Removed the background color for Abyss Jewels again. I may give them a very subtle background color in the future.
+▻ Removed magic Abyss Jewels from 73+ (yellow) maps in the mapping filter.
+▻ Added Whispering/Muttering essences to the normal filter.
 
 3.1.3
-? Fixed an error with Abyss Jewel(s). The class doesn't end with an s.
-? Removed T8 maps from T11+ and T9 maps from T13+ in the Very Strict filter.
+▻ Fixed an error with Abyss Jewel(s). The class doesn't end with an s.
+▻ Removed T8 maps from T11+ and T9 maps from T13+ in the Very Strict filter.
 
 3.1.2
-? Added a slight grey background to Abyss Jewels.
-? Changed the Shaper/Elder rare border color slightly.
-? Fixed a few bugs in Shaper/Elder rare colors (ilvl 75+).
+▻ Added a slight grey background to Abyss Jewels.
+▻ Changed the Shaper/Elder rare border color slightly.
+▻ Fixed a few bugs in Shaper/Elder rare colors (ilvl 75+).
 
 3.1.1
-? Abyss Jewels are shown the same as the normal jewels. If they are valuable enough then I will change this.
-? Added New Divination Cards: No Traces, The Realm, Left to Fate, The Ruthless Ceinture, The Blazing Fire, The Eye of the Dragon
-? Updated 72+ section (Crystal Belts, etc) to 70+. This may result in some 71-72 drop level items being shown that are not supposed to be.
-? Changed maps in the Very Strict filter to be the same as the Strict filter. There's too many changes to the atlas to know what to hide.
-? Added Stygian Vise belt base type. I'm assuming this is drop level 70+ and valuable. If it isn't then it will be detected as a normal low value belt.
-? Added a purple border to Elder/Shaper rares, but I may need to brighten it. These have a higher filter priority than other rares. I don't think I am going to highlight normal/magic Shaper/Elder items because it adds too much code.
+▻ Abyss Jewels are shown the same as the normal jewels. If they are valuable enough then I will change this.
+▻ Added New Divination Cards: No Traces, The Realm, Left to Fate, The Ruthless Ceinture, The Blazing Fire, The Eye of the Dragon
+▻ Updated 72+ section (Crystal Belts, etc) to 70+. This may result in some 71-72 drop level items being shown that are not supposed to be.
+▻ Changed maps in the Very Strict filter to be the same as the Strict filter. There's too many changes to the atlas to know what to hide.
+▻ Added Stygian Vise belt base type. I'm assuming this is drop level 70+ and valuable. If it isn't then it will be detected as a normal low value belt.
+▻ Added a purple border to Elder/Shaper rares, but I may need to brighten it. These have a higher filter priority than other rares. I don't think I am going to highlight normal/magic Shaper/Elder items because it adds too much code.
 
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
 | Harbinger
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
+
 3.0.32
-? Reduced the level range for 3-4 link normal/magic items. The blue border ends at level 10 and are hidden after level 20.
-? Reduced the level range for highlighted 3 link rare items. Weapons highlights now stop at 20 and armor stops at 25.
-? Removed some low drop level 3-4 link normal/magic items below level 35.
-? Added a blue border to 3 link wands below level 10. This is for the +1 gems recipe.
-? Removed white weapons above level 13.
+▻ Reduced the level range for 3-4 link normal/magic items. The blue border ends at level 10 and are hidden after level 20.
+▻ Reduced the level range for highlighted 3 link rare items. Weapons highlights now stop at 20 and armor stops at 25.
+▻ Removed some low drop level 3-4 link normal/magic items below level 35.
+▻ Added a blue border to 3 link wands below level 10. This is for the +1 gems recipe.
+▻ Removed white weapons above level 13.
 
 3.0.31
-? Added chance bases: Null and Void, Seven-League Step, Feastbind, and Faminebind
-? Removed Engineer's Shard from the mapping filter.
-? Removed most low Harbinger currency from the Strict filter.
-? Moved Chance Orbs down a tier.
+▻ Added chance bases: Null and Void, Seven-League Step, Feastbind, and Faminebind
+▻ Removed Engineer's Shard from the mapping filter.
+▻ Removed most low Harbinger currency from the Strict filter.
+▻ Moved Chance Orbs down a tier.
 
 3.0.30
-? Reduced the value of Uniques: Assassin's Garb, Crystal Belt, Fiend Dagger, Vaal Regalia, Auric Mace, Broadhead Arrow Quiver, Eternal Sword, Fiend Dagger, War Sword
+▻ Reduced the value of Uniques: Assassin's Garb, Crystal Belt, Fiend Dagger, Vaal Regalia, Auric Mace, Broadhead Arrow Quiver, Eternal Sword, Fiend Dagger, War Sword
 
 3.0.29
-? Changed the 83+ rares range for gloves/boots/helmets slightly.
-? Fixed some block switch names.
+▻ Changed the 83+ rares range for gloves/boots/helmets slightly.
+▻ Fixed some block switch names.
 
 3.0.28
-? Swapped the blue/green colors between chaos/regal recipes rares. This makes 75+ and 83+ rares stand out more.
-? Removed 50-58 body armours from 75+ rares. There were far too many body armours shown compared to other rares.
-? Fixed the color of 75+ hidden rare armour.
+▻ Swapped the blue/green colors between chaos/regal recipes rares. This makes 75+ and 83+ rares stand out more.
+▻ Removed 50-58 body armours from 75+ rares. There were far too many body armours shown compared to other rares.
+▻ Fixed the color of 75+ hidden rare armour.
 
 3.0.27
-? Added Chaos/Regal recipe differentiation again. Chaos recipes are now blue.
-? Changed 72/73+ highlights to 75+.
-? Changed flask background color slightly.
-? Added a highlighted rares section for top tier rare bases.
-? Removed the default border from most 60-83 rares.
-? Added a border to some top-tier valuable 83+ rare bases.
-? Added sound to 6 Socket items in the Very Strict Filter.
-? Removed the blue border from more leveling normal/magic 3-4 links.
-? Reduced the size of low value 5 links. 
-? Removed low value 5 links from the Strict filters.
+▻ Added Chaos/Regal recipe differentiation again. Chaos recipes are now blue.
+▻ Changed 72/73+ highlights to 75+.
+▻ Changed flask background color slightly.
+▻ Added a highlighted rares section for top tier rare bases.
+▻ Removed the default border from most 60-83 rares.
+▻ Added a border to some top-tier valuable 83+ rare bases.
+▻ Added sound to 6 Socket items in the Very Strict Filter.
+▻ Removed the blue border from more leveling normal/magic 3-4 links.
+▻ Reduced the size of low value 5 links. 
+▻ Removed low value 5 links from the Strict filters.
 
 3.0.26
-? Changed the unique map sound again. It's now the same as low value uniques which is less confusing in groups.
-? Removed Engineer's Shards from the Strict filter.
-? Added better differentiation between Harbinger currencies.
-? Removed some useless code, renamed some block filters, and fixed comments.
+▻ Changed the unique map sound again. It's now the same as low value uniques which is less confusing in groups.
+▻ Removed Engineer's Shards from the Strict filter.
+▻ Added better differentiation between Harbinger currencies.
+▻ Removed some useless code, renamed some block filters, and fixed comments.
 
 3.0.25
-? Removed the solid white background of 6 sockets.
-? Removed the background and added a border to very low Harbinger currency.
-? Moved Breach Blessings to their own filter.
-? Added different sounds for high and low value unique maps. Most unique maps now have the same sound as normal maps.
-? Changed the sound of unique jewels to the same as rare/magic jewels.
-? Changed the sound of 1-2c uniques to mid value instead of high.
-? Reduced the size some 83+ normal/magic crafting weapon bases.
-? Slightly increased the brightness of nearly worthless currency.
-? Updated color themes and some comments.
+▻ Removed the solid white background of 6 sockets.
+▻ Removed the background and added a border to very low Harbinger currency.
+▻ Moved Breach Blessings to their own filter.
+▻ Added different sounds for high and low value unique maps. Most unique maps now have the same sound as normal maps.
+▻ Changed the sound of unique jewels to the same as rare/magic jewels.
+▻ Changed the sound of 1-2c uniques to mid value instead of high.
+▻ Reduced the size some 83+ normal/magic crafting weapon bases.
+▻ Slightly increased the brightness of nearly worthless currency.
+▻ Updated color themes and some comments.
 
 3.0.24
-? Removed low value 5L items in the Very Strict filters.
-? Removed sound from low value 5L items in the Strict filters.
-? Removed rare jewels from T6+ maps in the Very Strict filter.
-? Removed T6-7 maps while in red maps in the Very Strict filter.
-? Removed sound from T1-5 maps in the Very Strict filter.
-? Removed sound from T6-9 maps while in red maps in the Very Strict filter.
-? Removed sound from T1-8 maps while in red maps in the Strict filter.
-? Removed very low Harbinger currency in the Very Strict filter.
-? Removed sound from low Map Fragments in the Strict and Very Strict filters.
-? Added an error check for new Map Fragments.
-? Fixed some inconsistencies between the filters.
-? Updated the Neversink color theme a little.
+▻ Removed low value 5L items in the Very Strict filters.
+▻ Removed sound from low value 5L items in the Strict filters.
+▻ Removed rare jewels from T6+ maps in the Very Strict filter.
+▻ Removed T6-7 maps while in red maps in the Very Strict filter.
+▻ Removed sound from T1-5 maps in the Very Strict filter.
+▻ Removed sound from T6-9 maps while in red maps in the Very Strict filter.
+▻ Removed sound from T1-8 maps while in red maps in the Strict filter.
+▻ Removed very low Harbinger currency in the Very Strict filter.
+▻ Removed sound from low Map Fragments in the Strict and Very Strict filters.
+▻ Added an error check for new Map Fragments.
+▻ Fixed some inconsistencies between the filters.
+▻ Updated the Neversink color theme a little.
 
 3.0.23
-? Reduced the background of low value 5L items.
-? Reduced the background of 83+ rares slightly.
-? Removed 84+ ES normal/magic crafting bases from the filters.
-? Removed the blue border from low crafting bases. It was too hard to see anything when holding ALT in T15+ maps and the crafting bases are mostly useless.
-? Increased the number of items highlighted for some armour classes.
-? Moved some pre-filter code so it doesn't interfere with highlighted rares.
-? Split the 84+ crafting base accessories up into their three classes.
-? Fixed a typo with highlighted one hand maces.
+▻ Reduced the background of low value 5L items.
+▻ Reduced the background of 83+ rares slightly.
+▻ Removed 84+ ES normal/magic crafting bases from the filters.
+▻ Removed the blue border from low crafting bases. It was too hard to see anything when holding ALT in T15+ maps and the crafting bases are mostly useless.
+▻ Increased the number of items highlighted for some armour classes.
+▻ Moved some pre-filter code so it doesn't interfere with highlighted rares.
+▻ Split the 84+ crafting base accessories up into their three classes.
+▻ Fixed a typo with highlighted one hand maces.
 
 3.0.22
-? Changed the sound of Map Fragments again.
-? Reorganized the uniques section in preparation for potential changes.
-? Reduced the size of valuable rares (Titanium Spirit Shields, ES Bases, Astral Plates, etc).
-? Removed <83 valuable rare bases from the Strict Filter.
-? Reduced the border brightness of crafting bases and low level accessories.
-? Removed 83+ normal/magic crafting bases from the Strict Filter.
-? Increased the size of highlighted shields/quivers to match the other highlighted weapons.
+▻ Changed the sound of Map Fragments again.
+▻ Reorganized the uniques section in preparation for potential changes.
+▻ Reduced the size of valuable rares (Titanium Spirit Shields, ES Bases, Astral Plates, etc).
+▻ Removed <83 valuable rare bases from the Strict Filter.
+▻ Reduced the border brightness of crafting bases and low level accessories.
+▻ Removed 83+ normal/magic crafting bases from the Strict Filter.
+▻ Increased the size of highlighted shields/quivers to match the other highlighted weapons.
 
 3.0.21
-? Changed the borders/backgrounds of 60/72/83+ rares slightly.
-? Added a new sound for mid/low Map Fragments.
-? Changed Divine Vessel to a mid tier fragment again.
-? Added a new Mapping Filter. It is almost the same as the normal filter but removes non-quality purchasable gems, wisdom scrolls, and weeping essences.
-? Removed <10% quality gems from the Very Strict filter.
-? Removed sound from low yellow maps while in red maps.
-? Added Spider Forest to the Very Strict Filter.
-? Removed the sound from 6 sockets and <16% quality gems in the Very Strict Filter.
-? Removed the dark background from some 83+ normal/magic items.
-? Added more chance bases: Sapphire Flask, Glorious Plate, Deicide Mask, Ritual Sceptre, Siege Axe, Ebony Tower Shield, Raven Mask, Close Helmet, Moonstone Ring, Goathide Boots
+▻ Changed the borders/backgrounds of 60/72/83+ rares slightly.
+▻ Added a new sound for mid/low Map Fragments.
+▻ Changed Divine Vessel to a mid tier fragment again.
+▻ Added a new Mapping Filter. It is almost the same as the normal filter but removes non-quality purchasable gems, wisdom scrolls, and weeping essences.
+▻ Removed <10% quality gems from the Very Strict filter.
+▻ Removed sound from low yellow maps while in red maps.
+▻ Added Spider Forest to the Very Strict Filter.
+▻ Removed the sound from 6 sockets and <16% quality gems in the Very Strict Filter.
+▻ Removed the dark background from some 83+ normal/magic items.
+▻ Added more chance bases: Sapphire Flask, Glorious Plate, Deicide Mask, Ritual Sceptre, Siege Axe, Ebony Tower Shield, Raven Mask, Close Helmet, Moonstone Ring, Goathide Boots
 
 3.0.20
-? Reduced the size of very low Harbinger currency. 
-? Added Alchemy Shards to the strict filters.
+▻ Reduced the size of very low Harbinger currency. 
+▻ Added Alchemy Shards to the strict filters.
 
 3.0.19
-? Reduced the size of low Harbinger currency.
-? Increased Perandus Coins size in the normal filter.
-? Reduced the size and border of worthless Divination Cards.
-? Changed Piece uniques to be much easier to see.
-? Added Harbinger uniques: Callous Mask, Arcanist Slippers
-? Removed uniques: Sadist Garb (Tinkerskin)
+▻ Reduced the size of low Harbinger currency.
+▻ Increased Perandus Coins size in the normal filter.
+▻ Reduced the size and border of worthless Divination Cards.
+▻ Changed Piece uniques to be much easier to see.
+▻ Added Harbinger uniques: Callous Mask, Arcanist Slippers
+▻ Removed uniques: Sadist Garb (Tinkerskin)
 
 3.0.18
-? Changed map fragment tiers for Divine Vessel and Mortal Grief.
-? Brightened 83+ weapons slightly to match highlighted 83+ weapons.
-? Comment updates.
+▻ Changed map fragment tiers for Divine Vessel and Mortal Grief.
+▻ Brightened 83+ weapons slightly to match highlighted 83+ weapons.
+▻ Comment updates.
 
 3.0.17
-? Added background for 84+ shields/quivers.
-? Added toggled highlights for shields.
+▻ Added background for 84+ shields/quivers.
+▻ Added toggled highlights for shields.
 
 3.0.16
-? Increased the size of Divination Cards.
-? Increased the brightness of Perandus Coins.
-? Massive overhaul of the rares again. I am really considering adding differentiation between 60+ and 75+ recipes again. If I do then I will be changing 72/73+ highlights to 75+.
-? Removed the default border from 83/84 rares.
-? Added toggled border highlights for rares 60+, 72/73+, and 83/84+.
-? Reduced the blue border brightness of 3-4L and low/mid crafting bases slightly.
-? Fixed a potential issue with rares in the strict filters.
-? Fixed a bug with optional highlighted 73+ bows and sceptres.
+▻ Increased the size of Divination Cards.
+▻ Increased the brightness of Perandus Coins.
+▻ Massive overhaul of the rares again. I am really considering adding differentiation between 60+ and 75+ recipes again. If I do then I will be changing 72/73+ highlights to 75+.
+▻ Removed the default border from 83/84 rares.
+▻ Added toggled border highlights for rares 60+, 72/73+, and 83/84+.
+▻ Reduced the blue border brightness of 3-4L and low/mid crafting bases slightly.
+▻ Fixed a potential issue with rares in the strict filters.
+▻ Fixed a bug with optional highlighted 73+ bows and sceptres.
 
 3.0.15
-? Fixed an error in optional highlighted DEX and INT armour bases.
+▻ Fixed an error in optional highlighted DEX and INT armour bases.
 
 3.0.14
-? Changed mid value DropLevel 72+ normal/magic items. (Spiked Gloves, Gripped Gloves, Fingerless Silk Gloves). Increased the size of ilvl 84+ items and decreased for the rest. Removed ilvl <84 items from the strict filters.
+▻ Changed mid value DropLevel 72+ normal/magic items. (Spiked Gloves, Gripped Gloves, Fingerless Silk Gloves). Increased the size of ilvl 84+ items and decreased for the rest. Removed ilvl <84 items from the strict filters.
 
 3.0.13
-? Removed ilvl 6+ 1-2 Socket normal/magic items. Starting from Ledge you will see a lot less normal/magic items. This is to help with item spam, especially while doing prophecies at high level.
-? Added magic RGB items while leveling to the normal filter.
-? Added smaller normal RGB items to low level maps in the normal filter.
-? Removed the white border from quality chisel recipe items.
+▻ Removed ilvl 6+ 1-2 Socket normal/magic items. Starting from Ledge you will see a lot less normal/magic items. This is to help with item spam, especially while doing prophecies at high level.
+▻ Added magic RGB items while leveling to the normal filter.
+▻ Added smaller normal RGB items to low level maps in the normal filter.
+▻ Removed the white border from quality chisel recipe items.
 
 3.0.12
-? Added color themes to low/mid Harbinger currency.
-? Added more Harbinger currency to the Strict filters and enlarged them.
-? Changed the background color of low Harbinger currency.
-? Enlarged chromatics/alterations in the strict filters, again.
-? Added Divination Card: The Visionary
-? Fixed a recent bug in the normal filter where whetstones were hidden.
+▻ Added color themes to low/mid Harbinger currency.
+▻ Added more Harbinger currency to the Strict filters and enlarged them.
+▻ Changed the background color of low Harbinger currency.
+▻ Enlarged chromatics/alterations in the strict filters, again.
+▻ Added Divination Card: The Visionary
+▻ Fixed a recent bug in the normal filter where whetstones were hidden.
 
 3.0.11
-? Fixed a bug in the Strict filters related to 72+ rares. This was an optional filter so the odds are nobody experienced the bug.
+▻ Fixed a bug in the Strict filters related to 72+ rares. This was an optional filter so the odds are nobody experienced the bug.
 
 3.0.10
-? Removed nearly worthless currency from the strict filter again (whetsones, transmutes). I ran Beachhead with a full party today and there was too much clutter.
-? Removed most 83+ rares from the Very Strict Filter.
-? Added <1c divination cards back into the Very Strict filter but removed sound.
-? Changed value of divination cards: The Cataclysm, The Formless Sea, The King's Heart, The Lich
-? Fixed a minor Divination Card bug: The Wolf vs The Wolf's Shadow
+▻ Removed nearly worthless currency from the strict filter again (whetsones, transmutes). I ran Beachhead with a full party today and there was too much clutter.
+▻ Removed most 83+ rares from the Very Strict Filter.
+▻ Added <1c divination cards back into the Very Strict filter but removed sound.
+▻ Changed value of divination cards: The Cataclysm, The Formless Sea, The King's Heart, The Lich
+▻ Fixed a minor Divination Card bug: The Wolf vs The Wolf's Shadow
 
 3.0.9
-? Changed the border of 72+ armor and 73+ weapons to be toggled instead of always on. You can now enable it to highlight specific item classes that you're looking for. This should help solo self-found players a lot. I'm personally using this to search for one-handed axes. The feature has been implemented in the strict filters as well.
-? Decreased the border brightness of 72+ rares, slightly.
-? I am not adding positional sounds. The sound gets quieter when an item drops further away which is the exact opposite of what you want.
-? Reduced the volume of most drops by 50% to compensate for the low Shaper Voice sounds. You may need to turn up the filter volume in the options menu.
+▻ Changed the border of 72+ armor and 73+ weapons to be toggled instead of always on. You can now enable it to highlight specific item classes that you're looking for. This should help solo self-found players a lot. I'm personally using this to search for one-handed axes. The feature has been implemented in the strict filters as well.
+▻ Decreased the border brightness of 72+ rares, slightly.
+▻ I am not adding positional sounds. The sound gets quieter when an item drops further away which is the exact opposite of what you want.
+▻ Reduced the volume of most drops by 50% to compensate for the low Shaper Voice sounds. You may need to turn up the filter volume in the options menu.
 
 3.0.8
-? Removed the border from some 3-4 link normal/magic items.
+▻ Removed the border from some 3-4 link normal/magic items.
 
 3.0.7
-? Changed uniques: Varnished Coat, Sorcerer Gloves
-? Greatly reduced the background of most hidden normal/magic items.
-? Added custom coloration for Harbinger Uniques and hidden normal/magic items.
-? Fixed a small bug related to 6 socket uniques being colored incorrectly.
+▻ Changed uniques: Varnished Coat, Sorcerer Gloves
+▻ Greatly reduced the background of most hidden normal/magic items.
+▻ Added custom coloration for Harbinger Uniques and hidden normal/magic items.
+▻ Fixed a small bug related to 6 socket uniques being colored incorrectly.
 
 3.0.6
-? Updated the uniques list to prevent the Very Strict filter from hiding valuable ones. I make no promises so use it at your own risk.
-? Updated uniques: Abyssal Axe, Amethyst Ring, Auric Mace, Close Helmet, Despot Axe, Eternal Sword, Exquisite Leather, Great Mallet, Hubris Circlet, Imperial Claw, Legion Sword, Opal Wand, Tornado Wand, Vaal Hatchet, Vanguard Belt, War Sword
-? Added uniques: Arcanist Slippers, Blunt Arrow Quiver, Corsair Sword, Crystal Belt, Cutthroat's Garb, Military Staff, Throat Stabber, Vaal Sceptre, Zealot Gloves
-? Some of the uniques are highlighted as a lower price than their actual value.
-? Removed leather belts from chance bases in normal filter.
-? Removed Two-Toned Boots from the crafting bases.
-? Adjusted league currency values.
+▻ Updated the uniques list to prevent the Very Strict filter from hiding valuable ones. I make no promises so use it at your own risk.
+▻ Updated uniques: Abyssal Axe, Amethyst Ring, Auric Mace, Close Helmet, Despot Axe, Eternal Sword, Exquisite Leather, Great Mallet, Hubris Circlet, Imperial Claw, Legion Sword, Opal Wand, Tornado Wand, Vaal Hatchet, Vanguard Belt, War Sword
+▻ Added uniques: Arcanist Slippers, Blunt Arrow Quiver, Corsair Sword, Crystal Belt, Cutthroat's Garb, Military Staff, Throat Stabber, Vaal Sceptre, Zealot Gloves
+▻ Some of the uniques are highlighted as a lower price than their actual value.
+▻ Removed leather belts from chance bases in normal filter.
+▻ Removed Two-Toned Boots from the crafting bases.
+▻ Adjusted league currency values.
 New Values
 
 3.0.5
-? Increased the size/value of some very low tier currencies. Transmutation/Alteration shards are intentionally not being shown. Hold ALT to pick these up as they are only worth picking up while leveling.
-? Removed some level ranges for leveling normal/magic accessories (now 15 for highlights, 30 for hidden).
-? Confirmed that the new sounds work properly but are quieter than other sounds.
+▻ Increased the size/value of some very low tier currencies. Transmutation/Alteration shards are intentionally not being shown. Hold ALT to pick these up as they are only worth picking up while leveling.
+▻ Removed some level ranges for leveling normal/magic accessories (now 15 for highlights, 30 for hidden).
+▻ Confirmed that the new sounds work properly but are quieter than other sounds.
 
 3.0.4
-? Added support for the new orb sounds. These can be enabled using Filtration or FilterBlast.
-? Fixed color themes of lower currency colors in the Strict filters.
-? Changed low value Breach splinters to have a consistent color scheme across all filters.
+▻ Added support for the new orb sounds. These can be enabled using Filtration or FilterBlast.
+▻ Fixed color themes of lower currency colors in the Strict filters.
+▻ Changed low value Breach splinters to have a consistent color scheme across all filters.
 
 3.0.3
-? Fixed a bug with 72+ DropLevel items from last patch.
-? Fixed some gem colors.
-? Fixed Two-Toned Boots and some other bases from being shown/hidden correctly.
-? Reduced the background of low gems and currency.
+▻ Fixed a bug with 72+ DropLevel items from last patch.
+▻ Fixed some gem colors.
+▻ Fixed Two-Toned Boots and some other bases from being shown/hidden correctly.
+▻ Reduced the background of low gems and currency.
 
 3.0.2
-? Reworked the Crafting Bases section. All rare 72+ DropLevel bases have been moved here (Spiked Gloves, Bone Helmets, etc).
-? Changed the look of high value crafting bases (Steel Rings, Crystal Belts, etc).
+▻ Reworked the Crafting Bases section. All rare 72+ DropLevel bases have been moved here (Spiked Gloves, Bone Helmets, etc).
+▻ Changed the look of high value crafting bases (Steel Rings, Crystal Belts, etc).
 
 3.0.1
-? Updated to Harbinger League specifications. See the patch notes for more information (1)(2).
-? Added Divine Vessel to valuable Map Fragments.
-? Added Pantheon Souls.
-? Added new "Piece" item class for Harbinger uniques.
-? ! New sounds and positional sounds have not been added yet (1) (2)! I have heard that these could be bugged so I am leaving them out for now.
-? Added new league currencies (1) (2).
+▻ Updated to Harbinger League specifications. See the patch notes for more information (1)(2).
+▻ Added Divine Vessel to valuable Map Fragments.
+▻ Added Pantheon Souls.
+▻ Added new "Piece" item class for Harbinger uniques.
+▻ ! New sounds and positional sounds have not been added yet (1) (2)! I have heard that these could be bugged so I am leaving them out for now.
+▻ Added new league currencies (1) (2).
 
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
 | Legacy
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
+
 2.6.56
-? Added more colors themes to currency.
-? Fixed Splinter of Chayula in the Very Strict Filter from a couple patches ago.
+▻ Added more colors themes to currency.
+▻ Fixed Splinter of Chayula in the Very Strict Filter from a couple patches ago.
 
 2.6.55
-? More tweaking of color themes.
+▻ More tweaking of color themes.
 
 2.6.54
-? Increased value of divination cards: The Twins, The Sigil, Might is Right, The Throne, The Gemcutter, The Dragon, Grave Knowledge, The Sun, Shard of Fate
-? Reduced value of divination cards: Rain Tempter, Prosperity
-? Added more flexibility to color themes for gems.
-? Tweaked color themes.
+▻ Increased value of divination cards: The Twins, The Sigil, Might is Right, The Throne, The Gemcutter, The Dragon, Grave Knowledge, The Sun, Shard of Fate
+▻ Reduced value of divination cards: Rain Tempter, Prosperity
+▻ Added more flexibility to color themes for gems.
+▻ Tweaked color themes.
 
 2.6.53
-? Added more flexibility to color themes.
-? Added toggling for Shaper's Orbs.
-? Added text color to Leaguestones.
-? Added Greengroove/Neversink color themes.
+▻ Added more flexibility to color themes.
+▻ Added toggling for Shaper's Orbs.
+▻ Added text color to Leaguestones.
+▻ Added Greengroove/Neversink color themes.
 
 2.6.52
-? Added an alternate color theme.
-? Added toggling for Chisel/Chromatic recipes in low/high tier maps.
-? Added Pale Court keys and Shaper fragments to mid tier map fragments.
-? Moved Breach League currency including Splinter of Chayula to a Large League category.
-? Added Offering to the Goddess as its own filter and color theme.
-? Added a sound for errors.
-? Added Two-Point Arrow Quiver to valuable quiver bases.
-? Changed Low/Mid/High Item Level descriptions to Leveling/Mapping (Low/Mid/High).
+▻ Added an alternate color theme.
+▻ Added toggling for Chisel/Chromatic recipes in low/high tier maps.
+▻ Added Pale Court keys and Shaper fragments to mid tier map fragments.
+▻ Moved Breach League currency including Splinter of Chayula to a Large League category.
+▻ Added Offering to the Goddess as its own filter and color theme.
+▻ Added a sound for errors.
+▻ Added Two-Point Arrow Quiver to valuable quiver bases.
+▻ Changed Low/Mid/High Item Level descriptions to Leveling/Mapping (Low/Mid/High).
 
 2.6.51
-? Added more color theme support for currency.
-? Added disabled blocks for certain features (disabled chance bases, Pantheon Souls)
+▻ Added more color theme support for currency.
+▻ Added disabled blocks for certain features (disabled chance bases, Pantheon Souls)
 
 2.6.50
-? Added more color themes.
-? Added sound themes.
-? Minor comment and color changes to support the themes.
+▻ Added more color themes.
+▻ Added sound themes.
+▻ Minor comment and color changes to support the themes.
 
 2.6.49
-? Added Filtration Theme support.
-? A few colors were adjusted to reduce the total number of themes.
-? Changed all 235 opacity backgrounds to 230.
+▻ Added Filtration Theme support.
+▻ A few colors were adjusted to reduce the total number of themes.
+▻ Changed all 235 opacity backgrounds to 230.
 
 2.6.48
-? Brightened the tan text of low value currency slightly. This makes it more legible.
-? Added a background color to Perandus Coins and low Essences. This seems far better than a border.
-? Reduced the size of 3-4L normal/magic items. Reduced the blue border brightness of 3-4L items including rares.
+▻ Brightened the tan text of low value currency slightly. This makes it more legible.
+▻ Added a background color to Perandus Coins and low Essences. This seems far better than a border.
+▻ Reduced the size of 3-4L normal/magic items. Reduced the blue border brightness of 3-4L items including rares.
 
 2.6.47
-? Fixed a small bug related to magic 84+ Unset Rings.
-? Moved Vaal Fireball up a tier.
-? Reorganized and renamed some block switches (comments).
+▻ Fixed a small bug related to magic 84+ Unset Rings.
+▻ Moved Vaal Fireball up a tier.
+▻ Reorganized and renamed some block switches (comments).
 
 2.6.46
-? Removed some 73+ one-hand weapons.
-? Reduced the size of most worthless uniques.
+▻ Removed some 73+ one-hand weapons.
+▻ Reduced the size of most worthless uniques.
 
 2.6.45
-? Reduced the border brightness of the 72+ and 83+ rares.
-? Reduced the background color of 83+ rare one-handers.
-? Added a slight border to Perandus Coins and Wailing/Weeping Essences.
-? Added block switches to the pre-filter (first pass on equipment).
-? Added New Uniques to the filter. Speaker's Wreath and Ahn's Might are bad. These are currently listed as 2-10c, so this may be reduced later. Tinkerskin and Soul Tether are potentially useful so they're listed at 1-2c.
+▻ Reduced the border brightness of the 72+ and 83+ rares.
+▻ Reduced the background color of 83+ rare one-handers.
+▻ Added a slight border to Perandus Coins and Wailing/Weeping Essences.
+▻ Added block switches to the pre-filter (first pass on equipment).
+▻ Added New Uniques to the filter. Speaker's Wreath and Ahn's Might are bad. These are currently listed as 2-10c, so this may be reduced later. Tinkerskin and Soul Tether are potentially useful so they're listed at 1-2c.
 
 2.6.44
-? Added some more one-handers to the valuable list since Sunder seems like it will be somewhat popular.
-? Added more semi-valuable rares to the Strict Filter but not the Very Strict.
+▻ Added some more one-handers to the valuable list since Sunder seems like it will be somewhat popular.
+▻ Added more semi-valuable rares to the Strict Filter but not the Very Strict.
 
 2.6.43
-? Removed most of the useless 83+ crafting bases. You have to hold ALT to see most of these.
+▻ Removed most of the useless 83+ crafting bases. You have to hold ALT to see most of these.
 
 2.6.42
-? Changed grey border to blue for 3-4L items.
-? Added all 56+ DropLevel bases to rare weapons. This is to simplify the filter and reduce errors.
-? Added some low drop level 5L bows to the strict filters. Low level bows are used by casters for SRS and Decay since they're easier color.
-? Minor optimizations and comment updates.
+▻ Changed grey border to blue for 3-4L items.
+▻ Added all 56+ DropLevel bases to rare weapons. This is to simplify the filter and reduce errors.
+▻ Added some low drop level 5L bows to the strict filters. Low level bows are used by casters for SRS and Decay since they're easier color.
+▻ Minor optimizations and comment updates.
 
 2.6.41
-? Massive overhaul of the filter.
-? Rares and Crafting bases have undergone major changes. The border and background colors have been modified.
-? Optimized the filter to run 2x as fast on equipment but ~25% slower on Uniques, Divination Cards, and Maps. This significantly reduces the load times with FilterBlast and should be better in game as well.
-? Prepared the filter for 3.0 (Pantheon Souls). This just needs to be uncommented to work.
-? Added a light blue border to Crafting bases.
-? Increased the brightness of 3-4 link low level items.
-? Changed low value Divination Cards slightly.
+▻ Massive overhaul of the filter.
+▻ Rares and Crafting bases have undergone major changes. The border and background colors have been modified.
+▻ Optimized the filter to run 2x as fast on equipment but ~25% slower on Uniques, Divination Cards, and Maps. This significantly reduces the load times with FilterBlast and should be better in game as well.
+▻ Prepared the filter for 3.0 (Pantheon Souls). This just needs to be uncommented to work.
+▻ Added a light blue border to Crafting bases.
+▻ Increased the brightness of 3-4 link low level items.
+▻ Changed low value Divination Cards slightly.
 
 2.6.40
-? Changed the opacity/brightness to some divination cards and maps.
-? Minor adjustments to certain divination card prices.
-? Breach Rings of ilvl 68+ have been added back into the normal filter and have been reduced in size.
-? Reduced the size of some hidden magic/white items.
+▻ Changed the opacity/brightness to some divination cards and maps.
+▻ Minor adjustments to certain divination card prices.
+▻ Breach Rings of ilvl 68+ have been added back into the normal filter and have been reduced in size.
+▻ Reduced the size of some hidden magic/white items.
 
 2.6.39
-? Increased opacity of maps slightly, especially unique maps.
-? Changed low level 3-4L and accessories from a grey background back to the default. The grey border has been increased to compensate.
-? Changed the sound of ilvl 1-67 low value uniques to be equal to yellow border mid value uniques.
+▻ Increased opacity of maps slightly, especially unique maps.
+▻ Changed low level 3-4L and accessories from a grey background back to the default. The grey border has been increased to compensate.
+▻ Changed the sound of ilvl 1-67 low value uniques to be equal to yellow border mid value uniques.
 
 2.6.38
-? Fixed a recent bug that was preventing most rare accessories from appearing.
-? Changed the sound of Misc Map Items and Breachstones.
-? Edited some comments.
+▻ Fixed a recent bug that was preventing most rare accessories from appearing.
+▻ Changed the sound of Misc Map Items and Breachstones.
+▻ Edited some comments.
 
 2.6.37
-? Modified the Misc Map Items to be more blue instead of purple. It was too similar to currency (pink).
-? Brightened the border of quality flasks again.
+▻ Modified the Misc Map Items to be more blue instead of purple. It was too similar to currency (pink).
+▻ Brightened the border of quality flasks again.
 
 2.6.36
-? Added a slight border to low level 4-links.
-? Reduced the border brightness of quality chisels and non-utility flasks.
-? Removed 3-4 link ilvl 20+ white/blue weapons. 
-? Changed the colors for Misc Map Items (Breachstones/Reliquary Keys) from green to purple. I'm considering adjusting this color slightly.
+▻ Added a slight border to low level 4-links.
+▻ Reduced the border brightness of quality chisels and non-utility flasks.
+▻ Removed 3-4 link ilvl 20+ white/blue weapons. 
+▻ Changed the colors for Misc Map Items (Breachstones/Reliquary Keys) from green to purple. I'm considering adjusting this color slightly.
 
 2.6.35
-? More adjustments to normal/magic and <60 rares (leveling gear).
-? Renamed jewelry to accessories.
+▻ More adjustments to normal/magic and <60 rares (leveling gear).
+▻ Renamed jewelry to accessories.
 
 2.6.34
-? Removed low drop level 3-4 link whites/blues.
+▻ Removed low drop level 3-4 link whites/blues.
 
 2.6.33
-? Fixed errors related to the previous release. 
+▻ Fixed errors related to the previous release. 
 
 2.6.32
-? Added a grey background on low level accessories.
-? Added a grey background and increased the size of low level 3-links.
-? Added a grey background and increased the size of mid level 4-links.
-? Other minor changes.
+▻ Added a grey background on low level accessories.
+▻ Added a grey background and increased the size of low level 3-links.
+▻ Added a grey background and increased the size of mid level 4-links.
+▻ Other minor changes.
 
 2.6.31
-? Changed T16 maps (Guardians) to red with grey text/border.
-? Added a slight green background to quest/labyrinth items.
-? Updated some comments.
+▻ Changed T16 maps (Guardians) to red with grey text/border.
+▻ Added a slight green background to quest/labyrinth items.
+▻ Updated some comments.
 
 2.6.30
-? More tweaks to rare 60+/83+ one-handers.
+▻ More tweaks to rare 60+/83+ one-handers.
 
 2.6.29
-? Removed the border around ilvl 83+ rare one-handers except top-tier wands/daggers.
-? Removed claws and most swords from the ilvl 77+ top tier bases. Wands/daggers are still the best bases for profit since they're mostly used by casters and uniques don't compete enough with rares. Claws have too much competition with uniques so they're not worth IDing. Swords don't have as much competition but they're incredibly hard to roll well and aren't as widely used, so I left only Jewelled Foils and Corsair Swords.
+▻ Removed the border around ilvl 83+ rare one-handers except top-tier wands/daggers.
+▻ Removed claws and most swords from the ilvl 77+ top tier bases. Wands/daggers are still the best bases for profit since they're mostly used by casters and uniques don't compete enough with rares. Claws have too much competition with uniques so they're not worth IDing. Swords don't have as much competition but they're incredibly hard to roll well and aren't as widely used, so I left only Jewelled Foils and Corsair Swords.
 
 2.6.28
-? Reduced the number of shown ilvl 60-70 daggers/wands again.
-? Reduced the size of 60+ top tier one-handers.
-? Increased the size of 77+ top tier one-handers+. I don't do this to most two-handers because it's better to craft them from a 5-6L base. I left out one-handed maces/axes since most people use uniques instead of crafting those bases.
-? Reduced the size of 75+ and 83+ top tier weapons (Harbinger, Daggers, Wands, etc).
-? Added a few more top tier one-handers to the list (Foils, Claws, etc).
+▻ Reduced the number of shown ilvl 60-70 daggers/wands again.
+▻ Reduced the size of 60+ top tier one-handers.
+▻ Increased the size of 77+ top tier one-handers+. I don't do this to most two-handers because it's better to craft them from a 5-6L base. I left out one-handed maces/axes since most people use uniques instead of crafting those bases.
+▻ Reduced the size of 75+ and 83+ top tier weapons (Harbinger, Daggers, Wands, etc).
+▻ Added a few more top tier one-handers to the list (Foils, Claws, etc).
 
 2.6.27
-? Reduced the number of shown ilvl 60+ rare shields, wands, and daggers from the normal filter. Greatly reduced the shown ilvl 70+ of these. Physical daggers got demolished this patch in favor of claws.
+▻ Reduced the number of shown ilvl 60+ rare shields, wands, and daggers from the normal filter. Greatly reduced the shown ilvl 70+ of these. Physical daggers got demolished this patch in favor of claws.
 
 2.6.26
-? Added Marble Amulet to the expensive crafting jewelry bases (and the strict filters). Righteous Fire has become popular.
-? Removed Two-Toned boots from the strict filters. I've seen them way too much and they're worthless since Labyrinth enchants are better and will overwrite the implicit.
-? Reduced the sound of low value ilvl <67 uniques in the Very Strict filter.
+▻ Added Marble Amulet to the expensive crafting jewelry bases (and the strict filters). Righteous Fire has become popular.
+▻ Removed Two-Toned boots from the strict filters. I've seen them way too much and they're worthless since Labyrinth enchants are better and will overwrite the implicit.
+▻ Reduced the sound of low value ilvl <67 uniques in the Very Strict filter.
 
 2.6.25
-? Added more uniques to useful list: Auric Mace, Carnal Armour, Ezomyte Blade, Hellion's Paw, Ironscale Boots, Spidersilk Robe, Strapped Leather, Sulphur Flask, Wild Leather.
+▻ Added more uniques to useful list: Auric Mace, Carnal Armour, Ezomyte Blade, Hellion's Paw, Ironscale Boots, Spidersilk Robe, Strapped Leather, Sulphur Flask, Wild Leather.
 
 2.6.24
-? Added sound for low level jewels to the strict filter.
-? Reduced the size of most 83+ ilvl rares. The top tier bases are still very large. I used to make armor larger than weapons but I gave them different text color instead.
+▻ Added sound for low level jewels to the strict filter.
+▻ Reduced the size of most 83+ ilvl rares. The top tier bases are still very large. I used to make armor larger than weapons but I gave them different text color instead.
 
 2.6.23
-? Removed most quiver bases from the filter and reduced the size of the remaining ones. I should have done this a long time ago. They're not valuable and most people use the uniques anyway.
+▻ Removed most quiver bases from the filter and reduced the size of the remaining ones. I should have done this a long time ago. They're not valuable and most people use the uniques anyway.
 
 2.6.22
-? Standardized the light grey colors.
-? Removed transparency from borders.
-? Added a background color to unique jewels to match other uniques.
-? Added Item Quantity to valuable gems list. It doesn't drop anymore, but I figured I should add it just in case (legacy relic).
-? Added sound back to 6S 5L in the very strict filter. I missed this earlier.
-? Added a grey background to 4L low level items.
-? Reduced the border color of most ilvl 83+ rares and increased it for top tier rares. These were too bright and looked more valuable than they are.
-? Attempted to filter Relics (Legacy Uniques). They cannot be hidden in the filter and are being detected as Uniques instead of Relics. I decided not to add special rules to the filter for these items.
+▻ Standardized the light grey colors.
+▻ Removed transparency from borders.
+▻ Added a background color to unique jewels to match other uniques.
+▻ Added Item Quantity to valuable gems list. It doesn't drop anymore, but I figured I should add it just in case (legacy relic).
+▻ Added sound back to 6S 5L in the very strict filter. I missed this earlier.
+▻ Added a grey background to 4L low level items.
+▻ Reduced the border color of most ilvl 83+ rares and increased it for top tier rares. These were too bright and looked more valuable than they are.
+▻ Attempted to filter Relics (Legacy Uniques). They cannot be hidden in the filter and are being detected as Uniques instead of Relics. I decided not to add special rules to the filter for these items.
 
 2.6.21
-? Added sound back to 6 socket items in the very strict filter.
-? Reduced border color brightness of low value uniques. They're not valuable and bright border made me always want to pick them up.
+▻ Added sound back to 6 socket items in the very strict filter.
+▻ Reduced border color brightness of low value uniques. They're not valuable and bright border made me always want to pick them up.
 
 2.6.20
-? Added sound to Glimmer of Hope divination card (special case).
-? Gems have been modified slightly. 
-? Some drop-only Vaal gems have been removed from the strict filters.
-? Valuable gems now have slightly lighter text.
+▻ Added sound to Glimmer of Hope divination card (special case).
+▻ Gems have been modified slightly. 
+▻ Some drop-only Vaal gems have been removed from the strict filters.
+▻ Valuable gems now have slightly lighter text.
 
 2.6.19
-? Uniques have been reordered from most expensive to least just like Divination Cards for the same exact reason. This is to preempt future bugs and prevent valuable items from being hidden.
+▻ Uniques have been reordered from most expensive to least just like Divination Cards for the same exact reason. This is to preempt future bugs and prevent valuable items from being hidden.
 
 2.6.18
-? Divination Cards have been partially updated. They have been organized alphabetically. Other changes are listed below.
+▻ Divination Cards have been partially updated. They have been organized alphabetically. Other changes are listed below.
 (10c+) The Celestial Justicar, The Vast, Pride Before the Fall
 (1c+) The Standoff, The Chains that Bind, The Avenger, Merciless Armament
-? A major bug related to Divination Cards has been fixed. A couple cards were being hidden or mislabeled due to name conflicts. The cards have been ordered from most expensive first to ensure that they'll never be hidden again. (Hope, Glimmer of Hope, Last Hope) (The Dragon, The Dragon's Heart)
-? NOTE: Some cards are worth a small amount in hardcore but I'm not going to add them to the strict filters because they're not worth enough (The Twins, Grave Knowledge, Might is Right, etc).
+▻ A major bug related to Divination Cards has been fixed. A couple cards were being hidden or mislabeled due to name conflicts. The cards have been ordered from most expensive first to ensure that they'll never be hidden again. (Hope, Glimmer of Hope, Last Hope) (The Dragon, The Dragon's Heart)
+▻ NOTE: Some cards are worth a small amount in hardcore but I'm not going to add them to the strict filters because they're not worth enough (The Twins, Grave Knowledge, Might is Right, etc).
 
 2.6.17
-? Added a yellow border to top tier ilvl 75-84 bases (Fingerless Silk Gloves, Bone Helmet, Hubris Circlet, Vaal Regalia, etc).
-? Reduced the size of top tier ilvl 75-84 daggers/wands from 40 to 36.
-? Removed worthless Drop-Only gems from the Very Strict filter (Vaal Summon Skeletons, Vaal Glacial Hammer, Added Chaos Damage, etc).
-? Increased the volume of unique jewels.
+▻ Added a yellow border to top tier ilvl 75-84 bases (Fingerless Silk Gloves, Bone Helmet, Hubris Circlet, Vaal Regalia, etc).
+▻ Reduced the size of top tier ilvl 75-84 daggers/wands from 40 to 36.
+▻ Removed worthless Drop-Only gems from the Very Strict filter (Vaal Summon Skeletons, Vaal Glacial Hammer, Added Chaos Damage, etc).
+▻ Increased the volume of unique jewels.
 
 2.6.16
-? Complete overhaul of the uniques section. Many uniques are now hidden or have less/no sound.
+▻ Complete overhaul of the uniques section. Many uniques are now hidden or have less/no sound.
 
 2.6.15
-? Added sound back to the Very Strict filter for ~1c currency.
-? Added T4 maps back to T8+ maps. T1-3 are still hidden.
-? Minor fixes.
+▻ Added sound back to the Very Strict filter for ~1c currency.
+▻ Added T4 maps back to T8+ maps. T1-3 are still hidden.
+▻ Minor fixes.
 
 2.6.14
-? Added a Very Strict filter. This filter includes FAR less sounds and a little less loot than the Strict Filter. It only shows low tier maps with good layouts. Eventually it will also hide worthless uniques. 
-? Removed T1-4 maps while in T8+ maps.
-? Added 72+ Titanium Spirit Shields to the Strict filters.
-? Removed the white border around ilvl 1-67 Leaguestones. This helps differentiate the ones that have a zone level requirement.
+▻ Added a Very Strict filter. This filter includes FAR less sounds and a little less loot than the Strict Filter. It only shows low tier maps with good layouts. Eventually it will also hide worthless uniques. 
+▻ Removed T1-4 maps while in T8+ maps.
+▻ Added 72+ Titanium Spirit Shields to the Strict filters.
+▻ Removed the white border around ilvl 1-67 Leaguestones. This helps differentiate the ones that have a zone level requirement.
 
 2.6.13
-? Changed the background color of most 5 links to grey.
-? Added a white background to 5L 6S items.
-? Ancient Reliquary Key text has been changed to dark green. Black was too similar to T16 maps.
-? Slightly reduced background color for worthless/new value uniques.
+▻ Changed the background color of most 5 links to grey.
+▻ Added a white background to 5L 6S items.
+▻ Ancient Reliquary Key text has been changed to dark green. Black was too similar to T16 maps.
+▻ Slightly reduced background color for worthless/new value uniques.
 
 2.6.12
-? Changed uniques prices: Gold Amulet, Prophet Crown, Cedar Tower Shield, etc.
-? Ancient Reliquary Key text has been changed to black.
+▻ Changed uniques prices: Gold Amulet, Prophet Crown, Cedar Tower Shield, etc.
+▻ Ancient Reliquary Key text has been changed to black.
 
 2.6.11
-? Lots of changes to currency.
-? Perandus Coins been reduced in size and tier. This is to prevent them from overflowing past the screen.
-? Silver Coins have gone down a tier. They're still easy to see but now they don't make sound.
-? Jewellers have gone down a tier in the Strict Filter.
-? Added a white background to currency worth 3-6c. Remnents of Corruption, Master Sextants, etc.
-? Ancient Reliquary Key has been given a white background and a gong sound.
-? Added a white background to 5%+ quality Portal, Empower, Enlighten.
-? Leaguestones have had their border's brightness lowered.
+▻ Lots of changes to currency.
+▻ Perandus Coins been reduced in size and tier. This is to prevent them from overflowing past the screen.
+▻ Silver Coins have gone down a tier. They're still easy to see but now they don't make sound.
+▻ Jewellers have gone down a tier in the Strict Filter.
+▻ Added a white background to currency worth 3-6c. Remnents of Corruption, Master Sextants, etc.
+▻ Ancient Reliquary Key has been given a white background and a gong sound.
+▻ Added a white background to 5%+ quality Portal, Empower, Enlighten.
+▻ Leaguestones have had their border's brightness lowered.
 
 2.6.10
-? Added divination cards: The Devastator, The Conduit
+▻ Added divination cards: The Devastator, The Conduit
 
 2.6.9
-? Removed low drop level (< 45) daggers/wands from maps in the normal filter.
-? Added rare Jewelled Foil and Spiraled Foil to normal filter. These were shown a long time ago but were lost through updates.
-? Minor update to the uniques list and added more 2.6 uniques (Stealth Boots, Wyrmscale Doublet, Imperial Maul).
+▻ Removed low drop level (< 45) daggers/wands from maps in the normal filter.
+▻ Added rare Jewelled Foil and Spiraled Foil to normal filter. These were shown a long time ago but were lost through updates.
+▻ Minor update to the uniques list and added more 2.6 uniques (Stealth Boots, Wyrmscale Doublet, Imperial Maul).
 
 2.6.8
-? Added the white border to all Leaguestones. You can combine leaguestones so you might as well pick them all up.
-? Added Divination Card: The Spoiled Prince
-? Added Currency: Stacked Deck, Unshaping Orb, Cartographer's Seals
-? Imprint (Eternal Orb result) has been left as an error intentionally since they pretty much don't exist anymore.
+▻ Added the white border to all Leaguestones. You can combine leaguestones so you might as well pick them all up.
+▻ Added Divination Card: The Spoiled Prince
+▻ Added Currency: Stacked Deck, Unshaping Orb, Cartographer's Seals
+▻ Imprint (Eternal Orb result) has been left as an error intentionally since they pretty much don't exist anymore.
 
 2.6.7
-? Removed the chance bases from Strict Filter.
-? Reduced size and removed background color for Breach Rings. This makes them slightly easier to ignore since they're worthless.
-? Removed Breach Rings from maps in Strict Filter (68+).
-? Made certain currencies and essences more verbose in case they overlap with future currency (e.g. Sextant -> Cartographer's Sextant).
-? Made top tier weapon bases more consistent: Harbinger Bow, Platinum Kris, Imperial Skean, Ambusher, Imbued Wand, Tornado Wand.
-? Removed rare Astral Plates from the Strict filter. They're not valuable.
-? Added 84+ Vaal Regalias to the Strict filter. For some reason I was only showing 75-83.
-? Cleaned up some code and fixed a harmless error (duplicate code).
+▻ Removed the chance bases from Strict Filter.
+▻ Reduced size and removed background color for Breach Rings. This makes them slightly easier to ignore since they're worthless.
+▻ Removed Breach Rings from maps in Strict Filter (68+).
+▻ Made certain currencies and essences more verbose in case they overlap with future currency (e.g. Sextant -> Cartographer's Sextant).
+▻ Made top tier weapon bases more consistent: Harbinger Bow, Platinum Kris, Imperial Skean, Ambusher, Imbued Wand, Tornado Wand.
+▻ Removed rare Astral Plates from the Strict filter. They're not valuable.
+▻ Added 84+ Vaal Regalias to the Strict filter. For some reason I was only showing 75-83.
+▻ Cleaned up some code and fixed a harmless error (duplicate code).
 
 2.6.6
-? Added divination card Scarred Meadow. Accidentally removed this at some point.
-? Removed magic jewels from all maps (ilvl 68+) in strict filter.
-? Removed magic jewels from yellow/red maps in normal filter. The new vivid jewel divination cards kind of ruin the point of these (Shard of Fate, The Endurance).
-? Added droplevel 41+ gloves/boots/helmets to normal filter. Previously this was droplevel 50+. I was having a hard time completing Chaos/Regal recipes fast enough.
+▻ Added divination card Scarred Meadow. Accidentally removed this at some point.
+▻ Removed magic jewels from all maps (ilvl 68+) in strict filter.
+▻ Removed magic jewels from yellow/red maps in normal filter. The new vivid jewel divination cards kind of ruin the point of these (Shard of Fate, The Endurance).
+▻ Added droplevel 41+ gloves/boots/helmets to normal filter. Previously this was droplevel 50+. I was having a hard time completing Chaos/Regal recipes fast enough.
 
 2.6.5
-? Fixed a typo that broke the strict filter.
-? Added a new tier of Divination cards. Worthless has been split into a "Nearly Worthless" and "Worthless" categories. No cards were hidden in the normal filter but now the really bad ones are.
-? Removed Anarchy from preferred leaguestones.
+▻ Fixed a typo that broke the strict filter.
+▻ Added a new tier of Divination cards. Worthless has been split into a "Nearly Worthless" and "Worthless" categories. No cards were hidden in the normal filter but now the really bad ones are.
+▻ Removed Anarchy from preferred leaguestones.
 
 2.6.4
-? Added new Divination Cards: Might is Right, The Opulent, Struck by Lightning, Atziri's Arsenal
-? Reduced opacity of worthless divination cards more.
-? Reduced opacity of Leaguestones.
-? Changed sound of Leaguestones.
+▻ Added new Divination Cards: Might is Right, The Opulent, Struck by Lightning, Atziri's Arsenal
+▻ Reduced opacity of worthless divination cards more.
+▻ Reduced opacity of Leaguestones.
+▻ Changed sound of Leaguestones.
 
 2.6.3
-? Increased the size of worthless Divination Cards from 24 (smallest) to 32 (default). Slightly reduced the opacity to compensate.
-? Added Leather Belts (Headhunter, Nemesis League) to chance bases section.
+▻ Increased the size of worthless Divination Cards from 24 (smallest) to 32 (default). Slightly reduced the opacity to compensate.
+▻ Added Leather Belts (Headhunter, Nemesis League) to chance bases section.
 
 2.6.2
-? Changed Leaguestones background color to purple. Added a white highlight to preferred leaguestones.
-? Added uniques: Bismuth Flask, Highborn Staff, Gold Amulet, Raven Mask, Wyrmscale Doublet
-? Modified unique price: Nightmare Bascinet
+▻ Changed Leaguestones background color to purple. Added a white highlight to preferred leaguestones.
+▻ Added uniques: Bismuth Flask, Highborn Staff, Gold Amulet, Raven Mask, Wyrmscale Doublet
+▻ Modified unique price: Nightmare Bascinet
 
 2.6.1
-? Added Leaguestones and Misc Map Item classes to the filter. Removed Breachstones from the filter since they've been renamed.
+▻ Added Leaguestones and Misc Map Item classes to the filter. Removed Breachstones from the filter since they've been renamed.
 
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
 | Breach
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
+
 2.5.11
-? Removed 84+ Armour with a drop level below 50. The Chaos/Regal recipes already did this.
+▻ Removed 84+ Armour with a drop level below 50. The Chaos/Regal recipes already did this.
 
 2.5.10
-? Added Filtration support. You can now tweak the filter using Filtration and FilterBLAST.
-? Added a bunch of SmartBlocks so that users can enable/disable certain filter features. However, this might result in some weird behavior so I recommend only modifying colors/sizes.
-? Reduced the size of error items from 45 to 40. It's more likely that error items are worthless and if they're too big then they'll be extremely distracting.
-? Modified Chisel recipe so that they will only be shown in yellow maps and below in the normal filter.
-? Modified opacity of Divination cards so that different values can be more easily distinguished.
-? Changed the level ranges for certain items in both filters.
+▻ Added Filtration support. You can now tweak the filter using Filtration and FilterBLAST.
+▻ Added a bunch of SmartBlocks so that users can enable/disable certain filter features. However, this might result in some weird behavior so I recommend only modifying colors/sizes.
+▻ Reduced the size of error items from 45 to 40. It's more likely that error items are worthless and if they're too big then they'll be extremely distracting.
+▻ Modified Chisel recipe so that they will only be shown in yellow maps and below in the normal filter.
+▻ Modified opacity of Divination cards so that different values can be more easily distinguished.
+▻ Changed the level ranges for certain items in both filters.
 
 2.5.9
-? Fixed the Crafting Bases and 83+ Rares sections. Saintly Chainmail was being detected as Sai. You can actually see this in the screenshots.
-? Removed the border around Alterations/Chromes in the Strict Filter. I've considered keeping them violet like the standard filter but I don't think they're important enough to loot.
+▻ Fixed the Crafting Bases and 83+ Rares sections. Saintly Chainmail was being detected as Sai. You can actually see this in the screenshots.
+▻ Removed the border around Alterations/Chromes in the Strict Filter. I've considered keeping them violet like the standard filter but I don't think they're important enough to loot.
 
 2.5.8
-? Increased accuracy of colors for certain hidden items.
-? Fixed some of the chance/crafting bases. Ilvl 83+ Wands/daggers/harbingers were popping up everywhere so I made them hidden again in the normal filter. If you want to find these crafting bases then you should tap ALT once in a while to look for them.
-? Reduced the size of some gems.
+▻ Increased accuracy of colors for certain hidden items.
+▻ Fixed some of the chance/crafting bases. Ilvl 83+ Wands/daggers/harbingers were popping up everywhere so I made them hidden again in the normal filter. If you want to find these crafting bases then you should tap ALT once in a while to look for them.
+▻ Reduced the size of some gems.
 
 2.5.7
-? Huge update to the filter. I have fixed most of the bugs resulting from this but there may be more.
-? Price updates for Divination Cards and Uniques based on poe.ninja.
-? Added Breach Blessings and Breachstones to filter. They were already shown but now they're more visible.
-? Removed the chisel recipe from higher tier maps. It's not worth doing.
-? Reduced the size of rares across the board. The screen gets too cluttered with these at times and I don't do Chaos/Regal recipe as much as I used to.
-? Removed the border of rares under ilvl 83/84.
-? Removed non-quality Vaal Reave from gem sounds.
-? Removed non-quality Detonate Mines and Enhance from the Strict Filter.
-? Added a black border around items with a background color. 
-? Added a red border to the new belt/ring/amulet bases.
-? Added a light blue border around Utility flasks.
-? Added leveling items to Strict Filter.
-? Added sound for 10%+ quality gems.
-? Changed sound for 17%+ quality gems. 
-? Errors will be highlighted with a Green border. This includes new Divination Cards.
-? Standardized the order of the filter (TextColor > BorderColor > BackgroundColor > etc).
+▻ Huge update to the filter. I have fixed most of the bugs resulting from this but there may be more.
+▻ Price updates for Divination Cards and Uniques based on poe.ninja.
+▻ Added Breach Blessings and Breachstones to filter. They were already shown but now they're more visible.
+▻ Removed the chisel recipe from higher tier maps. It's not worth doing.
+▻ Reduced the size of rares across the board. The screen gets too cluttered with these at times and I don't do Chaos/Regal recipe as much as I used to.
+▻ Removed the border of rares under ilvl 83/84.
+▻ Removed non-quality Vaal Reave from gem sounds.
+▻ Removed non-quality Detonate Mines and Enhance from the Strict Filter.
+▻ Added a black border around items with a background color. 
+▻ Added a red border to the new belt/ring/amulet bases.
+▻ Added a light blue border around Utility flasks.
+▻ Added leveling items to Strict Filter.
+▻ Added sound for 10%+ quality gems.
+▻ Changed sound for 17%+ quality gems. 
+▻ Errors will be highlighted with a Green border. This includes new Divination Cards.
+▻ Standardized the order of the filter (TextColor > BorderColor > BackgroundColor > etc).
 
 2.5.6
-? Removed A Mother's Parting Gift Divinination Card from worthless section since it's valuable now.
-? Added leveling flasks into the Strict Filter. Leveling rares are still not included the strict filter but I did consider adding them.
-? Removed some worthless crafting bases from the Strict Filter. (Sacrificial Garb, Marble Amulet, Blue Pearl Amulet, Vanguard Belt)
-? Added loud sound to Opal Rings just like Steel Rings and Crystal Belts.
+▻ Removed A Mother's Parting Gift Divinination Card from worthless section since it's valuable now.
+▻ Added leveling flasks into the Strict Filter. Leveling rares are still not included the strict filter but I did consider adding them.
+▻ Removed some worthless crafting bases from the Strict Filter. (Sacrificial Garb, Marble Amulet, Blue Pearl Amulet, Vanguard Belt)
+▻ Added loud sound to Opal Rings just like Steel Rings and Crystal Belts.
 
 2.5.5
-? White maps are now hidden in red maps (78+) in the Strict Filter. They also no longer make noise in the normal filter.
-? Reduced the size of some crafting bases.
+▻ White maps are now hidden in red maps (78+) in the Strict Filter. They also no longer make noise in the normal filter.
+▻ Reduced the size of some crafting bases.
 
 2.5.4
-? Added more crafting bases. Steel Ring, Opal Ring, Marble Amulet, Blue Pearl Amulet, Vanguard Belt. All of the Steel Rings I've missed...
-? Added sound for Crystal Belt, Steel Ring.
-? Changed Vaal Gems so that only valuable ones make sounds.
+▻ Added more crafting bases. Steel Ring, Opal Ring, Marble Amulet, Blue Pearl Amulet, Vanguard Belt. All of the Steel Rings I've missed...
+▻ Added sound for Crystal Belt, Steel Ring.
+▻ Changed Vaal Gems so that only valuable ones make sounds.
 
 2.5.3
-? Modified a few Divination card and Unique prices.
+▻ Modified a few Divination card and Unique prices.
 
 2.5.2
-? Modified Divination cards section again.
-? Fixed a bug where I was hiding worthless cards in the normal filter due to a copy paste.
+▻ Modified Divination cards section again.
+▻ Fixed a bug where I was hiding worthless cards in the normal filter due to a copy paste.
 
 2.5.1
-? Minor changes to currency text. (Essences, Sextants, low tier currency)
-? Added many uniques to list from 2.3 to 2.5.
-? Added a few Divination cards to list. 
-? Added/moved some Divination cards to the worthless list.
-? Worthless Divination cards are now hidden in the Strict Filter.
-? Magic/blue jewels are now hidden in the Strict Filter.
-? Blacksmith Whetstones have been moved down in currency tier. Glassblower Baubles have been moved up in the Strict Filter.
+▻ Minor changes to currency text. (Essences, Sextants, low tier currency)
+▻ Added many uniques to list from 2.3 to 2.5.
+▻ Added a few Divination cards to list. 
+▻ Added/moved some Divination cards to the worthless list.
+▻ Worthless Divination cards are now hidden in the Strict Filter.
+▻ Magic/blue jewels are now hidden in the Strict Filter.
+▻ Blacksmith Whetstones have been moved down in currency tier. Glassblower Baubles have been moved up in the Strict Filter.
 
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
 | Essence
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
+
 2.4.8
-? Added Citadel Bow (Xoph's Inception) to unique list.
-? Added Corrupted essences to list: Delirium, Hysteria, Horror, Insanity.
-? Enlarged the 2.4 boots/gloves/helmets to largest size.
-? Added the 2.4 boots/gloves/helmets to 84+ crafting bases.
-? Reduced the size of chisel recipe (gavels/etc).
-? Swapped Enlighten/Enhance in the gems list. I meant to put Enhance in the worthless gem drops.
+▻ Added Citadel Bow (Xoph's Inception) to unique list.
+▻ Added Corrupted essences to list: Delirium, Hysteria, Horror, Insanity.
+▻ Enlarged the 2.4 boots/gloves/helmets to largest size.
+▻ Added the 2.4 boots/gloves/helmets to 84+ crafting bases.
+▻ Reduced the size of chisel recipe (gavels/etc).
+▻ Swapped Enlighten/Enhance in the gems list. I meant to put Enhance in the worthless gem drops.
 
 2.4.7
-? Added 83+ items back to solo filter. Accidentally removed these.
-? Added grey background to top tier blue 83+ bases again.
+▻ Added 83+ items back to solo filter. Accidentally removed these.
+▻ Added grey background to top tier blue 83+ bases again.
 
 2.4.6
-? Standardized font sizes to what I had in the header. (24, 32, 36, 40, 45) 
+▻ Standardized font sizes to what I had in the header. (24, 32, 36, 40, 45) 
 There were too many pointless font sizes.
-? Added Crystal Belt to crafting bases.
-? All 83+ crafting base blues/whites are now hidden. They can be seen while holding ALT, and are still larger and easily distinguished.
-? Reduced the size of most T1 rares. Astral Plate, Vaal Regalia, Harbinger Bow are still large.
-? Enlarged the new 2.4 boots/gloves/helmets. (Two-Toned Boots, Spiked/Gripped/Fingerless Gloves, Bone Helmet)
-? Minor fixes to Divination/Unique prices.
+▻ Added Crystal Belt to crafting bases.
+▻ All 83+ crafting base blues/whites are now hidden. They can be seen while holding ALT, and are still larger and easily distinguished.
+▻ Reduced the size of most T1 rares. Astral Plate, Vaal Regalia, Harbinger Bow are still large.
+▻ Enlarged the new 2.4 boots/gloves/helmets. (Two-Toned Boots, Spiked/Gripped/Fingerless Gloves, Bone Helmet)
+▻ Minor fixes to Divination/Unique prices.
 
 2.4.5
-? T6 Maps are now yellow.
-? Enlighten is now part of the worthless drop only gems like Detonate Mines.
-? Added the valuable Essence uniques to the filter (22 total). Uniques that are Shaper only that share a common worthless unique are not highlighted. Always check the value of your uniques.
-? Added the valuable Essence Divination cards to the filter (4 total).
+▻ T6 Maps are now yellow.
+▻ Enlighten is now part of the worthless drop only gems like Detonate Mines.
+▻ Added the valuable Essence uniques to the filter (22 total). Uniques that are Shaper only that share a common worthless unique are not highlighted. Always check the value of your uniques.
+▻ Added the valuable Essence Divination cards to the filter (4 total).
 
 2.4.4
-? Added a border for T3+ essences to distinguish them from lower tiers.
-? Changed Labyrinth items to be green text.
-? Minor changes such as text sizes.
+▻ Added a border for T3+ essences to distinguish them from lower tiers.
+▻ Changed Labyrinth items to be green text.
+▻ Minor changes such as text sizes.
 
 2.4.3
-? Fixed T1 maps so they aren't labeled as errors (green). Maps can now drop in level 59+? zones. This was 68+ in patch 2.3. There may be errors in future because of this change, sadly.
+▻ Fixed T1 maps so they aren't labeled as errors (green). Maps can now drop in level 59+▻ zones. This was 68+ in patch 2.3. There may be errors in future because of this change, sadly.
 
 2.4.2
-? Removed white leather belts (Headhunter) from the chance bases section.
+▻ Removed white leather belts (Headhunter) from the chance bases section.
 
 2.4.1
-? Overhauled the map section to use DropLevel instead of names of maps reducing the code substantially. Colors for shaped maps may be changed in the future.
+▻ Overhauled the map section to use DropLevel instead of names of maps reducing the code substantially. Colors for shaped maps may be changed in the future.
 
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
 | Prophecy
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
+
 2.3.3
-? Changed Labyrinth item color to green (same as quest items) and enlarged them.
-? Made Fishing Poles and Rhoa Feathers more opaque.
+▻ Changed Labyrinth item color to green (same as quest items) and enlarged them.
+▻ Made Fishing Poles and Rhoa Feathers more opaque.
 
 2.3.2
-? Organized white/blue and crafting sections so that they don't interfere with each other.
-? Removed most rare items and white/blue items from the Group Filter. I am considering reducing the text size instead but you can hold ALT to show them for now.
+▻ Organized white/blue and crafting sections so that they don't interfere with each other.
+▻ Removed most rare items and white/blue items from the Group Filter. I am considering reducing the text size instead but you can hold ALT to show them for now.
 
 2.3.1
-? Added Offering to the Goddess and created Labyrinth items section.
-? Added Vaal Temple and Plaza Maps.
+▻ Added Offering to the Goddess and created Labyrinth items section.
+▻ Added Vaal Temple and Plaza Maps.
 
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
 | Perandus
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
 Character limit exceeded
 
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
 | Talisman
----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------
 Character limit exceeded

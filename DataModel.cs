@@ -38,7 +38,7 @@ namespace PoE_Price_Lister
 		// https://api.poe.watch/compact?league=Metamorph&category=armour
 
 		////private const string csvFile = "poe_uniques.csv";
-		private const string league = "Metamorph";
+		private const string league = "Delirium";
 
 		private const string repoURL = @"https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/";
 		public const string FiltersUrl = repoURL + @"Resources/Filters/";

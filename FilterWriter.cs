@@ -74,17 +74,17 @@ namespace PoE_Price_Lister
 	SetBackgroundColor 50 25 12 # Unique
 	SetBorderColor 180 90 45 # Unique (<3c)
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Brown Square
-	PlayEffect Brown";
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Orange";
 
 		private const string styleUniqueIconSound =
 @"	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Brown Square
-	PlayEffect Brown";
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Orange";
 
 		private const string styleUniqueIcon =
-@"	MinimapIcon 0 Brown Square
-	PlayEffect Brown
+@"	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Orange
 	DisableDropSound";
 
 		private const string loreweaveStr =
@@ -99,7 +99,7 @@ Show  # Uniques - <3c - Unique Rings
 	SetBackgroundColor 255 255 255 255 # Unique (15c+)
 	SetBorderColor 255 128 64 # Unique (15c+)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Square
+	MinimapIcon 0 Red UpsideDownHouse
 	PlayEffect Red";
 
 		private const string style5to15c =
@@ -108,8 +108,8 @@ Show  # Uniques - <3c - Unique Rings
 	SetBackgroundColor 50 25 12 # Unique
 	SetBorderColor 255 255 255 # Unique (5-15c)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Brown Square
-	PlayEffect Brown";
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Orange";
 
 		private const string style3c =
 @"	SetFontSize 40
@@ -117,8 +117,8 @@ Show  # Uniques - <3c - Unique Rings
 	SetBackgroundColor 50 25 12 # Unique
 	SetBorderColor 255 255 0 # Unique (3-5c)
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Brown Square
-	PlayEffect Brown";
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Orange";
 
 		private const string styleLimited =
 @"	SetFontSize 40
@@ -140,7 +140,7 @@ Show  # Uniques - <3c - Unique Rings
 	SetBackgroundColor 255 255 255 255 # Divination Card (10c+)
 	SetBorderColor 255 0 175 # Divination Card (10c+)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Triangle
+	MinimapIcon 0 Red Square
 	PlayEffect Red";
 
 		private const string styleDiv2c =
@@ -149,8 +149,8 @@ Show  # Uniques - <3c - Unique Rings
 	SetBackgroundColor 255 0 175 255 # Divination Card (2-10c)
 	SetBorderColor 255 255 255 # Divination Card (2-10c)
 	PlayAlertSound 5 200 # Divination Card (2-10c)
-	MinimapIcon 0 Brown Triangle 
-	PlayEffect Brown";
+	MinimapIcon 0 Pink Square 
+	PlayEffect Pink";
 
 		private const string styleDivLess2cShow =
 @"	SetFontSize 40 
@@ -158,8 +158,8 @@ Show  # Uniques - <3c - Unique Rings
 	SetBackgroundColor 255 0 175 230 # Divination Card (<2c)
 	SetBorderColor 150 30 100 # Divination Card (<2c)
 	PlayAlertSound 5 100 # Divination Card (<2c)
-	MinimapIcon 0 Brown Triangle 
-	PlayEffect Brown";
+	MinimapIcon 0 Pink Square 
+	PlayEffect Pink";
 
 		private const string styleDivLess2cHide =
 @"	SetFontSize 40 
@@ -189,8 +189,8 @@ Show  # Uniques - <3c - Unique Rings
 	SetBackgroundColor 255 0 175 255 # Divination Card (2c+)
 	SetBorderColor 0 255 0 # Error
 	PlayAlertSound 5 200 # Divination Card (2c+)
-	MinimapIcon 0 White Triangle
-	PlayEffect White";
+	MinimapIcon 0 Pink Square
+	PlayEffect Pink";
 
 		private readonly DataModel Model;
 		private readonly IReadOnlyList<string> DivinationCards;
@@ -523,7 +523,7 @@ Show  # Uniques - <3c - Unique Rings
 	SetBackgroundColor 255 255 255 255 # Unique (15c+)
 	SetBorderColor 255 128 64 # Unique (15c+)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Square
+	MinimapIcon 0 Red UpsideDownHouse
 	PlayEffect Red";
 
 			string enchStyleRare20 =
@@ -532,7 +532,7 @@ Show  # Uniques - <3c - Unique Rings
 	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
 	SetBorderColor 0 255 255 # Crafting Base (High)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Square
+	MinimapIcon 0 Red UpsideDownHouse
 	PlayEffect Red";
 
 			string enchStyle10 =
@@ -540,7 +540,7 @@ Show  # Uniques - <3c - Unique Rings
 	SetBackgroundColor 40 40 40 # Crafting Base (Explicit)
 	SetBorderColor 25 65 175 # Crafting Base (Explicit)
 	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Blue Square
+	MinimapIcon 0 Blue UpsideDownHouse
 	PlayEffect Blue";
 
 			if (list20c.Count > 0) {
