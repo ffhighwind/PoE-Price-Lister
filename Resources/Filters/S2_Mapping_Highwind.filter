@@ -2287,7 +2287,7 @@ Hide  # 60+ Rares - Low Drop Level - 60+ Two Hand Weapons
 # Rare (Shaper/Elder) #
 #---------------------#
 
-Show  # Shaper Rares - Accessories - 84+
+Show  # Shaper Elder Rares - Accessories - 84+
 	HasInfluence Shaper Elder
 	Class Belts Amulets Rings
 	Rarity = Rare
@@ -2299,7 +2299,7 @@ Show  # Shaper Rares - Accessories - 84+
 	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Green
 
-Show  # Shaper Rares - Accessories - 60+
+Show  # Shaper Elder Rares - Accessories - 60+
 	HasInfluence Shaper Elder
 	Class Belts Amulets Rings
 	Rarity = Rare
@@ -2307,7 +2307,7 @@ Show  # Shaper Rares - Accessories - 60+
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 220 0 0 # Rare Accessory
 
-Show  # Shaper Rares - 84+ - Low Drop Level
+Show  # Shaper Elder Rares - 84+ - Low Drop Level
 	HasInfluence Shaper Elder
 	Rarity = Rare
 	ItemLevel >= 84
@@ -2316,7 +2316,7 @@ Show  # Shaper Rares - 84+ - Low Drop Level
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 0 0 0 # Rare Recipe 60+
 
-Show  # Shaper Rares - 84+ - High Drop Level
+Show  # Shaper Elder Rares - 84+ - High Drop Level
 	HasInfluence Shaper Elder
 	Rarity = Rare
 	ItemLevel >= 84
@@ -2324,7 +2324,7 @@ Show  # Shaper Rares - 84+ - High Drop Level
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 200 50 255 # Shaper Elder 83+
 
-Show  # Shaper Rares - 60+ - Low Drop Level
+Show  # Shaper Elder Rares - 60+ - Low Drop Level
 	HasInfluence Shaper Elder
 	Rarity = Rare
 	DropLevel < 58
@@ -2332,7 +2332,7 @@ Show  # Shaper Rares - 60+ - Low Drop Level
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 0 0 0 # Shaper Elder
 
-Show  # Shaper Rares - 60+ - High Drop Level
+Show  # Shaper Elder Rares - 60+ - High Drop Level
 	HasInfluence Shaper Elder
 	Rarity = Rare
 	SetFontSize 36
@@ -5777,6 +5777,3 @@ Show  # Errors - Other
 	PlayAlertSound 8 200 # Error
 	MinimapIcon 0 White UpsideDownHouse
 	PlayEffect White
-
-
-

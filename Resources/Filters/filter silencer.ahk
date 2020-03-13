@@ -33,7 +33,7 @@ GenerateFilter(filein)
     }
     fileLines := StrSplit(file_text, "`n")   
     state := 0
-    Loop, % fileLines.MaxIndex()
+    Loop, % (fileLines.MaxIndex() - 1)
     {
         fileLine := fileLines[A_Index]
         if (state == 0) 

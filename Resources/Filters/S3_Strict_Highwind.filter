@@ -5792,6 +5792,3 @@ Show  # Errors - Other
 	PlayAlertSound 8 200 # Error
 	MinimapIcon 0 White UpsideDownHouse
 	PlayEffect White
-
-
-
