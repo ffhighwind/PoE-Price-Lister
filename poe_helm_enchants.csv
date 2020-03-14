@@ -33,15 +33,15 @@ Enchantment Arc Damage 1,Merciless Labyrinth,25% increased Arc Damage,Arc
 Enchantment Arc Damage 2,Eternal Labyrinth,40% increased Arc Damage,Arc
 Enchantment Arc Damage Per Chain 1,Merciless Labyrinth,Arc deals 8% increased Damage for each time it has Chained,Arc
 Enchantment Arc Damage Per Chain 2,Eternal Labyrinth,Arc deals 12% increased Damage for each time it has Chained,Arc
-Enchantment Arc Num Of Additional Projectiles In Chain 1,Eternal Labyrinth,Arc Chains an additional time,Arc
-Enchantment Arc Shock Chance 1,Merciless Labyrinth,Arc has +20% chance to Shock,Arc
-Enchantment Arc Shock Chance 2,Eternal Labyrinth,Arc has +30% chance to Shock,Arc
-Enchantment Arctic Armour Buff Effect 1,Merciless Labyrinth,24% increased Arctic Armour Buff Effect,Arctic Armour
-Enchantment Arctic Armour Buff Effect 2,Eternal Labyrinth,36% increased Arctic Armour Buff Effect,Arctic Armour
-Enchantment Arctic Armour Mana Reservation 1,Merciless Labyrinth,Arctic Armour has 20% reduced Mana Reservation,Arctic Armour
-Enchantment Arctic Armour Mana Reservation 2,Eternal Labyrinth,Arctic Armour has 30% reduced Mana Reservation,Arctic Armour
-Enchantment Arctic Breath Area Of Effect 1,Merciless Labyrinth,16% increased Arctic Breath Area of Effect,Arctic Breath
-Enchantment Arctic Breath Area Of Effect 2,Eternal Labyrinth,24% increased Arctic Breath Area of Effect,Arctic Breath
+Enchantment Arc Num Of Additional Projectiles In Chain 1,Merciless Labyrinth,Arc Chains an additional time,Arc
+Enchantment Arc Shock Chance 1,Eternal Labyrinth,Arc has +20% chance to Shock,Arc
+Enchantment Arc Shock Chance 2,Merciless Labyrinth,Arc has +30% chance to Shock,Arc
+Enchantment Arctic Armour Buff Effect 1,Eternal Labyrinth,24% increased Arctic Armour Buff Effect,Arctic Armour
+Enchantment Arctic Armour Buff Effect 2,Merciless Labyrinth,36% increased Arctic Armour Buff Effect,Arctic Armour
+Enchantment Arctic Armour Mana Reservation 1,Eternal Labyrinth,Arctic Armour has 20% reduced Mana Reservation,Arctic Armour
+Enchantment Arctic Armour Mana Reservation 2,Merciless Labyrinth,Arctic Armour has 30% reduced Mana Reservation,Arctic Armour
+Enchantment Arctic Breath Area Of Effect 1,Eternal Labyrinth,16% increased Arctic Breath Area of Effect,Arctic Breath
+Enchantment Arctic Breath Area Of Effect 2,Merciless Labyrinth,24% increased Arctic Breath Area of Effect,Arctic Breath
 Enchantment Arctic Breath Chilling Area Movement Velocity 1,Eternal Labyrinth,Arctic Breath's Chilling Area has 38% increased Movement Speed,Arctic Breath
 Enchantment Arctic Breath Damage 1,Merciless Labyrinth,25% increased Arctic Breath Damage,Arctic Breath
 Enchantment Arctic Breath Damage 2,Eternal Labyrinth,40% increased Arctic Breath Damage,Arctic Breath
@@ -55,13 +55,13 @@ Enchantment Armageddon Brand Damage 1,Merciless Labyrinth,Armageddon Brand deals
 Enchantment Armageddon Brand Damage 2,Eternal Labyrinth,Armageddon Brand deals 40% increased Damage,Armageddon Brand
 Enchantment Artillery Ballista Additional Arrows 1,Merciless Labyrinth,Artillery Ballista fires an additional Arrow,Artillery Ballista
 Enchantment Artillery Ballista Additional Arrows 2,Eternal Labyrinth,Artillery Ballista fires 2 additional Arrows,Artillery Ballista
-Enchantment Artillery Ballista Cross Pattern 1,Eternal Labyrinth,Artillery Ballista Projectiles fall in two perpendicular lines instead,Artillery Ballista
-Enchantment Artillery Ballista Fire Penetration 1,Merciless Labyrinth,Artillery Ballista Damage Penetrates 6% Fire Resistance,Artillery Ballista
-Enchantment Artillery Ballista Fire Penetration 2,Eternal Labyrinth,Artillery Ballista Damage Penetrates 10% Fire Resistance,Artillery Ballista
-Enchantment Assassins Mark Curse Effect 1,Merciless Labyrinth,20% increased Assassin's Mark Curse Effect,Assassin's Mark
-Enchantment Assassins Mark Curse Effect 2,Eternal Labyrinth,30% increased Assassin's Mark Curse Effect,Assassin's Mark
-Enchantment Assassins Mark Duration 1,Merciless Labyrinth,30% increased Assassin's Mark Duration,Assassin's Mark
-Enchantment Assassins Mark Duration 2,Eternal Labyrinth,45% increased Assassin's Mark Duration,Assassin's Mark
+Enchantment Artillery Ballista Cross Pattern 1,Merciless Labyrinth,Artillery Ballista Projectiles fall in two perpendicular lines instead,Artillery Ballista
+Enchantment Artillery Ballista Fire Penetration 1,Eternal Labyrinth,Artillery Ballista Damage Penetrates 6% Fire Resistance,Artillery Ballista
+Enchantment Artillery Ballista Fire Penetration 2,Merciless Labyrinth,Artillery Ballista Damage Penetrates 10% Fire Resistance,Artillery Ballista
+Enchantment Assassins Mark Curse Effect 1,Eternal Labyrinth,20% increased Assassin's Mark Curse Effect,Assassin's Mark
+Enchantment Assassins Mark Curse Effect 2,Merciless Labyrinth,30% increased Assassin's Mark Curse Effect,Assassin's Mark
+Enchantment Assassins Mark Duration 1,Eternal Labyrinth,30% increased Assassin's Mark Duration,Assassin's Mark
+Enchantment Assassins Mark Duration 2,Merciless Labyrinth,45% increased Assassin's Mark Duration,Assassin's Mark
 Enchantment Ball Lightning Additional Projectiles 1,Eternal Labyrinth,Ball Lightning fires an additional Projectile,Ball Lightning
 Enchantment Ball Lightning Area Of Effect 1,Merciless Labyrinth,16% increased Ball Lightning Area of Effect,Ball Lightning
 Enchantment Ball Lightning Area Of Effect 2,Eternal Labyrinth,24% increased Ball Lightning Area of Effect,Ball Lightning
@@ -77,31 +77,31 @@ Enchantment Barrage Attack Speed 1,Merciless Labyrinth,10% increased Barrage Att
 Enchantment Barrage Attack Speed 2,Eternal Labyrinth,15% increased Barrage Attack Speed,Barrage
 Enchantment Barrage Damage 1,Merciless Labyrinth,25% increased Barrage Damage,Barrage
 Enchantment Barrage Damage 2,Eternal Labyrinth,40% increased Barrage Damage,Barrage
-Enchantment Barrage Num Of Additional Projectiles 1,Eternal Labyrinth,Barrage fires an additional Projectile,Barrage
-Enchantment Bear Trap Cooldown Speed 1,Merciless Labyrinth,10% increased Bear Trap Cooldown Recovery Speed,Bear Trap
-Enchantment Bear Trap Cooldown Speed 2,Eternal Labyrinth,15% increased Bear Trap Cooldown Recovery Speed,Bear Trap
-Enchantment Bear Trap Damage 1,Merciless Labyrinth,25% increased Bear Trap Damage,Bear Trap
-Enchantment Bear Trap Damage 2,Eternal Labyrinth,40% increased Bear Trap Damage,Bear Trap
-Enchantment Bear Trap Damage Taken 1,Merciless Labyrinth,Enemies affected by Bear Trap take 5% increased Damage from Trap or Mine Hits,Bear Trap
-Enchantment Bear Trap Damage Taken 2,Eternal Labyrinth,Enemies affected by Bear Trap take 10% increased Damage from Trap or Mine Hits,Bear Trap
-Enchantment Berserk Effect 1,Merciless Labyrinth,Berserk has 20% increased Buff Effect,Berserk
-Enchantment Berserk Effect 2,Eternal Labyrinth,Berserk has 30% increased Buff Effect,Berserk
+Enchantment Barrage Num Of Additional Projectiles 1,Merciless Labyrinth,Barrage fires an additional Projectile,Barrage
+Enchantment Bear Trap Cooldown Speed 1,Eternal Labyrinth,10% increased Bear Trap Cooldown Recovery Speed,Bear Trap
+Enchantment Bear Trap Cooldown Speed 2,Merciless Labyrinth,15% increased Bear Trap Cooldown Recovery Speed,Bear Trap
+Enchantment Bear Trap Damage 1,Eternal Labyrinth,25% increased Bear Trap Damage,Bear Trap
+Enchantment Bear Trap Damage 2,Merciless Labyrinth,40% increased Bear Trap Damage,Bear Trap
+Enchantment Bear Trap Damage Taken 1,Eternal Labyrinth,Enemies affected by Bear Trap take 5% increased Damage from Trap or Mine Hits,Bear Trap
+Enchantment Bear Trap Damage Taken 2,Merciless Labyrinth,Enemies affected by Bear Trap take 10% increased Damage from Trap or Mine Hits,Bear Trap
+Enchantment Berserk Effect 1,Eternal Labyrinth,Berserk has 20% increased Buff Effect,Berserk
+Enchantment Berserk Effect 2,Merciless Labyrinth,Berserk has 30% increased Buff Effect,Berserk
 Enchantment Berserk Rage Loss 2,Eternal Labyrinth,Berserk has 40% reduced Rage loss per second,Berserk
 Enchantment Berserk Rage Loss 1,Merciless Labyrinth,Berserk has 25% reduced Rage loss per second,Beserk
-Enchantment Blade Flurry Area Of Effect 1,Merciless Labyrinth,16% increased Blade Flurry Area of Effect,Blade Flurry
-Enchantment Blade Flurry Area Of Effect 2,Eternal Labyrinth,24% increased Blade Flurry Area of Effect,Blade Flurry
-Enchantment Blade Flurry Damage 1,Merciless Labyrinth,25% increased Blade Flurry Damage,Blade Flurry
-Enchantment Blade Flurry Damage 2,Eternal Labyrinth,40% increased Blade Flurry Damage,Blade Flurry
-Enchantment Blade Flurry Dodge Per Stack 1,Merciless Labyrinth,6% chance to Dodge Attack Hits while at maximum Blade Flurry stages,Blade Flurry
-Enchantment Blade Flurry Dodge Per Stack 2,Eternal Labyrinth,9% chance to Dodge Attack Hits while at maximum Blade Flurry stages,Blade Flurry
-Enchantment Blade Vortex Area Of Effect 1,Merciless Labyrinth,16% increased Blade Vortex Area of Effect,Blade Vortex
-Enchantment Blade Vortex Area Of Effect 2,Eternal Labyrinth,24% increased Blade Vortex Area of Effect,Blade Vortex
-Enchantment Blade Vortex Crit Multi Per Blade 1,Merciless Labyrinth,Blade Vortex has +2% to Critical Strike Multiplier for each blade,Blade Vortex
-Enchantment Blade Vortex Crit Multi Per Blade 2,Eternal Labyrinth,Blade Vortex has +3% to Critical Strike Multiplier for each blade,Blade Vortex
-Enchantment Blade Vortex Damage 1,Merciless Labyrinth,25% increased Blade Vortex Spell Damage,Blade Vortex
-Enchantment Blade Vortex Damage 2,Eternal Labyrinth,40% increased Blade Vortex Spell Damage,Blade Vortex
-Enchantment Blade Vortex Duration 1,Merciless Labyrinth,20% increased Blade Vortex Duration,Blade Vortex
-Enchantment Blade Vortex Duration 2,Eternal Labyrinth,30% increased Blade Vortex Duration,Blade Vortex
+Enchantment Blade Flurry Area Of Effect 1,Eternal Labyrinth,16% increased Blade Flurry Area of Effect,Blade Flurry
+Enchantment Blade Flurry Area Of Effect 2,Merciless Labyrinth,24% increased Blade Flurry Area of Effect,Blade Flurry
+Enchantment Blade Flurry Damage 1,Eternal Labyrinth,25% increased Blade Flurry Damage,Blade Flurry
+Enchantment Blade Flurry Damage 2,Merciless Labyrinth,40% increased Blade Flurry Damage,Blade Flurry
+Enchantment Blade Flurry Dodge Per Stack 1,Eternal Labyrinth,6% chance to Dodge Attack Hits while at maximum Blade Flurry stages,Blade Flurry
+Enchantment Blade Flurry Dodge Per Stack 2,Merciless Labyrinth,9% chance to Dodge Attack Hits while at maximum Blade Flurry stages,Blade Flurry
+Enchantment Blade Vortex Area Of Effect 1,Eternal Labyrinth,16% increased Blade Vortex Area of Effect,Blade Vortex
+Enchantment Blade Vortex Area Of Effect 2,Merciless Labyrinth,24% increased Blade Vortex Area of Effect,Blade Vortex
+Enchantment Blade Vortex Crit Multi Per Blade 1,Eternal Labyrinth,Blade Vortex has +2% to Critical Strike Multiplier for each blade,Blade Vortex
+Enchantment Blade Vortex Crit Multi Per Blade 2,Merciless Labyrinth,Blade Vortex has +3% to Critical Strike Multiplier for each blade,Blade Vortex
+Enchantment Blade Vortex Damage 1,Eternal Labyrinth,25% increased Blade Vortex Spell Damage,Blade Vortex
+Enchantment Blade Vortex Damage 2,Merciless Labyrinth,40% increased Blade Vortex Spell Damage,Blade Vortex
+Enchantment Blade Vortex Duration 1,Eternal Labyrinth,20% increased Blade Vortex Duration,Blade Vortex
+Enchantment Blade Vortex Duration 2,Merciless Labyrinth,30% increased Blade Vortex Duration,Blade Vortex
 Enchantment Bladefall Additional Volley,Eternal Labyrinth,Bladefall has an additional Volley,Bladefall
 Enchantment Bladefall Area Of Effect 1,Merciless Labyrinth,16% increased Bladefall Area of Effect,Bladefall
 Enchantment Bladefall Area Of Effect 2,Eternal Labyrinth,24% increased Bladefall Area of Effect,Bladefall
@@ -111,9 +111,9 @@ Enchantment Bladefall Damage 1,Merciless Labyrinth,25% increased Bladefall Damag
 Enchantment Bladefall Damage 2,Eternal Labyrinth,40% increased Bladefall Damage,Bladefall
 Enchantment Bladestorm Damage 1,Merciless Labyrinth,Bladestorm deals 25% increased Damage,Bladestorm
 Enchantment Bladestorm Damage 2,Eternal Labyrinth,Bladestorm deals 40% increased Damage,Bladestorm
-Enchantment Bladestorm Maximum Number Of Storms Allowed 1,Eternal Labyrinth,+1 to maximum number of Bladestorms,Bladestorm
-Enchantment Bladestorm Sandstorm Speed 1,Merciless Labyrinth,Sand Bladestorms move with 50% increased speed,Bladestorm
-Enchantment Bladestorm Sandstorm Speed 2,Eternal Labyrinth,Sand Bladestorms move with 75% increased speed,Bladestorm
+Enchantment Bladestorm Maximum Number Of Storms Allowed 1,Merciless Labyrinth,+1 to maximum number of Bladestorms,Bladestorm
+Enchantment Bladestorm Sandstorm Speed 1,Eternal Labyrinth,Sand Bladestorms move with 50% increased speed,Bladestorm
+Enchantment Bladestorm Sandstorm Speed 2,Merciless Labyrinth,Sand Bladestorms move with 75% increased speed,Bladestorm
 Enchantment Blast Rain Additional Blast 2,Eternal Labyrinth,Blast Rain fires an additional Arrow,Blast Rain
 Enchantment Blast Rain Area Of Effect 1,Merciless Labyrinth,Blast Rain has 16% increased Area of Effect,Blast Rain
 Enchantment Blast Rain Area Of Effect 2,Eternal Labyrinth,Blast Rain has 24% increased Area of Effect,Blast Rain
@@ -161,67 +161,67 @@ Enchantment Caustic Arrow Duration 1,Merciless Labyrinth,20% increased Caustic A
 Enchantment Caustic Arrow Duration 2,Eternal Labyrinth,30% increased Caustic Arrow Duration,Caustic Arrow
 Enchantment Caustic Arrow Wither On Hit 1,Merciless Labyrinth,Caustic Arrow has 14% chance to inflict Withered on Hit for 2 seconds base Duration,Caustic Arrow
 Enchantment Caustic Arrow Wither On Hit 2,Eternal Labyrinth,Caustic Arrow has 20% chance to inflict Withered on Hit for 2 seconds base Duration,Caustic Arrow
-Enchantment Chain Hook Cone Radius Per 12 Rage 1,Eternal Labyrinth,Chain Hook has +1 Radius per 12 Rage,Chain Hook
-Enchantment Chain Hook Damage 1,Merciless Labyrinth,Chain Hook deals 25% increased Damage,Chain Hook
-Enchantment Chain Hook Damage 2,Eternal Labyrinth,Chain Hook deals 40% increased Damage,Chain Hook
-Enchantment Chain Hook Gain Rage On Hit Chance 1,Merciless Labyrinth,Chain Hook has a 25% chance to grant +1 Rage if it Hits Enemies,Chain Hook
-Enchantment Chain Hook Gain Rage On Hit Chance 2,Eternal Labyrinth,Chain Hook has a 40% chance to grant +1 Rage if it Hits Enemies,Chain Hook
-Enchantment Charged Dash Damage 1,Merciless Labyrinth,25% increased Charged Dash Damage,Charged Dash
-Enchantment Charged Dash Damage 2,Eternal Labyrinth,40% increased Charged Dash Damage,Charged Dash
-Enchantment Charged Dash Dodge When Finished Channelling 1,Merciless Labyrinth,4% chance to Dodge Attack Hits if you have finished Channelling Charged Dash Recently,Charged Dash
-Enchantment Charged Dash Dodge When Finished Channelling 2,Eternal Labyrinth,6% chance to Dodge Attack Hits if you have finished Channelling Charged Dash Recently,Charged Dash
-Enchantment Charged Dash Movement Speed 1,Merciless Labyrinth,Charged Dash has 10% more Movement Speed,Charged Dash
-Enchantment Charged Dash Movement Speed 2,Eternal Labyrinth,Charged Dash has 15% more Movement Speed,Charged Dash
-Enchantment Charged Dash Radius Final Explosion 1,Merciless Labyrinth,Charged Dash has +4 to Radius of each Wave's last damage Area,Charged Dash
-Enchantment Charged Dash Radius Final Explosion 2,Eternal Labyrinth,Charged Dash has +6 to Radius of each Wave's last damage Area,Charged Dash
-Enchantment Clarity Mana Reservation 1,Merciless Labyrinth,Clarity has 20% reduced Mana Reservation,Clarity
-Enchantment Clarity Mana Reservation 2,Eternal Labyrinth,Clarity has 30% reduced Mana Reservation,Clarity
-Enchantment Cleave Area Of Effect 1,Merciless Labyrinth,16% increased Cleave Area of Effect,Cleave
-Enchantment Cleave Area Of Effect 2,Eternal Labyrinth,24% increased Cleave Area of Effect,Cleave
-Enchantment Cleave Attack Speed 1,Merciless Labyrinth,10% increased Cleave Attack Speed,Cleave
-Enchantment Cleave Attack Speed 2,Eternal Labyrinth,15% increased Cleave Attack Speed,Cleave
-Enchantment Cleave Damage 1,Merciless Labyrinth,25% increased Cleave Damage,Cleave
-Enchantment Cleave Damage 2,Eternal Labyrinth,40% increased Cleave Damage,Cleave
-Enchantment Cobra Lash Damage 1,Merciless Labyrinth,Cobra Lash deals 25% increased Damage,Cobra Lash
-Enchantment Cobra Lash Damage 2,Eternal Labyrinth,Cobra Lash deals 40% increased Damage,Cobra Lash
-Enchantment Cobra Lash Number Of Additional Chains 1,Merciless Labyrinth,Cobra Lash Chains 2 additional times,Cobra Lash
-Enchantment Cobra Lash Number Of Additional Chains 2,Eternal Labyrinth,Cobra Lash Chains 3 additional times,Cobra Lash
-Enchantment Cobra Lash Projectile Speed 1,Merciless Labyrinth,Cobra Lash has 20% increased Projectile Speed,Cobra Lash
-Enchantment Cobra Lash Projectile Speed 2,Eternal Labyrinth,Cobra Lash has 30% increased Projectile Speed,Cobra Lash
-Enchantment Cold Snap Area Of Effect 1,Merciless Labyrinth,16% increased Cold Snap Area of Effect,Cold Snap
-Enchantment Cold Snap Area Of Effect 2,Eternal Labyrinth,24% increased Cold Snap Area of Effect,Cold Snap
-Enchantment Cold Snap Cooldown Speed 1,Merciless Labyrinth,20% increased Cold Snap Cooldown Recovery Speed,Cold Snap
-Enchantment Cold Snap Cooldown Speed 2,Eternal Labyrinth,30% increased Cold Snap Cooldown Recovery Speed,Cold Snap
-Enchantment Cold Snap Damage 1,Merciless Labyrinth,25% increased Cold Snap Damage,Cold Snap
-Enchantment Cold Snap Damage 2,Eternal Labyrinth,40% increased Cold Snap Damage,Cold Snap
-Enchantment Conductivity Curse Effect 1,Merciless Labyrinth,20% increased Conductivity Curse Effect,Conductivity
-Enchantment Conductivity Curse Effect 2,Eternal Labyrinth,30% increased Conductivity Curse Effect,Conductivity
-Enchantment Conductivity Duration 1,Merciless Labyrinth,30% increased Conductivity Duration,Conductivity
-Enchantment Conductivity Duration 2,Eternal Labyrinth,45% increased Conductivity Duration,Conductivity
-Enchantment Consecrated Path Area Of Effect 1,Merciless Labyrinth,Consecrated Path has 16% increased Area of Effect,Consecrated Path
-Enchantment Consecrated Path Area Of Effect 2,Eternal Labyrinth,Consecrated Path has 24% increased Area of Effect,Consecrated Path
-Enchantment Consecrated Path Damage 1,Merciless Labyrinth,Consecrated Path deals 25% increased Damage,Consecrated Path
-Enchantment Consecrated Path Damage 2,Eternal Labyrinth,Consecrated Path deals 40% increased Damage,Consecrated Path
-Enchantment Consecrated Path Range 1,Merciless Labyrinth,Consecrated Path has 10% increased teleport range,Consecrated Path
-Enchantment Consecrated Path Range 2,Eternal Labyrinth,Consecrated Path has 15% increased teleport range,Consecrated Path
-Enchantment Contagion Damage 1,Merciless Labyrinth,25% increased Contagion Damage,Contagion
-Enchantment Contagion Damage 2,Eternal Labyrinth,40% increased Contagion Damage,Contagion
-Enchantment Contagion Duration 1,Merciless Labyrinth,20% increased Contagion Duration,Contagion
-Enchantment Contagion Duration 2,Eternal Labyrinth,30% increased Contagion Duration,Contagion
-Enchantment Contagion Radius 1,Merciless Labyrinth,16% increased Contagion Area of Effect,Contagion
-Enchantment Contagion Radius 2,Eternal Labyrinth,24% increased Contagion Area of Effect,Contagion
-Enchantment Conversion Trap Cooldown Speed 1,Merciless Labyrinth,20% increased Conversion Trap Cooldown Recovery Speed,Conversion Trap
-Enchantment Conversion Trap Cooldown Speed 2,Eternal Labyrinth,30% increased Conversion Trap Cooldown Recovery Speed,Conversion Trap
-Enchantment Conversion Trap Damage 1,Merciless Labyrinth,Converted Enemies have 25% increased Damage,Conversion Trap
-Enchantment Conversion Trap Damage 2,Eternal Labyrinth,Converted Enemies have 40% increased Damage,Conversion Trap
-Enchantment Convocation Cooldown Speed 1,Merciless Labyrinth,20% increased Convocation Cooldown Recovery Speed,Convocation
-Enchantment Convocation Cooldown Speed 2,Eternal Labyrinth,30% increased Convocation Cooldown Recovery Speed,Convocation
-Enchantment Convocation Life Regeneration 1,Merciless Labyrinth,24% increased Convocation Buff Effect,Convocation
-Enchantment Convocation Life Regeneration 2,Eternal Labyrinth,36% increased Convocation Buff Effect,Convocation
-Enchantment Cremation Cast Speed 1,Merciless Labyrinth,8% increased Cremation Cast Speed,Cremation
-Enchantment Cremation Cast Speed 2,Eternal Labyrinth,12% increased Cremation Cast Speed,Cremation
-Enchantment Cremation Damage 1,Merciless Labyrinth,25% increased Cremation Damage,Cremation
-Enchantment Cremation Damage 2,Eternal Labyrinth,40% increased Cremation Damage,Cremation
+Enchantment Chain Hook Cone Radius Per 12 Rage 1,Merciless Labyrinth,Chain Hook has +1 Radius per 12 Rage,Chain Hook
+Enchantment Chain Hook Damage 1,Eternal Labyrinth,Chain Hook deals 25% increased Damage,Chain Hook
+Enchantment Chain Hook Damage 2,Merciless Labyrinth,Chain Hook deals 40% increased Damage,Chain Hook
+Enchantment Chain Hook Gain Rage On Hit Chance 1,Eternal Labyrinth,Chain Hook has a 25% chance to grant +1 Rage if it Hits Enemies,Chain Hook
+Enchantment Chain Hook Gain Rage On Hit Chance 2,Merciless Labyrinth,Chain Hook has a 40% chance to grant +1 Rage if it Hits Enemies,Chain Hook
+Enchantment Charged Dash Damage 1,Eternal Labyrinth,25% increased Charged Dash Damage,Charged Dash
+Enchantment Charged Dash Damage 2,Merciless Labyrinth,40% increased Charged Dash Damage,Charged Dash
+Enchantment Charged Dash Dodge When Finished Channelling 1,Eternal Labyrinth,4% chance to Dodge Attack Hits if you have finished Channelling Charged Dash Recently,Charged Dash
+Enchantment Charged Dash Dodge When Finished Channelling 2,Merciless Labyrinth,6% chance to Dodge Attack Hits if you have finished Channelling Charged Dash Recently,Charged Dash
+Enchantment Charged Dash Movement Speed 1,Eternal Labyrinth,Charged Dash has 10% more Movement Speed,Charged Dash
+Enchantment Charged Dash Movement Speed 2,Merciless Labyrinth,Charged Dash has 15% more Movement Speed,Charged Dash
+Enchantment Charged Dash Radius Final Explosion 1,Eternal Labyrinth,Charged Dash has +4 to Radius of each Wave's last damage Area,Charged Dash
+Enchantment Charged Dash Radius Final Explosion 2,Merciless Labyrinth,Charged Dash has +6 to Radius of each Wave's last damage Area,Charged Dash
+Enchantment Clarity Mana Reservation 1,Eternal Labyrinth,Clarity has 20% reduced Mana Reservation,Clarity
+Enchantment Clarity Mana Reservation 2,Merciless Labyrinth,Clarity has 30% reduced Mana Reservation,Clarity
+Enchantment Cleave Area Of Effect 1,Eternal Labyrinth,16% increased Cleave Area of Effect,Cleave
+Enchantment Cleave Area Of Effect 2,Merciless Labyrinth,24% increased Cleave Area of Effect,Cleave
+Enchantment Cleave Attack Speed 1,Eternal Labyrinth,10% increased Cleave Attack Speed,Cleave
+Enchantment Cleave Attack Speed 2,Merciless Labyrinth,15% increased Cleave Attack Speed,Cleave
+Enchantment Cleave Damage 1,Eternal Labyrinth,25% increased Cleave Damage,Cleave
+Enchantment Cleave Damage 2,Merciless Labyrinth,40% increased Cleave Damage,Cleave
+Enchantment Cobra Lash Damage 1,Eternal Labyrinth,Cobra Lash deals 25% increased Damage,Cobra Lash
+Enchantment Cobra Lash Damage 2,Merciless Labyrinth,Cobra Lash deals 40% increased Damage,Cobra Lash
+Enchantment Cobra Lash Number Of Additional Chains 1,Eternal Labyrinth,Cobra Lash Chains 2 additional times,Cobra Lash
+Enchantment Cobra Lash Number Of Additional Chains 2,Merciless Labyrinth,Cobra Lash Chains 3 additional times,Cobra Lash
+Enchantment Cobra Lash Projectile Speed 1,Eternal Labyrinth,Cobra Lash has 20% increased Projectile Speed,Cobra Lash
+Enchantment Cobra Lash Projectile Speed 2,Merciless Labyrinth,Cobra Lash has 30% increased Projectile Speed,Cobra Lash
+Enchantment Cold Snap Area Of Effect 1,Eternal Labyrinth,16% increased Cold Snap Area of Effect,Cold Snap
+Enchantment Cold Snap Area Of Effect 2,Merciless Labyrinth,24% increased Cold Snap Area of Effect,Cold Snap
+Enchantment Cold Snap Cooldown Speed 1,Eternal Labyrinth,20% increased Cold Snap Cooldown Recovery Speed,Cold Snap
+Enchantment Cold Snap Cooldown Speed 2,Merciless Labyrinth,30% increased Cold Snap Cooldown Recovery Speed,Cold Snap
+Enchantment Cold Snap Damage 1,Eternal Labyrinth,25% increased Cold Snap Damage,Cold Snap
+Enchantment Cold Snap Damage 2,Merciless Labyrinth,40% increased Cold Snap Damage,Cold Snap
+Enchantment Conductivity Curse Effect 1,Eternal Labyrinth,20% increased Conductivity Curse Effect,Conductivity
+Enchantment Conductivity Curse Effect 2,Merciless Labyrinth,30% increased Conductivity Curse Effect,Conductivity
+Enchantment Conductivity Duration 1,Eternal Labyrinth,30% increased Conductivity Duration,Conductivity
+Enchantment Conductivity Duration 2,Merciless Labyrinth,45% increased Conductivity Duration,Conductivity
+Enchantment Consecrated Path Area Of Effect 1,Eternal Labyrinth,Consecrated Path has 16% increased Area of Effect,Consecrated Path
+Enchantment Consecrated Path Area Of Effect 2,Merciless Labyrinth,Consecrated Path has 24% increased Area of Effect,Consecrated Path
+Enchantment Consecrated Path Damage 1,Eternal Labyrinth,Consecrated Path deals 25% increased Damage,Consecrated Path
+Enchantment Consecrated Path Damage 2,Merciless Labyrinth,Consecrated Path deals 40% increased Damage,Consecrated Path
+Enchantment Consecrated Path Range 1,Eternal Labyrinth,Consecrated Path has 10% increased teleport range,Consecrated Path
+Enchantment Consecrated Path Range 2,Merciless Labyrinth,Consecrated Path has 15% increased teleport range,Consecrated Path
+Enchantment Contagion Damage 1,Eternal Labyrinth,25% increased Contagion Damage,Contagion
+Enchantment Contagion Damage 2,Merciless Labyrinth,40% increased Contagion Damage,Contagion
+Enchantment Contagion Duration 1,Eternal Labyrinth,20% increased Contagion Duration,Contagion
+Enchantment Contagion Duration 2,Merciless Labyrinth,30% increased Contagion Duration,Contagion
+Enchantment Contagion Radius 1,Eternal Labyrinth,16% increased Contagion Area of Effect,Contagion
+Enchantment Contagion Radius 2,Merciless Labyrinth,24% increased Contagion Area of Effect,Contagion
+Enchantment Conversion Trap Cooldown Speed 1,Eternal Labyrinth,20% increased Conversion Trap Cooldown Recovery Speed,Conversion Trap
+Enchantment Conversion Trap Cooldown Speed 2,Merciless Labyrinth,30% increased Conversion Trap Cooldown Recovery Speed,Conversion Trap
+Enchantment Conversion Trap Damage 1,Eternal Labyrinth,Converted Enemies have 25% increased Damage,Conversion Trap
+Enchantment Conversion Trap Damage 2,Merciless Labyrinth,Converted Enemies have 40% increased Damage,Conversion Trap
+Enchantment Convocation Cooldown Speed 1,Eternal Labyrinth,20% increased Convocation Cooldown Recovery Speed,Convocation
+Enchantment Convocation Cooldown Speed 2,Merciless Labyrinth,30% increased Convocation Cooldown Recovery Speed,Convocation
+Enchantment Convocation Life Regeneration 1,Eternal Labyrinth,24% increased Convocation Buff Effect,Convocation
+Enchantment Convocation Life Regeneration 2,Merciless Labyrinth,36% increased Convocation Buff Effect,Convocation
+Enchantment Cremation Cast Speed 1,Eternal Labyrinth,8% increased Cremation Cast Speed,Cremation
+Enchantment Cremation Cast Speed 2,Merciless Labyrinth,12% increased Cremation Cast Speed,Cremation
+Enchantment Cremation Damage 1,Eternal Labyrinth,25% increased Cremation Damage,Cremation
+Enchantment Cremation Damage 2,Merciless Labyrinth,40% increased Cremation Damage,Cremation
 Enchantment Cremation Maximum Geysers 1,Eternal Labyrinth,Cremation can have up to 1 additional Geyser at a time,Cremation
 Enchantment Cyclone Attack Speed 1,Merciless Labyrinth,10% increased Cyclone Attack Speed,Cyclone
 Enchantment Cyclone Attack Speed 2,Eternal Labyrinth,15% increased Cyclone Attack Speed,Cyclone
@@ -233,10 +233,6 @@ Enchantment Dark Pact Area Of Effect 1,Merciless Labyrinth,16% increased Dark Pa
 Enchantment Dark Pact Area Of Effect 2,Eternal Labyrinth,24% increased Dark Pact Area of Effect,Dark Pact
 Enchantment Dark Pact Damage 1,Merciless Labyrinth,25% increased Dark Pact Damage,Dark Pact
 Enchantment Dark Pact Damage 2,Eternal Labyrinth,40% increased Dark Pact Damage,Dark Pact
-Enchantment Dash Cooldown Count 1,Merciless Labyrinth,Dash has +1 Cooldown,Dash
-Enchantment Dash Cooldown Count 2,Eternal Labyrinth,Dash has +2 Cooldowns,Dash
-Enchantment Dash Travel Distance 1,Merciless Labyrinth,Dash travels 65% increased distance,Dash
-Enchantment Dash Travel Distance 2,Eternal Labyrinth,Dash travels 100% increased distance,Dash
 Enchantment Decoy Totem Area Of Effect 1,Merciless Labyrinth,16% increased Decoy Totem Area of Effect,Decoy Totem
 Enchantment Decoy Totem Area Of Effect 2,Eternal Labyrinth,24% increased Decoy Totem Area of Effect,Decoy Totem
 Enchantment Decoy Totem Life 1,Merciless Labyrinth,40% increased Decoy Totem Life,Decoy Totem
@@ -275,59 +271,59 @@ Enchantment Divine Ire Number Of Additional Nearby Enemies To Zap 1,Merciless La
 Enchantment Divine Ire Number Of Additional Nearby Enemies To Zap 2,Eternal Labyrinth,Divine Ire Damages 2 additional nearby Enemies when gaining Stages,Divine Ire
 Enchantment Dominating Blow Additional Magic 1,Merciless Labyrinth,Dominating Blow can summon 2 additional Magic Sentinels of Dominance,Dominating Blow
 Enchantment Dominating Blow Additional Magic 2,Eternal Labyrinth,Dominating Blow can summon 3 additional Magic Sentinels of Dominance,Dominating Blow
-Enchantment Dominating Blow Additional Rare 1,Eternal Labyrinth,Dominating Blow can summon an additional Rare Sentinel of Dominance,Dominating Blow
-Enchantment Dominating Blow Duration 1,Merciless Labyrinth,20% increased Sentinel of Dominance Duration,Dominating Blow
-Enchantment Dominating Blow Duration 2,Eternal Labyrinth,30% increased Sentinel of Dominance Duration,Dominating Blow
-Enchantment Double Strike Attack Speed 1,Merciless Labyrinth,10% increased Double Strike Attack Speed,Double Strike
-Enchantment Double Strike Attack Speed 2,Eternal Labyrinth,15% increased Double Strike Attack Speed,Double Strike
-Enchantment Double Strike Critical Strike Chance 1,Merciless Labyrinth,60% increased Double Strike Critical Strike Chance,Double Strike
-Enchantment Double Strike Critical Strike Chance 2,Eternal Labyrinth,90% increased Double Strike Critical Strike Chance,Double Strike
-Enchantment Double Strike Damage 1,Merciless Labyrinth,25% increased Double Strike Damage,Double Strike
-Enchantment Double Strike Damage 2,Eternal Labyrinth,40% increased Double Strike Damage,Double Strike
-Enchantment Double Strike Double Damage Vs Bleeding 1,Merciless Labyrinth,Double Strike has a 10% chance to deal Double Damage to Bleeding Enemies,Double Strike
-Enchantment Double Strike Double Damage Vs Bleeding 2,Eternal Labyrinth,Double Strike has a 15% chance to deal Double Damage to Bleeding Enemies,Double Strike
-Enchantment Dread Banner Effect 1,Merciless Labyrinth,Dread Banner has 25% increased Aura Effect,Dread Banner
-Enchantment Dread Banner Effect 2,Eternal Labyrinth,Dread Banner has 40% increased Aura Effect,Dread Banner
-Enchantment Dual Strike Attack Speed 1,Merciless Labyrinth,10% increased Dual Strike Attack Speed,Dual Strike
-Enchantment Dual Strike Attack Speed 2,Eternal Labyrinth,15% increased Dual Strike Attack Speed,Dual Strike
-Enchantment Dual Strike Critical Strike Chance 1,Merciless Labyrinth,60% increased Dual Strike Critical Strike Chance,Dual Strike
-Enchantment Dual Strike Critical Strike Chance 2,Eternal Labyrinth,90% increased Dual Strike Critical Strike Chance,Dual Strike
-Enchantment Dual Strike Damage 1,Merciless Labyrinth,25% increased Dual Strike Damage,Dual Strike
-Enchantment Dual Strike Damage 2,Eternal Labyrinth,40% increased Dual Strike Damage,Dual Strike
-Enchantment Earthquake Area Of Effect 1,Merciless Labyrinth,16% increased Earthquake Area of Effect,Earthquake
-Enchantment Earthquake Area Of Effect 2,Eternal Labyrinth,24% increased Earthquake Area of Effect,Earthquake
-Enchantment Earthquake Damage 1,Merciless Labyrinth,25% increased Earthquake Damage,Earthquake
-Enchantment Earthquake Damage 2,Eternal Labyrinth,40% increased Earthquake Damage,Earthquake
-Enchantment Earthquake Duration 1,Merciless Labyrinth,20% reduced Earthquake Duration,Earthquake
-Enchantment Earthquake Duration 2,Eternal Labyrinth,30% reduced Earthquake Duration,Earthquake
-Enchantment Elemental Hit Attack Speed 1,Merciless Labyrinth,10% increased Elemental Hit Attack Speed,Elemental Hit
-Enchantment Elemental Hit Attack Speed 2,Eternal Labyrinth,15% increased Elemental Hit Attack Speed,Elemental Hit
-Enchantment Elemental Hit Chance To Freeze Shock Ignite 1,Merciless Labyrinth,"Elemental Hit has +20% chance to Freeze, Shock and Ignite",Elemental Hit
-Enchantment Elemental Hit Chance To Freeze Shock Ignite 2,Eternal Labyrinth,"Elemental Hit has +30% chance to Freeze, Shock and Ignite",Elemental Hit
-Enchantment Elemental Hit Damage 1,Merciless Labyrinth,Elemental Hit deals 25% increased Damage,Elemental Hit
-Enchantment Elemental Hit Damage 2,Eternal Labyrinth,Elemental Hit deals 40% increased Damage,Elemental Hit
-Enchantment Elemental Weakness Curse Effect 1,Merciless Labyrinth,20% increased Elemental Weakness Curse Effect,Elemental Weakness
-Enchantment Elemental Weakness Curse Effect 2,Eternal Labyrinth,30% increased Elemental Weakness Curse Effect,Elemental Weakness
-Enchantment Elemental Weakness Duration 1,Merciless Labyrinth,30% increased Elemental Weakness Duration,Elemental Weakness
-Enchantment Elemental Weakness Duration 2,Eternal Labyrinth,45% increased Elemental Weakness Duration,Elemental Weakness
-Enchantment Enduring Cry Cooldown Speed 1,Merciless Labyrinth,20% increased Enduring Cry Cooldown Recovery Speed,Enduring Cry
-Enchantment Enduring Cry Cooldown Speed 2,Eternal Labyrinth,30% increased Enduring Cry Cooldown Recovery Speed,Enduring Cry
-Enchantment Enduring Cry Life Regeneration 1,Merciless Labyrinth,24% increased Enduring Cry Buff Effect,Enduring Cry
-Enchantment Enduring Cry Life Regeneration 2,Eternal Labyrinth,36% increased Enduring Cry Buff Effect,Enduring Cry
-Enchantment Enfeeble Curse Effect 1,Merciless Labyrinth,20% increased Enfeeble Curse Effect,Enfeeble
-Enchantment Enfeeble Curse Effect 2,Eternal Labyrinth,30% increased Enfeeble Curse Effect,Enfeeble
-Enchantment Enfeeble Duration 1,Merciless Labyrinth,30% increased Enfeeble Duration,Enfeeble
-Enchantment Enfeeble Duration 2,Eternal Labyrinth,45% increased Enfeeble Duration,Enfeeble
-Enchantment Ensnaring Arrow Area Of Effect 1,Merciless Labyrinth,Ensnaring Arrow has 60% increased Area of Effect,Ensnaring Arrow
-Enchantment Ensnaring Arrow Area Of Effect 2,Eternal Labyrinth,Ensnaring Arrow has 90% increased Area of Effect,Ensnaring Arrow
-Enchantment Ensnaring Arrow Debuff Effect 1,Merciless Labyrinth,Ensnaring Arrow has 20% increased Debuff Effect,Ensnaring Arrow
-Enchantment Ensnaring Arrow Debuff Effect 2,Eternal Labyrinth,Ensnaring Arrow has 30% increased Debuff Effect,Ensnaring Arrow
-Enchantment Essence Drain Damage 1,Merciless Labyrinth,25% increased Essence Drain Damage,Essence Drain
-Enchantment Essence Drain Damage 2,Eternal Labyrinth,40% increased Essence Drain Damage,Essence Drain
-Enchantment Essence Drain Duration 1,Merciless Labyrinth,20% increased Essence Drain Duration,Essence Drain
-Enchantment Essence Drain Duration 2,Eternal Labyrinth,30% increased Essence Drain Duration,Essence Drain
-Enchantment Ethereal Knives Damage 1,Merciless Labyrinth,25% increased Ethereal Knives Damage,Ethereal Knives
-Enchantment Ethereal Knives Damage 2,Eternal Labyrinth,40% increased Ethereal Knives Damage,Ethereal Knives
+Enchantment Dominating Blow Additional Rare 1,Merciless Labyrinth,Dominating Blow can summon an additional Rare Sentinel of Dominance,Dominating Blow
+Enchantment Dominating Blow Duration 1,Eternal Labyrinth,20% increased Sentinel of Dominance Duration,Dominating Blow
+Enchantment Dominating Blow Duration 2,Merciless Labyrinth,30% increased Sentinel of Dominance Duration,Dominating Blow
+Enchantment Double Strike Attack Speed 1,Eternal Labyrinth,10% increased Double Strike Attack Speed,Double Strike
+Enchantment Double Strike Attack Speed 2,Merciless Labyrinth,15% increased Double Strike Attack Speed,Double Strike
+Enchantment Double Strike Critical Strike Chance 1,Eternal Labyrinth,60% increased Double Strike Critical Strike Chance,Double Strike
+Enchantment Double Strike Critical Strike Chance 2,Merciless Labyrinth,90% increased Double Strike Critical Strike Chance,Double Strike
+Enchantment Double Strike Damage 1,Eternal Labyrinth,25% increased Double Strike Damage,Double Strike
+Enchantment Double Strike Damage 2,Merciless Labyrinth,40% increased Double Strike Damage,Double Strike
+Enchantment Double Strike Double Damage Vs Bleeding 1,Eternal Labyrinth,Double Strike has a 10% chance to deal Double Damage to Bleeding Enemies,Double Strike
+Enchantment Double Strike Double Damage Vs Bleeding 2,Merciless Labyrinth,Double Strike has a 15% chance to deal Double Damage to Bleeding Enemies,Double Strike
+Enchantment Dread Banner Effect 1,Eternal Labyrinth,Dread Banner has 25% increased Aura Effect,Dread Banner
+Enchantment Dread Banner Effect 2,Merciless Labyrinth,Dread Banner has 40% increased Aura Effect,Dread Banner
+Enchantment Dual Strike Attack Speed 1,Eternal Labyrinth,10% increased Dual Strike Attack Speed,Dual Strike
+Enchantment Dual Strike Attack Speed 2,Merciless Labyrinth,15% increased Dual Strike Attack Speed,Dual Strike
+Enchantment Dual Strike Critical Strike Chance 1,Eternal Labyrinth,60% increased Dual Strike Critical Strike Chance,Dual Strike
+Enchantment Dual Strike Critical Strike Chance 2,Merciless Labyrinth,90% increased Dual Strike Critical Strike Chance,Dual Strike
+Enchantment Dual Strike Damage 1,Eternal Labyrinth,25% increased Dual Strike Damage,Dual Strike
+Enchantment Dual Strike Damage 2,Merciless Labyrinth,40% increased Dual Strike Damage,Dual Strike
+Enchantment Earthquake Area Of Effect 1,Eternal Labyrinth,16% increased Earthquake Area of Effect,Earthquake
+Enchantment Earthquake Area Of Effect 2,Merciless Labyrinth,24% increased Earthquake Area of Effect,Earthquake
+Enchantment Earthquake Damage 1,Eternal Labyrinth,25% increased Earthquake Damage,Earthquake
+Enchantment Earthquake Damage 2,Merciless Labyrinth,40% increased Earthquake Damage,Earthquake
+Enchantment Earthquake Duration 1,Eternal Labyrinth,20% reduced Earthquake Duration,Earthquake
+Enchantment Earthquake Duration 2,Merciless Labyrinth,30% reduced Earthquake Duration,Earthquake
+Enchantment Elemental Hit Attack Speed 1,Eternal Labyrinth,10% increased Elemental Hit Attack Speed,Elemental Hit
+Enchantment Elemental Hit Attack Speed 2,Merciless Labyrinth,15% increased Elemental Hit Attack Speed,Elemental Hit
+Enchantment Elemental Hit Chance To Freeze Shock Ignite 1,Eternal Labyrinth,"Elemental Hit has +20% chance to Freeze, Shock and Ignite",Elemental Hit
+Enchantment Elemental Hit Chance To Freeze Shock Ignite 2,Merciless Labyrinth,"Elemental Hit has +30% chance to Freeze, Shock and Ignite",Elemental Hit
+Enchantment Elemental Hit Damage 1,Eternal Labyrinth,Elemental Hit deals 25% increased Damage,Elemental Hit
+Enchantment Elemental Hit Damage 2,Merciless Labyrinth,Elemental Hit deals 40% increased Damage,Elemental Hit
+Enchantment Elemental Weakness Curse Effect 1,Eternal Labyrinth,20% increased Elemental Weakness Curse Effect,Elemental Weakness
+Enchantment Elemental Weakness Curse Effect 2,Merciless Labyrinth,30% increased Elemental Weakness Curse Effect,Elemental Weakness
+Enchantment Elemental Weakness Duration 1,Eternal Labyrinth,30% increased Elemental Weakness Duration,Elemental Weakness
+Enchantment Elemental Weakness Duration 2,Merciless Labyrinth,45% increased Elemental Weakness Duration,Elemental Weakness
+Enchantment Enduring Cry Cooldown Speed 1,Eternal Labyrinth,20% increased Enduring Cry Cooldown Recovery Speed,Enduring Cry
+Enchantment Enduring Cry Cooldown Speed 2,Merciless Labyrinth,30% increased Enduring Cry Cooldown Recovery Speed,Enduring Cry
+Enchantment Enduring Cry Life Regeneration 1,Eternal Labyrinth,24% increased Enduring Cry Buff Effect,Enduring Cry
+Enchantment Enduring Cry Life Regeneration 2,Merciless Labyrinth,36% increased Enduring Cry Buff Effect,Enduring Cry
+Enchantment Enfeeble Curse Effect 1,Eternal Labyrinth,20% increased Enfeeble Curse Effect,Enfeeble
+Enchantment Enfeeble Curse Effect 2,Merciless Labyrinth,30% increased Enfeeble Curse Effect,Enfeeble
+Enchantment Enfeeble Duration 1,Eternal Labyrinth,30% increased Enfeeble Duration,Enfeeble
+Enchantment Enfeeble Duration 2,Merciless Labyrinth,45% increased Enfeeble Duration,Enfeeble
+Enchantment Ensnaring Arrow Area Of Effect 1,Eternal Labyrinth,Ensnaring Arrow has 60% increased Area of Effect,Ensnaring Arrow
+Enchantment Ensnaring Arrow Area Of Effect 2,Merciless Labyrinth,Ensnaring Arrow has 90% increased Area of Effect,Ensnaring Arrow
+Enchantment Ensnaring Arrow Debuff Effect 1,Eternal Labyrinth,Ensnaring Arrow has 20% increased Debuff Effect,Ensnaring Arrow
+Enchantment Ensnaring Arrow Debuff Effect 2,Merciless Labyrinth,Ensnaring Arrow has 30% increased Debuff Effect,Ensnaring Arrow
+Enchantment Essence Drain Damage 1,Eternal Labyrinth,25% increased Essence Drain Damage,Essence Drain
+Enchantment Essence Drain Damage 2,Merciless Labyrinth,40% increased Essence Drain Damage,Essence Drain
+Enchantment Essence Drain Duration 1,Eternal Labyrinth,20% increased Essence Drain Duration,Essence Drain
+Enchantment Essence Drain Duration 2,Merciless Labyrinth,30% increased Essence Drain Duration,Essence Drain
+Enchantment Ethereal Knives Damage 1,Eternal Labyrinth,25% increased Ethereal Knives Damage,Ethereal Knives
+Enchantment Ethereal Knives Damage 2,Merciless Labyrinth,40% increased Ethereal Knives Damage,Ethereal Knives
 Enchantment Ethereal Knives Number Of Targets To Pierce 1,Eternal Labyrinth,Ethereal Knives Pierces an additional Target,Ethereal Knives
 Enchantment Ethereal Knives Projectile Speed 1,Merciless Labyrinth,20% increased Ethereal Knives Projectile Speed,Ethereal Knives
 Enchantment Ethereal Knives Projectile Speed 2,Eternal Labyrinth,30% increased Ethereal Knives Projectile Speed,Ethereal Knives
@@ -439,10 +435,6 @@ Enchantment Frostbite Curse Effect 1,Merciless Labyrinth,20% increased Frostbite
 Enchantment Frostbite Curse Effect 2,Eternal Labyrinth,30% increased Frostbite Curse Effect,Frostbite
 Enchantment Frostbite Duration 1,Merciless Labyrinth,30% increased Frostbite Duration,Frostbite
 Enchantment Frostbite Duration 2,Eternal Labyrinth,45% increased Frostbite Duration,Frostbite
-Enchantment Frostblink Cooldown Speed 1,Merciless Labyrinth,Frostblink has 20% increased Cooldown Recovery Speed,Frostblink
-Enchantment Frostblink Cooldown Speed 2,Eternal Labyrinth,Frostblink has 30% increased Cooldown Recovery Speed,Frostblink
-Enchantment Frostblink Travel Distance 1,Merciless Labyrinth,Frostblink has 65% increased maximum travel distance,Frostblink
-Enchantment Frostblink Travel Distance 2,Eternal Labyrinth,Frostblink has 100% increased maximum travel distance,Frostblink
 Enchantment Frost Bolt Cast Speed 1,Merciless Labyrinth,10% increased Frostbolt Cast Speed,Frostbolt
 Enchantment Frost Bolt Cast Speed 2,Eternal Labyrinth,15% increased Frostbolt Cast Speed,Frostbolt
 Enchantment Frost Bolt Damage 1,Merciless Labyrinth,25% increased Frostbolt Damage,Frostbolt
@@ -483,15 +475,15 @@ Enchantment Heavy Strike Double Damage 1,Merciless Labyrinth,Heavy Strike has a 
 Enchantment Heavy Strike Double Damage 2,Eternal Labyrinth,Heavy Strike has a 12% chance to deal Double Damage,Heavy Strike
 Enchantment Herald Of Agony Mana Reservation 1,Merciless Labyrinth,Herald of Agony has 20% reduced Mana Reservation,Herald of Agony
 Enchantment Herald Of Agony Mana Reservation 2,Eternal Labyrinth,Herald of Agony has 30% reduced Mana Reservation,Herald of Agony
-Enchantment Herald Of Agony Num Of Secondary Projectiles 1,Eternal Labyrinth,Summoned Agony Crawler fires 2 additional Projectiles,Herald of Agony
-Enchantment Herald Of Ash Damage 1,Merciless Labyrinth,25% increased Herald of Ash Damage,Herald of Ash
-Enchantment Herald Of Ash Damage 2,Eternal Labyrinth,40% increased Herald of Ash Damage,Herald of Ash
-Enchantment Herald Of Ash Mana Reservation 1,Merciless Labyrinth,Herald of Ash has 20% reduced Mana Reservation,Herald of Ash
-Enchantment Herald Of Ash Mana Reservation 2,Eternal Labyrinth,Herald of Ash has 30% reduced Mana Reservation,Herald of Ash
-Enchantment Herald Of Ice Damage 1,Merciless Labyrinth,25% increased Herald of Ice Damage,Herald of Ice
-Enchantment Herald Of Ice Damage 2,Eternal Labyrinth,40% increased Herald of Ice Damage,Herald of Ice
-Enchantment Herald Of Ice Mana Reservation 1,Merciless Labyrinth,Herald of Ice has 20% reduced Mana Reservation,Herald of Ice
-Enchantment Herald Of Ice Mana Reservation 2,Eternal Labyrinth,Herald of Ice has 30% reduced Mana Reservation,Herald of Ice
+Enchantment Herald Of Agony Num Of Secondary Projectiles 1,Merciless Labyrinth,Summoned Agony Crawler fires 2 additional Projectiles,Herald of Agony
+Enchantment Herald Of Ash Damage 1,Eternal Labyrinth,25% increased Herald of Ash Damage,Herald of Ash
+Enchantment Herald Of Ash Damage 2,Merciless Labyrinth,40% increased Herald of Ash Damage,Herald of Ash
+Enchantment Herald Of Ash Mana Reservation 1,Eternal Labyrinth,Herald of Ash has 20% reduced Mana Reservation,Herald of Ash
+Enchantment Herald Of Ash Mana Reservation 2,Merciless Labyrinth,Herald of Ash has 30% reduced Mana Reservation,Herald of Ash
+Enchantment Herald Of Ice Damage 1,Eternal Labyrinth,25% increased Herald of Ice Damage,Herald of Ice
+Enchantment Herald Of Ice Damage 2,Merciless Labyrinth,40% increased Herald of Ice Damage,Herald of Ice
+Enchantment Herald Of Ice Mana Reservation 1,Eternal Labyrinth,Herald of Ice has 20% reduced Mana Reservation,Herald of Ice
+Enchantment Herald Of Ice Mana Reservation 2,Merciless Labyrinth,Herald of Ice has 30% reduced Mana Reservation,Herald of Ice
 Enchantment Herald Of Purity Additional Minion 1,Eternal Labyrinth,+1 to maximum number of Sentinels of Purity,Herald of Purity
 Enchantment Herald Of Purity Mana Reservation 1,Merciless Labyrinth,Herald of Purity has 20% reduced Mana Reservation,Herald of Purity
 Enchantment Herald Of Purity Mana Reservation 2,Eternal Labyrinth,Herald of Purity has 30% reduced Mana Reservation,Herald of Purity
@@ -529,31 +521,31 @@ Enchantment Ice Shot Damage 1,Merciless Labyrinth,25% increased Ice Shot Damage,
 Enchantment Ice Shot Damage 2,Eternal Labyrinth,40% increased Ice Shot Damage,Ice Shot
 Enchantment Ice Shot Duration 1,Merciless Labyrinth,24% increased Ice Shot Duration,Ice Shot
 Enchantment Ice Shot Duration 2,Eternal Labyrinth,36% increased Ice Shot Duration,Ice Shot
-Enchantment Ice Spear Additional Projectile 1,Eternal Labyrinth,Ice Spear fires an additional Projectile,Ice Spear
-Enchantment Ice Spear Distance Before Form Change 1,Merciless Labyrinth,Ice Spear travels 20% reduced distance before changing forms,Ice Spear
-Enchantment Ice Spear Distance Before Form Change 2,Eternal Labyrinth,Ice Spear travels 30% reduced distance before changing forms,Ice Spear
-Enchantment Ice Spear Percent Chance To Gain Power Charge On Critical Strike 1,Merciless Labyrinth,10% Chance to gain a Power Charge on Critical Strike with Ice Spear,Ice Spear
-Enchantment Ice Spear Percent Chance To Gain Power Charge On Critical Strike 2,Eternal Labyrinth,15% Chance to gain a Power Charge on Critical Strike with Ice Spear,Ice Spear
-Enchantment Ice Spear Second Form Critical Strike Chance 1,Merciless Labyrinth,200% increased Ice Spear Critical Strike Chance in second form,Ice Spear
-Enchantment Ice Spear Second Form Critical Strike Chance 2,Eternal Labyrinth,300% increased Ice Spear Critical Strike Chance in second form,Ice Spear
-Enchantment Ice Trap Area Of Effect 1,Merciless Labyrinth,16% increased Ice Trap Area of Effect,Ice Trap
-Enchantment Ice Trap Area Of Effect 2,Eternal Labyrinth,24% increased Ice Trap Area of Effect,Ice Trap
-Enchantment Ice Trap Cold Penetration 1,Merciless Labyrinth,Ice Trap Damage Penetrates 6% Cold Resistance,Ice Trap
-Enchantment Ice Trap Cold Penetration 2,Eternal Labyrinth,Ice Trap Damage Penetrates 10% Cold Resistance,Ice Trap
-Enchantment Ice Trap Damage 1,Merciless Labyrinth,25% increased Ice Trap Damage,Ice Trap
-Enchantment Ice Trap Damage 2,Eternal Labyrinth,40% increased Ice Trap Damage,Ice Trap
-Enchantment Icicle Mine Critical Multiplier 1,Merciless Labyrinth,Icicle Mine has +20% to Critical Strike Multiplier,Icicle Mine
-Enchantment Icicle Mine Critical Multiplier 2,Eternal Labyrinth,Icicle Mine has +30% to Critical Strike Multiplier,Icicle Mine
-Enchantment Icicle Mine Damage 1,Merciless Labyrinth,Icicle Mine deals 25% increased Damage,Icicle Mine
-Enchantment Icicle Mine Damage 2,Eternal Labyrinth,Icicle Mine deals 40% increased Damage,Icicle Mine
-Enchantment Icicle Mine Throwing Speed 1,Merciless Labyrinth,Icicle Mine has 10% increased Throwing Speed,Icicle Mine
-Enchantment Icicle MineThrowing Speed 2,Eternal Labyrinth,Icicle Mine has 15% increased Throwing Speed,Icicle Mine
-Enchantment Immortal Call Duration 1,Merciless Labyrinth,34% increased Immortal Call Duration,Immortal Call
-Enchantment Immortal Call Duration 2,Eternal Labyrinth,36% increased Immortal Call Duration,Immortal Call
-Enchantment Incinerate Area Of Effect 1,Merciless Labyrinth,Incinerate has 16% increased Area of Effect,Incinerate
-Enchantment Incinerate Area Of Effect 2,Eternal Labyrinth,Incinerate has 24% increased Area of Effect,Incinerate
-Enchantment Incinerate Damage 1,Merciless Labyrinth,25% increased Incinerate Damage,Incinerate
-Enchantment Incinerate Damage 2,Eternal Labyrinth,40% increased Incinerate Damage,Incinerate
+Enchantment Ice Spear Additional Projectile 1,Merciless Labyrinth,Ice Spear fires an additional Projectile,Ice Spear
+Enchantment Ice Spear Distance Before Form Change 1,Eternal Labyrinth,Ice Spear travels 20% reduced distance before changing forms,Ice Spear
+Enchantment Ice Spear Distance Before Form Change 2,Merciless Labyrinth,Ice Spear travels 30% reduced distance before changing forms,Ice Spear
+Enchantment Ice Spear Percent Chance To Gain Power Charge On Critical Strike 1,Eternal Labyrinth,10% Chance to gain a Power Charge on Critical Strike with Ice Spear,Ice Spear
+Enchantment Ice Spear Percent Chance To Gain Power Charge On Critical Strike 2,Merciless Labyrinth,15% Chance to gain a Power Charge on Critical Strike with Ice Spear,Ice Spear
+Enchantment Ice Spear Second Form Critical Strike Chance 1,Eternal Labyrinth,200% increased Ice Spear Critical Strike Chance in second form,Ice Spear
+Enchantment Ice Spear Second Form Critical Strike Chance 2,Merciless Labyrinth,300% increased Ice Spear Critical Strike Chance in second form,Ice Spear
+Enchantment Ice Trap Area Of Effect 1,Eternal Labyrinth,16% increased Ice Trap Area of Effect,Ice Trap
+Enchantment Ice Trap Area Of Effect 2,Merciless Labyrinth,24% increased Ice Trap Area of Effect,Ice Trap
+Enchantment Ice Trap Cold Penetration 1,Eternal Labyrinth,Ice Trap Damage Penetrates 6% Cold Resistance,Ice Trap
+Enchantment Ice Trap Cold Penetration 2,Merciless Labyrinth,Ice Trap Damage Penetrates 10% Cold Resistance,Ice Trap
+Enchantment Ice Trap Damage 1,Eternal Labyrinth,25% increased Ice Trap Damage,Ice Trap
+Enchantment Ice Trap Damage 2,Merciless Labyrinth,40% increased Ice Trap Damage,Ice Trap
+Enchantment Icicle Mine Critical Multiplier 1,Eternal Labyrinth,Icicle Mine has +20% to Critical Strike Multiplier,Icicle Mine
+Enchantment Icicle Mine Critical Multiplier 2,Merciless Labyrinth,Icicle Mine has +30% to Critical Strike Multiplier,Icicle Mine
+Enchantment Icicle Mine Damage 1,Eternal Labyrinth,Icicle Mine deals 25% increased Damage,Icicle Mine
+Enchantment Icicle Mine Damage 2,Merciless Labyrinth,Icicle Mine deals 40% increased Damage,Icicle Mine
+Enchantment Icicle Mine Throwing Speed 1,Eternal Labyrinth,Icicle Mine has 10% increased Throwing Speed,Icicle Mine
+Enchantment Icicle MineThrowing Speed 2,Merciless Labyrinth,Icicle Mine has 15% increased Throwing Speed,Icicle Mine
+Enchantment Immortal Call Duration 1,Eternal Labyrinth,34% increased Immortal Call Duration,Immortal Call
+Enchantment Immortal Call Duration 2,Merciless Labyrinth,36% increased Immortal Call Duration,Immortal Call
+Enchantment Incinerate Area Of Effect 1,Eternal Labyrinth,Incinerate has 16% increased Area of Effect,Incinerate
+Enchantment Incinerate Area Of Effect 2,Merciless Labyrinth,Incinerate has 24% increased Area of Effect,Incinerate
+Enchantment Incinerate Damage 1,Eternal Labyrinth,25% increased Incinerate Damage,Incinerate
+Enchantment Incinerate Damage 2,Merciless Labyrinth,40% increased Incinerate Damage,Incinerate
 Enchantment Incinerate Damage Per Stage 3,Eternal Labyrinth,10% increased Incinerate Damage for each stage,Incinerate
 Enchantment Incinerate Maximum Stages 1,Merciless Labyrinth,Incinerate has +1 to maximum stages,Incinerate
 Enchantment Incinerate Maximum Stages 2,Eternal Labyrinth,Incinerate has +2 to maximum stages,Incinerate
@@ -597,195 +589,195 @@ Enchantment Lightning Arrow Damage 1,Merciless Labyrinth,25% increased Lightning
 Enchantment Lightning Arrow Damage 2,Eternal Labyrinth,40% increased Lightning Arrow Damage,Lightning Arrow
 Enchantment Lightning Arrow Extra Targets 1,Merciless Labyrinth,Lightning Arrow hits an additional Enemy,Lightning Arrow
 Enchantment Lightning Arrow Extra Targets 2,Eternal Labyrinth,Lightning Arrow hits 2 additional Enemies,Lightning Arrow
-Enchantment Lightning Tower Trap Additional Beams 1,Eternal Labyrinth,Lightning Spire Trap strikes an additional area,Lightning Spire Trap
-Enchantment Lightning Tower Trap Cast Speed 1,Merciless Labyrinth,Lightning Spire Trap has 8% increased Cast Speed,Lightning Spire Trap
-Enchantment Lightning Tower Trap Cast Speed 2,Eternal Labyrinth,Lightning Spire Trap has 12% increased Cast Speed,Lightning Spire Trap
-Enchantment Lightning Tower Trap Cooldown Speed 1,Merciless Labyrinth,Lightning Spire Trap has 10% increased Cooldown Recovery Speed,Lightning Spire Trap
-Enchantment Lightning Tower Trap Cooldown Speed 2,Eternal Labyrinth,Lightning Spire Trap has 15% increased Cooldown Recovery Speed,Lightning Spire Trap
-Enchantment Lightning Tower Trap Damage 1,Merciless Labyrinth,Lightning Spire Trap deals 25% increased Damage,Lightning Spire Trap
-Enchantment Lightning Tower Trap Damage 2,Eternal Labyrinth,Lightning Spire Trap deals 40% increased Damage,Lightning Spire Trap
-Enchantment Lightning Tower Trap Duration 1,Merciless Labyrinth,Lightning Spire Trap has 20% increased Skill Effect Duration,Lightning Spire Trap
-Enchantment Lightning Tower Trap Duration 2,Eternal Labyrinth,Lightning Spire Trap has 30% increased Skill Effect Duration,Lightning Spire Trap
-Enchantment Lightning Strike Additional Pierce 1,Merciless Labyrinth,Lightning Strike pierces 2 additional Targets,Lightning Strike
-Enchantment Lightning Strike Additional Pierce 2,Eternal Labyrinth,Lightning Strike pierces 3 additional Targets,Lightning Strike
-Enchantment Lightning Strike Damage 1,Merciless Labyrinth,25% increased Lightning Strike Damage,Lightning Strike
-Enchantment Lightning Strike Damage 2,Eternal Labyrinth,40% increased Lightning Strike Damage,Lightning Strike
-Enchantment Lightning Strike Num Of Additional Projectiles 1,Merciless Labyrinth,Lightning Strike fires 2 additional Projectiles,Lightning Strike
-Enchantment Lightning Strike Num Of Additional Projectiles 2,Eternal Labyrinth,Lightning Strike fires 3 additional Projectiles,Lightning Strike
-Enchantment Lightning Tendrils Area Of Effect 1,Merciless Labyrinth,16% increased Lightning Tendrils Area of Effect,Lightning Tendrils
-Enchantment Lightning Tendrils Area Of Effect 2,Eternal Labyrinth,24% increased Lightning Tendrils Area of Effect,Lightning Tendrils
-Enchantment Lightning Tendrils Critical Strike Chance 1,Merciless Labyrinth,40% increased Lightning Tendrils Critical Strike Chance,Lightning Tendrils
-Enchantment Lightning Tendrils Critical Strike Chance 2,Eternal Labyrinth,60% increased Lightning Tendrils Critical Strike Chance,Lightning Tendrils
-Enchantment Lightning Tendrils Damage 1,Merciless Labyrinth,25% increased Lightning Tendrils Damage,Lightning Tendrils
-Enchantment Lightning Tendrils Damage 2,Eternal Labyrinth,40% increased Lightning Tendrils Damage,Lightning Tendrils
-Enchantment Lightning Trap Additional Pierce 1,Merciless Labyrinth,Lightning Trap pierces 2 additional Targets,Lightning Trap
-Enchantment Lightning Trap Additional Pierce 2,Eternal Labyrinth,Lightning Trap pierces 3 additional Targets,Lightning Trap
-Enchantment Lightning Trap Damage 1,Merciless Labyrinth,25% increased Lightning Trap Damage,Lightning Trap
-Enchantment Lightning Trap Damage 2,Eternal Labyrinth,40% increased Lightning Trap Damage,Lightning Trap
-Enchantment Lightning Trap Penetration 1,Merciless Labyrinth,Lightning Trap Damage Penetrates 6% Lightning Resistance,Lightning Trap
-Enchantment Lightning Trap Penetration 2,Eternal Labyrinth,Lightning Trap Damage Penetrates 10% Lightning Resistance,Lightning Trap
-Enchantment Lightning Trap Shock Effect 1,Merciless Labyrinth,25% increased Lightning Trap Shock Effect,Lightning Trap
-Enchantment Lightning Trap Shock Effect 2,Eternal Labyrinth,40% increased Lightning Trap Shock Effect,Lightning Trap
-Enchantment Lightning Warp Cast Speed 1,Merciless Labyrinth,8% increased Lightning Warp Cast Speed,Lightning Warp
-Enchantment Lightning Warp Cast Speed 2,Eternal Labyrinth,12% increased Lightning Warp Cast Speed,Lightning Warp
-Enchantment Lightning Warp Damage 1,Merciless Labyrinth,25% increased Lightning Warp Damage,Lightning Warp
-Enchantment Lightning Warp Damage 2,Eternal Labyrinth,40% increased Lightning Warp Damage,Lightning Warp
-Enchantment Lightning Warp Duration 1,Merciless Labyrinth,20% reduced Lightning Warp Duration,Lightning Warp
-Enchantment Lightning Warp Duration 2,Eternal Labyrinth,30% reduced Lightning Warp Duration,Lightning Warp
-Enchantment Magma Orb Area Of Effect 1,Merciless Labyrinth,16% increased Magma Orb Area of Effect,Magma Orb
-Enchantment Magma Orb Area Of Effect 2,Eternal Labyrinth,24% increased Magma Orb Area of Effect,Magma Orb
-Enchantment Magma Orb Damage 1,Merciless Labyrinth,25% increased Magma Orb Damage,Magma Orb
-Enchantment Magma Orb Damage 2,Eternal Labyrinth,40% increased Magma Orb Damage,Magma Orb
-Enchantment Magma Orb Num Of Additional Projectiles In Chain 1,Merciless Labyrinth,Magma Orb Chains an additional time,Magma Orb
-Enchantment Magma Orb Num Of Additional Projectiles In Chain 2,Eternal Labyrinth,Magma Orb Chains an additional 2 times,Magma Orb
-Enchantment Malevolence Mana Reservation 1,Merciless Labyrinth,Malevolence has 10% reduced Mana Reservation,Malevolence
-Enchantment Malevolence Mana Reservation 2,Eternal Labyrinth,Malevolence has 15% reduced Mana Reservation,Malevolence
-Enchantment Mirror Arrow Attack Speed 1,Merciless Labyrinth,Mirror Arrow and Mirror Arrow Clones have 10% increased Attack Speed,Mirror Arrow
-Enchantment Mirror Arrow Attack Speed 2,Eternal Labyrinth,Mirror Arrow and Mirror Arrow Clones have 15% increased Attack Speed,Mirror Arrow
-Enchantment Mirror Arrow Cooldown Speed 1,Merciless Labyrinth,20% increased Mirror Arrow Cooldown Recovery Speed,Mirror Arrow
-Enchantment Mirror Arrow Cooldown Speed 2,Eternal Labyrinth,30% increased Mirror Arrow Cooldown Recovery Speed,Mirror Arrow
-Enchantment Mirror Arrow Damage 1,Merciless Labyrinth,Mirror Arrow and Mirror Arrow Clones deal 25% increased Damage,Mirror Arrow
-Enchantment Mirror Arrow Damage 2,Eternal Labyrinth,Mirror Arrow and Mirror Arrow Clones deal 40% increased Damage,Mirror Arrow
-Enchantment Molten Shell Armour 1,Merciless Labyrinth,100% increased Molten Shell Buff Effect,Molten Shell
-Enchantment Molten Shell Armour 2,Eternal Labyrinth,150% increased Molten Shell Buff Effect,Molten Shell
-Enchantment Molten Shell Duration 1,Merciless Labyrinth,Molten Shell has 25% increased Skill Effect Duration,Molten Shell
-Enchantment Molten Shell Duration 2,Eternal Labyrinth,Molten Shell has 40% increased Skill Effect Duration,Molten Shell
-Enchantment Molten Strike Area Of Effect 1,Merciless Labyrinth,16% increased Molten Strike Area of Effect,Molten Strike
-Enchantment Molten Strike Area Of Effect 2,Eternal Labyrinth,24% increased Molten Strike Area of Effect,Molten Strike
-Enchantment Molten Strike Damage 1,Merciless Labyrinth,25% increased Molten Strike Damage,Molten Strike
-Enchantment Molten Strike Damage 2,Eternal Labyrinth,40% increased Molten Strike Damage,Molten Strike
-Enchantment Molten Strike Num Of Additional Projectiles 1,Merciless Labyrinth,Molten Strike fires an additional Projectile,Molten Strike
-Enchantment Molten Strike Num Of Additional Projectiles 2,Eternal Labyrinth,Molten Strike fires 2 additional Projectiles,Molten Strike
-Enchantment Orb of Storms Area Of Effect 1,Merciless Labyrinth,16% increased Orb of Storms Area of Effect,Orb of Storms
-Enchantment Orb of Storms Area Of Effect 2,Eternal Labyrinth,24% increased Orb of Storms Area of Effect,Orb of Storms
-Enchantment Orb Of Storms Cast Speed 1,Merciless Labyrinth,Orb of Storms has 20% increased Cast Speed,Orb of Storms
-Enchantment Orb Of Storms Cast Speed 2,Eternal Labyrinth,Orb of Storms has 30% increased Cast Speed,Orb of Storms
-Enchantment Orb of Storms Critical Strike Chance 1,Merciless Labyrinth,60% increased Orb of Storms Critical Strike Chance,Orb of Storms
-Enchantment Orb of Storms Critical Strike Chance 2,Eternal Labyrinth,90% increased Orb of Storms Critical Strike Chance,Orb of Storms
-Enchantment Orb Of Storms Damage 1,Merciless Labyrinth,25% increased Orb of Storms Damage,Orb of Storms
-Enchantment Orb Of Storms Damage 2,Eternal Labyrinth,40% increased Orb of Storms Damage,Orb of Storms
-Enchantment Perforate Area Of Effect 1,Merciless Labyrinth,Perforate has 16% increased Area of Effect,Perforate
-Enchantment Perforate Area Of Effect 2,Eternal Labyrinth,Perforate has 24% increased Area of Effect,Perforate
-Enchantment Perforate Damage 1,Merciless Labyrinth,Perforate deals 25% increased Damage,Perforate
-Enchantment Perforate Damage 2,Eternal Labyrinth,Perforate deals 40% increased Damage,Perforate
-Enchantment Perforate Number Of Spikes 1,Merciless Labyrinth,Perforate creates +1 Spike,Perforate
-Enchantment Perforate Number Of Spikes 2,Eternal Labyrinth,Perforate creates +2 Spikes,Perforate
-Enchantment Pestilent Strike Area Of Effect 1,Merciless Labyrinth,Pestilent Strike has 16% increased Area of Effect,Pestilent Strike
-Enchantment Pestilent Strike Area Of Effect 2,Eternal Labyrinth,Pestilent Strike has 24% increased Area of Effect,Pestilent Strike
-Enchantment Pestilent Strike Damage 1,Merciless Labyrinth,Pestilent Strike deals 25% increased Damage,Pestilent Strike
-Enchantment Pestilent Strike Damage 2,Eternal Labyrinth,Pestilent Strike deals 40% increased Damage,Pestilent Strike
-Enchantment Pestilent Strike Duration 1,Merciless Labyrinth,Pestilent Strike has 25% increased Duration,Pestilent Strike
-Enchantment Pestilent Strike Duration 2,Eternal Labyrinth,Pestilent Strike has 40% increased Duration,Pestilent Strike
-Enchantment Phase Run Duration 1,Merciless Labyrinth,24% increased Phase Run Duration,Phase Run
-Enchantment Phase Run Duration 2,Eternal Labyrinth,36% increased Phase Run Duration,Phase Run
-Enchantment Phase Run Percent Chance To Not Consume Frenzy Charges 1,Merciless Labyrinth,20% chance for Phase Run to increase Duration without removing Frenzy Charges,Phase Run
-Enchantment Phase Run Percent Chance To Not Consume Frenzy Charges 2,Eternal Labyrinth,30% chance for Phase Run to increase Duration without removing Frenzy Charges,Phase Run
-Enchantment Plague Bearer Poison Dot Multiplier While Aura Active 1,Merciless Labyrinth,Plague Bearer Buff grants +12% to Poison Damage over Time Multiplier while Infecting,Plague Bearer
-Enchantment Plague Bearer Poison Dot Multiplier While Aura Active 2,Eternal Labyrinth,Plague Bearer Buff grants +20% to Poison Damage over Time Multiplier while Infecting,Plague Bearer
-Enchantment Plague Bearer Stored Poison Damage To Deal Per Second 1,Merciless Labyrinth,Plague Bearer deals Damage based on an additional 3% of Plague Value,Plague Bearer
-Enchantment Plague Bearer Stored Poison Damage To Deal Per Second 2,Eternal Labyrinth,Plague Bearer deals Damage based on an additional 5% of Plague Value,Plague Bearer
-Enchantment Poachers Mark Curse Effect 1,Merciless Labyrinth,20% increased Poacher's Mark Curse Effect,Poacher's Mark
-Enchantment Poachers Mark Curse Effect 2,Eternal Labyrinth,30% increased Poacher's Mark Curse Effect,Poacher's Mark
-Enchantment Poachers Mark Duration 1,Merciless Labyrinth,30% increased Poacher's Mark Duration,Poacher's Mark
-Enchantment Poachers Mark Duration 2,Eternal Labyrinth,45% increased Poacher's Mark Duration,Poacher's Mark
-Enchantment Power Siphon Additional Projectiles 1,Merciless Labyrinth,Power Siphon fires an additional Projectile,Power Siphon
-Enchantment Power Siphon Additional Projectiles 2,Eternal Labyrinth,Power Siphon fires 2 additional Projectiles,Power Siphon
-Enchantment Power Siphon Attack Speed 1,Merciless Labyrinth,10% increased Power Siphon Attack Speed,Power Siphon
-Enchantment Power Siphon Attack Speed 2,Eternal Labyrinth,15% increased Power Siphon Attack Speed,Power Siphon
-Enchantment Power Siphon Damage 1,Merciless Labyrinth,25% increased Power Siphon Damage,Power Siphon
-Enchantment Power Siphon Damage 2,Eternal Labyrinth,40% increased Power Siphon Damage,Power Siphon
-Enchantment Power Siphon Percent Chance To Gain Power Charge On Kill 1,Merciless Labyrinth,30% Chance to gain an additional Power Charge on Kill with Power Siphon,Power Siphon
-Enchantment Power Siphon Percent Chance To Gain Power Charge On Kill 2,Eternal Labyrinth,45% Chance to gain an additional Power Charge on Kill with Power Siphon,Power Siphon
-Enchantment Precision Mana Reservation 1,Merciless Labyrinth,Precision has 20% reduced Mana Reservation,Precision
-Enchantment Precision Mana Reservation 2,Eternal Labyrinth,Precision has 30% reduced Mana Reservation,Precision
-Enchantment Pride Mana Reservation 1,Merciless Labyrinth,Pride has 10% reduced Mana Reservation,Pride
-Enchantment Pride Mana Reservation 2,Eternal Labyrinth,Pride has 15% reduced Mana Reservation,Pride
-Enchantment Projectile Weakness Curse Effect 1,Merciless Labyrinth,20% increased Projectile Weakness Curse Effect,Projectile Weakness
-Enchantment Projectile Weakness Curse Effect 2,Eternal Labyrinth,30% increased Projectile Weakness Curse Effect,Projectile Weakness
-Enchantment Projectile Weakness Duration 1,Merciless Labyrinth,30% increased Projectile Weakness Duration,Projectile Weakness
-Enchantment Projectile Weakness Duration 2,Eternal Labyrinth,45% increased Projectile Weakness Duration,Projectile Weakness
-Enchantment Puncture Damage 1,Merciless Labyrinth,25% increased Puncture Damage,Puncture
-Enchantment Puncture Damage 2,Eternal Labyrinth,40% increased Puncture Damage,Puncture
-Enchantment Puncture Duration 1,Merciless Labyrinth,30% increased Puncture Duration,Puncture
-Enchantment Puncture Duration 2,Eternal Labyrinth,45% increased Puncture Duration,Puncture
-Enchantment Puncture Maim On Hit Percent Chance 1,Merciless Labyrinth,20% Chance for Puncture to Maim on hit,Puncture
-Enchantment Puncture Maim On Hit Percent Chance 2,Eternal Labyrinth,30% Chance for Puncture to Maim on hit,Puncture
-Enchantment Punishment Curse Effect 1,Merciless Labyrinth,20% increased Punishment Curse Effect,Punishment
-Enchantment Punishment Curse Effect 2,Eternal Labyrinth,30% increased Punishment Curse Effect,Punishment
-Enchantment Punishment Duration 1,Merciless Labyrinth,30% increased Punishment Duration,Punishment
-Enchantment Punishment Duration 2,Eternal Labyrinth,45% increased Punishment Duration,Punishment
-Enchantment Purifying Flame Area Of Effect When Targeting Consecrated Ground 1,Merciless Labyrinth,Purifying Flame has 20% increased Area of Effect if targeting Consecrated Ground,Purifying Flame
-Enchantment Purifying Flame Area Of Effect When Targeting Consecrated Ground 2,Eternal Labyrinth,Purifying Flame has 30% increased Area of Effect if targeting Consecrated Ground,Purifying Flame
-Enchantment Purifying Flame Consecrated Ground Enemy Damage Taken 1,Merciless Labyrinth,Consecrated Ground from Purifying Flame applies 6% increased Damage taken to Enemies,Purifying Flame
-Enchantment Purifying Flame Consecrated Ground Enemy Damage Taken 2,Eternal Labyrinth,Consecrated Ground from Purifying Flame applies 9% increased Damage taken to Enemies,Purifying Flame
-Enchantment Purifying Flame Damage 1,Merciless Labyrinth,Purifying Flame deals 25% increased Damage,Purifying Flame
-Enchantment Purifying Flame Damage 2,Eternal Labyrinth,Purifying Flame deals 40% increased Damage,Purifying Flame
-Enchantment Purity Of Elements Mana Reservation 1,Merciless Labyrinth,Purity of Elements has 14% reduced Mana Reservation,Purity of Elements
-Enchantment Purity Of Elements Mana Reservation 2,Eternal Labyrinth,Purity of Elements has 20% reduced Mana Reservation,Purity of Elements
-Enchantment Purity Of Fire Mana Reservation 1,Merciless Labyrinth,Purity of Fire has 14% reduced Mana Reservation,Purity of Fire
-Enchantment Purity Of Fire Mana Reservation 2,Eternal Labyrinth,Purity of Fire has 20% reduced Mana Reservation,Purity of Fire
-Enchantment Purity Of Ice Mana Reservation 1,Merciless Labyrinth,Purity of Ice has 14% reduced Mana Reservation,Purity of Ice
-Enchantment Purity Of Ice Mana Reservation 2,Eternal Labyrinth,Purity of Ice has 20% reduced Mana Reservation,Purity of Ice
-Enchantment Purity Of Lightning Mana Reservation 1,Merciless Labyrinth,Purity of Lightning has 14% reduced Mana Reservation,Purity of Lightning
-Enchantment Purity Of Lightning Mana Reservation 2,Eternal Labyrinth,Purity of Lightning has 20% reduced Mana Reservation,Purity of Lightning
-Enchantment Pyroclast Mine Additional Projectiles 1,Merciless Labyrinth,Pyroclast Mine fires an additional Projectile,Pyroclast Mine
-Enchantment Pyroclast Mine Additional Projectiles 2,Eternal Labyrinth,Pyroclast Mine fires 2 additional Projectiles,Pyroclast Mine
-Enchantment Pyroclast Mine Damage 1,Merciless Labyrinth,Pyroclast Mine deals 25% increased Damage,Pyroclast Mine
-Enchantment Pyroclast Mine Damage 2,Eternal Labyrinth,Pyroclast Mine deals 40% increased Damage,Pyroclast Mine
-Enchantment Pyroclast Mine Throwing Speed 1,Merciless Labyrinth,Pyroclast Mine has 10% increased Throwing Speed,Pyroclast Mine
-Enchantment Pyroclast Mine Throwing Speed 2,Eternal Labyrinth,Pyroclast Mine has 15% increased Throwing Speed,Pyroclast Mine
-Enchantment Rain Of Arrows Area Of Effect 1,Merciless Labyrinth,16% increased Rain of Arrows Area of Effect,Rain of Arrows
-Enchantment Rain Of Arrows Area Of Effect 2,Eternal Labyrinth,24% increased Rain of Arrows Area of Effect,Rain of Arrows
-Enchantment Rain Of Arrows Attack Speed 1,Merciless Labyrinth,10% increased Rain of Arrows Attack Speed,Rain of Arrows
-Enchantment Rain Of Arrows Attack Speed 2,Eternal Labyrinth,15% increased Rain of Arrows Attack Speed,Rain of Arrows
-Enchantment Rain Of Arrows Damage 1,Merciless Labyrinth,25% increased Rain of Arrows Damage,Rain of Arrows
-Enchantment Rain Of Arrows Damage 2,Eternal Labyrinth,40% increased Rain of Arrows Damage,Rain of Arrows
-Enchantment Rain Of Arrows Repeat Count 1,Merciless Labyrinth,Rain of Arrows has 10% chance to fire an additional sequence of arrows,Rain of Arrows
-Enchantment Rain Of Arrows Repeat Count 2,Eternal Labyrinth,Rain of Arrows has 15% chance to fire an additional sequence of arrows,Rain of Arrows
-Enchantment Raise Spectre Damage 1,Merciless Labyrinth,Spectres have 25% increased Damage,Raise Spectre
-Enchantment Raise Spectre Damage 2,Eternal Labyrinth,Spectres have 40% increased Damage,Raise Spectre
-Enchantment Spectre Attack And Cast Speed 1,Merciless Labyrinth,Spectres have 8% increased Attack and Cast Speed,Raise Spectre
-Enchantment Spectre Attack And Cast Speed 2,Eternal Labyrinth,Spectres have 12% increased Attack and Cast Speed,Raise Spectre
-Enchantment Spectre Elemental Resistances 1,Merciless Labyrinth,+24% to Raised Spectre Elemental Resistances,Raise Spectre
-Enchantment Spectre Elemental Resistances 2,Eternal Labyrinth,+36% to Raised Spectre Elemental Resistances,Raise Spectre
-Enchantment Raise Zombie Damage 1,Merciless Labyrinth,Raised Zombies deal 25% increased Damage,Raise Zombie
-Enchantment Raise Zombie Damage 2,Eternal Labyrinth,Raised Zombies deal 40% increased Damage,Raise Zombie
-Enchantment Zombie Attack Speed 1,Merciless Labyrinth,Raised Zombies have 10% increased Attack Speed,Raise Zombie
-Enchantment Zombie Attack Speed 2,Eternal Labyrinth,Raised Zombies have 15% increased Attack Speed,Raise Zombie
-Enchantment Zombie Elemental Resistances 1,Merciless Labyrinth,Raised Zombies have +24% to Elemental Resistances,Raise Zombie
-Enchantment Zombie Elemental Resistances 2,Eternal Labyrinth,Raised Zombies have +36% to Elemental Resistances,Raise Zombie
-Enchantment Rallying Cry Buff Effect 1,Merciless Labyrinth,50% increased Rallying Cry Buff Effect,Rallying Cry
-Enchantment Rallying Cry Buff Effect 2,Eternal Labyrinth,75% increased Rallying Cry Buff Effect,Rallying Cry
-Enchantment Rallying Cry Duration 1,Merciless Labyrinth,30% increased Rallying Cry Duration,Rallying Cry
-Enchantment Rallying Cry Duration 2,Eternal Labyrinth,45% increased Rallying Cry Duration,Rallying Cry
-Enchantment Reave Area Of Effect 1,Merciless Labyrinth,16% increased Reave Radius,Reave
-Enchantment Reave Area Of Effect 2,Eternal Labyrinth,24% increased Reave Radius,Reave
-Enchantment Reave Damage 1,Merciless Labyrinth,25% increased Reave Damage,Reave
-Enchantment Reave Damage 2,Eternal Labyrinth,40% increased Reave Damage,Reave
-Enchantment Reckoning Cooldown Speed 1,Merciless Labyrinth,20% increased Reckoning Cooldown Recovery Speed,Reckoning
-Enchantment Reckoning Cooldown Speed 2,Eternal Labyrinth,30% increased Reckoning Cooldown Recovery Speed,Reckoning
-Enchantment Reckoning Damage 1,Merciless Labyrinth,25% increased Reckoning Damage,Reckoning
-Enchantment Reckoning Damage 2,Eternal Labyrinth,40% increased Reckoning Damage,Reckoning
-Enchantment Rejuvination Totem Life Regeneration 1,Merciless Labyrinth,30% increased Rejuvenation Totem Aura Effect,Rejuvenation Totem
-Enchantment Rejuvination Totem Life Regeneration 2,Eternal Labyrinth,45% increased Rejuvenation Totem Aura Effect,Rejuvenation Totem
-Enchantment Rejuvination Totem Percent Life Regeneration Added As Mana Regeneration 1,Merciless Labyrinth,Gain 10% of Rejuvenation Totem Life Regeneration as extra Mana Regeneration,Rejuvenation Totem
-Enchantment Rejuvination Totem Percent Life Regeneration Added As Mana Regeneration 2,Eternal Labyrinth,Gain 15% of Rejuvenation Totem Life Regeneration as extra Mana Regeneration,Rejuvenation Totem
-Enchantment Righteous Fire Area Of Effect 1,Merciless Labyrinth,16% increased Righteous Fire Area of Effect,Righteous Fire
-Enchantment Righteous Fire Area Of Effect 2,Eternal Labyrinth,24% increased Righteous Fire Area of Effect,Righteous Fire
-Enchantment Righteous Fire Damage 1,Merciless Labyrinth,25% increased Righteous Fire Damage,Righteous Fire
-Enchantment Righteous Fire Damage 2,Eternal Labyrinth,40% increased Righteous Fire Damage,Righteous Fire
-Enchantment Righteous Fire Spell Damage 1,Merciless Labyrinth,Righteous Fire grants 20% increased Spell Damage,Righteous Fire
-Enchantment Righteous Fire Spell Damage 2,Eternal Labyrinth,Righteous Fire grants 30% increased Spell Damage,Righteous Fire
-Enchantment Riposte Cooldown Speed 1,Merciless Labyrinth,20% increased Riposte Cooldown Recovery Speed,Riposte
-Enchantment Riposte Cooldown Speed 2,Eternal Labyrinth,30% increased Riposte Cooldown Recovery Speed,Riposte
-Enchantment Riposte Damage 1,Merciless Labyrinth,25% increased Riposte Damage,Riposte
-Enchantment Riposte Damage 2,Eternal Labyrinth,40% increased Riposte Damage,Riposte
-Enchantment Fire Beam Cast Speed 1,Merciless Labyrinth,8% increased Scorching Ray Cast Speed,Scorching Ray
-Enchantment Fire Beam Cast Speed 2,Eternal Labyrinth,12% increased Scorching Ray Cast Speed,Scorching Ray
-Enchantment Fire Beam Length 1,Merciless Labyrinth,10% increased Scorching Ray beam length,Scorching Ray
-Enchantment Fire Beam Length 2,Eternal Labyrinth,15% increased Scorching Ray beam length,Scorching Ray
-Enchantment Scorching Ray Damage 1,Merciless Labyrinth,25% increased Scorching Ray Damage,Scorching Ray
-Enchantment Scorching Ray Damage 2,Eternal Labyrinth,40% increased Scorching Ray Damage,Scorching Ray
+Enchantment Lightning Tower Trap Additional Beams 1,Merciless Labyrinth,Lightning Spire Trap strikes an additional area,Lightning Spire Trap
+Enchantment Lightning Tower Trap Cast Speed 1,Eternal Labyrinth,Lightning Spire Trap has 8% increased Cast Speed,Lightning Spire Trap
+Enchantment Lightning Tower Trap Cast Speed 2,Merciless Labyrinth,Lightning Spire Trap has 12% increased Cast Speed,Lightning Spire Trap
+Enchantment Lightning Tower Trap Cooldown Speed 1,Eternal Labyrinth,Lightning Spire Trap has 10% increased Cooldown Recovery Speed,Lightning Spire Trap
+Enchantment Lightning Tower Trap Cooldown Speed 2,Merciless Labyrinth,Lightning Spire Trap has 15% increased Cooldown Recovery Speed,Lightning Spire Trap
+Enchantment Lightning Tower Trap Damage 1,Eternal Labyrinth,Lightning Spire Trap deals 25% increased Damage,Lightning Spire Trap
+Enchantment Lightning Tower Trap Damage 2,Merciless Labyrinth,Lightning Spire Trap deals 40% increased Damage,Lightning Spire Trap
+Enchantment Lightning Tower Trap Duration 1,Eternal Labyrinth,Lightning Spire Trap has 20% increased Skill Effect Duration,Lightning Spire Trap
+Enchantment Lightning Tower Trap Duration 2,Merciless Labyrinth,Lightning Spire Trap has 30% increased Skill Effect Duration,Lightning Spire Trap
+Enchantment Lightning Strike Additional Pierce 1,Eternal Labyrinth,Lightning Strike pierces 2 additional Targets,Lightning Strike
+Enchantment Lightning Strike Additional Pierce 2,Merciless Labyrinth,Lightning Strike pierces 3 additional Targets,Lightning Strike
+Enchantment Lightning Strike Damage 1,Eternal Labyrinth,25% increased Lightning Strike Damage,Lightning Strike
+Enchantment Lightning Strike Damage 2,Merciless Labyrinth,40% increased Lightning Strike Damage,Lightning Strike
+Enchantment Lightning Strike Num Of Additional Projectiles 1,Eternal Labyrinth,Lightning Strike fires 2 additional Projectiles,Lightning Strike
+Enchantment Lightning Strike Num Of Additional Projectiles 2,Merciless Labyrinth,Lightning Strike fires 3 additional Projectiles,Lightning Strike
+Enchantment Lightning Tendrils Area Of Effect 1,Eternal Labyrinth,16% increased Lightning Tendrils Area of Effect,Lightning Tendrils
+Enchantment Lightning Tendrils Area Of Effect 2,Merciless Labyrinth,24% increased Lightning Tendrils Area of Effect,Lightning Tendrils
+Enchantment Lightning Tendrils Critical Strike Chance 1,Eternal Labyrinth,40% increased Lightning Tendrils Critical Strike Chance,Lightning Tendrils
+Enchantment Lightning Tendrils Critical Strike Chance 2,Merciless Labyrinth,60% increased Lightning Tendrils Critical Strike Chance,Lightning Tendrils
+Enchantment Lightning Tendrils Damage 1,Eternal Labyrinth,25% increased Lightning Tendrils Damage,Lightning Tendrils
+Enchantment Lightning Tendrils Damage 2,Merciless Labyrinth,40% increased Lightning Tendrils Damage,Lightning Tendrils
+Enchantment Lightning Trap Additional Pierce 1,Eternal Labyrinth,Lightning Trap pierces 2 additional Targets,Lightning Trap
+Enchantment Lightning Trap Additional Pierce 2,Merciless Labyrinth,Lightning Trap pierces 3 additional Targets,Lightning Trap
+Enchantment Lightning Trap Damage 1,Eternal Labyrinth,25% increased Lightning Trap Damage,Lightning Trap
+Enchantment Lightning Trap Damage 2,Merciless Labyrinth,40% increased Lightning Trap Damage,Lightning Trap
+Enchantment Lightning Trap Penetration 1,Eternal Labyrinth,Lightning Trap Damage Penetrates 6% Lightning Resistance,Lightning Trap
+Enchantment Lightning Trap Penetration 2,Merciless Labyrinth,Lightning Trap Damage Penetrates 10% Lightning Resistance,Lightning Trap
+Enchantment Lightning Trap Shock Effect 1,Eternal Labyrinth,25% increased Lightning Trap Shock Effect,Lightning Trap
+Enchantment Lightning Trap Shock Effect 2,Merciless Labyrinth,40% increased Lightning Trap Shock Effect,Lightning Trap
+Enchantment Lightning Warp Cast Speed 1,Eternal Labyrinth,8% increased Lightning Warp Cast Speed,Lightning Warp
+Enchantment Lightning Warp Cast Speed 2,Merciless Labyrinth,12% increased Lightning Warp Cast Speed,Lightning Warp
+Enchantment Lightning Warp Damage 1,Eternal Labyrinth,25% increased Lightning Warp Damage,Lightning Warp
+Enchantment Lightning Warp Damage 2,Merciless Labyrinth,40% increased Lightning Warp Damage,Lightning Warp
+Enchantment Lightning Warp Duration 1,Eternal Labyrinth,20% reduced Lightning Warp Duration,Lightning Warp
+Enchantment Lightning Warp Duration 2,Merciless Labyrinth,30% reduced Lightning Warp Duration,Lightning Warp
+Enchantment Magma Orb Area Of Effect 1,Eternal Labyrinth,16% increased Magma Orb Area of Effect,Magma Orb
+Enchantment Magma Orb Area Of Effect 2,Merciless Labyrinth,24% increased Magma Orb Area of Effect,Magma Orb
+Enchantment Magma Orb Damage 1,Eternal Labyrinth,25% increased Magma Orb Damage,Magma Orb
+Enchantment Magma Orb Damage 2,Merciless Labyrinth,40% increased Magma Orb Damage,Magma Orb
+Enchantment Magma Orb Num Of Additional Projectiles In Chain 1,Eternal Labyrinth,Magma Orb Chains an additional time,Magma Orb
+Enchantment Magma Orb Num Of Additional Projectiles In Chain 2,Merciless Labyrinth,Magma Orb Chains an additional 2 times,Magma Orb
+Enchantment Malevolence Mana Reservation 1,Eternal Labyrinth,Malevolence has 10% reduced Mana Reservation,Malevolence
+Enchantment Malevolence Mana Reservation 2,Merciless Labyrinth,Malevolence has 15% reduced Mana Reservation,Malevolence
+Enchantment Mirror Arrow Attack Speed 1,Eternal Labyrinth,Mirror Arrow and Mirror Arrow Clones have 10% increased Attack Speed,Mirror Arrow
+Enchantment Mirror Arrow Attack Speed 2,Merciless Labyrinth,Mirror Arrow and Mirror Arrow Clones have 15% increased Attack Speed,Mirror Arrow
+Enchantment Mirror Arrow Cooldown Speed 1,Eternal Labyrinth,20% increased Mirror Arrow Cooldown Recovery Speed,Mirror Arrow
+Enchantment Mirror Arrow Cooldown Speed 2,Merciless Labyrinth,30% increased Mirror Arrow Cooldown Recovery Speed,Mirror Arrow
+Enchantment Mirror Arrow Damage 1,Eternal Labyrinth,Mirror Arrow and Mirror Arrow Clones deal 25% increased Damage,Mirror Arrow
+Enchantment Mirror Arrow Damage 2,Merciless Labyrinth,Mirror Arrow and Mirror Arrow Clones deal 40% increased Damage,Mirror Arrow
+Enchantment Molten Shell Armour 1,Eternal Labyrinth,100% increased Molten Shell Buff Effect,Molten Shell
+Enchantment Molten Shell Armour 2,Merciless Labyrinth,150% increased Molten Shell Buff Effect,Molten Shell
+Enchantment Molten Shell Duration 1,Eternal Labyrinth,Molten Shell has 25% increased Skill Effect Duration,Molten Shell
+Enchantment Molten Shell Duration 2,Merciless Labyrinth,Molten Shell has 40% increased Skill Effect Duration,Molten Shell
+Enchantment Molten Strike Area Of Effect 1,Eternal Labyrinth,16% increased Molten Strike Area of Effect,Molten Strike
+Enchantment Molten Strike Area Of Effect 2,Merciless Labyrinth,24% increased Molten Strike Area of Effect,Molten Strike
+Enchantment Molten Strike Damage 1,Eternal Labyrinth,25% increased Molten Strike Damage,Molten Strike
+Enchantment Molten Strike Damage 2,Merciless Labyrinth,40% increased Molten Strike Damage,Molten Strike
+Enchantment Molten Strike Num Of Additional Projectiles 1,Eternal Labyrinth,Molten Strike fires an additional Projectile,Molten Strike
+Enchantment Molten Strike Num Of Additional Projectiles 2,Merciless Labyrinth,Molten Strike fires 2 additional Projectiles,Molten Strike
+Enchantment Orb of Storms Area Of Effect 1,Eternal Labyrinth,16% increased Orb of Storms Area of Effect,Orb of Storms
+Enchantment Orb of Storms Area Of Effect 2,Merciless Labyrinth,24% increased Orb of Storms Area of Effect,Orb of Storms
+Enchantment Orb Of Storms Cast Speed 1,Eternal Labyrinth,Orb of Storms has 20% increased Cast Speed,Orb of Storms
+Enchantment Orb Of Storms Cast Speed 2,Merciless Labyrinth,Orb of Storms has 30% increased Cast Speed,Orb of Storms
+Enchantment Orb of Storms Critical Strike Chance 1,Eternal Labyrinth,60% increased Orb of Storms Critical Strike Chance,Orb of Storms
+Enchantment Orb of Storms Critical Strike Chance 2,Merciless Labyrinth,90% increased Orb of Storms Critical Strike Chance,Orb of Storms
+Enchantment Orb Of Storms Damage 1,Eternal Labyrinth,25% increased Orb of Storms Damage,Orb of Storms
+Enchantment Orb Of Storms Damage 2,Merciless Labyrinth,40% increased Orb of Storms Damage,Orb of Storms
+Enchantment Perforate Area Of Effect 1,Eternal Labyrinth,Perforate has 16% increased Area of Effect,Perforate
+Enchantment Perforate Area Of Effect 2,Merciless Labyrinth,Perforate has 24% increased Area of Effect,Perforate
+Enchantment Perforate Damage 1,Eternal Labyrinth,Perforate deals 25% increased Damage,Perforate
+Enchantment Perforate Damage 2,Merciless Labyrinth,Perforate deals 40% increased Damage,Perforate
+Enchantment Perforate Number Of Spikes 1,Eternal Labyrinth,Perforate creates +1 Spike,Perforate
+Enchantment Perforate Number Of Spikes 2,Merciless Labyrinth,Perforate creates +2 Spikes,Perforate
+Enchantment Pestilent Strike Area Of Effect 1,Eternal Labyrinth,Pestilent Strike has 16% increased Area of Effect,Pestilent Strike
+Enchantment Pestilent Strike Area Of Effect 2,Merciless Labyrinth,Pestilent Strike has 24% increased Area of Effect,Pestilent Strike
+Enchantment Pestilent Strike Damage 1,Eternal Labyrinth,Pestilent Strike deals 25% increased Damage,Pestilent Strike
+Enchantment Pestilent Strike Damage 2,Merciless Labyrinth,Pestilent Strike deals 40% increased Damage,Pestilent Strike
+Enchantment Pestilent Strike Duration 1,Eternal Labyrinth,Pestilent Strike has 25% increased Duration,Pestilent Strike
+Enchantment Pestilent Strike Duration 2,Merciless Labyrinth,Pestilent Strike has 40% increased Duration,Pestilent Strike
+Enchantment Phase Run Duration 1,Eternal Labyrinth,24% increased Phase Run Duration,Phase Run
+Enchantment Phase Run Duration 2,Merciless Labyrinth,36% increased Phase Run Duration,Phase Run
+Enchantment Phase Run Percent Chance To Not Consume Frenzy Charges 1,Eternal Labyrinth,20% chance for Phase Run to increase Duration without removing Frenzy Charges,Phase Run
+Enchantment Phase Run Percent Chance To Not Consume Frenzy Charges 2,Merciless Labyrinth,30% chance for Phase Run to increase Duration without removing Frenzy Charges,Phase Run
+Enchantment Plague Bearer Poison Dot Multiplier While Aura Active 1,Eternal Labyrinth,Plague Bearer Buff grants +12% to Poison Damage over Time Multiplier while Infecting,Plague Bearer
+Enchantment Plague Bearer Poison Dot Multiplier While Aura Active 2,Merciless Labyrinth,Plague Bearer Buff grants +20% to Poison Damage over Time Multiplier while Infecting,Plague Bearer
+Enchantment Plague Bearer Stored Poison Damage To Deal Per Second 1,Eternal Labyrinth,Plague Bearer deals Damage based on an additional 3% of Plague Value,Plague Bearer
+Enchantment Plague Bearer Stored Poison Damage To Deal Per Second 2,Merciless Labyrinth,Plague Bearer deals Damage based on an additional 5% of Plague Value,Plague Bearer
+Enchantment Poachers Mark Curse Effect 1,Eternal Labyrinth,20% increased Poacher's Mark Curse Effect,Poacher's Mark
+Enchantment Poachers Mark Curse Effect 2,Merciless Labyrinth,30% increased Poacher's Mark Curse Effect,Poacher's Mark
+Enchantment Poachers Mark Duration 1,Eternal Labyrinth,30% increased Poacher's Mark Duration,Poacher's Mark
+Enchantment Poachers Mark Duration 2,Merciless Labyrinth,45% increased Poacher's Mark Duration,Poacher's Mark
+Enchantment Power Siphon Additional Projectiles 1,Eternal Labyrinth,Power Siphon fires an additional Projectile,Power Siphon
+Enchantment Power Siphon Additional Projectiles 2,Merciless Labyrinth,Power Siphon fires 2 additional Projectiles,Power Siphon
+Enchantment Power Siphon Attack Speed 1,Eternal Labyrinth,10% increased Power Siphon Attack Speed,Power Siphon
+Enchantment Power Siphon Attack Speed 2,Merciless Labyrinth,15% increased Power Siphon Attack Speed,Power Siphon
+Enchantment Power Siphon Damage 1,Eternal Labyrinth,25% increased Power Siphon Damage,Power Siphon
+Enchantment Power Siphon Damage 2,Merciless Labyrinth,40% increased Power Siphon Damage,Power Siphon
+Enchantment Power Siphon Percent Chance To Gain Power Charge On Kill 1,Eternal Labyrinth,30% Chance to gain an additional Power Charge on Kill with Power Siphon,Power Siphon
+Enchantment Power Siphon Percent Chance To Gain Power Charge On Kill 2,Merciless Labyrinth,45% Chance to gain an additional Power Charge on Kill with Power Siphon,Power Siphon
+Enchantment Precision Mana Reservation 1,Eternal Labyrinth,Precision has 20% reduced Mana Reservation,Precision
+Enchantment Precision Mana Reservation 2,Merciless Labyrinth,Precision has 30% reduced Mana Reservation,Precision
+Enchantment Pride Mana Reservation 1,Eternal Labyrinth,Pride has 10% reduced Mana Reservation,Pride
+Enchantment Pride Mana Reservation 2,Merciless Labyrinth,Pride has 15% reduced Mana Reservation,Pride
+Enchantment Projectile Weakness Curse Effect 1,Eternal Labyrinth,20% increased Projectile Weakness Curse Effect,Projectile Weakness
+Enchantment Projectile Weakness Curse Effect 2,Merciless Labyrinth,30% increased Projectile Weakness Curse Effect,Projectile Weakness
+Enchantment Projectile Weakness Duration 1,Eternal Labyrinth,30% increased Projectile Weakness Duration,Projectile Weakness
+Enchantment Projectile Weakness Duration 2,Merciless Labyrinth,45% increased Projectile Weakness Duration,Projectile Weakness
+Enchantment Puncture Damage 1,Eternal Labyrinth,25% increased Puncture Damage,Puncture
+Enchantment Puncture Damage 2,Merciless Labyrinth,40% increased Puncture Damage,Puncture
+Enchantment Puncture Duration 1,Eternal Labyrinth,30% increased Puncture Duration,Puncture
+Enchantment Puncture Duration 2,Merciless Labyrinth,45% increased Puncture Duration,Puncture
+Enchantment Puncture Maim On Hit Percent Chance 1,Eternal Labyrinth,20% Chance for Puncture to Maim on hit,Puncture
+Enchantment Puncture Maim On Hit Percent Chance 2,Merciless Labyrinth,30% Chance for Puncture to Maim on hit,Puncture
+Enchantment Punishment Curse Effect 1,Eternal Labyrinth,20% increased Punishment Curse Effect,Punishment
+Enchantment Punishment Curse Effect 2,Merciless Labyrinth,30% increased Punishment Curse Effect,Punishment
+Enchantment Punishment Duration 1,Eternal Labyrinth,30% increased Punishment Duration,Punishment
+Enchantment Punishment Duration 2,Merciless Labyrinth,45% increased Punishment Duration,Punishment
+Enchantment Purifying Flame Area Of Effect When Targeting Consecrated Ground 1,Eternal Labyrinth,Purifying Flame has 20% increased Area of Effect if targeting Consecrated Ground,Purifying Flame
+Enchantment Purifying Flame Area Of Effect When Targeting Consecrated Ground 2,Merciless Labyrinth,Purifying Flame has 30% increased Area of Effect if targeting Consecrated Ground,Purifying Flame
+Enchantment Purifying Flame Consecrated Ground Enemy Damage Taken 1,Eternal Labyrinth,Consecrated Ground from Purifying Flame applies 6% increased Damage taken to Enemies,Purifying Flame
+Enchantment Purifying Flame Consecrated Ground Enemy Damage Taken 2,Merciless Labyrinth,Consecrated Ground from Purifying Flame applies 9% increased Damage taken to Enemies,Purifying Flame
+Enchantment Purifying Flame Damage 1,Eternal Labyrinth,Purifying Flame deals 25% increased Damage,Purifying Flame
+Enchantment Purifying Flame Damage 2,Merciless Labyrinth,Purifying Flame deals 40% increased Damage,Purifying Flame
+Enchantment Purity Of Elements Mana Reservation 1,Eternal Labyrinth,Purity of Elements has 14% reduced Mana Reservation,Purity of Elements
+Enchantment Purity Of Elements Mana Reservation 2,Merciless Labyrinth,Purity of Elements has 20% reduced Mana Reservation,Purity of Elements
+Enchantment Purity Of Fire Mana Reservation 1,Eternal Labyrinth,Purity of Fire has 14% reduced Mana Reservation,Purity of Fire
+Enchantment Purity Of Fire Mana Reservation 2,Merciless Labyrinth,Purity of Fire has 20% reduced Mana Reservation,Purity of Fire
+Enchantment Purity Of Ice Mana Reservation 1,Eternal Labyrinth,Purity of Ice has 14% reduced Mana Reservation,Purity of Ice
+Enchantment Purity Of Ice Mana Reservation 2,Merciless Labyrinth,Purity of Ice has 20% reduced Mana Reservation,Purity of Ice
+Enchantment Purity Of Lightning Mana Reservation 1,Eternal Labyrinth,Purity of Lightning has 14% reduced Mana Reservation,Purity of Lightning
+Enchantment Purity Of Lightning Mana Reservation 2,Merciless Labyrinth,Purity of Lightning has 20% reduced Mana Reservation,Purity of Lightning
+Enchantment Pyroclast Mine Additional Projectiles 1,Eternal Labyrinth,Pyroclast Mine fires an additional Projectile,Pyroclast Mine
+Enchantment Pyroclast Mine Additional Projectiles 2,Merciless Labyrinth,Pyroclast Mine fires 2 additional Projectiles,Pyroclast Mine
+Enchantment Pyroclast Mine Damage 1,Eternal Labyrinth,Pyroclast Mine deals 25% increased Damage,Pyroclast Mine
+Enchantment Pyroclast Mine Damage 2,Merciless Labyrinth,Pyroclast Mine deals 40% increased Damage,Pyroclast Mine
+Enchantment Pyroclast Mine Throwing Speed 1,Eternal Labyrinth,Pyroclast Mine has 10% increased Throwing Speed,Pyroclast Mine
+Enchantment Pyroclast Mine Throwing Speed 2,Merciless Labyrinth,Pyroclast Mine has 15% increased Throwing Speed,Pyroclast Mine
+Enchantment Rain Of Arrows Area Of Effect 1,Eternal Labyrinth,16% increased Rain of Arrows Area of Effect,Rain of Arrows
+Enchantment Rain Of Arrows Area Of Effect 2,Merciless Labyrinth,24% increased Rain of Arrows Area of Effect,Rain of Arrows
+Enchantment Rain Of Arrows Attack Speed 1,Eternal Labyrinth,10% increased Rain of Arrows Attack Speed,Rain of Arrows
+Enchantment Rain Of Arrows Attack Speed 2,Merciless Labyrinth,15% increased Rain of Arrows Attack Speed,Rain of Arrows
+Enchantment Rain Of Arrows Damage 1,Eternal Labyrinth,25% increased Rain of Arrows Damage,Rain of Arrows
+Enchantment Rain Of Arrows Damage 2,Merciless Labyrinth,40% increased Rain of Arrows Damage,Rain of Arrows
+Enchantment Rain Of Arrows Repeat Count 1,Eternal Labyrinth,Rain of Arrows has 10% chance to fire an additional sequence of arrows,Rain of Arrows
+Enchantment Rain Of Arrows Repeat Count 2,Merciless Labyrinth,Rain of Arrows has 15% chance to fire an additional sequence of arrows,Rain of Arrows
+Enchantment Raise Spectre Damage 1,Eternal Labyrinth,Spectres have 25% increased Damage,Raise Spectre
+Enchantment Raise Spectre Damage 2,Merciless Labyrinth,Spectres have 40% increased Damage,Raise Spectre
+Enchantment Spectre Attack And Cast Speed 1,Eternal Labyrinth,Spectres have 8% increased Attack and Cast Speed,Raise Spectre
+Enchantment Spectre Attack And Cast Speed 2,Merciless Labyrinth,Spectres have 12% increased Attack and Cast Speed,Raise Spectre
+Enchantment Spectre Elemental Resistances 1,Eternal Labyrinth,+24% to Raised Spectre Elemental Resistances,Raise Spectre
+Enchantment Spectre Elemental Resistances 2,Merciless Labyrinth,+36% to Raised Spectre Elemental Resistances,Raise Spectre
+Enchantment Raise Zombie Damage 1,Eternal Labyrinth,Raised Zombies deal 25% increased Damage,Raise Zombie
+Enchantment Raise Zombie Damage 2,Merciless Labyrinth,Raised Zombies deal 40% increased Damage,Raise Zombie
+Enchantment Zombie Attack Speed 1,Eternal Labyrinth,Raised Zombies have 10% increased Attack Speed,Raise Zombie
+Enchantment Zombie Attack Speed 2,Merciless Labyrinth,Raised Zombies have 15% increased Attack Speed,Raise Zombie
+Enchantment Zombie Elemental Resistances 1,Eternal Labyrinth,Raised Zombies have +24% to Elemental Resistances,Raise Zombie
+Enchantment Zombie Elemental Resistances 2,Merciless Labyrinth,Raised Zombies have +36% to Elemental Resistances,Raise Zombie
+Enchantment Rallying Cry Buff Effect 1,Eternal Labyrinth,50% increased Rallying Cry Buff Effect,Rallying Cry
+Enchantment Rallying Cry Buff Effect 2,Merciless Labyrinth,75% increased Rallying Cry Buff Effect,Rallying Cry
+Enchantment Rallying Cry Duration 1,Eternal Labyrinth,30% increased Rallying Cry Duration,Rallying Cry
+Enchantment Rallying Cry Duration 2,Merciless Labyrinth,45% increased Rallying Cry Duration,Rallying Cry
+Enchantment Reave Area Of Effect 1,Eternal Labyrinth,16% increased Reave Radius,Reave
+Enchantment Reave Area Of Effect 2,Merciless Labyrinth,24% increased Reave Radius,Reave
+Enchantment Reave Damage 1,Eternal Labyrinth,25% increased Reave Damage,Reave
+Enchantment Reave Damage 2,Merciless Labyrinth,40% increased Reave Damage,Reave
+Enchantment Reckoning Cooldown Speed 1,Eternal Labyrinth,20% increased Reckoning Cooldown Recovery Speed,Reckoning
+Enchantment Reckoning Cooldown Speed 2,Merciless Labyrinth,30% increased Reckoning Cooldown Recovery Speed,Reckoning
+Enchantment Reckoning Damage 1,Eternal Labyrinth,25% increased Reckoning Damage,Reckoning
+Enchantment Reckoning Damage 2,Merciless Labyrinth,40% increased Reckoning Damage,Reckoning
+Enchantment Rejuvination Totem Life Regeneration 1,Eternal Labyrinth,30% increased Rejuvenation Totem Aura Effect,Rejuvenation Totem
+Enchantment Rejuvination Totem Life Regeneration 2,Merciless Labyrinth,45% increased Rejuvenation Totem Aura Effect,Rejuvenation Totem
+Enchantment Rejuvination Totem Percent Life Regeneration Added As Mana Regeneration 1,Eternal Labyrinth,Gain 10% of Rejuvenation Totem Life Regeneration as extra Mana Regeneration,Rejuvenation Totem
+Enchantment Rejuvination Totem Percent Life Regeneration Added As Mana Regeneration 2,Merciless Labyrinth,Gain 15% of Rejuvenation Totem Life Regeneration as extra Mana Regeneration,Rejuvenation Totem
+Enchantment Righteous Fire Area Of Effect 1,Eternal Labyrinth,16% increased Righteous Fire Area of Effect,Righteous Fire
+Enchantment Righteous Fire Area Of Effect 2,Merciless Labyrinth,24% increased Righteous Fire Area of Effect,Righteous Fire
+Enchantment Righteous Fire Damage 1,Eternal Labyrinth,25% increased Righteous Fire Damage,Righteous Fire
+Enchantment Righteous Fire Damage 2,Merciless Labyrinth,40% increased Righteous Fire Damage,Righteous Fire
+Enchantment Righteous Fire Spell Damage 1,Eternal Labyrinth,Righteous Fire grants 20% increased Spell Damage,Righteous Fire
+Enchantment Righteous Fire Spell Damage 2,Merciless Labyrinth,Righteous Fire grants 30% increased Spell Damage,Righteous Fire
+Enchantment Riposte Cooldown Speed 1,Eternal Labyrinth,20% increased Riposte Cooldown Recovery Speed,Riposte
+Enchantment Riposte Cooldown Speed 2,Merciless Labyrinth,30% increased Riposte Cooldown Recovery Speed,Riposte
+Enchantment Riposte Damage 1,Eternal Labyrinth,25% increased Riposte Damage,Riposte
+Enchantment Riposte Damage 2,Merciless Labyrinth,40% increased Riposte Damage,Riposte
+Enchantment Fire Beam Cast Speed 1,Eternal Labyrinth,8% increased Scorching Ray Cast Speed,Scorching Ray
+Enchantment Fire Beam Cast Speed 2,Merciless Labyrinth,12% increased Scorching Ray Cast Speed,Scorching Ray
+Enchantment Fire Beam Length 1,Eternal Labyrinth,10% increased Scorching Ray beam length,Scorching Ray
+Enchantment Fire Beam Length 2,Merciless Labyrinth,15% increased Scorching Ray beam length,Scorching Ray
+Enchantment Scorching Ray Damage 1,Eternal Labyrinth,25% increased Scorching Ray Damage,Scorching Ray
+Enchantment Scorching Ray Damage 2,Merciless Labyrinth,40% increased Scorching Ray Damage,Scorching Ray
 Enchantment Scourge Arrow Additional Spore 1,Eternal Labyrinth,Scourge Arrow creates an additional spore pod at Maximum Stages,Scourge Arrow
 Enchantment Scourge Arrow Chance To Poison 1,Merciless Labyrinth,Scourge Arrow has 6% chance to Poison per Stage,Scourge Arrow
 Enchantment Scourge Arrow Chance To Poison 2,Eternal Labyrinth,Scourge Arrow has 8% chance to Poison per Stage,Scourge Arrow
@@ -797,33 +789,33 @@ Enchantment Searing Bond Totem Elemental Resistances 1,Merciless Labyrinth,24% i
 Enchantment Searing Bond Totem Elemental Resistances 2,Eternal Labyrinth,36% increased Searing Bond Totem Elemental Resistances,Searing Bond
 Enchantment Searing Bond Totem Placement Speed 1,Merciless Labyrinth,40% increased Searing Bond Totem Placement Speed,Searing Bond
 Enchantment Searing Bond Totem Placement Speed 2,Eternal Labyrinth,60% increased Searing Bond Totem Placement Speed,Searing Bond
-Enchantment Physical Cascade Additional Cascades 1,Eternal Labyrinth,Seismic Trap releases an additional Wave,Seismic Trap
-Enchantment Physical Cascade Cooldown Speed 1,Merciless Labyrinth,Seismic Trap has 10% increased Cooldown Recovery Speed,Seismic Trap
-Enchantment Physical Cascade Cooldown Speed 2,Eternal Labyrinth,Seismic Trap has 15% increased Cooldown Recovery Speed,Seismic Trap
-Enchantment Physical Cascade Trap Damage 1,Merciless Labyrinth,Seismic Trap deals 25% increased Damage,Seismic Trap
-Enchantment Physical Cascade Trap Damage 2,Eternal Labyrinth,Seismic Trap deals 40% increased Damage,Seismic Trap
-Enchantment Physical Cascade Trap Duration 1,Merciless Labyrinth,Seismic Trap has 20% increased Skill Effect Duration,Seismic Trap
-Enchantment Physical Cascade Trap Duration 2,Eternal Labyrinth,Seismic Trap has 30% increased Skill Effect Duration,Seismic Trap
+Enchantment Physical Cascade Additional Cascades 1,Merciless Labyrinth,Seismic Trap releases an additional Wave,Seismic Trap
+Enchantment Physical Cascade Cooldown Speed 1,Eternal Labyrinth,Seismic Trap has 10% increased Cooldown Recovery Speed,Seismic Trap
+Enchantment Physical Cascade Cooldown Speed 2,Merciless Labyrinth,Seismic Trap has 15% increased Cooldown Recovery Speed,Seismic Trap
+Enchantment Physical Cascade Trap Damage 1,Eternal Labyrinth,Seismic Trap deals 25% increased Damage,Seismic Trap
+Enchantment Physical Cascade Trap Damage 2,Merciless Labyrinth,Seismic Trap deals 40% increased Damage,Seismic Trap
+Enchantment Physical Cascade Trap Duration 1,Eternal Labyrinth,Seismic Trap has 20% increased Skill Effect Duration,Seismic Trap
+Enchantment Physical Cascade Trap Duration 2,Merciless Labyrinth,Seismic Trap has 30% increased Skill Effect Duration,Seismic Trap
 Enchantment Shattering Steel Additional Projectile 1,Eternal Labyrinth,Shattering Steel fires an additional Projectile,Shattering Steel
 Enchantment Shattering Steel Damage 1,Merciless Labyrinth,Shattering Steel deals 25% increased Damage,Shattering Steel
 Enchantment Shattering Steel Damage 2,Eternal Labyrinth,Shattering Steel deals 40% increased Damage,Shattering Steel
-Enchantment Shattering Steel Fortify On Hit Close Range 1,Eternal Labyrinth,Shattering Steel grants Fortify on Hitting an Enemy at Close Range,Shattering Steel
-Enchantment Shield Charge Attack Speed 1,Merciless Labyrinth,10% increased Shield Charge Attack Speed,Shield Charge
-Enchantment Shield Charge Attack Speed 2,Eternal Labyrinth,15% increased Shield Charge Attack Speed,Shield Charge
-Enchantment Shield Charge Damage 1,Merciless Labyrinth,25% increased Shield Charge Damage,Shield Charge
-Enchantment Shield Charge Damage 2,Eternal Labyrinth,40% increased Shield Charge Damage,Shield Charge
-Enchantment Shock Nova Area Of Effect 1,Merciless Labyrinth,16% increased Shock Nova Area of Effect,Shock Nova
-Enchantment Shock Nova Area Of Effect 2,Eternal Labyrinth,24% increased Shock Nova Area of Effect,Shock Nova
-Enchantment Shock Nova Damage 1,Merciless Labyrinth,25% increased Shock Nova Damage,Shock Nova
-Enchantment Shock Nova Damage 2,Eternal Labyrinth,40% increased Shock Nova Damage,Shock Nova
-Enchantment Shock Nova Larger Ring Damage 1,Merciless Labyrinth,Shock Nova ring deals 40% increased Damage,Shock Nova
-Enchantment Shock Nova Larger Ring Damage 2,Eternal Labyrinth,Shock Nova ring deals 60% increased Damage,Shock Nova
-Enchantment Shockwave Totem Cast Speed 1,Merciless Labyrinth,10% increased Shockwave Totem Cast Speed,Shockwave Totem
-Enchantment Shockwave Totem Cast Speed 2,Eternal Labyrinth,15% increased Shockwave Totem Cast Speed,Shockwave Totem
-Enchantment Shockwave Totem Damage 1,Merciless Labyrinth,25% increased Shockwave Totem Damage,Shockwave Totem
-Enchantment Shockwave Totem Damage 2,Eternal Labyrinth,40% increased Shockwave Totem Damage,Shockwave Totem
-Enchantment Shockwave Totem Radius 1,Merciless Labyrinth,16% increased Shockwave Totem Area of Effect,Shockwave Totem
-Enchantment Shockwave Totem Radius 2,Eternal Labyrinth,24% increased Shockwave Totem Area of Effect,Shockwave Totem
+Enchantment Shattering Steel Fortify On Hit Close Range 1,Merciless Labyrinth,Shattering Steel grants Fortify on Hitting an Enemy at Close Range,Shattering Steel
+Enchantment Shield Charge Attack Speed 1,Eternal Labyrinth,10% increased Shield Charge Attack Speed,Shield Charge
+Enchantment Shield Charge Attack Speed 2,Merciless Labyrinth,15% increased Shield Charge Attack Speed,Shield Charge
+Enchantment Shield Charge Damage 1,Eternal Labyrinth,25% increased Shield Charge Damage,Shield Charge
+Enchantment Shield Charge Damage 2,Merciless Labyrinth,40% increased Shield Charge Damage,Shield Charge
+Enchantment Shock Nova Area Of Effect 1,Eternal Labyrinth,16% increased Shock Nova Area of Effect,Shock Nova
+Enchantment Shock Nova Area Of Effect 2,Merciless Labyrinth,24% increased Shock Nova Area of Effect,Shock Nova
+Enchantment Shock Nova Damage 1,Eternal Labyrinth,25% increased Shock Nova Damage,Shock Nova
+Enchantment Shock Nova Damage 2,Merciless Labyrinth,40% increased Shock Nova Damage,Shock Nova
+Enchantment Shock Nova Larger Ring Damage 1,Eternal Labyrinth,Shock Nova ring deals 40% increased Damage,Shock Nova
+Enchantment Shock Nova Larger Ring Damage 2,Merciless Labyrinth,Shock Nova ring deals 60% increased Damage,Shock Nova
+Enchantment Shockwave Totem Cast Speed 1,Eternal Labyrinth,10% increased Shockwave Totem Cast Speed,Shockwave Totem
+Enchantment Shockwave Totem Cast Speed 2,Merciless Labyrinth,15% increased Shockwave Totem Cast Speed,Shockwave Totem
+Enchantment Shockwave Totem Damage 1,Eternal Labyrinth,25% increased Shockwave Totem Damage,Shockwave Totem
+Enchantment Shockwave Totem Damage 2,Merciless Labyrinth,40% increased Shockwave Totem Damage,Shockwave Totem
+Enchantment Shockwave Totem Radius 1,Eternal Labyrinth,16% increased Shockwave Totem Area of Effect,Shockwave Totem
+Enchantment Shockwave Totem Radius 2,Merciless Labyrinth,24% increased Shockwave Totem Area of Effect,Shockwave Totem
 Enchantment Shrapnel Ballista Additional Arrows 1,Eternal Labyrinth,Shrapnel Ballista fires an additional Arrow,Shrapnel Ballista
 Enchantment Shrapnel Ballista Extra Pierces 1,Merciless Labyrinth,Shrapnel Ballista Pierces 4 additional Targets,Shrapnel Ballista
 Enchantment Shrapnel Ballista Extra Pierces 2,Eternal Labyrinth,Shrapnel Ballista Pierces 6 additional Targets,Shrapnel Ballista
@@ -845,23 +837,23 @@ Enchantment Ice Siphon Trap Chill Effect 1,Merciless Labyrinth,Siphoning Trap ha
 Enchantment Ice Siphon Trap Chill Effect 2,Eternal Labyrinth,Siphoning Trap has 40% increased Chill Effect,Siphoning Trap
 Enchantment Ice Siphon Trap Damage 1,Merciless Labyrinth,Siphoning Trap deals 25% increased Damage,Siphoning Trap
 Enchantment Ice Siphon Trap Damage 2,Eternal Labyrinth,Siphoning Trap deals 40% increased Damage,Siphoning Trap
-Enchantment Ice Siphon Trap Damage Taken 1,Eternal Labyrinth,Siphoning Trap's beam to you grants 1% reduced Damage taken for each other beam,Siphoning Trap
-Enchantment Ice Siphon Trap Duration 1,Merciless Labyrinth,Siphoning Trap has 30% increased Skill Effect Duration,Siphoning Trap
-Enchantment Ice Siphon Trap Duration 2,Eternal Labyrinth,Siphoning Trap has 45% increased Skill Effect Duration,Siphoning Trap
-Enchantment Smite Additional Target Chance 1,Merciless Labyrinth,Smite has a 10% chance for lightning to strike another target,Smite
-Enchantment Smite Additional Target Chance 2,Eternal Labyrinth,Smite has a 15% chance for lightning to strike another target,Smite
-Enchantment Smite Aura Effect 1,Merciless Labyrinth,Smite has 20% increased Aura Effect,Smite
-Enchantment Smite Aura Effect 2,Eternal Labyrinth,Smite has 30% increased Aura Effect,Smite
-Enchantment Smite Damage 1,Merciless Labyrinth,Smite deals 25% increased Damage,Smite
-Enchantment Smite Damage 2,Eternal Labyrinth,Smite deals 40% increased Damage,Smite
-Enchantment Smoke Mine Duration 1,Merciless Labyrinth,20% increased Smoke Mine Duration,Smoke Mine
-Enchantment Smoke Mine Duration 2,Eternal Labyrinth,30% increased Smoke Mine Duration,Smoke Mine
-Enchantment Smoke Mine Movement Speed 1,Merciless Labyrinth,Smoke Mine grants additional 20% increased Movement Speed,Smoke Mine
-Enchantment Smoke Mine Movement Speed 2,Eternal Labyrinth,Smoke Mine grants additional 30% increased Movement Speed,Smoke Mine
-Enchantment Soulrend Applies Hinder Movement Speed 1,Merciless Labyrinth,"Soulrend also Hinders Enemies, with 25% reduced Movement Speed",Soulrend
-Enchantment Soulrend Applies Hinder Movement Speed 2,Eternal Labyrinth,"Soulrend also Hinders Enemies, with 40% reduced Movement Speed",Soulrend
-Enchantment Soulrend Damage 1,Merciless Labyrinth,Soulrend deals 25% increased Damage,Soulrend
-Enchantment Soulrend Damage 2,Eternal Labyrinth,Soulrend deals 40% increased Damage,Soulrend
+Enchantment Ice Siphon Trap Damage Taken 1,Merciless Labyrinth,Siphoning Trap's beam to you grants 1% reduced Damage taken for each other beam,Siphoning Trap
+Enchantment Ice Siphon Trap Duration 1,Eternal Labyrinth,Siphoning Trap has 30% increased Skill Effect Duration,Siphoning Trap
+Enchantment Ice Siphon Trap Duration 2,Merciless Labyrinth,Siphoning Trap has 45% increased Skill Effect Duration,Siphoning Trap
+Enchantment Smite Additional Target Chance 1,Eternal Labyrinth,Smite has a 10% chance for lightning to strike another target,Smite
+Enchantment Smite Additional Target Chance 2,Merciless Labyrinth,Smite has a 15% chance for lightning to strike another target,Smite
+Enchantment Smite Aura Effect 1,Eternal Labyrinth,Smite has 20% increased Aura Effect,Smite
+Enchantment Smite Aura Effect 2,Merciless Labyrinth,Smite has 30% increased Aura Effect,Smite
+Enchantment Smite Damage 1,Eternal Labyrinth,Smite deals 25% increased Damage,Smite
+Enchantment Smite Damage 2,Merciless Labyrinth,Smite deals 40% increased Damage,Smite
+Enchantment Smoke Mine Duration 1,Eternal Labyrinth,20% increased Smoke Mine Duration,Smoke Mine
+Enchantment Smoke Mine Duration 2,Merciless Labyrinth,30% increased Smoke Mine Duration,Smoke Mine
+Enchantment Smoke Mine Movement Speed 1,Eternal Labyrinth,Smoke Mine grants additional 20% increased Movement Speed,Smoke Mine
+Enchantment Smoke Mine Movement Speed 2,Merciless Labyrinth,Smoke Mine grants additional 30% increased Movement Speed,Smoke Mine
+Enchantment Soulrend Applies Hinder Movement Speed 1,Eternal Labyrinth,"Soulrend also Hinders Enemies, with 25% reduced Movement Speed",Soulrend
+Enchantment Soulrend Applies Hinder Movement Speed 2,Merciless Labyrinth,"Soulrend also Hinders Enemies, with 40% reduced Movement Speed",Soulrend
+Enchantment Soulrend Damage 1,Eternal Labyrinth,Soulrend deals 25% increased Damage,Soulrend
+Enchantment Soulrend Damage 2,Merciless Labyrinth,Soulrend deals 40% increased Damage,Soulrend
 Enchantment Soulrend Number Of Additional Projectiles 1,Eternal Labyrinth,Soulrend fires an additional Projectile,Soulrend
 Enchantment Spark Damage 1,Merciless Labyrinth,25% increased Spark Damage,Spark
 Enchantment Spark Damage 2,Eternal Labyrinth,40% increased Spark Damage,Spark
@@ -1015,9 +1007,9 @@ Enchantment Tornado Shot Critical Strike Chance 1,Merciless Labyrinth,60% increa
 Enchantment Tornado Shot Critical Strike Chance 2,Eternal Labyrinth,90% increased Tornado Shot Critical Strike Chance,Tornado Shot
 Enchantment Tornado Shot Damage 1,Merciless Labyrinth,25% increased Tornado Shot Damage,Tornado Shot
 Enchantment Tornado Shot Damage 2,Eternal Labyrinth,40% increased Tornado Shot Damage,Tornado Shot
-Enchantment Tornado Shot Num Of Secondary Projectiles 2,Eternal Labyrinth,Tornado Shot fires an additional secondary Projectile,Tornado Shot
-Enchantment Toxic Rain Damage 1,Merciless Labyrinth,Toxic Rain deals 25% increased Damage,Toxic Rain
-Enchantment Toxic Rain Damage 2,Eternal Labyrinth,Toxic Rain deals 40% increased Damage,Toxic Rain
+Enchantment Tornado Shot Num Of Secondary Projectiles 2,Merciless Labyrinth,Tornado Shot fires an additional secondary Projectile,Tornado Shot
+Enchantment Toxic Rain Damage 1,Eternal Labyrinth,Toxic Rain deals 25% increased Damage,Toxic Rain
+Enchantment Toxic Rain Damage 2,Merciless Labyrinth,Toxic Rain deals 40% increased Damage,Toxic Rain
 Enchantment Toxic Rain Num Of Additional Projectiles 1,Eternal Labyrinth,Toxic Rain fires 1 additional Arrow,Toxic Rain
 Enchantment Toxic Rain Physical Added As Chaos 1,Merciless Labyrinth,Toxic Rain gains 6% of Physical Damage as Extra Chaos Damage,Toxic Rain
 Enchantment Toxic Rain Physical Added As Chaos 2,Eternal Labyrinth,Toxic Rain gains 10% of Physical Damage as Extra Chaos Damage,Toxic Rain
@@ -1031,27 +1023,27 @@ Enchantment Vengeance Cooldown Speed 1,Merciless Labyrinth,20% increased Vengean
 Enchantment Vengeance Cooldown Speed 2,Eternal Labyrinth,30% increased Vengeance Cooldown Recovery Speed,Vengeance
 Enchantment Vengeance Damage 1,Merciless Labyrinth,25% increased Vengeance Damage,Vengeance
 Enchantment Vengeance Damage 2,Eternal Labyrinth,40% increased Vengeance Damage,Vengeance
-Enchantment Venom Gyre Chance To Retain Projectile On Release 2,Eternal Labyrinth,Venom Gyre has a 35% chance to keep caught Projectiles fired by using Whirling Blades,Venom Gyre
-Enchantment Venom Gyre Damage 1,Merciless Labyrinth,Venom Gyre deals 25% increased Damage,Venom Gyre
-Enchantment Venom Gyre Damage 2,Eternal Labyrinth,Venom Gyre deals 40% increased Damage,Venom Gyre
-Enchantment Venom Gyre Withering On Hit Chance 1,Merciless Labyrinth,Venom Gyre has a 12% chance to inflict Withered for 2 seconds on Hit,Venom Gyre
-Enchantment Venom Gyre Withering On Hit Chance 2,Eternal Labyrinth,Venom Gyre has a 20% chance to inflict Withered for 2 seconds on Hit,Venom Gyre
-Enchantment Vigilant Strike Damage 1,Merciless Labyrinth,25% increased Vigilant Strike Damage,Vigilant Strike
-Enchantment Vigilant Strike Damage 2,Eternal Labyrinth,40% increased Vigilant Strike Damage,Vigilant Strike
-Enchantment Vigilant Strike Fortify Duration 1,Merciless Labyrinth,30% increased Vigilant Strike Fortify Duration,Vigilant Strike
-Enchantment Vigilant Strike Fortify Duration 2,Eternal Labyrinth,45% increased Vigilant Strike Fortify Duration,Vigilant Strike
-Enchantment Viper Strike Critical Strike Chance 1,Merciless Labyrinth,60% increased Viper Strike Critical Strike Chance,Viper Strike
-Enchantment Viper Strike Critical Strike Chance 2,Eternal Labyrinth,90% increased Viper Strike Critical Strike Chance,Viper Strike
-Enchantment Viper Strike Damage 1,Merciless Labyrinth,25% increased Viper Strike Damage,Viper Strike
-Enchantment Viper Strike Damage 2,Eternal Labyrinth,40% increased Viper Strike Damage,Viper Strike
-Enchantment Viper Strike Poison Duration 1,Merciless Labyrinth,20% increased Viper Strike Duration,Viper Strike
-Enchantment Viper Strike Poison Duration 2,Eternal Labyrinth,30% increased Viper Strike Duration,Viper Strike
-Enchantment Vitality Mana Reservation 1,Merciless Labyrinth,Vitality has 14% reduced Mana Reservation,Vitality
-Enchantment Vitality Mana Reservation 2,Eternal Labyrinth,Vitality has 20% reduced Mana Reservation,Vitality
-Enchantment Volatile Dead Cast Speed 1,Merciless Labyrinth,8% increased Volatile Dead Cast Speed,Volatile Dead
-Enchantment Volatile Dead Cast Speed 2,Eternal Labyrinth,12% increased Volatile Dead Cast Speed,Volatile Dead
-Enchantment Volatile Dead Damage 1,Merciless Labyrinth,25% increased Volatile Dead Damage,Volatile Dead
-Enchantment Volatile Dead Damage 2,Eternal Labyrinth,40% increased Volatile Dead Damage,Volatile Dead
+Enchantment Venom Gyre Chance To Retain Projectile On Release 2,Merciless Labyrinth,Venom Gyre has a 35% chance to keep caught Projectiles fired by using Whirling Blades,Venom Gyre
+Enchantment Venom Gyre Damage 1,Eternal Labyrinth,Venom Gyre deals 25% increased Damage,Venom Gyre
+Enchantment Venom Gyre Damage 2,Merciless Labyrinth,Venom Gyre deals 40% increased Damage,Venom Gyre
+Enchantment Venom Gyre Withering On Hit Chance 1,Eternal Labyrinth,Venom Gyre has a 12% chance to inflict Withered for 2 seconds on Hit,Venom Gyre
+Enchantment Venom Gyre Withering On Hit Chance 2,Merciless Labyrinth,Venom Gyre has a 20% chance to inflict Withered for 2 seconds on Hit,Venom Gyre
+Enchantment Vigilant Strike Damage 1,Eternal Labyrinth,25% increased Vigilant Strike Damage,Vigilant Strike
+Enchantment Vigilant Strike Damage 2,Merciless Labyrinth,40% increased Vigilant Strike Damage,Vigilant Strike
+Enchantment Vigilant Strike Fortify Duration 1,Eternal Labyrinth,30% increased Vigilant Strike Fortify Duration,Vigilant Strike
+Enchantment Vigilant Strike Fortify Duration 2,Merciless Labyrinth,45% increased Vigilant Strike Fortify Duration,Vigilant Strike
+Enchantment Viper Strike Critical Strike Chance 1,Eternal Labyrinth,60% increased Viper Strike Critical Strike Chance,Viper Strike
+Enchantment Viper Strike Critical Strike Chance 2,Merciless Labyrinth,90% increased Viper Strike Critical Strike Chance,Viper Strike
+Enchantment Viper Strike Damage 1,Eternal Labyrinth,25% increased Viper Strike Damage,Viper Strike
+Enchantment Viper Strike Damage 2,Merciless Labyrinth,40% increased Viper Strike Damage,Viper Strike
+Enchantment Viper Strike Poison Duration 1,Eternal Labyrinth,20% increased Viper Strike Duration,Viper Strike
+Enchantment Viper Strike Poison Duration 2,Merciless Labyrinth,30% increased Viper Strike Duration,Viper Strike
+Enchantment Vitality Mana Reservation 1,Eternal Labyrinth,Vitality has 14% reduced Mana Reservation,Vitality
+Enchantment Vitality Mana Reservation 2,Merciless Labyrinth,Vitality has 20% reduced Mana Reservation,Vitality
+Enchantment Volatile Dead Cast Speed 1,Eternal Labyrinth,8% increased Volatile Dead Cast Speed,Volatile Dead
+Enchantment Volatile Dead Cast Speed 2,Merciless Labyrinth,12% increased Volatile Dead Cast Speed,Volatile Dead
+Enchantment Volatile Dead Damage 1,Eternal Labyrinth,25% increased Volatile Dead Damage,Volatile Dead
+Enchantment Volatile Dead Damage 2,Merciless Labyrinth,40% increased Volatile Dead Damage,Volatile Dead
 Enchantment Volatile Dead Orbs 3,Eternal Labyrinth,Volatile Dead Consumes up to 1 additional corpse,Volatile Dead
 Enchantment Vortex AoE On Frostbolt 1,Merciless Labyrinth,Vortex has 30% increased Area of Effect when Cast on Frostbolt,Vortex
 Enchantment Vortex AoE On Frostbolt 2,Eternal Labyrinth,Vortex has 45% increased Area of Effect when Cast on Frostbolt,Vortex
@@ -1087,384 +1079,417 @@ Enchantment Wild Strike Damage 1,Merciless Labyrinth,25% increased Wild Strike D
 Enchantment Wild Strike Damage 2,Eternal Labyrinth,40% increased Wild Strike Damage,Wild Strike
 Enchantment Wild Strike Num Of Additional Projectiles In Chain 1,Merciless Labyrinth,Wild Strike's Beam Chains an additional 4 times,Wild Strike
 Enchantment Wild Strike Num Of Additional Projectiles In Chain 2,Eternal Labyrinth,Wild Strike's Beam Chains an additional 6 times,Wild Strike
-Enchantment Frost Fury Additional Max Number Of Stages 1,Eternal Labyrinth,Winter Orb has +2 Maximum Stages,Winter Orb
-Enchantment Frost Fury Area Of Effect Per Stage 1,Merciless Labyrinth,Winter Orb has 2% increased Area of Effect per Stage,Winter Orb
-Enchantment Frost Fury Area Of Effect Per Stage 2,Eternal Labyrinth,Winter Orb has 3% increased Area of Effect per Stage,Winter Orb
-Enchantment Winter Orb Damage 1,Merciless Labyrinth,Winter Orb deals 25% increased Damage,Winter Orb
-Enchantment Winter Orb Damage 2,Eternal Labyrinth,Winter Orb deals 40% increased Damage,Winter Orb
-Enchantment Wither Area Of Effect 1,Merciless Labyrinth,Wither has 16% increased Area of Effect,Wither
-Enchantment Wither Area Of Effect 2,Eternal Labyrinth,Wither has 24% increased Area of Effect,Wither
-Enchantment Wither Duration 1,Merciless Labyrinth,Wither has 24% increased Duration,Wither
-Enchantment Wither Duration 2,Eternal Labyrinth,Wither has 36% increased Duration,Wither
-Enchantment Withering Step Elusive Effect 1,Merciless Labyrinth,Withering Step has 20% increased Elusive Effect,Withering Step
-Enchantment Withering Step Elusive Effect 2,Eternal Labyrinth,Withering Step has 30% increased Elusive Effect,Withering Step
+Enchantment Frost Fury Additional Max Number Of Stages 1,Merciless Labyrinth,Winter Orb has +2 Maximum Stages,Winter Orb
+Enchantment Frost Fury Area Of Effect Per Stage 1,Eternal Labyrinth,Winter Orb has 2% increased Area of Effect per Stage,Winter Orb
+Enchantment Frost Fury Area Of Effect Per Stage 2,Merciless Labyrinth,Winter Orb has 3% increased Area of Effect per Stage,Winter Orb
+Enchantment Winter Orb Damage 1,Eternal Labyrinth,Winter Orb deals 25% increased Damage,Winter Orb
+Enchantment Winter Orb Damage 2,Merciless Labyrinth,Winter Orb deals 40% increased Damage,Winter Orb
+Enchantment Wither Area Of Effect 1,Eternal Labyrinth,Wither has 16% increased Area of Effect,Wither
+Enchantment Wither Area Of Effect 2,Merciless Labyrinth,Wither has 24% increased Area of Effect,Wither
+Enchantment Wither Duration 1,Eternal Labyrinth,Wither has 24% increased Duration,Wither
+Enchantment Wither Duration 2,Merciless Labyrinth,Wither has 36% increased Duration,Wither
+Enchantment Withering Step Elusive Effect 1,Eternal Labyrinth,Withering Step has 20% increased Elusive Effect,Withering Step
+Enchantment Withering Step Elusive Effect 2,Merciless Labyrinth,Withering Step has 30% increased Elusive Effect,Withering Step
 Enchantment Withering Step Wither Stacks 2,Eternal Labyrinth,Withering Step inflicts 3 additional Withered Debuffs,Withering Step
 Enchantment Withering Step Wither Stacks1,Merciless Labyrinth,Withering Step inflicts 2 additional Withered Debuffs,Withering Step
-Enchantment Wrath Mana Reservation 1,Merciless Labyrinth,Wrath has 10% reduced Mana Reservation,Wrath
-Enchantment Wrath Mana Reservation 2,Eternal Labyrinth,Wrath has 15% reduced Mana Reservation,Wrath
-Enchantment Zealotry Mana Reservation 1,Merciless Labyrinth,Zealotry has 10% reduced Mana Reservation,Zealotry
-Enchantment Zealotry Mana Reservation 2,Eternal Labyrinth,Zealotry has 15% reduced Mana Reservation,Zealotry
-Acuity,Blight Oils,Allocates Acuity,
-Adamant,Blight Oils,Allocates Adamant,
-Adder's Touch,Blight Oils,Allocates Adder's Touch,
-Aggressive Bastion,Blight Oils,Allocates Aggressive Bastion,
-Agility,Blight Oils,Allocates Agility,
-Alacrity,Blight Oils,Allocates Alacrity,
-Aligned Spirits,Blight Oils,Allocates Aligned Spirits,
-Ambidexterity,Blight Oils,Allocates Ambidexterity,
-Amplify,Blight Oils,Allocates Amplify,
-Ancestral Knowledge,Blight Oils,Allocates Ancestral Knowledge,
-Annihilation,Blight Oils,Allocates Annihilation,
-Aqueous Accelerant,Blight Oils,Allocates Aqueous Accelerant,
-Arcane Capacitor,Blight Oils,Allocates Arcane Capacitor,
-Arcane Chemistry,Blight Oils,Allocates Arcane Chemistry,
-Arcane Expanse,Blight Oils,Allocates Arcane Expanse,
-Arcane Focus,Blight Oils,Allocates Arcane Focus,
-Arcane Guarding,Blight Oils,Allocates Arcane Guarding,
-Arcane Potency,Blight Oils,Allocates Arcane Potency,
-Arcane Swiftness,Blight Oils,Allocates Arcane Swiftness,
-Arcane Vision,Blight Oils,Allocates Arcane Vision,
-Arcane Will,Blight Oils,Allocates Arcane Will,
-Arcanist's Dominion,Blight Oils,Allocates Arcanist's Dominion,
-Arcing Blows,Blight Oils,Allocates Arcing Blows,
-Arsonist,Blight Oils,Allocates Arsonist,
-Art of the Gladiator,Blight Oils,Allocates Art of the Gladiator,
-"Ash, Frost and Storm",Blight Oils,"Allocates Ash, Frost and Storm",
-Aspect of Stone,Blight Oils,Allocates Aspect of Stone,
-Aspect of the Eagle,Blight Oils,Allocates Aspect of the Eagle,
-Aspect of the Lynx,Blight Oils,Allocates Aspect of the Lynx,
-Aspect of the Panther,Blight Oils,Allocates Aspect of the Panther,
-Assassination,Blight Oils,Allocates Assassination,
-Atrophy,Blight Oils,Allocates Atrophy,
-Avatar of the Hunt,Blight Oils,Allocates Avatar of the Hunt,
-Backstabbing,Blight Oils,Allocates Backstabbing,
-Ballistic Mastery,Blight Oils,Allocates Ballistic Mastery,
-Barbarism,Blight Oils,Allocates Barbarism,
-Battle Cry,Blight Oils,Allocates Battle Cry,
-Battle Rouse,Blight Oils,Allocates Battle Rouse,
-Beef,Blight Oils,Allocates Beef,
-Berserking,Blight Oils,Allocates Berserking,
-Blacksmith's Clout,Blight Oils,Allocates Blacksmith's Clout,
-Blade Barrier,Blight Oils,Allocates Blade Barrier,
-Blade Master,Blight Oils,Allocates Blade Master,
-Blade of Cunning,Blight Oils,Allocates Blade of Cunning,
-Bladedancer,Blight Oils,Allocates Bladedancer,
-Blast Cascade,Blight Oils,Allocates Blast Cascade,
-Blast Radius,Blight Oils,Allocates Blast Radius,
-Blast Waves,Blight Oils,Allocates Blast Waves,
-Blood Drinker,Blight Oils,Allocates Blood Drinker,
-Blood Siphon,Blight Oils,Allocates Blood Siphon,
-Bloodless,Blight Oils,Allocates Bloodless,
-Bloodletting,Blight Oils,Allocates Bloodletting,
-Bludgeon Blitz,Blight Oils,Allocates Bludgeon Blitz,
-Blunt Trauma,Blight Oils,Allocates Blunt Trauma,
-Bone Breaker,Blight Oils,Allocates Bone Breaker,
-Born to Fight,Blight Oils,Allocates Born to Fight,
-Bravery,Blight Oils,Allocates Bravery,
-Breath of Flames,Blight Oils,Allocates Breath of Flames,
-Breath of Lightning,Blight Oils,Allocates Breath of Lightning,
-Breath of Rime,Blight Oils,Allocates Breath of Rime,
-Brinkmanship,Blight Oils,Allocates Brinkmanship,
-Brutal Blade,Blight Oils,Allocates Brutal Blade,
-Butchery,Blight Oils,Allocates Butchery,
-Champion of the Cause,Blight Oils,Allocates Champion of the Cause,
-Charging Offensive,Blight Oils,Allocates Charging Offensive,
-Charisma,Blight Oils,Allocates Charisma,
-Claws of the Falcon,Blight Oils,Allocates Claws of the Falcon,
-Claws of the Hawk,Blight Oils,Allocates Claws of the Hawk,
-Claws of the Magpie,Blight Oils,Allocates Claws of the Magpie,
-Claws of the Pride,Blight Oils,Allocates Claws of the Pride,
-Cleansed Thoughts,Blight Oils,Allocates Cleansed Thoughts,
-Cleaving,Blight Oils,Allocates Cleaving,
-Clever Construction,Blight Oils,Allocates Clever Construction,
-Cloth and Chain,Blight Oils,Allocates Cloth and Chain,
-Coldhearted Calculation,Blight Oils,Allocates Coldhearted Calculation,
-Combat Stamina,Blight Oils,Allocates Combat Stamina,
-Command of Steel,Blight Oils,Allocates Command of Steel,
-Command of the Elements,Blight Oils,Allocates Command of the Elements,
-Constitution,Blight Oils,Allocates Constitution,
-Coordination,Blight Oils,Allocates Coordination,
-Corruption,Blight Oils,Allocates Corruption,
-Counterweight,Blight Oils,Allocates Counterweight,
-Crackling Speed,Blight Oils,Allocates Crackling Speed,
-Cruel Preparation,Blight Oils,Allocates Cruel Preparation,
-Crusader,Blight Oils,Allocates Crusader,
-Crystal Skin,Blight Oils,Allocates Crystal Skin,
-Cursed Concoction,Blight Oils,Allocates Cursed Concoction,
-Dark Arts,Blight Oils,Allocates Dark Arts,
-Dazzling Strikes,Blight Oils,Allocates Dazzling Strikes,
-Deadly Draw,Blight Oils,Allocates Deadly Draw,
-Deadly Inclinations,Blight Oils,Allocates Deadly Inclinations,
-Death Attunement,Blight Oils,Allocates Death Attunement,
-Decay Ward,Blight Oils,Allocates Decay Ward,
-Deep Thoughts,Blight Oils,Allocates Deep Thoughts,
-Deep Wisdom,Blight Oils,Allocates Deep Wisdom,
-Defiance,Blight Oils,Allocates Defiance,
-Deflection,Blight Oils,Allocates Deflection,
-Depth Perception,Blight Oils,Allocates Depth Perception,
-Dervish,Blight Oils,Allocates Dervish,
-Destroyer,Blight Oils,Allocates Destroyer,
-Destructive Apparatus,Blight Oils,Allocates Destructive Apparatus,
-Devastating Devices,Blight Oils,Allocates Devastating Devices,
-Devotion,Blight Oils,Allocates Devotion,
-Diamond Skin,Blight Oils,Allocates Diamond Skin,
-Dire Torment,Blight Oils,Allocates Dire Torment,
-Dirty Techniques,Blight Oils,Allocates Dirty Techniques,
-Disciple of the Forbidden,Blight Oils,Allocates Disciple of the Forbidden,
-Disciple of the Slaughter,Blight Oils,Allocates Disciple of the Slaughter,
-Disciple of the Unyielding,Blight Oils,Allocates Disciple of the Unyielding,
-Discipline and Training,Blight Oils,Allocates Discipline and Training,
-Disemboweling,Blight Oils,Allocates Disemboweling,
-Disintegration,Blight Oils,Allocates Disintegration,
-Dismembering,Blight Oils,Allocates Dismembering,
-Divine Fervour,Blight Oils,Allocates Divine Fervour,
-Divine Fury,Blight Oils,Allocates Divine Fury,
-Divine Judgement,Blight Oils,Allocates Divine Judgement,
-Divine Wrath,Blight Oils,Allocates Divine Wrath,
-Doom Cast,Blight Oils,Allocates Doom Cast,
-Dreamer,Blight Oils,Allocates Dreamer,
-Druidic Rite,Blight Oils,Allocates Druidic Rite,
-Dynamo,Blight Oils,Allocates Dynamo,
-Eagle Eye,Blight Oils,Allocates Eagle Eye,
-Efficient Explosives,Blight Oils,Allocates Efficient Explosives,
-Elder Power,Blight Oils,Allocates Elder Power,
-Elemental Focus,Blight Oils,Allocates Elemental Focus,
-Endurance,Blight Oils,Allocates Endurance,
-Enduring Bond,Blight Oils,Allocates Enduring Bond,
-Enigmatic Defence,Blight Oils,Allocates Enigmatic Defence,
-Enigmatic Reach,Blight Oils,Allocates Enigmatic Reach,
-Entropy,Blight Oils,Allocates Entropy,
-Essence Extraction,Blight Oils,Allocates Essence Extraction,
-Essence Sap,Blight Oils,Allocates Essence Sap,
-Essence Surge,Blight Oils,Allocates Essence Surge,
-Ethereal Feast,Blight Oils,Allocates Ethereal Feast,
-Exceptional Performance,Blight Oils,Allocates Exceptional Performance,
-Executioner,Blight Oils,Allocates Executioner,
-Expeditious Munitions,Blight Oils,Allocates Expeditious Munitions,
-Expertise,Blight Oils,Allocates Expertise,
-Explosive Impact,Blight Oils,Allocates Explosive Impact,
-Explosive Runes,Blight Oils,Allocates Explosive Runes,
-Faith and Steel,Blight Oils,Allocates Faith and Steel,
-Fangs of Frost,Blight Oils,Allocates Fangs of Frost,
-Fangs of the Viper,Blight Oils,Allocates Fangs of the Viper,
-Farsight,Blight Oils,Allocates Farsight,
-Fatal Blade,Blight Oils,Allocates Fatal Blade,
-Fatal Toxins,Blight Oils,Allocates Fatal Toxins,
-Fearsome Force,Blight Oils,Allocates Fearsome Force,
-Feller of Foes,Blight Oils,Allocates Feller of Foes,
-Fending,Blight Oils,Allocates Fending,
-Fervour,Blight Oils,Allocates Fervour,
-Finesse,Blight Oils,Allocates Finesse,
-Fingers of Frost,Blight Oils,Allocates Fingers of Frost,
-Fire Walker,Blight Oils,Allocates Fire Walker,
-Flash Freeze,Blight Oils,Allocates Flash Freeze,
-Flaying,Blight Oils,Allocates Flaying,
-Fleetfoot,Blight Oils,Allocates Fleetfoot,
-Force Shaper,Blight Oils,Allocates Force Shaper,
-Forceful Skewering,Blight Oils,Allocates Forceful Skewering,
-Forces of Nature,Blight Oils,Allocates Forces of Nature,
-Foresight,Blight Oils,Allocates Foresight,
-Freedom of Movement,Blight Oils,Allocates Freedom of Movement,
-Frenetic,Blight Oils,Allocates Frenetic,
-From the Shadows,Blight Oils,Allocates From the Shadows,
-Frost Walker,Blight Oils,Allocates Frost Walker,
-Fury Bolts,Blight Oils,Allocates Fury Bolts,
-Fusillade,Blight Oils,Allocates Fusillade,
-Galvanic Hammer,Blight Oils,Allocates Galvanic Hammer,
-Gemini,Blight Oils,Allocates Gemini,
-Gladiator's Perseverance,Blight Oils,Allocates Gladiator's Perseverance,
-Golem Commander,Blight Oils,Allocates Golem Commander,
-Golem's Blood,Blight Oils,Allocates Golem's Blood,
-Graceful Assault,Blight Oils,Allocates Graceful Assault,
-Grave Intentions,Blight Oils,Allocates Grave Intentions,
-Gravepact,Blight Oils,Allocates Gravepact,
-Growth and Decay,Blight Oils,Allocates Growth and Decay,
-Hard Knocks,Blight Oils,Allocates Hard Knocks,
-Hardened Scars,Blight Oils,Allocates Hardened Scars,
-Harrier,Blight Oils,Allocates Harrier,
-Harvester of Foes,Blight Oils,Allocates Harvester of Foes,
-Hasty Reconstruction,Blight Oils,Allocates Hasty Reconstruction,
-Hatchet Master,Blight Oils,Allocates Hatchet Master,
-Heart and Soul,Blight Oils,Allocates Heart and Soul,
-Heart of Flame,Blight Oils,Allocates Heart of Flame,
-Heart of Ice,Blight Oils,Allocates Heart of Ice,
-Heart of Oak,Blight Oils,Allocates Heart of Oak,
-Heart of the Warrior,Blight Oils,Allocates Heart of the Warrior,
-Heart of Thunder,Blight Oils,Allocates Heart of Thunder,
-Heartseeker,Blight Oils,Allocates Heartseeker,
-Heavy Draw,Blight Oils,Allocates Heavy Draw,
-Hematophagy,Blight Oils,Allocates Hematophagy,
-Herbalism,Blight Oils,Allocates Herbalism,
-Hex Master,Blight Oils,Allocates Hex Master,
-High Explosives,Blight Oils,Allocates High Explosives,
-Hired Killer,Blight Oils,Allocates Hired Killer,
-Holy Dominion,Blight Oils,Allocates Holy Dominion,
-Holy Fire,Blight Oils,Allocates Holy Fire,
-Honed Edge,Blight Oils,Allocates Honed Edge,
-Hunter's Gambit,Blight Oils,Allocates Hunter's Gambit,
-Indomitable Army,Blight Oils,Allocates Indomitable Army,
-Inexorable,Blight Oils,Allocates Inexorable,
-Influence,Blight Oils,Allocates Influence,
-Infused,Blight Oils,Allocates Infused,
-Insightfulness,Blight Oils,Allocates Insightfulness,
-Instability,Blight Oils,Allocates Instability,
-Ironwood,Blight Oils,Allocates Ironwood,
-Juggernaut,Blight Oils,Allocates Juggernaut,
-Kinetic Impacts,Blight Oils,Allocates Kinetic Impacts,
-King of the Hill,Blight Oils,Allocates King of the Hill,
-Lava Lash,Blight Oils,Allocates Lava Lash,
-Leadership,Blight Oils,Allocates Leadership,
-Lethal Assault,Blight Oils,Allocates Lethal Assault,
-Lethality,Blight Oils,Allocates Lethality,
-Light Eater,Blight Oils,Allocates Light Eater,
-Light of Divinity,Blight Oils,Allocates Light of Divinity,
-Lightning Walker,Blight Oils,Allocates Lightning Walker,
-Longshot,Blight Oils,Allocates Longshot,
-Lord of the Dead,Blight Oils,Allocates Lord of the Dead,
-Lucidity,Blight Oils,Allocates Lucidity,
-Lust for Carnage,Blight Oils,Allocates Lust for Carnage,
-Magmatic Strikes,Blight Oils,Allocates Magmatic Strikes,
-Mana Flows,Blight Oils,Allocates Mana Flows,
-Martial Experience,Blight Oils,Allocates Martial Experience,
-Master Fletcher,Blight Oils,Allocates Master Fletcher,
-Master of Force,Blight Oils,Allocates Master of Force,
-Master of the Arena,Blight Oils,Allocates Master of the Arena,
-Master Sapper,Blight Oils,Allocates Master Sapper,
-Melding,Blight Oils,Allocates Melding,
-Mental Rapidity,Blight Oils,Allocates Mental Rapidity,
-Method to the Madness,Blight Oils,Allocates Method to the Madness,
-Might,Blight Oils,Allocates Might,
-Mind Drinker,Blight Oils,Allocates Mind Drinker,
-Mystic Bulwark,Blight Oils,Allocates Mystic Bulwark,
-Mystic Talents,Blight Oils,Allocates Mystic Talents,
-Mysticism,Blight Oils,Allocates Mysticism,
-Nightstalker,Blight Oils,Allocates Nightstalker,
-Nimbleness,Blight Oils,Allocates Nimbleness,
-One with the River,Blight Oils,Allocates One with the River,
-Ophidian Aim,Blight Oils,Allocates Ophidian Aim,
-Overcharge,Blight Oils,Allocates Overcharge,
-Overcharged,Blight Oils,Allocates Overcharged,
-Pain Forger,Blight Oils,Allocates Pain Forger,
-Path of the Hunter,Blight Oils,Allocates Path of the Hunter,
-Path of the Savant,Blight Oils,Allocates Path of the Savant,
-Path of the Warrior,Blight Oils,Allocates Path of the Warrior,
-Physique,Blight Oils,Allocates Physique,
-Piercing Shots,Blight Oils,Allocates Piercing Shots,
-Poisonous Fangs,Blight Oils,Allocates Poisonous Fangs,
-Potency of Will,Blight Oils,Allocates Potency of Will,
-Practical Application,Blight Oils,Allocates Practical Application,
-Precise Interception,Blight Oils,Allocates Precise Interception,
-Precision,Blight Oils,Allocates Precision,
-Primal Manifestation,Blight Oils,Allocates Primal Manifestation,
-Primal Spirit,Blight Oils,Allocates Primal Spirit,
-Primeval Force,Blight Oils,Allocates Primeval Force,
-Prism Weave,Blight Oils,Allocates Prism Weave,
-Prodigal Perfection,Blight Oils,Allocates Prodigal Perfection,
-Profane Chemistry,Blight Oils,Allocates Profane Chemistry,
-Proficiency,Blight Oils,Allocates Proficiency,
-Prowess,Blight Oils,Allocates Prowess,
-Purity of Flesh,Blight Oils,Allocates Purity of Flesh,
-Quick Recovery,Blight Oils,Allocates Quick Recovery,
-Quickstep,Blight Oils,Allocates Quickstep,
-Rampart,Blight Oils,Allocates Rampart,
-Ravenous Horde,Blight Oils,Allocates Ravenous Horde,
-Razor's Edge,Blight Oils,Allocates Razor's Edge,
-Red Storm,Blight Oils,Allocates Red Storm,
-Redemption,Blight Oils,Allocates Redemption,
-Reflexes,Blight Oils,Allocates Reflexes,
-Resourcefulness,Blight Oils,Allocates Resourcefulness,
-Retaliation,Blight Oils,Allocates Retaliation,
-Retribution,Blight Oils,Allocates Retribution,
-Revelry,Blight Oils,Allocates Revelry,
-Revenge of the Hunted,Blight Oils,Allocates Revenge of the Hunted,
-Ribcage Crusher,Blight Oils,Allocates Ribcage Crusher,
-Righteous Army,Blight Oils,Allocates Righteous Army,
-Righteous Decree,Blight Oils,Allocates Righteous Decree,
-Runesmith,Blight Oils,Allocates Runesmith,
-Saboteur,Blight Oils,Allocates Saboteur,
-Sacrifice,Blight Oils,Allocates Sacrifice,
-Sanctity,Blight Oils,Allocates Sanctity,
-Sanctuary,Blight Oils,Allocates Sanctuary,
-Sanctum of Thought,Blight Oils,Allocates Sanctum of Thought,
-Savagery,Blight Oils,Allocates Savagery,
-Searing Heat,Blight Oils,Allocates Searing Heat,
-Sentinel,Blight Oils,Allocates Sentinel,
-Serpent Stance,Blight Oils,Allocates Serpent Stance,
-Shaman's Dominion,Blight Oils,Allocates Shaman's Dominion,
-Shamanistic Fury,Blight Oils,Allocates Shamanistic Fury,
-Shaper,Blight Oils,Allocates Shaper,
-Silent Steps,Blight Oils,Allocates Silent Steps,
-Singular Focus,Blight Oils,Allocates Singular Focus,
-Skittering Runes,Blight Oils,Allocates Skittering Runes,
-Skull Cracking,Blight Oils,Allocates Skull Cracking,
-Slaughter,Blight Oils,Allocates Slaughter,
-Sleight of Hand,Blight Oils,Allocates Sleight of Hand,
-Smashing Strikes,Blight Oils,Allocates Smashing Strikes,
-Snowforged,Blight Oils,Allocates Snowforged,
-Solidity,Blight Oils,Allocates Solidity,
-Soul of Steel,Blight Oils,Allocates Soul of Steel,
-Soul Raker,Blight Oils,Allocates Soul Raker,
-Soul Siphon,Blight Oils,Allocates Soul Siphon,
-Soul Thief,Blight Oils,Allocates Soul Thief,
-Sovereignty,Blight Oils,Allocates Sovereignty,
-Spinecruncher,Blight Oils,Allocates Spinecruncher,
-Spirit Void,Blight Oils,Allocates Spirit Void,
-Spiritual Aid,Blight Oils,Allocates Spiritual Aid,
-Spiritual Command,Blight Oils,Allocates Spiritual Command,
-Splitting Strikes,Blight Oils,Allocates Splitting Strikes,
-Stabbing Thirst,Blight Oils,Allocates Stabbing Thirst,
-Stamina,Blight Oils,Allocates Stamina,
-Static Blows,Blight Oils,Allocates Static Blows,
-Steadfast,Blight Oils,Allocates Steadfast,
-Steelwood Stance,Blight Oils,Allocates Steelwood Stance,
-Storm Weaver,Blight Oils,Allocates Storm Weaver,
-Strong Arm,Blight Oils,Allocates Strong Arm,
-Stun Mastery,Blight Oils,Allocates Stun Mastery,
-Successive Detonations,Blight Oils,Allocates Successive Detonations,
-Survivalist,Blight Oils,Allocates Survivalist,
-Swagger,Blight Oils,Allocates Swagger,
-Swift Skewering,Blight Oils,Allocates Swift Skewering,
-Swift Venoms,Blight Oils,Allocates Swift Venoms,
-Tempest Blast,Blight Oils,Allocates Tempest Blast,
-Tenacity,Blight Oils,Allocates Tenacity,
-Testudo,Blight Oils,Allocates Testudo,
-Thick Skin,Blight Oils,Allocates Thick Skin,
-Thief's Craft,Blight Oils,Allocates Thief's Craft,
-Thrill Seeker,Blight Oils,Allocates Thrill Seeker,
-Throatseeker,Blight Oils,Allocates Throatseeker,
-Thunderous Salvos,Blight Oils,Allocates Thunderous Salvos,
-Tireless,Blight Oils,Allocates Tireless,
-Titanic Impacts,Blight Oils,Allocates Titanic Impacts,
-Totemic Zeal,Blight Oils,Allocates Totemic Zeal,
-Toxic Strikes,Blight Oils,Allocates Toxic Strikes,
-Tranquility,Blight Oils,Allocates Tranquility,
-Transcendence,Blight Oils,Allocates Transcendence,
-Tribal Fury,Blight Oils,Allocates Tribal Fury,
-Trickery,Blight Oils,Allocates Trickery,
-True Strike,Blight Oils,Allocates True Strike,
-Twin Terrors,Blight Oils,Allocates Twin Terrors,
-Unnatural Calm,Blight Oils,Allocates Unnatural Calm,
-Unpredictable Offensive,Blight Oils,Allocates Unpredictable Offensive,
-Unstable Munitions,Blight Oils,Allocates Unstable Munitions,
-Utmost Intellect,Blight Oils,Allocates Utmost Intellect,
-Utmost Might,Blight Oils,Allocates Utmost Might,
-Utmost Swiftness,Blight Oils,Allocates Utmost Swiftness,
-Vengeant Cascade,Blight Oils,Allocates Vengeant Cascade,
-Versatility,Blight Oils,Allocates Versatility,
-Vigour,Blight Oils,Allocates Vigour,
-Vitality Void,Blight Oils,Allocates Vitality Void,
-Void Barrier,Blight Oils,Allocates Void Barrier,
-Volatile Mines,Blight Oils,Allocates Volatile Mines,
-Wandslinger,Blight Oils,Allocates Wandslinger,
-Warrior's Blood,Blight Oils,Allocates Warrior's Blood,
-Way of the Warrior,Blight Oils,Allocates Way of the Warrior,
-Weapon Artistry,Blight Oils,Allocates Weapon Artistry,
-Weathered Hunter,Blight Oils,Allocates Weathered Hunter,
-Whirling Barrier,Blight Oils,Allocates Whirling Barrier,
-Whispers of Doom,Blight Oils,Allocates Whispers of Doom,
-Will of Blades,Blight Oils,Allocates Will of Blades,
-Winter Spirit,Blight Oils,Allocates Winter Spirit,
-Wisdom of the Glade,Blight Oils,Allocates Wisdom of the Glade,
-Words of Glory,Blight Oils,Allocates Words of Glory,
-Wrecking Ball,Blight Oils,Allocates Wrecking Ball,
-Written in Blood,Blight Oils,Allocates Written in Blood,
+Enchantment Wrath Mana Reservation 1,Eternal Labyrinth,Wrath has 10% reduced Mana Reservation,Wrath
+Enchantment Wrath Mana Reservation 2,Merciless Labyrinth,Wrath has 15% reduced Mana Reservation,Wrath
+Enchantment Zealotry Mana Reservation 1,Eternal Labyrinth,Zealotry has 10% reduced Mana Reservation,Zealotry
+Enchantment Zealotry Mana Reservation 2,Merciless Labyrinth,Zealotry has 15% reduced Mana Reservation,Zealotry
+Acuity,Eternal Labyrinth,Allocates Acuity,
+Adamant,Merciless Labyrinth,Allocates Adamant,
+Adder's Touch,Eternal Labyrinth,Allocates Adder's Touch,
+Aggressive Bastion,Merciless Labyrinth,Allocates Aggressive Bastion,
+Agility,Eternal Labyrinth,Allocates Agility,
+Alacrity,Merciless Labyrinth,Allocates Alacrity,
+Aligned Spirits,Eternal Labyrinth,Allocates Aligned Spirits,
+Ambidexterity,Merciless Labyrinth,Allocates Ambidexterity,
+Amplify,Eternal Labyrinth,Allocates Amplify,
+Ancestral Knowledge,Merciless Labyrinth,Allocates Ancestral Knowledge,
+Annihilation,Eternal Labyrinth,Allocates Annihilation,
+Aqueous Accelerant,Merciless Labyrinth,Allocates Aqueous Accelerant,
+Arcane Capacitor,Eternal Labyrinth,Allocates Arcane Capacitor,
+Arcane Chemistry,Merciless Labyrinth,Allocates Arcane Chemistry,
+Arcane Expanse,Eternal Labyrinth,Allocates Arcane Expanse,
+Arcane Focus,Merciless Labyrinth,Allocates Arcane Focus,
+Arcane Guarding,Eternal Labyrinth,Allocates Arcane Guarding,
+Arcane Potency,Merciless Labyrinth,Allocates Arcane Potency,
+Arcane Swiftness,Eternal Labyrinth,Allocates Arcane Swiftness,
+Arcane Vision,Merciless Labyrinth,Allocates Arcane Vision,
+Arcane Will,Eternal Labyrinth,Allocates Arcane Will,
+Arcanist's Dominion,Merciless Labyrinth,Allocates Arcanist's Dominion,
+Arcing Blows,Eternal Labyrinth,Allocates Arcing Blows,
+Arsonist,Merciless Labyrinth,Allocates Arsonist,
+Art of the Gladiator,Eternal Labyrinth,Allocates Art of the Gladiator,
+"Ash, Frost and Storm",Merciless Labyrinth,"Allocates Ash, Frost and Storm",
+Aspect of Stone,Eternal Labyrinth,Allocates Aspect of Stone,
+Aspect of the Eagle,Merciless Labyrinth,Allocates Aspect of the Eagle,
+Aspect of the Lynx,Eternal Labyrinth,Allocates Aspect of the Lynx,
+Aspect of the Panther,Merciless Labyrinth,Allocates Aspect of the Panther,
+Assassination,Eternal Labyrinth,Allocates Assassination,
+Atrophy,Merciless Labyrinth,Allocates Atrophy,
+Avatar of the Hunt,Eternal Labyrinth,Allocates Avatar of the Hunt,
+Backstabbing,Merciless Labyrinth,Allocates Backstabbing,
+Ballistic Mastery,Eternal Labyrinth,Allocates Ballistic Mastery,
+Barbarism,Merciless Labyrinth,Allocates Barbarism,
+Battle Cry,Eternal Labyrinth,Allocates Battle Cry,
+Battle Rouse,Merciless Labyrinth,Allocates Battle Rouse,
+Beef,Eternal Labyrinth,Allocates Beef,
+Berserking,Merciless Labyrinth,Allocates Berserking,
+Blacksmith's Clout,Eternal Labyrinth,Allocates Blacksmith's Clout,
+Blade Barrier,Merciless Labyrinth,Allocates Blade Barrier,
+Blade Master,Eternal Labyrinth,Allocates Blade Master,
+Blade of Cunning,Merciless Labyrinth,Allocates Blade of Cunning,
+Bladedancer,Eternal Labyrinth,Allocates Bladedancer,
+Blast Cascade,Merciless Labyrinth,Allocates Blast Cascade,
+Blast Radius,Eternal Labyrinth,Allocates Blast Radius,
+Blast Waves,Merciless Labyrinth,Allocates Blast Waves,
+Blood Drinker,Eternal Labyrinth,Allocates Blood Drinker,
+Blood Siphon,Merciless Labyrinth,Allocates Blood Siphon,
+Bloodless,Eternal Labyrinth,Allocates Bloodless,
+Bloodletting,Merciless Labyrinth,Allocates Bloodletting,
+Bludgeon Blitz,Eternal Labyrinth,Allocates Bludgeon Blitz,
+Blunt Trauma,Merciless Labyrinth,Allocates Blunt Trauma,
+Bone Breaker,Eternal Labyrinth,Allocates Bone Breaker,
+Born to Fight,Merciless Labyrinth,Allocates Born to Fight,
+Bravery,Eternal Labyrinth,Allocates Bravery,
+Breath of Flames,Merciless Labyrinth,Allocates Breath of Flames,
+Breath of Lightning,Eternal Labyrinth,Allocates Breath of Lightning,
+Breath of Rime,Merciless Labyrinth,Allocates Breath of Rime,
+Brinkmanship,Eternal Labyrinth,Allocates Brinkmanship,
+Brutal Blade,Merciless Labyrinth,Allocates Brutal Blade,
+Butchery,Eternal Labyrinth,Allocates Butchery,
+Champion of the Cause,Merciless Labyrinth,Allocates Champion of the Cause,
+Charging Offensive,Eternal Labyrinth,Allocates Charging Offensive,
+Charisma,Merciless Labyrinth,Allocates Charisma,
+Claws of the Falcon,Eternal Labyrinth,Allocates Claws of the Falcon,
+Claws of the Hawk,Merciless Labyrinth,Allocates Claws of the Hawk,
+Claws of the Magpie,Eternal Labyrinth,Allocates Claws of the Magpie,
+Claws of the Pride,Merciless Labyrinth,Allocates Claws of the Pride,
+Cleansed Thoughts,Eternal Labyrinth,Allocates Cleansed Thoughts,
+Cleaving,Merciless Labyrinth,Allocates Cleaving,
+Clever Construction,Eternal Labyrinth,Allocates Clever Construction,
+Cloth and Chain,Merciless Labyrinth,Allocates Cloth and Chain,
+Coldhearted Calculation,Eternal Labyrinth,Allocates Coldhearted Calculation,
+Combat Stamina,Merciless Labyrinth,Allocates Combat Stamina,
+Command of Steel,Eternal Labyrinth,Allocates Command of Steel,
+Command of the Elements,Merciless Labyrinth,Allocates Command of the Elements,
+Constitution,Eternal Labyrinth,Allocates Constitution,
+Coordination,Merciless Labyrinth,Allocates Coordination,
+Corruption,Eternal Labyrinth,Allocates Corruption,
+Counterweight,Merciless Labyrinth,Allocates Counterweight,
+Crackling Speed,Eternal Labyrinth,Allocates Crackling Speed,
+Cruel Preparation,Merciless Labyrinth,Allocates Cruel Preparation,
+Crusader,Eternal Labyrinth,Allocates Crusader,
+Crystal Skin,Merciless Labyrinth,Allocates Crystal Skin,
+Cursed Concoction,Eternal Labyrinth,Allocates Cursed Concoction,
+Dark Arts,Merciless Labyrinth,Allocates Dark Arts,
+Dazzling Strikes,Eternal Labyrinth,Allocates Dazzling Strikes,
+Deadly Draw,Merciless Labyrinth,Allocates Deadly Draw,
+Deadly Inclinations,Eternal Labyrinth,Allocates Deadly Inclinations,
+Death Attunement,Merciless Labyrinth,Allocates Death Attunement,
+Decay Ward,Eternal Labyrinth,Allocates Decay Ward,
+Deep Thoughts,Merciless Labyrinth,Allocates Deep Thoughts,
+Deep Wisdom,Eternal Labyrinth,Allocates Deep Wisdom,
+Defiance,Merciless Labyrinth,Allocates Defiance,
+Deflection,Eternal Labyrinth,Allocates Deflection,
+Depth Perception,Merciless Labyrinth,Allocates Depth Perception,
+Dervish,Eternal Labyrinth,Allocates Dervish,
+Destroyer,Merciless Labyrinth,Allocates Destroyer,
+Destructive Apparatus,Eternal Labyrinth,Allocates Destructive Apparatus,
+Devastating Devices,Merciless Labyrinth,Allocates Devastating Devices,
+Devotion,Eternal Labyrinth,Allocates Devotion,
+Diamond Skin,Merciless Labyrinth,Allocates Diamond Skin,
+Dire Torment,Eternal Labyrinth,Allocates Dire Torment,
+Dirty Techniques,Merciless Labyrinth,Allocates Dirty Techniques,
+Disciple of the Forbidden,Eternal Labyrinth,Allocates Disciple of the Forbidden,
+Disciple of the Slaughter,Merciless Labyrinth,Allocates Disciple of the Slaughter,
+Disciple of the Unyielding,Eternal Labyrinth,Allocates Disciple of the Unyielding,
+Discipline and Training,Merciless Labyrinth,Allocates Discipline and Training,
+Disemboweling,Eternal Labyrinth,Allocates Disemboweling,
+Disintegration,Merciless Labyrinth,Allocates Disintegration,
+Dismembering,Eternal Labyrinth,Allocates Dismembering,
+Divine Fervour,Merciless Labyrinth,Allocates Divine Fervour,
+Divine Fury,Eternal Labyrinth,Allocates Divine Fury,
+Divine Judgement,Merciless Labyrinth,Allocates Divine Judgement,
+Divine Wrath,Eternal Labyrinth,Allocates Divine Wrath,
+Doom Cast,Merciless Labyrinth,Allocates Doom Cast,
+Dreamer,Eternal Labyrinth,Allocates Dreamer,
+Druidic Rite,Merciless Labyrinth,Allocates Druidic Rite,
+Dynamo,Eternal Labyrinth,Allocates Dynamo,
+Eagle Eye,Merciless Labyrinth,Allocates Eagle Eye,
+Efficient Explosives,Eternal Labyrinth,Allocates Efficient Explosives,
+Elder Power,Merciless Labyrinth,Allocates Elder Power,
+Elemental Focus,Eternal Labyrinth,Allocates Elemental Focus,
+Endurance,Merciless Labyrinth,Allocates Endurance,
+Enduring Bond,Eternal Labyrinth,Allocates Enduring Bond,
+Enigmatic Defence,Merciless Labyrinth,Allocates Enigmatic Defence,
+Enigmatic Reach,Eternal Labyrinth,Allocates Enigmatic Reach,
+Entropy,Merciless Labyrinth,Allocates Entropy,
+Essence Extraction,Eternal Labyrinth,Allocates Essence Extraction,
+Essence Sap,Merciless Labyrinth,Allocates Essence Sap,
+Essence Surge,Eternal Labyrinth,Allocates Essence Surge,
+Ethereal Feast,Merciless Labyrinth,Allocates Ethereal Feast,
+Exceptional Performance,Eternal Labyrinth,Allocates Exceptional Performance,
+Executioner,Merciless Labyrinth,Allocates Executioner,
+Expeditious Munitions,Eternal Labyrinth,Allocates Expeditious Munitions,
+Expertise,Merciless Labyrinth,Allocates Expertise,
+Explosive Impact,Eternal Labyrinth,Allocates Explosive Impact,
+Explosive Runes,Merciless Labyrinth,Allocates Explosive Runes,
+Faith and Steel,Eternal Labyrinth,Allocates Faith and Steel,
+Fangs of Frost,Merciless Labyrinth,Allocates Fangs of Frost,
+Fangs of the Viper,Eternal Labyrinth,Allocates Fangs of the Viper,
+Farsight,Merciless Labyrinth,Allocates Farsight,
+Fatal Blade,Eternal Labyrinth,Allocates Fatal Blade,
+Fatal Toxins,Merciless Labyrinth,Allocates Fatal Toxins,
+Fearsome Force,Eternal Labyrinth,Allocates Fearsome Force,
+Feller of Foes,Merciless Labyrinth,Allocates Feller of Foes,
+Fending,Eternal Labyrinth,Allocates Fending,
+Fervour,Merciless Labyrinth,Allocates Fervour,
+Finesse,Eternal Labyrinth,Allocates Finesse,
+Fingers of Frost,Merciless Labyrinth,Allocates Fingers of Frost,
+Fire Walker,Eternal Labyrinth,Allocates Fire Walker,
+Flash Freeze,Merciless Labyrinth,Allocates Flash Freeze,
+Flaying,Eternal Labyrinth,Allocates Flaying,
+Fleetfoot,Merciless Labyrinth,Allocates Fleetfoot,
+Force Shaper,Eternal Labyrinth,Allocates Force Shaper,
+Forceful Skewering,Merciless Labyrinth,Allocates Forceful Skewering,
+Forces of Nature,Eternal Labyrinth,Allocates Forces of Nature,
+Foresight,Merciless Labyrinth,Allocates Foresight,
+Freedom of Movement,Eternal Labyrinth,Allocates Freedom of Movement,
+Frenetic,Merciless Labyrinth,Allocates Frenetic,
+From the Shadows,Eternal Labyrinth,Allocates From the Shadows,
+Frost Walker,Merciless Labyrinth,Allocates Frost Walker,
+Fury Bolts,Eternal Labyrinth,Allocates Fury Bolts,
+Fusillade,Merciless Labyrinth,Allocates Fusillade,
+Galvanic Hammer,Eternal Labyrinth,Allocates Galvanic Hammer,
+Gemini,Merciless Labyrinth,Allocates Gemini,
+Gladiator's Perseverance,Eternal Labyrinth,Allocates Gladiator's Perseverance,
+Golem Commander,Merciless Labyrinth,Allocates Golem Commander,
+Golem's Blood,Eternal Labyrinth,Allocates Golem's Blood,
+Graceful Assault,Merciless Labyrinth,Allocates Graceful Assault,
+Grave Intentions,Eternal Labyrinth,Allocates Grave Intentions,
+Gravepact,Merciless Labyrinth,Allocates Gravepact,
+Growth and Decay,Eternal Labyrinth,Allocates Growth and Decay,
+Hard Knocks,Merciless Labyrinth,Allocates Hard Knocks,
+Hardened Scars,Eternal Labyrinth,Allocates Hardened Scars,
+Harrier,Merciless Labyrinth,Allocates Harrier,
+Harvester of Foes,Eternal Labyrinth,Allocates Harvester of Foes,
+Hasty Reconstruction,Merciless Labyrinth,Allocates Hasty Reconstruction,
+Hatchet Master,Eternal Labyrinth,Allocates Hatchet Master,
+Heart and Soul,Merciless Labyrinth,Allocates Heart and Soul,
+Heart of Flame,Eternal Labyrinth,Allocates Heart of Flame,
+Heart of Ice,Merciless Labyrinth,Allocates Heart of Ice,
+Heart of Oak,Eternal Labyrinth,Allocates Heart of Oak,
+Heart of the Warrior,Merciless Labyrinth,Allocates Heart of the Warrior,
+Heart of Thunder,Eternal Labyrinth,Allocates Heart of Thunder,
+Heartseeker,Merciless Labyrinth,Allocates Heartseeker,
+Heavy Draw,Eternal Labyrinth,Allocates Heavy Draw,
+Hematophagy,Merciless Labyrinth,Allocates Hematophagy,
+Herbalism,Eternal Labyrinth,Allocates Herbalism,
+Hex Master,Merciless Labyrinth,Allocates Hex Master,
+High Explosives,Eternal Labyrinth,Allocates High Explosives,
+Hired Killer,Merciless Labyrinth,Allocates Hired Killer,
+Holy Dominion,Eternal Labyrinth,Allocates Holy Dominion,
+Holy Fire,Merciless Labyrinth,Allocates Holy Fire,
+Honed Edge,Eternal Labyrinth,Allocates Honed Edge,
+Hunter's Gambit,Merciless Labyrinth,Allocates Hunter's Gambit,
+Indomitable Army,Eternal Labyrinth,Allocates Indomitable Army,
+Inexorable,Merciless Labyrinth,Allocates Inexorable,
+Influence,Eternal Labyrinth,Allocates Influence,
+Infused,Merciless Labyrinth,Allocates Infused,
+Insightfulness,Eternal Labyrinth,Allocates Insightfulness,
+Instability,Merciless Labyrinth,Allocates Instability,
+Ironwood,Eternal Labyrinth,Allocates Ironwood,
+Juggernaut,Merciless Labyrinth,Allocates Juggernaut,
+Kinetic Impacts,Eternal Labyrinth,Allocates Kinetic Impacts,
+King of the Hill,Merciless Labyrinth,Allocates King of the Hill,
+Lava Lash,Eternal Labyrinth,Allocates Lava Lash,
+Leadership,Merciless Labyrinth,Allocates Leadership,
+Lethal Assault,Eternal Labyrinth,Allocates Lethal Assault,
+Lethality,Merciless Labyrinth,Allocates Lethality,
+Light Eater,Eternal Labyrinth,Allocates Light Eater,
+Light of Divinity,Merciless Labyrinth,Allocates Light of Divinity,
+Lightning Walker,Eternal Labyrinth,Allocates Lightning Walker,
+Longshot,Merciless Labyrinth,Allocates Longshot,
+Lord of the Dead,Eternal Labyrinth,Allocates Lord of the Dead,
+Lucidity,Merciless Labyrinth,Allocates Lucidity,
+Lust for Carnage,Eternal Labyrinth,Allocates Lust for Carnage,
+Magmatic Strikes,Merciless Labyrinth,Allocates Magmatic Strikes,
+Mana Flows,Eternal Labyrinth,Allocates Mana Flows,
+Martial Experience,Merciless Labyrinth,Allocates Martial Experience,
+Master Fletcher,Eternal Labyrinth,Allocates Master Fletcher,
+Master of Force,Merciless Labyrinth,Allocates Master of Force,
+Master of the Arena,Eternal Labyrinth,Allocates Master of the Arena,
+Master Sapper,Merciless Labyrinth,Allocates Master Sapper,
+Melding,Eternal Labyrinth,Allocates Melding,
+Mental Rapidity,Merciless Labyrinth,Allocates Mental Rapidity,
+Method to the Madness,Eternal Labyrinth,Allocates Method to the Madness,
+Might,Merciless Labyrinth,Allocates Might,
+Mind Drinker,Eternal Labyrinth,Allocates Mind Drinker,
+Mystic Bulwark,Merciless Labyrinth,Allocates Mystic Bulwark,
+Mystic Talents,Eternal Labyrinth,Allocates Mystic Talents,
+Mysticism,Merciless Labyrinth,Allocates Mysticism,
+Nightstalker,Eternal Labyrinth,Allocates Nightstalker,
+Nimbleness,Merciless Labyrinth,Allocates Nimbleness,
+One with the River,Eternal Labyrinth,Allocates One with the River,
+Ophidian Aim,Merciless Labyrinth,Allocates Ophidian Aim,
+Overcharge,Eternal Labyrinth,Allocates Overcharge,
+Overcharged,Merciless Labyrinth,Allocates Overcharged,
+Pain Forger,Eternal Labyrinth,Allocates Pain Forger,
+Path of the Hunter,Merciless Labyrinth,Allocates Path of the Hunter,
+Path of the Savant,Eternal Labyrinth,Allocates Path of the Savant,
+Path of the Warrior,Merciless Labyrinth,Allocates Path of the Warrior,
+Physique,Eternal Labyrinth,Allocates Physique,
+Piercing Shots,Merciless Labyrinth,Allocates Piercing Shots,
+Poisonous Fangs,Eternal Labyrinth,Allocates Poisonous Fangs,
+Potency of Will,Merciless Labyrinth,Allocates Potency of Will,
+Practical Application,Eternal Labyrinth,Allocates Practical Application,
+Precise Interception,Merciless Labyrinth,Allocates Precise Interception,
+Precision,Eternal Labyrinth,Allocates Precision,
+Primal Manifestation,Merciless Labyrinth,Allocates Primal Manifestation,
+Primal Spirit,Eternal Labyrinth,Allocates Primal Spirit,
+Primeval Force,Merciless Labyrinth,Allocates Primeval Force,
+Prism Weave,Eternal Labyrinth,Allocates Prism Weave,
+Prodigal Perfection,Merciless Labyrinth,Allocates Prodigal Perfection,
+Profane Chemistry,Eternal Labyrinth,Allocates Profane Chemistry,
+Proficiency,Merciless Labyrinth,Allocates Proficiency,
+Prowess,Eternal Labyrinth,Allocates Prowess,
+Purity of Flesh,Merciless Labyrinth,Allocates Purity of Flesh,
+Quick Recovery,Eternal Labyrinth,Allocates Quick Recovery,
+Quickstep,Merciless Labyrinth,Allocates Quickstep,
+Rampart,Eternal Labyrinth,Allocates Rampart,
+Ravenous Horde,Merciless Labyrinth,Allocates Ravenous Horde,
+Razor's Edge,Eternal Labyrinth,Allocates Razor's Edge,
+Red Storm,Merciless Labyrinth,Allocates Red Storm,
+Redemption,Eternal Labyrinth,Allocates Redemption,
+Reflexes,Merciless Labyrinth,Allocates Reflexes,
+Resourcefulness,Eternal Labyrinth,Allocates Resourcefulness,
+Retaliation,Merciless Labyrinth,Allocates Retaliation,
+Retribution,Eternal Labyrinth,Allocates Retribution,
+Revelry,Merciless Labyrinth,Allocates Revelry,
+Revenge of the Hunted,Eternal Labyrinth,Allocates Revenge of the Hunted,
+Ribcage Crusher,Merciless Labyrinth,Allocates Ribcage Crusher,
+Righteous Army,Eternal Labyrinth,Allocates Righteous Army,
+Righteous Decree,Merciless Labyrinth,Allocates Righteous Decree,
+Runesmith,Eternal Labyrinth,Allocates Runesmith,
+Saboteur,Merciless Labyrinth,Allocates Saboteur,
+Sacrifice,Eternal Labyrinth,Allocates Sacrifice,
+Sanctity,Merciless Labyrinth,Allocates Sanctity,
+Sanctuary,Eternal Labyrinth,Allocates Sanctuary,
+Sanctum of Thought,Merciless Labyrinth,Allocates Sanctum of Thought,
+Savagery,Eternal Labyrinth,Allocates Savagery,
+Searing Heat,Merciless Labyrinth,Allocates Searing Heat,
+Sentinel,Eternal Labyrinth,Allocates Sentinel,
+Serpent Stance,Merciless Labyrinth,Allocates Serpent Stance,
+Shaman's Dominion,Eternal Labyrinth,Allocates Shaman's Dominion,
+Shamanistic Fury,Merciless Labyrinth,Allocates Shamanistic Fury,
+Shaper,Eternal Labyrinth,Allocates Shaper,
+Silent Steps,Merciless Labyrinth,Allocates Silent Steps,
+Singular Focus,Eternal Labyrinth,Allocates Singular Focus,
+Skittering Runes,Merciless Labyrinth,Allocates Skittering Runes,
+Skull Cracking,Eternal Labyrinth,Allocates Skull Cracking,
+Slaughter,Merciless Labyrinth,Allocates Slaughter,
+Sleight of Hand,Eternal Labyrinth,Allocates Sleight of Hand,
+Smashing Strikes,Merciless Labyrinth,Allocates Smashing Strikes,
+Snowforged,Eternal Labyrinth,Allocates Snowforged,
+Solidity,Merciless Labyrinth,Allocates Solidity,
+Soul of Steel,Eternal Labyrinth,Allocates Soul of Steel,
+Soul Raker,Merciless Labyrinth,Allocates Soul Raker,
+Soul Siphon,Eternal Labyrinth,Allocates Soul Siphon,
+Soul Thief,Merciless Labyrinth,Allocates Soul Thief,
+Sovereignty,Eternal Labyrinth,Allocates Sovereignty,
+Spinecruncher,Merciless Labyrinth,Allocates Spinecruncher,
+Spirit Void,Eternal Labyrinth,Allocates Spirit Void,
+Spiritual Aid,Merciless Labyrinth,Allocates Spiritual Aid,
+Spiritual Command,Eternal Labyrinth,Allocates Spiritual Command,
+Splitting Strikes,Merciless Labyrinth,Allocates Splitting Strikes,
+Stabbing Thirst,Eternal Labyrinth,Allocates Stabbing Thirst,
+Stamina,Merciless Labyrinth,Allocates Stamina,
+Static Blows,Eternal Labyrinth,Allocates Static Blows,
+Steadfast,Merciless Labyrinth,Allocates Steadfast,
+Steelwood Stance,Eternal Labyrinth,Allocates Steelwood Stance,
+Storm Weaver,Merciless Labyrinth,Allocates Storm Weaver,
+Strong Arm,Eternal Labyrinth,Allocates Strong Arm,
+Stun Mastery,Merciless Labyrinth,Allocates Stun Mastery,
+Successive Detonations,Eternal Labyrinth,Allocates Successive Detonations,
+Survivalist,Merciless Labyrinth,Allocates Survivalist,
+Swagger,Eternal Labyrinth,Allocates Swagger,
+Swift Skewering,Merciless Labyrinth,Allocates Swift Skewering,
+Swift Venoms,Eternal Labyrinth,Allocates Swift Venoms,
+Tempest Blast,Merciless Labyrinth,Allocates Tempest Blast,
+Tenacity,Eternal Labyrinth,Allocates Tenacity,
+Testudo,Merciless Labyrinth,Allocates Testudo,
+Thick Skin,Eternal Labyrinth,Allocates Thick Skin,
+Thief's Craft,Merciless Labyrinth,Allocates Thief's Craft,
+Thrill Seeker,Eternal Labyrinth,Allocates Thrill Seeker,
+Throatseeker,Merciless Labyrinth,Allocates Throatseeker,
+Thunderous Salvos,Eternal Labyrinth,Allocates Thunderous Salvos,
+Tireless,Merciless Labyrinth,Allocates Tireless,
+Titanic Impacts,Eternal Labyrinth,Allocates Titanic Impacts,
+Totemic Zeal,Merciless Labyrinth,Allocates Totemic Zeal,
+Toxic Strikes,Eternal Labyrinth,Allocates Toxic Strikes,
+Tranquility,Merciless Labyrinth,Allocates Tranquility,
+Transcendence,Eternal Labyrinth,Allocates Transcendence,
+Tribal Fury,Merciless Labyrinth,Allocates Tribal Fury,
+Trickery,Eternal Labyrinth,Allocates Trickery,
+True Strike,Merciless Labyrinth,Allocates True Strike,
+Twin Terrors,Eternal Labyrinth,Allocates Twin Terrors,
+Unnatural Calm,Merciless Labyrinth,Allocates Unnatural Calm,
+Unpredictable Offensive,Eternal Labyrinth,Allocates Unpredictable Offensive,
+Unstable Munitions,Merciless Labyrinth,Allocates Unstable Munitions,
+Utmost Intellect,Eternal Labyrinth,Allocates Utmost Intellect,
+Utmost Might,Merciless Labyrinth,Allocates Utmost Might,
+Utmost Swiftness,Eternal Labyrinth,Allocates Utmost Swiftness,
+Vengeant Cascade,Merciless Labyrinth,Allocates Vengeant Cascade,
+Versatility,Eternal Labyrinth,Allocates Versatility,
+Vigour,Merciless Labyrinth,Allocates Vigour,
+Vitality Void,Eternal Labyrinth,Allocates Vitality Void,
+Void Barrier,Merciless Labyrinth,Allocates Void Barrier,
+Volatile Mines,Eternal Labyrinth,Allocates Volatile Mines,
+Wandslinger,Merciless Labyrinth,Allocates Wandslinger,
+Warrior's Blood,Eternal Labyrinth,Allocates Warrior's Blood,
+Way of the Warrior,Merciless Labyrinth,Allocates Way of the Warrior,
+Weapon Artistry,Eternal Labyrinth,Allocates Weapon Artistry,
+Weathered Hunter,Merciless Labyrinth,Allocates Weathered Hunter,
+Whirling Barrier,Eternal Labyrinth,Allocates Whirling Barrier,
+Whispers of Doom,Merciless Labyrinth,Allocates Whispers of Doom,
+Will of Blades,Eternal Labyrinth,Allocates Will of Blades,
+Winter Spirit,Merciless Labyrinth,Allocates Winter Spirit,
+Wisdom of the Glade,Eternal Labyrinth,Allocates Wisdom of the Glade,
+Words of Glory,Merciless Labyrinth,Allocates Words of Glory,
+Wrecking Ball,Eternal Labyrinth,Allocates Wrecking Ball,
+Written in Blood,Merciless Labyrinth,Allocates Written in Blood,
+Enchantment Spellslinger Cooldown Recovery 1,Eternal Labyrinth,Skills Supported by Spellslinger have 20% increased Cooldown Recovery Speed,Spellslinger
+Enchantment Spellslinger Cooldown Recovery 2,Merciless Labyrinth,Skills Supported by Spellslinger have 30% increased Cooldown Recovery Speed,Spellslinger
+Enchantment Spellslinger Reservation 1,Eternal Labyrinth,Skills Supported by Spellslinger have 10% reduced Mana Reservation,Spellslinger
+Enchantment Spellslinger Reservation 2,Merciless Labyrinth,Skills Supported by Spellslinger have 15% reduced Mana Reservation,Spellslinger
+Enchantment Dash Cooldown Count 1,Eternal Labyrinth,Dash has +1 Cooldown Use,Dash
+Enchantment Dash Cooldown Count 2,Merciless Labyrinth,Dash has +2 Cooldown Uses,Dash
+Enchantment Dash Travel Distance 1,Eternal Labyrinth,Dash travels 65% increased distance,Dash
+Enchantment Dash Travel Distance 2,Merciless Labyrinth,Dash travels 100% increased distance,Dash
+Enchantment Arcane Cloak Additional Mana Spent 1,Eternal Labyrinth,Arcane Cloak Spends an additional 10% of current Mana,Arcane Cloak
+Enchantment Arcane Cloak Additional Mana Spent 2,Merciless Labyrinth,Arcane Cloak Spends an additional 15% of current Mana,Arcane Cloak
+Enchantment Arcane Cloak Grants Life Regeneration 1,Eternal Labyrinth,Arcane Cloak grants Life Regeneration equal to 15% of Mana Spent per Second,Arcane Cloak
+Enchantment Kinetic Bolt Attack Speed 1,Merciless Labyrinth,Kinetic Bolt has 10% increased Attack Speed,Kinetic Bolt
+Enchantment Kinetic Bolt Attack Speed 2,Eternal Labyrinth,Kinetic Bolt has 15% increased Attack Speed,Kinetic Bolt
+Enchantment Kinetic Bolt Extra Bounces 1,Merciless Labyrinth,Kinetic Bolt changes direction 1 additional time,Kinetic Bolt
+Enchantment Kinetic Bolt Extra Bounces 2,Eternal Labyrinth,Kinetic Bolt changes direction 2 additional times,Kinetic Bolt
+Enchantment Kinetic Bolt Projectile Speed 1,Merciless Labyrinth,Kinetic Bolt has 20% increased Projectile Speed,Kinetic Bolt
+Enchantment Kinetic Bolt Projectile Speed 2,Eternal Labyrinth,Kinetic Bolt has 30% increased Projectile Speed,Kinetic Bolt
+Enchantment Blade Blast Area of Effect 1,Merciless Labyrinth,Blade Blast has 16% increased Area of Effect,Blade Blast
+Enchantment Blade Blast Area of Effect 2,Eternal Labyrinth,Blade Blast has 24% increased Area of Effect,Blade Blast
+Enchantment Blade Blast Damage 1,Merciless Labyrinth,Blade Blast deals 25% increased Damage,Blade Blast
+Enchantment Blade Blast Damage 2,Eternal Labyrinth,Blade Blast deals 40% increased Damage,Blade Blast
+Enchantment Blade Blast Detonation Area 1,Merciless Labyrinth,Blade Blast detonates other Lingering Blades within an 50% increased Area,Blade Blast
+Enchantment Blade Blast Detonation Area 2,Eternal Labyrinth,Blade Blast detonates other Lingering Blades within an 75% increased Area,Blade Blast
+Enchantment Rune Blast Teleport 1,Merciless Labyrinth,Rune Blast teleports you to the detonated Rune if you have not detonated Runes in the past 1 second,Rune Blast
+Enchantment Rune Blast Teleport 2,Eternal Labyrinth,Rune Blast teleports you to the detonated Rune if you have not detonated Runes in the past 1.5 seconds,Rune Blast
+Enchantment Frostblink Cooldown Speed 1,Merciless Labyrinth,Frostblink has 20% increased Cooldown Recovery Speed,Frostblink
+Enchantment Frostblink Cooldown Speed 2,Eternal Labyrinth,Frostblink has 30% increased Cooldown Recovery Speed,Frostblink
+Enchantment Frostblink Travel Distance 1,Merciless Labyrinth,Frostblink has 50% increased maximum travel distance,Frostblink
+Enchantment Frostblink Travel Distance 2,Eternal Labyrinth,Frostblink has 75% increased maximum travel distance,Frostblink
+Enchantment Stormbind Area of Effect 1,Merciless Labyrinth,Stormbind has 16% increased Area of Effect,Stormbind
+Enchantment Stormbind Area of Effect 2,Eternal Labyrinth,Stormbind has 24% increased Area of Effect,Stormbind
+Enchantment Stormbind Damage 1,Merciless Labyrinth,Stormbind deals 25% increased Damage,Stormbind
+Enchantment Stormbind Damage 2,Eternal Labyrinth,Stormbind deals 40% increased Damage,Stormbind
