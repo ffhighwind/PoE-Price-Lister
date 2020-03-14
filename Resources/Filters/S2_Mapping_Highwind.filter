@@ -3775,9 +3775,9 @@ Hide  # Normal/Magic - Low Drop Level - 25+
 # 3 Link #
 #--------#
 
-Hide  # Normal/Magic - Leveling - 3 Link Armour - < 10
+Hide  # Normal/Magic - Leveling - 3 Link Armour - < 15
 	LinkedSockets >= 3
-	ItemLevel < 10
+	ItemLevel < 15
 	Class Gloves Boots Helmets "Body Armours"
 	Rarity <= Magic
 	SetFontSize 32
@@ -3803,7 +3803,7 @@ Hide  # Normal/Magic - Leveling - 3 Link Armour - 4 Socket
 
 Hide  # Normal/Magic - Leveling - 3 Link Wands Sceptres
 	LinkedSockets = 3
-	ItemLevel <= 7
+	ItemLevel <= 9
 	Class Wands Sceptres
 	Rarity <= Magic
 	SetFontSize 32
@@ -3814,13 +3814,13 @@ Hide  # Normal/Magic - Leveling - 3 Link Wands Sceptres
 # Other #
 #-------#
 
-Hide  # Normal/Magic - Leveling - < 11 Normal
+Hide  # Normal/Magic - Leveling - < 12 Normal
 	Rarity = Normal
 	ItemLevel <= 11
 	SetFontSize 32
 	DisableDropSound
 
-Hide  # Normal/Magic - Leveling - < 20 Magic
+Hide  # Normal/Magic - Leveling - < 21 Magic
 	Rarity = Magic
 	ItemLevel <= 20
 	SetFontSize 32
