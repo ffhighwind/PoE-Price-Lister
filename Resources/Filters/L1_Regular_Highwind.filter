@@ -2058,8 +2058,9 @@ Show  # Explicit Mods - Fractured - Rare - Other
 #Show # Animate Weapons - Ranged - Normal
 #	Class Wands Bows
 #	Rarity = Normal
-#	DropLevel < 65
+#	DropLevel < 72
 #	LinkedSockets <= 4
+#	Sockets < 6
 #	SetFontSize 31
 #	SetTextColor 0 0 0 0 # Animate Weapons
 #	SetBackgroundColor 180 180 180 150 # Animate Weapons
@@ -2072,8 +2073,8 @@ Show  # Explicit Mods - Fractured - Rare - Other
 #	Class Wands Bows
 #	Rarity = Magic
 #	Identified True
-#	DropLevel < 65
 #	LinkedSockets <= 4
+#	Sockets < 6
 #	SetFontSize 24
 #	SetTextColor 0 0 0 0 # Animate Weapons
 #	SetBackgroundColor 180 180 180 150 # Animate Weapons
@@ -2086,7 +2087,7 @@ Show  # Explicit Mods - Fractured - Rare - Other
 #	Class Swords Maces Axes Dagger Claws Sceptres Staves
 #	Rarity = Normal
 #	LinkedSockets <= 4
-#	DropLevel < 65
+#	Sockets < 6
 #	SetFontSize 31
 #	SetTextColor 0 0 0 0 # Animate Weapons
 #	SetBackgroundColor 180 180 180 150 # Animate Weapons
@@ -2100,7 +2101,7 @@ Show  # Explicit Mods - Fractured - Rare - Other
 #	Rarity = Magic
 #	Identified True
 #	LinkedSockets <= 4
-#	DropLevel < 65
+#	Sockets < 6
 #	SetFontSize 24
 #	SetTextColor 0 0 0 0 # Animate Weapons
 #	SetBackgroundColor 180 180 180 150 # Animate Weapons
