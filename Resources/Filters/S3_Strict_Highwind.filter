@@ -1,7 +1,7 @@
 ﻿﻿############################################
 ##     HIGHWIND'S STRICT FILTER 3.10.6    ##
 ############################################
-## Release Date: March 28, 2020           ##
+## Release Date: March 31, 2020           ##
 ############################################
 
 #--------------#
@@ -194,7 +194,6 @@ Hide  # Currency - Worthless - Shards (1)
 Hide  # League Specific - Essence - Essences (Worthless)
 	Class "Stackable Currency"
 	BaseType "Whispering Essence" "Muttering Essence"
-	SetFontSize 36
 	DisableDropSound
 
 Hide  # League Specific - Harbinger - Worthless - Shards (1)
@@ -418,7 +417,7 @@ Show  # League Specific - Blight - Blight Oils (Mid)
 	BaseType "Teal Oil" "Azure Oil" "Violet Oil" "Crimson Oil" "Black Oil"
 
 Show  # League Specific - Delve - Fossils (Mid)
-	Class Delve
+	Class "Stackable Currency"
 	BaseType "Serrated Fossil" "Lucent Fossil" "Shuddering Fossil" "Enchanted Fossil" "Gilded Fossil" "Prismatic Fossil" "Aetheric Fossil" "Bound Fossil" "Dense Fossil" "Encrusted Fossil" "Jagged Fossil" "Pristine Fossil"
 
 Show  # League Specific - Delve - Resonators (Mid)
@@ -484,7 +483,7 @@ Show  # League Specific - Breach - Blessings
 	BaseType "Blessing of "
 
 Show  # League Specific - Delve - Fossils (High)
-	Class Delve
+	Class "Stackable Currency"
 	BaseType "Faceted Fossil" "Fractured Fossil" "Hollow Fossil" "Tangled Fossil" "Bloodstained Fossil" "Glyphic Fossil" "Corroded Fossil" "Sanctified Fossil" "Perfect Fossil" 
 
 Show  # League Specific - Delve - Resonators (High)
@@ -704,17 +703,6 @@ Show  # Maps - Uniques - Low
 # Red #
 #-----#
 
-Show  # Maps - T11+ (Red) - T16
-	Class Maps
-	MapTier >= 16
-	SetFontSize 45
-	SetTextColor 220 220 220 # Map (T16)
-	SetBackgroundColor 255 0 0 220 # Map (T16)
-	SetBorderColor 220 220 220 # Map (T16)
-	PlayAlertSound 3 200 # Map
-	MinimapIcon 0 Red Hexagon
-	PlayEffect Red
-
 Show
 	Class Maps
 	MapTier >= 11
@@ -731,6 +719,18 @@ Show  # Maps - T11+ (Red) - Blighted
 	SetTextColor 0 230 0 # Map (Red Blighted)
 	SetBorderColor 0 255 0 # Map (Blighted)
 	PlayEffect Green
+
+Show  # Maps - T11+ (Red) - T16
+	Class Maps
+	MapTier >= 16
+	SetFontSize 45
+	SetTextColor 220 220 220 # Map (T16)
+	SetBackgroundColor 255 0 0 220 # Map (T16)
+	SetBorderColor 220 220 220 # Map (T16)
+	PlayAlertSound 3 200 # Map
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
+
 
 Show  # Maps - T11+ (Red) - Other
 	Class Maps
@@ -2905,7 +2905,7 @@ Show  # Shaper Elder Rares - Accessories - 84+
 	SetFontSize 45
 	SetBackgroundColor 50 20 70 230 # Shaper Elder
 	SetBorderColor 220 0 0 # Rare Accessory
-	PlayAlertSound 4 200 # Shaper Elder
+	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Green
 
