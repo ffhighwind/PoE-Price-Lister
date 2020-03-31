@@ -163,6 +163,7 @@
     <Content Include="FodyWeavers.xml" />
     <Content Include="Resources\changelog_archive.txt" />
     <Content Include="Resources\filterblast_config.txt" />
+    <Content Include="Resources\Filters\TextFile1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Fody.3.2.2\build\Fody.targets" Condition="Exists('packages\Fody.3.2.2\build\Fody.targets')" />

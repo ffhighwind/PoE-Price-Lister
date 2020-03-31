@@ -72,7 +72,7 @@ namespace PoE_Price_Lister
 	SetFontSize 40
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
-	SetBorderColor 180 90 45 # Unique (<3c)
+	SetBorderColor 180 90 45 # Unique
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Orange";
@@ -124,7 +124,7 @@ Show  # Uniques - <3c - Unique Rings
 @"	SetFontSize 40
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
-	SetBorderColor 180 90 45 # Unique (<3c)";
+	SetBorderColor 180 90 45 # Unique";
 
 		private const string uniqueNewOrWorthless =
 @"  # Uniques - New or Worthless
@@ -132,7 +132,7 @@ Show  # Uniques - <3c - Unique Rings
 	SetFontSize 36
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 # Unique
-	SetBorderColor 180 90 45 # Unique (<3c)";
+	SetBorderColor 180 90 45 # Unique";
 
 		private const string styleDiv10c =
 @"	SetFontSize 45
@@ -169,10 +169,10 @@ Show  # Uniques - <3c - Unique Rings
 
 		private const string styleDivNearlyWorthless =
 @"	SetFontSize 36 
-	SetTextColor 0 0 0 # Divination Card (Nearly Worthless)
-	SetBackgroundColor 255 0 175 170 # Divination Card (Nearly Worthless)
-	SetBorderColor 0 0 0 # Divination Card (Nearly Worthless)
-	PlayAlertSound 5 0 # Divination Card (Nearly Worthless)";
+	SetTextColor 0 0 0 # Divination Card (Low)
+	SetBackgroundColor 255 0 175 170 # Divination Card (Low)
+	SetBorderColor 0 0 0 # Divination Card (Low)
+	PlayAlertSound 5 0 # Divination Card (Low)";
 
 		private const string styleDivWorthless =
 @"	SetFontSize 32
@@ -528,17 +528,18 @@ Show  # Uniques - <3c - Unique Rings
 
 			string enchStyleRare20 =
 @"	SetFontSize 45
-	SetTextColor 255 255 255 # Crafting Base (High)
-	SetBackgroundColor 75 75 75 255 # Crafting Base (High)
-	SetBorderColor 0 255 255 # Crafting Base (High)
+	SetTextColor 0 100 220 # Crafting Base (High)
+	SetBackgroundColor 255 255 255 255 # Crafting Base (High)
+	SetBorderColor 40 80 150 # Crafting Base (High)
 	PlayAlertSound 1 200 # High Value
 	MinimapIcon 0 Red UpsideDownHouse
 	PlayEffect Red";
 
 			string enchStyle10 =
 @"	SetFontSize 40
-	SetBackgroundColor 40 40 40 # Crafting Base (Explicit)
-	SetBorderColor 25 65 175 # Crafting Base (Explicit)
+	SetTextColor 255 255 255 # Crafting Base (Mid)
+	SetBackgroundColor 50 50 50 255 # Crafting Base (Mid)
+	SetBorderColor 40 80 150 # Crafting Base (Mid)
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Blue UpsideDownHouse
 	PlayEffect Blue";
@@ -554,10 +555,11 @@ Show  # Uniques - <3c - Unique Rings
 			sb.AppendLine(
 @"Show  # Enchantments - Other
 	AnyEnchantment True
+	Sockets < 6
 	Rarity <= Rare
 	SetFontSize 36
-	SetBackgroundColor 40 40 40 # Crafting Base (Explicit)
-	SetBorderColor 25 65 175 # Crafting Base (Explicit)");
+	SetBackgroundColor 40 40 40 # Crafting Base (Low)
+	SetBorderColor 0 0 0 # Crafting Base (Low)");
 			return sb.ToString();
 		}
 
