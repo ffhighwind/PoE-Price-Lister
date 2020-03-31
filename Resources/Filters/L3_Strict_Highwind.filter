@@ -2607,10 +2607,10 @@ Hide  # Flasks - Normal - Mapping (High)
 #	DropLevel < 72
 #	LinkedSockets <= 4
 #	Sockets < 6
-#	SetFontSize 31
+#	SetFontSize 45
 #	SetTextColor 0 0 0 0 # Animate Weapons
-#	SetBackgroundColor 180 180 180 150 # Animate Weapons
-#	SetBorderColor 0 0 0 230 # Animate Weapons
+#	SetBackgroundColor 100 0 255 255 # Animate Weapons
+#	SetBorderColor 0 200 50 230 # Animate Weapons
 #	DisableDropSound
 #Disabled Block End
 
@@ -2621,37 +2621,37 @@ Hide  # Flasks - Normal - Mapping (High)
 #	Identified True
 #	LinkedSockets <= 4
 #	Sockets < 6
-#	SetFontSize 24
+#	SetFontSize 45
 #	SetTextColor 0 0 0 0 # Animate Weapons
-#	SetBackgroundColor 180 180 180 150 # Animate Weapons
-#	SetBorderColor 0 0 0 230 # Animate Weapons
+#	SetBackgroundColor 100 0 255 255 # Animate Weapons
+#	SetBorderColor 0 200 50 230 # Animate Weapons
 #	DisableDropSound
 #Disabled Block End
 
 #Disabled Block Start
 #Show  # Animate Weapons - Melee - Normal
-#	Class Swords Maces Axes Dagger Claws Sceptres Staves
+#	Class Swords Maces Axes Dagger Claws Sceptres Staves Warstaves
 #	Rarity = Normal
 #	LinkedSockets <= 4
 #	Sockets < 6
-#	SetFontSize 31
+#	SetFontSize 45
 #	SetTextColor 0 0 0 0 # Animate Weapons
-#	SetBackgroundColor 180 180 180 150 # Animate Weapons
-#	SetBorderColor 0 0 0 230 # Animate Weapons
+#	SetBackgroundColor 100 0 255 255 # Animate Weapons
+#	SetBorderColor 0 200 50 230 # Animate Weapons
 #	DisableDropSound
 #Disabled Block End
 
 #Disabled Block Start
 #Show  # Animate Weapons - Melee - Magic
-#	Class Swords Maces Axes Dagger Claws Sceptres Staves
+#	Class Swords Maces Axes Dagger Claws Sceptres Staves Warstaves
 #	Rarity = Magic
 #	Identified True
 #	LinkedSockets <= 4
 #	Sockets < 6
-#	SetFontSize 24
+#	SetFontSize 45
 #	SetTextColor 0 0 0 0 # Animate Weapons
-#	SetBackgroundColor 180 180 180 150 # Animate Weapons
-#	SetBorderColor 0 0 0 230 # Animate Weapons
+#	SetBackgroundColor 100 0 255 255 # Animate Weapons
+#	SetBorderColor 0 200 50 230 # Animate Weapons
 #	DisableDropSound
 #Disabled Block End
 
