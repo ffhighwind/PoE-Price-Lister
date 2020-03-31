@@ -981,7 +981,7 @@ Show  # 5+ Links - Other
 	ElderItem False
 	AnyEnchantment False
 	SetFontSize 32
-	MinimapIcon -1 Yellow UpsideDownHouse
+	MinimapIcon -1
 	PlayAlertSound 4 0
 	PlayEffect None
 

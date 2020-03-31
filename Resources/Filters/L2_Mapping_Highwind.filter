@@ -946,7 +946,7 @@ Show
 	SetTextColor 255 0 0 # 5+ Link
 	SetBackgroundColor 0 0 0 230 # 5+ Link
 	SetBorderColor 255 0 0 # 5+ Link
-	MinimapIcon -1 Yellow UpsideDownHouse
+	MinimapIcon -1
 	PlayAlertSound 4 0
 	PlayEffect None
 	Continue
@@ -985,7 +985,7 @@ Show  # 5+ Links - Other
 	ElderItem False
 	AnyEnchantment False
 	SetFontSize 36
-	MinimapIcon -1 Yellow UpsideDownHouse
+	MinimapIcon -1
 	PlayAlertSound 4 0
 	PlayEffect None
 
