@@ -234,7 +234,7 @@ Show  # Currency - < 0.25c
 Show
 	Class Currency
 	SetTextColor 220 190 155 # Currency (Very Low)
-	SetBackgroundColor 55 50 40 # Currency (Very Low)
+	SetBackgroundColor 55 50 40 230 # Currency (Very Low)
 	SetBorderColor 0 0 0 # Currency (Very Low)
 	SetFontSize 32
 	Continue
