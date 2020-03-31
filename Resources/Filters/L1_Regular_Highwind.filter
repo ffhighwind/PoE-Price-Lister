@@ -701,6 +701,7 @@ Show
 	SetBackgroundColor 255 0 0 220 # Map (Red)
 	SetBorderColor 0 0 0 # Map (Red)
 	PlayAlertSound 3 200 # Map
+	SetFontSize 45
 	Continue
 
 Show  # Maps - T11+ (Red) - Blighted
