@@ -71,8 +71,8 @@ namespace PoE_Price_Lister
 	ItemLevel < 67
 	SetFontSize 40
 	SetTextColor 255 128 64 # Unique
-	SetBackgroundColor 50 25 12 # Unique
-	SetBorderColor 180 90 45 # Unique
+	SetBackgroundColor 50 25 12 230 # Unique
+	SetBorderColor 180 90 45 255 # Unique
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Orange";
@@ -97,7 +97,7 @@ Show  # Uniques - <3c - Unique Rings
 @"	SetFontSize 45
 	SetTextColor 255 128 64 # Unique (15c+)
 	SetBackgroundColor 255 255 255 255 # Unique (15c+)
-	SetBorderColor 255 128 64 # Unique (15c+)
+	SetBorderColor 255 128 64 255 # Unique (15c+)
 	PlayAlertSound 1 200 # High Value
 	MinimapIcon 0 Red UpsideDownHouse
 	PlayEffect Red";
@@ -105,8 +105,8 @@ Show  # Uniques - <3c - Unique Rings
 		private const string style5to15c =
 @"	SetFontSize 45
 	SetTextColor 255 128 64 # Unique
-	SetBackgroundColor 50 25 12 # Unique
-	SetBorderColor 255 255 255 # Unique (5-15c)
+	SetBackgroundColor 50 25 12 230 # Unique
+	SetBorderColor 255 255 255 255 # Unique (5-15c)
 	PlayAlertSound 1 200 # High Value
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Orange";
@@ -114,8 +114,8 @@ Show  # Uniques - <3c - Unique Rings
 		private const string style3c =
 @"	SetFontSize 40
 	SetTextColor 255 128 64 # Unique
-	SetBackgroundColor 50 25 12 # Unique
-	SetBorderColor 255 255 0 # Unique (3-5c)
+	SetBackgroundColor 50 25 12 230 # Unique
+	SetBorderColor 255 255 0 255 # Unique (3-5c)
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Orange";
@@ -123,22 +123,22 @@ Show  # Uniques - <3c - Unique Rings
 		private const string styleLimited =
 @"	SetFontSize 40
 	SetTextColor 255 128 64 # Unique
-	SetBackgroundColor 50 25 12 # Unique
-	SetBorderColor 180 90 45 # Unique";
+	SetBackgroundColor 50 25 12 230 # Unique
+	SetBorderColor 180 90 45 255 # Unique";
 
 		private const string uniqueNewOrWorthless =
 @"  # Uniques - New or Worthless
 	Rarity = Unique
 	SetFontSize 36
 	SetTextColor 255 128 64 # Unique
-	SetBackgroundColor 50 25 12 # Unique
-	SetBorderColor 180 90 45 # Unique";
+	SetBackgroundColor 50 25 12 230 # Unique
+	SetBorderColor 180 90 45 255 # Unique";
 
 		private const string styleDiv10c =
 @"	SetFontSize 45
 	SetTextColor 255 0 175 # Divination Card (10c+)
 	SetBackgroundColor 255 255 255 255 # Divination Card (10c+)
-	SetBorderColor 255 0 175 # Divination Card (10c+)
+	SetBorderColor 255 0 175 255 # Divination Card (10c+)
 	PlayAlertSound 1 200 # High Value
 	MinimapIcon 0 Red Square
 	PlayEffect Red";
@@ -147,7 +147,7 @@ Show  # Uniques - <3c - Unique Rings
 @"	SetFontSize 45
 	SetTextColor 255 255 255 # Divination Card (2-10c)
 	SetBackgroundColor 255 0 175 255 # Divination Card (2-10c)
-	SetBorderColor 255 255 255 # Divination Card (2-10c)
+	SetBorderColor 255 255 255 255 # Divination Card (2-10c)
 	PlayAlertSound 5 200 # Divination Card (2-10c)
 	MinimapIcon 0 Pink Square 
 	PlayEffect Pink";
@@ -156,7 +156,7 @@ Show  # Uniques - <3c - Unique Rings
 @"	SetFontSize 40 
 	SetTextColor 0 0 0 # Divination Card (<2c)
 	SetBackgroundColor 255 0 175 230 # Divination Card (<2c)
-	SetBorderColor 150 30 100 # Divination Card (<2c)
+	SetBorderColor 150 30 100 255 # Divination Card (<2c)
 	PlayAlertSound 5 100 # Divination Card (<2c)
 	MinimapIcon 0 Pink Square 
 	PlayEffect Pink";
@@ -165,13 +165,13 @@ Show  # Uniques - <3c - Unique Rings
 @"	SetFontSize 40 
 	SetTextColor 0 0 0 # Divination Card (<2c)
 	SetBackgroundColor 255 0 175 230 # Divination Card (<2c)
-	SetBorderColor 150 30 100 # Divination Card (<2c)";
+	SetBorderColor 150 30 100 255 # Divination Card (<2c)";
 
 		private const string styleDivNearlyWorthless =
 @"	SetFontSize 36 
 	SetTextColor 0 0 0 # Divination Card (Low)
 	SetBackgroundColor 255 0 175 170 # Divination Card (Low)
-	SetBorderColor 0 0 0 # Divination Card (Low)
+	SetBorderColor 0 0 0 255 # Divination Card (Low)
 	PlayAlertSound 5 0 # Divination Card (Low)";
 
 		private const string styleDivWorthless =
@@ -187,7 +187,7 @@ Show  # Uniques - <3c - Unique Rings
 	SetFontSize 40
 	SetTextColor 255 255 255 # Divination Card (2c+)
 	SetBackgroundColor 255 0 175 255 # Divination Card (2c+)
-	SetBorderColor 0 255 0 # Error
+	SetBorderColor 0 255 0 255 # Error
 	PlayAlertSound 5 200 # Divination Card (2c+)
 	MinimapIcon 0 Pink Square
 	PlayEffect Pink";
@@ -521,7 +521,7 @@ Show  # Uniques - <3c - Unique Rings
 	SetFontSize 45
 	SetTextColor 255 128 64 # Unique (15c+)
 	SetBackgroundColor 255 255 255 255 # Unique (15c+)
-	SetBorderColor 255 128 64 # Unique (15c+)
+	SetBorderColor 255 128 64 255 # Unique (15c+)
 	PlayAlertSound 1 200 # High Value
 	MinimapIcon 0 Red UpsideDownHouse
 	PlayEffect Red";
@@ -530,7 +530,7 @@ Show  # Uniques - <3c - Unique Rings
 @"	SetFontSize 45
 	SetTextColor 0 100 220 # Crafting Base (High)
 	SetBackgroundColor 255 255 255 255 # Crafting Base (High)
-	SetBorderColor 40 80 150 # Crafting Base (High)
+	SetBorderColor 40 80 150 255 # Crafting Base (High)
 	PlayAlertSound 1 200 # High Value
 	MinimapIcon 0 Red UpsideDownHouse
 	PlayEffect Red";
@@ -539,7 +539,7 @@ Show  # Uniques - <3c - Unique Rings
 @"	SetFontSize 40
 	SetTextColor 255 255 255 # Crafting Base (Mid)
 	SetBackgroundColor 50 50 50 255 # Crafting Base (Mid)
-	SetBorderColor 40 80 150 # Crafting Base (Mid)
+	SetBorderColor 40 80 150 255 # Crafting Base (Mid)
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Blue UpsideDownHouse
 	PlayEffect Blue";
@@ -558,8 +558,8 @@ Show  # Uniques - <3c - Unique Rings
 	Sockets < 6
 	Rarity <= Rare
 	SetFontSize 36
-	SetBackgroundColor 40 40 40 # Crafting Base (Low)
-	SetBorderColor 0 0 0 # Crafting Base (Low)");
+	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
+	SetBorderColor 0 0 0 255 # Crafting Base (Low)");
 			return sb.ToString();
 		}
 
