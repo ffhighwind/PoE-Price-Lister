@@ -553,9 +553,20 @@ Show  # Uniques - <3c - Unique Rings
 				sb.AppendLine(@"Show  # Enchantments - 10c+ Other").Append("\tHasEnchantment ").AppendLine(ItemList(list10c)).AppendLine(enchStyle10).AppendLine();
 			}
 			sb.AppendLine(
-@"Show  # Enchantments - Other
+@"Show  # Enchantments - Jewelry
 	AnyEnchantment True
-	Sockets < 6
+	Class Rings Amulets
+	SetFontSize 40
+	SetTextColor 255 255 255 # Crafting Base (Mid)
+	SetBackgroundColor 50 50 50 255 # Crafting Base (Mid)
+	SetBorderColor 40 80 150 255 # Crafting Base (Mid)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Blue UpsideDownHouse
+	PlayEffect Blue
+
+Show  # Enchantments - Helmets Boots
+	AnyEnchantment True
+	Class Helmets Boots
 	Rarity <= Rare
 	SetFontSize 36
 	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)

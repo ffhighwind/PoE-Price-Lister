@@ -371,6 +371,7 @@ Show
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 1 Yellow Circle
 	PlayEffect Yellow
+	Continue
 
 Show  # Currency - Mid - <0.5c
 	Class Currency
@@ -1605,9 +1606,20 @@ Show  # Enchantments - 10c+ Other
 	MinimapIcon 0 Blue UpsideDownHouse
 	PlayEffect Blue
 
-Show  # Enchantments - Other
+Show  # Enchantments - Jewelry
 	AnyEnchantment True
-	Sockets < 6
+	Class Rings Amulets
+	SetFontSize 40
+	SetTextColor 255 255 255 # Crafting Base (Mid)
+	SetBackgroundColor 50 50 50 255 # Crafting Base (Mid)
+	SetBorderColor 40 80 150 255 # Crafting Base (Mid)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Blue UpsideDownHouse
+	PlayEffect Blue
+
+Show  # Enchantments - Helmets Boots
+	AnyEnchantment True
+	Class Helmets Boots
 	Rarity <= Rare
 	SetFontSize 36
 	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
@@ -2794,7 +2806,7 @@ Show
 Show
 	Rarity = Rare
 	ItemLevel >= 60
-	Class "Two Hand" Bows Staves Warstaves Gloves Boots Helmets "Body Armours" Amulets Belts Rings
+	Class "Two Hand" Bows Staves Warstaves Gloves Boots Helmets "Body Armours"
 	SetBackgroundColor 20 60 0 230 # Rare Recipe
 	SetBorderColor 0 0 0 255 # Rare Recipe
 	Continue
@@ -2802,7 +2814,7 @@ Show
 Show
 	Rarity = Rare
 	ItemLevel >= 60
-	Class "One Hand" Daggers "Rune Dagger" Wands Claws Sceptres Quivers
+	Class "One Hand" Daggers "Rune Dagger" Wands Claws Sceptres Quivers Shields
 	SetBackgroundColor 40 35 8 230 # Rare Weapon 60+
 	SetBorderColor 0 0 0 255 # Rare Weapon 60+
 	Continue
@@ -2812,8 +2824,8 @@ Show
 	ItemLevel >= 60
 	Class "One Hand" Daggers "Rune Dagger" Wands Claws Sceptres Quivers
 	BaseType "Siege Axe" "Vaal Hatchet" "Infernal Axe" "Runic Hatchet" "Legion Hammer" "Nightmare Mace" "Behemoth Mace" "Corsair Sword" "Spiraled Foil" "Eternal Sword" "Jewelled Foil" "Dragoon Sword" Ambusher "Platinum Kris" "Imperial Skean" Sai "Imbued Wand" "Opal Wand" "Tornado Wand" "Profane Wand" "Convoking Wand" "Hellion's Paw" "Imperial Claw" "Terror Claw" "Gemini Claw" "Karui Sceptre" "Vaal Sceptre" "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Ornate Quiver" "Penetrating Arrow Quiver"
-	SetBackgroundColor 80 55 20 230 # Rare Weapon 60+ (High)
-	SetBorderColor 0 0 0 255 # Rare Weapon 60+ (High)
+	SetBackgroundColor 70 50 20 230 # Rare Weapon 60+ (High)
+	SetBorderColor 90 60 25 255 # Rare Weapon 60+ (High)
 	Continue
 
 Show
@@ -2821,8 +2833,8 @@ Show
 	ItemLevel >= 60
 	Class "Two Hand" Bows Staves Warstaves
 	BaseType "Sundering Axe" "Vaal Axe" "Ezomyte Axe" "Void Axe" "Despot Axe" Fleshripper Piledriver Meatgrinder "Terror Maul" "Coronal Maul" "Reaver Sword" "Vaal Greatsword" "Lion Sword" "Infernal Sword" "Exquisite Blade" "Thicket Bow" "Imperial Bow" "Harbinger Bow" "Maraketh Bow" Lathi "Ezomyte Staff" Maelstr "Eclipse Staff" "Judgement Staff"
-	SetBackgroundColor 25 75 55 250 # Rare Recipe 60+ (High)
-	SetBorderColor 0 0 0 255 # Rare Recipe 60+ (High)
+	SetBackgroundColor 25 80 15 235 # Rare Recipe
+	SetBorderColor 30 100 65 255 # Rare Recipe 60+ (High)
 	Continue
 
 Show
@@ -2830,8 +2842,8 @@ Show
 	ItemLevel >= 60
 	DropLevel >= 60
 	Class "Body Armours"
-	SetBackgroundColor 25 75 55 250 # Rare Recipe 60+ (High)
-	SetBorderColor 0 0 0 255 # Rare Recipe 60+ (High)
+	SetBackgroundColor 25 80 15 235 # Rare Recipe
+	SetBorderColor 30 100 65 255 # Rare Recipe 60+ (High)
 	Continue
 
 Show
@@ -2839,8 +2851,8 @@ Show
 	ItemLevel >= 60
 	DropLevel >= 60
 	Class Shields
-	SetBackgroundColor 80 55 20 230 # Rare Weapon 60+ (High)
-	SetBorderColor 0 0 0 255 # Rare Weapon 60+ (High)
+	SetBackgroundColor 70 50 20 230 # Rare Weapon 60+ (High)
+	SetBorderColor 90 60 25 255 # Rare Weapon 60+ (High)
 	Continue
 
 Show
@@ -2848,8 +2860,8 @@ Show
 	ItemLevel >= 60
 	DropLevel > 56
 	Class Gloves Boots Helmets
-	SetBackgroundColor 25 75 55 250 # Rare Recipe 60+ (High)
-	SetBorderColor 0 0 0 255 # Rare Recipe 60+ (High)
+	SetBackgroundColor 25 80 15 235 # Rare Recipe
+	SetBorderColor 30 100 65 255 # Rare Recipe 60+ (High)
 	Continue
 
 Show
@@ -2868,6 +2880,15 @@ Show
 Show
 	Rarity = Rare
 	Class Amulets Belts Rings
+	SetBorderColor 220 0 0 255 # Rare Accessory
+	SetFontSize 40
+	Continue
+
+Show
+	Rarity = Rare
+	ItemLevel >= 60
+	Class Amulets Belts Rings
+	SetBackgroundColor 25 80 15 235 # Rare Recipe
 	SetBorderColor 220 0 0 255 # Rare Accessory
 	SetFontSize 40
 	Continue
@@ -2947,8 +2968,8 @@ Show
 	ItemLevel >= 60
 	Class "One Hand" Daggers "Rune Dagger" Wands Claws Sceptres
 	BaseType "Siege Axe" "Vaal Hatchet" "Infernal Axe" "Runic Hatchet" "Legion Hammer" "Nightmare Mace" "Behemoth Mace" "Corsair Sword" "Spiraled Foil" "Eternal Sword" "Jewelled Foil" "Dragoon Sword" Ambusher "Platinum Kris" "Imperial Skean" Sai "Imbued Wand" "Opal Wand" "Tornado Wand" "Profane Wand" "Convoking Wand" "Hellion's Paw" "Imperial Claw" "Terror Claw" "Gemini Claw" "Karui Sceptre" "Vaal Sceptre"
-	SetBackgroundColor 80 55 20 230 # Rare Weapon 60+ (High)
-	SetBorderColor 0 0 0 255 # Rare Weapon 60+ (High)
+	SetBackgroundColor 70 50 20 230 # Rare Weapon 60+ (High)
+	SetBorderColor 90 60 25 255 # Rare Weapon 60+ (High)
 	Continue
 
 Show
@@ -2956,8 +2977,8 @@ Show
 	ItemLevel >= 60
 	Class "Two Hand" Bows Staves Warstaves
 	BaseType "Sundering Axe" "Vaal Axe" "Ezomyte Axe" "Void Axe" "Despot Axe" Fleshripper Piledriver Meatgrinder "Terror Maul" "Coronal Maul" "Reaver Sword" "Vaal Greatsword" "Lion Sword" "Infernal Sword" "Exquisite Blade" "Thicket Bow" "Imperial Bow" "Harbinger Bow" "Maraketh Bow" Lathi "Ezomyte Staff" Maelstr "Eclipse Staff" "Judgement Staff"
-	SetBackgroundColor 25 75 55 250 # Rare Recipe 60+ (High)
-	SetBorderColor 0 0 0 255 # Rare Recipe 60+ (High)
+	SetBackgroundColor 25 80 15 235 # Rare Recipe
+	SetBorderColor 30 100 65 255 # Rare Recipe 60+ (High)
 	Continue
 
 Show
@@ -2965,8 +2986,8 @@ Show
 	ItemLevel >= 60
 	DropLevel >= 60
 	Class "Body Armours"
-	SetBackgroundColor 25 75 55 250 # Rare Recipe 60+ (High)
-	SetBorderColor 0 0 0 255 # Rare Recipe 60+ (High)
+	SetBackgroundColor 25 80 15 235 # Rare Recipe
+	SetBorderColor 30 100 65 255 # Rare Recipe 60+ (High)
 	Continue
 
 Show
@@ -2974,16 +2995,16 @@ Show
 	ItemLevel >= 60
 	DropLevel > 56
 	Class Gloves Boots Helmets
-	SetBackgroundColor 25 75 55 250 # Rare Recipe 60+ (High)
-	SetBorderColor 0 0 0 255 # Rare Recipe 60+ (High)
+	SetBackgroundColor 25 80 15 235 # Rare Recipe
+	SetBorderColor 30 100 65 255 # Rare Recipe 60+ (High)
 	Continue
 
 Show
 	Rarity = Rare
 	ItemLevel >= 60
 	Class Amulets Belts Rings
-	SetBackgroundColor 25 75 55 250 # Rare Recipe 60+ (High)
-	SetBorderColor 0 0 0 255 # Rare Recipe 60+ (High)
+	SetBackgroundColor 25 80 15 235 # Rare Recipe
+	SetBorderColor 30 100 65 255 # Rare Recipe 60+ (High)
 	Continue
 
 ##########################################
@@ -3215,26 +3236,17 @@ Show  # League Specific - Stygian Vises - 84+
 	BaseType "Stygian Vise"
 	Rarity = Rare
 	ItemLevel >= 84
-	SetFontSize 40
-	SetBackgroundColor 20 80 55 240 # Stygian Vise 84+
-	SetBorderColor 220 0 0 255 # Stygian Vise 84+
 
 Show  # League Specific - Stygian Vises - Leveling
 	BaseType "Stygian Vise"
 	Rarity = Rare
 	ItemLevel < 68
-	SetFontSize 40
-	SetBackgroundColor 0 0 0 230 # Stygian Vise
-	SetBorderColor 220 0 0 255 # Stygian Vise
 
 #Disabled Block Start
 #Show  # League Specific - Stygian Vises - Mapping (Low)
 #	BaseType "Stygian Vise"
 #	Rarity = Rare
 #	ItemLevel < 73
-#	SetFontSize 36
-#	SetBackgroundColor 0 0 0 230 # Stygian Vise
-#	SetBorderColor 220 0 0 255 # Stygian Vise
 #Disabled Block End
 
 #Disabled Block Start
@@ -3242,17 +3254,11 @@ Show  # League Specific - Stygian Vises - Leveling
 #	BaseType "Stygian Vise"
 #	Rarity = Rare
 #	ItemLevel < 78
-#	SetFontSize 36
-#	SetBackgroundColor 0 0 0 230 # Stygian Vise
-#	SetBorderColor 220 0 0 255 # Stygian Vise
 #Disabled Block End
 
 Show  # League Specific - Stygian Vises - Mapping (High)
 	BaseType "Stygian Vise"
 	Rarity = Rare
-	SetFontSize 36
-	SetBackgroundColor 0 0 0 230 # Stygian Vise
-	SetBorderColor 220 0 0 255 # Stygian Vise
 
 #-------#
 # Other #
