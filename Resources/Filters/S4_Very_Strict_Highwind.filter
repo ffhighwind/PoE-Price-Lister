@@ -1097,106 +1097,6 @@ Hide  # Gems - Other
 	DisableDropSound
 
 ##########################################
-################# UNIQUES ################
-##########################################
-# Section: Uniques
-
-# Ordered most expensive first to prevent future name conflicts!
-# Prices attained from poe.ninja.
-# Future values will fluctuate based on league challenges and the meta.
-
-#------#
-# 15c+ #
-#------#
-# White background
-# High value. Do not miss these.
-
-Show  # Uniques - 15c+
-	Rarity = Unique
-	BaseType "Ambush Mitts" "Blood Raiment" "Carnal Boots" "Charan's Sword" "Crusader Boots" "Crusader Helmet" "Deerskin Gloves" "Ezomyte Tower Shield" "Gemstone Sword" "Glorious Plate" "Golden Bracers" "Golden Caligae" "Golden Flame" "Golden Mantle" "Golden Obi" "Golden Wreath" "Heavy Quiver" "Hydrascale Gauntlets" "Jet Amulet" "Jewelled Foil" "Jingling Spirit Shield" "Occultist's Vestment" "Prophecy Wand" "Rawhide Boots" "Ruby Amulet" "Savant's Robe" "Siege Axe" "Silk Gloves" "Sinner Tricorne" "Sorcerer Boots" "Steel Ring" "Vaal Blade" "Wyrmscale Doublet" "Zodiac Leather" "Riveted Gloves" "Vaal Rapier" "Ornate Quiver" "Golden Visage"
-	SetFontSize 45
-	SetTextColor 255 128 64 # Unique (15c+)
-	SetBackgroundColor 255 255 255 255 # Unique (15c+)
-	SetBorderColor 255 128 64 255 # Unique (15c+)
-	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red UpsideDownHouse
-	PlayEffect Red
-
-#-------#
-# 5-15c #
-#-------#
-# White border
-# Usually worth selling. Not extremely rare or valuable.
-# May share a BaseType with an extremely valuable item, League specific, or boss drop only.
-
-Show  # Uniques - 5-15c
-	Rarity = Unique
-	BaseType "Arcanist Gloves" "Assassin's Boots" "Clasped Mitts" "Ezomyte Burgonet" "Gladiator Plate" "Gold Ring" "Granite Flask" "Legion Gloves" "Magistrate Crown" "Nightmare Mace" "Nubuck Boots" "Royal Axe" "Sacrificial Garb" "Sanctified Life Flask" "Sapphire Flask" "Stealth Boots" "Steelscale Gauntlets" "Studded Belt" "Timeworn Claw" "Two-Stone Ring" "Vaal Spirit Shield" "Steelwood Bow" "Ezomyte Dagger" "Saint's Hauberk"
-	SetFontSize 45
-	SetTextColor 255 128 64 # Unique
-	SetBackgroundColor 50 25 12 230 # Unique
-	SetBorderColor 255 255 255 255 # Unique (5-15c)
-	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Orange UpsideDownHouse
-	PlayEffect Orange
-
-#------#
-# 3-5c #
-#------#
-# Yellow border
-# Sellable but rarely worth much.
-# May share a BaseType with an extremely valuable item, League specific, or boss drop only.
-
-Show  # Uniques - 3-5c
-	Rarity = Unique
-	BaseType "Amber Amulet" "Ancient Spirit Shield" "Arcanist Slippers" "Archon Kite Shield" "Assassin Bow" "Aventail Helmet" "Bismuth Flask" "Blue Pearl Amulet" "Brass Spirit Shield" "Bronzescale Boots" "Cardinal Round Shield" "Carved Wand" "Champion Kite Shield" "Clasped Boots" "Conjurer Boots" "Conjurer Gloves" "Coral Amulet" "Corsair Sword" Cutlass "Fiend Dagger" "Full Wyrmscale" "Grand Mana Flask" "Hallowed Hybrid Flask" "Heavy Belt" "Highborn Staff" "Imperial Maul" "Imperial Skean" "Jade Amulet" "Karui Maul" "Lacquered Garb" "Large Hybrid Flask" "Lion Sword" "Midnight Blade" "Murder Mitts" "Onyx Amulet" "Pinnacle Tower Shield" "Rawhide Tower Shield" "Ruby Ring" "Sadist Garb" "Shackled Boots" "Simple Robe" "Stibnite Flask" "Sulphur Flask" "Topaz Flask" "Topaz Ring" "Turquoise Amulet" "Varnished Coat" "Void Axe" "Blood Sceptre" "Ezomyte Spiked Shield" "Steel Circlet" "Tyrant's Sekhem"
-	SetFontSize 40
-	SetTextColor 255 128 64 # Unique
-	SetBackgroundColor 50 25 12 230 # Unique
-	SetBorderColor 255 255 0 255 # Unique (3-5c)
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Orange UpsideDownHouse
-	PlayEffect Orange
-
-# Loreweave (60x rings)
-Show  # Uniques - <3c - Unique Rings
-	Rarity = Unique
-	Class Rings
-	SetFontSize 40
-	SetTextColor 255 128 64 # Unique
-	SetBackgroundColor 50 25 12 230 # Unique
-	SetBorderColor 255 255 0 255 # Unique (3-5c)
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Orange UpsideDownHouse
-	PlayEffect Orange
-
-#-----#
-# <3c #
-#-----#
-# Orange border
-# Usually < 3c or nearly worthless.
-
-# Limited drop. May share a BaseType with an extremely valuable item, League specific, or boss drop only.
-Show  # Uniques - Limited
-	Rarity = Unique
-	BaseType "Agate Amulet" "Amethyst Ring" "Ancient Greaves" "Assassin's Mitts" "Carnal Armour" "Carnal Mitts" "Citadel Bow" "Citrine Amulet" "Cloth Belt" "Coiled Staff" "Crusader Gloves" "Crystal Belt" "Eternal Sword" Gavel "Goathide Boots" "Gold Amulet" "Golden Plate" "Goliath Greaves" "Harlequin Mask" "Holy Chainmail" "Hubris Circlet" "Hydrascale Boots" "Infernal Sword" "Iron Ring" "Jasper Chopper" "Judgement Staff" "Karui Chopper" "Leather Belt" "Leather Cap" "Legion Sword" "Lion Pelt" Maelstr "Mind Cage" "Mirrored Spiked Shield" "Moonstone Ring" "Necromancer Circlet" "Opal Ring" "Painted Tower Shield" "Paua Amulet" "Penetrating Arrow Quiver" "Praetor Crown" "Prismatic Ring" "Prophet Crown" "Raven Mask" "Ritual Sceptre" "Royal Burgonet" "Ruby Flask" "Sage Wand" "Sapphire Ring" "Serpentscale Gauntlets" "Silken Hood" "Silver Flask" "Slink Boots" "Terror Claw" "Thorium Spirit Shield" "Titan Greaves" "Triumphant Lamellar" "Two-Point Arrow Quiver" "Unset Ring" "Vaal Axe" "Vaal Gauntlets" "Vaal Mask" "Variscite Blade" "Void Sceptre" "Widowsilk Robe" "Zealot Gloves" "Two-Toned Boots"
-	SetFontSize 40
-	SetTextColor 255 128 64 # Unique
-	SetBackgroundColor 50 25 12 230 # Unique
-	SetBorderColor 180 90 45 255 # Unique
-	MinimapIcon 0 Orange UpsideDownHouse
-	PlayEffect Orange
-	DisableDropSound
-
-Hide  # Uniques - New or Worthless
-	Rarity = Unique
-	SetFontSize 36
-	SetTextColor 255 128 64 # Unique
-	SetBackgroundColor 50 25 12 230 # Unique
-	SetBorderColor 180 90 45 255 # Unique
-	DisableDropSound
-
-##########################################
 ############ DIVINATION CARDS ############
 ##########################################
 # Section: Divination Cards
@@ -1284,164 +1184,6 @@ Show  # Divination Cards - New (Error)
 	PlayAlertSound 5 200 # Divination Card (2c+)
 	MinimapIcon 0 Pink Square
 	PlayEffect Pink
-
-##########################################
-################# FLASKS #################
-##########################################
-# Section: Flasks
-
-Show
-	Class Flasks
-	SetFontSize 32
-	SetBackgroundColor 30 60 60 230 # Flask
-	SetBorderColor 0 0 0 255 # Flask
-	Continue
-
-Show
-	Quality >= 5
-	Class Flasks
-	SetBorderColor 140 140 140 255 # Flask (Quality)
-	Continue
-
-Show
-	Class "Utility Flasks"
-	SetFontSize 36
-	SetBorderColor 75 75 255 255 # Flask (Utility)
-	Continue
-
-#---------#
-# Utility #
-#---------#
-
-Show  # Flasks - Utility - Leveling
-	Class "Utility Flasks"
-	ItemLevel < 68
-
-#Disabled Block Start
-#Show  # Flasks - Utility - Mapping (Low)
-#	Class "Utility Flasks"
-#	ItemLevel < 73
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Flasks - Utility - Mapping (Mid)
-#	Class "Utility Flasks"
-#	ItemLevel < 78
-#Disabled Block End
-
-Hide  # Flasks - Utility - Mapping (High)
-	Class "Utility Flasks"
-	DisableDropSound
-
-#---------#
-# Quality #
-#---------#
-# Glassblower's Bauble Recipe
-
-Hide  # Flasks - Quality - Leveling
-	Quality >= 5
-	Class Flasks
-	ItemLevel < 68
-	DisableDropSound
-
-Hide  # Flasks - Quality - Mapping (Low)
-	Quality >= 5
-	Class Flasks
-	ItemLevel < 73
-	DisableDropSound
-
-#Disabled Block Start
-#Show  # Flasks - Quality - Mapping (Mid)
-#	Quality >= 5
-#	Class Flasks
-#	ItemLevel < 78
-#Disabled Block End
-
-Hide  # Flasks - Quality - Mapping (High)
-	Quality >= 5
-	Class Flasks
-	DisableDropSound
-
-#----------------#
-# Low Drop Level #
-#----------------#
-
-Hide  # Flasks - Normal - Low Drop Level - 65+
-	Class Flasks
-	DropLevel < 60
-	ItemLevel > 65
-	SetFontSize 24
-	DisableDropSound
-
-Hide  # Flasks - Normal - Low Drop Level - 60+
-	Class Flasks
-	DropLevel < 50
-	ItemLevel > 60
-	SetFontSize 24
-	DisableDropSound
-
-Hide  # Flasks - Normal - Low Drop Level - 50+
-	Class Flasks
-	DropLevel < 40
-	ItemLevel > 50
-	SetFontSize 24
-	DisableDropSound
-
-Hide  # Flasks - Normal - Low Drop Level - 40+
-	Class Flasks
-	DropLevel < 30
-	ItemLevel > 40
-	SetFontSize 24
-	DisableDropSound
-
-Hide  # Flasks - Normal - Low Drop Level - 30+
-	Class Flasks
-	DropLevel < 20
-	ItemLevel > 30
-	SetFontSize 24
-	DisableDropSound
-
-Hide  # Flasks - Normal - Low Drop Level - 20+
-	Class Flasks
-	DropLevel < 10
-	ItemLevel > 20
-	SetFontSize 24
-	DisableDropSound
-
-#--------#
-# Normal #
-#--------#
-
-Hide  # Flasks - Normal - Leveling - Hybrid
-	Class "Hybrid Flasks"
-	ItemLevel < 68
-	DisableDropSound
-
-Hide  # Flasks - Normal - Leveling - Life
-	Class "Life Flasks"
-	ItemLevel < 68
-	DisableDropSound
-
-Hide  # Flasks - Normal - Leveling - Mana
-	Class "Mana Flasks"
-	ItemLevel < 68
-	DisableDropSound
-
-#Disabled Block Start
-#Show  # Flasks - Normal - Mapping (Low)
-#	Class Flasks
-#	ItemLevel < 73
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Flasks - Normal - Mapping (Mid)
-#	Class Flasks
-#	ItemLevel < 77
-#Disabled Block End
-
-Hide  # Flasks - Normal - Mapping (High)
-	Class Flasks
-	DisableDropSound
 
 ##########################################
 ################ 5+ LINKS ################
@@ -1579,72 +1321,6 @@ Hide  # 5+ Links - Other
 	PlayAlertSound 4 0
 	PlayEffect None
 	DisableDropSound
-
-##########################################
-############## ENCHANTMENTS ##############
-##########################################
-# Section: Enchantments
-
-Show  # Enchantments - 20c+ Unique
-	HasEnchantment "Enchantment Animate Weapon Chance To Create Additional Copy 2" "Enchantment Ball Lightning Additional Projectiles 1" "Enchantment Cyclone Attack Speed 2" "Enchantment Cyclone Damage 2" "Enchantment Freezing Pulse Projectile Speed 2" "Enchantment Herald Of Purity Additional Minion 1" "Enchantment Ice Nova Damage 2" "Enchantment Pyroclast Mine Additional Projectiles 2" "Enchantment Spellslinger Cooldown Recovery 2" "Enchantment Spellslinger Reservation 2" "Enchantment Volatile Dead Orbs 3" "Storm Brand Attached Target Lightning Penetration 2"
-	Rarity = Unique
-	SetFontSize 45
-	SetTextColor 255 128 64 # Unique (15c+)
-	SetBackgroundColor 255 255 255 255 # Unique (15c+)
-	SetBorderColor 255 128 64 255 # Unique (15c+)
-	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red UpsideDownHouse
-	PlayEffect Red
-
-Show  # Enchantments - 20c+ Other
-	HasEnchantment "Enchantment Animate Weapon Chance To Create Additional Copy 2" "Enchantment Ball Lightning Additional Projectiles 1" "Enchantment Cyclone Attack Speed 2" "Enchantment Cyclone Damage 2" "Enchantment Freezing Pulse Projectile Speed 2" "Enchantment Herald Of Purity Additional Minion 1" "Enchantment Ice Nova Damage 2" "Enchantment Pyroclast Mine Additional Projectiles 2" "Enchantment Spellslinger Cooldown Recovery 2" "Enchantment Spellslinger Reservation 2" "Enchantment Volatile Dead Orbs 3" "Storm Brand Attached Target Lightning Penetration 2"
-	SetFontSize 45
-	SetTextColor 0 100 220 # Crafting Base (High)
-	SetBackgroundColor 255 255 255 255 # Crafting Base (High)
-	SetBorderColor 40 80 150 255 # Crafting Base (High)
-	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red UpsideDownHouse
-	PlayEffect Red
-
-Show  # Enchantments - 10c+ Unique
-	HasEnchantment "Enchantment Arc Num Of Additional Projectiles In Chain 1" "Enchantment Ball Lightning Damage 2" "Enchantment Barrage Num Of Additional Projectiles 1" "Enchantment Berserk Rage Loss 2" "Enchantment Blade Vortex Duration 2" "Enchantment Caustic Arrow Damage 2" "Enchantment Dark Pact Area Of Effect 2" "Enchantment Dash Travel Distance 2" "Enchantment Double Slash Added Phys To Bleeding 2" "Enchantment Essence Drain Damage 2" "Enchantment Flesh and Stone Mana Reservation 2" "Enchantment Flicker Strike Damage 2" "Enchantment Flicker Strike Damage Per Frenzy Charge 2" "Enchantment Frenzy Damage Per Frenzy Charge 2" "Enchantment Frost Blades Damage 2" "Enchantment Glacial Cascade Damage 2" "Enchantment Herald Of Purity Mana Reservation 2" "Enchantment Kinetic Blast Explosions 2" "Enchantment Lacerate Damage 2" "Enchantment Lightning Warp Duration 2" "Enchantment Magma Orb Num Of Additional Projectiles In Chain 2" "Enchantment Malevolence Mana Reservation 2" "Enchantment Molten Shell Armour 2" "Enchantment Molten Strike Num Of Additional Projectiles 2" "Enchantment Power Siphon Additional Projectiles 2" "Enchantment Puncture Damage 2" "Enchantment Puncture Maim On Hit Percent Chance 2" "Enchantment Purity Of Lightning Mana Reservation 2" "Enchantment Scourge Arrow Additional Spore 1" "Enchantment Shrapnel Ballista Extra Pierces 2" "Enchantment Shrapnel Trap Secondary Explosions 2" "Enchantment Spectral Throw Projectile Deceleration 2" "Enchantment Spectre Attack And Cast Speed 2" "Enchantment Split Arrow Num Of Additional Projectiles 2" "Enchantment Storm Brand Damage 2" "Enchantment Storm Burst Additional Object Chance 2" "Enchantment Temporal Chains Curse Effect 2" "Enchantment Tornado Shot Num Of Secondary Projectiles 2" "Enchantment Toxic Rain Num Of Additional Projectiles 1" "Enchantment Volatile Dead Damage 2" "Enchantment Vulnerability Curse Effect 2" "Enchantment Wave Of Conviction Additional Enemy Resistance 2" "Enchantment Wild Strike Num Of Additional Projectiles In Chain 2" "Enchantment Zealotry Mana Reservation 2"
-	Rarity = Unique
-	SetFontSize 45
-	SetTextColor 255 128 64 # Unique (15c+)
-	SetBackgroundColor 255 255 255 255 # Unique (15c+)
-	SetBorderColor 255 128 64 255 # Unique (15c+)
-	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red UpsideDownHouse
-	PlayEffect Red
-
-Show  # Enchantments - 10c+ Other
-	HasEnchantment "Enchantment Arc Num Of Additional Projectiles In Chain 1" "Enchantment Ball Lightning Damage 2" "Enchantment Barrage Num Of Additional Projectiles 1" "Enchantment Berserk Rage Loss 2" "Enchantment Blade Vortex Duration 2" "Enchantment Caustic Arrow Damage 2" "Enchantment Dark Pact Area Of Effect 2" "Enchantment Dash Travel Distance 2" "Enchantment Double Slash Added Phys To Bleeding 2" "Enchantment Essence Drain Damage 2" "Enchantment Flesh and Stone Mana Reservation 2" "Enchantment Flicker Strike Damage 2" "Enchantment Flicker Strike Damage Per Frenzy Charge 2" "Enchantment Frenzy Damage Per Frenzy Charge 2" "Enchantment Frost Blades Damage 2" "Enchantment Glacial Cascade Damage 2" "Enchantment Herald Of Purity Mana Reservation 2" "Enchantment Kinetic Blast Explosions 2" "Enchantment Lacerate Damage 2" "Enchantment Lightning Warp Duration 2" "Enchantment Magma Orb Num Of Additional Projectiles In Chain 2" "Enchantment Malevolence Mana Reservation 2" "Enchantment Molten Shell Armour 2" "Enchantment Molten Strike Num Of Additional Projectiles 2" "Enchantment Power Siphon Additional Projectiles 2" "Enchantment Puncture Damage 2" "Enchantment Puncture Maim On Hit Percent Chance 2" "Enchantment Purity Of Lightning Mana Reservation 2" "Enchantment Scourge Arrow Additional Spore 1" "Enchantment Shrapnel Ballista Extra Pierces 2" "Enchantment Shrapnel Trap Secondary Explosions 2" "Enchantment Spectral Throw Projectile Deceleration 2" "Enchantment Spectre Attack And Cast Speed 2" "Enchantment Split Arrow Num Of Additional Projectiles 2" "Enchantment Storm Brand Damage 2" "Enchantment Storm Burst Additional Object Chance 2" "Enchantment Temporal Chains Curse Effect 2" "Enchantment Tornado Shot Num Of Secondary Projectiles 2" "Enchantment Toxic Rain Num Of Additional Projectiles 1" "Enchantment Volatile Dead Damage 2" "Enchantment Vulnerability Curse Effect 2" "Enchantment Wave Of Conviction Additional Enemy Resistance 2" "Enchantment Wild Strike Num Of Additional Projectiles In Chain 2" "Enchantment Zealotry Mana Reservation 2"
-	SetFontSize 40
-	SetTextColor 255 255 255 # Crafting Base (Mid)
-	SetBackgroundColor 50 50 50 255 # Crafting Base (Mid)
-	SetBorderColor 40 80 150 255 # Crafting Base (Mid)
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Blue UpsideDownHouse
-	PlayEffect Blue
-
-Show  # Enchantments - Jewelry
-	AnyEnchantment True
-	Class Rings Amulets
-	SetFontSize 40
-	SetTextColor 255 255 255 # Crafting Base (Mid)
-	SetBackgroundColor 50 50 50 255 # Crafting Base (Mid)
-	SetBorderColor 40 80 150 255 # Crafting Base (Mid)
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Blue UpsideDownHouse
-	PlayEffect Blue
-
-Show  # Enchantments - Helmets Boots
-	AnyEnchantment True
-	Class Helmets Boots
-	Rarity <= Rare
-	SetFontSize 36
-	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
-	SetBorderColor 0 0 0 255 # Crafting Base (Low)
 
 ##########################################
 ############# VENDOR RECIPES #############
@@ -1977,6 +1653,73 @@ Show
 #	SetBackgroundColor 50 50 50 230 # Chance Base
 #	SetBorderColor 0 0 0 255 # Chance Base
 #Disabled Block End
+
+##########################################
+############## ENCHANTMENTS ##############
+##########################################
+# Section: Enchantments
+
+Show  # Enchantments - 20c+ Unique
+	HasEnchantment "Enchantment Animate Weapon Chance To Create Additional Copy 2" "Enchantment Ball Lightning Additional Projectiles 1" "Enchantment Cyclone Attack Speed 2" "Enchantment Cyclone Damage 2" "Enchantment Freezing Pulse Projectile Speed 2" "Enchantment Herald Of Purity Additional Minion 1" "Enchantment Ice Nova Damage 2" "Enchantment Pyroclast Mine Additional Projectiles 2" "Enchantment Spellslinger Cooldown Recovery 2" "Enchantment Spellslinger Reservation 2" "Enchantment Volatile Dead Orbs 3" "Storm Brand Attached Target Lightning Penetration 2"
+	Rarity = Unique
+	SetFontSize 45
+	SetTextColor 255 128 64 # Unique (15c+)
+	SetBackgroundColor 255 255 255 255 # Unique (15c+)
+	SetBorderColor 255 128 64 255 # Unique (15c+)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red UpsideDownHouse
+	PlayEffect Red
+
+Show  # Enchantments - 20c+ Other
+	HasEnchantment "Enchantment Animate Weapon Chance To Create Additional Copy 2" "Enchantment Ball Lightning Additional Projectiles 1" "Enchantment Cyclone Attack Speed 2" "Enchantment Cyclone Damage 2" "Enchantment Freezing Pulse Projectile Speed 2" "Enchantment Herald Of Purity Additional Minion 1" "Enchantment Ice Nova Damage 2" "Enchantment Pyroclast Mine Additional Projectiles 2" "Enchantment Spellslinger Cooldown Recovery 2" "Enchantment Spellslinger Reservation 2" "Enchantment Volatile Dead Orbs 3" "Storm Brand Attached Target Lightning Penetration 2"
+	SetFontSize 45
+	SetTextColor 0 100 220 # Crafting Base (High)
+	SetBackgroundColor 255 255 255 255 # Crafting Base (High)
+	SetBorderColor 40 80 150 255 # Crafting Base (High)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red UpsideDownHouse
+	PlayEffect Red
+
+Show  # Enchantments - 10c+ Unique
+	HasEnchantment "Enchantment Arc Num Of Additional Projectiles In Chain 1" "Enchantment Ball Lightning Damage 2" "Enchantment Barrage Num Of Additional Projectiles 1" "Enchantment Berserk Rage Loss 2" "Enchantment Blade Vortex Duration 2" "Enchantment Caustic Arrow Damage 2" "Enchantment Dark Pact Area Of Effect 2" "Enchantment Dash Travel Distance 2" "Enchantment Double Slash Added Phys To Bleeding 2" "Enchantment Essence Drain Damage 2" "Enchantment Flesh and Stone Mana Reservation 2" "Enchantment Flicker Strike Damage 2" "Enchantment Flicker Strike Damage Per Frenzy Charge 2" "Enchantment Frenzy Damage Per Frenzy Charge 2" "Enchantment Frost Blades Damage 2" "Enchantment Glacial Cascade Damage 2" "Enchantment Herald Of Purity Mana Reservation 2" "Enchantment Kinetic Blast Explosions 2" "Enchantment Lacerate Damage 2" "Enchantment Lightning Warp Duration 2" "Enchantment Magma Orb Num Of Additional Projectiles In Chain 2" "Enchantment Malevolence Mana Reservation 2" "Enchantment Molten Shell Armour 2" "Enchantment Molten Strike Num Of Additional Projectiles 2" "Enchantment Power Siphon Additional Projectiles 2" "Enchantment Puncture Damage 2" "Enchantment Puncture Maim On Hit Percent Chance 2" "Enchantment Purity Of Lightning Mana Reservation 2" "Enchantment Scourge Arrow Additional Spore 1" "Enchantment Shrapnel Ballista Extra Pierces 2" "Enchantment Shrapnel Trap Secondary Explosions 2" "Enchantment Spectral Throw Projectile Deceleration 2" "Enchantment Spectre Attack And Cast Speed 2" "Enchantment Split Arrow Num Of Additional Projectiles 2" "Enchantment Storm Brand Damage 2" "Enchantment Storm Burst Additional Object Chance 2" "Enchantment Temporal Chains Curse Effect 2" "Enchantment Tornado Shot Num Of Secondary Projectiles 2" "Enchantment Toxic Rain Num Of Additional Projectiles 1" "Enchantment Volatile Dead Damage 2" "Enchantment Vulnerability Curse Effect 2" "Enchantment Wave Of Conviction Additional Enemy Resistance 2" "Enchantment Wild Strike Num Of Additional Projectiles In Chain 2" "Enchantment Zealotry Mana Reservation 2"
+	Rarity = Unique
+	SetFontSize 45
+	SetTextColor 255 128 64 # Unique (15c+)
+	SetBackgroundColor 255 255 255 255 # Unique (15c+)
+	SetBorderColor 255 128 64 255 # Unique (15c+)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red UpsideDownHouse
+	PlayEffect Red
+
+Show  # Enchantments - 10c+ Other
+	HasEnchantment "Enchantment Arc Num Of Additional Projectiles In Chain 1" "Enchantment Ball Lightning Damage 2" "Enchantment Barrage Num Of Additional Projectiles 1" "Enchantment Berserk Rage Loss 2" "Enchantment Blade Vortex Duration 2" "Enchantment Caustic Arrow Damage 2" "Enchantment Dark Pact Area Of Effect 2" "Enchantment Dash Travel Distance 2" "Enchantment Double Slash Added Phys To Bleeding 2" "Enchantment Essence Drain Damage 2" "Enchantment Flesh and Stone Mana Reservation 2" "Enchantment Flicker Strike Damage 2" "Enchantment Flicker Strike Damage Per Frenzy Charge 2" "Enchantment Frenzy Damage Per Frenzy Charge 2" "Enchantment Frost Blades Damage 2" "Enchantment Glacial Cascade Damage 2" "Enchantment Herald Of Purity Mana Reservation 2" "Enchantment Kinetic Blast Explosions 2" "Enchantment Lacerate Damage 2" "Enchantment Lightning Warp Duration 2" "Enchantment Magma Orb Num Of Additional Projectiles In Chain 2" "Enchantment Malevolence Mana Reservation 2" "Enchantment Molten Shell Armour 2" "Enchantment Molten Strike Num Of Additional Projectiles 2" "Enchantment Power Siphon Additional Projectiles 2" "Enchantment Puncture Damage 2" "Enchantment Puncture Maim On Hit Percent Chance 2" "Enchantment Purity Of Lightning Mana Reservation 2" "Enchantment Scourge Arrow Additional Spore 1" "Enchantment Shrapnel Ballista Extra Pierces 2" "Enchantment Shrapnel Trap Secondary Explosions 2" "Enchantment Spectral Throw Projectile Deceleration 2" "Enchantment Spectre Attack And Cast Speed 2" "Enchantment Split Arrow Num Of Additional Projectiles 2" "Enchantment Storm Brand Damage 2" "Enchantment Storm Burst Additional Object Chance 2" "Enchantment Temporal Chains Curse Effect 2" "Enchantment Tornado Shot Num Of Secondary Projectiles 2" "Enchantment Toxic Rain Num Of Additional Projectiles 1" "Enchantment Volatile Dead Damage 2" "Enchantment Vulnerability Curse Effect 2" "Enchantment Wave Of Conviction Additional Enemy Resistance 2" "Enchantment Wild Strike Num Of Additional Projectiles In Chain 2" "Enchantment Zealotry Mana Reservation 2"
+	SetFontSize 40
+	SetTextColor 255 255 255 # Crafting Base (Mid)
+	SetBackgroundColor 50 50 50 255 # Crafting Base (Mid)
+	SetBorderColor 40 80 150 255 # Crafting Base (Mid)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Blue UpsideDownHouse
+	PlayEffect Blue
+
+Show  # Enchantments - Jewelry
+	AnyEnchantment True
+	Class Rings Amulets
+	SetFontSize 40
+	SetTextColor 255 255 255 # Crafting Base (Mid)
+	SetBackgroundColor 50 50 50 255 # Crafting Base (Mid)
+	SetBorderColor 40 80 150 255 # Crafting Base (Mid)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Blue UpsideDownHouse
+	PlayEffect Blue
+
+Show  # Enchantments - Helmets Boots
+	AnyEnchantment True
+	Class Helmets Boots
+	Rarity <= Rare
+	Sockets < 6
+	SetFontSize 36
+	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
+	SetBorderColor 0 0 0 255 # Crafting Base (Low)
 
 ##########################################
 ############ INFLUENCED BASES ############
@@ -2427,7 +2170,7 @@ Show  # Jewels - Prismatic
 
 Show  # Jewels - Cluster - Unique
 	Class Jewel
-	BaseType "Cluster Jewel"
+	BaseType "Large Cluster Jewel" "Medium Cluster Jewel" "Small Cluster Jewel"
 	Rarity = Unique
 	SetFontSize 45
 	SetTextColor 255 128 64 # Unique (15c+)
@@ -2590,6 +2333,265 @@ Hide  # Jewels - Rare - Leveling
 Hide  # Jewels - Rare - Mapping (High)
 	Class Jewel
 	Rarity = Rare
+	DisableDropSound
+
+##########################################
+################# UNIQUES ################
+##########################################
+# Section: Uniques
+
+# Ordered most expensive first to prevent future name conflicts!
+# Prices attained from poe.ninja.
+# Future values will fluctuate based on league challenges and the meta.
+
+#------#
+# 15c+ #
+#------#
+# White background
+# High value. Do not miss these.
+
+Show  # Uniques - 15c+
+	Rarity = Unique
+	BaseType "Ambush Mitts" "Blood Raiment" "Carnal Boots" "Charan's Sword" "Crusader Boots" "Crusader Helmet" "Deerskin Gloves" "Ezomyte Tower Shield" "Gemstone Sword" "Glorious Plate" "Golden Bracers" "Golden Caligae" "Golden Flame" "Golden Mantle" "Golden Obi" "Golden Wreath" "Heavy Quiver" "Hydrascale Gauntlets" "Jet Amulet" "Jewelled Foil" "Jingling Spirit Shield" "Occultist's Vestment" "Prophecy Wand" "Rawhide Boots" "Ruby Amulet" "Savant's Robe" "Siege Axe" "Silk Gloves" "Sinner Tricorne" "Sorcerer Boots" "Steel Ring" "Vaal Blade" "Wyrmscale Doublet" "Zodiac Leather" "Riveted Gloves" "Vaal Rapier" "Ornate Quiver" "Golden Visage"
+	SetFontSize 45
+	SetTextColor 255 128 64 # Unique (15c+)
+	SetBackgroundColor 255 255 255 255 # Unique (15c+)
+	SetBorderColor 255 128 64 255 # Unique (15c+)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red UpsideDownHouse
+	PlayEffect Red
+
+#-------#
+# 5-15c #
+#-------#
+# White border
+# Usually worth selling. Not extremely rare or valuable.
+# May share a BaseType with an extremely valuable item, League specific, or boss drop only.
+
+Show  # Uniques - 5-15c
+	Rarity = Unique
+	BaseType "Arcanist Gloves" "Assassin's Boots" "Clasped Mitts" "Ezomyte Burgonet" "Gladiator Plate" "Gold Ring" "Granite Flask" "Legion Gloves" "Magistrate Crown" "Nightmare Mace" "Nubuck Boots" "Royal Axe" "Sacrificial Garb" "Sanctified Life Flask" "Sapphire Flask" "Stealth Boots" "Steelscale Gauntlets" "Studded Belt" "Timeworn Claw" "Two-Stone Ring" "Vaal Spirit Shield" "Steelwood Bow" "Ezomyte Dagger" "Saint's Hauberk"
+	SetFontSize 45
+	SetTextColor 255 128 64 # Unique
+	SetBackgroundColor 50 25 12 230 # Unique
+	SetBorderColor 255 255 255 255 # Unique (5-15c)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Orange
+
+#------#
+# 3-5c #
+#------#
+# Yellow border
+# Sellable but rarely worth much.
+# May share a BaseType with an extremely valuable item, League specific, or boss drop only.
+
+Show  # Uniques - 3-5c
+	Rarity = Unique
+	BaseType "Amber Amulet" "Ancient Spirit Shield" "Arcanist Slippers" "Archon Kite Shield" "Assassin Bow" "Aventail Helmet" "Bismuth Flask" "Blue Pearl Amulet" "Brass Spirit Shield" "Bronzescale Boots" "Cardinal Round Shield" "Carved Wand" "Champion Kite Shield" "Clasped Boots" "Conjurer Boots" "Conjurer Gloves" "Coral Amulet" "Corsair Sword" Cutlass "Fiend Dagger" "Full Wyrmscale" "Grand Mana Flask" "Hallowed Hybrid Flask" "Heavy Belt" "Highborn Staff" "Imperial Maul" "Imperial Skean" "Jade Amulet" "Karui Maul" "Lacquered Garb" "Large Hybrid Flask" "Lion Sword" "Midnight Blade" "Murder Mitts" "Onyx Amulet" "Pinnacle Tower Shield" "Rawhide Tower Shield" "Ruby Ring" "Sadist Garb" "Shackled Boots" "Simple Robe" "Stibnite Flask" "Sulphur Flask" "Topaz Flask" "Topaz Ring" "Turquoise Amulet" "Varnished Coat" "Void Axe" "Blood Sceptre" "Ezomyte Spiked Shield" "Steel Circlet" "Tyrant's Sekhem"
+	SetFontSize 40
+	SetTextColor 255 128 64 # Unique
+	SetBackgroundColor 50 25 12 230 # Unique
+	SetBorderColor 255 255 0 255 # Unique (3-5c)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Orange
+
+# Loreweave (60x rings)
+Show  # Uniques - <3c - Unique Rings
+	Rarity = Unique
+	Class Rings
+	SetFontSize 40
+	SetTextColor 255 128 64 # Unique
+	SetBackgroundColor 50 25 12 230 # Unique
+	SetBorderColor 255 255 0 255 # Unique (3-5c)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Orange
+
+#-----#
+# <3c #
+#-----#
+# Orange border
+# Usually < 3c or nearly worthless.
+
+# Limited drop. May share a BaseType with an extremely valuable item, League specific, or boss drop only.
+Show  # Uniques - Limited
+	Rarity = Unique
+	BaseType "Agate Amulet" "Amethyst Ring" "Ancient Greaves" "Assassin's Mitts" "Carnal Armour" "Carnal Mitts" "Citadel Bow" "Citrine Amulet" "Cloth Belt" "Coiled Staff" "Crusader Gloves" "Crystal Belt" "Eternal Sword" Gavel "Goathide Boots" "Gold Amulet" "Golden Plate" "Goliath Greaves" "Harlequin Mask" "Holy Chainmail" "Hubris Circlet" "Hydrascale Boots" "Infernal Sword" "Iron Ring" "Jasper Chopper" "Judgement Staff" "Karui Chopper" "Leather Belt" "Leather Cap" "Legion Sword" "Lion Pelt" Maelstr "Mind Cage" "Mirrored Spiked Shield" "Moonstone Ring" "Necromancer Circlet" "Opal Ring" "Painted Tower Shield" "Paua Amulet" "Penetrating Arrow Quiver" "Praetor Crown" "Prismatic Ring" "Prophet Crown" "Raven Mask" "Ritual Sceptre" "Royal Burgonet" "Ruby Flask" "Sage Wand" "Sapphire Ring" "Serpentscale Gauntlets" "Silken Hood" "Silver Flask" "Slink Boots" "Terror Claw" "Thorium Spirit Shield" "Titan Greaves" "Triumphant Lamellar" "Two-Point Arrow Quiver" "Unset Ring" "Vaal Axe" "Vaal Gauntlets" "Vaal Mask" "Variscite Blade" "Void Sceptre" "Widowsilk Robe" "Zealot Gloves" "Two-Toned Boots"
+	SetFontSize 40
+	SetTextColor 255 128 64 # Unique
+	SetBackgroundColor 50 25 12 230 # Unique
+	SetBorderColor 180 90 45 255 # Unique
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Orange
+	DisableDropSound
+
+Hide  # Uniques - New or Worthless
+	Rarity = Unique
+	SetFontSize 36
+	SetTextColor 255 128 64 # Unique
+	SetBackgroundColor 50 25 12 230 # Unique
+	SetBorderColor 180 90 45 255 # Unique
+	DisableDropSound
+
+
+##########################################
+################# FLASKS #################
+##########################################
+# Section: Flasks
+
+Show
+	Class Flasks
+	SetFontSize 32
+	SetBackgroundColor 30 60 60 230 # Flask
+	SetBorderColor 0 0 0 255 # Flask
+	Continue
+
+Show
+	Quality >= 5
+	Class Flasks
+	SetBorderColor 140 140 140 255 # Flask (Quality)
+	Continue
+
+Show
+	Class "Utility Flasks"
+	SetFontSize 36
+	SetBorderColor 75 75 255 255 # Flask (Utility)
+	Continue
+
+#---------#
+# Utility #
+#---------#
+
+Show  # Flasks - Utility - Leveling
+	Class "Utility Flasks"
+	ItemLevel < 68
+
+#Disabled Block Start
+#Show  # Flasks - Utility - Mapping (Low)
+#	Class "Utility Flasks"
+#	ItemLevel < 73
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Flasks - Utility - Mapping (Mid)
+#	Class "Utility Flasks"
+#	ItemLevel < 78
+#Disabled Block End
+
+Hide  # Flasks - Utility - Mapping (High)
+	Class "Utility Flasks"
+	DisableDropSound
+
+#---------#
+# Quality #
+#---------#
+# Glassblower's Bauble Recipe
+
+Hide  # Flasks - Quality - Leveling
+	Quality >= 5
+	Class Flasks
+	ItemLevel < 68
+	DisableDropSound
+
+Hide  # Flasks - Quality - Mapping (Low)
+	Quality >= 5
+	Class Flasks
+	ItemLevel < 73
+	DisableDropSound
+
+#Disabled Block Start
+#Show  # Flasks - Quality - Mapping (Mid)
+#	Quality >= 5
+#	Class Flasks
+#	ItemLevel < 78
+#Disabled Block End
+
+Hide  # Flasks - Quality - Mapping (High)
+	Quality >= 5
+	Class Flasks
+	DisableDropSound
+
+#----------------#
+# Low Drop Level #
+#----------------#
+
+Hide  # Flasks - Normal - Low Drop Level - 65+
+	Class Flasks
+	DropLevel < 60
+	ItemLevel > 65
+	SetFontSize 24
+	DisableDropSound
+
+Hide  # Flasks - Normal - Low Drop Level - 60+
+	Class Flasks
+	DropLevel < 50
+	ItemLevel > 60
+	SetFontSize 24
+	DisableDropSound
+
+Hide  # Flasks - Normal - Low Drop Level - 50+
+	Class Flasks
+	DropLevel < 40
+	ItemLevel > 50
+	SetFontSize 24
+	DisableDropSound
+
+Hide  # Flasks - Normal - Low Drop Level - 40+
+	Class Flasks
+	DropLevel < 30
+	ItemLevel > 40
+	SetFontSize 24
+	DisableDropSound
+
+Hide  # Flasks - Normal - Low Drop Level - 30+
+	Class Flasks
+	DropLevel < 20
+	ItemLevel > 30
+	SetFontSize 24
+	DisableDropSound
+
+Hide  # Flasks - Normal - Low Drop Level - 20+
+	Class Flasks
+	DropLevel < 10
+	ItemLevel > 20
+	SetFontSize 24
+	DisableDropSound
+
+#--------#
+# Normal #
+#--------#
+
+Hide  # Flasks - Normal - Leveling - Hybrid
+	Class "Hybrid Flasks"
+	ItemLevel < 68
+	DisableDropSound
+
+Hide  # Flasks - Normal - Leveling - Life
+	Class "Life Flasks"
+	ItemLevel < 68
+	DisableDropSound
+
+Hide  # Flasks - Normal - Leveling - Mana
+	Class "Mana Flasks"
+	ItemLevel < 68
+	DisableDropSound
+
+#Disabled Block Start
+#Show  # Flasks - Normal - Mapping (Low)
+#	Class Flasks
+#	ItemLevel < 73
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Flasks - Normal - Mapping (Mid)
+#	Class Flasks
+#	ItemLevel < 77
+#Disabled Block End
+
+Hide  # Flasks - Normal - Mapping (High)
+	Class Flasks
 	DisableDropSound
 
 ##########################################

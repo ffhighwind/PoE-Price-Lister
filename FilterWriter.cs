@@ -568,6 +568,7 @@ Show  # Enchantments - Helmets Boots
 	AnyEnchantment True
 	Class Helmets Boots
 	Rarity <= Rare
+	Sockets < 6
 	SetFontSize 36
 	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)");
