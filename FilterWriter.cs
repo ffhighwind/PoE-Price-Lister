@@ -32,6 +32,45 @@ namespace PoE_Price_Lister
 # Prices attained from poe.ninja.
 # Future values will fluctuate based on league challenges and the meta.";
 
+		private const string uniqueJewels = 
+@"#--------#
+# Jewels #
+#--------#
+
+Show  # Jewels - Prismatic
+	Class Jewel
+	BaseType ""Prismatic Jewel""
+	SetFontSize 45
+	SetTextColor 255 128 64 # Unique (15c+)
+	SetBackgroundColor 255 255 255 255 # Unique (15c+)
+	SetBorderColor 0 255 255 255 # Unique (Jewel)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Cross
+	PlayEffect Red
+
+Show  # Jewels - Cluster - Unique
+	Class Jewel
+	BaseType ""Cluster Jewel""
+	Rarity = Unique
+	SetFontSize 45
+	SetTextColor 255 128 64 # Unique (15c+)
+	SetBackgroundColor 255 255 255 255 # Unique (15c+)
+	SetBorderColor 0 255 255 255 # Unique (Jewel)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Cross
+	PlayEffect Red
+
+Show  # Jewels - Unique - Other
+	Class Jewel
+	Rarity = Unique
+	SetFontSize 40
+	SetTextColor 255 128 64 # Unique
+	SetBackgroundColor 50 25 12 230 # Unique
+	SetBorderColor 0 255 255 255 # Unique (Jewel)
+	PlayAlertSound 6 200 # Jewel
+	MinimapIcon 0 Orange Cross
+	PlayEffect Orange";
+
 		private const string header15c =
 @"#------#
 # 15c+ #
@@ -333,14 +372,16 @@ Show  # Uniques - <3c - Unique Rings
 			}
 
 			sb.AppendLine(uniqueWarning).AppendLine();
+			sb.AppendLine(uniqueJewels).AppendLine();
 			if (list15c.Count > 0) {
 				sb.AppendLine(header15c).AppendLine();
 				sb.AppendLine("Show  # Uniques - 15c+").AppendLine("\tRarity = Unique").Append("\tBaseType ").AppendLine(ItemList(list15c)).AppendLine(style15c).AppendLine();
 			}
+			sb.AppendLine(header5to15c).AppendLine();
 			if (list5to15c.Count > 0) {
-				sb.AppendLine(header5to15c).AppendLine();
 				sb.AppendLine("Show  # Uniques - 5-15c").AppendLine("\tRarity = Unique").Append("\tBaseType ").AppendLine(ItemList(list5to15c)).AppendLine(style5to15c).AppendLine();
 			}
+			sb.AppendLine("Show  # Uniques - Enchanted").AppendLine("\tRarity = Unique").AppendLine("\tAnyEnchantment True").AppendLine(style5to15c).AppendLine();
 			sb.AppendLine(header3c).AppendLine();
 			if (list3to5c.Count > 0) {
 				sb.AppendLine("Show  # Uniques - 3-5c").AppendLine("\tRarity = Unique").Append("\tBaseType ").AppendLine(ItemList(list3to5c)).AppendLine(style3c).AppendLine();
@@ -556,6 +597,7 @@ Show  # Uniques - <3c - Unique Rings
 @"Show  # Enchantments - Jewelry
 	AnyEnchantment True
 	Class Rings Amulets
+	Rarity <= Rare
 	SetFontSize 40
 	SetTextColor 255 255 255 # Crafting Base (Mid)
 	SetBackgroundColor 50 50 50 255 # Crafting Base (Mid)

@@ -1681,6 +1681,7 @@ Show  # Enchantments - 10c+ Other
 Show  # Enchantments - Jewelry
 	AnyEnchantment True
 	Class Rings Amulets
+	Rarity <= Rare
 	SetFontSize 45
 	SetTextColor 255 255 255 # Crafting Base (Mid)
 	SetBackgroundColor 50 50 50 255 # Crafting Base (Mid)
@@ -1697,6 +1698,168 @@ Show  # Enchantments - Helmets Boots
 	SetFontSize 40
 	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
+
+##########################################
+################# UNIQUES ################
+##########################################
+# Section: Uniques
+
+# Ordered most expensive first to prevent future name conflicts!
+# Prices attained from poe.ninja.
+# Future values will fluctuate based on league challenges and the meta.
+
+#--------#
+# Jewels #
+#--------#
+
+Show  # Jewels - Prismatic
+	Class Jewel
+	BaseType "Prismatic Jewel"
+	SetFontSize 45
+	SetTextColor 255 128 64 # Unique (15c+)
+	SetBackgroundColor 255 255 255 255 # Unique (15c+)
+	SetBorderColor 0 255 255 255 # Unique (Jewel)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Cross
+	PlayEffect Red
+
+Show  # Jewels - Cluster - Unique
+	Class Jewel
+	BaseType "Cluster Jewel"
+	Rarity = Unique
+	SetFontSize 45
+	SetTextColor 255 128 64 # Unique (15c+)
+	SetBackgroundColor 255 255 255 255 # Unique (15c+)
+	SetBorderColor 0 255 255 255 # Unique (Jewel)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Cross
+	PlayEffect Red
+
+Show  # Jewels - Unique - Other
+	Class Jewel
+	Rarity = Unique
+	SetFontSize 45
+	SetTextColor 255 128 64 # Unique
+	SetBackgroundColor 50 25 12 230 # Unique
+	SetBorderColor 0 255 255 255 # Unique (Jewel)
+	PlayAlertSound 6 200 # Jewel
+	MinimapIcon 0 Orange Cross
+	PlayEffect Orange
+
+#------#
+# 15c+ #
+#------#
+# White background
+# High value. Do not miss these.
+
+Show  # Uniques - 15c+
+	Rarity = Unique
+	BaseType "Ambush Mitts" "Blood Raiment" "Carnal Boots" "Charan's Sword" "Crusader Boots" "Crusader Helmet" "Deerskin Gloves" "Ezomyte Tower Shield" "Gemstone Sword" "Glorious Plate" "Golden Bracers" "Golden Caligae" "Golden Flame" "Golden Mantle" "Golden Obi" "Golden Wreath" "Heavy Quiver" "Hydrascale Gauntlets" "Jet Amulet" "Jewelled Foil" "Jingling Spirit Shield" "Occultist's Vestment" "Prophecy Wand" "Rawhide Boots" "Ruby Amulet" "Savant's Robe" "Siege Axe" "Silk Gloves" "Sinner Tricorne" "Sorcerer Boots" "Steel Ring" "Vaal Blade" "Wyrmscale Doublet" "Zodiac Leather" "Riveted Gloves" "Vaal Rapier" "Ornate Quiver" "Golden Visage"
+	SetFontSize 45
+	SetTextColor 255 128 64 # Unique (15c+)
+	SetBackgroundColor 255 255 255 255 # Unique (15c+)
+	SetBorderColor 255 128 64 255 # Unique (15c+)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red UpsideDownHouse
+	PlayEffect Red
+
+#-------#
+# 5-15c #
+#-------#
+# White border
+# Usually worth selling. Not extremely rare or valuable.
+# May share a BaseType with an extremely valuable item, League specific, or boss drop only.
+
+Show  # Uniques - 5-15c
+	Rarity = Unique
+	BaseType "Arcanist Gloves" "Assassin's Boots" "Clasped Mitts" "Ezomyte Burgonet" "Gladiator Plate" "Gold Ring" "Granite Flask" "Legion Gloves" "Magistrate Crown" "Nightmare Mace" "Nubuck Boots" "Royal Axe" "Sacrificial Garb" "Sanctified Life Flask" "Sapphire Flask" "Stealth Boots" "Steelscale Gauntlets" "Studded Belt" "Timeworn Claw" "Two-Stone Ring" "Vaal Spirit Shield" "Steelwood Bow" "Ezomyte Dagger" "Saint's Hauberk"
+	SetFontSize 45
+	SetTextColor 255 128 64 # Unique
+	SetBackgroundColor 50 25 12 230 # Unique
+	SetBorderColor 255 255 255 255 # Unique (5-15c)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Orange
+
+Show  # Uniques - Enchanted
+	Rarity = Unique
+	AnyEnchantment True
+	SetFontSize 45
+	SetTextColor 255 128 64 # Unique
+	SetBackgroundColor 50 25 12 230 # Unique
+	SetBorderColor 255 255 255 255 # Unique (5-15c)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Orange
+
+#------#
+# 3-5c #
+#------#
+# Yellow border
+# Sellable but rarely worth much.
+# May share a BaseType with an extremely valuable item, League specific, or boss drop only.
+
+Show  # Uniques - 3-5c
+	Rarity = Unique
+	BaseType "Amber Amulet" "Ancient Spirit Shield" "Arcanist Slippers" "Archon Kite Shield" "Assassin Bow" "Aventail Helmet" "Bismuth Flask" "Blue Pearl Amulet" "Brass Spirit Shield" "Bronzescale Boots" "Cardinal Round Shield" "Carved Wand" "Champion Kite Shield" "Clasped Boots" "Conjurer Boots" "Conjurer Gloves" "Coral Amulet" "Corsair Sword" Cutlass "Fiend Dagger" "Full Wyrmscale" "Grand Mana Flask" "Hallowed Hybrid Flask" "Heavy Belt" "Highborn Staff" "Imperial Maul" "Imperial Skean" "Jade Amulet" "Karui Maul" "Lacquered Garb" "Large Hybrid Flask" "Lion Sword" "Midnight Blade" "Murder Mitts" "Onyx Amulet" "Pinnacle Tower Shield" "Rawhide Tower Shield" "Ruby Ring" "Sadist Garb" "Shackled Boots" "Simple Robe" "Stibnite Flask" "Sulphur Flask" "Topaz Flask" "Topaz Ring" "Turquoise Amulet" "Varnished Coat" "Void Axe" "Blood Sceptre" "Ezomyte Spiked Shield" "Steel Circlet" "Tyrant's Sekhem"
+	SetFontSize 45
+	SetTextColor 255 128 64 # Unique
+	SetBackgroundColor 50 25 12 230 # Unique
+	SetBorderColor 255 255 0 255 # Unique (3-5c)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Orange
+
+# Loreweave (60x rings)
+Show  # Uniques - <3c - Unique Rings
+	Rarity = Unique
+	Class Rings
+	SetFontSize 45
+	SetTextColor 255 128 64 # Unique
+	SetBackgroundColor 50 25 12 230 # Unique
+	SetBorderColor 255 255 0 255 # Unique (3-5c)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Orange
+
+#-----#
+# <3c #
+#-----#
+# Orange border
+# Usually < 3c or nearly worthless.
+
+Show  # Uniques - <3c - ilvl <67
+	Rarity = Unique
+	ItemLevel < 67
+	SetFontSize 45
+	SetTextColor 255 128 64 # Unique
+	SetBackgroundColor 50 25 12 230 # Unique
+	SetBorderColor 180 90 45 255 # Unique
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Orange
+
+# Limited drop. May share a BaseType with an extremely valuable item, League specific, or boss drop only.
+Show  # Uniques - Limited
+	Rarity = Unique
+	BaseType "Agate Amulet" "Amethyst Ring" "Ancient Greaves" "Assassin's Mitts" "Carnal Armour" "Carnal Mitts" "Citadel Bow" "Citrine Amulet" "Cloth Belt" "Coiled Staff" "Crusader Gloves" "Crystal Belt" "Eternal Sword" Gavel "Goathide Boots" "Gold Amulet" "Golden Plate" "Goliath Greaves" "Harlequin Mask" "Holy Chainmail" "Hubris Circlet" "Hydrascale Boots" "Infernal Sword" "Iron Ring" "Jasper Chopper" "Judgement Staff" "Karui Chopper" "Leather Belt" "Leather Cap" "Legion Sword" "Lion Pelt" Maelstr "Mind Cage" "Mirrored Spiked Shield" "Moonstone Ring" "Necromancer Circlet" "Opal Ring" "Painted Tower Shield" "Paua Amulet" "Penetrating Arrow Quiver" "Praetor Crown" "Prismatic Ring" "Prophet Crown" "Raven Mask" "Ritual Sceptre" "Royal Burgonet" "Ruby Flask" "Sage Wand" "Sapphire Ring" "Serpentscale Gauntlets" "Silken Hood" "Silver Flask" "Slink Boots" "Terror Claw" "Thorium Spirit Shield" "Titan Greaves" "Triumphant Lamellar" "Two-Point Arrow Quiver" "Unset Ring" "Vaal Axe" "Vaal Gauntlets" "Vaal Mask" "Variscite Blade" "Void Sceptre" "Widowsilk Robe" "Zealot Gloves" "Two-Toned Boots"
+	SetFontSize 45
+	SetTextColor 255 128 64 # Unique
+	SetBackgroundColor 50 25 12 230 # Unique
+	SetBorderColor 180 90 45 255 # Unique
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Orange
+
+Show  # Uniques - New or Worthless
+	Rarity = Unique
+	SetFontSize 40
+	SetTextColor 255 128 64 # Unique
+	SetBackgroundColor 50 25 12 230 # Unique
+	SetBorderColor 180 90 45 255 # Unique
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Orange
 
 ##########################################
 ############ INFLUENCED BASES ############
@@ -2129,44 +2292,6 @@ Show
 	SetFontSize 40
 	Continue
 
-#--------#
-# Unique #
-#--------#
-
-Show  # Jewels - Prismatic
-	Class Jewel
-	BaseType "Prismatic Jewel"
-	SetFontSize 45
-	SetTextColor 255 128 64 # Unique (15c+)
-	SetBackgroundColor 255 255 255 255 # Unique (15c+)
-	SetBorderColor 0 255 255 255 # Unique (Jewel)
-	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Cross
-	PlayEffect Red
-
-Show  # Jewels - Cluster - Unique
-	Class Jewel
-	BaseType "Large Cluster Jewel" "Medium Cluster Jewel" "Small Cluster Jewel"
-	Rarity = Unique
-	SetFontSize 45
-	SetTextColor 255 128 64 # Unique (15c+)
-	SetBackgroundColor 255 255 255 255 # Unique (15c+)
-	SetBorderColor 0 255 255 255 # Unique (Jewel)
-	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Cross
-	PlayEffect Red
-
-Show  # Jewels - Unique - Other
-	Class Jewel
-	Rarity = Unique
-	SetFontSize 45
-	SetTextColor 255 128 64 # Unique
-	SetBackgroundColor 50 25 12 230 # Unique
-	SetBorderColor 0 255 255 255 # Unique (Jewel)
-	PlayAlertSound 6 200 # Jewel
-	MinimapIcon 0 Orange Cross
-	PlayEffect Orange
-
 #----------#
 # Clusters #
 #----------#
@@ -2308,119 +2433,6 @@ Show  # Jewels - Rare - Leveling
 Show  # Jewels - Rare - Mapping (High)
 	Class Jewel
 	Rarity = Rare
-
-##########################################
-################# UNIQUES ################
-##########################################
-# Section: Uniques
-
-# Ordered most expensive first to prevent future name conflicts!
-# Prices attained from poe.ninja.
-# Future values will fluctuate based on league challenges and the meta.
-
-#------#
-# 15c+ #
-#------#
-# White background
-# High value. Do not miss these.
-
-Show  # Uniques - 15c+
-	Rarity = Unique
-	BaseType "Ambush Mitts" "Blood Raiment" "Carnal Boots" "Charan's Sword" "Crusader Boots" "Crusader Helmet" "Deerskin Gloves" "Ezomyte Tower Shield" "Gemstone Sword" "Glorious Plate" "Golden Bracers" "Golden Caligae" "Golden Flame" "Golden Mantle" "Golden Obi" "Golden Wreath" "Heavy Quiver" "Hydrascale Gauntlets" "Jet Amulet" "Jewelled Foil" "Jingling Spirit Shield" "Occultist's Vestment" "Prophecy Wand" "Rawhide Boots" "Ruby Amulet" "Savant's Robe" "Siege Axe" "Silk Gloves" "Sinner Tricorne" "Sorcerer Boots" "Steel Ring" "Vaal Blade" "Wyrmscale Doublet" "Zodiac Leather" "Riveted Gloves" "Vaal Rapier" "Ornate Quiver" "Golden Visage"
-	SetFontSize 45
-	SetTextColor 255 128 64 # Unique (15c+)
-	SetBackgroundColor 255 255 255 255 # Unique (15c+)
-	SetBorderColor 255 128 64 255 # Unique (15c+)
-	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red UpsideDownHouse
-	PlayEffect Red
-
-#-------#
-# 5-15c #
-#-------#
-# White border
-# Usually worth selling. Not extremely rare or valuable.
-# May share a BaseType with an extremely valuable item, League specific, or boss drop only.
-
-Show  # Uniques - 5-15c
-	Rarity = Unique
-	BaseType "Arcanist Gloves" "Assassin's Boots" "Clasped Mitts" "Ezomyte Burgonet" "Gladiator Plate" "Gold Ring" "Granite Flask" "Legion Gloves" "Magistrate Crown" "Nightmare Mace" "Nubuck Boots" "Royal Axe" "Sacrificial Garb" "Sanctified Life Flask" "Sapphire Flask" "Stealth Boots" "Steelscale Gauntlets" "Studded Belt" "Timeworn Claw" "Two-Stone Ring" "Vaal Spirit Shield" "Steelwood Bow" "Ezomyte Dagger" "Saint's Hauberk"
-	SetFontSize 45
-	SetTextColor 255 128 64 # Unique
-	SetBackgroundColor 50 25 12 230 # Unique
-	SetBorderColor 255 255 255 255 # Unique (5-15c)
-	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Orange UpsideDownHouse
-	PlayEffect Orange
-
-#------#
-# 3-5c #
-#------#
-# Yellow border
-# Sellable but rarely worth much.
-# May share a BaseType with an extremely valuable item, League specific, or boss drop only.
-
-Show  # Uniques - 3-5c
-	Rarity = Unique
-	BaseType "Amber Amulet" "Ancient Spirit Shield" "Arcanist Slippers" "Archon Kite Shield" "Assassin Bow" "Aventail Helmet" "Bismuth Flask" "Blue Pearl Amulet" "Brass Spirit Shield" "Bronzescale Boots" "Cardinal Round Shield" "Carved Wand" "Champion Kite Shield" "Clasped Boots" "Conjurer Boots" "Conjurer Gloves" "Coral Amulet" "Corsair Sword" Cutlass "Fiend Dagger" "Full Wyrmscale" "Grand Mana Flask" "Hallowed Hybrid Flask" "Heavy Belt" "Highborn Staff" "Imperial Maul" "Imperial Skean" "Jade Amulet" "Karui Maul" "Lacquered Garb" "Large Hybrid Flask" "Lion Sword" "Midnight Blade" "Murder Mitts" "Onyx Amulet" "Pinnacle Tower Shield" "Rawhide Tower Shield" "Ruby Ring" "Sadist Garb" "Shackled Boots" "Simple Robe" "Stibnite Flask" "Sulphur Flask" "Topaz Flask" "Topaz Ring" "Turquoise Amulet" "Varnished Coat" "Void Axe" "Blood Sceptre" "Ezomyte Spiked Shield" "Steel Circlet" "Tyrant's Sekhem"
-	SetFontSize 45
-	SetTextColor 255 128 64 # Unique
-	SetBackgroundColor 50 25 12 230 # Unique
-	SetBorderColor 255 255 0 255 # Unique (3-5c)
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Orange UpsideDownHouse
-	PlayEffect Orange
-
-# Loreweave (60x rings)
-Show  # Uniques - <3c - Unique Rings
-	Rarity = Unique
-	Class Rings
-	SetFontSize 45
-	SetTextColor 255 128 64 # Unique
-	SetBackgroundColor 50 25 12 230 # Unique
-	SetBorderColor 255 255 0 255 # Unique (3-5c)
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Orange UpsideDownHouse
-	PlayEffect Orange
-
-#-----#
-# <3c #
-#-----#
-# Orange border
-# Usually < 3c or nearly worthless.
-
-Show  # Uniques - <3c - ilvl <67
-	Rarity = Unique
-	ItemLevel < 67
-	SetFontSize 45
-	SetTextColor 255 128 64 # Unique
-	SetBackgroundColor 50 25 12 230 # Unique
-	SetBorderColor 180 90 45 255 # Unique
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Orange UpsideDownHouse
-	PlayEffect Orange
-
-# Limited drop. May share a BaseType with an extremely valuable item, League specific, or boss drop only.
-Show  # Uniques - Limited
-	Rarity = Unique
-	BaseType "Agate Amulet" "Amethyst Ring" "Ancient Greaves" "Assassin's Mitts" "Carnal Armour" "Carnal Mitts" "Citadel Bow" "Citrine Amulet" "Cloth Belt" "Coiled Staff" "Crusader Gloves" "Crystal Belt" "Eternal Sword" Gavel "Goathide Boots" "Gold Amulet" "Golden Plate" "Goliath Greaves" "Harlequin Mask" "Holy Chainmail" "Hubris Circlet" "Hydrascale Boots" "Infernal Sword" "Iron Ring" "Jasper Chopper" "Judgement Staff" "Karui Chopper" "Leather Belt" "Leather Cap" "Legion Sword" "Lion Pelt" Maelstr "Mind Cage" "Mirrored Spiked Shield" "Moonstone Ring" "Necromancer Circlet" "Opal Ring" "Painted Tower Shield" "Paua Amulet" "Penetrating Arrow Quiver" "Praetor Crown" "Prismatic Ring" "Prophet Crown" "Raven Mask" "Ritual Sceptre" "Royal Burgonet" "Ruby Flask" "Sage Wand" "Sapphire Ring" "Serpentscale Gauntlets" "Silken Hood" "Silver Flask" "Slink Boots" "Terror Claw" "Thorium Spirit Shield" "Titan Greaves" "Triumphant Lamellar" "Two-Point Arrow Quiver" "Unset Ring" "Vaal Axe" "Vaal Gauntlets" "Vaal Mask" "Variscite Blade" "Void Sceptre" "Widowsilk Robe" "Zealot Gloves" "Two-Toned Boots"
-	SetFontSize 45
-	SetTextColor 255 128 64 # Unique
-	SetBackgroundColor 50 25 12 230 # Unique
-	SetBorderColor 180 90 45 255 # Unique
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Orange UpsideDownHouse
-	PlayEffect Orange
-
-Show  # Uniques - New or Worthless
-	Rarity = Unique
-	SetFontSize 40
-	SetTextColor 255 128 64 # Unique
-	SetBackgroundColor 50 25 12 230 # Unique
-	SetBorderColor 180 90 45 255 # Unique
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Orange UpsideDownHouse
-	PlayEffect Orange
 
 ##########################################
 ################# FLASKS #################
@@ -2841,7 +2853,7 @@ Show
 	Rarity = Rare
 	ItemLevel >= 60
 	Class "One Hand" Daggers "Rune Dagger" Wands Claws Sceptres Quivers
-	BaseType "Siege Axe" "Vaal Hatchet" "Infernal Axe" "Runic Hatchet" "Legion Hammer" "Nightmare Mace" "Behemoth Mace" "Corsair Sword" "Spiraled Foil" "Eternal Sword" "Jewelled Foil" "Dragoon Sword" Ambusher "Platinum Kris" "Imperial Skean" Sai "Imbued Wand" "Opal Wand" "Tornado Wand" "Profane Wand" "Convoking Wand" "Hellion's Paw" "Imperial Claw" "Terror Claw" "Gemini Claw" "Karui Sceptre" "Vaal Sceptre" "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Ornate Quiver" "Penetrating Arrow Quiver"
+	BaseType "Siege Axe" "Vaal Hatchet" "Infernal Axe" "Runic Hatchet" "Legion Hammer" "Nightmare Mace" "Behemoth Mace" "Corsair Sword" "Spiraled Foil" "Eternal Sword" "Jewelled Foil" "Dragoon Sword" Ambusher "Platinum Kris" "Imperial Skean" Sai "Imbued Wand" "Opal Wand" "Tornado Wand" "Profane Wand" "Convoking Wand" "Hellion's Paw" "Imperial Claw" "Terror Claw" "Gemini Claw" "Karui Sceptre" "Vaal Sceptre"  "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver" "Orange Quiver" "Penetrating Arrow Quiver" "Two-Point Arrow Quiver"
 	SetBackgroundColor 70 50 20 230 # Rare Weapon 60+ (High)
 	SetBorderColor 90 60 25 255 # Rare Weapon 60+ (High)
 	Continue
@@ -3582,7 +3594,7 @@ Show  # Rares - Accessories - 60+
 #Disabled Block Start
 #Show  # Highlighted Rares - Quivers - 60+
 #	Class Quivers
-#	BaseType "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver"
+#	BaseType "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver" "Orange Quiver" "Penetrating Arrow Quiver" "Two-Point Arrow Quiver"
 #	ItemLevel >= 60
 #	SetBorderColor 170 125 50 255 # Rare Weapon 60+ (Highlighted)
 #Disabled Block End
@@ -3724,7 +3736,7 @@ Show  # 60+ Rares - Shields
 
 Show  # 60+ Rares - Quivers - Valuable
 	Class Quivers
-	BaseType "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver"
+	BaseType "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver" "Orange Quiver" "Penetrating Arrow Quiver" "Two-Point Arrow Quiver"
 	ItemLevel >= 60
 
 Hide  # 60+ Rares - Quivers - Other
