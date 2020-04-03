@@ -3020,6 +3020,8 @@ Show  # Normal/Magic - Leveling - Accessories - < 16
 	DropLevel >= 5
 	Class Rings Amulets Belts
 	Rarity <= Magic
+	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
+	SetBorderColor 0 0 0 255 # Crafting Base (Low)
 	SetFontSize 40
 
 Show  # Normal/Magic - Leveling - Accessories - < 22
