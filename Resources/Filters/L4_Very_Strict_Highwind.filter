@@ -3050,8 +3050,6 @@ Hide  # Normal/Magic - Leveling - Accessories - < 16
 	Class Rings Amulets Belts
 	Rarity <= Magic
 	SetFontSize 40
-	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
-	SetBorderColor 0 0 0 255 # Crafting Base (Low)
 	DisableDropSound
 
 Hide  # Normal/Magic - Leveling - Accessories - < 22
@@ -3060,8 +3058,6 @@ Hide  # Normal/Magic - Leveling - Accessories - < 22
 	Class Rings Amulets
 	Rarity <= Magic
 	SetFontSize 40
-	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
-	SetBorderColor 0 0 0 255 # Crafting Base (Low)
 	DisableDropSound
 
 Hide  # Normal/Magic - Leveling - Jewelry
