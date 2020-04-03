@@ -528,7 +528,7 @@ Show  # Currency - Prophecies - High Value
 Show  # Currency - Prophecies - Mid Value
 	Class Currency
 	BaseType "Prophecy"
-	Prophecy "Flesh of the Beast" "The Jeweller's Touch" "Wind and Thunder" "Monstrous Treasure" "Cleanser of Sins" "The Queen's Vaults" "The Dreaded Rhoa" "Darktongue's Shriek" "A Master Seeks Help, Jun" "A Dishonourable Death" "The King's Path" "A Master Seeks Help, Zana" "A Master Seeks Help" "The Bowstring's Music"
+	Prophecy "Flesh of the Beast" "The Jeweller's Touch" "Wind and Thunder" "Monstrous Treasure" "Cleanser of Sins" "The Queen's Vaults" "The Dreaded Rhoa" "Darktongue's Shriek" "A Dishonourable Death" "The King's Path" "A Master Seeks Help" "The Bowstring's Music"
 	SetFontSize 45
 	SetTextColor 255 0 255 # Prophecy
 	SetBackgroundColor 20 0 20 230 # Prophecy
@@ -2875,8 +2875,8 @@ Show
 	ItemLevel >= 60
 	Class "One Hand" Daggers "Rune Dagger" Wands Claws Sceptres Quivers
 	BaseType "Siege Axe" "Vaal Hatchet" "Infernal Axe" "Runic Hatchet" "Legion Hammer" "Nightmare Mace" "Behemoth Mace" "Corsair Sword" "Spiraled Foil" "Eternal Sword" "Jewelled Foil" "Dragoon Sword" Ambusher "Platinum Kris" "Imperial Skean" Sai "Imbued Wand" "Opal Wand" "Tornado Wand" "Profane Wand" "Convoking Wand" "Hellion's Paw" "Imperial Claw" "Terror Claw" "Gemini Claw" "Karui Sceptre" "Vaal Sceptre" "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Ornate Quiver" "Penetrating Arrow Quiver"
-	SetBackgroundColor 70 50 20 230 # Rare Weapon 60+ (High)
-	SetBorderColor 90 60 25 255 # Rare Weapon 60+ (High)
+	SetBackgroundColor 40 35 8 231 # Rare Weapon 60+ (High)
+	SetBorderColor 100 65 25 255 # Rare Weapon 60+ (High)
 	Continue
 
 Show
@@ -2884,8 +2884,8 @@ Show
 	ItemLevel >= 60
 	Class "Two Hand" Bows Staves Warstaves
 	BaseType "Sundering Axe" "Vaal Axe" "Ezomyte Axe" "Void Axe" "Despot Axe" Fleshripper Piledriver Meatgrinder "Terror Maul" "Coronal Maul" "Reaver Sword" "Vaal Greatsword" "Lion Sword" "Infernal Sword" "Exquisite Blade" "Thicket Bow" "Imperial Bow" "Harbinger Bow" "Maraketh Bow" Lathi "Ezomyte Staff" Maelstr "Eclipse Staff" "Judgement Staff"
-	SetBackgroundColor 25 80 15 235 # Rare Recipe
-	SetBorderColor 30 100 65 255 # Rare Recipe 60+ (High)
+	SetBackgroundColor 20 60 0 231 # Rare Recipe 60+ (High)
+	SetBorderColor 35 105 70 255 # Rare Recipe 60+ (High)
 	Continue
 
 Show
@@ -2893,8 +2893,8 @@ Show
 	ItemLevel >= 60
 	DropLevel >= 60
 	Class "Body Armours"
-	SetBackgroundColor 25 80 15 235 # Rare Recipe
-	SetBorderColor 30 100 65 255 # Rare Recipe 60+ (High)
+	SetBackgroundColor 20 60 0 231 # Rare Recipe 60+ (High)
+	SetBorderColor 35 105 70 255 # Rare Recipe 60+ (High)
 	Continue
 
 Show
@@ -2902,8 +2902,8 @@ Show
 	ItemLevel >= 60
 	DropLevel >= 60
 	Class Shields
-	SetBackgroundColor 70 50 20 230 # Rare Weapon 60+ (High)
-	SetBorderColor 90 60 25 255 # Rare Weapon 60+ (High)
+	SetBackgroundColor 40 35 8 231 # Rare Weapon 60+ (High)
+	SetBorderColor 100 65 25 255 # Rare Weapon 60+ (High)
 	Continue
 
 Show
@@ -2911,8 +2911,8 @@ Show
 	ItemLevel >= 60
 	DropLevel > 56
 	Class Gloves Boots Helmets
-	SetBackgroundColor 25 80 15 235 # Rare Recipe
-	SetBorderColor 30 100 65 255 # Rare Recipe 60+ (High)
+	SetBackgroundColor 20 60 0 231 # Rare Recipe 60+ (High)
+	SetBorderColor 35 105 70 255 # Rare Recipe 60+ (High)
 	Continue
 
 Show
@@ -2939,7 +2939,7 @@ Show
 	Rarity = Rare
 	ItemLevel >= 60
 	Class Amulets Belts Rings
-	SetBackgroundColor 25 80 15 235 # Rare Recipe
+	SetBackgroundColor 20 60 0 231 # Rare Recipe 60+ (High)
 	SetBorderColor 220 0 0 255 # Rare Accessory
 	SetFontSize 45
 	Continue
