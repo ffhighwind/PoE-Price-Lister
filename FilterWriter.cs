@@ -152,7 +152,7 @@ Show  # Uniques - <3c - Unique Rings
 	PlayEffect Orange";
 
 		private const string style3c =
-@"	SetFontSize 40
+@"	SetFontSize 36
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 230 # Unique
 	SetBorderColor 255 255 0 255 # Unique (3-5c)
@@ -161,7 +161,7 @@ Show  # Uniques - <3c - Unique Rings
 	PlayEffect Orange";
 
 		private const string styleLimited =
-@"	SetFontSize 40
+@"	SetFontSize 36
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 230 # Unique
 	SetBorderColor 180 90 45 255 # Unique";
@@ -195,20 +195,20 @@ Show  # Uniques - <3c - Unique Rings
 	PlayEffect Pink";
 
 		private const string styleDivLess2cShow =
-@"	SetFontSize 40 
+@"	SetFontSize 32 
 	SetTextColor 0 0 0 # Divination Card (<2c)
 	SetBackgroundColor 255 0 175 230 # Divination Card (<2c)
 	SetBorderColor 150 30 100 255 # Divination Card (<2c)";
 
 		private const string styleDivLess2cHide =
-@"	SetFontSize 36
+@"	SetFontSize 32
 	SetTextColor 0 0 0 # Divination Card (<2c)
 	SetBackgroundColor 255 0 175 230 # Divination Card (<2c)
 	SetBorderColor 150 30 100 255 # Divination Card (<2c)
 	DisableDropSound";
 
 		private const string styleDivNearlyWorthless =
-@"	SetFontSize 36 
+@"	SetFontSize 32 
 	SetTextColor 0 0 0 # Divination Card (Low)
 	SetBackgroundColor 255 0 175 170 # Divination Card (Low)
 	SetBorderColor 0 0 0 255 # Divination Card (Low)
@@ -510,12 +510,12 @@ Show  # Uniques - <3c - Unique Rings
 				sb.AppendLine("Show  # Divination Cards - 2-10c (Conflicts)").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(list2to10cConflict)).AppendLine(styleDiv2c).AppendLine();
 			if (listLess2cConflict.Count > 0) {
 				bool shown = DivinationCard.IsShown(type, DivinationValueEnum.ChaosLess2);
-				string showHide = shown ? "Hide" : "Show";
+				string showHide = shown ? "Show" : "Hide";
 				string style = shown ? styleDivLess2cHide : styleDivLess2cShow;
 				sb.AppendLine(showHide + "  # Divination Cards - <2c (Conflicts)").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(listLess2cConflict)).AppendLine(style).AppendLine();
 			}
 			if (listNearlyWorthlessConflict.Count > 0) {
-				string showHide = DivinationCard.IsShown(type, DivinationValueEnum.NearlyWorthless) ? "Hide" : "Show";
+				string showHide = DivinationCard.IsShown(type, DivinationValueEnum.NearlyWorthless) ? "Show" : "Hide";
 				sb.AppendLine(showHide + "  # Divination Cards - Nearly Worthless (Conflicts)").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(listNearlyWorthlessConflict)).AppendLine(styleDivNearlyWorthless).AppendLine();
 			}
 			if (listWorthlessConflict.Count > 0) {
@@ -529,12 +529,12 @@ Show  # Uniques - <3c - Unique Rings
 				sb.AppendLine("Show  # Divination Cards - 2-10c").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(list2to10c)).AppendLine(styleDiv2c).AppendLine();
 			if (listLess2c.Count > 0) {
 				bool shown = DivinationCard.IsShown(type, DivinationValueEnum.ChaosLess2);
-				string showHide = shown ? "Hide" : "Show";
+				string showHide = shown ? "Show" : "Hide";
 				string style = shown ? styleDivLess2cHide : styleDivLess2cShow;
 				sb.AppendLine(showHide + "  # Divination Cards - <2c").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(listLess2c)).AppendLine(style).AppendLine();
 			}
 			if (listNearlyWorthless.Count > 0) {
-				string showHide = DivinationCard.IsShown(type, DivinationValueEnum.NearlyWorthless) ? "Hide" : "Show";
+				string showHide = DivinationCard.IsShown(type, DivinationValueEnum.NearlyWorthless) ? "Shown" : "Hide";
 				sb.AppendLine(showHide + "  # Divination Cards - Nearly Worthless").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(listNearlyWorthless)).AppendLine(styleDivNearlyWorthless).AppendLine();
 			}
 			if (listWorthless.Count > 0) {
