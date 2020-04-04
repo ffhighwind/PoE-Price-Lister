@@ -154,8 +154,9 @@ namespace PoE_Price_Lister
 				case FilterType.SEMI_STRICT:
 					return divValue != DivinationValueEnum.Worthless;
 				case FilterType.STRICT:
-					return divValue != DivinationValueEnum.Worthless && divValue != DivinationValueEnum.ChaosLess2;
+					return divValue != DivinationValueEnum.Worthless && divValue != DivinationValueEnum.NearlyWorthless;
 				case FilterType.VERY_STRICT:
+					return divValue != DivinationValueEnum.Worthless && divValue != DivinationValueEnum.NearlyWorthless && divValue != DivinationValueEnum.ChaosLess2;
 				default:
 					throw new InvalidOperationException("Unknown filter type: " + filterType.ToString());
 			}

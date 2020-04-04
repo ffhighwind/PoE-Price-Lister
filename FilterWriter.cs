@@ -33,7 +33,7 @@ namespace PoE_Price_Lister
 # Prices attained from poe.ninja.
 # Future values will fluctuate based on league challenges and the meta.";
 
-		private const string uniqueJewels = 
+		private const string uniqueJewels =
 @"#--------#
 # Jewels #
 #--------#
@@ -260,6 +260,22 @@ Show  # Uniques - <3c - Unique Rings
 			Conflicts = model.DivinationCardNameConflicts;
 		}
 
+		private class HeaderData
+		{
+			public HeaderData(string header, string fileData)
+			{
+				Header = header;
+				Start = fileData.IndexOf(header);
+				End = fileData.IndexOf("#####", Start);
+			}
+
+			public string Header { get; }
+			public string Extra { get; set; }
+			public int Start { get; }
+			public int End { get; }
+			public string Value { get; set; }
+		}
+
 		public void Create(FilterType type, string filterFile)
 		{
 			string filterData = File.Exists(filterFile) ? File.ReadAllText(filterFile)
@@ -273,18 +289,30 @@ Show  # Uniques - <3c - Unique Rings
 			using (Writer = new StreamWriter(memoryStream, Encoding.UTF8)) {
 				string hashes = @"############################################";
 				int headerEnd = filterData.IndexOf("#-----------");
-				int enchantsStart = filterData.IndexOf("# Section: Enchantments", headerEnd);
-				int enchantsEnd = filterData.IndexOf(@"#########", enchantsStart);
-				int uniquesStart = filterData.IndexOf("# Section: Uniques");
-				int uniquesEnd = filterData.IndexOf(@"#########", uniquesStart);
-				int divStart = filterData.IndexOf("# Section: Divination Cards", uniquesEnd);
-				int divEnd = filterData.IndexOf(@"#########", divStart);
-
+				List<HeaderData> headers = new List<HeaderData>();
+				// Enchantments
+				HeaderData header = new HeaderData("# Section: Enchantments", filterData);
+				header.Value = GenerateEnchantsString();
+				headers.Add(header);
+				// Uniques
+				header = new HeaderData("# Section: Uniques", filterData);
+				header.Value = GenerateUniquesString(type);
+				headers.Add(header);
+				// Divination Cards
+				header = new HeaderData("# Section: Divination Cards", filterData);
+				header.Value = GenerateDivinationString(type);
+				header.Extra = @"# Ordered most expensive first to prevent future name conflicts!
+# Prices attained from poe.ninja.
+# Future values will fluctuate based on league challenges and the meta.
+";
+				headers.Add(header);
+				headers.Sort((x, y) => x.Start.CompareTo(y.Start));
+				
 				int headerVersionStart = filterData.IndexOf("##  ");
 				int headerVersionEnd = filterData.IndexOf(' ', filterData.IndexOf('.') - 4) + 1;
 				string versStart = filterData.Substring(headerVersionStart, headerVersionEnd - headerVersionStart);
 				string nextVers = Model.VersionMajor + "." + Model.VersionMinor + "." + (Model.VersionRelease + 1);
-				// Header
+				// Version/Date
 				Writer.WriteLine(hashes);
 				Writer.WriteLine("{0}{1}{2} ##", filterData.Substring(headerVersionStart, headerVersionEnd - headerVersionStart),
 					nextVers, new string(' ', hashes.Length - 3 - versStart.Length - nextVers.Length));
@@ -293,30 +321,18 @@ Show  # Uniques - <3c - Unique Rings
 				Writer.WriteLine("## Release Date: {0}{1} ##", dateStr, new string(' ', hashes.Length - dateStr.Length - 17 - 3));
 				Writer.WriteLine(hashes);
 				Writer.WriteLine();
-				// Enchantments
-				Writer.Write(filterData.Substring(headerEnd, enchantsStart - headerEnd));
-				Writer.WriteLine("# Section: Enchantments");
-				Writer.WriteLine();
-				Writer.WriteLine(GenerateEnchantsString());
-				// Enchants -> Uniques
-				Writer.Write(filterData.Substring(enchantsEnd, uniquesStart - enchantsEnd));
-				// Uniques
-				Writer.WriteLine(@"# Section: Uniques");
-				Writer.WriteLine();
-				Writer.WriteLine(GenerateUniquesString(type));
-				// Divination Cards
-				Writer.WriteLine(
-@"##########################################
-############ DIVINATION CARDS ############
-##########################################
-# Section: Divination Cards
 
-# Ordered most expensive first to prevent future name conflicts!
-# Prices attained from poe.ninja.
-# Future values will fluctuate based on league challenges and the meta.");
-				Writer.Write(GenerateDivinationString(type));
-				Writer.WriteLine();
-				Writer.Write(filterData.Substring(divEnd));
+				foreach (HeaderData h in headers) {
+					Writer.Write(filterData.Substring(headerEnd, h.Start - headerEnd));
+					Writer.WriteLine(h.Header);
+					Writer.WriteLine();
+					if(h.Extra != null) {
+						Writer.WriteLine(h.Extra);
+					}
+					Writer.WriteLine(h.Value);
+					headerEnd = h.End;
+				}
+				Writer.Write(filterData.Substring(headers.Last().End));
 				Writer.Flush();
 				str = Encoding.UTF8.GetString(memoryStream.ToArray());
 			}
@@ -427,10 +443,10 @@ Show  # Uniques - <3c - Unique Rings
 				if (!data.HasHardCodedValue) {
 					DivinationValue filterVal = data.FilterValue;
 					DivinationCard dataB = DivinationB[divCard];
-					if (data.SeverityLevel == 0)
-						expectedVal = filterVal;
-					//if SC < HC - 0.5 then +1 tier
-					if (data.Tier < dataB.Tier && data.ChaosValue < dataB.ChaosValue - 0.5f) {
+					//if (data.SeverityLevel == 0)
+					//	expectedVal = filterVal;
+					//if SC < HC - 5 then +1 tier
+					if (data.Tier < dataB.Tier && data.ChaosValue < dataB.ChaosValue - 5.0f) {
 						expectedVal = DivinationValue.FromTier(expectedVal.Tier + 1);
 					}
 				}
@@ -506,7 +522,7 @@ Show  # Uniques - <3c - Unique Rings
 				string showHide = DivinationCard.IsShown(type, DivinationValueEnum.Worthless) ? "Show" : "Hide";
 				sb.AppendLine(showHide + "  # Divination Cards - Worthless (Conflicts)").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(listWorthlessConflict)).AppendLine(styleDivWorthless).AppendLine();
 			}
-			
+
 			if (list10c.Count > 0)
 				sb.AppendLine("Show  # Divination Cards - 10c+").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(list10c)).AppendLine(styleDiv10c).AppendLine();
 			if (list2to10c.Count > 0)

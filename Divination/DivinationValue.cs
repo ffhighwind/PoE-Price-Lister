@@ -32,7 +32,7 @@ namespace PoE_Price_Lister
 
 		public static readonly DivinationValue Error = new DivinationValue(DivinationValueEnum.Error, "Error", 0.0f, float.MinValue);
 		public static readonly DivinationValue Chaos10 = new DivinationValue(DivinationValueEnum.Chaos10, "10c+", float.MaxValue, 8.5f);
-		public static readonly DivinationValue Chaos2to10 = new DivinationValue(DivinationValueEnum.Chaos2to10, "2-10c", 13.0f, 1.7f);
+		public static readonly DivinationValue Chaos2to10 = new DivinationValue(DivinationValueEnum.Chaos2to10, "2-10c", 13.0f, 2.1f);
 		public static readonly DivinationValue ChaosLess2 = new DivinationValue(DivinationValueEnum.ChaosLess2, "<2c", 2.5f, 0.9f);
 		public static readonly DivinationValue NearlyWorthless = new DivinationValue(DivinationValueEnum.NearlyWorthless, "Nearly Worthless", 0.995f, 0.0f);
 		public static readonly DivinationValue Worthless = new DivinationValue(DivinationValueEnum.Worthless, "Worthless", 0.85f, -1.0f);
@@ -76,9 +76,9 @@ namespace PoE_Price_Lister
 		{
 			//if (val < 0.4f)
 			//	return Worthless;
-			if (val <= 1.05f)
+			if (val <= 0.8f)
 				return NearlyWorthless;
-			else if (val < 2.3f)
+			else if (val < 2.1f)
 				return ChaosLess2;
 			else if (val < 9.5f)
 				return Chaos2to10;

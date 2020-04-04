@@ -71,7 +71,7 @@ namespace PoE_Price_Lister
 		private const int MaxErrors = 5;
 		private int ErrorCount = 0;
 
-		private readonly List<IReadOnlyList<string>> conflicts = new List<IReadOnlyList<string>>();
+		private List<IReadOnlyList<string>> conflicts { get; } = new List<IReadOnlyList<string>>();
 		public IReadOnlyList<IReadOnlyList<string>> DivinationCardNameConflicts => conflicts;
 
 		public void Load()
@@ -256,6 +256,7 @@ namespace PoE_Price_Lister
 		private void GetDivinationCardConflicts()
 		{
 			List<string> conflictsList = new List<string>();
+			conflicts.Clear();
 			for (int i = 0; i < DivinationCards.Count; i++) {
 				string divBaseTy = DivinationCards[i].ToLower();
 				for (int j = i + 1; j < DivinationCards.Count; j++) {
@@ -295,15 +296,15 @@ namespace PoE_Price_Lister
 			SC.ClearFilterValues();
 			HC.ClearFilterValues();
 			int startIndex = 0;
-			int endIndex = 0;
+			int endIndex;
 			if (GetLines(lines, ref startIndex, out endIndex, "# Section: Enchantments", "######"))
 				GetFilterEnchantsData(new ArraySegment<string>(lines, startIndex, endIndex - startIndex));
-			startIndex = endIndex;
-			if (GetLines(lines, ref startIndex, out endIndex, "# Section: Uniques", "######"))
-				GetFilterUniqueData(new ArraySegment<string>(lines, startIndex, endIndex - startIndex));
-			startIndex = endIndex;
+			startIndex = 0;
 			if (GetLines(lines, ref startIndex, out endIndex, "# Section: Divination Cards", "######"))
 				GetFilterDivinationData(new ArraySegment<string>(lines, startIndex, endIndex - startIndex));
+			startIndex = 0;
+			if (GetLines(lines, ref startIndex, out endIndex, "# Section: Uniques", "######"))
+				GetFilterUniqueData(new ArraySegment<string>(lines, startIndex, endIndex - startIndex));
 		}
 
 		private void GetFilterDivinationData(IEnumerable<string> lines)
@@ -381,8 +382,10 @@ namespace PoE_Price_Lister
 					return;
 				string line = lines.ElementAt(0);
 
-				if (!line.Contains("# Uniques -"))
+				if (!line.Contains("# Uniques -")) { 
+					lines = lines.Skip(1);
 					continue;
+				}
 
 				if (line.Contains("15c+"))
 					value = UniqueValue.Chaos15;
