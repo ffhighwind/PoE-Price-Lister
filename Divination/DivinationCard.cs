@@ -132,7 +132,7 @@ namespace PoE_Price_Lister
 
 		public DivinationValue ExpectedFilterValue {
 			get {
-				if(DivinationCardsValueMap.TryGetValue(Name, out DivinationValue val))
+				if (DivinationCardsValueMap.TryGetValue(Name, out DivinationValue val))
 					return val;
 				if (ChaosValue < 0.01f || IsLowConfidence || (ChaosValue >= FilterValue.LowValue && ChaosValue <= FilterValue.HighValue))
 					return FilterValue;
@@ -140,7 +140,28 @@ namespace PoE_Price_Lister
 			}
 		}
 
-		public int SeverityLevel =>	Math.Abs(FilterValue.Tier - ExpectedFilterValue.Tier);
+		public bool IsShown(FilterType filterType)
+		{
+			return IsShown(filterType, ExpectedFilterValue.Value);
+		}
+
+		public static bool IsShown(FilterType filterType, DivinationValueEnum divValue)
+		{
+			switch (filterType) {
+				case FilterType.LEVELING:
+					return true;
+				case FilterType.MAPPING:
+				case FilterType.SEMI_STRICT:
+					return divValue != DivinationValueEnum.Worthless;
+				case FilterType.STRICT:
+					return divValue != DivinationValueEnum.Worthless && divValue != DivinationValueEnum.ChaosLess2;
+				case FilterType.VERY_STRICT:
+				default:
+					throw new InvalidOperationException("Unknown filter type: " + filterType.ToString());
+			}
+		}
+
+		public int SeverityLevel => Math.Abs(FilterValue.Tier - ExpectedFilterValue.Tier);
 
 		public int Tier => FilterValue.Tier;
 
@@ -153,17 +174,12 @@ namespace PoE_Price_Lister
 
 		public override bool Equals(object obj)
 		{
-			if (obj != null && obj is DivinationCard other) {
-				return other.Name == Name;
-			}
-			return false;
+			return obj != null && obj is DivinationCard other ? other.Name == Name : false;
 		}
 
 		public override int GetHashCode()
 		{
 			return Name.GetHashCode();
 		}
-
-
 	}
 }

@@ -1,5 +1,5 @@
 ﻿﻿############################################
-##     HIGHWIND'S STRICT FILTER 3.10.6    ##
+##  HIGHWIND'S SEMI-STRICT FILTER 3.10.6  ##
 ############################################
 ## Release Date: March 31, 2020           ##
 ############################################
@@ -172,17 +172,15 @@ Hide  # Currency - Worthless - Low
 	BaseType "Scroll of Wisdom"
 	DisableDropSound
 
-Hide  # Currency - Worthless - Mid
+Show  # Currency - Worthless - Mid
 	Class "Stackable Currency"
 	BaseType "Portal Scroll" "Armourer's Scrap"
 	SetFontSize 40
-	DisableDropSound
 
-Hide  # Currency - Worthless - High
+Show  # Currency - Worthless - High
 	Class "Stackable Currency"
 	BaseType "Orb of Transmutation" "Blacksmith's Whetstone" "Orb of Augmentation"
 	SetFontSize 40
-	DisableDropSound
 
 # 0.05c
 Hide  # Currency - Worthless - Shards (1)
@@ -218,11 +216,6 @@ Hide  # League Specific - Bestiary - Nets (Worthless)
 	SetFontSize 40
 	DisableDropSound
 
-Show  # Currency - < 0.15c
-	Class "Stackable Currency"
-	BaseType "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb" "Orb of Chance"
-	SetFontSize 40
-
 #----------------------------#
 # Very Low (League Specific) #
 #----------------------------#
@@ -236,9 +229,9 @@ Show
 	SetFontSize 36
 	Continue
 
-Hide  # League Specific - Perandus - Coin (<3)
+Hide  # League Specific - Perandus - Coin (1)
 	Class "Stackable Currency"
-	StackSize < 3
+	StackSize = 1
 	BaseType "Perandus Coin"
 	DisableDropSound
 
@@ -258,15 +251,13 @@ Hide  # League Specific - Essence - Essences (Very Low)
 	BaseType "Wailing Essence" "Weeping Essence"
 	DisableDropSound
 
-Hide  # League Specific - Harbinger - Very Low - Stack (1)
+Show  # League Specific - Harbinger - Very Low - Stack (2+)
 	Class "Stackable Currency"
 	BaseType "Binding Shard" "Horizon Shard"
-	DisableDropSound
 
-Hide  # League Specific - Harbinger - Very Low - Engineer's Shard (6+)
+Show  # League Specific - Harbinger - Very Low - Engineer's Shard (6+)
 	Class "Stackable Currency"
 	BaseType "Engineer's Shard"
-	DisableDropSound
 
 #-----#
 # Low #
@@ -281,13 +272,13 @@ Show
 	SetBorderColor 0 0 0 0 # Currency (Low)
 	Continue
 
+Show  # Currency - < 0.15c
+	Class "Stackable Currency"
+	BaseType "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb" "Orb of Chance"
+
 Show  # Currency - < 0.25c
 	Class "Stackable Currency"
 	BaseType "Silver Coin" "Glassblower's Bauble"
-
-Show  # Currency - Mid - <0.5c
-	Class Currency
-	BaseType "Orb of Fusing" "Orb of Alchemy" "Cartographer's Chisel" "Blessed Orb" "Orb of Scouring"
 
 #-----------------#
 # Low (Splinters) #
@@ -386,6 +377,10 @@ Show
 	MinimapIcon 1 Yellow Circle
 	PlayEffect Yellow
 	Continue
+
+Show  # Currency - Mid - <0.5c
+	Class Currency
+	BaseType "Orb of Fusing" "Orb of Alchemy" "Cartographer's Chisel" "Blessed Orb" "Orb of Scouring"
 
 Show  # Currency - Mid - <3c
 	Class Currency
@@ -511,7 +506,7 @@ Show  # League Specific - Incursion - Vials (High)
 # Prophecy #
 #----------#
 
-Show  # Currency - Prophecies - High Value
+Show  # Currency - Prophecies - High
 	Class Currency
 	BaseType "Prophecy"
 	Prophecy "The Queen's Sacrifice" "Fated Connections" "Trash to Treasure"
@@ -523,7 +518,7 @@ Show  # Currency - Prophecies - High Value
 	MinimapIcon 0 Red Triangle
 	PlayEffect Red
 
-Show  # Currency - Prophecies - Mid Value
+Show  # Currency - Prophecies - Mid
 	Class Currency
 	BaseType "Prophecy"
 	Prophecy "Flesh of the Beast" "The Jeweller's Touch" "Wind and Thunder" "Monstrous Treasure" "Cleanser of Sins" "The Queen's Vaults" "The Dreaded Rhoa" "Darktongue's Shriek" "A Dishonourable Death" "The King's Path" "A Master Seeks Help" "The Bowstring's Music"
@@ -535,16 +530,17 @@ Show  # Currency - Prophecies - Mid Value
 	MinimapIcon 0 Red Triangle
 	PlayEffect Red
 
-Hide  # Currency - Prophecies
+Hide  # Currency - Prophecies - Very Low
 	Class Currency
 	BaseType "Prophecy"
-	Prophecy "Resistant to Change" "Touched by the Wind" "Smothering Tendrils" "Rebirth" "Vital Transformation" "Lasting Impressions" "The Invader" "Lightning Falls" "Hidden Reinforcements" "Fallow At Last" "The Hungering Swarm" "Crushing Squall" "Fire from the Sky"
+	Prophecy "Resistant to Change" "Touched by the Wind" "Smothering Tendrils" "Vital Transformation" "Lasting Impressions" "The Invader" "Lightning Falls" "Hidden Reinforcements" "Fallow At Last" "The Hungering Swarm" "Crushing Squall" "Fire from the Sky" "The Brothers of Necromancy" "Gilded Within" "Risen Blood" "In the Grasp of Corruption" "Vaal Invasion" "Unnatural Energy" "Undead Uprising" "The Undead Storm" "The Mysterious Gift" "The God of Misfortune"
 	SetFontSize 36
 	SetTextColor 255 0 255 # Prophecy
 	SetBackgroundColor 20 0 20 230 # Prophecy
 	SetBorderColor 0 255 0 255 # Prophecy
+	DisableDropSound
 
-Show  # Currency - Prophecies
+Show  # Currency - Prophecies - Low
 	Class Currency
 	BaseType "Prophecy"
 	SetFontSize 45
@@ -816,9 +812,9 @@ Show  # Maps - T6+ (Yellow) - Blighted
 	MinimapIcon 0 Green Hexagon
 	PlayEffect Green
 
-Show  # Maps - T6+ (Yellow) - Silent - T6-8 in T13+
+Show  # Maps - T6+ (Yellow) - Silent - T6-7 in T13+
 	Class Maps
-	MapTier <= 8
+	MapTier <= 7
 	MapTier >= 6
 	ItemLevel >= 80
 	SetFontSize 45
@@ -855,10 +851,10 @@ Show  # Maps - T1+ (White) - Blighted
 	MinimapIcon 0 Green Hexagon
 	PlayEffect Green
 
-Show  # Maps - T1+ (White) - Silent - T1-5 in T9+
+Show  # Maps - T1+ (White) - Silent - T1-5 in T11+
 	Class Maps
 	MapTier <= 5
-	ItemLevel >= 76
+	ItemLevel >= 78
 	DisableDropSound
 
 Show  # Maps - T1+ (White) - Silent - T1-3 in T6+
@@ -1015,6 +1011,7 @@ Show  # Gems - Leveled - Level 19+
 	SetFontSize 45
 	SetTextColor 55 225 185 # Gem (Mid)
 	SetBackgroundColor 10 35 30 230 # Gem (Mid)
+	SetBorderColor 50 220 180 255 # Gem (Mid)
 	PlayAlertSound 6 200 # Gem
 	MinimapIcon 0 Cyan Star
 	PlayEffect Cyan
@@ -1052,6 +1049,7 @@ Show  # Gems - Drop Only - 1c+
 	SetTextColor 55 225 185 # Gem (Mid)
 	SetBackgroundColor 10 35 30 230 # Gem (Mid)
 	SetBorderColor 50 220 180 255 # Gem (Mid)
+	DisableDropSound
 
 Show  # Gems - Quality - 10%+
 	Quality >= 10
@@ -1076,16 +1074,14 @@ Hide  # Gems - Quality - 1%+
 	SetTextColor 27 162 155 # Gem Quality (Low)
 	SetBackgroundColor 8 30 25 230 # Gem Quality (Low)
 	SetBorderColor 130 130 130 255 # Gem Quality (Low)
-	DisableDropSound
 
-Hide  # Gems - Drop Only - Worthless
+Show  # Gems - Drop Only - Worthless
 	Class "Skill Gems"
 	BaseType Vaal Enhance
 	SetFontSize 36
 	SetTextColor 27 162 155 # Gem (Low)
 	SetBackgroundColor 8 30 25 230 # Gem (Low)
 	SetBorderColor 0 150 150 255 # Gem (Low)
-	DisableDropSound
 
 Hide  # Gems - Other
 	Class "Skill Gems"
@@ -1160,7 +1156,7 @@ Show  # Divination Cards - <2c
 	MinimapIcon 0 Pink Square 
 	PlayEffect Pink
 
-Hide  # Divination Cards - Nearly Worthless
+Show  # Divination Cards - Nearly Worthless
 	Class Divination
 	BaseType "Boon of Justice" "Cartographer's Delight" "Destined to Crumble" "Her Mask" Loyalty "Rain of Chaos" "Shard of Fate" "The Doppelganger" "The Gambler" "The Gemcutter" "The Hermit" "The Lord in Black" "The Mountain" "The Puzzle" "The Scarred Meadow" "The Scholar" "The Survivalist"
 	SetFontSize 40 
@@ -1265,6 +1261,31 @@ Show  # 5+ Links - 3 Skill Bows (64+)
 	ItemLevel >= 64
 	BaseType "Crude Bow" "Short Bow" "Royal Bow" "Grove Bow" "Thicket Bow" "Imperial Bow"
 
+#-----------#
+# 6 Sockets #
+#-----------#
+
+Show  # Vendor Recipes - Jewellers (6 Socket) - Unique
+	Sockets = 6
+	Rarity = Unique
+	SetFontSize 45
+	SetTextColor 255 128 64 # Unique (15c+)
+	SetBackgroundColor 255 255 255 255 # Unique (15c+)
+	SetBorderColor 255 128 64 255 # Unique (15c+)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red UpsideDownHouse
+	PlayEffect Red
+
+Show  # Vendor Recipes - Jewellers (6 Socket) - Normal/Magic
+	Sockets = 6
+	SetFontSize 45
+	SetTextColor 255 0 255 # 6 Socket
+	SetBackgroundColor 0 0 0 230 # 6 Socket
+	SetBorderColor 255 0 255 255 # 6 Socket
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Yellow UpsideDownHouse
+	PlayEffect Yellow
+
 #-----#
 # Low #
 #-----#
@@ -1290,34 +1311,27 @@ Show
 #	PlayEffect Red
 #Disabled Block End
 
-#Disabled Block Start
-#Show  # 5+ Links - Body Armour
-#	LinkedSockets = 5
-#	AnyEnchantment False
-#	Class "Body Armour"
-#Disabled Block End
+Show  # 5+ Links - Body Armour
+	LinkedSockets = 5
+	AnyEnchantment False
+	Class "Body Armour"
 
 # Not Warstaves
-#Disabled Block Start
-#Show  # 5+ Links - 5 Skill Staves (77+)
-#	LinkedSockets = 5
-#	AnyEnchantment False
-#	Class Staves
-#	ItemLevel >= 77
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # 5+ Links - 4 Skill Staves (55+)
-#	LinkedSockets = 5
-#	AnyEnchantment False
-#	Class Staves
-#	ItemLevel >= 55
-#Disabled Block End
-
-Hide  # 5+ Links - Other
+Show  # 5+ Links - 5 Skill Staves (77+)
 	LinkedSockets = 5
-	ShaperItem False
-	ElderItem False
+	AnyEnchantment False
+	Class Staves
+	ItemLevel >= 77
+
+Show  # 5+ Links - 4 Skill Staves (55+)
+	LinkedSockets = 5
+	AnyEnchantment False
+	Class Staves
+	ItemLevel >= 55
+
+Hide  # 5+ Links - Low Value - Normal/Magic
+	LinkedSockets = 5
+	Rarity <= Magic
 	AnyEnchantment False
 	SetFontSize 36
 	MinimapIcon -1
@@ -1325,335 +1339,15 @@ Hide  # 5+ Links - Other
 	PlayEffect None
 	DisableDropSound
 
-##########################################
-############# VENDOR RECIPES #############
-##########################################
-# Section: Vendor Recipes
-
-#-----------#
-# Jewellers #
-#-----------#
-
-Show  # Vendor Recipes - Jewellers (6 Socket) - Unique
-	Sockets = 6
-	Rarity = Unique
-	SetFontSize 45
-	SetBackgroundColor 255 255 255 255 # Unique (15c+)
-	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red UpsideDownHouse
-	PlayEffect Red
-
-Show  # Vendor Recipes - Jewellers (6 Socket) - Normal/Magic
-	Sockets = 6
-	SetFontSize 45
-	SetTextColor 255 0 255 # 6 Socket
-	SetBackgroundColor 0 0 0 230 # 6 Socket
-	SetBorderColor 255 0 255 255 # 6 Socket
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Yellow UpsideDownHouse
-	PlayEffect Yellow
-
-#------------#
-# Chromatics #
-#------------#
-
-Show
-	SocketGroup RGB
-	Rarity <= Magic
-	ShaperItem False
-	ElderItem False
-	SetFontSize 40
-	SetBackgroundColor 0 0 0 230 # Chromatic Recipe (RGB)
-	SetBorderColor 210 0 210 255 # Chromatic Recipe (RGB)
-	Continue
-
-Show  # Vendor Recipes - Chromatics (RGB) - Leveling - Normal
-	SocketGroup RGB
-	Rarity = Normal
-	ItemLevel < 68
-
-#Disabled Block Start
-#Show  # Vendor Recipes - Chromatics (RGB) - Leveling - Magic
-#	SocketGroup RGB
-#	Rarity = Magic
-#	ItemLevel < 68
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Low) - Normal (2 Height)
-#	SocketGroup RGB
-#	Height <= 2
-#	Rarity = Normal
-#	ItemLevel < 73
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Low) - Normal (1 Width)
-#	SocketGroup RGB
-#	Width = 1
-#	Rarity = Normal
-#	ItemLevel < 73
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Low) - Normal
-#	SocketGroup RGB
-#	Rarity = Normal
-#	ItemLevel < 73
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Low) - Normal
-#	SocketGroup RGB
-#	Rarity = Normal
-#	ItemLevel < 73
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Low) - Magic
-#	SocketGroup RGB
-#	Rarity = Magic
-#	ItemLevel < 73
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Mid) - Normal
-#	SocketGroup RGB
-#	Rarity = Normal
-#	ItemLevel < 77
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Mid) - Magic
-#	SocketGroup RGB
-#	Rarity = Magic
-#	ItemLevel < 77
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Vendor Recipes - Chromatics (RGB) - Mapping (High) - Normal
-#	SocketGroup RGB
-#	Rarity = Normal
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Vendor Recipes - Chromatics (RGB) - Mapping (High) - Magic
-#	SocketGroup RGB
-#	Rarity = Magic
-#Disabled Block End
-
-#---------#
-# Chisels #
-#---------#
-
-Show
-	Class "One Hand Maces"
-	BaseType Gavel "Rock Breaker" "Stone Hammer"
-	Quality >= 10
-	Rarity <= Rare
+Hide  # 5+ Links - Low Value - Rare
+	LinkedSockets = 5
+	AnyEnchantment False
 	SetFontSize 36
-	SetBackgroundColor 30 30 30 230 # Chisel Recipe
-	SetBorderColor 140 140 140 255 # Quality
+	MinimapIcon -1
+	PlayAlertSound 4 0
+	PlayEffect None
+	DisableDropSound
 	Continue
-
-#Disabled Block Start
-#Show  # Vendor Recipes - Chisels - 20% Quality
-#	Class "One Hand Maces"
-#	BaseType Gavel "Rock Breaker" "Stone Hammer"
-#	Quality >= 20
-#	Rarity <= Rare
-#	SetFontSize 40
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Vendor Recipes - Chisels - 18% Quality Magic
-#	Class "One Hand Maces"
-#	BaseType Gavel "Rock Breaker" "Stone Hammer"
-#	Quality >= 18
-#	Rarity <= Magic
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Vendor Recipes - Chisels - 15% Quality Normal
-#	Class "One Hand Maces"
-#	BaseType Gavel "Rock Breaker" "Stone Hammer"
-#	Quality >= 15
-#	Rarity = Normal
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Vendor Recipes - Chisels - 10% Quality Normal
-#	Class "One Hand Maces"
-#	BaseType Gavel "Rock Breaker" "Stone Hammer"
-#	Quality >= 10
-#	Rarity = Normal
-#Disabled Block End
-
-##########################################
-############## CHANCE BASES ##############
-##########################################
-# Section: Chance Bases
-
-#Show  # Chance Bases - Gruthkul's Pelt, Wyrmscale Doublet
-#	Rarity = Normal
-#	BaseType "Wyrmscale Doublet"
-#	SetFontSize 45
-#	SetBackgroundColor 50 50 50 230 # Chance Base
-#	SetBorderColor 0 0 0 255 # Chance Base
-#Disabled Block End
-
-#Show  # Chance Bases - Darkscorn, Assassin Bow
-#	Rarity = Normal
-#	BaseType "Assassin Bow"
-#	SetFontSize 45
-#	SetBackgroundColor 50 50 50 230 # Chance Base
-#	SetBorderColor 0 0 0 255 # Chance Base
-#Disabled Block End
-
-#Show  # Chance Bases - Cospri's Malice, Jewelled Foil
-#	Rarity = Normal
-#	BaseType "Jewelled Foil"
-#	SetFontSize 45
-#	SetBackgroundColor 50 50 50 230 # Chance Base
-#	SetBorderColor 0 0 0 255 # Chance Base
-#Disabled Block End
-
-#Show  # Chance Bases - The Poet's Pen, Carved Wand
-#	Rarity = Normal
-#	BaseType "Carved Wand"
-#	SetFontSize 45
-#	SetBackgroundColor 50 50 50 230 # Chance Base
-#	SetBorderColor 0 0 0 255 # Chance Base
-#Disabled Block End
-
-#Show  # Chance Bases - Zodiac Leather, Hyrii's Ire
-#	Rarity = Normal
-#	BaseType "Zodiac Leather"
-#	SetFontSize 45
-#	SetBackgroundColor 50 50 50 230 # Chance Base
-#	SetBorderColor 0 0 0 255 # Chance Base
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Chance Bases - Skyforth, Sorcerer Boots
-#	Rarity = Normal
-#	BaseType "Sorcerer Boots"
-#	SetFontSize 45
-#	SetBackgroundColor 50 50 50 230 # Chance Base
-#	SetBorderColor 0 0 0 255 # Chance Base
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Chance Bases - Kaom's Heart, Glorious Plate
-#	Rarity = Normal
-#	BaseType "Glorious Plate"
-#	SetFontSize 45
-#	SetBackgroundColor 50 50 50 230 # Chance Base
-#	SetBorderColor 0 0 0 255 # Chance Base
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Chance Bases - Taste of Hate, Sapphire Flask
-#	Rarity = Normal
-#	BaseType "Sapphire Flask"
-#	SetFontSize 45
-#	SetBackgroundColor 50 50 50 230 # Chance Base
-#	SetBorderColor 0 0 0 255 # Chance Base
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Chance Bases - Shavronne's Wrappings, Occultist's Vestment
-#	Rarity = Normal
-#	BaseType "Occultist's Vestment"
-#	SetFontSize 45
-#	SetBackgroundColor 50 50 50 230 # Chance Base
-#	SetBorderColor 0 0 0 255 # Chance Base
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Chance Bases - Void Battery, Prophecy Wand
-#	Rarity = Normal
-#	BaseType "Prophecy Wand"
-#	SetFontSize 45
-#	SetBackgroundColor 50 50 50 230 # Chance Base
-#	SetBorderColor 0 0 0 255 # Chance Base
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Chance Bases - Soul Taker, Siege Axe
-#	Rarity = Normal
-#	BaseType "Siege Axe"
-#	SetFontSize 45
-#	SetBackgroundColor 50 50 50 230 # Chance Base
-#	SetBorderColor 0 0 0 255 # Chance Base
-#Disabled Block End
-
-#-----------------#
-# League Specific #
-#-----------------#
-
-#Disabled Block Start
-#Show  # Chance Bases - League Specific - Headhunter, Leather Belt (Nemesis)
-#	Rarity = Normal
-#	BaseType "Leather Belt"
-#	SetFontSize 45
-#	SetBackgroundColor 50 50 50 230 # Chance Base
-#	SetBorderColor 0 0 0 255 # Chance Base
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Chance Bases - League Specific - Shadows and Dust, Clasped Mitts (Rampage)
-#	Rarity = Normal
-#	BaseType "Clasped Mitts"
-#	SetFontSize 45
-#	SetBackgroundColor 50 50 50 230 # Chance Base
-#	SetBorderColor 0 0 0 255 # Chance Base
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Chance Bases - League Specific - Null and Void, Legion Gloves (Rampage)
-#	Rarity = Normal
-#	BaseType "Legion Gloves"
-#	SetFontSize 45
-#	SetBackgroundColor 50 50 50 230 # Chance Base
-#	SetBorderColor 0 0 0 255 # Chance Base
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Chance Bases - League Specific - Seven-League Step, Rawhide Boots (Perandus)
-#	Rarity = Normal
-#	BaseType "Rawhide Boots"
-#	SetFontSize 45
-#	SetBackgroundColor 50 50 50 230 # Chance Base
-#	SetBorderColor 0 0 0 255 # Chance Base
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Chance Bases - League Specific - Brutus' Lead Sprinkler, Ritual Sceptre (Torment)
-#	Rarity = Normal
-#	BaseType "Ritual Sceptre"
-#	SetFontSize 45
-#	SetBackgroundColor 50 50 50 230 # Chance Base
-#	SetBorderColor 0 0 0 255 # Chance Base
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Chance Bases - League Specific - The Gull, Raven Mask (Domination)
-#	Rarity = Normal
-#	BaseType "Raven Mask"
-#	SetFontSize 45
-#	SetBackgroundColor 50 50 50 230 # Chance Base
-#	SetBorderColor 0 0 0 255 # Chance Base
-#Disabled Block End
-
-#Disabled Block Start
-#Show  # Chance Bases - League Specific - Voll's Devotion, Agate Amulet (Anarchy/Onslaught)
-#	Rarity = Normal
-#	BaseType "Agate Amulet"
-#	SetFontSize 45
-#	SetBackgroundColor 50 50 50 230 # Chance Base
-#	SetBorderColor 0 0 0 255 # Chance Base
-#Disabled Block End
 
 ##########################################
 ############## ENCHANTMENTS ##############
@@ -1696,8 +1390,8 @@ Show  # Enchantments - 10c+ Other
 	HasEnchantment "Enchantment Arc Num Of Additional Projectiles In Chain 1" "Enchantment Ball Lightning Damage 2" "Enchantment Barrage Num Of Additional Projectiles 1" "Enchantment Berserk Rage Loss 2" "Enchantment Blade Vortex Duration 2" "Enchantment Caustic Arrow Damage 2" "Enchantment Dark Pact Area Of Effect 2" "Enchantment Dash Travel Distance 2" "Enchantment Double Slash Added Phys To Bleeding 2" "Enchantment Essence Drain Damage 2" "Enchantment Flesh and Stone Mana Reservation 2" "Enchantment Flicker Strike Damage 2" "Enchantment Flicker Strike Damage Per Frenzy Charge 2" "Enchantment Frenzy Damage Per Frenzy Charge 2" "Enchantment Frost Blades Damage 2" "Enchantment Glacial Cascade Damage 2" "Enchantment Herald Of Purity Mana Reservation 2" "Enchantment Kinetic Blast Explosions 2" "Enchantment Lacerate Damage 2" "Enchantment Lightning Warp Duration 2" "Enchantment Magma Orb Num Of Additional Projectiles In Chain 2" "Enchantment Malevolence Mana Reservation 2" "Enchantment Molten Shell Armour 2" "Enchantment Molten Strike Num Of Additional Projectiles 2" "Enchantment Power Siphon Additional Projectiles 2" "Enchantment Puncture Damage 2" "Enchantment Puncture Maim On Hit Percent Chance 2" "Enchantment Purity Of Lightning Mana Reservation 2" "Enchantment Scourge Arrow Additional Spore 1" "Enchantment Shrapnel Ballista Extra Pierces 2" "Enchantment Shrapnel Trap Secondary Explosions 2" "Enchantment Spectral Throw Projectile Deceleration 2" "Enchantment Spectre Attack And Cast Speed 2" "Enchantment Split Arrow Num Of Additional Projectiles 2" "Enchantment Storm Brand Damage 2" "Enchantment Storm Burst Additional Object Chance 2" "Enchantment Temporal Chains Curse Effect 2" "Enchantment Tornado Shot Num Of Secondary Projectiles 2" "Enchantment Toxic Rain Num Of Additional Projectiles 1" "Enchantment Volatile Dead Damage 2" "Enchantment Vulnerability Curse Effect 2" "Enchantment Wave Of Conviction Additional Enemy Resistance 2" "Enchantment Wild Strike Num Of Additional Projectiles In Chain 2" "Enchantment Zealotry Mana Reservation 2"
 	SetFontSize 45
 	SetTextColor 255 255 255 # Crafting Base (Mid)
-	SetBackgroundColor 50 50 50 255 # Crafting Base (Mid)
-	SetBorderColor 40 80 150 255 # Crafting Base (Mid)
+	SetBackgroundColor 60 60 60 255 # Crafting Base (Mid)
+	SetBorderColor 45 90 160 255 # Crafting Base (Mid)
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Blue UpsideDownHouse
 	PlayEffect Blue
@@ -1708,8 +1402,8 @@ Show  # Enchantments - Jewelry
 	Rarity <= Rare
 	SetFontSize 45
 	SetTextColor 255 255 255 # Crafting Base (Mid)
-	SetBackgroundColor 50 50 50 255 # Crafting Base (Mid)
-	SetBorderColor 40 80 150 255 # Crafting Base (Mid)
+	SetBackgroundColor 60 60 60 255 # Crafting Base (Mid)
+	SetBorderColor 45 90 160 255 # Crafting Base (Mid)
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Blue UpsideDownHouse
 	PlayEffect Blue
@@ -1720,7 +1414,7 @@ Show  # Enchantments - Helmets Boots
 	Rarity <= Rare
 	Sockets < 6
 	SetFontSize 40
-	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
+	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
 
 ##########################################
@@ -1733,7 +1427,7 @@ Show  # Enchantments - Helmets Boots
 # Future values will fluctuate based on league challenges and the meta.
 
 #--------#
-# Unique #
+# Jewels #
 #--------#
 
 Show  # Jewels - Prismatic
@@ -1881,7 +1575,9 @@ Show  # Uniques - New or Worthless
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 230 # Unique
 	SetBorderColor 180 90 45 255 # Unique
-	DisableDropSound
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Orange
 
 ##########################################
 ############ INFLUENCED BASES ############
@@ -2051,8 +1747,8 @@ Show  # Explicit Mods - Physical Weapons - Rare
 	Rarity = Rare
 	SetFontSize 45
 	SetTextColor 255 255 255 # Crafting Base (Mid)
-	SetBackgroundColor 50 50 50 255 # Crafting Base (Mid)
-	SetBorderColor 40 80 150 255 # Crafting Base (Mid)
+	SetBackgroundColor 60 60 60 255 # Crafting Base (Mid)
+	SetBorderColor 45 90 160 255 # Crafting Base (Mid)
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Blue UpsideDownHouse
 	PlayEffect Blue
@@ -2063,8 +1759,8 @@ Show  # Explicit Mods - Physical Weapons - Magic
 	Rarity = Magic
 	SetFontSize 45
 	SetTextColor 255 255 255 # Crafting Base (Mid)
-	SetBackgroundColor 50 50 50 255 # Crafting Base (Mid)
-	SetBorderColor 40 80 150 255 # Crafting Base (Mid)
+	SetBackgroundColor 60 60 60 255 # Crafting Base (Mid)
+	SetBorderColor 45 90 160 255 # Crafting Base (Mid)
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Blue UpsideDownHouse
 	PlayEffect Blue
@@ -2075,7 +1771,7 @@ Show  # Explicit Mods - Elemental Weapons - Magic
 	HasExplicitMod "Cremating" "Electrocuting" "Malicious" "Entombing" "Sharpshooter's"
 	Rarity = Magic
 	SetFontSize 36
-	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
+	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
 	PlayEffect Blue
 
@@ -2085,8 +1781,8 @@ Show  # Explicit Mods - Elemental Weapons - Rare
 	Rarity = Rare
 	SetFontSize 40
 	SetTextColor 255 255 255 # Crafting Base (Mid)
-	SetBackgroundColor 50 50 50 255 # Crafting Base (Mid)
-	SetBorderColor 40 80 150 255 # Crafting Base (Mid)
+	SetBackgroundColor 60 60 60 255 # Crafting Base (Mid)
+	SetBorderColor 45 90 160 255 # Crafting Base (Mid)
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Blue UpsideDownHouse
 	PlayEffect Blue
@@ -2096,7 +1792,7 @@ Show  # Explicit Mods - Mastercraft - Magic
 	HasExplicitMod "Subterranean" "of the Underground" "of Weaponcraft" "of Spellcraft" "of Crafting"
 	Rarity = Magic
 	SetFontSize 40
-	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
+	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
 	PlayEffect Blue
 
@@ -2105,8 +1801,8 @@ Show  # Explicit Mods - Mastercraft - Rare
 	Rarity = Rare
 	SetFontSize 40
 	SetTextColor 255 255 255 # Crafting Base (Mid)
-	SetBackgroundColor 50 50 50 255 # Crafting Base (Mid)
-	SetBorderColor 40 80 150 255 # Crafting Base (Mid)
+	SetBackgroundColor 60 60 60 255 # Crafting Base (Mid)
+	SetBorderColor 45 90 160 255 # Crafting Base (Mid)
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Blue UpsideDownHouse
 	PlayEffect Blue
@@ -2116,7 +1812,7 @@ Show  # Explicit Mods - Incursion - Magic
 	HasExplicitMod "Tacati's" "Citaqualotl's" "Matatl's" "Topotante's" "Xopec's" "Guatelitzi's" "of Tacati" "of Citaqualotl" "of Matatl" "of Puhuarte" "of Guatelitzi"
 	Rarity = Magic
 	SetFontSize 36
-	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
+	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
 	PlayEffect Blue
 
@@ -2124,7 +1820,7 @@ Show  # Explicit Mods - Incursion - Rare
 	HasExplicitMod "Tacati's" "Citaqualotl's" "Matatl's" "Topotante's" "Xopec's" "Guatelitzi's" "of Tacati" "of Citaqualotl" "of Matatl" "of Puhuarte" "of Guatelitzi"
 	Rarity = Rare
 	SetFontSize 40
-	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
+	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
 	PlayEffect Blue
 
@@ -2133,7 +1829,7 @@ Show  # Explicit Mods - Warbands - Magic
 	HasExplicitMod "Mutewind" "Redblade" "Brinerot" "Betrayer's" "Deceiver's" "Turncoat's"
 	Rarity = Magic
 	SetFontSize 36
-	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
+	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
 	PlayEffect Blue
 
@@ -2141,7 +1837,7 @@ Show  # Explicit Mods - Warbands - Rare
 	HasExplicitMod "Mutewind" "Redblade" "Brinerot" "Betrayer's" "Deceiver's" "Turncoat's"
 	Rarity = Rare
 	SetFontSize 40
-	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
+	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
 	PlayEffect Blue
 
@@ -2151,7 +1847,7 @@ Show  # Explicit Mods - Armor/Accessories - Magic
 	HasExplicitMod "Rapturous" "Prime" "of Haast" "of Tzteosh" "of Ephij" "of Bameth" "of the Gods" "Unfaltering" "Resplendent" "of the Genius" "of the Polymath" "of the Blur" "of the Wind" "Hellion's"
 	Rarity = Magic
 	SetFontSize 36
-	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
+	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
 	PlayEffect Blue
 
@@ -2161,8 +1857,8 @@ Show  # Explicit Mods - Armor/Accessories - Rare
 	Rarity = Rare
 	SetFontSize 40
 	SetTextColor 255 255 255 # Crafting Base (Mid)
-	SetBackgroundColor 50 50 50 255 # Crafting Base (Mid)
-	SetBorderColor 40 80 150 255 # Crafting Base (Mid)
+	SetBackgroundColor 60 60 60 255 # Crafting Base (Mid)
+	SetBorderColor 45 90 160 255 # Crafting Base (Mid)
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Blue UpsideDownHouse
 	PlayEffect Blue
@@ -2173,7 +1869,7 @@ Show  # Explicit Mods - Accessories - Magic
 	HasExplicitMod "Devastating" "Overpowering" "of Sipping" "of Overflowing" "Dazzling" "of the Godslayer" "of Destruction"
 	Rarity = Magic
 	SetFontSize 36
-	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
+	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
 	PlayEffect Blue
 
@@ -2183,8 +1879,8 @@ Show  # Explicit Mods - Accessories - Rare
 	Rarity = Rare
 	SetFontSize 40
 	SetTextColor 255 255 255 # Crafting Base (Mid)
-	SetBackgroundColor 50 50 50 255 # Crafting Base (Mid)
-	SetBorderColor 40 80 150 255 # Crafting Base (Mid)
+	SetBackgroundColor 60 60 60 255 # Crafting Base (Mid)
+	SetBorderColor 45 90 160 255 # Crafting Base (Mid)
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Blue UpsideDownHouse
 	PlayEffect Blue
@@ -2198,17 +1894,16 @@ Show  # Explicit Mods - Jewels
 	SetBackgroundColor 0 0 0 230 # Jewel
 	SetBorderColor 0 220 220 255 # Jewel
 	PlayAlertSound 6 200 # Jewel
-	MinimapIcon 0 Cyan Cross
-	PlayEffect Cyan
+	MinimapIcon 0 Blue Cross
+	PlayEffect Blue
 
 # Betrayal/Syndicate
-Hide  # Explicit Mods - Veiled - Magic
+Show  # Explicit Mods - Veiled - Magic
 	HasExplicitMod "Veiled" "'s Veiled" "'s Veil" "of the Veil" "of Janus' Veil"
 	Rarity <= Magic
 	SetFontSize 40
-	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
+	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
-	DisableDropSound
 
 Show  # Explicit Mods - Veiled - Rare - 83+
 	HasExplicitMod "Veiled" "'s Veiled" "'s Veil" "of the Veil" "of Janus' Veil"
@@ -2216,8 +1911,8 @@ Show  # Explicit Mods - Veiled - Rare - 83+
 	ItemLevel >= 83
 	SetFontSize 45
 	SetTextColor 255 255 255 # Crafting Base (Mid)
-	SetBackgroundColor 50 50 50 255 # Crafting Base (Mid)
-	SetBorderColor 40 80 150 255 # Crafting Base (Mid)
+	SetBackgroundColor 60 60 60 255 # Crafting Base (Mid)
+	SetBorderColor 45 90 160 255 # Crafting Base (Mid)
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Blue UpsideDownHouse
 	PlayEffect Blue
@@ -2226,7 +1921,7 @@ Show  # Explicit Mods - Veiled - Rare - Other
 	HasExplicitMod "Veiled" "'s Veiled" "'s Veil" "of the Veil" "of Janus' Veil"
 	Rarity = Rare
 	SetFontSize 40
-	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
+	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
 	MinimapIcon 1 Blue UpsideDownHouse
 	PlayEffect Blue
@@ -2236,7 +1931,7 @@ Hide  # Explicit Mods - Bestiary - Magic
 	HasExplicitMod "of Farrul" "of Craiceann" "of Saqawal" "of Fenumus"
 	Rarity <= Magic
 	SetFontSize 40
-	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
+	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
 	DisableDropSound
 
@@ -2244,38 +1939,36 @@ Show  # Explicit Mods - Bestiary - Rare
 	HasExplicitMod "of Farrul" "of Craiceann" "of Saqawal" "of Fenumus"
 	Rarity = Rare
 	SetFontSize 40
-	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
+	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
 	MinimapIcon 1 Blue UpsideDownHouse
 	PlayEffect Blue
 
 # Synthesis
-Hide  # Explicit Mods - Synthesised - Magic
+Show  # Explicit Mods - Synthesised - Magic
 	SynthesisedItem True
 	Rarity <= Magic
 	SetFontSize 40
-	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
+	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
-	DisableDropSound
 
 Show  # Explicit Mods - Synthesised - Rare
 	SynthesisedItem True
 	Rarity = Rare
 	SetFontSize 45
-	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
+	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Blue UpsideDownHouse
 	PlayEffect Blue
 
 # Fractured
-Hide  # Explicit Mods - Fractured - Magic
+Show  # Explicit Mods - Fractured - Magic
 	FracturedItem True
 	Rarity <= Magic
 	SetFontSize 40
-	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
+	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
-	DisableDropSound
 
 Show  # Explicit Mods - Fractured - Rare - 83+
 	FracturedItem True
@@ -2283,8 +1976,8 @@ Show  # Explicit Mods - Fractured - Rare - 83+
 	ItemLevel >= 83
 	SetFontSize 40
 	SetTextColor 255 255 255 # Crafting Base (Mid)
-	SetBackgroundColor 50 50 50 255 # Crafting Base (Mid)
-	SetBorderColor 40 80 150 255 # Crafting Base (Mid)
+	SetBackgroundColor 60 60 60 255 # Crafting Base (Mid)
+	SetBorderColor 45 90 160 255 # Crafting Base (Mid)
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Blue UpsideDownHouse
 	PlayEffect Blue
@@ -2293,7 +1986,7 @@ Show  # Explicit Mods - Fractured - Rare - Other
 	FracturedItem True
 	Rarity = Rare
 	SetFontSize 40
-	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
+	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
 	MinimapIcon 1 Blue UpsideDownHouse
 	PlayEffect Blue
@@ -2349,11 +2042,10 @@ Show  # Jewels - Cluster - Small
 # Abyss Magic #
 #-------------#
 
-Hide  # Abyss Jewels - Magic - Leveling
+Show  # Abyss Jewels - Magic - Leveling
 	Class "Abyss Jewel"
 	ItemLevel <= 67
 	Rarity <= Magic
-	DisableDropSound
 
 #Disabled Block Start
 #Show  # Abyss Jewels - Magic - Mapping (Low)
@@ -2369,10 +2061,9 @@ Hide  # Abyss Jewels - Magic - Leveling
 #	Rarity <= Magic
 #Disabled Block End
 
-Hide  # Abyss Jewels - Magic - Mapping (High)
+Show  # Abyss Jewels - Magic - Mapping (High)
 	Class "Abyss Jewel"
 	Rarity <= Magic
-	DisableDropSound
 
 #------------#
 # Abyss Rare #
@@ -2382,6 +2073,8 @@ Show  # Abyss Jewels - Rare - Leveling
 	Class "Abyss Jewel"
 	Rarity = Rare
 	ItemLevel < 68
+	MinimapIcon 0 Cyan Cross
+	PlayEffect Cyan
 
 #Disabled Block Start
 #Show  # Abyss Jewels - Rare - Mapping (Low)
@@ -2405,11 +2098,10 @@ Show  # Abyss Jewels - Rare - Mapping (High)
 # Normal/Magic #
 #--------------#
 
-Hide  # Jewels - Magic - Leveling
+Show  # Jewels - Magic - Leveling
 	Class Jewel
 	Rarity <= Magic
 	ItemLevel < 68
-	DisableDropSound
 
 #Disabled Block Start
 #Show  # Jewels - Magic - Mapping (Low)
@@ -2438,6 +2130,9 @@ Show  # Jewels - Rare - Leveling
 	Class Jewel
 	Rarity = Rare
 	ItemLevel < 68
+	PlayAlertSound 6 200 # Jewel
+	MinimapIcon 0 Cyan Cross
+	PlayEffect Cyan
 
 #Disabled Block Start
 #Show  # Jewels - Rare - Mapping (Low)
@@ -2456,6 +2151,172 @@ Show  # Jewels - Rare - Leveling
 Show  # Jewels - Rare - Mapping (High)
 	Class Jewel
 	Rarity = Rare
+
+##########################################
+############## CHANCE BASES ##############
+##########################################
+# Section: Chance Bases
+
+#Show  # Chance Bases - Gruthkul's Pelt, Wyrmscale Doublet
+#	Rarity = Normal
+#	BaseType "Wyrmscale Doublet"
+#	SetFontSize 45
+#	SetBackgroundColor 50 50 50 230 # Chance Base
+#	SetBorderColor 0 0 0 255 # Chance Base
+#Disabled Block End
+
+#Show  # Chance Bases - Darkscorn, Assassin Bow
+#	Rarity = Normal
+#	BaseType "Assassin Bow"
+#	SetFontSize 45
+#	SetBackgroundColor 50 50 50 230 # Chance Base
+#	SetBorderColor 0 0 0 255 # Chance Base
+#Disabled Block End
+
+#Show  # Chance Bases - Cospri's Malice, Jewelled Foil
+#	Rarity = Normal
+#	BaseType "Jewelled Foil"
+#	SetFontSize 45
+#	SetBackgroundColor 50 50 50 230 # Chance Base
+#	SetBorderColor 0 0 0 255 # Chance Base
+#Disabled Block End
+
+#Show  # Chance Bases - The Poet's Pen, Carved Wand
+#	Rarity = Normal
+#	BaseType "Carved Wand"
+#	SetFontSize 45
+#	SetBackgroundColor 50 50 50 230 # Chance Base
+#	SetBorderColor 0 0 0 255 # Chance Base
+#Disabled Block End
+
+#Show  # Chance Bases - Zodiac Leather, Hyrii's Ire
+#	Rarity = Normal
+#	BaseType "Zodiac Leather"
+#	SetFontSize 45
+#	SetBackgroundColor 50 50 50 230 # Chance Base
+#	SetBorderColor 0 0 0 255 # Chance Base
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Chance Bases - Skyforth, Sorcerer Boots
+#	Rarity = Normal
+#	BaseType "Sorcerer Boots"
+#	SetFontSize 45
+#	SetBackgroundColor 50 50 50 230 # Chance Base
+#	SetBorderColor 0 0 0 255 # Chance Base
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Chance Bases - Kaom's Heart, Glorious Plate
+#	Rarity = Normal
+#	BaseType "Glorious Plate"
+#	SetFontSize 45
+#	SetBackgroundColor 50 50 50 230 # Chance Base
+#	SetBorderColor 0 0 0 255 # Chance Base
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Chance Bases - Taste of Hate, Sapphire Flask
+#	Rarity = Normal
+#	BaseType "Sapphire Flask"
+#	SetFontSize 45
+#	SetBackgroundColor 50 50 50 230 # Chance Base
+#	SetBorderColor 0 0 0 255 # Chance Base
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Chance Bases - Shavronne's Wrappings, Occultist's Vestment
+#	Rarity = Normal
+#	BaseType "Occultist's Vestment"
+#	SetFontSize 45
+#	SetBackgroundColor 50 50 50 230 # Chance Base
+#	SetBorderColor 0 0 0 255 # Chance Base
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Chance Bases - Void Battery, Prophecy Wand
+#	Rarity = Normal
+#	BaseType "Prophecy Wand"
+#	SetFontSize 45
+#	SetBackgroundColor 50 50 50 230 # Chance Base
+#	SetBorderColor 0 0 0 255 # Chance Base
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Chance Bases - Soul Taker, Siege Axe
+#	Rarity = Normal
+#	BaseType "Siege Axe"
+#	SetFontSize 45
+#	SetBackgroundColor 50 50 50 230 # Chance Base
+#	SetBorderColor 0 0 0 255 # Chance Base
+#Disabled Block End
+
+#-----------------#
+# League Specific #
+#-----------------#
+
+#Disabled Block Start
+#Show  # Chance Bases - League Specific - Headhunter, Leather Belt (Nemesis)
+#	Rarity = Normal
+#	BaseType "Leather Belt"
+#	SetFontSize 45
+#	SetBackgroundColor 50 50 50 230 # Chance Base
+#	SetBorderColor 0 0 0 255 # Chance Base
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Chance Bases - League Specific - Shadows and Dust, Clasped Mitts (Rampage)
+#	Rarity = Normal
+#	BaseType "Clasped Mitts"
+#	SetFontSize 45
+#	SetBackgroundColor 50 50 50 230 # Chance Base
+#	SetBorderColor 0 0 0 255 # Chance Base
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Chance Bases - League Specific - Null and Void, Legion Gloves (Rampage)
+#	Rarity = Normal
+#	BaseType "Legion Gloves"
+#	SetFontSize 45
+#	SetBackgroundColor 50 50 50 230 # Chance Base
+#	SetBorderColor 0 0 0 255 # Chance Base
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Chance Bases - League Specific - Seven-League Step, Rawhide Boots (Perandus)
+#	Rarity = Normal
+#	BaseType "Rawhide Boots"
+#	SetFontSize 45
+#	SetBackgroundColor 50 50 50 230 # Chance Base
+#	SetBorderColor 0 0 0 255 # Chance Base
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Chance Bases - League Specific - Brutus' Lead Sprinkler, Ritual Sceptre (Torment)
+#	Rarity = Normal
+#	BaseType "Ritual Sceptre"
+#	SetFontSize 45
+#	SetBackgroundColor 50 50 50 230 # Chance Base
+#	SetBorderColor 0 0 0 255 # Chance Base
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Chance Bases - League Specific - The Gull, Raven Mask (Domination)
+#	Rarity = Normal
+#	BaseType "Raven Mask"
+#	SetFontSize 45
+#	SetBackgroundColor 50 50 50 230 # Chance Base
+#	SetBorderColor 0 0 0 255 # Chance Base
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Chance Bases - League Specific - Voll's Devotion, Agate Amulet (Anarchy/Onslaught)
+#	Rarity = Normal
+#	BaseType "Agate Amulet"
+#	SetFontSize 45
+#	SetBackgroundColor 50 50 50 230 # Chance Base
+#	SetBorderColor 0 0 0 255 # Chance Base
+#Disabled Block End
 
 ##########################################
 ################# FLASKS #################
@@ -2510,17 +2371,17 @@ Hide  # Flasks - Utility - Mapping (High)
 #---------#
 # Glassblower's Bauble Recipe
 
-Hide  # Flasks - Quality - Leveling
+Show  # Flasks - Quality - Leveling
 	Quality >= 5
 	Class Flasks
 	ItemLevel < 68
-	DisableDropSound
 
-Hide  # Flasks - Quality - Mapping (Low)
-	Quality >= 5
-	Class Flasks
-	ItemLevel < 73
-	DisableDropSound
+#Disabled Block Start
+#Show  # Flasks - Quality - Mapping (Low)
+#	Quality >= 5
+#	Class Flasks
+#	ItemLevel < 73
+#Disabled Block End
 
 #Disabled Block Start
 #Show  # Flasks - Quality - Mapping (Mid)
@@ -2592,12 +2453,10 @@ Hide  # Flasks - Normal - Leveling - Hybrid
 Hide  # Flasks - Normal - Leveling - Life
 	Class "Life Flasks"
 	ItemLevel < 68
-	DisableDropSound
 
 Hide  # Flasks - Normal - Leveling - Mana
 	Class "Mana Flasks"
 	ItemLevel < 68
-	DisableDropSound
 
 #Disabled Block Start
 #Show  # Flasks - Normal - Mapping (Low)
@@ -2654,23 +2513,22 @@ Show  # Crafting Bases - 70+ Drop Level (Mid) - 84+
 	ItemLevel >= 84
 	SetFontSize 45
 	SetTextColor 255 255 255 # Crafting Base (Mid)
-	SetBackgroundColor 50 50 50 255 # Crafting Base (Mid)
-	SetBorderColor 40 80 150 255 # Crafting Base (Mid)
+	SetBackgroundColor 60 60 60 255 # Crafting Base (Mid)
+	SetBorderColor 45 90 160 255 # Crafting Base (Mid)
 
-Hide  # Crafting Bases - 70+ Drop Level (Mid) - <84 Normal/Magic
+Show  # Crafting Bases - 70+ Drop Level (Mid) - <84 Normal/Magic
 	DropLevel >= 70
 	BaseType "Crystal Belt" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet"
 	Rarity <= Magic
 	SetFontSize 36
-	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
+	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
-	DisableDropSound
 
 Show  # Crafting Bases - 70+ Drop Level (Mid) - Rare
 	DropLevel >= 70
 	BaseType "Crystal Belt" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet"
 	SetFontSize 45
-	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
+	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
 
 Show  # Crafting Bases - 70+ Drop Level (Low) - 84+
@@ -2678,46 +2536,152 @@ Show  # Crafting Bases - 70+ Drop Level (Low) - 84+
 	BaseType "Blue Pearl Amulet" "Vanguard Belt" "Sacrificial Garb"
 	ItemLevel >= 84
 	SetTextColor 255 255 255 # Crafting Base (Mid)
-	SetBackgroundColor 50 50 50 255 # Crafting Base (Mid)
-	SetBorderColor 40 80 150 255 # Crafting Base (Mid)
+	SetBackgroundColor 60 60 60 255 # Crafting Base (Mid)
+	SetBorderColor 45 90 160 255 # Crafting Base (Mid)
 
-Hide  # Crafting Bases - 70+ Drop Level (Low) - Normal/Magic
+Show  # Crafting Bases - 70+ Drop Level (Low) - Normal/Magic
 	DropLevel >= 72
 	BaseType "Blue Pearl Amulet" "Vanguard Belt" "Sacrificial Garb"
 	Rarity <= Magic
 	SetFontSize 36
-	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
+	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
-	DisableDropSound
 
 Show  # Crafting Bases - 70+ Drop Level (Low) - Rare
 	DropLevel >= 72
 	BaseType "Blue Pearl Amulet" "Vanguard Belt" "Sacrificial Garb"
 	SetFontSize 45
-	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
+	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
 
+##########################################
+############# VENDOR RECIPES #############
+##########################################
+# Section: Vendor Recipes
+
 #------------#
-# 84+ Armour #
+# Chromatics #
 #------------#
 
-Hide  # Crafting Bases - 84+ Armour - Valuable ES Bases
-	ItemLevel >= 84
-	BaseType "Hubris Circlet" "Vaal Regalia" "Titanium Spirit Shield"
+Show
+	SocketGroup RGB
 	Rarity <= Magic
+	ShaperItem False
+	ElderItem False
 	SetFontSize 40
-	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
-	SetBorderColor 0 0 0 255 # Crafting Base (Low)
-	DisableDropSound
+	SetBackgroundColor 0 0 0 230 # Chromatic Recipe (RGB)
+	SetBorderColor 210 0 210 255 # Chromatic Recipe (RGB)
+	Continue
 
-Hide  # Crafting Bases - 84+ Armour - High Drop Level
-	ItemLevel >= 84
-	Class Gloves Boots Helmets "Body Armours" Shields
+Show  # Vendor Recipes - Chromatics (RGB) - Leveling - Normal
+	SocketGroup RGB
+	Rarity = Normal
+	ItemLevel < 68
+
+Show  # Vendor Recipes - Chromatics (RGB) - Leveling - Magic
+	SocketGroup RGB
+	Rarity = Magic
+	ItemLevel < 68
+
+Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Low) - Normal (2 Height)
+	SocketGroup RGB
+	Height <= 2
+	Rarity = Normal
+	ItemLevel < 73
+
+Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Low) - Normal (1 Width)
+	SocketGroup RGB
+	Width = 1
+	Rarity = Normal
+	ItemLevel < 73
+
+#Disabled Block Start
+#Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Low) - Normal
+#	SocketGroup RGB
+#	Rarity = Normal
+#	ItemLevel < 73
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Low) - Normal
+#	SocketGroup RGB
+#	Rarity = Normal
+#	ItemLevel < 73
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Low) - Magic
+#	SocketGroup RGB
+#	Rarity = Magic
+#	ItemLevel < 73
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Mid) - Normal
+#	SocketGroup RGB
+#	Rarity = Normal
+#	ItemLevel < 77
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Mid) - Magic
+#	SocketGroup RGB
+#	Rarity = Magic
+#	ItemLevel < 77
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Vendor Recipes - Chromatics (RGB) - Mapping (High) - Normal
+#	SocketGroup RGB
+#	Rarity = Normal
+#Disabled Block End
+
+#Disabled Block Start
+#Show  # Vendor Recipes - Chromatics (RGB) - Mapping (High) - Magic
+#	SocketGroup RGB
+#	Rarity = Magic
+#Disabled Block End
+
+#---------#
+# Chisels #
+#---------#
+
+Show
+	Class "One Hand Maces"
+	BaseType Gavel "Rock Breaker" "Stone Hammer"
+	Quality >= 10
+	Rarity <= Rare
+	SetFontSize 36
+	SetBackgroundColor 30 30 30 230 # Chisel Recipe
+	SetBorderColor 140 140 140 255 # Quality
+	Continue
+
+Show  # Vendor Recipes - Chisels - 20% Quality
+	Class "One Hand Maces"
+	BaseType Gavel "Rock Breaker" "Stone Hammer"
+	Quality >= 20
+	Rarity <= Rare
+	SetFontSize 40
+
+Show  # Vendor Recipes - Chisels - 18% Quality Magic
+	Class "One Hand Maces"
+	BaseType Gavel "Rock Breaker" "Stone Hammer"
+	Quality >= 18
 	Rarity <= Magic
-	SetFontSize 24
-	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
-	SetBorderColor 0 0 0 255 # Crafting Base (Low)
-	DisableDropSound
+
+Show  # Vendor Recipes - Chisels - 15% Quality Normal
+	Class "One Hand Maces"
+	BaseType Gavel "Rock Breaker" "Stone Hammer"
+	Quality >= 15
+	Rarity = Normal
+
+#Disabled Block Start
+#Show  # Vendor Recipes - Chisels - 10% Quality Normal
+#	Class "One Hand Maces"
+#	BaseType Gavel "Rock Breaker" "Stone Hammer"
+#	Quality >= 10
+#	Rarity = Normal
+#Disabled Block End
 
 ##########################################
 ############# ANIMATE WEAPONS ############
@@ -2854,6 +2818,14 @@ Hide
 	SetBorderColor 0 0 0 230 # Default
 	Continue
 
+Hide
+	Rarity <= Magic
+	ItemLevel >= 84
+	SetFontSize 24
+	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
+	SetBorderColor 0 0 0 255 # Crafting Base (Low)
+	Continue
+
 #------#
 # Rare #
 #------#
@@ -2884,7 +2856,7 @@ Show
 	Rarity = Rare
 	ItemLevel >= 60
 	Class "One Hand" Daggers "Rune Dagger" Wands Claws Sceptres Quivers
-	BaseType "Siege Axe" "Vaal Hatchet" "Infernal Axe" "Runic Hatchet" "Legion Hammer" "Nightmare Mace" "Behemoth Mace" "Corsair Sword" "Spiraled Foil" "Eternal Sword" "Jewelled Foil" "Dragoon Sword" Ambusher "Platinum Kris" "Imperial Skean" Sai "Imbued Wand" "Opal Wand" "Tornado Wand" "Profane Wand" "Convoking Wand" "Hellion's Paw" "Imperial Claw" "Terror Claw" "Gemini Claw" "Karui Sceptre" "Vaal Sceptre" "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Ornate Quiver" "Penetrating Arrow Quiver"
+	BaseType "Siege Axe" "Vaal Hatchet" "Infernal Axe" "Runic Hatchet" "Legion Hammer" "Nightmare Mace" "Behemoth Mace" "Corsair Sword" "Spiraled Foil" "Eternal Sword" "Jewelled Foil" "Dragoon Sword" Ambusher "Platinum Kris" "Imperial Skean" Sai "Imbued Wand" "Opal Wand" "Tornado Wand" "Profane Wand" "Convoking Wand" "Hellion's Paw" "Imperial Claw" "Terror Claw" "Gemini Claw" "Karui Sceptre" "Vaal Sceptre"  "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver" "Ornate Quiver" "Penetrating Arrow Quiver" "Two-Point Arrow Quiver"
 	SetBackgroundColor 40 35 8 231 # Rare Weapon 60+ (High)
 	SetBorderColor 100 65 25 255 # Rare Weapon 60+ (High)
 	Continue
@@ -3020,6 +2992,31 @@ Hide  # 60+ Rares - Low Drop Level - 60+ Two Hand Weapons
 	ItemLevel >= 60
 	DisableDropSound
 
+#---------------------------#
+# 68+ Rare (Low Drop Level) #
+#---------------------------#
+
+Hide  # 60+ Rares - Low Drop Level - 68+ Gloves Boots Helmets
+	Class Gloves Boots Helmets
+	Rarity = Rare
+	DropLevel < 50
+	ItemLevel >= 68
+	DisableDropSound
+
+Hide  # 60+ Rares - Low Drop Level - 68+ Body Armour
+	Class "Body Armours"
+	Rarity = Rare
+	DropLevel < 60
+	ItemLevel >= 68
+	DisableDropSound
+
+Hide  # 60+ Rares - Low Drop Level - 68+ One Hand Weapons Shields
+	Class "One Hand" Daggers "Rune Dagger" Wands Claws Sceptres Shields "Two Hand" Bows Staves Warstaves
+	Rarity = Rare
+	DropLevel < 56
+	ItemLevel >= 68
+	DisableDropSound
+
 ##########################################
 ############# NORMAL / MAGIC #############
 ##########################################
@@ -3050,7 +3047,7 @@ Hide  # Normal/Magic - Leveling - Accessories - < 10
 	Class Rings Amulets Belts
 	Rarity <= Magic
 	SetFontSize 40
-	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
+	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
 	DisableDropSound
 
@@ -3059,7 +3056,7 @@ Hide  # Normal/Magic - Leveling - Accessories - < 16
 	DropLevel >= 5
 	Class Rings Amulets Belts
 	Rarity <= Magic
-	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
+	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
 	SetFontSize 40
 	DisableDropSound
@@ -3228,18 +3225,16 @@ Show
 	SetBorderColor 220 0 0 255 # Breach Ring
 	Continue
 
-Show  # League Specific - Breach Rings - Leveling
+Hide  # League Specific - Breach Rings - Leveling
 	Class Rings
 	BaseType "Breach Ring"
 	ItemLevel < 68
 	SetFontSize 40
 
-#Disabled Block Start
-#Show  # League Specific - Breach Rings - Mapping (Low)
-#	Class Rings
-#	BaseType "Breach Ring"
-#	ItemLevel < 73
-#Disabled Block End
+Hide  # League Specific - Breach Rings - Mapping (Low)
+	Class Rings
+	BaseType "Breach Ring"
+	ItemLevel < 73
 
 #Disabled Block Start
 #Show  # League Specific - Breach Rings - Mapping (Mid)
@@ -3625,7 +3620,7 @@ Show  # Rares - Accessories - 60+
 #Disabled Block Start
 #Show  # Highlighted Rares - Quivers - 60+
 #	Class Quivers
-#	BaseType "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver"
+#	BaseType "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver" "Ornate Quiver" "Penetrating Arrow Quiver" "Two-Point Arrow Quiver"
 #	ItemLevel >= 60
 #	SetBorderColor 170 125 50 255 # Rare Weapon 60+ (Highlighted)
 #Disabled Block End
@@ -3732,7 +3727,7 @@ Show  # Rares - Accessories - 60+
 # 60+ Armour #
 #------------#
 
-Hide  # 60+ Rares - Armour
+Show  # 60+ Rares - Armour
 	Class Gloves Boots Helmets "Body Armours"
 	ItemLevel >= 60
 
@@ -3740,7 +3735,7 @@ Hide  # 60+ Rares - Armour
 # 60+ Two Hand Weapons #
 #----------------------#
 
-Hide  # 60+ Rares - Two Hand Weapons
+Show  # 60+ Rares - Two Hand Weapons
 	Class "Two Hand" Bows Staves Warstaves
 	ItemLevel >= 60
 
@@ -3749,7 +3744,7 @@ Hide  # 60+ Rares - Two Hand Weapons
 #----------------------#
 # Can be used in the Chaos/Regal recipes but they're colored differently because they take twice as many items.
 
-Hide  # 60+ Rares - One Hand Weapons
+Show  # 60+ Rares - One Hand Weapons
 	Class "One Hand" Daggers "Rune Dagger" Wands Claws Sceptres
 	ItemLevel >= 60
 
@@ -3757,7 +3752,7 @@ Hide  # 60+ Rares - One Hand Weapons
 # 60+ Shields #
 #-------------#
 
-Hide  # 60+ Rares - Shields
+Show  # 60+ Rares - Shields
 	Class Shields
 	ItemLevel >= 60
 
@@ -3765,9 +3760,9 @@ Hide  # 60+ Rares - Shields
 # 60+ Quivers #
 #-------------#
 
-Hide  # 60+ Rares - Quivers - Valuable
+Show  # 60+ Rares - Quivers - Valuable
 	Class Quivers
-	BaseType "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver"
+	BaseType "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver" "Ornate Quiver" "Penetrating Arrow Quiver" "Two-Point Arrow Quiver"
 	ItemLevel >= 60
 
 Hide  # 60+ Rares - Quivers - Other
@@ -3853,7 +3848,6 @@ Hide  # < 60 Rares - Weapons - 4 Link
 	LinkedSockets = 4
 	ItemLevel < 60
 	SetFontSize 40
-	SetTextColor 255 190 75 # Rare Weapon
 	SetBorderColor 40 80 150 255 # 3-4 Link
 	DisableDropSound
 
@@ -3861,7 +3855,6 @@ Hide  # < 60 Rares - Weapons - 3 Link
 	LinkedSockets = 3
 	ItemLevel < 20
 	SetFontSize 40
-	SetTextColor 255 190 75 # Rare Weapon
 	SetBorderColor 40 80 150 255 # 3-4 Link
 	DisableDropSound
 

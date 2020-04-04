@@ -22,6 +22,7 @@ namespace PoE_Price_Lister
 	{
 		LEVELING,
 		MAPPING,
+		SEMI_STRICT,
 		STRICT,
 		VERY_STRICT
 	}

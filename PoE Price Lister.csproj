@@ -124,8 +124,9 @@
     <None Include="Resources\Filters\L4_Very_Strict_Highwind.filter" />
     <None Include="Resources\Filters\S1_Regular_Highwind.filter" />
     <None Include="Resources\Filters\S2_Mapping_Highwind.filter" />
-    <None Include="Resources\Filters\S3_Strict_Highwind.filter" />
-    <None Include="Resources\Filters\S4_Very_Strict_Highwind.filter" />
+    <None Include="Resources\Filters\S3_SemiStrict_Highwind.filter" />
+    <None Include="Resources\Filters\S4_Strict_Highwind.filter" />
+    <None Include="Resources\Filters\S5_Very_Strict_Highwind.filter" />
     <None Include="Resources\Filters\theme validator.ahk" />
     <None Include="Resources\Themes\default.filtertheme" />
     <None Include="Resources\Themes\greengroove.filtertheme" />
@@ -163,7 +164,6 @@
     <Content Include="FodyWeavers.xml" />
     <Content Include="Resources\changelog_archive.txt" />
     <Content Include="Resources\filterblast_config.txt" />
-    <Content Include="Resources\Filters\TextFile1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Fody.3.2.2\build\Fody.targets" Condition="Exists('packages\Fody.3.2.2\build\Fody.targets')" />

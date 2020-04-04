@@ -76,9 +76,9 @@ namespace PoE_Price_Lister
 		{
 			//if (val < 0.4f)
 			//	return Worthless;
-			if (val <= 0.80f)
+			if (val <= 1.05f)
 				return NearlyWorthless;
-			else if (val < 2.1f)
+			else if (val < 2.3f)
 				return ChaosLess2;
 			else if (val < 9.5f)
 				return Chaos2to10;

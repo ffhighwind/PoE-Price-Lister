@@ -27,6 +27,7 @@ namespace PoE_Price_Lister
 {
 	public class FilterWriter
 	{
+		#region Uniques
 		private const string uniqueWarning =
 @"# Ordered most expensive first to prevent future name conflicts!
 # Prices attained from poe.ninja.
@@ -172,7 +173,9 @@ Show  # Uniques - <3c - Unique Rings
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 230 # Unique
 	SetBorderColor 180 90 45 255 # Unique";
+		#endregion Uniques
 
+		#region Divination
 		private const string styleDiv10c =
 @"	SetFontSize 45
 	SetTextColor 255 0 175 # Divination Card (10c+)
@@ -195,23 +198,21 @@ Show  # Uniques - <3c - Unique Rings
 @"	SetFontSize 40 
 	SetTextColor 0 0 0 # Divination Card (<2c)
 	SetBackgroundColor 255 0 175 230 # Divination Card (<2c)
-	SetBorderColor 150 30 100 255 # Divination Card (<2c)
-	PlayAlertSound 5 100 # Divination Card (<2c)
-	MinimapIcon 0 Pink Square 
-	PlayEffect Pink";
+	SetBorderColor 150 30 100 255 # Divination Card (<2c)";
 
 		private const string styleDivLess2cHide =
-@"	SetFontSize 40 
+@"	SetFontSize 36
 	SetTextColor 0 0 0 # Divination Card (<2c)
 	SetBackgroundColor 255 0 175 230 # Divination Card (<2c)
-	SetBorderColor 150 30 100 255 # Divination Card (<2c)";
+	SetBorderColor 150 30 100 255 # Divination Card (<2c)
+	DisableDropSound";
 
 		private const string styleDivNearlyWorthless =
 @"	SetFontSize 36 
 	SetTextColor 0 0 0 # Divination Card (Low)
 	SetBackgroundColor 255 0 175 170 # Divination Card (Low)
 	SetBorderColor 0 0 0 255 # Divination Card (Low)
-	PlayAlertSound 5 0 # Divination Card (Low)";
+	DisableDropSound";
 
 		private const string styleDivWorthless =
 @"	SetFontSize 32
@@ -230,6 +231,7 @@ Show  # Uniques - <3c - Unique Rings
 	PlayAlertSound 5 200 # Divination Card (2c+)
 	MinimapIcon 0 Pink Square
 	PlayEffect Pink";
+		#endregion Divination
 
 		private readonly DataModel Model;
 		private readonly IReadOnlyList<string> DivinationCards;
@@ -487,36 +489,40 @@ Show  # Uniques - <3c - Unique Rings
 			}
 			sb.AppendLine();
 
+			// Conflicts
 			if (list2to10cConflict.Count > 0)
 				sb.AppendLine("Show  # Divination Cards - 2-10c (Conflicts)").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(list2to10cConflict)).AppendLine(styleDiv2c).AppendLine();
 			if (listLess2cConflict.Count > 0) {
-				string showHide = type == FilterType.VERY_STRICT ? "Hide" : "Show";
-				string style = type == FilterType.VERY_STRICT ? styleDivLess2cHide : styleDivLess2cShow;
+				bool shown = DivinationCard.IsShown(type, DivinationValueEnum.ChaosLess2);
+				string showHide = shown ? "Hide" : "Show";
+				string style = shown ? styleDivLess2cHide : styleDivLess2cShow;
 				sb.AppendLine(showHide + "  # Divination Cards - <2c (Conflicts)").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(listLess2cConflict)).AppendLine(style).AppendLine();
 			}
 			if (listNearlyWorthlessConflict.Count > 0) {
-				string showHide = (type == FilterType.STRICT || type == FilterType.VERY_STRICT) ? "Hide" : "Show";
+				string showHide = DivinationCard.IsShown(type, DivinationValueEnum.NearlyWorthless) ? "Hide" : "Show";
 				sb.AppendLine(showHide + "  # Divination Cards - Nearly Worthless (Conflicts)").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(listNearlyWorthlessConflict)).AppendLine(styleDivNearlyWorthless).AppendLine();
 			}
 			if (listWorthlessConflict.Count > 0) {
-				string showHide = type == FilterType.LEVELING ? "Show" : "Hide";
+				string showHide = DivinationCard.IsShown(type, DivinationValueEnum.Worthless) ? "Show" : "Hide";
 				sb.AppendLine(showHide + "  # Divination Cards - Worthless (Conflicts)").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(listWorthlessConflict)).AppendLine(styleDivWorthless).AppendLine();
 			}
+			
 			if (list10c.Count > 0)
 				sb.AppendLine("Show  # Divination Cards - 10c+").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(list10c)).AppendLine(styleDiv10c).AppendLine();
 			if (list2to10c.Count > 0)
 				sb.AppendLine("Show  # Divination Cards - 2-10c").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(list2to10c)).AppendLine(styleDiv2c).AppendLine();
 			if (listLess2c.Count > 0) {
-				string showHide = type == FilterType.VERY_STRICT ? "Hide" : "Show";
-				string style = type == FilterType.VERY_STRICT ? styleDivLess2cHide : styleDivLess2cShow;
+				bool shown = DivinationCard.IsShown(type, DivinationValueEnum.ChaosLess2);
+				string showHide = shown ? "Hide" : "Show";
+				string style = shown ? styleDivLess2cHide : styleDivLess2cShow;
 				sb.AppendLine(showHide + "  # Divination Cards - <2c").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(listLess2c)).AppendLine(style).AppendLine();
 			}
 			if (listNearlyWorthless.Count > 0) {
-				string showHide = (type == FilterType.STRICT || type == FilterType.VERY_STRICT) ? "Hide" : "Show";
+				string showHide = DivinationCard.IsShown(type, DivinationValueEnum.NearlyWorthless) ? "Hide" : "Show";
 				sb.AppendLine(showHide + "  # Divination Cards - Nearly Worthless").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(listNearlyWorthless)).AppendLine(styleDivNearlyWorthless).AppendLine();
 			}
 			if (listWorthless.Count > 0) {
-				string showHide = type == FilterType.LEVELING ? "Show" : "Hide";
+				string showHide = DivinationCard.IsShown(type, DivinationValueEnum.Worthless) ? "Show" : "Hide";
 				sb.AppendLine(showHide + "  # Divination Cards - Worthless").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(listWorthless)).AppendLine(styleDivWorthless).AppendLine();
 			}
 			sb.AppendLine(divNewOrWorthless);
@@ -579,8 +585,8 @@ Show  # Uniques - <3c - Unique Rings
 			string enchStyle10 =
 @"	SetFontSize 40
 	SetTextColor 255 255 255 # Crafting Base (Mid)
-	SetBackgroundColor 50 50 50 255 # Crafting Base (Mid)
-	SetBorderColor 40 80 150 255 # Crafting Base (Mid)
+	SetBackgroundColor 60 60 60 255 # Crafting Base (Mid)
+	SetBorderColor 45 90 160 255 # Crafting Base (Mid)
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Blue UpsideDownHouse
 	PlayEffect Blue";
@@ -600,8 +606,8 @@ Show  # Uniques - <3c - Unique Rings
 	Rarity <= Rare
 	SetFontSize 40
 	SetTextColor 255 255 255 # Crafting Base (Mid)
-	SetBackgroundColor 50 50 50 255 # Crafting Base (Mid)
-	SetBorderColor 40 80 150 255 # Crafting Base (Mid)
+	SetBackgroundColor 60 60 60 255 # Crafting Base (Mid)
+	SetBorderColor 45 90 160 255 # Crafting Base (Mid)
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Blue UpsideDownHouse
 	PlayEffect Blue
@@ -612,7 +618,7 @@ Show  # Enchantments - Helmets Boots
 	Rarity <= Rare
 	Sockets < 6
 	SetFontSize 36
-	SetBackgroundColor 40 40 40 230 # Crafting Base (Low)
+	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)");
 			return sb.ToString();
 		}

@@ -1,5 +1,5 @@
 ﻿﻿############################################
-##      HIGHWIND'S LOOT FILTER 3.10.6     ##
+##  HIGHWIND'S VERY STRICT FILTER 3.10.6  ##
 ############################################
 ## Release Date: March 31, 2020           ##
 ############################################
@@ -161,55 +161,72 @@ Show
 	SetFontSize 36
 	Continue
 
-Show  # Currency - Worthless - Very Low
+Hide  # Currency - Worthless - Very Low
 	Class "Stackable Currency"
 	BaseType "Scroll Fragment" "Transmutation Shard" "Alteration Shard"
 	SetFontSize 24
 	DisableDropSound
 
-Show  # Currency - Worthless - Low
+Hide  # Currency - Worthless - Low
 	Class "Stackable Currency"
 	BaseType "Scroll of Wisdom"
-	SetFontSize 40
 	DisableDropSound
 
-Show  # Currency - Worthless - Mid
+Hide  # Currency - Worthless - Mid
 	Class "Stackable Currency"
 	BaseType "Portal Scroll" "Armourer's Scrap"
 	SetFontSize 40
+	DisableDropSound
 
-Show  # Currency - Worthless - High
+Hide  # Currency - Worthless - High
 	Class "Stackable Currency"
 	BaseType "Orb of Transmutation" "Blacksmith's Whetstone" "Orb of Augmentation"
 	SetFontSize 40
+	DisableDropSound
 
 # 0.05c
-Show  # Currency - Worthless - Shards (1)
+Hide  # Currency - Worthless - Shards (1)
 	Class "Stackable Currency"
 	BaseType "Chaos Shard" "Regal Shard" "Alchemy Shard"
 	StackSize = 1
+	DisableDropSound
 
 #-----------------------------#
 # Worthless (League Specific) #
 #-----------------------------#
 
-Show  # League Specific - Essence - Essences (Worthless)
+Hide  # League Specific - Essence - Essences (Worthless)
 	Class "Stackable Currency"
 	BaseType "Whispering Essence" "Muttering Essence"
+	DisableDropSound
 
-Show  # League Specific - Harbinger - Worthless - Shards (1)
+Hide  # League Specific - Harbinger - Worthless - Shards (1)
 	Class "Stackable Currency"
 	BaseType "Binding Shard" "Horizon Shard"
 	StackSize = 1
+	DisableDropSound
 
-Show  # League Specific - Harbinger - Worthless - Shards (<5)
+Hide  # League Specific - Harbinger - Worthless - Shards (<5)
 	Class "Stackable Currency"
 	BaseType "Engineer's Shard"
 	StackSize < 5
+	DisableDropSound
 
-Show  # League Specific - Bestiary - Nets (Worthless)
+Hide  # League Specific - Bestiary - Nets (Worthless)
 	Class "Stackable Currency"
 	BaseType "Simple Rope Net" "Reinforced Rope Net" "Strong Rope Net" "Simple Iron Net" "Reinforced Iron Net" "Strong Iron Net" "Simple Steel Net"
+	SetFontSize 40
+	DisableDropSound
+
+Hide  # Currency - < 0.15c
+	Class "Stackable Currency"
+	BaseType "Chromatic Orb" "Jeweller's Orb" "Orb of Chance"
+	SetFontSize 40
+	DisableDropSound
+
+Show  # Currency - < 0.25c
+	Class "Stackable Currency"
+	BaseType "Silver Coin" "Glassblower's Bauble"
 	SetFontSize 40
 
 #----------------------------#
@@ -225,9 +242,9 @@ Show
 	SetFontSize 36
 	Continue
 
-Hide  # League Specific - Perandus - Coin (1)
+Hide  # League Specific - Perandus - Coin (<3)
 	Class "Stackable Currency"
-	StackSize = 1
+	StackSize < 3
 	BaseType "Perandus Coin"
 	DisableDropSound
 
@@ -242,17 +259,20 @@ Show  # League Specific - Perandus - Coins (6+)
 	SetFontSize 40
 	PlayEffect Yellow Temp
 
-Show  # League Specific - Essence - Essences (Very Low)
+Hide  # League Specific - Essence - Essences (Very Low)
 	Class "Stackable Currency"
 	BaseType "Wailing Essence" "Weeping Essence"
+	DisableDropSound
 
-Show  # League Specific - Harbinger - Very Low - Stack (2+)
+Hide  # League Specific - Harbinger - Very Low - Stack (2+)
 	Class "Stackable Currency"
 	BaseType "Binding Shard" "Horizon Shard"
+	DisableDropSound
 
-Show  # League Specific - Harbinger - Very Low - Engineer's Shard (6+)
+Hide  # League Specific - Harbinger - Very Low - Engineer's Shard (6+)
 	Class "Stackable Currency"
 	BaseType "Engineer's Shard"
+	DisableDropSound
 
 #-----#
 # Low #
@@ -267,13 +287,9 @@ Show
 	SetBorderColor 0 0 0 0 # Currency (Low)
 	Continue
 
-Show  # Currency - < 0.15c
-	Class "Stackable Currency"
-	BaseType "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb" "Orb of Chance"
-
-Show  # Currency - < 0.25c
-	Class "Stackable Currency"
-	BaseType "Silver Coin" "Glassblower's Bauble"
+Show  # Currency - Mid - <0.5c
+	Class Currency
+	BaseType "Orb of Alteration" "Orb of Fusing" "Orb of Alchemy" "Cartographer's Chisel" "Blessed Orb" "Orb of Scouring"
 
 #-----------------#
 # Low (Splinters) #
@@ -332,7 +348,7 @@ Show  # League Specific - Blight - Blight Oils (Low)
 	Class "Stackable Currency"
 	BaseType "Clear Oil" "Sepia Oil" "Amber Oil" "Verdant Oil" 
 
-Show  # League Specific - Delve - Fossils (Low)
+Hide  # League Specific - Delve - Fossils (Low)
 	Class "Stackable Currency"
 	BaseType "Aberrant Fossil" "Frigid Fossil" "Metallic Fossil" "Scorched Fossil"
 	MinimapIcon -1
@@ -372,10 +388,6 @@ Show
 	MinimapIcon 1 Yellow Circle
 	PlayEffect Yellow
 	Continue
-
-Show  # Currency - Mid - <0.5c
-	Class Currency
-	BaseType "Orb of Fusing" "Orb of Alchemy" "Cartographer's Chisel" "Blessed Orb" "Orb of Scouring"
 
 Show  # Currency - Mid - <3c
 	Class Currency
@@ -525,7 +537,7 @@ Show  # Currency - Prophecies - Mid
 	MinimapIcon 0 Red Triangle
 	PlayEffect Red
 
-Show  # Currency - Prophecies - Very Low
+Hide  # Currency - Prophecies - Very Low
 	Class Currency
 	BaseType "Prophecy"
 	Prophecy "Resistant to Change" "Touched by the Wind" "Smothering Tendrils" "Vital Transformation" "Lasting Impressions" "The Invader" "Lightning Falls" "Hidden Reinforcements" "Fallow At Last" "The Hungering Swarm" "Crushing Squall" "Fire from the Sky" "The Brothers of Necromancy" "Gilded Within" "Risen Blood" "In the Grasp of Corruption" "Vaal Invasion" "Unnatural Energy" "Undead Uprising" "The Undead Storm" "The Mysterious Gift" "The God of Misfortune"
@@ -533,6 +545,7 @@ Show  # Currency - Prophecies - Very Low
 	SetTextColor 255 0 255 # Prophecy
 	SetBackgroundColor 20 0 20 230 # Prophecy
 	SetBorderColor 0 255 0 255 # Prophecy
+	DisableDropSound
 
 Show  # Currency - Prophecies - Low
 	Class Currency
@@ -806,11 +819,11 @@ Show  # Maps - T6+ (Yellow) - Blighted
 	MinimapIcon 0 Green Hexagon
 	PlayEffect Green
 
-Show  # Maps - T6+ (Yellow) - Silent - T6-7 in T13+
+Show  # Maps - T6+ (Yellow) - Silent - T6-8 in T12+
 	Class Maps
-	MapTier <= 7
+	MapTier <= 8
 	MapTier >= 6
-	ItemLevel >= 80
+	ItemLevel >= 79
 	SetFontSize 45
 	DisableDropSound
 
@@ -845,10 +858,10 @@ Show  # Maps - T1+ (White) - Blighted
 	MinimapIcon 0 Green Hexagon
 	PlayEffect Green
 
-Show  # Maps - T1+ (White) - Silent - T1-5 in T11+
+Show  # Maps - T1+ (White) - Silent - T1-5 in T9+
 	Class Maps
 	MapTier <= 5
-	ItemLevel >= 78
+	ItemLevel >= 76
 	DisableDropSound
 
 Show  # Maps - T1+ (White) - Silent - T1-3 in T6+
@@ -1017,9 +1030,6 @@ Show  # Gems - Quality - 14%+
 	SetTextColor 55 225 185 # Gem Quality (Mid)
 	SetBackgroundColor 50 50 50 230 # Gem Quality (Mid)
 	SetBorderColor 200 200 200 255 # Gem Quality (Mid)
-	PlayAlertSound 6 200 # Gem
-	MinimapIcon 0 Cyan Star
-	PlayEffect Cyan
 
 Show  # Gems - Drop Only - 5c+
 	Class "Skill Gems"
@@ -1036,7 +1046,7 @@ Show  # Gems - Drop Only - 5c+
 # Low #
 #-----#
 
-Show  # Gems - Drop Only - 1c+
+Hide  # Gems - Drop Only - 1c+
 	Class "Skill Gems"
 	BaseType "Vaal Haste" "Vaal Discipline"
 	SetFontSize 40
@@ -1053,36 +1063,40 @@ Show  # Gems - Quality - 10%+
 	SetBackgroundColor 8 30 25 230 # Gem Quality (Low)
 	SetBorderColor 130 130 130 255 # Gem Quality (Low)
 
-Show  # Gems - Quality - 5%+
+Hide  # Gems - Quality - 5%+
 	Quality >= 5
 	Class "Skill Gems"
 	SetFontSize 36
 	SetTextColor 27 162 155 # Gem Quality (Low)
 	SetBackgroundColor 8 30 25 230 # Gem Quality (Low)
 	SetBorderColor 130 130 130 255 # Gem Quality (Low)
+	DisableDropSound
 
-Show  # Gems - Quality - 1%+
+Hide  # Gems - Quality - 1%+
 	Quality > 0
 	Class "Skill Gems"
 	SetFontSize 36
 	SetTextColor 27 162 155 # Gem Quality (Low)
 	SetBackgroundColor 8 30 25 230 # Gem Quality (Low)
 	SetBorderColor 130 130 130 255 # Gem Quality (Low)
+	DisableDropSound
 
-Show  # Gems - Drop Only - Worthless
+Hide  # Gems - Drop Only - Worthless
 	Class "Skill Gems"
 	BaseType Vaal Enhance
 	SetFontSize 36
 	SetTextColor 27 162 155 # Gem (Low)
 	SetBackgroundColor 8 30 25 230 # Gem (Low)
 	SetBorderColor 0 150 150 255 # Gem (Low)
+	DisableDropSound
 
-Show  # Gems - Other
+Hide  # Gems - Other
 	Class "Skill Gems"
 	SetFontSize 36
 	SetTextColor 27 162 155 # Gem (Worthless)
 	SetBackgroundColor 0 0 0 200 # Gem (Worthless)
 	SetBorderColor 0 0 0 0 # Gem (Worthless)
+	DisableDropSound
 
 ##########################################
 ############ DIVINATION CARDS ############
@@ -1105,16 +1119,14 @@ Show  # Gems - Other
 # "The Master" "The Master Artisan"
 # "The Wolf" "The Wolf's Shadow" "The Wolf's Legacy"
 
-Show  # Divination Cards - <2c (Conflicts)
+Hide  # Divination Cards - <2c (Conflicts)
 	Class Divination
 	BaseType "The Demoness" "The Wolf's Legacy" "The Wolf's Shadow"
 	SetFontSize 45 
 	SetTextColor 0 0 0 # Divination Card (<2c)
 	SetBackgroundColor 255 0 175 230 # Divination Card (<2c)
 	SetBorderColor 150 30 100 255 # Divination Card (<2c)
-	PlayAlertSound 5 100 # Divination Card (<2c)
-	MinimapIcon 0 Pink Square 
-	PlayEffect Pink
+	DisableDropSound
 
 Show  # Divination Cards - 10c+
 	Class Divination
@@ -1138,18 +1150,16 @@ Show  # Divination Cards - 2-10c
 	MinimapIcon 0 Pink Square 
 	PlayEffect Pink
 
-Show  # Divination Cards - <2c
+Hide  # Divination Cards - <2c
 	Class Divination
 	BaseType "A Mother's Parting Gift" "Akil's Prophecy" "Alone in the Darkness" "Anarchy's Price" "Assassin's Favour" "Atziri's Arsenal" Audacity "Baited Expectations" "Blind Venture" "Boundless Realms" "Call to the First Ones" "Coveted Possession" "Dark Temptation" Death "Deathly Designs" "Dialla's Subjugation" "Doedre's Madness" "Emperor's Luck" "Forbidden Power" Friendship "Gemcutter's Promise" "Gift of the Gemling Queen" "Glimmer of Hope" "Grave Knowledge" "Harmony of Souls" Hope Hubris Humility "Hunter's Resolve" "Imperial Legacy" "Jack in the Box" "Last Hope" "Left to Fate" "Light and Truth" "Lingering Remnants" "Lost Worlds" "Lysah's Respite" "Merciless Armament" "Might is Right" Mitts Monochrome "More is Never Enough" "Rain Tempter" Rats "Sambodhi's Vow" "Scholar of the Seas" "The Admirer" "The Aesthete" "The Archmage's Right Hand" "The Arena Champion" "The Army of Blood" "The Avenger" "The Battle Born" "The Beast" "The Blazing Fire" "The Body" "The Bones" "The Brittle Emperor" "The Cacophony" "The Calling" "The Cataclysm" "The Catalyst" "The Coming Storm" "The Conduit" "The Dark Mage" "The Darkest Dream" "The Deal" "The Deceiver" "The Deep Ones" "The Dragon" "The Dreamland" "The Drunken Aristocrat" "The Endurance" "The Explorer" "The Eye of the Dragon" "The Fathomless Depths" "The Feast" "The Fletcher" "The Flora's Gift" "The Formless Sea" "The Forsaken" "The Fox" "The Garish Power" "The Gentleman" "The Gladiator" "The Golden Era" "The Harvester" "The Hunger" "The Incantation" "The Insatiable" "The Jester" "The Jeweller's Boon" "The Journey" "The King's Blade" "The Lich" "The Lion" "The Lunaris Priestess" "The Mad King" "The Master" "The Master Artisan" "The Mercenary" "The Messenger" "The Oath" "The Obscured" "The One With All" "The Opulent" "The Pack Leader" "The Pact" "The Penitent" "The Poet" "The Price of Protection" "The Primordial" "The Rite of Elements" "The Road to Power" "The Ruthless Ceinture" "The Scavenger" "The Seeker" "The Side Quest" "The Sigil" "The Siren" "The Skeleton" "The Spoiled Prince" "The Standoff" "The Stormcaller" "The Summoner" "The Sun" "The Surveyor" "The Sword King's Salute" "The Thaumaturgist" "The Throne" "The Tinkerer's Table" "The Tower" "The Traitor" "The Trial" "The Twilight Moon" "The Twins" "The Tyrant" "The Union" "The Valley of Steel Boxes" "The Visionary" "The Watcher" "The Web" "The Wilted Rose" "The Wind" "The Witch" "The Wolverine" "The Wretched" "Thirst for Knowledge" "Three Faces in the Dark" "Three Voices" "Time-Lost Relic" Tranquillity "Treasure Hunter" Vanity "Vile Power" "Volatile Power"
 	SetFontSize 45 
 	SetTextColor 0 0 0 # Divination Card (<2c)
 	SetBackgroundColor 255 0 175 230 # Divination Card (<2c)
 	SetBorderColor 150 30 100 255 # Divination Card (<2c)
-	PlayAlertSound 5 100 # Divination Card (<2c)
-	MinimapIcon 0 Pink Square 
-	PlayEffect Pink
+	DisableDropSound
 
-Show  # Divination Cards - Nearly Worthless
+Hide  # Divination Cards - Nearly Worthless
 	Class Divination
 	BaseType "Boon of Justice" "Cartographer's Delight" "Destined to Crumble" "Her Mask" Loyalty "Rain of Chaos" "Shard of Fate" "The Doppelganger" "The Gambler" "The Gemcutter" "The Hermit" "The Lord in Black" "The Mountain" "The Puzzle" "The Scarred Meadow" "The Scholar" "The Survivalist"
 	SetFontSize 40 
@@ -1158,7 +1168,7 @@ Show  # Divination Cards - Nearly Worthless
 	SetBorderColor 0 0 0 255 # Divination Card (Low)
 	PlayAlertSound 5 0 # Divination Card (Low)
 
-Show  # Divination Cards - Worthless
+Hide  # Divination Cards - Worthless
 	Class Divination
 	BaseType "Lantador's Lost Love" Prosperity "Struck by Lightning" "The Carrion Crow" "The Inoculated" "The Lover" "The Metalsmith's Gift" "The Rabid Rhoa" "The Surgeon" "The Warden" "Thunderous Skies" "Turn the Other Cheek"
 	SetFontSize 36
@@ -1289,38 +1299,46 @@ Show
 	SetTextColor 255 0 0 # 5+ Link
 	SetBackgroundColor 0 0 0 230 # 5+ Link
 	SetBorderColor 255 0 0 255 # 5+ Link
-	MinimapIcon 1 Yellow UpsideDownHouse
-	PlayAlertSound 4 200 # Mid Value
-	PlayEffect Red
+	MinimapIcon -1
+	PlayAlertSound 4 0
+	PlayEffect None
 	Continue
 
-Show  # 5+ Links - Leveling
-	LinkedSockets = 5
-	ItemLevel < 68
-	SetFontSize 45
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 1 Yellow UpsideDownHouse
-	PlayEffect Red
+#Disabled Block Start
+#Show  # 5+ Links - Leveling
+#	LinkedSockets = 5
+#	ItemLevel < 68
+#	SetFontSize 45
+#	PlayAlertSound 4 200 # Mid Value
+#	MinimapIcon 1 Yellow UpsideDownHouse
+#	PlayEffect Red
+#Disabled Block End
 
-Show  # 5+ Links - Body Armour
-	LinkedSockets = 5
-	AnyEnchantment False
-	Class "Body Armour"
+#Disabled Block Start
+#Show  # 5+ Links - Body Armour
+#	LinkedSockets = 5
+#	AnyEnchantment False
+#	Class "Body Armour"
+#Disabled Block End
 
 # Not Warstaves
-Show  # 5+ Links - 5 Skill Staves (77+)
-	LinkedSockets = 5
-	AnyEnchantment False
-	Class Staves
-	ItemLevel >= 77
+#Disabled Block Start
+#Show  # 5+ Links - 5 Skill Staves (77+)
+#	LinkedSockets = 5
+#	AnyEnchantment False
+#	Class Staves
+#	ItemLevel >= 77
+#Disabled Block End
 
-Show  # 5+ Links - 4 Skill Staves (55+)
-	LinkedSockets = 5
-	AnyEnchantment False
-	Class Staves
-	ItemLevel >= 55
+#Disabled Block Start
+#Show  # 5+ Links - 4 Skill Staves (55+)
+#	LinkedSockets = 5
+#	AnyEnchantment False
+#	Class Staves
+#	ItemLevel >= 55
+#Disabled Block End
 
-Show  # 5+ Links - Low Value - Normal/Magic
+Hide  # 5+ Links - Low Value - Normal/Magic
 	LinkedSockets = 5
 	Rarity <= Magic
 	AnyEnchantment False
@@ -1328,14 +1346,17 @@ Show  # 5+ Links - Low Value - Normal/Magic
 	MinimapIcon -1
 	PlayAlertSound 4 0
 	PlayEffect None
+	DisableDropSound
 
-Show  # 5+ Links - Low Value - Rare
+Hide  # 5+ Links - Low Value - Rare
 	LinkedSockets = 5
 	AnyEnchantment False
 	SetFontSize 36
 	MinimapIcon -1
 	PlayAlertSound 4 0
 	PlayEffect None
+	DisableDropSound
+	Continue
 
 ##########################################
 ############## ENCHANTMENTS ##############
@@ -1534,17 +1555,6 @@ Show  # Uniques - <3c - Unique Rings
 # Orange border
 # Usually < 3c or nearly worthless.
 
-Show  # Uniques - <3c - ilvl <67
-	Rarity = Unique
-	ItemLevel < 67
-	SetFontSize 45
-	SetTextColor 255 128 64 # Unique
-	SetBackgroundColor 50 25 12 230 # Unique
-	SetBorderColor 180 90 45 255 # Unique
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Orange UpsideDownHouse
-	PlayEffect Orange
-
 # Limited drop. May share a BaseType with an extremely valuable item, League specific, or boss drop only.
 Show  # Uniques - Limited
 	Rarity = Unique
@@ -1553,19 +1563,17 @@ Show  # Uniques - Limited
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 230 # Unique
 	SetBorderColor 180 90 45 255 # Unique
-	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Orange
+	DisableDropSound
 
-Show  # Uniques - New or Worthless
+Hide  # Uniques - New or Worthless
 	Rarity = Unique
 	SetFontSize 40
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 230 # Unique
 	SetBorderColor 180 90 45 255 # Unique
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Orange UpsideDownHouse
-	PlayEffect Orange
+	DisableDropSound
 
 ##########################################
 ############ INFLUENCED BASES ############
@@ -1882,16 +1890,17 @@ Show  # Explicit Mods - Jewels
 	SetBackgroundColor 0 0 0 230 # Jewel
 	SetBorderColor 0 220 220 255 # Jewel
 	PlayAlertSound 6 200 # Jewel
-	MinimapIcon 0 Blue Cross
-	PlayEffect Blue
+	MinimapIcon 0 Cyan Cross
+	PlayEffect Cyan
 
 # Betrayal/Syndicate
-Show  # Explicit Mods - Veiled - Magic
+Hide  # Explicit Mods - Veiled - Magic
 	HasExplicitMod "Veiled" "'s Veiled" "'s Veil" "of the Veil" "of Janus' Veil"
 	Rarity <= Magic
 	SetFontSize 40
 	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
+	DisableDropSound
 
 Show  # Explicit Mods - Veiled - Rare - 83+
 	HasExplicitMod "Veiled" "'s Veiled" "'s Veil" "of the Veil" "of Janus' Veil"
@@ -1911,8 +1920,6 @@ Show  # Explicit Mods - Veiled - Rare - Other
 	SetFontSize 40
 	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
-	MinimapIcon 1 Blue UpsideDownHouse
-	PlayEffect Blue
 
 # Bestiary
 Hide  # Explicit Mods - Bestiary - Magic
@@ -1933,12 +1940,13 @@ Show  # Explicit Mods - Bestiary - Rare
 	PlayEffect Blue
 
 # Synthesis
-Show  # Explicit Mods - Synthesised - Magic
+Hide  # Explicit Mods - Synthesised - Magic
 	SynthesisedItem True
 	Rarity <= Magic
 	SetFontSize 40
 	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
+	DisableDropSound
 
 Show  # Explicit Mods - Synthesised - Rare
 	SynthesisedItem True
@@ -1951,12 +1959,13 @@ Show  # Explicit Mods - Synthesised - Rare
 	PlayEffect Blue
 
 # Fractured
-Show  # Explicit Mods - Fractured - Magic
+Hide  # Explicit Mods - Fractured - Magic
 	FracturedItem True
 	Rarity <= Magic
 	SetFontSize 40
 	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
+	DisableDropSound
 
 Show  # Explicit Mods - Fractured - Rare - 83+
 	FracturedItem True
@@ -2030,10 +2039,11 @@ Show  # Jewels - Cluster - Small
 # Abyss Magic #
 #-------------#
 
-Show  # Abyss Jewels - Magic - Leveling
+Hide  # Abyss Jewels - Magic - Leveling
 	Class "Abyss Jewel"
 	ItemLevel <= 67
 	Rarity <= Magic
+	DisableDropSound
 
 #Disabled Block Start
 #Show  # Abyss Jewels - Magic - Mapping (Low)
@@ -2049,20 +2059,20 @@ Show  # Abyss Jewels - Magic - Leveling
 #	Rarity <= Magic
 #Disabled Block End
 
-Show  # Abyss Jewels - Magic - Mapping (High)
+Hide  # Abyss Jewels - Magic - Mapping (High)
 	Class "Abyss Jewel"
 	Rarity <= Magic
+	DisableDropSound
 
 #------------#
 # Abyss Rare #
 #------------#
 
-Show  # Abyss Jewels - Rare - Leveling
+Hide  # Abyss Jewels - Rare - Leveling
 	Class "Abyss Jewel"
 	Rarity = Rare
 	ItemLevel < 68
-	MinimapIcon 0 Cyan Cross
-	PlayEffect Cyan
+	DisableDropSound
 
 #Disabled Block Start
 #Show  # Abyss Jewels - Rare - Mapping (Low)
@@ -2078,18 +2088,20 @@ Show  # Abyss Jewels - Rare - Leveling
 #	ItemLevel < 77
 #Disabled Block End
 
-Show  # Abyss Jewels - Rare - Mapping (High)
+Hide  # Abyss Jewels - Rare - Mapping (High)
 	Class "Abyss Jewel"
 	Rarity = Rare
+	DisableDropSound
 
 #--------------#
 # Normal/Magic #
 #--------------#
 
-Show  # Jewels - Magic - Leveling
+Hide  # Jewels - Magic - Leveling
 	Class Jewel
 	Rarity <= Magic
 	ItemLevel < 68
+	DisableDropSound
 
 #Disabled Block Start
 #Show  # Jewels - Magic - Mapping (Low)
@@ -2114,13 +2126,11 @@ Hide  # Jewels - Magic - Mapping (High)
 # Rare #
 #------#
 
-Show  # Jewels - Rare - Leveling
+Hide  # Jewels - Rare - Leveling
 	Class Jewel
 	Rarity = Rare
 	ItemLevel < 68
-	PlayAlertSound 6 200 # Jewel
-	MinimapIcon 0 Cyan Cross
-	PlayEffect Cyan
+	DisableDropSound
 
 #Disabled Block Start
 #Show  # Jewels - Rare - Mapping (Low)
@@ -2136,9 +2146,10 @@ Show  # Jewels - Rare - Leveling
 #	ItemLevel < 77
 #Disabled Block End
 
-Show  # Jewels - Rare - Mapping (High)
+Hide  # Jewels - Rare - Mapping (High)
 	Class Jewel
 	Rarity = Rare
+	DisableDropSound
 
 ##########################################
 ############## CHANCE BASES ##############
@@ -2338,9 +2349,11 @@ Show  # Flasks - Utility - Leveling
 	Class "Utility Flasks"
 	ItemLevel < 68
 
-Show  # Flasks - Utility - Mapping (Low)
-	Class "Utility Flasks"
-	ItemLevel < 73
+#Disabled Block Start
+#Show  # Flasks - Utility - Mapping (Low)
+#	Class "Utility Flasks"
+#	ItemLevel < 73
+#Disabled Block End
 
 #Disabled Block Start
 #Show  # Flasks - Utility - Mapping (Mid)
@@ -2357,15 +2370,17 @@ Hide  # Flasks - Utility - Mapping (High)
 #---------#
 # Glassblower's Bauble Recipe
 
-Show  # Flasks - Quality - Leveling
+Hide  # Flasks - Quality - Leveling
 	Quality >= 5
 	Class Flasks
 	ItemLevel < 68
+	DisableDropSound
 
-Show  # Flasks - Quality - Mapping (Low)
+Hide  # Flasks - Quality - Mapping (Low)
 	Quality >= 5
 	Class Flasks
 	ItemLevel < 73
+	DisableDropSound
 
 #Disabled Block Start
 #Show  # Flasks - Quality - Mapping (Mid)
@@ -2434,13 +2449,15 @@ Hide  # Flasks - Normal - Leveling - Hybrid
 	ItemLevel < 68
 	DisableDropSound
 
-Show  # Flasks - Normal - Leveling - Life
+Hide  # Flasks - Normal - Leveling - Life
 	Class "Life Flasks"
 	ItemLevel < 68
+	DisableDropSound
 
-Show  # Flasks - Normal - Leveling - Mana
+Hide  # Flasks - Normal - Leveling - Mana
 	Class "Mana Flasks"
 	ItemLevel < 68
+	DisableDropSound
 
 #Disabled Block Start
 #Show  # Flasks - Normal - Mapping (Low)
@@ -2500,15 +2517,17 @@ Show  # Crafting Bases - 70+ Drop Level (Mid) - 84+
 	SetBackgroundColor 60 60 60 255 # Crafting Base (Mid)
 	SetBorderColor 45 90 160 255 # Crafting Base (Mid)
 
-Show  # Crafting Bases - 70+ Drop Level (Mid) - <84 Normal/Magic
+Hide  # Crafting Bases - 70+ Drop Level (Mid) - <84 Normal/Magic
 	DropLevel >= 70
 	BaseType "Crystal Belt" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet"
 	Rarity <= Magic
 	SetFontSize 36
 	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
+	DisableDropSound
 
 Show  # Crafting Bases - 70+ Drop Level (Mid) - Rare
+	Rarity = Rare
 	DropLevel >= 70
 	BaseType "Crystal Belt" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet"
 	SetFontSize 45
@@ -2523,15 +2542,17 @@ Show  # Crafting Bases - 70+ Drop Level (Low) - 84+
 	SetBackgroundColor 60 60 60 255 # Crafting Base (Mid)
 	SetBorderColor 45 90 160 255 # Crafting Base (Mid)
 
-Show  # Crafting Bases - 70+ Drop Level (Low) - Normal/Magic
+Hide  # Crafting Bases - 70+ Drop Level (Low) - Normal/Magic
 	DropLevel >= 72
 	BaseType "Blue Pearl Amulet" "Vanguard Belt" "Sacrificial Garb"
 	Rarity <= Magic
 	SetFontSize 36
 	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
+	DisableDropSound
 
 Show  # Crafting Bases - 70+ Drop Level (Low) - Rare
+	Rarity = Rare
 	DropLevel >= 72
 	BaseType "Blue Pearl Amulet" "Vanguard Belt" "Sacrificial Garb"
 	SetFontSize 45
@@ -2547,7 +2568,7 @@ Show  # Crafting Bases - 70+ Drop Level (Low) - Rare
 # Chromatics #
 #------------#
 
-Show
+Hide
 	SocketGroup RGB
 	Rarity <= Magic
 	ShaperItem False
@@ -2557,27 +2578,35 @@ Show
 	SetBorderColor 210 0 210 255 # Chromatic Recipe (RGB)
 	Continue
 
-Show  # Vendor Recipes - Chromatics (RGB) - Leveling - Normal
-	SocketGroup RGB
-	Rarity = Normal
-	ItemLevel < 68
+#Disabled Block Start
+#Show  # Vendor Recipes - Chromatics (RGB) - Leveling - Normal
+#	SocketGroup RGB
+#	Rarity = Normal
+#	ItemLevel < 68
+#Disabled Block End
 
-Show  # Vendor Recipes - Chromatics (RGB) - Leveling - Magic
-	SocketGroup RGB
-	Rarity = Magic
-	ItemLevel < 68
+#Disabled Block Start
+#Show  # Vendor Recipes - Chromatics (RGB) - Leveling - Magic
+#	SocketGroup RGB
+#	Rarity = Magic
+#	ItemLevel < 68
+#Disabled Block End
 
-Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Low) - Normal (2 Height)
-	SocketGroup RGB
-	Height <= 2
-	Rarity = Normal
-	ItemLevel < 73
+#Disabled Block Start
+#Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Low) - Normal (2 Height)
+#	SocketGroup RGB
+#	Height <= 2
+#	Rarity = Normal
+#	ItemLevel < 73
+#Disabled Block End
 
-Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Low) - Normal (1 Width)
-	SocketGroup RGB
-	Width = 1
-	Rarity = Normal
-	ItemLevel < 73
+#Disabled Block Start
+#Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Low) - Normal (1 Width)
+#	SocketGroup RGB
+#	Width = 1
+#	Rarity = Normal
+#	ItemLevel < 73
+#Disabled Block End
 
 #Disabled Block Start
 #Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Low) - Normal
@@ -2640,24 +2669,30 @@ Show
 	SetBorderColor 140 140 140 255 # Quality
 	Continue
 
-Show  # Vendor Recipes - Chisels - 20% Quality
-	Class "One Hand Maces"
-	BaseType Gavel "Rock Breaker" "Stone Hammer"
-	Quality >= 20
-	Rarity <= Rare
-	SetFontSize 40
+#Disabled Block Start
+#Show  # Vendor Recipes - Chisels - 20% Quality
+#	Class "One Hand Maces"
+#	BaseType Gavel "Rock Breaker" "Stone Hammer"
+#	Quality >= 20
+#	Rarity <= Rare
+#	SetFontSize 40
+#Disabled Block End
 
-Show  # Vendor Recipes - Chisels - 18% Quality Magic
-	Class "One Hand Maces"
-	BaseType Gavel "Rock Breaker" "Stone Hammer"
-	Quality >= 18
-	Rarity <= Magic
+#Disabled Block Start
+#Show  # Vendor Recipes - Chisels - 18% Quality Magic
+#	Class "One Hand Maces"
+#	BaseType Gavel "Rock Breaker" "Stone Hammer"
+#	Quality >= 18
+#	Rarity <= Magic
+#Disabled Block End
 
-Show  # Vendor Recipes - Chisels - 15% Quality Normal
-	Class "One Hand Maces"
-	BaseType Gavel "Rock Breaker" "Stone Hammer"
-	Quality >= 15
-	Rarity = Normal
+#Disabled Block Start
+#Show  # Vendor Recipes - Chisels - 15% Quality Normal
+#	Class "One Hand Maces"
+#	BaseType Gavel "Rock Breaker" "Stone Hammer"
+#	Quality >= 15
+#	Rarity = Normal
+#Disabled Block End
 
 #Disabled Block Start
 #Show  # Vendor Recipes - Chisels - 10% Quality Normal
@@ -3001,15 +3036,16 @@ Hide  # Normal/Magic - Low Drop Level - 16+ Accessories
 	SetFontSize 36
 	DisableDropSound
 
-Show  # Normal/Magic - Leveling - Accessories - < 10
+Hide  # Normal/Magic - Leveling - Accessories - < 10
 	ItemLevel < 10
 	Class Rings Amulets Belts
 	Rarity <= Magic
 	SetFontSize 40
 	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
+	DisableDropSound
 
-Show  # Normal/Magic - Leveling - Accessories - < 16
+Hide  # Normal/Magic - Leveling - Accessories - < 16
 	ItemLevel < 16
 	DropLevel >= 5
 	Class Rings Amulets Belts
@@ -3017,38 +3053,43 @@ Show  # Normal/Magic - Leveling - Accessories - < 16
 	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
 	SetFontSize 40
+	DisableDropSound
 
-Show  # Normal/Magic - Leveling - Accessories - < 22
+Hide  # Normal/Magic - Leveling - Accessories - < 22
 	ItemLevel < 22
 	DropLevel >= 16
 	Class Rings Amulets
 	Rarity <= Magic
 	SetFontSize 40
+	DisableDropSound
 
-Show  # Normal/Magic - Leveling - Jewelry
+Hide  # Normal/Magic - Leveling - Jewelry
 	Class Rings Amulets
 	Rarity = Magic
 	ItemLevel < 25
 	SetFontSize 36
+	DisableDropSound
 
 #--------#
 # 4 Link #
 #--------#
 
-Show  # Normal/Magic - Leveling - 4 Link Armour - < 35
+Hide  # Normal/Magic - Leveling - 4 Link Armour - < 35
 	LinkedSockets >= 4
 	ItemLevel < 35
 	Class Gloves Boots Helmets "Body Armours"
 	Rarity <= Magic
 	SetFontSize 36
 	SetBorderColor 40 80 150 255 # 3-4 Link
+	DisableDropSound
 
-Show  # Normal/Magic - Leveling - 4 Link Armour - < 60
+Hide  # Normal/Magic - Leveling - 4 Link Armour - < 60
 	LinkedSockets >= 4
 	ItemLevel < 60
 	Class Gloves Boots Helmets "Body Armours"
 	Rarity <= Magic
 	SetFontSize 36
+	DisableDropSound
 
 #----------------#
 # Low Drop Level #
@@ -3103,50 +3144,56 @@ Hide  # Normal/Magic - Low Drop Level - 25+
 # 3 Link #
 #--------#
 
-Show  # Normal/Magic - Leveling - 3 Link Armour - < 15
+Hide  # Normal/Magic - Leveling - 3 Link Armour - < 15
 	LinkedSockets >= 3
 	ItemLevel < 15
 	Class Gloves Boots Helmets "Body Armours"
 	Rarity <= Magic
 	SetFontSize 36
 	SetBorderColor 40 80 150 255 # 3-4 Link
+	DisableDropSound
 
-Show  # Normal/Magic - Leveling - 3 Link Armour  - < 20
+Hide  # Normal/Magic - Leveling - 3 Link Armour  - < 20
 	LinkedSockets >= 3
 	ItemLevel < 20
 	Class Gloves Boots Helmets "Body Armours"
 	Rarity <= Magic
 	SetFontSize 36
+	DisableDropSound
 
-Show  # Normal/Magic - Leveling - 3 Link Armour - 4 Socket
+Hide  # Normal/Magic - Leveling - 3 Link Armour - 4 Socket
 	LinkedSockets >= 3
 	Sockets >= 4
 	ItemLevel < 35
 	Class Gloves Boots Helmets "Body Armours"
 	Rarity <= Magic
 	SetFontSize 36
+	DisableDropSound
 
-Show  # Normal/Magic - Leveling - 3 Link Wands Sceptres
+Hide  # Normal/Magic - Leveling - 3 Link Wands Sceptres
 	LinkedSockets = 3
 	ItemLevel <= 9
 	Class Wands Sceptres
 	Rarity <= Magic
 	SetFontSize 36
 	SetBorderColor 40 80 150 255 # 3-4 Link
+	DisableDropSound
 
 #-------#
 # Other #
 #-------#
 
-Show  # Normal/Magic - Leveling - < 12 Normal
+Hide  # Normal/Magic - Leveling - < 12 Normal
 	Rarity = Normal
 	ItemLevel <= 11
 	SetFontSize 36
+	DisableDropSound
 
-Show  # Normal/Magic - Leveling - < 21 Magic
+Hide  # Normal/Magic - Leveling - < 21 Magic
 	Rarity = Magic
 	ItemLevel <= 20
 	SetFontSize 36
+	DisableDropSound
 
 Hide  # Normal/Magic - Other
 	Rarity <= Magic
@@ -3172,16 +3219,20 @@ Show
 	SetBorderColor 220 0 0 255 # Breach Ring
 	Continue
 
-Show  # League Specific - Breach Rings - Leveling
-	Class Rings
-	BaseType "Breach Ring"
-	ItemLevel < 68
-	SetFontSize 40
+#Disabled Block Start
+#Show  # League Specific - Breach Rings - Leveling
+#	Class Rings
+#	BaseType "Breach Ring"
+#	ItemLevel < 68
+#	SetFontSize 40
+#Disabled Block End
 
-Show  # League Specific - Breach Rings - Mapping (Low)
-	Class Rings
-	BaseType "Breach Ring"
-	ItemLevel < 73
+#Disabled Block Start
+#Show  # League Specific - Breach Rings - Mapping (Low)
+#	Class Rings
+#	BaseType "Breach Ring"
+#	ItemLevel < 73
+#Disabled Block End
 
 #Disabled Block Start
 #Show  # League Specific - Breach Rings - Mapping (Mid)
@@ -3204,10 +3255,12 @@ Show  # League Specific - Stygian Vises - 84+
 	Rarity = Rare
 	ItemLevel >= 84
 
-Show  # League Specific - Stygian Vises - Leveling
-	BaseType "Stygian Vise"
-	Rarity = Rare
-	ItemLevel < 68
+#Disabled Block Start
+#Show  # League Specific - Stygian Vises - Leveling
+#	BaseType "Stygian Vise"
+#	Rarity = Rare
+#	ItemLevel < 68
+#Disabled Block End
 
 #Disabled Block Start
 #Show  # League Specific - Stygian Vises - Mapping (Low)
@@ -3223,25 +3276,31 @@ Show  # League Specific - Stygian Vises - Leveling
 #	ItemLevel < 78
 #Disabled Block End
 
-Show  # League Specific - Stygian Vises - Mapping (High)
+Hide  # League Specific - Stygian Vises - Mapping (High)
 	BaseType "Stygian Vise"
 	Rarity = Rare
+	DisableDropSound
 
 #-------#
 # Other #
 #-------#
 
-Show  # Rares - Accessories - 84+
-	Class Belts Amulets Rings
-	ItemLevel >= 84
+#Disabled Block Start
+#Show  # Rares - Accessories - 84+
+#	Class Belts Amulets Rings
+#	ItemLevel >= 84
+#Disabled Block End
 
-Show  # Rares - Accessories - 75+
-	Class Belts Amulets Rings
-	ItemLevel >= 75
+#Disabled Block Start
+#Show  # Rares - Accessories - 75+
+#	Class Belts Amulets Rings
+#	ItemLevel >= 75
+#Disabled Block End
 
-Show  # Rares - Accessories - 60+
+Hide  # Rares - Accessories - 60+
 	Class Belts Amulets Rings
 	ItemLevel >= 60
+	DisableDropSound
 
 ##########################################
 ######### 60+ RARES (HIGHLIGHTED) ########
@@ -3674,7 +3733,7 @@ Show  # Rares - Accessories - 60+
 # 60+ Armour #
 #------------#
 
-Show  # 60+ Rares - Armour
+Hide  # 60+ Rares - Armour
 	Class Gloves Boots Helmets "Body Armours"
 	ItemLevel >= 60
 
@@ -3682,7 +3741,7 @@ Show  # 60+ Rares - Armour
 # 60+ Two Hand Weapons #
 #----------------------#
 
-Show  # 60+ Rares - Two Hand Weapons
+Hide  # 60+ Rares - Two Hand Weapons
 	Class "Two Hand" Bows Staves Warstaves
 	ItemLevel >= 60
 
@@ -3691,7 +3750,7 @@ Show  # 60+ Rares - Two Hand Weapons
 #----------------------#
 # Can be used in the Chaos/Regal recipes but they're colored differently because they take twice as many items.
 
-Show  # 60+ Rares - One Hand Weapons
+Hide  # 60+ Rares - One Hand Weapons
 	Class "One Hand" Daggers "Rune Dagger" Wands Claws Sceptres
 	ItemLevel >= 60
 
@@ -3699,7 +3758,7 @@ Show  # 60+ Rares - One Hand Weapons
 # 60+ Shields #
 #-------------#
 
-Show  # 60+ Rares - Shields
+Hide  # 60+ Rares - Shields
 	Class Shields
 	ItemLevel >= 60
 
@@ -3707,7 +3766,7 @@ Show  # 60+ Rares - Shields
 # 60+ Quivers #
 #-------------#
 
-Show  # 60+ Rares - Quivers - Valuable
+Hide  # 60+ Rares - Quivers - Valuable
 	Class Quivers
 	BaseType "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver"
 	ItemLevel >= 60
@@ -3736,12 +3795,14 @@ Show  # Errors - 60+
 # Section: < 60 Rares
 
 # Accessories
-Show  # < 60 Rares - Accessories
+Hide  # < 60 Rares - Accessories
 	Class Belts Amulets Rings
+	DisableDropSound
 
 # Quivers
-Show  # < 60 Rares - Quivers
+Hide  # < 60 Rares - Quivers
 	Class Quivers
+	DisableDropSound
 
 #---------------------#
 # Very Low Drop Level #
@@ -3772,32 +3833,36 @@ Hide  # < 60 Rares - Very Low Drop Level - 40+
 #----------#
 
 # Armour
-Show  # < 60 Rares - Armour - 4 Link
+Hide  # < 60 Rares - Armour - 4 Link
 	LinkedSockets = 4
 	Class Gloves Boots Helmets "Body Armours"
 	ItemLevel < 60
 	SetFontSize 40
 	SetBorderColor 40 80 150 255 # 3-4 Link
+	DisableDropSound
 
-Show  # < 60 Rares - Armour - 3 Link
+Hide  # < 60 Rares - Armour - 3 Link
 	LinkedSockets = 3
 	Class Gloves Boots Helmets "Body Armours"
 	ItemLevel < 25
 	SetFontSize 40
 	SetBorderColor 40 80 150 255 # 3-4 Link
+	DisableDropSound
 
 # Weapons
-Show  # < 60 Rares - Weapons - 4 Link
+Hide  # < 60 Rares - Weapons - 4 Link
 	LinkedSockets = 4
 	ItemLevel < 60
 	SetFontSize 40
 	SetBorderColor 40 80 150 255 # 3-4 Link
+	DisableDropSound
 
-Show  # < 60 Rares - Weapons - 3 Link
+Hide  # < 60 Rares - Weapons - 3 Link
 	LinkedSockets = 3
 	ItemLevel < 20
 	SetFontSize 40
 	SetBorderColor 40 80 150 255 # 3-4 Link
+	DisableDropSound
 
 #----------------#
 # Low Drop Level #
@@ -3827,10 +3892,12 @@ Hide  # < 60 Rares - Low Drop Level - 40+
 # Good #
 #------#
 
-Show  # < 60 Rares - Armour - Other
+Hide  # < 60 Rares - Armour - Other
 	Class Gloves Boots Helmets "Body Armours"
+	DisableDropSound
 
-Show  # < 60 Rares - Weapons - Other
+Hide  # < 60 Rares - Weapons - Other
+	DisableDropSound
 
 ##########################################
 ##########################################
