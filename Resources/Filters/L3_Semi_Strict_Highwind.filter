@@ -195,7 +195,7 @@ Hide  # Currency - Worthless - Shards (1)
 
 Hide  # League Specific - Essence - Essences (Worthless)
 	Class "Stackable Currency"
-	BaseType "Whispering Essence" "Muttering Essence" "Weeping Essence"
+	BaseType "Whispering Essence" "Muttering Essence"
 	DisableDropSound
 
 Hide  # League Specific - Harbinger - Worthless - Shards (1)
@@ -246,9 +246,9 @@ Show  # League Specific - Perandus - Coins (6+)
 	SetFontSize 40
 	PlayEffect Yellow Temp
 
-Show  # League Specific - Essence - Essences (Very Low)
+Hide  # League Specific - Essence - Essences (Very Low)
 	Class "Stackable Currency"
-	BaseType "Wailing Essence"
+	BaseType "Wailing Essence" "Weeping Essence"
 	DisableDropSound
 
 Show  # League Specific - Harbinger - Very Low - Stack (2+)

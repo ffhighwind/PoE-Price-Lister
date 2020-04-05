@@ -151,8 +151,8 @@ namespace PoE_Price_Lister
 				case FilterType.LEVELING:
 					return true;
 				case FilterType.MAPPING:
-				case FilterType.SEMI_STRICT:
 					return divValue != DivinationValueEnum.Worthless;
+				case FilterType.SEMI_STRICT:
 				case FilterType.STRICT:
 					return divValue != DivinationValueEnum.Worthless && divValue != DivinationValueEnum.NearlyWorthless;
 				case FilterType.VERY_STRICT:
