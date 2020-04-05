@@ -2580,17 +2580,21 @@ Show  # Vendor Recipes - Chromatics (RGB) - Leveling - Magic
 	Rarity = Magic
 	ItemLevel < 68
 
-Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Low) - Normal (2 Height)
-	SocketGroup RGB
-	Height <= 2
-	Rarity = Normal
-	ItemLevel < 73
+#Disabled Block Start
+#Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Low) - Normal (2 Height)
+#	SocketGroup RGB
+#	Height <= 2
+#	Rarity = Normal
+#	ItemLevel < 73
+#Disabled Block End
 
-Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Low) - Normal (1 Width)
-	SocketGroup RGB
-	Width = 1
-	Rarity = Normal
-	ItemLevel < 73
+#Disabled Block Start
+#Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Low) - Normal (1 Width)
+#	SocketGroup RGB
+#	Width = 1
+#	Rarity = Normal
+#	ItemLevel < 73
+#Disabled Block End
 
 #Disabled Block Start
 #Show  # Vendor Recipes - Chromatics (RGB) - Mapping (Low) - Normal
@@ -2853,18 +2857,9 @@ Show
 	Rarity = Rare
 	ItemLevel >= 60
 	Class "One Hand" Daggers "Rune Dagger" Wands Claws Sceptres Quivers
-	BaseType "Siege Axe" "Vaal Hatchet" "Infernal Axe" "Runic Hatchet" "Legion Hammer" "Nightmare Mace" "Behemoth Mace" "Corsair Sword" "Spiraled Foil" "Eternal Sword" "Jewelled Foil" "Dragoon Sword" Ambusher "Platinum Kris" "Imperial Skean" Sai "Imbued Wand" "Opal Wand" "Tornado Wand" "Profane Wand" "Convoking Wand" "Hellion's Paw" "Imperial Claw" "Terror Claw" "Gemini Claw" "Karui Sceptre" "Vaal Sceptre"  "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver" "Ornate Quiver" "Penetrating Arrow Quiver" "Two-Point Arrow Quiver"
+	BaseType "Convoking Wand"
 	SetBackgroundColor 40 35 8 231 # Rare Weapon 60+ (High)
-	SetBorderColor 100 65 25 255 # Rare Weapon 60+ (High)
-	Continue
-
-Show
-	Rarity = Rare
-	ItemLevel >= 60
-	Class "Two Hand" Bows Staves Warstaves
-	BaseType "Sundering Axe" "Vaal Axe" "Ezomyte Axe" "Void Axe" "Despot Axe" Fleshripper Piledriver Meatgrinder "Terror Maul" "Coronal Maul" "Reaver Sword" "Vaal Greatsword" "Lion Sword" "Infernal Sword" "Exquisite Blade" "Thicket Bow" "Imperial Bow" "Harbinger Bow" "Maraketh Bow" Lathi "Ezomyte Staff" Maelstr "Eclipse Staff" "Judgement Staff"
-	SetBackgroundColor 20 60 0 231 # Rare Recipe 60+ (High)
-	SetBorderColor 35 105 70 255 # Rare Recipe 60+ (High)
+	SetBorderColor 150 112 45 255 # Rare Weapon 60+ (High)
 	Continue
 
 Show
@@ -2872,8 +2867,9 @@ Show
 	ItemLevel >= 60
 	DropLevel >= 60
 	Class "Body Armours"
+	BaseType "Astral Plate" "Vaal Regalia"
 	SetBackgroundColor 20 60 0 231 # Rare Recipe 60+ (High)
-	SetBorderColor 35 105 70 255 # Rare Recipe 60+ (High)
+	SetBorderColor 110 110 50 255 # Rare Recipe 60+ (High)
 	Continue
 
 Show
@@ -2881,8 +2877,9 @@ Show
 	ItemLevel >= 60
 	DropLevel >= 60
 	Class Shields
+	BaseType "Lacquered Buckler" "Titanium Spirit Shield"
 	SetBackgroundColor 40 35 8 231 # Rare Weapon 60+ (High)
-	SetBorderColor 100 65 25 255 # Rare Weapon 60+ (High)
+	SetBorderColor 150 112 45 255 # Rare Weapon 60+ (High)
 	Continue
 
 Show
@@ -2890,8 +2887,9 @@ Show
 	ItemLevel >= 60
 	DropLevel > 56
 	Class Gloves Boots Helmets
+	BaseType "Hubris Circlet" "Bone Helmet" "Spiked Gloves" "Gripped Gloves" "Sorcerer Gloves" "Fingerless Silk Gloves" "Sorcerer Boots" "Two-Toned Boots"
 	SetBackgroundColor 20 60 0 231 # Rare Recipe 60+ (High)
-	SetBorderColor 35 105 70 255 # Rare Recipe 60+ (High)
+	SetBorderColor 110 110 50 255 # Rare Recipe 60+ (High)
 	Continue
 
 Show
