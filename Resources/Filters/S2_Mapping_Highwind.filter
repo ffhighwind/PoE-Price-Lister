@@ -1,5 +1,5 @@
 ﻿﻿############################################
-##    HIGHWIND'S MAPPING FILTER 3.10.6    ##
+##    HIGHWIND'S MAPPING FILTER 3.10.7    ##
 ############################################
 ## Release Date: April 4, 2020            ##
 ############################################
@@ -252,7 +252,7 @@ Show  # League Specific - Essence - Essences (Very Low)
 
 Show  # League Specific - Harbinger - Very Low - Stack (2+)
 	Class "Stackable Currency"
-	BaseType "Binding Shard" "Horizon Shard"
+	BaseType "Binding Shard" "Horizon Shard" "Alchemy Shard"
 
 Show  # League Specific - Harbinger - Very Low - Engineer's Shard (6+)
 	Class "Stackable Currency"
@@ -1151,7 +1151,7 @@ Show  # Divination Cards - <2c
 	SetBorderColor 150 30 100 255 # Divination Card (<2c)
 	DisableDropSound
 
-Shown  # Divination Cards - Nearly Worthless
+Show  # Divination Cards - Nearly Worthless
 	Class Divination
 	BaseType "Anarchy's Price" "Boon of Justice" "Cartographer's Delight" "Destined to Crumble" "Her Mask" Loyalty "Rain of Chaos" "Shard of Fate" "The Blazing Fire" "The Doppelganger" "The Gambler" "The Gemcutter" "The Hermit" "The Lord in Black" "The Mountain" "The Puzzle" "The Scholar" "The Survivalist"
 	SetFontSize 32 
@@ -1347,7 +1347,7 @@ Show  # 5+ Links - Low Value - Rare
 # Section: Enchantments
 
 Show  # Enchantments - 20c+ Unique
-	HasEnchantment "Enchantment Animate Weapon Chance To Create Additional Copy 2" "Enchantment Ball Lightning Additional Projectiles 1" "Enchantment Cyclone Attack Speed 2" "Enchantment Cyclone Damage 2" "Enchantment Freezing Pulse Projectile Speed 2" "Enchantment Ice Nova Damage 2" "Enchantment Molten Strike Num Of Additional Projectiles 2" "Enchantment Pyroclast Mine Additional Projectiles 2" "Enchantment Spellslinger Cooldown Recovery 2" "Enchantment Temporal Chains Curse Effect 2" "Enchantment Volatile Dead Orbs 3" "Storm Brand Attached Target Lightning Penetration 2"
+	HasEnchantment "Enchantment Ball Lightning Additional Projectiles 1" "Enchantment Cyclone Attack Speed 2" "Enchantment Cyclone Damage 2" "Enchantment Freezing Pulse Projectile Speed 2" "Enchantment Ice Nova Damage 2" "Enchantment Pyroclast Mine Additional Projectiles 2" "Enchantment Spellslinger Cooldown Recovery 2" "Enchantment Temporal Chains Curse Effect 2" "Enchantment Volatile Dead Orbs 3" "Storm Brand Attached Target Lightning Penetration 2"
 	Rarity = Unique
 	SetFontSize 45
 	SetTextColor 255 128 64 # Unique (15c+)
@@ -1358,7 +1358,7 @@ Show  # Enchantments - 20c+ Unique
 	PlayEffect Red
 
 Show  # Enchantments - 20c+ Other
-	HasEnchantment "Enchantment Animate Weapon Chance To Create Additional Copy 2" "Enchantment Ball Lightning Additional Projectiles 1" "Enchantment Cyclone Attack Speed 2" "Enchantment Cyclone Damage 2" "Enchantment Freezing Pulse Projectile Speed 2" "Enchantment Ice Nova Damage 2" "Enchantment Molten Strike Num Of Additional Projectiles 2" "Enchantment Pyroclast Mine Additional Projectiles 2" "Enchantment Spellslinger Cooldown Recovery 2" "Enchantment Temporal Chains Curse Effect 2" "Enchantment Volatile Dead Orbs 3" "Storm Brand Attached Target Lightning Penetration 2"
+	HasEnchantment "Enchantment Ball Lightning Additional Projectiles 1" "Enchantment Cyclone Attack Speed 2" "Enchantment Cyclone Damage 2" "Enchantment Freezing Pulse Projectile Speed 2" "Enchantment Ice Nova Damage 2" "Enchantment Pyroclast Mine Additional Projectiles 2" "Enchantment Spellslinger Cooldown Recovery 2" "Enchantment Temporal Chains Curse Effect 2" "Enchantment Volatile Dead Orbs 3" "Storm Brand Attached Target Lightning Penetration 2"
 	SetFontSize 45
 	SetTextColor 0 100 220 # Crafting Base (High)
 	SetBackgroundColor 255 255 255 255 # Crafting Base (High)
@@ -1368,7 +1368,7 @@ Show  # Enchantments - 20c+ Other
 	PlayEffect Red
 
 Show  # Enchantments - 10c+ Unique
-	HasEnchantment "Enchantment Arc Num Of Additional Projectiles In Chain 1" "Enchantment Ball Lightning Damage 2" "Enchantment Barrage Num Of Additional Projectiles 1" "Enchantment Blade Vortex Duration 2" "Enchantment Caustic Arrow Damage 2" "Enchantment Cobra Lash Number Of Additional Chains 2" "Enchantment Dash Travel Distance 2" "Enchantment Despair Effect 2" "Enchantment Divine Ire Number Of Additional Nearby Enemies To Zap 2" "Enchantment Double Slash Added Phys To Bleeding 2" "Enchantment Flesh and Stone Mana Reservation 2" "Enchantment Flicker Strike Damage 2" "Enchantment Flicker Strike Damage Per Frenzy Charge 2" "Enchantment Frenzy Damage Per Frenzy Charge 2" "Enchantment Frost Blades Damage 2" "Enchantment Glacial Cascade Physical Damage Percent To Convert To Cold 2" "Enchantment Herald Of Agony Num Of Secondary Projectiles 1" "Enchantment Herald Of Purity Additional Minion 1" "Enchantment Herald Of Purity Mana Reservation 2" "Enchantment Kinetic Blast Explosions 2" "Enchantment Lacerate Damage 2" "Enchantment Lightning Warp Duration 2" "Enchantment Magma Orb Num Of Additional Projectiles In Chain 2" "Enchantment Power Siphon Additional Projectiles 2" "Enchantment Scourge Arrow Additional Spore 1" "Enchantment Spectral Throw Projectile Deceleration 2" "Enchantment Spellslinger Reservation 2" "Enchantment Split Arrow Num Of Additional Projectiles 2" "Enchantment Storm Brand Damage 2" "Enchantment Storm Burst Additional Object Chance 2" "Enchantment Tornado Shot Num Of Secondary Projectiles 2" "Enchantment Toxic Rain Num Of Additional Projectiles 1"
+	HasEnchantment "Enchantment Animate Weapon Chance To Create Additional Copy 2" "Enchantment Arc Num Of Additional Projectiles In Chain 1" "Enchantment Ball Lightning Damage 2" "Enchantment Barrage Num Of Additional Projectiles 1" "Enchantment Blade Vortex Duration 2" "Enchantment Caustic Arrow Damage 2" "Enchantment Cobra Lash Number Of Additional Chains 2" "Enchantment Despair Effect 2" "Enchantment Double Slash Added Phys To Bleeding 2" "Enchantment Flammability Curse Effect 2" "Enchantment Flesh and Stone Mana Reservation 2" "Enchantment Flicker Strike Damage 2" "Enchantment Flicker Strike Damage Per Frenzy Charge 2" "Enchantment Frenzy Damage Per Frenzy Charge 2" "Enchantment Frost Blades Damage 2" "Enchantment Glacial Cascade Physical Damage Percent To Convert To Cold 2" "Enchantment Haste Mana Reservation 2" "Enchantment Herald Of Agony Num Of Secondary Projectiles 1" "Enchantment Herald Of Purity Additional Minion 1" "Enchantment Herald Of Purity Mana Reservation 2" "Enchantment Kinetic Blast Explosions 2" "Enchantment Lacerate Damage 2" "Enchantment Lightning Warp Duration 2" "Enchantment Magma Orb Num Of Additional Projectiles In Chain 2" "Enchantment Molten Strike Num Of Additional Projectiles 2" "Enchantment Power Siphon Additional Projectiles 2" "Enchantment Scourge Arrow Additional Spore 1" "Enchantment Spectral Throw Projectile Deceleration 2" "Enchantment Spellslinger Reservation 2" "Enchantment Split Arrow Num Of Additional Projectiles 2" "Enchantment Storm Brand Damage 2" "Enchantment Storm Burst Additional Object Chance 2" "Enchantment Tornado Shot Num Of Secondary Projectiles 2" "Enchantment Toxic Rain Num Of Additional Projectiles 1"
 	Rarity = Unique
 	SetFontSize 45
 	SetTextColor 255 128 64 # Unique (15c+)
@@ -1379,7 +1379,7 @@ Show  # Enchantments - 10c+ Unique
 	PlayEffect Red
 
 Show  # Enchantments - 10c+ Other
-	HasEnchantment "Enchantment Arc Num Of Additional Projectiles In Chain 1" "Enchantment Ball Lightning Damage 2" "Enchantment Barrage Num Of Additional Projectiles 1" "Enchantment Blade Vortex Duration 2" "Enchantment Caustic Arrow Damage 2" "Enchantment Cobra Lash Number Of Additional Chains 2" "Enchantment Dash Travel Distance 2" "Enchantment Despair Effect 2" "Enchantment Divine Ire Number Of Additional Nearby Enemies To Zap 2" "Enchantment Double Slash Added Phys To Bleeding 2" "Enchantment Flesh and Stone Mana Reservation 2" "Enchantment Flicker Strike Damage 2" "Enchantment Flicker Strike Damage Per Frenzy Charge 2" "Enchantment Frenzy Damage Per Frenzy Charge 2" "Enchantment Frost Blades Damage 2" "Enchantment Glacial Cascade Physical Damage Percent To Convert To Cold 2" "Enchantment Herald Of Agony Num Of Secondary Projectiles 1" "Enchantment Herald Of Purity Additional Minion 1" "Enchantment Herald Of Purity Mana Reservation 2" "Enchantment Kinetic Blast Explosions 2" "Enchantment Lacerate Damage 2" "Enchantment Lightning Warp Duration 2" "Enchantment Magma Orb Num Of Additional Projectiles In Chain 2" "Enchantment Power Siphon Additional Projectiles 2" "Enchantment Scourge Arrow Additional Spore 1" "Enchantment Spectral Throw Projectile Deceleration 2" "Enchantment Spellslinger Reservation 2" "Enchantment Split Arrow Num Of Additional Projectiles 2" "Enchantment Storm Brand Damage 2" "Enchantment Storm Burst Additional Object Chance 2" "Enchantment Tornado Shot Num Of Secondary Projectiles 2" "Enchantment Toxic Rain Num Of Additional Projectiles 1"
+	HasEnchantment "Enchantment Animate Weapon Chance To Create Additional Copy 2" "Enchantment Arc Num Of Additional Projectiles In Chain 1" "Enchantment Ball Lightning Damage 2" "Enchantment Barrage Num Of Additional Projectiles 1" "Enchantment Blade Vortex Duration 2" "Enchantment Caustic Arrow Damage 2" "Enchantment Cobra Lash Number Of Additional Chains 2" "Enchantment Despair Effect 2" "Enchantment Double Slash Added Phys To Bleeding 2" "Enchantment Flammability Curse Effect 2" "Enchantment Flesh and Stone Mana Reservation 2" "Enchantment Flicker Strike Damage 2" "Enchantment Flicker Strike Damage Per Frenzy Charge 2" "Enchantment Frenzy Damage Per Frenzy Charge 2" "Enchantment Frost Blades Damage 2" "Enchantment Glacial Cascade Physical Damage Percent To Convert To Cold 2" "Enchantment Haste Mana Reservation 2" "Enchantment Herald Of Agony Num Of Secondary Projectiles 1" "Enchantment Herald Of Purity Additional Minion 1" "Enchantment Herald Of Purity Mana Reservation 2" "Enchantment Kinetic Blast Explosions 2" "Enchantment Lacerate Damage 2" "Enchantment Lightning Warp Duration 2" "Enchantment Magma Orb Num Of Additional Projectiles In Chain 2" "Enchantment Molten Strike Num Of Additional Projectiles 2" "Enchantment Power Siphon Additional Projectiles 2" "Enchantment Scourge Arrow Additional Spore 1" "Enchantment Spectral Throw Projectile Deceleration 2" "Enchantment Spellslinger Reservation 2" "Enchantment Split Arrow Num Of Additional Projectiles 2" "Enchantment Storm Brand Damage 2" "Enchantment Storm Burst Additional Object Chance 2" "Enchantment Tornado Shot Num Of Secondary Projectiles 2" "Enchantment Toxic Rain Num Of Additional Projectiles 1"
 	SetFontSize 40
 	SetTextColor 255 255 255 # Crafting Base (Mid)
 	SetBackgroundColor 60 60 60 255 # Crafting Base (Mid)
@@ -1511,7 +1511,7 @@ Show  # Uniques - Enchanted
 
 Show  # Uniques - 3-5c
 	Rarity = Unique
-	BaseType "Amber Amulet" "Arcanist Slippers" "Archon Kite Shield" "Assassin Bow" "Aventail Helmet" "Bismuth Flask" "Blue Pearl Amulet" "Cardinal Round Shield" "Chain Gloves" "Champion Kite Shield" "Conjurer Gloves" "Corsair Sword" "Elegant Foil" "Ezomyte Burgonet" "Fiend Dagger" "Full Wyrmscale" "Gold Amulet" "Gold Ring" "Grand Mana Flask" "Heavy Belt" "Highborn Staff" "Imperial Bow" "Imperial Maul" "Imperial Skean" "Iron Sceptre" "Jade Amulet" "Karui Maul" "Lacquered Garb" "Murder Mitts" "Onyx Amulet" "Rawhide Tower Shield" "Royal Axe" "Sacrificial Garb" "Simple Robe" "Slink Boots" "Sulphur Flask" "Titan Greaves" "Topaz Flask" "Topaz Ring" "Turquoise Amulet" "Varnished Coat" "Void Axe" "Steelwood Bow" "Ezomyte Spiked Shield" "Steel Circlet" "Tyrant's Sekhem"
+	BaseType "Amber Amulet" "Arcanist Slippers" "Archon Kite Shield" "Assassin Bow" "Aventail Helmet" "Bismuth Flask" "Blue Pearl Amulet" "Cardinal Round Shield" "Champion Kite Shield" "Conjurer Gloves" "Corsair Sword" "Elegant Foil" "Ezomyte Burgonet" "Fiend Dagger" "Full Wyrmscale" "Gold Amulet" "Gold Ring" "Grand Mana Flask" "Heavy Belt" "Highborn Staff" "Imperial Maul" "Imperial Skean" "Iron Sceptre" "Jade Amulet" "Karui Maul" "Lacquered Garb" "Murder Mitts" "Onyx Amulet" "Rawhide Tower Shield" "Royal Axe" "Sacrificial Garb" "Simple Robe" "Slink Boots" "Sulphur Flask" "Topaz Flask" "Topaz Ring" "Turquoise Amulet" "Varnished Coat" "Void Axe" "Steelwood Bow" "Ezomyte Spiked Shield" "Steel Circlet" "Tyrant's Sekhem"
 	SetFontSize 36
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 230 # Unique
@@ -1552,7 +1552,7 @@ Show  # Uniques - <3c - ilvl <67
 # Limited drop. May share a BaseType with an extremely valuable item, League specific, or boss drop only.
 Show  # Uniques - Limited
 	Rarity = Unique
-	BaseType "Agate Amulet" "Amethyst Flask" "Amethyst Ring" "Ancient Greaves" "Ancient Spirit Shield" "Assassin's Mitts" "Branded Kite Shield" "Carnal Armour" "Carnal Mitts" "Carved Wand" "Chain Belt" "Citrine Amulet" "Cloth Belt" "Coiled Staff" "Coral Amulet" "Crusader Gloves" "Crystal Belt" "Eternal Sword" Gavel "Goathide Boots" "Golden Plate" "Goliath Greaves" "Harlequin Mask" "Holy Chainmail" "Hubris Circlet" "Hydrascale Boots" "Infernal Sword" "Iron Ring" "Jasper Chopper" "Judgement Staff" "Karui Chopper" "Leather Belt" "Leather Cap" "Legion Sword" "Lion Pelt" Maelstr "Midnight Blade" "Mind Cage" "Moonstone Ring" "Necromancer Circlet" "Nightmare Bascinet" "Opal Ring" "Painted Tower Shield" "Paua Amulet" "Penetrating Arrow Quiver" "Pinnacle Tower Shield" "Praetor Crown" "Prismatic Ring" "Raven Mask" "Ritual Sceptre" "Royal Burgonet" "Ruby Flask" "Ruby Ring" "Sadist Garb" "Sage Wand" "Sapphire Ring" "Serpentscale Gauntlets" "Silver Flask" "Soldier Helmet" "Stibnite Flask" "Terror Claw" "Triumphant Lamellar" "Two-Point Arrow Quiver" "Unset Ring" "Vaal Axe" "Vaal Gauntlets" "Vaal Mask" "Variscite Blade" "Void Sceptre" "Widowsilk Robe" "Zealot Gloves" "Blood Sceptre" "Two-Toned Boots"
+	BaseType "Agate Amulet" "Amethyst Flask" "Amethyst Ring" "Ancient Greaves" "Ancient Spirit Shield" "Assassin's Mitts" "Branded Kite Shield" "Carnal Armour" "Carnal Mitts" "Carved Wand" "Citrine Amulet" "Cloth Belt" "Coiled Staff" "Coral Amulet" "Crusader Gloves" "Crystal Belt" "Eternal Sword" Gavel "Goathide Boots" "Golden Plate" "Goliath Greaves" "Harlequin Mask" "Holy Chainmail" "Hubris Circlet" "Hydrascale Boots" "Imperial Bow" "Infernal Sword" "Iron Ring" "Jasper Chopper" "Judgement Staff" "Karui Chopper" "Leather Belt" "Leather Cap" "Legion Sword" "Lion Pelt" Maelstr "Midnight Blade" "Mind Cage" "Moonstone Ring" "Necromancer Circlet" "Nightmare Bascinet" "Opal Ring" "Painted Tower Shield" "Paua Amulet" "Penetrating Arrow Quiver" "Pinnacle Tower Shield" "Praetor Crown" "Prismatic Ring" "Raven Mask" "Ritual Sceptre" "Royal Burgonet" "Ruby Flask" "Ruby Ring" "Sadist Garb" "Sage Wand" "Sapphire Ring" "Serpentscale Gauntlets" "Silver Flask" "Soldier Helmet" "Stibnite Flask" "Terror Claw" "Titan Greaves" "Triumphant Lamellar" "Two-Point Arrow Quiver" "Unset Ring" "Vaal Axe" "Vaal Gauntlets" "Vaal Mask" "Variscite Blade" "Void Sceptre" "Widowsilk Robe" "Zealot Gloves" "Blood Sceptre" "Two-Toned Boots"
 	SetFontSize 36
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 230 # Unique

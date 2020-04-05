@@ -534,7 +534,7 @@ Show  # Uniques - <3c - Unique Rings
 				sb.AppendLine(showHide + "  # Divination Cards - <2c").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(listLess2c)).AppendLine(style).AppendLine();
 			}
 			if (listNearlyWorthless.Count > 0) {
-				string showHide = DivinationCard.IsShown(type, DivinationValueEnum.NearlyWorthless) ? "Shown" : "Hide";
+				string showHide = DivinationCard.IsShown(type, DivinationValueEnum.NearlyWorthless) ? "Show" : "Hide";
 				sb.AppendLine(showHide + "  # Divination Cards - Nearly Worthless").AppendLine("\tClass Divination").Append("\tBaseType ").AppendLine(ItemList(listNearlyWorthless)).AppendLine(styleDivNearlyWorthless).AppendLine();
 			}
 			if (listWorthless.Count > 0) {
