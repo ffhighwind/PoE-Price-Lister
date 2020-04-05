@@ -1,7 +1,7 @@
 ﻿﻿############################################
-##  HIGHWIND'S SEMI-STRICT FILTER 3.10.7  ##
+##  HIGHWIND'S SEMI-STRICT FILTER 3.10.6  ##
 ############################################
-## Release Date: April 4, 2020            ##
+## Release Date: April 5, 2020            ##
 ############################################
 
 #--------------#
@@ -2857,7 +2857,7 @@ Show
 	Rarity = Rare
 	ItemLevel >= 60
 	Class "One Hand" Daggers "Rune Dagger" Wands Claws Sceptres Quivers
-	BaseType "Siege Axe" "Vaal Hatchet" "Infernal Axe" "Runic Hatchet" "Legion Hammer" "Nightmare Mace" "Behemoth Mace" "Corsair Sword" "Spiraled Foil" "Eternal Sword" "Jewelled Foil" "Dragoon Sword" Ambusher "Platinum Kris" "Imperial Skean" Sai "Imbued Wand" "Opal Wand" "Tornado Wand" "Profane Wand" "Convoking Wand" "Hellion's Paw" "Imperial Claw" "Terror Claw" "Gemini Claw" "Karui Sceptre" "Vaal Sceptre"  "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver" "Ornate Quiver" "Penetrating Arrow Quiver" "Two-Point Arrow Quiver"
+	BaseType "Spiraled Foil" "Jewelled Foil" Ambusher "Platinum Kris" "Imperial Skean" "Imbued Wand" "Opal Wand" "Tornado Wand" "Convoking Wand" "Hellion's Paw" "Imperial Claw" "Gemini Claw" "Ornate Quiver"
 	SetBackgroundColor 40 35 8 231 # Rare Weapon 60+ (High)
 	SetBorderColor 100 65 25 255 # Rare Weapon 60+ (High)
 	Continue
@@ -2866,9 +2866,9 @@ Show
 	Rarity = Rare
 	ItemLevel >= 60
 	Class "Two Hand" Bows Staves Warstaves
-	BaseType "Sundering Axe" "Vaal Axe" "Ezomyte Axe" "Void Axe" "Despot Axe" Fleshripper Piledriver Meatgrinder "Terror Maul" "Coronal Maul" "Reaver Sword" "Vaal Greatsword" "Lion Sword" "Infernal Sword" "Exquisite Blade" "Thicket Bow" "Imperial Bow" "Harbinger Bow" "Maraketh Bow" Lathi "Ezomyte Staff" Maelstr "Eclipse Staff" "Judgement Staff"
+	BaseType "Thicket Bow" "Harbinger Bow"
 	SetBackgroundColor 20 60 0 231 # Rare Recipe 60+ (High)
-	SetBorderColor 35 105 70 255 # Rare Recipe 60+ (High)
+	SetBorderColor 110 110 40 255 # Rare Recipe 60+ (High)
 	Continue
 
 Show
@@ -2876,8 +2876,9 @@ Show
 	ItemLevel >= 60
 	DropLevel >= 60
 	Class "Body Armours"
+	BaseType "Astral Plate" "Vaal Regalia"
 	SetBackgroundColor 20 60 0 231 # Rare Recipe 60+ (High)
-	SetBorderColor 35 105 70 255 # Rare Recipe 60+ (High)
+	SetBorderColor 110 110 40 255 # Rare Recipe 60+ (High)
 	Continue
 
 Show
@@ -2885,17 +2886,20 @@ Show
 	ItemLevel >= 60
 	DropLevel >= 60
 	Class Shields
+	BaseType "Archon Kite Shield" "Titanium Spirit Shield" "Harmonic Spirit Shield" "Lacquered Buckler"
 	SetBackgroundColor 40 35 8 231 # Rare Weapon 60+ (High)
 	SetBorderColor 100 65 25 255 # Rare Weapon 60+ (High)
 	Continue
 
+# 56-58+ boots, 56-57+ gloves, 61-62+ helmets
 Show
 	Rarity = Rare
 	ItemLevel >= 60
-	DropLevel > 56
+	DropLevel >= 69
 	Class Gloves Boots Helmets
+	BaseType "Sorcerer Gloves" "Fingerless Silk Gloves" "Gripped Gloves" "Spiked Gloves" "Hubris Circlet" "Bone Helmet" "Sorcerer Boots" "Two-Toned Boots"
 	SetBackgroundColor 20 60 0 231 # Rare Recipe 60+ (High)
-	SetBorderColor 35 105 70 255 # Rare Recipe 60+ (High)
+	SetBorderColor 110 110 40 255 # Rare Recipe 60+ (High)
 	Continue
 
 Show
