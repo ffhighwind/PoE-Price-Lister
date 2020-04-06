@@ -1580,7 +1580,7 @@ Show
 	HasInfluence Crusader Hunter Redeemer Warlord Shaper Elder
 	SetFontSize 36
 	SetBackgroundColor 50 20 70 230 # Influence
-	SetBorderColor 0 0 0 255 # Default
+	SetBorderColor 0 0 0 230 # Default
 	Continue
 
 Show
@@ -1700,7 +1700,7 @@ Show  # Crafting Bases - Influence - 80+ Quivers
 	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Green
 
-Show  # Crafting Bases - Influence - Quivers
+Show  # Crafting Bases - Influence - Quivers (Other)
 	HasInfluence Crusader Hunter Redeemer Warlord Shaper Elder
 	Class Quivers
 	Rarity = Rare
@@ -1731,7 +1731,7 @@ Show  # Crafting Bases - Influence - 84+ Belts
 	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Green
 
-Show  # Crafting Bases - Influence - Belts
+Show  # Crafting Bases - Influence - Belts (Other)
 	HasInfluence Crusader Hunter Redeemer Warlord Shaper Elder
 	Class Belts
 
