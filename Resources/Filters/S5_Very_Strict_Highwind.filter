@@ -1030,6 +1030,9 @@ Show  # Gems - Quality - 14%+
 	SetTextColor 55 225 185 # Gem Quality (Mid)
 	SetBackgroundColor 50 50 50 230 # Gem Quality (Mid)
 	SetBorderColor 200 200 200 255 # Gem Quality (Mid)
+	PlayAlertSound 6 200 # Gem
+	MinimapIcon 0 Cyan Star
+	PlayEffect Cyan
 
 Show  # Gems - Drop Only - 5c+
 	Class "Skill Gems"
@@ -1582,20 +1585,51 @@ Hide  # Uniques - New or Worthless
 
 Show
 	HasInfluence Crusader Hunter Redeemer Warlord Shaper Elder
-	SetFontSize 40
+	SetFontSize 32
 	SetBackgroundColor 50 20 70 230 # Influence
+	SetBorderColor 0 0 0 255 # Default
+	Continue
+
+Show
+	HasInfluence Crusader Hunter Redeemer Warlord Shaper Elder
+	Class Quivers
+	BaseType "Two-Point Arrow Quiver" "Broadhead Arrow Quiver" "Ornate Quiver" "Spike-Point Arrow Quiver"
+	SetFontSize 36
+	SetBorderColor 200 50 255 255 # Influence
+	Continue
+
+Show
+	HasInfluence Crusader Hunter Redeemer Warlord Shaper Elder
+	SetFontSize 36
+	DropLevel >= 56
 	SetBorderColor 200 50 255 255 # Influence
 	Continue
 
 Show
 	Rarity = Rare
-	Class Amulets Rings
+	Class Amulets Rings Belts
 	SetBorderColor 220 0 0 255 # Rare Accessory
+	SetFontSize 36
 	Continue
 
 Show  # Crafting Bases - Influence - 70+ Drop Level
 	HasInfluence Crusader Hunter Redeemer Warlord Shaper Elder
 	BaseType "Opal Ring" "Steel Ring" "Vermillion Ring" "Cerulean Ring" "Marble Amulet" "Blue Pearl Amulet" "Spiked Gloves" "Fingerless Silk Gloves" "Gripped Gloves" "Bone Helmet" "Two-Toned Boots" "Crystal Belt" "Stygian Vise"
+	SetFontSize 45
+	SetTextColor 0 100 220 # Crafting Base (High)
+	SetBackgroundColor 255 255 255 255 # Crafting Base (High)
+	SetBorderColor 40 80 150 255 # Crafting Base (High)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red UpsideDownHouse
+	PlayEffect Red
+
+# 86+ Shaper Body Armour (attack crit%, +1 gem level, life%)
+# 86+ Shaper Body Armour (spell crit%, +1 gem level, life%)
+Show  # Crafting Bases - Influence - 86+ Body Armour
+	HasInfluence Crusader Hunter Redeemer Warlord Shaper Elder
+	ItemLevel >= 86
+	Class "Body Armour"
+	DropLevel >= 62
 	SetFontSize 45
 	SetTextColor 0 100 220 # Crafting Base (High)
 	SetBackgroundColor 255 255 255 255 # Crafting Base (High)
@@ -1616,19 +1650,75 @@ Show  # Crafting Bases - Influence - 70+ Drop Level
 #	MinimapIcon 0 Green UpsideDownHouse
 #	PlayEffect Green
 
-# 86+ Shaper Body Armour (attack crit%, +1 gem level, life%)
-# 86+ Shaper Body Armour (spell crit%, +1 gem level, life%)
-Show  # Crafting Bases - Influence - 86+ Body Armour
+# 84+ Shaper Shields (max res)
+# 84+ Shaper Boots (cooldown recovery, ranged attack totems)
+# 84+ Shaper Belts (cooldown recovery, remove chill/freeze, reduced crit taken, energy shield)
+# 84+ Shaper Helmets (mines, power charge on kill, added spell damage, spell crit)
+#Show  # Crafting Bases - Shaper - 84+ BaseTypes
+#	HasInfluence Shaper
+#	ItemLevel >= 84
+#	BaseType "Titanium Spirit Shield" "Harmonic Spirit Shield" "Lacquered Buckler" "Archon Kite Shield" "Slink Boots" "Sorcerer Boots" "Vaal Mask" "Lion Pelt" "Leather Belt" "Heavy Belt"
+#	PlayAlertSound 4 200 # Mid Value
+#	MinimapIcon 0 Green UpsideDownHouse
+#	PlayEffect Green
+
+# 84+ Elder Helmets (righteous fire)
+#Show  # Crafting Bases - Elder - 84+ BaseTypes
+#	HasInfluence Elder
+#	ItemLevel >= 84
+#	BaseType "Royal Burgonet" "Eternal Burgonet" "Ezomyte Burgonet" "Hubris Circlet" "Mind Cage" "Praetor Crown"
+#	PlayAlertSound 4 200 # Mid Value
+#	MinimapIcon 0 Green UpsideDownHouse
+#	PlayEffect Green
+
+# 85+ Shaper Bows (phys as extra, ele pen, coc)
+#Show  # Crafting Bases - Shaper - 85+ BaseTypes
+#	HasInfluence Shaper
+#	ItemLevel >= 85
+#	BaseType "Thicket Bow" "Imperial Bow" "Short Bow" "Grove Bow"
+#	PlayAlertSound 4 200 # Mid Value
+#	MinimapIcon 0 Green UpsideDownHouse
+#	PlayEffect Green
+
+# 83+ Shaper Swords/Claws (phys as extra, ele pen)
+#Show  # Crafting Bases - Shaper - 83+ BaseTypes
+#	HasInfluence Shaper
+#	ItemLevel >= 83
+#	BaseType "Jewelled Foil" "Spiraled Foil" "Imperial Claw" "Eclipse Staff"
+#	PlayAlertSound 4 200 # Mid Value
+#	MinimapIcon 0 Green UpsideDownHouse
+#	PlayEffect Green
+
+# Hunter - Boots (Tailwind on crit)
+#Show  # Crafting Bases - Influence - 75+ Hunter Boots
+#	Class Boots
+#	HasInfluence Hunter
+#	ItemLevel >= 75
+#	MinimapIcon 0 Green UpsideDownHouse
+#	PlayEffect Green
+
+# 80+ Shaper - Quivers (+1 arrow, phys as extra cold)
+# 80+ Hunter - Quivers (phys/chaos dot multiplier)
+Show  # Crafting Bases - Influence - 80+ Quivers
+	HasInfluence Shaper Hunter
+	ItemLevel >= 80
+	Class Quivers
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Green UpsideDownHouse
+	PlayEffect Green
+
+Show  # Crafting Bases - Influence - Quivers
 	HasInfluence Crusader Hunter Redeemer Warlord Shaper Elder
-	ItemLevel >= 86
-	BaseType "Vaal Regalia" "Glorious Plate" "Astral Plate" "Zodiac Leather" "Assassin's Garb" "Carnal Armour" "Sadist Garb"
-	SetFontSize 45
-	SetTextColor 0 100 220 # Crafting Base (High)
-	SetBackgroundColor 255 255 255 255 # Crafting Base (High)
-	SetBorderColor 40 80 150 255 # Crafting Base (High)
-	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red UpsideDownHouse
-	PlayEffect Red
+	Class Quivers
+	Rarity = Rare
+
+Show  # Crafting Bases - Influence - Jewelry
+	HasInfluence Crusader Hunter Redeemer Warlord Shaper Elder
+	Rarity = Rare
+	Class Amulets Rings
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Green UpsideDownHouse
+	PlayEffect Green
 
 # 85+ Shaper - Wands/Sceptres/Daggers (phys as extra) phys spells e.g. Blade Vortex, Blade Fall, EK
 Show  # Crafting Bases - Shaper - 85+ Sceptres Wands Daggers
@@ -1639,95 +1729,44 @@ Show  # Crafting Bases - Shaper - 85+ Sceptres Wands Daggers
 	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Green
 
-# 84+ Shaper Shields (max res)
-# 84+ Shaper Boots (cooldown recovery, ranged attack totems)
-# 84+ Shaper Belts (cooldown recovery, remove chill/freeze, reduced crit taken, energy shield)
-# 84+ Shaper Helmets (mines, power charge on kill, added spell damage, spell crit)
-Show  # Crafting Bases - Shaper - 84+ BaseTypes
-	HasInfluence Shaper
-	ItemLevel >= 84
-	BaseType "Titanium Spirit Shield" "Harmonic Spirit Shield" "Lacquered Buckler" "Archon Kite Shield" "Slink Boots" "Sorcerer Boots" "Vaal Mask" "Lion Pelt" "Leather Belt" "Heavy Belt"
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Green UpsideDownHouse
-	PlayEffect Green
-
-# 84+ Elder Helmets (righteous fire)
-Show  # Crafting Bases - Elder - 84+ BaseTypes
-	HasInfluence Elder
-	ItemLevel >= 84
-	BaseType "Royal Burgonet" "Hubris Circlet"
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Green UpsideDownHouse
-	PlayEffect Green
-
-# 85+ Shaper Bows (phys as extra, ele pen, coc)
-Show  # Crafting Bases - Shaper - 85+ BaseTypes
-	HasInfluence Shaper
-	ItemLevel >= 85
-	BaseType "Thicket Bow" "Imperial Bow" "Short Bow"
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Green UpsideDownHouse
-	PlayEffect Green
-
-# 83+ Shaper Swords/Claws (phys as extra, ele pen)
-Show  # Crafting Bases - Shaper - 83+ BaseTypes
-	HasInfluence Shaper
-	ItemLevel >= 83
-	BaseType "Jewelled Foil" "Spiraled Foil" "Imperial Claw" "Eclipse Staff"
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Green UpsideDownHouse
-	PlayEffect Green
-
-# 80+ Shaper - Quivers (+1 arrow, phys as extra cold)
-# 80+ Hunter - Quivers (phys/chaos dot multiplier)
-Show  # Crafting Bases - Shaper - 80+ Quivers
-	HasInfluence Shaper Hunter
-	ItemLevel >= 80
-	Class Quivers
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Green UpsideDownHouse
-	PlayEffect Green
-
-Show  # Crafting Bases - Influence - 86+
+Show  # Crafting Bases - Influence - 84+ Belts
 	HasInfluence Crusader Hunter Redeemer Warlord Shaper Elder
-	ItemLevel >= 86
+	Class Belts
+	ItemLevel >= 84
+	BaseType "Leather Belt" "Vanguard Belt" "Heavy Belt"
+	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Green
+
+Show  # Crafting Bases - Influence - Belts
+	HasInfluence Crusader Hunter Redeemer Warlord Shaper Elder
+	Class Belts
 
 Show  # Crafting Bases - Influence - 84+
 	HasInfluence Crusader Hunter Redeemer Warlord Shaper Elder
 	ItemLevel >= 84
+	DropLevel >= 56
+	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Green
 
-# Hunter - Boots (Tailwind on crit)
-Show  # Crafting Bases - Influence - 75+ Hunter Boots
-	HasInfluence Hunter
-	ItemLevel >= 75
-	MinimapIcon 0 Green UpsideDownHouse
-	PlayEffect Green
-
-Show  # Crafting Bases - Influence - Jewelry
+Show  # Crafting Bases - Influence - 83+ Weapons
 	HasInfluence Crusader Hunter Redeemer Warlord Shaper Elder
-	Class Amulets Rings
+	ItemLevel >= 83
+	Class "One Hand" "Two Hand" Bows Staves Warstaves Daggers "Rune Dagger" Wands Claws Sceptres
+	DropLevel >= 56
+	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Green
 
-Show  # Crafting Bases - Influence - <56
+Show  # Crafting Bases - Influence - 56+ Rare
 	HasInfluence Crusader Hunter Redeemer Warlord Shaper Elder
 	Rarity = Rare
-	DropLevel < 56
-	SetBorderColor 0 0 0 230 # Default
-
-Show  # Crafting Bases - Influence - 56+
-	HasInfluence Crusader Hunter Redeemer Warlord Shaper Elder
-	Rarity = Rare
+	DropLevel >= 56
 
 Show
 	HasInfluence Crusader Hunter Redeemer Warlord Shaper Elder
 	Rarity <= Magic
-	ItemLevel < 83
-	SetFontSize 40
 	SetBorderColor 0 0 0 230 # Default
 	Continue
 
@@ -3762,7 +3801,7 @@ Hide  # 60+ Rares - Shields
 
 Hide  # 60+ Rares - Quivers - Valuable
 	Class Quivers
-	BaseType "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver"
+	BaseType "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver" "Ornate Quiver" "Penetrating Arrow Quiver" "Two-Point Arrow Quiver"
 	ItemLevel >= 60
 
 Hide  # 60+ Rares - Quivers - Other
