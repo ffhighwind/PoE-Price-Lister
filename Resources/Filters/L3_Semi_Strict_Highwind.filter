@@ -516,6 +516,7 @@ Show
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Green Triangle
 	PlayEffect Green
+	Continue
 
 Show  # Currency - Prophecies - High
 	Class Currency
