@@ -539,7 +539,7 @@ Hide  # Currency - Prophecies - Very Low
 	Prophecy "Resistant to Change" "Touched by the Wind" "Smothering Tendrils" "Vital Transformation" "Lasting Impressions" "The Invader" "Lightning Falls" "Hidden Reinforcements" "Fallow At Last" "The Hungering Swarm" "Crushing Squall" "Fire from the Sky" "The Brothers of Necromancy" "Gilded Within" "Risen Blood" "In the Grasp of Corruption" "Vaal Invasion" "Unnatural Energy" "Undead Uprising" "The Undead Storm" "The Mysterious Gift" "The God of Misfortune"
 	SetFontSize 32
 	MinimapIcon -1
-	PlayAlertSound 1 0
+	PlayAlertSound None
 	DisableDropSound
 
 Show  # Currency - Prophecies - Low
