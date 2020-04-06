@@ -109,7 +109,7 @@
 # (56) "Karui Sceptre" "Vaal Sceptre"
 #
 ## Two-Handed Weapons (56+) ##
-# (60) "Sundering Axe" "Vaal Axe" "Ezomyte Axe"  "Void Axe" "Despot Axe" "Fleshripper"
+# (60) "Sundering Axe" "Vaal Axe" "Ezomyte Axe" "Void Axe" "Despot Axe" "Fleshripper"
 # (61) "Piledriver" "Meatgrinder" "Terror Maul" "Coronal Maul"
 # (59) "Reaver Sword" "Vaal Greatsword" "Lion Sword" "Infernal Sword" "Exquisite Blade"
 # (56) "Thicket Bow" "Imperial Bow" "Harbinger Bow" "Maraketh Bow"
@@ -478,7 +478,7 @@ Show  # Currency - High
 
 Show  # League Specific - Delirium - Delirium Orb (High)
 	Class Currency
-	BaseType "Skittering Delirium Orb" "Diviner's Delirium Orb" "Blighted Delirium Orb" "Thaumaturge's Delirium Orb" "Cartographer's Delirium Orb" "Fine Delirium Orb" "Fossilised Delirium Orb" "Timeless Delirium Orb" "Obscured Delirium Orb"
+	BaseType "Skittering Delirium Orb" "Diviner's Delirium Orb" "Blighted Delirium Orb" "Thaumaturge's Delirium Orb" "Cartographer's Delirium Orb" "Fine Delirium Orb" "Fossilised Delirium Orb" "Timeless Delirium Orb" "Obscured Delirium Orb" "Delirium Orb"
 
 Show  # League Specific - Essence - Essences (High)
 	Class "Stackable Currency"
@@ -513,14 +513,23 @@ Show  # League Specific - Incursion - Vials (High)
 # Prophecy #
 #----------#
 
+Show
+	Class Currency
+	BaseType "Prophecy"
+	SetFontSize 36
+	SetTextColor 255 0 255 # Prophecy
+	SetBackgroundColor 20 0 20 230 # Prophecy
+	SetBorderColor 0 255 0 255 # Prophecy
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Green Triangle
+	PlayEffect Green
+
 Show  # Currency - Prophecies - High
 	Class Currency
 	BaseType "Prophecy"
 	Prophecy "The Queen's Sacrifice" "Fated Connections" "Trash to Treasure"
 	SetFontSize 45
-	SetTextColor 255 0 255 # Prophecy (High Value)
-	SetBackgroundColor 255 255 255 230 # Prophecy (High Value)
-	SetBorderColor 0 255 0 255 # Prophecy (High Value)
+	SetBackgroundColor 255 255 255 255 # Prophecy (High Value)
 	PlayAlertSound 1 200 # High Value
 	MinimapIcon 0 Red Triangle
 	PlayEffect Red
@@ -528,34 +537,20 @@ Show  # Currency - Prophecies - High
 Show  # Currency - Prophecies - Mid
 	Class Currency
 	BaseType "Prophecy"
-	Prophecy "Flesh of the Beast" "The Jeweller's Touch" "Wind and Thunder" "Monstrous Treasure" "Cleanser of Sins" "The Queen's Vaults" "The Dreaded Rhoa" "Darktongue's Shriek" "A Dishonourable Death" "The King's Path" "A Master Seeks Help" "The Bowstring's Music"
-	SetFontSize 45
-	SetTextColor 255 0 255 # Prophecy
-	SetBackgroundColor 20 0 20 230 # Prophecy
-	SetBorderColor 0 255 0 255 # Prophecy
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Red Triangle
-	PlayEffect Red
+	Prophecy "Flesh of the Beast" "The Jeweller's Touch" "Wind and Thunder" "Monstrous Treasure" "Cleanser of Sins" "The Queen's Vaults" "The Dreaded Rhoa" "Darktongue's Shriek" "A Dishonourable Death" "The King's Path" "A Master Seeks Help" "The Bowstring's Music" "Lost in the Pages"
 
 Hide  # Currency - Prophecies - Very Low
 	Class Currency
 	BaseType "Prophecy"
 	Prophecy "Resistant to Change" "Touched by the Wind" "Smothering Tendrils" "Vital Transformation" "Lasting Impressions" "The Invader" "Lightning Falls" "Hidden Reinforcements" "Fallow At Last" "The Hungering Swarm" "Crushing Squall" "Fire from the Sky" "The Brothers of Necromancy" "Gilded Within" "Risen Blood" "In the Grasp of Corruption" "Vaal Invasion" "Unnatural Energy" "Undead Uprising" "The Undead Storm" "The Mysterious Gift" "The God of Misfortune"
 	SetFontSize 32
-	SetTextColor 255 0 255 # Prophecy
-	SetBackgroundColor 20 0 20 230 # Prophecy
-	SetBorderColor 0 255 0 255 # Prophecy
+	MinimapIcon -1
+	PlayAlertSound 1 0
 	DisableDropSound
 
 Show  # Currency - Prophecies - Low
 	Class Currency
 	BaseType "Prophecy"
-	SetFontSize 40
-	SetTextColor 255 0 255 # Prophecy
-	SetBackgroundColor 20 0 20 230 # Prophecy
-	SetBorderColor 0 255 0 255 # Prophecy
-	MinimapIcon 0 Green Triangle
-	PlayEffect Green
 
 #--------#
 # Errors #
@@ -1027,7 +1022,7 @@ Show  # Gems - Quality - 14%+
 	Quality >= 14
 	Class "Skill Gems"
 	SetFontSize 36
-	SetTextColor 55 225 185 # Gem Quality (Mid)
+	SetTextColor 55 225 185 # Gem (Mid)
 	SetBackgroundColor 50 50 50 230 # Gem Quality (Mid)
 	SetBorderColor 200 200 200 255 # Gem Quality (Mid)
 	PlayAlertSound 6 200 # Gem
@@ -1049,56 +1044,46 @@ Show  # Gems - Drop Only - 5c+
 # Low #
 #-----#
 
-Hide  # Gems - Drop Only - 1c+
-	Class "Skill Gems"
-	BaseType "Vaal Haste" "Vaal Discipline"
-	SetFontSize 36
-	SetTextColor 55 225 185 # Gem (Mid)
-	SetBackgroundColor 10 35 30 230 # Gem (Mid)
-	SetBorderColor 50 220 180 255 # Gem (Mid)
-	DisableDropSound
-
-Show  # Gems - Quality - 10%+
-	Quality >= 10
-	Class "Skill Gems"
-	SetFontSize 36
-	SetTextColor 27 162 155 # Gem Quality (Low)
-	SetBackgroundColor 8 30 25 230 # Gem Quality (Low)
-	SetBorderColor 130 130 130 255 # Gem Quality (Low)
-
-Hide  # Gems - Quality - 5%+
-	Quality >= 5
+Show
 	Class "Skill Gems"
 	SetFontSize 32
-	SetTextColor 27 162 155 # Gem Quality (Low)
+	SetTextColor 27 162 155 # Gem
+	SetBackgroundColor 8 30 25 230 # Gem (Low)
+	SetBorderColor 0 150 150 255 # Gem (Low)
+	Continue
+
+Show
+	Class "Skill Gems"
+	Quality > 0
 	SetBackgroundColor 8 30 25 230 # Gem Quality (Low)
 	SetBorderColor 130 130 130 255 # Gem Quality (Low)
+	Continue
+
+Show  # Gems - Quality - 10%+
+	Class "Skill Gems"
+	Quality >= 10
+	SetFontSize 36
+
+Show  # Gems - Drop Only - Worthless
+	Class "Skill Gems"
+	BaseType Vaal Enhance
+
+Hide  # Gems - Quality - 5%+
+	Class "Skill Gems"
+	Quality >= 5
 	DisableDropSound
 
 Hide  # Gems - Quality - 1%+
+	Class "Skill Gems"
 	Quality > 0
-	Class "Skill Gems"
-	SetFontSize 32
-	SetTextColor 27 162 155 # Gem Quality (Low)
-	SetBackgroundColor 8 30 25 230 # Gem Quality (Low)
-	SetBorderColor 130 130 130 255 # Gem Quality (Low)
-	DisableDropSound
-
-Hide  # Gems - Drop Only - Worthless
-	Class "Skill Gems"
-	BaseType Vaal Enhance
-	SetFontSize 32
-	SetTextColor 27 162 155 # Gem (Low)
-	SetBackgroundColor 8 30 25 230 # Gem (Low)
-	SetBorderColor 0 150 150 255 # Gem (Low)
 	DisableDropSound
 
 Hide  # Gems - Other
 	Class "Skill Gems"
 	SetFontSize 32
-	SetTextColor 27 162 155 # Gem (Worthless)
-	SetBackgroundColor 0 0 0 200 # Gem (Worthless)
-	SetBorderColor 0 0 0 0 # Gem (Worthless)
+	SetTextColor 27 162 155 # Gem
+	SetBackgroundColor 0 0 0 230 # Default
+	SetBorderColor 0 0 0 230 # Default
 	DisableDropSound
 
 ##########################################
