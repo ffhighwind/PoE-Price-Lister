@@ -49,6 +49,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>chaos_orb4.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Costura, Version=3.1.0.0, Culture=neutral, PublicKeyToken=9919ef960d84173d, processorArchitecture=MSIL">
       <HintPath>packages\Costura.Fody.3.1.0\lib\net46\Costura.dll</HintPath>
@@ -165,6 +168,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="chaos_orb4.ico" />
     <Content Include="FodyWeavers.xml" />
     <Content Include="Resources\changelog_archive.txt" />
     <Content Include="Resources\filterblast_config.txt" />
