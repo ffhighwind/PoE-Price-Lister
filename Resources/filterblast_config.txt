@@ -1,7 +1,7 @@
 Filter [Highwind's Loot Filter]
 
 Version [3.10.6]
-LastUpdate [4.4.2020]
+LastUpdate [4.5.2020]
 PoEVersion [3.10.x]
 ForumThread [https://www.pathofexile.com/forum/view-thread/1490867]
 
@@ -13,14 +13,14 @@ SmartColors on
 Presets
 	Preset "Regular" DEFAULT [S1_Regular_Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/S1_Regular_Highwind.filter]
 	Preset "Mapping" [S2_Mapping_Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/S2_Mapping_Highwind.filter]
-	Preset "Semi-Strict" [S3_Semi_Strict_Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/S3_Semi_Strict_Highwind.filter]
+	Preset "Semi Strict" [S3_Semi_Strict_Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/S3_Semi_Strict_Highwind.filter]
 	Preset "Strict" [S4_Strict_Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/S4_Strict_Highwind.filter]
 	Preset "Very Strict" [S5_Very_Strict_Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/S5_Very_Strict_Highwind.filter]
 	Preset "Regular Large" [L1_Regular_Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/L1_Regular_Highwind.filter]
 	Preset "Mapping Large" [L2_Mapping_Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/L2_Mapping_Highwind.filter]
-	Preset "Semi-Strict Large" [L3_Semi_Strict_Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/L3_Semi_Strict_Highwind.filter]
+	Preset "Semi Strict Large" [L3_Semi_Strict_Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/L3_Semi_Strict_Highwind.filter]
 	Preset "Strict Large" [L4_Strict_Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/L4_Strict_Highwind.filter]
-	Preset "Very Strict Large" [L5_Very_Strict_Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/L4_Very_Strict_Highwind.filter]
+	Preset "Very Strict Large" [L5_Very_Strict_Highwind] [https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/Resources/Filters/L5_Very_Strict_Highwind.filter]
 
 # ColorThemes filtertheme
 #	Theme "Default" DEFAULT [Highwind_Default_Theme] [https://pastebin.com/raw/TSFSZdry]
