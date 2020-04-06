@@ -1197,10 +1197,17 @@ Show  # 5+ Links - Influence - 84+
 	HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
 	ItemLevel >= 84
 
+# "Astral Plate" "Glorious Plate" "Occultist's Vestment" "Widowsilk Robe" "Vaal Regalia" "Zodiac Leather" "Sadist Garb" "Carnal Armour"
 Show  # 5+ Links - Body Armour (86+)
 	LinkedSockets = 5
-	BaseType "Astral Plate" "Glorious Plate" "Occultist's Vestment" "Widowsilk Robe" "Vaal Regalia" "Zodiac Leather" "Sadist Garb" "Carnal Armour"
 	ItemLevel >= 86
+	DropLevel >= 62
+
+Show  # 5+ Links - Influence - Other
+	LinkedSockets = 5
+	HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+	SetBackgroundColor 255 255 255 255 # 5+ Link (High)
+	MinimapIcon 0 Green UpsideDownHouse
 
 #-----#
 # Mid #
@@ -1219,12 +1226,6 @@ Show
 Show  # 5+ Links - 6 Sockets
 	LinkedSockets = 5
 	Sockets = 6
-
-Show  # 5+ Links - Influence - Other
-	LinkedSockets = 5
-	HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
-	SetBackgroundColor 255 255 255 255 # 5+ Link (High)
-	MinimapIcon 0 Green UpsideDownHouse
 
 Show  # 5+ Links - Body Armour (84+)
 	LinkedSockets = 5
