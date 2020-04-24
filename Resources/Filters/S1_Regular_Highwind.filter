@@ -1777,7 +1777,7 @@ Show  # Explicit Mods - Physical Weapons - Magic
 # Elemental Weapons
 Show  # Explicit Mods - Elemental Weapons - Magic
 	Class "One Hand" Daggers "Rune Dagger" Wands Claws Sceptres Bows
-	HasExplicitMod "Cremating" "Electrocuting" "Malicious" "Entombing" "Sharpshooter's"
+	HasExplicitMod "Cremating" "Electrocuting" "Malicious" "Entombing" "Sharpshooter's" "Carbonising" "Vapourising" "Crystalising" "Devastating" "Malicious"
 	Rarity = Magic
 	SetFontSize 32
 	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
@@ -1786,7 +1786,7 @@ Show  # Explicit Mods - Elemental Weapons - Magic
 
 Show  # Explicit Mods - Elemental Weapons - Rare
 	Class "One Hand" Daggers "Rune Dagger" Wands Claws Sceptres Bows
-	HasExplicitMod "Cremating" "Electrocuting" "Malicious" "Entombing" "Sharpshooter's"
+	HasExplicitMod "Cremating" "Electrocuting" "Malicious" "Entombing" "Sharpshooter's" "Carbonising" "Vapourising" "Crystalising" "Devastating" "Malicious"
 	Rarity = Rare
 	SetFontSize 36
 	SetTextColor 255 255 255 # Crafting Base (Mid)
@@ -1852,8 +1852,8 @@ Show  # Explicit Mods - Warbands - Rare
 
 # Armor/Accessories
 Show  # Explicit Mods - Armor/Accessories - Magic
-	Class Gloves Boots Helmets Belts Amulets "Body Armour"
-	HasExplicitMod "Rapturous" "Prime" "of Haast" "of Tzteosh" "of Ephij" "of Bameth" "of the Gods" "Unfaltering" "Resplendent" "of the Genius" "of the Polymath" "of the Blur" "of the Wind" "Hellion's"
+	Class Gloves Boots Helmets Belts Amulets Rings "Body Armour"
+	HasExplicitMod "Rapturous" "Prime" "of Haast" "of Tzteosh" "of Ephij" "of Bameth" "of the Gods" "Unfaltering" "Resplendent" "of the Genius" "of the Polymath" "of the Blur" "of the Wind" "Hellion's" "Cheetah's" "Necromancer's"
 	Rarity = Magic
 	SetFontSize 32
 	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
@@ -1861,8 +1861,8 @@ Show  # Explicit Mods - Armor/Accessories - Magic
 	PlayEffect Blue
 
 Show  # Explicit Mods - Armor/Accessories - Rare
-	Class Gloves Boots Helmets Belts Amulets "Body Armour"
-	HasExplicitMod "Rapturous" "Prime" "of Haast" "of Tzteosh" "of Ephij" "of Bameth" "of the Gods" "Unfaltering" "Resplendent" "of the Genius" "of the Polymath" "of the Blur" "of the Wind" "Hellion's"
+	Class Gloves Boots Helmets Belts Amulets Rings "Body Armour"
+	HasExplicitMod "Rapturous" "Prime" "of Haast" "of Tzteosh" "of Ephij" "of Bameth" "of the Gods" "Unfaltering" "Resplendent" "of the Genius" "of the Polymath" "of the Blur" "of the Wind" "Hellion's" "Cheetah's" "Necromancer's"
 	Rarity = Rare
 	SetFontSize 36
 	SetTextColor 255 255 255 # Crafting Base (Mid)
@@ -1897,7 +1897,7 @@ Show  # Explicit Mods - Accessories - Rare
 # Jewels
 Show  # Explicit Mods - Jewels
 	BaseType Jewel
-	HasExplicitMod "Vivid" "Shimmering" "of the Elements" "of Unmaking" "Jinxing" "Cleaving" "Fencing" "Bandit's" "Volleying" "Ripping" "Slicing" "of Demolishing" "Surging" "Arctic" "Infernal" "Piercing" "Stalwart" "Resplendent" "Electrocuting" "Flaring" "Entombing" "Cremating" "of Unholy Might" "Sanguine" "Incandescent"
+	HasExplicitMod "Vivid" "Shimmering" "of the Elements" "of Unmaking" "Jinxing" "Cleaving" "Fencing" "Bandit's" "Volleying" "Ripping" "Slicing" "of Demolishing" "Surging" "Arctic" "Infernal" "Piercing" "Stalwart" "Resplendent" "Electrocuting" "Flaring" "Entombing" "Cremating" "of Unholy Might" "Sanguine" "Incandescent" "of Onslaught"
 	Rarity <= Rare
 	SetFontSize 32
 	SetBackgroundColor 0 0 0 230 # Jewel
@@ -1908,14 +1908,14 @@ Show  # Explicit Mods - Jewels
 
 # Betrayal/Syndicate
 Show  # Explicit Mods - Veiled - Magic
-	HasExplicitMod "Veiled" "'s Veiled" "'s Veil" "of the Veil" "of Janus' Veil"
+	HasExplicitMod "Veiled" "'s Veil" "the Veil" "Janus'"
 	Rarity <= Magic
 	SetFontSize 36
 	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
 
 Show  # Explicit Mods - Veiled - Rare - 83+
-	HasExplicitMod "Veiled" "'s Veiled" "'s Veil" "of the Veil" "of Janus' Veil"
+	HasExplicitMod "Veiled" "'s Veil" "the Veil" "Janus'"
 	Rarity = Rare
 	ItemLevel >= 83
 	SetFontSize 40
@@ -1927,7 +1927,7 @@ Show  # Explicit Mods - Veiled - Rare - 83+
 	PlayEffect Blue
 
 Show  # Explicit Mods - Veiled - Rare - Other
-	HasExplicitMod "Veiled" "'s Veiled" "'s Veil" "of the Veil" "of Janus' Veil"
+	HasExplicitMod "Veiled" "'s Veil" "the Veil" "Janus'"
 	Rarity = Rare
 	SetFontSize 36
 	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
