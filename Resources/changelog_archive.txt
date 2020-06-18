@@ -1,4 +1,108 @@
 ﻿----------------------------------------------------------------
+| Delirium
+----------------------------------------------------------------
+
+3.10.6
+▻ Completely remade most of the filter. Value/color conflicts should be prevented with the new organization.
+▻ Removed 84+ and 75+ rare item tiers. Replaced this with a handful of "top tier" equipment highlights instead.
+▻ Fix a bug with Elder maps.
+▻ Fixed Metamorph Samples.
+▻ Added a Prophecies section with tiered values.
+▻ Fixed Cluster Jewel coloring. This was previously being caught as a low tier enchanted item.
+▻ Changed animate weapon colors.
+▻ Added a semi-strict filter.
+▻ Added a border to level 19+ gems.
+▻ Removed sound and icon from <2c divination cards.
+▻ Simplified the Influence crafting section. Items that are not necessarily valuable will still make a noise, but nothing should be missed now.
+▻ Updated the filter values.
+
+3.10.5
+▻ Updated the filter values.
+▻ Added animate weapons support.
+
+3.10.4
+▻ Updated the filter values.
+▻ Created a new updater release.
+
+3.10.3
+▻ Updated the filter values.
+▻ Added unique Algor Mortis - Carnal Mitts
+
+3.10.2
+▻ There seems to be a bug that is preventing Cluster Jewels from having map icon/beam.
+▻ Updated the filter values.
+▻ Updated the CSVs
+▻ Changed 1-2 socket blues to be hidden after level 11 instead of 6.
+▻ Changed the blue highlight of 3-link normal/magic wands/sceptres from level 7 to level 9.
+▻ Changed the blue highlight of 3-link normal/magic armor from level 10 to 15.
+▻ Increased the size of splinters map icons.
+
+3.10.1
+▻ filter updates
+▻ Changed Equipment to UpsideDownHouse.
+▻ Changed Jewels to Cyan Cross.
+▻ Changed Cluster Jewels to Green Cross.
+▻ Changed Gems to Cyan Star.
+▻ Changed Uniques to Orange.
+▻ Changed Divination Cards to Pink Square.
+▻ Changed Splinters to Blue Kite.
+▻ Changed Chayula Splinters to Purple Kite.
+▻ Changed Map Fragments to Cyan Hexagon.
+▻ Updated Awakened Gems value/sound
+▻ Added Simulacrum Splinters
+▻ Added Delirium Orbs
+Spoiler 
+Fine Delirium Orb
+Singular Delirium Orb
+Thaumaturge's Delirium Orb
+Blacksmith's Delirium Orb
+Armoursmith's Delirium Orb
+Cartographer's Delirium Orb
+Jeweller's Delirium Orb
+Abyssal Delirium Orb
+Decadent Delirium Orb
+Foreboding Delirium Orb
+Obscured Delirium Orb
+Whispering Delirium Orb
+Fragmented Delirium Orb
+Skittering Delirium Orb
+Fossilised Delirium Orb
+Portentous Delirium Orb
+Diviner's Delirium Orb
+Delirium Orb
+Primal Delirium Orb
+Imperial Delirium Orb
+Timeless Delirium Orb
+Blighted Delirium Orb
+Amorphous Delirium Orb
+▻ Added Cluster Jewels: Large, Medium, Small
+▻ Added 4 new Map Fragments
+Spoiler 
+Simulacrum
+Rusted Metamorph Scarab
+Polished Metamorph Scarab
+Gilded Metamorph Scarab
+▻ Added 7/8 new Divination Cards
+Spoiler 
+The Strategist
+The Cheater
+The Tinkerer's Table
+The Easy Stroll
+The Progeny of Lunaris
+The Eldritch Decay
+Council of Cats
+▻ Add 8/16 new Uniques (1)(2)
+Spoiler 
+Algor Mortis
+Kitava's Teachings
+One With Nothing
+Perfidy
+Split Personality
+The Interrogation
+Voices
+Profane Proxy
+
+----------------------------------------------------------------
 | Metamorph 
 ----------------------------------------------------------------
 
