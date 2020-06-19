@@ -578,21 +578,19 @@ Show  # Labyrinth
 	MinimapIcon 0 Green Circle
 	PlayEffect Green
 
-Show  # Harvest Infrastructure
-	Class "Harvest Infrastructure"
-	SetFontSize 40
-	SetTextColor 74 230 58 # Harvest Infrastructure
-	SetBackgroundColor 12 30 12 230 # Harvest Infrastructure
-	SetBorderColor 0 0 0 255 # Harvest Infrastructure
-	MinimapIcon 0 Green Circle
-	PlayEffect Green
-
 Show  # Harvest Seeds
 	Class "Harvest Seed"
 	SetFontSize 40
 	SetTextColor 74 230 58 # Harvest Seeds
 	SetBackgroundColor 12 30 12 230 # Harvest Seeds
 	SetBorderColor 0 0 0 255 # Harvest Seeds
+
+Show  # Harvest Infrastructure
+	Class "Harvest"
+	SetFontSize 40
+	SetTextColor 74 230 58 # Harvest Infrastructure
+	SetBackgroundColor 12 30 12 230 # Harvest Infrastructure
+	SetBorderColor 0 0 0 255 # Harvest Infrastructure
 
 Show  # Metamorph Samples
 	Class "Metamorph Sample"

@@ -34,11 +34,11 @@ namespace PoE_Price_Lister
 		// https://github.com/5k-mirrors/misc-poe-tools/blob/master/doc/poe-ninja-api.md
 
 		// Alternate API (POE watch)
-		// https://api.poe.watch/get?league=Metamorph&category=armour
-		// https://api.poe.watch/compact?league=Metamorph&category=armour
+		// http://api.poe.watch/get?league=Metamorph&category=armour
+		// http://api.poe.watch/compact?league=Metamorph&category=armour
 
 		////private const string csvFile = "poe_uniques.csv";
-		private const string league = "Delirium";
+		private const string league = "Harvest";
 
 		private const string repoURL = @"https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/";
 		public const string FiltersUrl = repoURL + @"Resources/Filters/";
