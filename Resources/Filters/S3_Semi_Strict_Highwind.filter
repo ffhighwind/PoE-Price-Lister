@@ -403,6 +403,10 @@ Show
 	PlayEffect Blue
 	Continue
 
+Show  # League Specific - Harvest - Harvest Scrolls (Mid)
+	Class Currency
+	BaseType "Deregulation Scroll" "Time-Light Scroll" "Fragmentation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Facetor's Lens"
+
 Show  # League Specific - Delirium - Delirium Orbs (Mid)
 	Class Currency
 	BaseType "Singular Delirium Orb" "Blacksmith's Delirium Orb" "Armoursmith's Delirium Orb" "Jeweller's Delirium Orb" "Abyssal Delirium Orb" "Decadent Delirium Orb" "Foreboding Delirium Orb" "Obscured Delirium Orb" "Whispering Delirium Orb" "Fragmented Delirium Orb" "Portentous Delirium Orb" "Primal Delirium Orb" "Imperial Delirium Orb" "Amorphous Delirium Orb"
@@ -575,15 +579,21 @@ Show  # Labyrinth
 	MinimapIcon 0 Green Circle
 	PlayEffect Green
 
-Show  # HarvestInfrastructure
-	Class HarvestInfrastructure
+Show  # Harvest Infrastructure
+	Class "Harvest Infrastructure"
 	SetFontSize 40
 	SetTextColor 74 230 58 # Harvest Infrastructure
 	SetBackgroundColor 12 30 12 230 # Harvest Infrastructure
-	SetBorderColor 74 230 58 255 # Harvest Infrastructure
-	PlayAlertSound 3 200 # Harvest Infrastructure
+	SetBorderColor 0 0 0 255 # Harvest Infrastructure
 	MinimapIcon 0 Green Circle
 	PlayEffect Green
+
+Show  # Harvest Seeds
+	Class "Harvest Seed"
+	SetFontSize 40
+	SetTextColor 74 230 58 # Harvest Seeds
+	SetBackgroundColor 12 30 12 230 # Harvest Seeds
+	SetBorderColor 0 0 0 255 # Harvest Seeds
 
 Show  # Metamorph Samples
 	Class "Metamorph Sample"
@@ -854,10 +864,10 @@ Show  # Maps - T1+ (White) - Silent - T1-5 in T11+
 	ItemLevel >= 78
 	DisableDropSound
 
-Show  # Maps - T1+ (White) - Silent - T1-3 in T6+
+Show  # Maps - T1+ (White) - Silent - T1-3 in T8+
 	Class Maps
 	MapTier <= 3
-	ItemLevel >= 73
+	ItemLevel >= 75
 	DisableDropSound
 
 Show  # Maps - T1+ (White) - Sound
@@ -871,7 +881,7 @@ Show  # Maps - T1+ (White) - Sound
 # Errors #
 #--------#
 
-Show  # Maps - T1+ (White) - Sound
+Show  # Maps - Errors
 	Class Maps
 	SetFontSize 45
 	SetTextColor 0 0 0 # Map (White)
