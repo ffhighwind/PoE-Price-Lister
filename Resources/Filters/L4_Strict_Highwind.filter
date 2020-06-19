@@ -925,7 +925,7 @@ Show
 
 Show  # Maps - Fragments - High
 	Class "Map Fragments"
-	BaseType "Mortal Rage" "Mortal Ignorance" "Mortal Hope" "Chayula's Breachstone" "Chayula's " "Timeless Maraketh Emblem" "Timeless Templar Emblem" "Simulacrum" "Gilded " "Winged "
+	BaseType "Mortal Rage" "Mortal Ignorance" "Mortal Hope" "Chayula's Breachstone" "Chayula's " "Timeless Maraketh Emblem" "Timeless Templar Emblem" "Simulacrum" "Gilded " "Winged " "Dedication to the Goddess" "Gift to the Goddess" "Tribute to the Goddess"
 	SetBorderColor 255 255 255 255 # Map Fragment (High)
 	PlayAlertSound 1 200 # High Value
 	MinimapIcon 0 Red Hexagon
