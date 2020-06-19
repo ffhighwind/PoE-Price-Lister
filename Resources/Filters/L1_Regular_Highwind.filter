@@ -400,7 +400,7 @@ Show
 
 Show  # League Specific - Harvest - Harvest Scrolls (Mid)
 	Class Currency
-	BaseType "Deregulation Scroll" "Time-Light Scroll" "Fragmentation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Facetor's Lens"
+	BaseType "Deregulation Scroll" "Time-light Scroll" "Fragmentation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Facetor's Lens"
 
 Show  # League Specific - Delirium - Delirium Orbs (Mid)
 	Class Currency
@@ -2524,7 +2524,7 @@ Show  # Crafting Bases - 70+ Drop Level (High) - Other
 
 Show  # Crafting Bases - 70+ Drop Level (Mid) - 84+
 	DropLevel >= 70
-	BaseType "Crystal Belt" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet"
+	BaseType "Crystal Belt" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet" "Vermillion Ring" "Cerulean Ring"
 	Rarity <= Magic
 	ItemLevel >= 84
 	SetFontSize 45
@@ -2534,7 +2534,7 @@ Show  # Crafting Bases - 70+ Drop Level (Mid) - 84+
 
 Show  # Crafting Bases - 70+ Drop Level (Mid) - <84 Normal/Magic
 	DropLevel >= 70
-	BaseType "Crystal Belt" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet"
+	BaseType "Crystal Belt" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet" "Vermillion Ring" "Cerulean Ring"
 	Rarity <= Magic
 	SetFontSize 36
 	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
@@ -2542,14 +2542,14 @@ Show  # Crafting Bases - 70+ Drop Level (Mid) - <84 Normal/Magic
 
 Show  # Crafting Bases - 70+ Drop Level (Mid) - Rare
 	DropLevel >= 70
-	BaseType "Crystal Belt" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet"
+	BaseType "Crystal Belt" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet" "Vermillion Ring" "Cerulean Ring"
 	SetFontSize 45
 	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
 
 Show  # Crafting Bases - 70+ Drop Level (Low) - 84+
 	DropLevel >= 72
-	BaseType "Blue Pearl Amulet" "Vanguard Belt" "Sacrificial Garb"
+	BaseType "Blue Pearl Amulet" "Vanguard Belt" "Sacrificial Garb" "Vermillion Ring" "Cerulean Ring"
 	ItemLevel >= 84
 	SetTextColor 255 255 255 # Crafting Base (Mid)
 	SetBackgroundColor 60 60 60 255 # Crafting Base (Mid)
@@ -2557,7 +2557,7 @@ Show  # Crafting Bases - 70+ Drop Level (Low) - 84+
 
 Show  # Crafting Bases - 70+ Drop Level (Low) - Normal/Magic
 	DropLevel >= 72
-	BaseType "Blue Pearl Amulet" "Vanguard Belt" "Sacrificial Garb"
+	BaseType "Blue Pearl Amulet" "Vanguard Belt" "Sacrificial Garb" "Vermillion Ring" "Cerulean Ring"
 	Rarity <= Magic
 	SetFontSize 36
 	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
@@ -2565,7 +2565,7 @@ Show  # Crafting Bases - 70+ Drop Level (Low) - Normal/Magic
 
 Show  # Crafting Bases - 70+ Drop Level (Low) - Rare
 	DropLevel >= 72
-	BaseType "Blue Pearl Amulet" "Vanguard Belt" "Sacrificial Garb"
+	BaseType "Blue Pearl Amulet" "Vanguard Belt" "Sacrificial Garb" "Vermillion Ring" "Cerulean Ring"
 	SetFontSize 45
 	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)

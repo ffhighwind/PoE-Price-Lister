@@ -410,7 +410,7 @@ Show
 
 Show  # League Specific - Harvest - Harvest Scrolls (Mid)
 	Class Currency
-	BaseType "Deregulation Scroll" "Time-Light Scroll" "Fragmentation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Facetor's Lens"
+	BaseType "Deregulation Scroll" "Time-light Scroll" "Fragmentation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Facetor's Lens"
 
 Show  # League Specific - Delirium - Delirium Orbs (Mid)
 	Class Currency
@@ -2566,7 +2566,7 @@ Show  # Crafting Bases - 70+ Drop Level (High) - Other
 
 Show  # Crafting Bases - 70+ Drop Level (Mid) - 84+
 	DropLevel >= 70
-	BaseType "Crystal Belt" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet"
+	BaseType "Crystal Belt" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet" "Vermillion Ring" "Cerulean Ring"
 	Rarity <= Magic
 	ItemLevel >= 84
 	SetFontSize 40
@@ -2576,7 +2576,7 @@ Show  # Crafting Bases - 70+ Drop Level (Mid) - 84+
 
 Hide  # Crafting Bases - 70+ Drop Level (Mid) - <84 Normal/Magic
 	DropLevel >= 70
-	BaseType "Crystal Belt" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet"
+	BaseType "Crystal Belt" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet" "Vermillion Ring" "Cerulean Ring"
 	Rarity <= Magic
 	SetFontSize 32
 	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
@@ -2585,7 +2585,7 @@ Hide  # Crafting Bases - 70+ Drop Level (Mid) - <84 Normal/Magic
 
 Show  # Crafting Bases - 70+ Drop Level (Mid) - Rare
 	DropLevel >= 70
-	BaseType "Crystal Belt" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet"
+	BaseType "Crystal Belt" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet" "Vermillion Ring" "Cerulean Ring"
 	SetFontSize 40
 	SetBackgroundColor 50 50 50 230 # Crafting Base (Low)
 	SetBorderColor 0 0 0 255 # Crafting Base (Low)
