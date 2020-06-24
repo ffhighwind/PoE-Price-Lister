@@ -408,10 +408,6 @@ Show
 	PlayEffect Blue
 	Continue
 
-Show  # League Specific - Harvest - Harvest Scrolls (Mid)
-	Class Currency
-	BaseType "Deregulation Scroll" "Time-light Scroll" "Fragmentation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Facetor's Lens"
-
 Show  # League Specific - Delirium - Delirium Orbs (Mid)
 	Class Currency
 	BaseType "Singular Delirium Orb" "Blacksmith's Delirium Orb" "Armoursmith's Delirium Orb" "Jeweller's Delirium Orb" "Abyssal Delirium Orb" "Decadent Delirium Orb" "Foreboding Delirium Orb" "Obscured Delirium Orb" "Whispering Delirium Orb" "Fragmented Delirium Orb" "Portentous Delirium Orb" "Primal Delirium Orb" "Imperial Delirium Orb" "Amorphous Delirium Orb"
@@ -478,6 +474,10 @@ Show  # Currency - High
 #------------------------#
 # 6c+
 
+Show  # League Specific - Harvest - Imbued Harbinger (High)
+	Class Currency
+	BaseType "Deregulation Scroll" "Time-light Scroll" "Fragmentation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Facetor's Lens"
+
 Show  # League Specific - Delirium - Delirium Orb (High)
 	Class Currency
 	BaseType "Skittering Delirium Orb" "Diviner's Delirium Orb" "Blighted Delirium Orb" "Thaumaturge's Delirium Orb" "Cartographer's Delirium Orb" "Fine Delirium Orb" "Fossilised Delirium Orb" "Timeless Delirium Orb" "Obscured Delirium Orb" "Delirium Orb"
@@ -540,7 +540,7 @@ Show  # Currency - Prophecies - High
 Show  # Currency - Prophecies - Mid
 	Class Currency
 	BaseType "Prophecy"
-	Prophecy "Flesh of the Beast" "The Jeweller's Touch" "Wind and Thunder" "Monstrous Treasure" "Cleanser of Sins" "The Queen's Vaults" "The Dreaded Rhoa" "Darktongue's Shriek" "A Dishonourable Death" "The King's Path" "A Master Seeks Help" "The Bowstring's Music" "Lost in the Pages"
+	Prophecy "Song of the Sekhema" "Flesh of the Beast" "The Jeweller's Touch" "Wind and Thunder" "Monstrous Treasure" "Cleanser of Sins" "The Queen's Vaults" "The Dreaded Rhoa" "Darktongue's Shriek" "A Dishonourable Death" "The King's Path" "A Master Seeks Help" "The Bowstring's Music" "Lost in the Pages"
 
 Hide  # Currency - Prophecies - Very Low
 	Class Currency
@@ -3781,6 +3781,7 @@ Show  # Rares - Accessories - 60+
 Hide  # 60+ Rares - Armour
 	Class Gloves Boots Helmets "Body Armours"
 	ItemLevel >= 60
+	DisableDropSound
 
 #----------------------#
 # 60+ Two Hand Weapons #
@@ -3789,6 +3790,7 @@ Hide  # 60+ Rares - Armour
 Hide  # 60+ Rares - Two Hand Weapons
 	Class "Two Hand" Bows Staves Warstaves
 	ItemLevel >= 60
+	DisableDropSound
 
 #----------------------#
 # 60+ One Hand Weapons #
@@ -3798,6 +3800,7 @@ Hide  # 60+ Rares - Two Hand Weapons
 Hide  # 60+ Rares - One Hand Weapons
 	Class "One Hand" Daggers "Rune Dagger" Wands Claws Sceptres
 	ItemLevel >= 60
+	DisableDropSound
 
 #-------------#
 # 60+ Shields #
@@ -3806,6 +3809,7 @@ Hide  # 60+ Rares - One Hand Weapons
 Hide  # 60+ Rares - Shields
 	Class Shields
 	ItemLevel >= 60
+	DisableDropSound
 
 #-------------#
 # 60+ Quivers #
@@ -3815,6 +3819,7 @@ Hide  # 60+ Rares - Quivers - Valuable
 	Class Quivers
 	BaseType "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver" "Ornate Quiver" "Penetrating Arrow Quiver" "Two-Point Arrow Quiver"
 	ItemLevel >= 60
+	DisableDropSound
 
 Hide  # 60+ Rares - Quivers - Other
 	Class Quivers

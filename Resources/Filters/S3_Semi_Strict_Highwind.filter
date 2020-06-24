@@ -403,10 +403,6 @@ Show
 	PlayEffect Blue
 	Continue
 
-Show  # League Specific - Harvest - Harvest Scrolls (Mid)
-	Class Currency
-	BaseType "Deregulation Scroll" "Time-light Scroll" "Fragmentation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Facetor's Lens"
-
 Show  # League Specific - Delirium - Delirium Orbs (Mid)
 	Class Currency
 	BaseType "Singular Delirium Orb" "Blacksmith's Delirium Orb" "Armoursmith's Delirium Orb" "Jeweller's Delirium Orb" "Abyssal Delirium Orb" "Decadent Delirium Orb" "Foreboding Delirium Orb" "Obscured Delirium Orb" "Whispering Delirium Orb" "Fragmented Delirium Orb" "Portentous Delirium Orb" "Primal Delirium Orb" "Imperial Delirium Orb" "Amorphous Delirium Orb"
@@ -473,6 +469,10 @@ Show  # Currency - High
 #------------------------#
 # 6c+
 
+Show  # League Specific - Harvest - Imbued Harbinger (High)
+	Class Currency
+	BaseType "Deregulation Scroll" "Time-light Scroll" "Fragmentation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Facetor's Lens"
+
 Show  # League Specific - Delirium - Delirium Orb (High)
 	Class Currency
 	BaseType "Skittering Delirium Orb" "Diviner's Delirium Orb" "Blighted Delirium Orb" "Thaumaturge's Delirium Orb" "Cartographer's Delirium Orb" "Fine Delirium Orb" "Fossilised Delirium Orb" "Timeless Delirium Orb" "Obscured Delirium Orb" "Delirium Orb"
@@ -535,7 +535,7 @@ Show  # Currency - Prophecies - High
 Show  # Currency - Prophecies - Mid
 	Class Currency
 	BaseType "Prophecy"
-	Prophecy "Flesh of the Beast" "The Jeweller's Touch" "Wind and Thunder" "Monstrous Treasure" "Cleanser of Sins" "The Queen's Vaults" "The Dreaded Rhoa" "Darktongue's Shriek" "A Dishonourable Death" "The King's Path" "A Master Seeks Help" "The Bowstring's Music" "Lost in the Pages"
+	Prophecy "Song of the Sekhema" "Flesh of the Beast" "The Jeweller's Touch" "Wind and Thunder" "Monstrous Treasure" "Cleanser of Sins" "The Queen's Vaults" "The Dreaded Rhoa" "Darktongue's Shriek" "A Dishonourable Death" "The King's Path" "A Master Seeks Help" "The Bowstring's Music" "Lost in the Pages"
 
 Hide  # Currency - Prophecies - Very Low
 	Class Currency
@@ -2494,10 +2494,12 @@ Hide  # Flasks - Normal - Leveling - Hybrid
 Hide  # Flasks - Normal - Leveling - Life
 	Class "Life Flasks"
 	ItemLevel < 68
+	DisableDropSound
 
 Hide  # Flasks - Normal - Leveling - Mana
 	Class "Mana Flasks"
 	ItemLevel < 68
+	DisableDropSound
 
 #Disabled Block Start
 #Show  # Flasks - Normal - Mapping (Low)
@@ -3269,6 +3271,7 @@ Hide  # League Specific - Breach Rings - Leveling
 	BaseType "Breach Ring"
 	ItemLevel < 68
 	SetFontSize 36
+	DisableDropSound
 
 #Disabled Block Start
 #Hide  # League Specific - Breach Rings - Mapping (Low)

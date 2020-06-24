@@ -353,6 +353,7 @@ Hide  # League Specific - Delve - Fossils (Low)
 	BaseType "Aberrant Fossil" "Frigid Fossil" "Metallic Fossil" "Scorched Fossil"
 	MinimapIcon -1
 	PlayEffect None
+	DisableDropSound
 
 Show  # League Specific - Bestiary - Nets (Low)
 	Class "Stackable Currency"
@@ -409,10 +410,6 @@ Show
 	MinimapIcon 0 Blue Circle
 	PlayEffect Blue
 	Continue
-
-Show  # League Specific - Harvest - Harvest Scrolls (Mid)
-	Class Currency
-	BaseType "Deregulation Scroll" "Time-light Scroll" "Fragmentation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Facetor's Lens"
 
 Show  # League Specific - Delirium - Delirium Orbs (Mid)
 	Class Currency
@@ -480,6 +477,10 @@ Show  # Currency - High
 #------------------------#
 # 6c+
 
+Show  # League Specific - Harvest - Imbued Harbinger (High)
+	Class Currency
+	BaseType "Deregulation Scroll" "Time-light Scroll" "Fragmentation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Facetor's Lens"
+
 Show  # League Specific - Delirium - Delirium Orb (High)
 	Class Currency
 	BaseType "Skittering Delirium Orb" "Diviner's Delirium Orb" "Blighted Delirium Orb" "Thaumaturge's Delirium Orb" "Cartographer's Delirium Orb" "Fine Delirium Orb" "Fossilised Delirium Orb" "Timeless Delirium Orb" "Obscured Delirium Orb" "Delirium Orb"
@@ -542,7 +543,7 @@ Show  # Currency - Prophecies - High
 Show  # Currency - Prophecies - Mid
 	Class Currency
 	BaseType "Prophecy"
-	Prophecy "Flesh of the Beast" "The Jeweller's Touch" "Wind and Thunder" "Monstrous Treasure" "Cleanser of Sins" "The Queen's Vaults" "The Dreaded Rhoa" "Darktongue's Shriek" "A Dishonourable Death" "The King's Path" "A Master Seeks Help" "The Bowstring's Music" "Lost in the Pages"
+	Prophecy "Song of the Sekhema" "Flesh of the Beast" "The Jeweller's Touch" "Wind and Thunder" "Monstrous Treasure" "Cleanser of Sins" "The Queen's Vaults" "The Dreaded Rhoa" "Darktongue's Shriek" "A Dishonourable Death" "The King's Path" "A Master Seeks Help" "The Bowstring's Music" "Lost in the Pages"
 
 Hide  # Currency - Prophecies - Very Low
 	Class Currency
@@ -1138,6 +1139,7 @@ Hide  # Divination Cards - <2c (Conflicts)
 	SetTextColor 0 0 0 # Divination Card (<2c)
 	SetBackgroundColor 255 0 175 230 # Divination Card (<2c)
 	SetBorderColor 150 30 100 255 # Divination Card (<2c)
+	DisableDropSound
 
 Hide  # Divination Cards - Nearly Worthless (Conflicts)
 	Class Divination
@@ -1177,6 +1179,7 @@ Hide  # Divination Cards - <2c
 	SetTextColor 0 0 0 # Divination Card (<2c)
 	SetBackgroundColor 255 0 175 230 # Divination Card (<2c)
 	SetBorderColor 150 30 100 255 # Divination Card (<2c)
+	DisableDropSound
 
 Hide  # Divination Cards - Nearly Worthless
 	Class Divination
@@ -3786,6 +3789,7 @@ Hide  # Rares - Accessories - 60+
 Hide  # 60+ Rares - Armour
 	Class Gloves Boots Helmets "Body Armours"
 	ItemLevel >= 60
+	DisableDropSound
 
 #----------------------#
 # 60+ Two Hand Weapons #
@@ -3794,6 +3798,7 @@ Hide  # 60+ Rares - Armour
 Hide  # 60+ Rares - Two Hand Weapons
 	Class "Two Hand" Bows Staves Warstaves
 	ItemLevel >= 60
+	DisableDropSound
 
 #----------------------#
 # 60+ One Hand Weapons #
@@ -3803,6 +3808,7 @@ Hide  # 60+ Rares - Two Hand Weapons
 Hide  # 60+ Rares - One Hand Weapons
 	Class "One Hand" Daggers "Rune Dagger" Wands Claws Sceptres
 	ItemLevel >= 60
+	DisableDropSound
 
 #-------------#
 # 60+ Shields #
@@ -3811,6 +3817,7 @@ Hide  # 60+ Rares - One Hand Weapons
 Hide  # 60+ Rares - Shields
 	Class Shields
 	ItemLevel >= 60
+	DisableDropSound
 
 #-------------#
 # 60+ Quivers #
@@ -3820,6 +3827,7 @@ Hide  # 60+ Rares - Quivers - Valuable
 	Class Quivers
 	BaseType "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver" "Ornate Quiver" "Penetrating Arrow Quiver" "Two-Point Arrow Quiver"
 	ItemLevel >= 60
+	DisableDropSound
 
 Hide  # 60+ Rares - Quivers - Other
 	Class Quivers
