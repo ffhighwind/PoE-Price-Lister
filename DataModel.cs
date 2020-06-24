@@ -209,9 +209,15 @@ namespace PoE_Price_Lister
 		private void LoadUniquesCsv()
 		{
 			FileHelperEngine<UniqueBaseTypeCsv> engine = new FileHelperEngine<UniqueBaseTypeCsv>(Encoding.UTF8);
-			string csvText = new FileInfo(uniquesCsvFile).Exists ?
-				File.ReadAllText("poe_uniques.csv", Encoding.UTF8)
-				: Util.ReadWebPage(repoURL + "poe_uniques.csv", "", Encoding.UTF8);
+			bool exists = new FileInfo(uniquesCsvFile).Exists;
+			string csvText;
+			if (exists) {
+				csvText = File.ReadAllText("poe_uniques.csv", Encoding.UTF7);
+				if (!csvText.Contains("Maelström Staff"))
+					csvText = File.ReadAllText("poe_uniques.csv", Encoding.UTF8);
+			}
+			else
+				csvText = Util.ReadWebPage(repoURL + "poe_uniques.csv", "", Encoding.UTF8);
 			UniqueBaseTypeCsv[] records = engine.ReadString(csvText);
 			foreach (UniqueBaseTypeCsv csvdata in records) {
 				if (!SC.Uniques.ContainsKey(csvdata.BaseType)) {
@@ -382,7 +388,7 @@ namespace PoE_Price_Lister
 					return;
 				string line = lines.ElementAt(0);
 
-				if (!line.Contains("# Uniques -")) { 
+				if (!line.Contains("# Uniques -")) {
 					lines = lines.Skip(1);
 					continue;
 				}

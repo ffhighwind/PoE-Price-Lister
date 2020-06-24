@@ -313,10 +313,10 @@ Enchantment Dominating Blow Duration 2,Eternal Labyrinth,30% increased Sentinel 
 Enchantment Dominating Blow Additional Magic 1,Merciless Labyrinth,Dominating Blow can summon 2 additional Magic Sentinels of Dominance,Dominating Blow
 Enchantment Dominating Blow Duration 1,Merciless Labyrinth,20% increased Sentinel of Dominance Duration,Dominating Blow
 Enchantment Dominating Blow Additional Rare 1,Eternal Labyrinth,Dominating Blow can summon an additional Rare Sentinel of Dominance,Dominating Blow
-Enchantment Double Slash Added Phys To Bleeding 2,Eternal Labyrinth,Lacerate deals (14-18) to (20-25) added Physical Damage against Bleeding Enemies,Double Slash
+Enchantment Double Slash Added Phys To Bleeding 2,Eternal Labyrinth,Lacerate deals 14 to 25 added Physical Damage against Bleeding Enemies,Double Slash
 Enchantment Double Slash Critical Strikes 2,Eternal Labyrinth,60% increased Lacerate Critical Strike Chance,Double Slash
 Enchantment Double Slash Area Of Effect 2,Eternal Labyrinth,24% increased Lacerate Area of Effect,Double Slash
-Enchantment Double Slash Added Phys To Bleeding 1,Merciless Labyrinth,Lacerate deals (4-8) to (10-15) added Physical Damage against Bleeding Enemies,Double Slash
+Enchantment Double Slash Added Phys To Bleeding 1,Merciless Labyrinth,Lacerate deals 4 to 15 added Physical Damage against Bleeding Enemies,Double Slash
 Enchantment Double Slash Critical Strikes 1,Merciless Labyrinth,40% increased Lacerate Critical Strike Chance,Double Slash
 Enchantment Double Slash Area Of Effect 1,Merciless Labyrinth,16% increased Lacerate Area of Effect,Double Slash
 Enchantment Double Strike Attack Speed 2,Eternal Labyrinth,15% increased Double Strike Attack Speed,Double Strike
@@ -1151,3 +1151,4 @@ Enchantment Zombie Attack Speed 2,Eternal Labyrinth,Raised Zombies have 15% incr
 Enchantment Zombie Attack Speed 1,Merciless Labyrinth,Raised Zombies have 10% increased Attack Speed,Raise Zombies
 Enchantment Zombie Elemental Resistances 2,Eternal Labyrinth,Raised Zombies have +36% to Elemental Resistances,Raise Zombies
 Enchantment Zombie Elemental Resistances 1,Merciless Labyrinth,Raised Zombies have +24% to Elemental Resistances,Raise Zombies
+Enchantment Pyroclast Mine Additional Projectiles 2,Eternal Labyrinth,Pyroclast Mine fires 2 additional Projectiles,Pyroclast Mine
