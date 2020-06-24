@@ -290,12 +290,12 @@ Enchantment Dual Strike Critical Strike Chance 1,Eternal Labyrinth,60% increased
 Enchantment Dual Strike Critical Strike Chance 2,Merciless Labyrinth,90% increased Dual Strike Critical Strike Chance,Dual Strike
 Enchantment Dual Strike Damage 1,Eternal Labyrinth,25% increased Dual Strike Damage,Dual Strike
 Enchantment Dual Strike Damage 2,Merciless Labyrinth,40% increased Dual Strike Damage,Dual Strike
-Enchantment Earthquake Area Of Effect 1,Eternal Labyrinth,16% increased Earthquake Area of Effect,Earthquake
-Enchantment Earthquake Area Of Effect 2,Merciless Labyrinth,24% increased Earthquake Area of Effect,Earthquake
-Enchantment Earthquake Damage 1,Eternal Labyrinth,25% increased Earthquake Damage,Earthquake
-Enchantment Earthquake Damage 2,Merciless Labyrinth,40% increased Earthquake Damage,Earthquake
-Enchantment Earthquake Duration 1,Eternal Labyrinth,20% reduced Earthquake Duration,Earthquake
-Enchantment Earthquake Duration 2,Merciless Labyrinth,30% reduced Earthquake Duration,Earthquake
+Enchantment Earthquake Area Of Effect 1,Merciless Labyrinth,16% increased Earthquake Area of Effect,Earthquake
+Enchantment Earthquake Area Of Effect 2,Eternal Labyrinth,24% increased Earthquake Area of Effect,Earthquake
+Enchantment Earthquake Damage 1,Merciless Labyrinth,25% increased Earthquake Damage,Earthquake
+Enchantment Earthquake Damage 2,Eternal Labyrinth,40% increased Earthquake Damage,Earthquake
+Enchantment Earthquake Damage per 0.1s Duration 1,Merciless Labyrinth,Earthquake deals 5% increased Damage per 0.1 seconds Duration,Earthquake
+Enchantment Earthquake Damage per 0.1s Duration 2,Eternal Labyrinth,Earthquake deals 8% increased Damage per 0.1 seconds Duration,Earthquake
 Enchantment Elemental Hit Attack Speed 1,Eternal Labyrinth,10% increased Elemental Hit Attack Speed,Elemental Hit
 Enchantment Elemental Hit Attack Speed 2,Merciless Labyrinth,15% increased Elemental Hit Attack Speed,Elemental Hit
 Enchantment Elemental Hit Chance To Freeze Shock Ignite 1,Eternal Labyrinth,"Elemental Hit has +20% chance to Freeze, Shock and Ignite",Elemental Hit
@@ -1493,3 +1493,27 @@ Enchantment Stormbind Area of Effect 1,Merciless Labyrinth,Stormbind has 16% inc
 Enchantment Stormbind Area of Effect 2,Eternal Labyrinth,Stormbind has 24% increased Area of Effect,Stormbind
 Enchantment Stormbind Damage 1,Merciless Labyrinth,Stormbind deals 25% increased Damage,Stormbind
 Enchantment Stormbind Damage 2,Eternal Labyrinth,Stormbind deals 40% increased Damage,Stormbind
+Enchantment General's Cry Additional Mirage Warrior 1,Eternal Labyrinth,General's Cry has +1 to maximum number of Mirage Warriors,General's Cry
+Enchantment General's Cry Cooldown Speed 1,Merciless Labyrinth,General's Cry has 20% increased Cooldown Recovery Speed,General's Cry
+Enchantment General's Cry Cooldown Speed 2,Merciless Labyrinth,General's Cry has 30% increased Cooldown Recovery Speed,General's Cry
+Enchantment Arcanist Brand Cast Speed 1,Merciless Labyrinth,Arcanist Brand has 8% increased Cast Speed,Arcanist Brand
+Enchantment Arcanist Brand Cast Speed 2,Eternal Labyrinth,Arcanist Brand has 12% increased Cast Speed,Arcanist Brand
+Enchantment Arcanist Brand Unnerve 1,Eternal Labyrinth,Spells Triggered by Arcanist Brand Unnerve enemies on Hit for 4 seconds,Arcanist Brand
+Enchantment Creeping Frost Chilling Area Movement Velocity 1,Eternal Labyrinth,Creeping Frost's Chilling Area has 38% increased Movement Speed,Creeping Frost
+Enchantment Creeping Frost Damage 1,Merciless Labyrinth,25% increased Creeping Frost Damage,Creeping Frost
+Enchantment Creeping Frost Damage 2,Eternal Labyrinth,40% increased Creeping Frost Damage,Creeping Frost
+Enchantment Creeping Frost Duration 1,Merciless Labyrinth,24% increased Creeping Frost Duration,Creeping Frost
+Enchantment Creeping Frost Duration 2,Eternal Labyrinth,36% increased Creeping Frost Duration,Creeping Frost
+Enchantment Creeping Frost Area Of Effect 1,Merciless Labyrinth,16% increased Creeping Frost Area of Effect,Creeping Frost
+Enchantment Creeping Frost Area Of Effect 2,Eternal Labyrinth,24% increased Creeping Frost Area of Effect,Creeping Frost
+Enchantment Penance Brand Cast Speed 1,Merciless Labyrinth,Penance Brand has 8% increased Cast Speed,Penance Brand
+Enchantment Penance Brand Cast Speed 2,Eternal Labyrinth,Penance Brand has 12% increased Cast Speed,Penance Brand
+Enchantment Penance Brand Damage 1,Merciless Labyrinth,Penance Brand deals 25% increased Damage,Penance Brand
+Enchantment Penance Brand Damage 2,Eternal Labyrinth,Penance Brand deals 40% increased Damage,Penance Brand
+Enchantment Penance Brand Radius 1,Merciless Labyrinth,Penance Brand has 16% increased Area of Effect,Penance Brand
+Enchantment Penance Brand Radius 2,Eternal Labyrinth,Penance Brand has 24% increased Area of Effect,Penance Brand
+Enchantment Earthshatter Damage 1,Merciless Labyrinth,Earthshatter deals 25% increased Damage,Earthshatter
+Enchantment Earthshatter Damage 2,Eternal Labyrinth,Earthshatter deals 40% increased Damage,Earthshatter
+Enchantment Earthshatter Radius 1,Merciless Labyrinth,Earthshatter has 16% increased Area of Effect,Earthshatter
+Enchantment Earthshatter Radius 2,Eternal Labyrinth,Earthshatter has 24% increased Area of Effect,Earthshatter
+Enchantment Earthshatter Additional Spike 1,Eternal Labyrinth,Earthshatter creates +1 fissures,Earthshatter

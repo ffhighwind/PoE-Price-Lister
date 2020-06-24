@@ -203,7 +203,7 @@ Full Scale Armour,Viper's Scales,,,,Labyrinth
 Full Wyrmscale,Belly of the Beast,,,,
 Gavel,Cameria's Avarice,,,,Fated
 Gavel,Cameria's Maul,,Prophecy,,
-Gavel,MjÃ¶lner,,,,
+Gavel,Mjölner,,,,
 Gemstone Sword,Fate of the Vaal,Incursion,,,Crafted
 Gilded Sallet,Deidbell,,Prophecy,,
 Gilded Sallet,Deidbellow,,,,Fated
@@ -372,9 +372,9 @@ Long Bow,Storm Cloud,,Prophecy,,
 Long Bow,The Tempest,,,,Fated
 Long Staff,Pillar of the Caged God,,,X,
 Lunaris Circlet,Doedre's Scorn,,,,
-MaelstrÃ¶m Staff,Disintegrator,,,,Uber Elder
-MaelstrÃ¶m Staff,Duskdawn,,,,Crafted
-MaelstrÃ¶m Staff,Taryn's Shiver,,,,
+Maelström Staff,Disintegrator,,,,Uber Elder
+Maelström Staff,Duskdawn,,,,Crafted
+Maelström Staff,Taryn's Shiver,,,,
 Magistrate Crown,Craiceann's Chitin,Bestiary,,,Craiceann
 Magistrate Crown,Mask of the Stitched Demon,Incursion,,,Crafted
 Marble Amulet,Bloodgrip,,,,
@@ -604,7 +604,7 @@ Studded Round Shield,The Deep One's Hide,,,,
 Stygian Vise,Darkness Enthroned,Abyss,,,Lich
 Sulphur Flask,The Overflowing Chalice,,,,
 Sulphur Flask,The Sorrow of the Divine,Legion,,,
-Sundering Axe,Wings of Entropy,,,,
+Sundering Axe,Wings of Entropy,,,X,
 Supreme Spiked Shield,Jaws of Agony,,,,
 Tarnished Spirit Shield,Brinerot Flag,Warbands,,,
 Tarnished Spirit Shield,Matua Tupuna,,Prophecy,,
@@ -815,12 +815,19 @@ Saint's Hauberk,The Ivory Tower,,,,Conquerors
 Legion Sword,The Saviour,,,,"Sirus, Awakener of Worlds"
 Two-Toned Boots,Beacon of Madness,Delirium,,,
 Glorious Plate,Perfidy,Delirium,,,
-Unset Ring,Profane Proxy,Delirium,,,
+Unset Ring,Profane Proxy,,,,
 Sinner Tricorne,Assailum,Delirium,,,
 Carnal Mitts,Algor Mortis,Delirium,,,
-Topaz Ring,Storm Secret,Harvest,,,
-Saint's Hauberk,Doryani's Prototype,Harvest,,,
-Eelskin Gloves,Great Old One's Tentacles,Harvest,,,
-Necromancer Silks,Fleshcrafter,Harvest,,,
-Ambush Mitts,Abhorrent Interrogation,Harvest,,,
-Steel Kite Shield,Emperor's Vigilance,Harvest,,,
+Topaz Ring,Storm Secret,,,,
+Saint's Hauberk,Doryani's Prototype,,,,
+Eelskin Gloves,Great Old One's Tentacles,,,,
+Ambush Mitts,Abhorrent Interrogation,,,,
+Steel Kite Shield,Emperor's Vigilance,,,,
+Great Crown,Forbidden Shako,Harvest,,,"Oshabi, Avatar of the Grove"
+Highborn Staff,Witchhunter's Judgment,,,,
+Citrine Amulet,The Felbog Fang,Harvest,,,
+Broadhead Arrow Quiver,Scorpion's Call,,,,
+Citrine Amulet,Retaliation Charm,,,,
+Necromancer Silks,Fleshcrafter,,,,
+Leather Belt,Bear's Girdle,,,,
+Ezomyte Axe,Wings of Entropy,,,,
