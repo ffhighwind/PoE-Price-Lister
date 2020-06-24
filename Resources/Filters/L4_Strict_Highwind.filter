@@ -146,6 +146,17 @@ Show
 ##########################################
 # Section: Currency
 
+Show  # League Specific - Harbinger - Infused Engineer's Orb
+	Class Currency
+	BaseType "Infused Engineer's Orb"
+	SetFontSize 45
+	SetTextColor 255 0 255 # Currency (High)
+	SetBackgroundColor 255 255 255 255 # Currency (High)
+	SetBorderColor 255 0 255 255 # Currency (High)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Circle
+	PlayEffect Red
+
 #-----------#
 # Worthless #
 #-----------#
@@ -3781,6 +3792,7 @@ Show  # Rares - Accessories - 60+
 Hide  # 60+ Rares - Armour
 	Class Gloves Boots Helmets "Body Armours"
 	ItemLevel >= 60
+	DisableDropSound
 
 #----------------------#
 # 60+ Two Hand Weapons #
@@ -3789,6 +3801,7 @@ Hide  # 60+ Rares - Armour
 Hide  # 60+ Rares - Two Hand Weapons
 	Class "Two Hand" Bows Staves Warstaves
 	ItemLevel >= 60
+	DisableDropSound
 
 #----------------------#
 # 60+ One Hand Weapons #
@@ -3798,6 +3811,7 @@ Hide  # 60+ Rares - Two Hand Weapons
 Hide  # 60+ Rares - One Hand Weapons
 	Class "One Hand" Daggers "Rune Dagger" Wands Claws Sceptres
 	ItemLevel >= 60
+	DisableDropSound
 
 #-------------#
 # 60+ Shields #
@@ -3806,6 +3820,7 @@ Hide  # 60+ Rares - One Hand Weapons
 Hide  # 60+ Rares - Shields
 	Class Shields
 	ItemLevel >= 60
+	DisableDropSound
 
 #-------------#
 # 60+ Quivers #
@@ -3815,6 +3830,7 @@ Hide  # 60+ Rares - Quivers - Valuable
 	Class Quivers
 	BaseType "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver" "Ornate Quiver" "Penetrating Arrow Quiver" "Two-Point Arrow Quiver"
 	ItemLevel >= 60
+	DisableDropSound
 
 Hide  # 60+ Rares - Quivers - Other
 	Class Quivers

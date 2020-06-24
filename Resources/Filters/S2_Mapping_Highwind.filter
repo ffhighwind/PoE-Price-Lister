@@ -146,6 +146,17 @@ Show
 ##########################################
 # Section: Currency
 
+Show  # League Specific - Harbinger - Infused Engineer's Orb
+	Class Currency
+	BaseType "Infused Engineer's Orb"
+	SetFontSize 45
+	SetTextColor 255 0 255 # Currency (High)
+	SetBackgroundColor 255 255 255 255 # Currency (High)
+	SetBorderColor 255 0 255 255 # Currency (High)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Circle
+	PlayEffect Red
+
 #-----------#
 # Worthless #
 #-----------#

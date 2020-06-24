@@ -146,6 +146,17 @@ Show
 ##########################################
 # Section: Currency
 
+Show  # League Specific - Harbinger - Infused Engineer's Orb
+	Class Currency
+	BaseType "Infused Engineer's Orb"
+	SetFontSize 45
+	SetTextColor 255 0 255 # Currency (High)
+	SetBackgroundColor 255 255 255 255 # Currency (High)
+	SetBorderColor 255 0 255 255 # Currency (High)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Circle
+	PlayEffect Red
+
 #-----------#
 # Worthless #
 #-----------#
@@ -353,6 +364,7 @@ Hide  # League Specific - Delve - Fossils (Low)
 	BaseType "Aberrant Fossil" "Frigid Fossil" "Metallic Fossil" "Scorched Fossil"
 	MinimapIcon -1
 	PlayEffect None
+	DisableDropSound
 
 Show  # League Specific - Bestiary - Nets (Low)
 	Class "Stackable Currency"
@@ -1138,6 +1150,7 @@ Hide  # Divination Cards - <2c (Conflicts)
 	SetTextColor 0 0 0 # Divination Card (<2c)
 	SetBackgroundColor 255 0 175 230 # Divination Card (<2c)
 	SetBorderColor 150 30 100 255 # Divination Card (<2c)
+	DisableDropSound
 
 Hide  # Divination Cards - Nearly Worthless (Conflicts)
 	Class Divination
@@ -1177,6 +1190,7 @@ Hide  # Divination Cards - <2c
 	SetTextColor 0 0 0 # Divination Card (<2c)
 	SetBackgroundColor 255 0 175 230 # Divination Card (<2c)
 	SetBorderColor 150 30 100 255 # Divination Card (<2c)
+	DisableDropSound
 
 Hide  # Divination Cards - Nearly Worthless
 	Class Divination
@@ -3786,6 +3800,7 @@ Hide  # Rares - Accessories - 60+
 Hide  # 60+ Rares - Armour
 	Class Gloves Boots Helmets "Body Armours"
 	ItemLevel >= 60
+	DisableDropSound
 
 #----------------------#
 # 60+ Two Hand Weapons #
@@ -3794,6 +3809,7 @@ Hide  # 60+ Rares - Armour
 Hide  # 60+ Rares - Two Hand Weapons
 	Class "Two Hand" Bows Staves Warstaves
 	ItemLevel >= 60
+	DisableDropSound
 
 #----------------------#
 # 60+ One Hand Weapons #
@@ -3803,6 +3819,7 @@ Hide  # 60+ Rares - Two Hand Weapons
 Hide  # 60+ Rares - One Hand Weapons
 	Class "One Hand" Daggers "Rune Dagger" Wands Claws Sceptres
 	ItemLevel >= 60
+	DisableDropSound
 
 #-------------#
 # 60+ Shields #
@@ -3811,6 +3828,7 @@ Hide  # 60+ Rares - One Hand Weapons
 Hide  # 60+ Rares - Shields
 	Class Shields
 	ItemLevel >= 60
+	DisableDropSound
 
 #-------------#
 # 60+ Quivers #
@@ -3820,6 +3838,7 @@ Hide  # 60+ Rares - Quivers - Valuable
 	Class Quivers
 	BaseType "Broadhead Arrow Quiver" "Spike-Point Arrow Quiver" "Two-Point Arrow Quiver" "Ornate Quiver" "Penetrating Arrow Quiver" "Two-Point Arrow Quiver"
 	ItemLevel >= 60
+	DisableDropSound
 
 Hide  # 60+ Rares - Quivers - Other
 	Class Quivers

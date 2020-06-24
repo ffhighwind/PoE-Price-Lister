@@ -146,6 +146,17 @@ Show
 ##########################################
 # Section: Currency
 
+Show  # League Specific - Harbinger - Infused Engineer's Orb
+	Class Currency
+	BaseType "Infused Engineer's Orb"
+	SetFontSize 45
+	SetTextColor 255 0 255 # Currency (High)
+	SetBackgroundColor 255 255 255 255 # Currency (High)
+	SetBorderColor 255 0 255 255 # Currency (High)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Circle
+	PlayEffect Red
+
 #-----------#
 # Worthless #
 #-----------#
@@ -2494,10 +2505,12 @@ Hide  # Flasks - Normal - Leveling - Hybrid
 Hide  # Flasks - Normal - Leveling - Life
 	Class "Life Flasks"
 	ItemLevel < 68
+	DisableDropSound
 
 Hide  # Flasks - Normal - Leveling - Mana
 	Class "Mana Flasks"
 	ItemLevel < 68
+	DisableDropSound
 
 #Disabled Block Start
 #Show  # Flasks - Normal - Mapping (Low)
@@ -3269,6 +3282,7 @@ Hide  # League Specific - Breach Rings - Leveling
 	BaseType "Breach Ring"
 	ItemLevel < 68
 	SetFontSize 40
+	DisableDropSound
 
 #Disabled Block Start
 #Hide  # League Specific - Breach Rings - Mapping (Low)
