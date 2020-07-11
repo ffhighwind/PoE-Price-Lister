@@ -596,7 +596,7 @@ Show  # Harvest Seeds - High
 	SetFontSize 40
 	SetTextColor 74 230 58 # Harvest Seeds (High)
 	SetBackgroundColor 12 30 12 230 # Harvest Seeds (High)
-	SetBorderColor 0 0 0 255 # Harvest Seeds (High)
+	SetBorderColor 74 230 58 255 # Harvest Seeds (High)
 	PlayAlertSound 3 200 # Harvest Seeds (High)
 	MinimapIcon 0 Green Circle
 	PlayEffect Green
@@ -607,7 +607,7 @@ Show  # Harvest Seeds - Mid
 	SetFontSize 40
 	SetTextColor 74 230 58 # Harvest Seeds (Mid)
 	SetBackgroundColor 12 30 12 230 # Harvest Seeds (Mid)
-	SetBorderColor 0 0 0 255 # Harvest Seeds (Mid)
+	SetBorderColor 74 230 58 255 # Harvest Seeds (High)
 	PlayAlertSound 3 200 # Harvest Seeds (Mid)
 	MinimapIcon 0 Green Circle
 	PlayEffect Green

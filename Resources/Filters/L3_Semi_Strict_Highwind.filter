@@ -1,4 +1,4 @@
-﻿############################################
+﻿﻿############################################
 ##  HIGHWIND'S SEMI-STRICT FILTER 3.11.3  ##
 ############################################
 ## Release Date: July 10, 2020            ##
@@ -593,10 +593,10 @@ Show  # Labyrinth
 Show  # Harvest Seeds - High
 	Class "Harvest Seed"
 	BaseType "Wild Thornfruit" "Vivid Scalefruit" "Primal Blisterfruit"
-	SetFontSize 40
+	SetFontSize 45
 	SetTextColor 74 230 58 # Harvest Seeds (High)
 	SetBackgroundColor 12 30 12 230 # Harvest Seeds (High)
-	SetBorderColor 0 0 0 255 # Harvest Seeds (High)
+	SetBorderColor 74 230 58 255 # Harvest Seeds (High)
 	PlayAlertSound 3 200 # Harvest Seeds (High)
 	MinimapIcon 0 Green Circle
 	PlayEffect Green
@@ -604,17 +604,17 @@ Show  # Harvest Seeds - High
 Show  # Harvest Seeds - Mid
 	Class "Harvest Seed"
 	BaseType "Wild Bristle Matron Bulb" "Wild Hellion Alpha Bulb" "Wild Thornmaw Bulb" "Wild Brambleback Bulb" "Wild Infestation Queen Bulb" "Vivid Whipleg Bulb" "Vivid Watcher Bulb" "Vivid Vulture Bulb" "Vivid Abberarach Bulb" "Vivid Devourer Bulb" "Primal Rhex Matriarch Bulb" "Primal Crushclaw Bulb" "Primal Blisterlord Bulb" "Primal Cystcaller Bulb" "Primal Reborn Bulb"
-	SetFontSize 40
+	SetFontSize 45
 	SetTextColor 74 230 58 # Harvest Seeds (Mid)
 	SetBackgroundColor 12 30 12 230 # Harvest Seeds (Mid)
-	SetBorderColor 0 0 0 255 # Harvest Seeds (Mid)
+	SetBorderColor 74 230 58 255 # Harvest Seeds (High)
 	PlayAlertSound 3 200 # Harvest Seeds (Mid)
 	MinimapIcon 0 Green Circle
 	PlayEffect Green
 	
 Show  # Harvest Seeds - Low
 	Class "Harvest Seed"
-	SetFontSize 40
+	SetFontSize 45
 	SetTextColor 74 230 58 # Harvest Seeds
 	SetBackgroundColor 12 30 12 230 # Harvest Seeds
 	SetBorderColor 0 0 0 255 # Harvest Seeds
@@ -632,17 +632,10 @@ Show  # Seed Enhancer
 
 Show  # Harvest Infrastructure
 	Class "Harvest"
-	SetFontSize 40
+	SetFontSize 45
 	SetTextColor 74 230 58 # Harvest Infrastructure
 	SetBackgroundColor 12 30 12 230 # Harvest Infrastructure
 	SetBorderColor 0 0 0 255 # Harvest Infrastructure
-
-Show  # Metamorph Samples
-	Class "Metamorph Sample"
-	SetFontSize 40
-	SetTextColor 74 230 58 # Metamorph Sample
-	SetBackgroundColor 12 30 12 230 # Metamorph Sample
-	SetBorderColor 0 0 0 255 # Metamorph Sample
 
 Show  # Quests
 	Class Quest "Hideout Doodads" Microtransactions Relics "Incursion Item" "Atlas Region Upgrade Item"
