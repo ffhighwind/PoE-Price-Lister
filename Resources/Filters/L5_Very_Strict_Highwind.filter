@@ -1,7 +1,7 @@
 ﻿﻿############################################
-##  HIGHWIND'S VERY STRICT FILTER 3.11.3  ##
+##  HIGHWIND'S VERY STRICT FILTER 3.11.4  ##
 ############################################
-## Release Date: July 10, 2020            ##
+## Release Date: July 14, 2020            ##
 ############################################
 
 #--------------#
@@ -824,11 +824,13 @@ Show  # Maps - Uniques - Low
 Show
 	Class Maps
 	MapTier >= 11
+	SetFontSize 45
 	SetTextColor 0 0 0 # Map (Red)
 	SetBackgroundColor 255 0 0 220 # Map (Red)
 	SetBorderColor 0 0 0 255 # Map (Red)
 	PlayAlertSound 3 200 # Map
-	SetFontSize 45
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
 	Continue
 
 Show  # Maps - T11+ (Red) - Blighted
@@ -842,13 +844,9 @@ Show  # Maps - T11+ (Red) - Blighted
 Show  # Maps - T11+ (Red) - T16
 	Class Maps
 	MapTier >= 16
-	SetFontSize 45
 	SetTextColor 220 220 220 # Map (T16)
 	SetBackgroundColor 255 0 0 220 # Map (T16)
 	SetBorderColor 220 220 220 255 # Map (T16)
-	PlayAlertSound 3 200 # Map
-	MinimapIcon 0 Red Hexagon
-	PlayEffect Red
 
 Show  # Maps - T11+ (Red) - Other
 	Class Maps
