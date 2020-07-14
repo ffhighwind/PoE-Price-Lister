@@ -365,7 +365,7 @@ Show  # League Specific - Incursion - Vials (Low)
 Show  # League Specific - Harbinger - Low (2+)
 	Class "Stackable Currency"
 	StackSize >= 2
-	BaseType "Chaos Shard" "Regal Shard"
+	BaseType "Chaos Shard" "Regal Shard" "Alchemy Shard"
 	MinimapIcon -1
 	PlayEffect None
 
