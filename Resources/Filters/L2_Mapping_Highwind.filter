@@ -776,9 +776,9 @@ Show  # League Specific - Heist Target
 	SetTextColor 255 128 64 # Heist Target
 	SetBackgroundColor 255 255 255 255 # Heist Target
 	SetBorderColor 255 128 64 255 # Heist Target
-	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Pentagon
-	PlayEffect Red
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Green Circle
+	PlayEffect Green
 
 # Heist Cloak, Heist Brooch, Heist Tool, Heist Gear
 Show  # League Specific - Heist Gear - Rare
