@@ -38,7 +38,7 @@ namespace PoE_Price_Lister
 		// http://api.poe.watch/compact?league=Metamorph&category=armour
 
 		////private const string csvFile = "poe_uniques.csv";
-		private const string league = "Harvest";
+		private const string league = "Heist";
 
 		private const string repoURL = @"https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/";
 		public const string FiltersUrl = repoURL + @"Resources/Filters/";
@@ -47,7 +47,7 @@ namespace PoE_Price_Lister
 		private const string helmEnchantCsvFile = "poe_helm_enchants.csv";
 		//private const string jsonURL = @"http://poe.ninja/api/Data/Get{0}Overview?league={1}";
 		private const string jsonURL = @"https://poe.ninja/api/data/itemoverview?league={1}&type={0}";
-		//ALTERNATE API? https://poe.watch/prices?category=enchantment&league=Metamorph
+		//ALTERNATE API? https://poe.watch/prices?category=enchantment&league={1}
 
 		//{0} = "UniqueAccessory", "UniqueFlask", "UniqueArmour", "UniqueWeapon", "UniqueJewel", "UniqueMap"
 		// "DivinationCard", "HelmetEnchant", "Fragment", "Prophecy", "Essence", "SkillGem", "Beast"

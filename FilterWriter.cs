@@ -117,6 +117,18 @@ Show  # Jewels - Unique - Other
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Orange";
 
+		private const string replicaUniq =
+@"Show  # Uniques - <3c - Replica
+	Rarity = Unique
+	Replica True
+	SetFontSize 40
+	SetTextColor 255 128 64 # Unique
+	SetBackgroundColor 50 25 12 230 # Unique
+	SetBorderColor 180 90 45 255 # Unique
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Orange";
+
 		private const string styleUniqueIconSound =
 @"	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Orange UpsideDownHouse
@@ -414,6 +426,7 @@ Show  # Uniques - <3c - Unique Rings
 			if (type != FilterType.VERY_STRICT) {
 				sb.AppendLine(lessLvl67).AppendLine();
 			}
+			sb.AppendLine(replicaUniq);
 			if (listLimited.Count > 0) {
 				sb.AppendLine(headerLimited);
 				sb.AppendLine("Show  # Uniques - Limited").AppendLine("\tRarity = Unique").Append("\tBaseType ").AppendLine(ItemList(listLimited)).AppendLine(styleLimited).AppendLine(vsSound).AppendLine();

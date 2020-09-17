@@ -1,7 +1,7 @@
-﻿############################################
-##      HIGHWIND'S LOOT FILTER 3.11.5     ##
+﻿﻿############################################
+##      HIGHWIND'S LOOT FILTER 3.12.1     ##
 ############################################
-## Release Date: July 17, 2020            ##
+## Release Date: September 16, 2020       ##
 ############################################
 
 #--------------#
@@ -79,6 +79,9 @@
 # Triangle - Prophecies
 # Square   - Divination Cards
 # UpsideDownHouse - Equipment, Pieces
+# Pentagon
+# Raindrop
+# Moon
 #
 # Red    - Valuable items, 5+ Links
 # Yellow - common Currency, 6 sockets, Gems
@@ -89,6 +92,8 @@
 # Pink   - Divination Cards
 # Orange - mid/low value Uniques
 # White  - Errors, <T6 Maps
+# Grey
+# Brown 
 
 #--------------#
 #   TOP TIER   #
@@ -450,6 +455,10 @@ Show  # League Specific - Harbinger - Mid
 	Class "Stackable Currency"
 	BaseType "Harbinger's Shard" "Ancient Shard" "Engineer's Orb" "Orb of Horizons" "Annulment Shard" "Exalted Shard"
 
+Show  # League Specific - Heist
+	Class "Stackable Currency"
+	BaseType "Rogue's Marker"
+
 #------#
 # High #
 #------#
@@ -708,6 +717,72 @@ Show  # League Specific - Pieces (Harbinger)
 	PlayAlertSound 1 200 # High Value
 	MinimapIcon 0 Red UpsideDownHouse
 	PlayEffect Red
+
+#-------#
+# Heist #
+#-------#
+
+Show  # League Specific - Contracts - Unique
+	Class Contract
+	SetFontSize 45
+	SetTextColor 255 128 64 # Unique (15c+)
+	SetBackgroundColor 255 255 255 255 # Unique (15c+)
+	SetBorderColor 255 128 64 255 # Unique (15c+)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Pentagon
+	PlayEffect Red
+
+Show  # League Specific - Contracts - Other
+	Class Contracts
+	SetFontSize 45
+	PlayAlertSound 4 200 # Contracts
+	MinimapIcon 0 Yellow Pentagon
+	PlayEffect Yellow
+
+Show  # League Specific - Blueprints - Unique
+	Class Blueprints
+	SetFontSize 45
+	SetTextColor 255 128 64 # Unique (15c+)
+	SetBackgroundColor 255 255 255 255 # Unique (15c+)
+	SetBorderColor 255 128 64 255 # Unique (15c+)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Pentagon
+	PlayEffect Red
+
+Show  # League Specific - Blueprints - Other
+	Class Blueprints
+	SetFontSize 45
+	PlayAlertSound 4 200 # Contracts
+	MinimapIcon 0 Yellow Pentagon
+	PlayEffect Yellow
+
+Show  # League Specific - Trinket
+	Class Trinket
+	SetBorderColor 220 0 0 255 # Rare Accessory
+	SetFontSize 45
+
+Show  # League Specific - Heist Target
+	Class "Heist Target"
+	SetFontSize 45
+	SetTextColor 255 128 64 # Heist Target
+	SetBackgroundColor 255 255 255 255 # Heist Target
+	SetBorderColor 255 128 64 255 # Heist Target
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Pentagon
+	PlayEffect Red
+
+# Heist Cloak, Heist Brooch, Heist Tool, Heist Gear
+Show  # League Specific - Heist Gear - Rare
+	Class "Heist"
+	Rarity >= Rare
+	SetFontSize 40
+
+# Heist Cloak, Heist Brooch, Heist Tool, Heist Gear
+Show  # League Specific - Heist Gear - Magic
+	Class "Heist"
+	Rarity <= Magic
+	ItemLevel < 68
+	SetFontSize 40
 
 #--------#
 # Legacy #
@@ -1046,6 +1121,17 @@ Show  # Gems - Quality - 17%+
 # Mid #
 #-----#
 
+Show  # Gems - Alternate Quality
+	Class "Skill Gems"
+	AlternateQuality True
+	SetFontSize 45
+	SetTextColor 55 225 185 # Gem (Mid)
+	SetBackgroundColor 10 35 30 230 # Gem (Mid)
+	SetBorderColor 50 220 180 255 # Gem (Mid)
+	PlayAlertSound 6 200 # Gem
+	MinimapIcon 0 Cyan Star
+	PlayEffect Cyan
+
 Show  # Gems - Leveled - Level 19+
 	Class "Skill Gems"
 	GemLevel >= 19
@@ -1165,7 +1251,7 @@ Show  # Divination Cards - Nearly Worthless (Conflicts)
 
 Show  # Divination Cards - 10c+
 	Class Divination
-	BaseType "A Familiar Call" "Abandoned Wealth" "Alluring Bounty" "Azyran's Reward" "Beauty Through Death" "Birth of the Three" "Blessing of God" "Dark Dreams" "Dying Anguish" "Etched in Blood" "Gift of Asenath" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Luck of the Vaal" "Nook's Crown" "Pride of the First Ones" "Prometheus' Armoury" "Seven Years Bad Luck" "Squandered Prosperity" "Succor of the Sinless" "The Awakened" "The Bargain" "The Celestial Stone" "The Cheater" "The Craving" "The Damned" "The Demon" "The Devastator" "The Doctor" "The Dragon's Heart" "The Enlightened" "The Escape" "The Eye of Terror" "The Fiend" "The Greatest Intentions" "The Hive of Knowledge" "The Immortal" "The Iron Bard" "The Long Con" "The Mayor" "The Nurse" "The Offering" "The Price of Loyalty" "The Progeny of Lunaris" "The Queen" "The Saint's Treasure" "The Samurai's Eye" "The Soul" "The Spark and the Flame" "The Strategist" "The Sustenance" "The White Knight" "Void of the Elements" "Wealth and Power"
+	BaseType "Brother's Stash" "Desecrated Virtue" "Unrequited Love" "A Familiar Call" "Abandoned Wealth" "Alluring Bounty" "Azyran's Reward" "Beauty Through Death" "Birth of the Three" "Blessing of God" "Dark Dreams" "Dying Anguish" "Etched in Blood" "Gift of Asenath" "House of Mirrors" "Hunter's Reward" "Immortal Resolve" "Luck of the Vaal" "Nook's Crown" "Pride of the First Ones" "Prometheus' Armoury" "Seven Years Bad Luck" "Squandered Prosperity" "Succor of the Sinless" "The Awakened" "The Bargain" "The Celestial Stone" "The Cheater" "The Craving" "The Damned" "The Demon" "The Devastator" "The Doctor" "The Dragon's Heart" "The Enlightened" "The Escape" "The Eye of Terror" "The Fiend" "The Greatest Intentions" "The Hive of Knowledge" "The Immortal" "The Iron Bard" "The Long Con" "The Mayor" "The Nurse" "The Offering" "The Price of Loyalty" "The Progeny of Lunaris" "The Queen" "The Saint's Treasure" "The Samurai's Eye" "The Soul" "The Spark and the Flame" "The Strategist" "The Sustenance" "The White Knight" "Void of the Elements" "Wealth and Power"
 	SetFontSize 45
 	SetTextColor 255 0 175 # Divination Card (10c+)
 	SetBackgroundColor 255 255 255 255 # Divination Card (10c+)
@@ -1176,7 +1262,7 @@ Show  # Divination Cards - 10c+
 
 Show  # Divination Cards - 2-10c
 	Class Divination
-	BaseType "A Note in the Wind" "Akil's Prophecy" "Arrogance of the Vaal" "Bowyer's Dream" "Burning Blood" "Chaotic Disposition" "Council of Cats" "Demigod's Wager" "Divine Justice" "Echoes of Love" Friendship "Lucky Connections" "Mawr Blaidd" "No Traces" "Peaceful Moments" Perfection "Pride Before the Fall" Rebirth Remembrance "The Artist" "The Betrayal" "The Breach" "The Cartographer" "The Celestial Justicar" "The Dapper Prodigy" "The Eldritch Decay" "The Ethereal" "The Fishmonger" "The Fool" "The Hale Heart" "The Heroic Shot" "The Hoarder" "The Innocent" "The Inventor" "The Landing" "The Life Thief" "The Lord of Celebration" "The Master" "The Old Man" "The Polymath" "The Porcupine" "The Primordial" "The Professor" "The Risk" "The Sacrifice" "The Sephirot" "The Undaunted" "The Undisputed" "The Valkyrie" "The Valley of Steel Boxes" "The Vast" "The Void" "The Warlord" "The Wolven King's Bite" "The World Eater" "The Wrath" "Time-Lost Relic" "Underground Forest" "Vinia's Token"
+	BaseType "Cursed Words" "The Cache" "Triskaidekaphobia" "The Bitter Blossom" "The Gulf" "A Note in the Wind" "Akil's Prophecy" "Arrogance of the Vaal" "Bowyer's Dream" "Burning Blood" "Chaotic Disposition" "Council of Cats" "Demigod's Wager" "Divine Justice" "Echoes of Love" Friendship "Lucky Connections" "Mawr Blaidd" "No Traces" "Peaceful Moments" Perfection "Pride Before the Fall" Rebirth Remembrance "The Artist" "The Betrayal" "The Breach" "The Cartographer" "The Celestial Justicar" "The Dapper Prodigy" "The Eldritch Decay" "The Ethereal" "The Fishmonger" "The Fool" "The Hale Heart" "The Heroic Shot" "The Hoarder" "The Innocent" "The Inventor" "The Landing" "The Life Thief" "The Lord of Celebration" "The Master" "The Old Man" "The Polymath" "The Porcupine" "The Primordial" "The Professor" "The Risk" "The Sacrifice" "The Sephirot" "The Undaunted" "The Undisputed" "The Valkyrie" "The Valley of Steel Boxes" "The Vast" "The Void" "The Warlord" "The Wolven King's Bite" "The World Eater" "The Wrath" "Time-Lost Relic" "Underground Forest" "Vinia's Token"
 	SetFontSize 45
 	SetTextColor 255 255 255 # Divination Card (2-10c)
 	SetBackgroundColor 255 0 175 255 # Divination Card (2-10c)
@@ -1187,7 +1273,7 @@ Show  # Divination Cards - 2-10c
 
 Show  # Divination Cards - <2c
 	Class Divination
-	BaseType "A Dab of Ink" "Boon of the First Ones" "Boundless Realms" "Buried Treasure" "Coveted Possession" "Emperor of Purity" "Emperor's Luck" "Gemcutter's Promise" "Harmony of Souls" Humility "Lingering Remnants" "Lucky Deck" "Merciless Armament" "The Aesthete" "The Cacophony" "The Catalyst" "The Chains that Bind" "The Chosen" "The Cursed King" "The Dark Mage" "The Deep Ones" "The Dreamer" "The Endless Darkness" "The Garish Power" "The Incantation" "The Jeweller's Boon" "The Journey" "The King's Heart" "The Last One Standing" "The Pact" "The Price of Protection" "The Seeker" "The Side Quest" "The Standoff" "The Thaumaturgist" "The Throne" "The Tinkerer's Table" "The Tyrant" "The Union" "The Wilted Rose" "The Wolf" "The Wretched" "Three Faces in the Dark" "Three Voices" Vanity "Vile Power"
+	BaseType "The Journalist" "The Unexpected Prize" "A Dab of Ink" "Boon of the First Ones" "Boundless Realms" "Buried Treasure" "Coveted Possession" "Emperor of Purity" "Emperor's Luck" "Gemcutter's Promise" "Harmony of Souls" Humility "Lingering Remnants" "Lucky Deck" "Merciless Armament" "The Aesthete" "The Cacophony" "The Catalyst" "The Chains that Bind" "The Chosen" "The Cursed King" "The Dark Mage" "The Deep Ones" "The Dreamer" "The Endless Darkness" "The Garish Power" "The Incantation" "The Jeweller's Boon" "The Journey" "The King's Heart" "The Last One Standing" "The Pact" "The Price of Protection" "The Seeker" "The Side Quest" "The Standoff" "The Thaumaturgist" "The Throne" "The Tinkerer's Table" "The Tyrant" "The Union" "The Wilted Rose" "The Wolf" "The Wretched" "Three Faces in the Dark" "Three Voices" Vanity "Vile Power"
 	SetFontSize 36
 	SetTextColor 0 0 0 # Divination Card (<2c)
 	SetBackgroundColor 255 0 175 230 # Divination Card (<2c)
@@ -1579,6 +1665,17 @@ Show  # Uniques - <3c - Unique Rings
 #-----#
 # Orange border
 # Usually < 3c or nearly worthless.
+
+Show  # Uniques - <3c - Replica
+	Rarity = Unique
+	Replica True
+	SetFontSize 45
+	SetTextColor 255 128 64 # Unique
+	SetBackgroundColor 50 25 12 230 # Unique
+	SetBorderColor 180 90 45 255 # Unique
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Orange
 
 Show  # Uniques - <3c - ilvl <67
 	Rarity = Unique

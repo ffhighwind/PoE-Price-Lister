@@ -1,4 +1,100 @@
 ﻿----------------------------------------------------------------
+| Harvest
+----------------------------------------------------------------
+3.11.5
+▻ Updated the filter values.
+▻ Fixed Alchemy shards (stack size 2+).
+
+3.11.4
+▻ Fixed a bug with T11+ maps.
+
+3.11.3
+▻ Added Seed Enhancers.
+▻ Added map icons and borders to Harvest Seeds.
+▻ Updated the filter values.
+
+3.11.2
+▻ Updated the uniques and enchants csvs.
+▻ Added more uniques
+Emperor's Vigilance
+Forbidden Shako
+Witchhunter's Judgment
+The Felbog Fang
+Scorpion's Call
+Retaliation Charm
+Fleshcrafter
+Bear's Girdle
+Wings of Entropy
+The Immortal Will
+The Shattered Divinity
+The Tempest's Liberation
+The Torrent's Reclamation
+The Yielding Mortality
+The Surging Thoughts
+Plume of Pursuit
+Law of the Wilds
+
+3.11.1
+▻ Added a few more explicit mods.
+▻ Added Vermillion Ring and Cerulean Ring to mid crafting bases.
+▻ Changed T6+ maps to always have an icon/sound/beam.
+▻ Changed T1-5 maps in the strict filters to be hidden later.
+▻ Added item class Harvest Infrastructure.
+▻ Added item class Harvest Seeds.
+▻ Added new Currency
+
+Infused Engineer's Orb
+Time-light Scroll
+Fragmentation Scroll
+Deregulation Scroll
+Electroshock Scroll
+Haemocombustion Scroll
+Specularity Scroll
+Facetor's Lens
+Indigo Oil
+▻ Added new Map Fragments
+
+Tribute to the Goddess
+Gift to the Goddess
+Dedication to the Goddess
+Winged Cartography Scarab
+Winged Reliquary Scarab
+Winged Bestiary Scarab
+Winged Shaper Scarab
+Winged Elder Scarab
+Winged Sulphite Scarab
+Winged Divination Scarab
+Winged Torment Scarab
+Winged Ambush Scarab
+Winged Harbinger Scarab
+Winged Perandus Scarab
+Winged Breach Scarab
+Winged Legion Scarab
+Winged Metamorph Scarab
+▻ Added 12 New Divination Cards
+A Note in the Wind
+The White Knight
+Prometheus' Armoury
+A Familiar Call
+Peaceful Moments
+The Greatest Intentions
+The Awakened
+The Sustenance
+
+The Tumbleweed
+The Hive of Knowledge
+Gift of Asenath
+The Long Con
+▻ Aded 6/12 New Uniques
+Storm Secret, Topaz Ring
+Doryani's Prototype, Saint's Hauberk
+Inevitability, Might and Influence (Jewels)
+Abhorrent Interrogation, Ambush Mitts
+Great Old One's Tentacles, Eelskin Gloves
+Fleshcrafter, Necromancer Silks
+Emperor's Vigilance, Steel Kite Shield
+
+----------------------------------------------------------------
 | Delirium
 ----------------------------------------------------------------
 
@@ -51,7 +147,6 @@
 ▻ Updated Awakened Gems value/sound
 ▻ Added Simulacrum Splinters
 ▻ Added Delirium Orbs
-Spoiler 
 Fine Delirium Orb
 Singular Delirium Orb
 Thaumaturge's Delirium Orb
@@ -77,13 +172,11 @@ Blighted Delirium Orb
 Amorphous Delirium Orb
 ▻ Added Cluster Jewels: Large, Medium, Small
 ▻ Added 4 new Map Fragments
-Spoiler 
 Simulacrum
 Rusted Metamorph Scarab
 Polished Metamorph Scarab
 Gilded Metamorph Scarab
 ▻ Added 7/8 new Divination Cards
-Spoiler 
 The Strategist
 The Cheater
 The Tinkerer's Table
@@ -92,7 +185,6 @@ The Progeny of Lunaris
 The Eldritch Decay
 Council of Cats
 ▻ Add 8/16 new Uniques (1)(2)
-Spoiler 
 Algor Mortis
 Kitava's Teachings
 One With Nothing
@@ -141,7 +233,6 @@ Profane Proxy
 3.9.3
 ▻ Added HasInfluence: Crusader, Hunter, Redeemer, Warlord
 ▻ Added 4/16 uniques to the CSV
-Spoiler 
 league page
 Astral Projector
 
@@ -405,7 +496,6 @@ The Archmage's Right Hand
 The Fool
 Vanity
 ▻ Added other divination cards 5/5 at 1c+. This are not likely to be priced correctly at the start of the league, but they will not be hidden.
-Spoiler 
 Demigod's Wager
 The Primordial
 Thirst for Knowledge
@@ -476,7 +566,6 @@ Magistrate Crown - Mask of the Tribunal (Synthesis)
 ▻ Added SynthesisedItem and FracturedItem to the explicit mods section.
 ▻ Added AnyEnchantment to explicit mods section.
 ▻ Added 11/14 new Divination cards:
-Spoiler 
 The Journey
 Alone in the Darkness
 Dark Temptation
@@ -620,7 +709,6 @@ of Riker's Veil
 ▻ Reworked the currency, gems, and jewels sections.
 ▻ Removed some Harbinger currency based on StackSize. Recolored some of these currencies.
 ▻ Added HasExplicitMod to items that make it past the pre-filter. These show up the same as high value crafting bases like Steel Rings. Most of these mods are ItemLevel 80+ and require the item to be identified as it drops, so don't expect to see these much.
-Spoiler 
 
 3.3.3
 ▻ Added "Vial of" incursion currency.
@@ -742,11 +830,10 @@ Spoiler
 3.2.1
 ▻ Added [url=http://www.pathofexile.com/forum/view-thread/2093501]nets and bestiary orbs[/url].
 ▻ Added 10 new divination cards: [url=http://www.pathofexile.com/forum/view-thread/2091003]link 1[/url], [url=https://web.poecdn.com/public/news/2018-02-22/TheIronBard.jpg]link 2[/url]
-[spoiler]
 10c+ The Iron Bard, The Dreamer, The Obscured, The World Eater
 1c+ The Insatiable, The Breach
 <1c Forbidden Power, Blessing of God
-nearly worthless The Deceiver, The Puzzle[/spoiler][/spoiler]
+nearly worthless The Deceiver, The Puzzle
 
 ----------------------------------------------------------------
 | Abyss
