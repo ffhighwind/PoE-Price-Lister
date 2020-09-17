@@ -790,6 +790,7 @@ Hide  # League Specific - Heist Gear - Normal
 	Rarity = Normal
 	ItemLevel < 68
 	SetFontSize 32
+	DisableDropSound
 
 #--------#
 # Legacy #

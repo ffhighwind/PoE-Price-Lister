@@ -796,12 +796,14 @@ Hide  # League Specific - Heist Gear - Magic
 	Class "Heist"
 	Rarity = Magic
 	SetFontSize 32
+	DisableDropSound
 
 Hide  # League Specific - Heist Gear - Normal
 	Class "Heist"
 	Rarity = Normal
 	ItemLevel < 68
 	SetFontSize 32
+	DisableDropSound
 
 #--------#
 # Legacy #

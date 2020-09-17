@@ -723,6 +723,7 @@ Show  # League Specific - Pieces (Harbinger)
 
 Show  # League Specific - Contracts - Unique
 	Class Contract
+	Rarity Unique
 	SetFontSize 45
 	SetTextColor 255 128 64 # Unique (15c+)
 	SetBackgroundColor 255 255 255 255 # Unique (15c+)
@@ -735,30 +736,33 @@ Show  # League Specific - Contracts - Other
 	Class Contracts
 	SetFontSize 45
 	PlayAlertSound 4 200 # Contracts
-	MinimapIcon 0 Yellow Pentagon
-	PlayEffect Yellow
+	MinimapIcon 0 Pink Hexagon
+	PlayEffect Pink
 
 Show  # League Specific - Blueprints - Unique
-	Class Blueprints
+	Class Blueprint
+	Rarity Unique
 	SetFontSize 45
 	SetTextColor 255 128 64 # Unique (15c+)
 	SetBackgroundColor 255 255 255 255 # Unique (15c+)
 	SetBorderColor 255 128 64 255 # Unique (15c+)
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Pentagon
+	MinimapIcon 0 Red Hexagon
 	PlayEffect Red
 
 Show  # League Specific - Blueprints - Other
-	Class Blueprints
+	Class Blueprint
 	SetFontSize 45
-	PlayAlertSound 4 200 # Contracts
-	MinimapIcon 0 Yellow Pentagon
-	PlayEffect Yellow
+	PlayAlertSound 4 200 # Blueprint
+	MinimapIcon 0 Pink Hexagon
+	PlayEffect Pink
 
 Show  # League Specific - Trinket
 	Class Trinket
 	SetBorderColor 220 0 0 255 # Rare Accessory
 	SetFontSize 45
+	MinimapIcon 0 Yellow Diamond
+	PlayEffect Yellow
 
 Show  # League Specific - Heist Target
 	Class "Heist Target"
@@ -776,12 +780,16 @@ Show  # League Specific - Heist Gear - Rare
 	Rarity >= Rare
 	SetFontSize 40
 
-# Heist Cloak, Heist Brooch, Heist Tool, Heist Gear
 Show  # League Specific - Heist Gear - Magic
 	Class "Heist"
-	Rarity <= Magic
+	Rarity = Magic
+	SetFontSize 36
+
+Hide  # League Specific - Heist Gear - Normal
+	Class "Heist"
+	Rarity = Normal
 	ItemLevel < 68
-	SetFontSize 40
+	SetFontSize 36
 
 #--------#
 # Legacy #
