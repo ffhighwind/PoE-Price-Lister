@@ -721,41 +721,25 @@ Show  # League Specific - Pieces (Harbinger)
 # Heist #
 #-------#
 
-Show  # League Specific - Contracts - Unique
+Show  # League Specific - Contracts
 	Class Contract
-	Rarity Unique
+	SetTextColor 74 230 58 # Heist Target
+	SetBackgroundColor 12 30 12 230 # Heist Target
+	SetBorderColor 74 230 58 255 # Heist Target
 	SetFontSize 45
-	SetTextColor 255 128 64 # Unique (15c+)
-	SetBackgroundColor 255 255 255 255 # Unique (15c+)
-	SetBorderColor 255 128 64 255 # Unique (15c+)
-	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Pentagon
-	PlayEffect Red
+	PlayAlertSound 3 200 # Contracts
+	MinimapIcon 0 Green Hexagon
+	PlayEffect Green
 
-Show  # League Specific - Contracts - Other
-	Class Contracts
-	SetFontSize 45
-	PlayAlertSound 4 200 # Contracts
-	MinimapIcon 0 Pink Hexagon
-	PlayEffect Pink
-
-Show  # League Specific - Blueprints - Unique
-	Class Blueprint
-	Rarity Unique
-	SetFontSize 45
-	SetTextColor 255 128 64 # Unique (15c+)
-	SetBackgroundColor 255 255 255 255 # Unique (15c+)
-	SetBorderColor 255 128 64 255 # Unique (15c+)
-	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Red Hexagon
-	PlayEffect Red
-
-Show  # League Specific - Blueprints - Other
+Show  # League Specific - Blueprints
 	Class Blueprint
 	SetFontSize 45
-	PlayAlertSound 4 200 # Blueprint
-	MinimapIcon 0 Pink Hexagon
-	PlayEffect Pink
+	SetTextColor 0 0 0 # Blueprints
+	SetBackgroundColor 255 0 0 220 # Blueprints
+	SetBorderColor 0 0 0 255 # Blueprints
+	PlayAlertSound 3 200 # Blueprints
+	MinimapIcon 0 Green Hexagon
+	PlayEffect Green
 
 Show  # League Specific - Trinket
 	Class Trinket
@@ -767,9 +751,9 @@ Show  # League Specific - Trinket
 Show  # League Specific - Heist Target
 	Class "Heist Target"
 	SetFontSize 45
-	SetTextColor 255 128 64 # Heist Target
-	SetBackgroundColor 255 255 255 255 # Heist Target
-	SetBorderColor 255 128 64 255 # Heist Target
+	SetTextColor 74 230 58 # Heist Target
+	SetBackgroundColor 12 30 12 230 # Heist Target
+	SetBorderColor 74 230 58 255 # Heist Target
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Green Circle
 	PlayEffect Green
