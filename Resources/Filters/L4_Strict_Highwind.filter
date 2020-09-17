@@ -735,12 +735,12 @@ Show  # League Specific - Pieces (Harbinger)
 
 Show  # League Specific - Contracts
 	Class Contract
-	SetTextColor 0 0 0 # Contract
+	SetTextColor 235 235 235 # Contract
 	SetBackgroundColor 0 100 255 220 # Contract
 	SetBorderColor 0 0 0 255 # Contract
 	SetFontSize 45
 	PlayAlertSound 3 200 # Contracts
-	MinimapIcon 1 Blue Hexagon
+	MinimapIcon 0 Blue Hexagon
 	PlayEffect Blue
 
 Show  # League Specific - Blueprints
@@ -750,20 +750,20 @@ Show  # League Specific - Blueprints
 	SetBackgroundColor 0 100 255 220 # Blueprints
 	SetBorderColor 255 255 255 # Blueprints
 	PlayAlertSound 3 200 # Blueprints
-	MinimapIcon 0 Blue Hexagon
-	PlayEffect Blue
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
 
 Show  # League Specific - Trinket
 	Class Trinket
 	SetBorderColor 220 0 0 255 # Rare Accessory
 	SetFontSize 45
-	MinimapIcon 0 Yellow Moon
-	PlayEffect Yellow
+	MinimapIcon 0 Cyan Moon
+	PlayEffect Cyan
 
 Show  # League Specific - Heist Target
 	Class "Heist Target"
 	SetFontSize 45
-	SetTextColor 5 200 5 # Heist Target
+	SetTextColor 0 180 0 # Heist Target
 	SetBackgroundColor 255 255 255 255 # Heist Target
 	SetBorderColor 74 230 58 255 # Heist Target
 	PlayAlertSound 4 200 # Mid Value
