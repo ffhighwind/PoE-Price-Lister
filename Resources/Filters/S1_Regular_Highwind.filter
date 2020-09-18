@@ -457,7 +457,7 @@ Show  # League Specific - Harbinger - Mid
 
 Show  # League Specific - Heist
 	Class "Stackable Currency"
-	BaseType "Rogue's Marker"
+	BaseType "Rogue's Marker" "Prime Regrading Lens" "Secondary Regrading Lens" "Tempering Orb" "Tailoring Orb"
 
 #------#
 # High #
@@ -1652,22 +1652,22 @@ Show  # Uniques - <3c - Unique Rings
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Orange
 
-#-----#
-# <3c #
-#-----#
-# Orange border
-# Usually < 3c or nearly worthless.
-
 Show  # Uniques - <3c - Replica
 	Rarity = Unique
 	Replica True
 	SetFontSize 40
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 230 # Unique
-	SetBorderColor 180 90 45 255 # Unique
+	SetBorderColor 255 255 0 255 # Unique (3-5c)
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Orange
+
+#-----#
+# <3c #
+#-----#
+# Orange border
+# Usually < 3c or nearly worthless.
 
 Show  # Uniques - <3c - ilvl <67
 	Rarity = Unique
