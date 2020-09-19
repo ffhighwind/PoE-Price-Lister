@@ -1,7 +1,7 @@
 ﻿﻿############################################
-##      HIGHWIND'S LOOT FILTER 3.12.2     ##
+##      HIGHWIND'S LOOT FILTER 3.12.3     ##
 ############################################
-## Release Date: September 17, 2020       ##
+## Release Date: September 19, 2020       ##
 ############################################
 
 #--------------#
@@ -79,9 +79,9 @@
 # Triangle - Prophecies
 # Square   - Divination Cards
 # UpsideDownHouse - Equipment, Pieces
+# Moon     - Trinkets
 # Pentagon
 # Raindrop
-# Moon
 #
 # Red    - Valuable items, 5+ Links
 # Yellow - common Currency, 6 sockets, Gems
@@ -457,7 +457,7 @@ Show  # League Specific - Harbinger - Mid
 
 Show  # League Specific - Heist
 	Class "Stackable Currency"
-	BaseType "Rogue's Marker" "Prime Regrading Lens" "Secondary Regrading Lens" "Tempering Orb" "Tailoring Orb"
+	BaseType "Rogue's Marker"
 
 #------#
 # High #
@@ -520,6 +520,10 @@ Show  # League Specific - Harbinger - High
 Show  # League Specific - Incursion - Vials (High)
 	Class "Stackable Currency"
 	BaseType "Vial of the Ghost" "Vial of Sacrifice" "Vial of Awakening"
+
+Show  # League Specific - Heist
+	Class "Stackable Currency"
+	BaseType "Prime Regrading Lens" "Secondary Regrading Lens" "Tempering Orb" "Tailoring Orb"
 
 #----------#
 # Prophecy #
@@ -763,18 +767,16 @@ Show  # League Specific - Heist Target
 Show  # League Specific - Heist Gear - Rare
 	Class "Heist"
 	Rarity >= Rare
-	SetFontSize 36
+	SetFontSize 45
+	SetBackgroundColor 50 50 50 230 # Heist Gear
+	SetBorderColor 160 160 160 255 # Heist Gear
 
 Show  # League Specific - Heist Gear - Magic
 	Class "Heist"
-	Rarity = Magic
-	SetFontSize 32
-
-Show  # League Specific - Heist Gear - Normal
-	Class "Heist"
-	Rarity = Normal
-	ItemLevel < 68
-	SetFontSize 32
+	Rarity <= Magic
+	SetFontSize 36
+	SetBackgroundColor 50 50 50 230 # Heist Gear
+	SetBorderColor 160 160 160 255 # Heist Gear
 
 #--------#
 # Legacy #
@@ -2504,6 +2506,21 @@ Show
 #---------#
 # Utility #
 #---------#
+
+Show  # Flasks - Utility - Leveling Useful
+	Class "Utility Flasks"
+	BaseType "Quicksilver Flask" "Silver Flask" "Granite Flask" "Jade Flask" "Bismuth Flask" "Sulphur Flask" "Basalt Flask"
+	ItemLevel < 68
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 1 Cyan UpsideDownHouse
+	PlayEffect Cyan
+
+Show  # Flasks - Utility - Leveling
+	Class "Utility Flasks"
+	ItemLevel < 35
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Cyan UpsideDownHouse
+	PlayEffect Cyan
 
 Show  # Flasks - Utility - Leveling
 	Class "Utility Flasks"
