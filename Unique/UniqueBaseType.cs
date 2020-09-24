@@ -136,7 +136,7 @@ namespace PoE_Price_Lister
 						minTier = Math.Max(minTier, 1);
 				}
 			}
-			
+
 			if (isUnobtainable)
 				return UniqueValue.Chaos15;
 			if (minVal > maxVal) {
@@ -224,7 +224,7 @@ namespace PoE_Price_Lister
 			}
 		}
 
-		public int SeverityLevel => Math.Abs(FilterValue.Tier - ExpectedFilterValue.Tier);
+		public int SeverityLevel => Math.Abs(Math.Max(FilterValue.Tier - 1, 0) - Math.Max(ExpectedFilterValue.Tier - 1, 0));
 
 		public string QuotedBaseType {
 			get {
@@ -283,8 +283,7 @@ namespace PoE_Price_Lister
 
 		public void Sort()
 		{
-			_Items.Sort((x, y) =>
-			{
+			_Items.Sort((x, y) => {
 				if (y.IsCoreDrop) {
 					if (!x.IsCoreDrop)
 						return -1;

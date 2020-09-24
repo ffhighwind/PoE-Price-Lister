@@ -268,6 +268,13 @@ namespace PoE_Price_Lister
 			buttonGenFilter.Enabled = true;
 			buttonLoad.Enabled = true;
 			Text += " (v" + model.Version + ")";
+
+			string errors = model.GetErrorsString();
+			if (errors.Length > 0) {
+				Invoke(new Action(() => {
+					Clipboard.SetText(errors);
+				}));
+			}
 		}
 
 		private void LoadDataGridViews()

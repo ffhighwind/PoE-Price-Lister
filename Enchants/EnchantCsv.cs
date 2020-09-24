@@ -26,6 +26,9 @@ namespace PoE_Price_Lister
 	public class EnchantCsv
 	{
 		[FieldQuoted('"', QuoteMode.OptionalForBoth, MultilineMode.AllowForRead)]
+		public string Item { get; set; }
+
+		[FieldQuoted('"', QuoteMode.OptionalForBoth, MultilineMode.AllowForRead)]
 		public string Name { get; set; }
 
 		[FieldConverter(typeof(DifficultyConverter))]
@@ -40,6 +43,8 @@ namespace PoE_Price_Lister
 		{
 			public override object StringToField(string from)
 			{
+				if (from.Equals("Eternal Labyrinth of Potential"))
+					return EnchantmentSource.EternalLabyrinthOfPotential;
 				if (from.Equals("Merciless Labyrinth"))
 					return EnchantmentSource.MercilessLab;
 				if (from.Equals("Eternal Labyrinth"))

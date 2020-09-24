@@ -117,6 +117,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="poe_helm_enchants.csv" />
     <None Include="README.md" />
     <None Include="Resources\FilterNova-AutoUpdater.ahk" />
     <None Include="Resources\Filters\filter font enlarger.ahk" />

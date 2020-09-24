@@ -26,5 +26,6 @@ namespace PoE_Price_Lister
 		CruelLab,
 		MercilessLab,
 		EternalLab,
+		EternalLabyrinthOfPotential,
 	}
 }

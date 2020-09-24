@@ -17,14 +17,14 @@
 #endregion
 
 using System;
-
+using System.Collections.Generic;
 using Newtonsoft.Json;
 
 namespace PoE_Price_Lister
 {
 	[JsonObject(MemberSerialization = MemberSerialization.OptIn)]
-	public class JsonData
-	{
+	public sealed class JsonData : IEquatable<JsonData>
+    {
 		public JsonData() { }
 
 		//[JsonProperty(PropertyName = "id")]
@@ -98,7 +98,27 @@ namespace PoE_Price_Lister
 		[JsonProperty(PropertyName = "count")]
 		public int Count { get; set; } // too low means low accuracy
 
-		public override string ToString()
+        public override bool Equals(object obj)
+        {
+            return Equals(obj as JsonData);
+        }
+
+        public bool Equals(JsonData other)
+        {
+            return other != null &&
+                   Name == other.Name &&
+                   BaseType == other.BaseType;
+        }
+
+        public override int GetHashCode()
+        {
+            int hashCode = -1412448124;
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Name);
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(BaseType);
+            return hashCode;
+        }
+
+        public override string ToString()
 		{
 			return JsonConvert.SerializeObject(this, Formatting.Indented);
 		}

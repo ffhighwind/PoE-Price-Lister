@@ -18,6 +18,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -69,16 +70,16 @@ namespace PoE_Price_Lister
 		public IReadOnlyList<string> Enchantments { get; private set; }
 
 		private const int MaxErrors = 5;
-		private int ErrorCount = 0;
 
 		private List<IReadOnlyList<string>> conflicts { get; } = new List<IReadOnlyList<string>>();
 		public IReadOnlyList<IReadOnlyList<string>> DivinationCardNameConflicts => conflicts;
 
 		public void Load()
 		{
-			ErrorCount = 0;
 			LoadUniquesCsv();
 			LoadEnchantsCsv();
+			UniquesErrors.Clear();
+			EnchantsErrors.Clear();
 			GetJsonData(HC);
 			GetJsonData(SC);
 			string filterString = Util.ReadWebPage(FiltersUrl + filterFile);
@@ -93,6 +94,19 @@ namespace PoE_Price_Lister
 			VersionMinor = int.Parse(m.Groups[2].Value);
 			VersionRelease = int.Parse(m.Groups[3].Value);
 			Version = VersionMajor.ToString() + "." + VersionMinor + "." + VersionRelease;
+
+			if (UniquesErrors.Count > 0 || EnchantsErrors.Count > 0) {
+				UniquesErrors = UniquesErrors.Distinct().OrderBy(x => x.BaseType).ThenBy(x => x.Name).ToList();
+				EnchantsErrors = EnchantsErrors.Distinct().OrderBy(x => x.BaseType).ThenBy(x => x.Name).ToList();
+				List<string> errs = new List<string>();
+				if (UniquesErrors.Count > 0) {
+					errs.Add(UniquesErrors.Count + " uniques");
+				}
+				if (EnchantsErrors.Count > 0) {
+					errs.Add(EnchantsErrors.Count + " enchantments");
+				}
+				MessageBox.Show("Missing " + string.Join(", ", errs) + "\n\nThese will be copied to the clipboard. Add them to the CSV files.", "Load JSON", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
 		}
 
 		public void Load(string filename)
@@ -109,9 +123,6 @@ namespace PoE_Price_Lister
 
 		public void Load(string[] lines)
 		{
-			ErrorCount = 0;
-			//HC.ClearFilterValues();
-			//SC.ClearFilterValues();
 			GetFilterData(lines);
 
 			DivinationCards = SC.DivinationCards.Keys.OrderBy(x => x).ToList();
@@ -131,6 +142,17 @@ namespace PoE_Price_Lister
 			}
 			Uniques = SC.Uniques.Keys.OrderBy(x => x).ToList();
 			Enchantments = SC.Enchantments.Keys.OrderBy(x => x).ToList();
+		}
+
+		private List<JsonData> UniquesErrors = new List<JsonData>();
+		private List<JsonData> EnchantsErrors = new List<JsonData>();
+
+		public string GetErrorsString()
+		{
+			return "Type\tBaseType\tName" + Environment.NewLine +
+				string.Join(Environment.NewLine,
+					UniquesErrors.Select(e => "Unique\t" + e.BaseType + "\t" + e.Name)
+					.Concat(EnchantsErrors.Select(e => "Enchants\t" + e.BaseType + "\t" + e.Name)));
 		}
 
 		private void GetJsonData(LeagueData data)
@@ -167,13 +189,9 @@ namespace PoE_Price_Lister
 			if (!data.EnchantmentsDescriptions.TryGetValue(description, out Enchantment ench)) {
 				ench = new Enchantment(description);
 				data.EnchantmentsDescriptions.Add(description, ench);
-				MessageBox.Show("JSON: The CSV file is missing Enchantment: " + description, "Error", MessageBoxButtons.OK);
-				ErrorCount++;
+				EnchantsErrors.Add(jdata);
 			}
 			ench.Load(jdata);
-			if (ErrorCount > MaxErrors) {
-				Environment.Exit(1);
-			}
 		}
 
 		private void UniqueJsonHandler(JsonData jdata, LeagueData data)
@@ -182,25 +200,17 @@ namespace PoE_Price_Lister
 			if (!data.Uniques.TryGetValue(baseTy, out UniqueBaseType uniq)) {
 				uniq = new UniqueBaseType(baseTy);
 				data.Uniques.Add(baseTy, uniq);
-				if (!data.IsHardcore) {
-					MessageBox.Show("JSON: The CSV file is missing BaseType: " + baseTy, "Error", MessageBoxButtons.OK);
-					ErrorCount++;
-				}
 			}
-			if (!uniq.Add(jdata) && !data.IsHardcore) {
-				MessageBox.Show("JSON: The CSV file is missing: " + jdata.BaseType + " " + jdata.Name, "Error", MessageBoxButtons.OK);
-				ErrorCount++;
-			}
-			if (ErrorCount > MaxErrors) {
-				Environment.Exit(1);
+			if (!uniq.Add(jdata)) {
+				UniquesErrors.Add(jdata);
 			}
 		}
 
 		private void DivinationJsonHandler(JsonData jdata, LeagueData data)
 		{
 			string name = jdata.Name;
-			if (!data.DivinationCards.TryGetValue(name, out DivinationCard div)) {
-				div = new DivinationCard();
+			if (!data.DivinationCards.ContainsKey(name)) {
+				DivinationCard div = new DivinationCard();
 				data.DivinationCards.Add(name, div);
 			}
 			data.DivinationCards[name].Load(jdata);
@@ -241,6 +251,10 @@ namespace PoE_Price_Lister
 				: Util.ReadWebPage(repoURL + helmEnchantCsvFile, "", Encoding.UTF8);
 			EnchantCsv[] records = engine.ReadString(csvText);
 			foreach (EnchantCsv csvdata in records) {
+				if (string.IsNullOrWhiteSpace(csvdata.Description))
+					continue; // skip unknowns
+				if (csvdata.Description[0] == '=')
+					csvdata.Description = csvdata.Description.Substring(1);
 				if (!SC.Enchantments.ContainsKey(csvdata.Description)) {
 					Enchantment scData = new Enchantment(csvdata.Name);
 					SC.Enchantments.Add(csvdata.Name, scData);
@@ -364,8 +378,6 @@ namespace PoE_Price_Lister
 				else if (line.Contains("10c+"))
 					value = EnchantmentValue.Chaos10;
 				else {
-					//if (!line.Contains("Other"))
-					//	MessageBox.Show("Unexpected Enchant input: " + line, "Error", MessageBoxButtons.OK);
 					lines = lines.Skip(1);
 					continue;
 				}
