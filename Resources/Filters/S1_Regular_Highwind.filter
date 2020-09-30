@@ -264,10 +264,10 @@ Show  # League Specific - Perandus - Coins (<10)
 	BaseType "Perandus Coin"
 	StackSize < 10
 
-Show  # League Specific - Perandus - Coins (<50)
+Show  # League Specific - Perandus - Coins (<40)
 	Class "Stackable Currency"
 	BaseType "Perandus Coin"
-	StackSize < 50
+	StackSize < 40
 	SetFontSize 36
 	PlayEffect Yellow Temp
 
@@ -282,10 +282,10 @@ Show  # League Specific - Heist (<15)
 	BaseType "Rogue's Marker"
 	StackSize < 15
 
-Show  # League Specific - Heist (<40)
+Show  # League Specific - Heist (<35)
 	Class "Stackable Currency"
 	BaseType "Rogue's Marker"
-	StackSize < 40
+	StackSize < 35
 	SetFontSize 36
 
 #-----#
@@ -387,11 +387,11 @@ Show  # League Specific - Harbinger - Low (1+)
 	Class "Stackable Currency"
 	BaseType "Orb of Binding" "Harbinger's Shard"
 
-Show  # League Specific - Perandus - Coins (50+)
+Show  # League Specific - Perandus - Coins (40+)
 	Class "Stackable Currency"
 	BaseType "Perandus Coin"
 
-Show  # League Specific - Heist (40+)
+Show  # League Specific - Heist (35+)
 	Class "Stackable Currency"
 	BaseType "Rogue's Marker"
 
