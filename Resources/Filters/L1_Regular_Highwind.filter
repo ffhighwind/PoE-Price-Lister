@@ -707,8 +707,8 @@ Show  # Misc Map Items
 	SetBackgroundColor 255 255 255 255 # Misc Map Item
 	SetBorderColor 80 40 255 255 # Misc Map Item
 	PlayAlertSound 1 200 # High Value
-	MinimapIcon 0 Green Hexagon
-	PlayEffect Green
+	MinimapIcon 0 Red Hexagon
+	PlayEffect Red
 
 Show  # Fishing Rods
 	Class "Fishing Rods"
@@ -1040,7 +1040,7 @@ Show
 
 Show  # Maps - Fragments - High
 	Class "Map Fragments"
-	BaseType "Mortal Rage" "Mortal Ignorance" "Mortal Hope" "Chayula's Breachstone" "Chayula's " "Timeless Maraketh Emblem" "Timeless Templar Emblem" "Simulacrum" "Gilded " "Winged " "Dedication to the Goddess" "Gift to the Goddess" "Tribute to the Goddess"
+	BaseType "Chayula's Breachstone" " Pure Breachstone" " Enriched Breachstone" "Chayula's " "Timeless Maraketh Emblem" "Timeless Templar Emblem" "Simulacrum" "Gilded " "Winged " "Dedication to the Goddess" "Gift to the Goddess" "Tribute to the Goddess" "Farric Lure" "Saqawine Lure" "Fenumal Lure" "Craicic Lure" "Fragment of Enslavement" "Fragment of Eradication" "Fragment of Constriction" "Fragment of Purification" "Fragment of Shape" "Fragment of Knowledge" "Fragment of Terror" "Fragment of Emptiness"
 	SetBorderColor 255 255 255 255 # Map Fragment (High)
 	PlayAlertSound 1 200 # High Value
 	MinimapIcon 0 Red Hexagon
@@ -1048,11 +1048,11 @@ Show  # Maps - Fragments - High
 
 Show  # Maps - Fragments - Mid
 	Class "Map Fragments"
-	BaseType "Farric Lure" "Saqawine Lure" "Fenumal Lure" "Craicic Lure" "Sacrifice at Midnight" "Inya's Key" "Eber's Key" "Volkuur's Key" "Yriel's Key" "Fragment of the Hydra" "Fragment of the Phoenix" "Fragment of the Minotaur" "Fragment of the Chimera" "Mortal Grief" "Divine Vessel" "Xoph's Breachstone" "Tul's Breachstone" "Esh's Breachstone" "Uul-Netol's Breachstone" "Offering to the Goddess" " Emblem" " Breachstone" "Fragment of Enslavement" "Fragment of Eradication" "Fragment of Constriction" "Fragment of Purification" "Fragment of Shape" "Fragment of Knowledge" "Fragment of Terror" "Fragment of Emptiness"
+	BaseType " Charged Breachstone" "Mortal Rage" "Mortal Ignorance" "Mortal Hope" "Sacrifice at Midnight" "Inya's Key" "Eber's Key" "Volkuur's Key" "Yriel's Key" "Fragment of the Hydra" "Fragment of the Phoenix" "Fragment of the Minotaur" "Fragment of the Chimera" "Mortal Grief" "Divine Vessel" "Offering to the Goddess" " Emblem"
 
 Show  # Maps - Fragments - Low
 	Class "Map Fragments"
-	BaseType "Rusted " "Polished " "Sacrifice at Dusk" "Sacrifice at Dawn" "Sacrifice at Noon"
+	BaseType "Rusted " "Polished " "Sacrifice at Dusk" "Sacrifice at Dawn" "Sacrifice at Noon" " Breachstone" "Xoph's Breachstone" "Tul's Breachstone" "Esh's Breachstone" "Uul-Netol's Breachstone"
 
 Show  # Maps - Fragments - New (Error)
 	Class "Map Fragments"
@@ -1663,10 +1663,21 @@ Show  # Uniques - 3-5c
 	PlayEffect Orange
 
 # Loreweave (60x rings)
-Show  # Uniques - <3c - Unique Rings
+Show  # Uniques - 3-5c - Unique Rings
 	Rarity = Unique
 	Class Rings
 	SetFontSize 40
+	SetTextColor 255 128 64 # Unique
+	SetBackgroundColor 50 25 12 230 # Unique
+	SetBorderColor 255 255 0 255 # Unique (3-5c)
+	PlayAlertSound 4 200 # Mid Value
+	MinimapIcon 0 Orange UpsideDownHouse
+	PlayEffect Orange
+
+Show  # Uniques - 3-5c - Replica
+	Rarity = Unique
+	Replica True
+	SetFontSize 45
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 230 # Unique
 	SetBorderColor 255 255 0 255 # Unique (3-5c)
@@ -1691,16 +1702,6 @@ Show  # Uniques - <3c - ilvl <67
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Orange
 
-Show  # Uniques - <3c - Replica
-	Rarity = Unique
-	Replica True
-	SetFontSize 45
-	SetTextColor 255 128 64 # Unique
-	SetBackgroundColor 50 25 12 230 # Unique
-	SetBorderColor 180 90 45 255 # Unique
-	PlayAlertSound 4 200 # Mid Value
-	MinimapIcon 0 Orange UpsideDownHouse
-	PlayEffect Orange
 # Limited drop. May share a BaseType with an extremely valuable item, League specific, or boss drop only.
 Show  # Uniques - Limited
 	Rarity = Unique

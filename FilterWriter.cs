@@ -118,13 +118,13 @@ Show  # Jewels - Unique - Other
 	PlayEffect Orange";
 
 		private const string replicaUniq =
-@"Show  # Uniques - <3c - Replica
+@"Show  # Uniques - 3-5c - Replica
 	Rarity = Unique
 	Replica True
 	SetFontSize 40
 	SetTextColor 255 128 64 # Unique
 	SetBackgroundColor 50 25 12 230 # Unique
-	SetBorderColor 180 90 45 255 # Unique
+	SetBorderColor 255 255 0 255 # Unique (3-5c)
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Orange UpsideDownHouse
 	PlayEffect Orange";
@@ -141,7 +141,7 @@ Show  # Jewels - Unique - Other
 
 		private const string loreweaveStr =
 @"# Loreweave (60x rings)
-Show  # Uniques - <3c - Unique Rings
+Show  # Uniques - 3-5c - Unique Rings
 	Rarity = Unique
 	Class Rings";
 
@@ -417,6 +417,7 @@ Show  # Uniques - <3c - Unique Rings
 				sb.AppendLine("Show  # Uniques - 3-5c").AppendLine("\tRarity = Unique").Append("\tBaseType ").AppendLine(ItemList(list3to5c)).AppendLine(style3c).AppendLine();
 			}
 			sb.AppendLine(loreweaveStr).AppendLine(style3c).AppendLine();
+			sb.AppendLine(replicaUniq).AppendLine();
 			sb.AppendLine(headerLess3c).AppendLine();
 
 			string showHide = type == FilterType.VERY_STRICT ? "Hide" : "Show";
@@ -426,7 +427,6 @@ Show  # Uniques - <3c - Unique Rings
 			if (type != FilterType.VERY_STRICT) {
 				sb.AppendLine(lessLvl67).AppendLine();
 			}
-			sb.AppendLine(replicaUniq);
 			if (listLimited.Count > 0) {
 				sb.AppendLine(headerLimited);
 				sb.AppendLine("Show  # Uniques - Limited").AppendLine("\tRarity = Unique").Append("\tBaseType ").AppendLine(ItemList(listLimited)).AppendLine(styleLimited).AppendLine(vsSound).AppendLine();
