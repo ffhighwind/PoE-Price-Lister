@@ -104,7 +104,7 @@ namespace PoE_Price_Lister
 				if (uniq.Source.Length > 0 && !uniq.IsProphecyDrop) { // IsProphecyDrop || uniq.IsLabyrinthDrop || uniq.IsBossDrop
 					minValLimited = Math.Min(minValLimited, uniq.ChaosValue);
 					maxValLimited = Math.Max(maxValLimited, uniq.ChaosValue);
-					if (uniq.ChaosValue >= 5.0f)
+					if (uniq.ChaosValue > 5.1f)
 						minTier = Math.Max(minTier, 1);
 					continue;
 				}
@@ -116,9 +116,9 @@ namespace PoE_Price_Lister
 						}
 						if (uniq.ChaosValue >= 40.0f)
 							minTier = Math.Max(minTier, 3);
-						if (uniq.ChaosValue >= 15.0f)
+						if (uniq.ChaosValue > 15.1f)
 							minTier = Math.Max(minTier, 2);
-						else if (uniq.ChaosValue >= 5.0f)
+						else if (uniq.ChaosValue > 5.1f)
 							minTier = Math.Max(minTier, 1);
 						continue;
 					}
@@ -130,9 +130,9 @@ namespace PoE_Price_Lister
 				else {
 					minValLimited = Math.Min(minValLimited, uniq.ChaosValue);
 					maxValLimited = Math.Max(maxValLimited, uniq.ChaosValue);
-					if (uniq.ChaosValue >= 15.0f)
+					if (uniq.ChaosValue > 15.1f)
 						minTier = Math.Max(minTier, 2);
-					if (uniq.ChaosValue >= 5.0f)
+					if (uniq.ChaosValue > 5.1f)
 						minTier = Math.Max(minTier, 1);
 				}
 			}
@@ -160,7 +160,7 @@ namespace PoE_Price_Lister
 
 			if (minVal >= 14.0f)
 				return UniqueValue.Chaos15;
-			if (minVal >= 4.7f || maxVal >= 100.0f || minTier == 3)
+			if (minVal >= 5.1f || maxVal >= 100.0f || minTier == 3)
 				return UniqueValue.Chaos5to15;
 			if (minVal >= 2.95f || maxVal >= 15.0f || minTier == 2)
 				return UniqueValue.Chaos3to5;

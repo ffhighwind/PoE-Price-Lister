@@ -23,6 +23,7 @@ namespace PoE_Price_Lister
 {
 	[DelimitedRecord(",")]
 	[IgnoreFirst(1)]
+	[IgnoreEmptyLines]
 	public class EnchantCsv
 	{
 		[FieldQuoted('"', QuoteMode.OptionalForBoth, MultilineMode.AllowForRead)]

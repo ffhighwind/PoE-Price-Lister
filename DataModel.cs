@@ -38,14 +38,13 @@ namespace PoE_Price_Lister
 		// http://api.poe.watch/get?league=Metamorph&category=armour
 		// http://api.poe.watch/compact?league=Metamorph&category=armour
 
-		////private const string csvFile = "poe_uniques.csv";
 		private const string league = "Heist";
 
 		private const string repoURL = @"https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/";
 		public const string FiltersUrl = repoURL + @"Resources/Filters/";
 		private const string filterFile = @"S1_Regular_Highwind.filter";
 		private const string uniquesCsvFile = "poe_uniques.csv";
-		private const string helmEnchantCsvFile = "poe_helm_enchants.csv";
+		private const string enchantsCsvFile = "poe_enchants.csv";
 		//private const string jsonURL = @"http://poe.ninja/api/Data/Get{0}Overview?league={1}";
 		private const string jsonURL = @"https://poe.ninja/api/data/itemoverview?league={1}&type={0}";
 		//ALTERNATE API? https://poe.watch/prices?category=enchantment&league={1}
@@ -68,8 +67,6 @@ namespace PoE_Price_Lister
 		public IReadOnlyList<string> Uniques { get; private set; }
 		public IReadOnlyList<string> DivinationCards { get; private set; }
 		public IReadOnlyList<string> Enchantments { get; private set; }
-
-		private const int MaxErrors = 5;
 
 		private List<IReadOnlyList<string>> conflicts { get; } = new List<IReadOnlyList<string>>();
 		public IReadOnlyList<IReadOnlyList<string>> DivinationCardNameConflicts => conflicts;
@@ -246,9 +243,9 @@ namespace PoE_Price_Lister
 		private void LoadEnchantsCsv()
 		{
 			FileHelperEngine<EnchantCsv> engine = new FileHelperEngine<EnchantCsv>(Encoding.UTF8);
-			string csvText = new FileInfo(helmEnchantCsvFile).Exists ?
-				File.ReadAllText(helmEnchantCsvFile, Encoding.UTF8)
-				: Util.ReadWebPage(repoURL + helmEnchantCsvFile, "", Encoding.UTF8);
+			string csvText = new FileInfo(enchantsCsvFile).Exists ?
+				File.ReadAllText(enchantsCsvFile, Encoding.UTF8)
+				: Util.ReadWebPage(repoURL + enchantsCsvFile, "", Encoding.UTF8);
 			EnchantCsv[] records = engine.ReadString(csvText);
 			foreach (EnchantCsv csvdata in records) {
 				if (string.IsNullOrWhiteSpace(csvdata.Description))

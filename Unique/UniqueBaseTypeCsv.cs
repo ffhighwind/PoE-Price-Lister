@@ -24,6 +24,7 @@ namespace PoE_Price_Lister
 {
 	[DelimitedRecord(",")]
 	[IgnoreFirst(1)]
+	[IgnoreEmptyLines]
 	public class UniqueBaseTypeCsv
 	{
 		public string BaseType { get; set; }

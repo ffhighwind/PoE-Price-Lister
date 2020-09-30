@@ -3,7 +3,7 @@
 ----------------------------------------------------------------
 3.11.5
 ▻ Updated the filter values.
-▻ Fixed Alchemy shards (stack size 2+).
+▻ Fixed Alchemy shards (StackSize 2+).
 
 3.11.4
 ▻ Fixed a bug with T11+ maps.

@@ -40,6 +40,7 @@ namespace PoE_Price_Lister
 		public UniqueValueEnum Value { get; private set; }
 
 		public int Tier { get; private set; }
+
 		private readonly string toString;
 
 		public override string ToString()
@@ -73,7 +74,7 @@ namespace PoE_Price_Lister
 		{
 			if (val <= 2.9f)
 				return Worthless;
-			else if (val < 5.2f)
+			else if (val < 5.3f)
 				return Chaos3to5;
 			else if (val < 14.5f)
 				return Chaos5to15;
