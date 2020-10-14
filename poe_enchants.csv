@@ -752,7 +752,7 @@ Helmet,Enchantment Crackling Lance Beam Angle 1,Merciless Labyrinth,Crackling La
 Helmet,Enchantment Crackling Lance Cast Speed 1,Merciless Labyrinth,Crackling Lance has 8% increased Cast Speed,Crackling Lance
 Helmet,Enchantment Crackling Lance Damage 2,Eternal Labyrinth,Crackling Lance deals 40% increased Damage,Crackling Lance
 Helmet,Enchantment Crackling Lance Cast Speed 2,Eternal Labyrinth,Crackling Lance has 16% increased Cast Speed,Crackling Lance
-Helmet,Enchantment Crackling Lance Beam Angle 2,Eternal Labyrinth,Crackling Lance has 18% increased branching angle,Crackling Lance
+Helmet,Enchantment Crackling Lance Beam Angle 2,Eternal Labyrinth,Crackling Lance has 36% increased branching angle,Crackling Lance
 Helmet,Enchantment Creeping Frost Area Of Effect 1,Merciless Labyrinth,16% increased Creeping Frost Area of Effect,Creeping Frost
 Helmet,Enchantment Creeping Frost Duration 1,Merciless Labyrinth,24% increased Creeping Frost Duration,Creeping Frost
 Helmet,Enchantment Creeping Frost Damage 1,Merciless Labyrinth,25% increased Creeping Frost Damage,Creeping Frost
@@ -1175,11 +1175,11 @@ Helmet,Enchantment Lacerate Damage 1,Merciless Labyrinth,25% increased Lacerate 
 Helmet,Enchantment Lacerate Damage 2,Eternal Labyrinth,40% increased Lacerate Damage,Lacerate
 Helmet,Enchantment Lancing Steel Number of Additional Projectiles 1,Eternal Labyrinth,Lancing Steel fires an additional Projectile,Lancing
 Helmet,Enchantment Lancing Steel Damage 1,Merciless Labyrinth,Lancing Steel deals 25% increased Damage,Lancing Steel
-Helmet,Enchantment Lancing Steel Chance To Not Consume Shards 1,Merciless Labyrinth,Lancing Steel has 20% chance count as consumeing Steel Shards without Consuming them,Lancing Steel
+Helmet,Enchantment Lancing Steel Chance To Not Consume Shards 1,Merciless Labyrinth,Lancing Steel has 20% chance count as consuming Steel Shards without Consuming them,Lancing Steel
 Helmet,Enchantment Lancing Steel Impale Chance 1,Merciless Labyrinth,Lancing Steel's additional Projectiles have +20% chance to Impale Enemies,Lancing Steel
 Helmet,Enchantment Lancing Steel Primary Proj Pierce Num 1,Merciless Labyrinth,Lancing Steel's primary Projectile Pierces 3 additional Targets,Lancing Steel
 Helmet,Enchantment Lancing Steel Damage 2,Eternal Labyrinth,Lancing Steel deals 40% increased Damage,Lancing Steel
-Helmet,Enchantment Lancing Steel Chance To Not Consume Shards 2,Eternal Labyrinth,Lancing Steel has 30% chance count as consumeing Steel Shards without Consuming them,Lancing Steel
+Helmet,Enchantment Lancing Steel Chance To Not Consume Shards 2,Eternal Labyrinth,Lancing Steel has 30% chance count as consuming Steel Shards without Consuming them,Lancing Steel
 Helmet,Enchantment Lancing Steel Impale Chance 2,Eternal Labyrinth,Lancing Steel's additional Projectiles have +30% chance to Impale Enemies,Lancing Steel
 Helmet,Enchantment Lancing Steel Primary Proj Pierce Num 2,Eternal Labyrinth,Lancing Steel's primary Projectile Pierces 5 additional Targets,Lancing Steel
 Helmet,Enchantment Leap Slam Attack Speed 1,Merciless Labyrinth,10% increased Leap Slam Attack Speed,Leap Slam
@@ -1714,3 +1714,4 @@ Helmet,Enchantment Wrath Mana Reservation 1,Merciless Labyrinth,Wrath has 10% re
 Helmet,Enchantment Wrath Mana Reservation 2,Eternal Labyrinth,Wrath has 15% reduced Mana Reservation,Wrath
 Helmet,Enchantment Zealotry Mana Reservation 1,Merciless Labyrinth,Zealotry has 10% reduced Mana Reservation,Zealotry
 Helmet,Enchantment Zealotry Mana Reservation 2,Eternal Labyrinth,Zealotry has 15% reduced Mana Reservation,Zealotry
+
