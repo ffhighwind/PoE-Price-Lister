@@ -98,6 +98,8 @@ namespace PoE_Price_Lister
 			{ "Emperor's Luck", DivinationValue.ChaosLess2 },
 			{ "Three Faces in the Dark", DivinationValue.ChaosLess2 },
 			{ "The Master Artisan", DivinationValue.ChaosLess2 },
+			{ "Acclimatisation", DivinationValue.Chaos2to10 },
+			{ "Society's Remorse", DivinationValue.Chaos2to10 },
 
 			// 1.1c+
 			{ "No Traces", DivinationValue.Chaos2to10 },
@@ -111,6 +113,8 @@ namespace PoE_Price_Lister
 			{ "The Cartographer", DivinationValue.Chaos2to10 },
 			{ "Chaotic Disposition", DivinationValue.Chaos2to10 },
 			{ "Demigod's Wager", DivinationValue.Chaos2to10 },
+			{ "Acclimatisation", DivinationValue.Chaos2to10 },
+			{ "The Patient", DivinationValue.Chaos2to10 },
 
 			// 10c+
 			{ "Wealth and Power", DivinationValue.Chaos10 },
@@ -126,6 +130,7 @@ namespace PoE_Price_Lister
 			{ "Seven Years Bad Luck", DivinationValue.Chaos10 },
 			{ "The Saint's Treasure", DivinationValue.Chaos10 },
 			{ "The Eye of Terror", DivinationValue.Chaos10 },
+			{ "Draped in Dreams", DivinationValue.Chaos10 },
 		};
 
 		public bool HasHardCodedValue => DivinationCardsValueMap.ContainsKey(Name);
