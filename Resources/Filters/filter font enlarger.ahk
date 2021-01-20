@@ -30,6 +30,11 @@ GenerateFilter(filein, fileout)
         return
     }
     
+    file_text[1] = "#"
+    infile := FileOpen(filein, "w")
+    infile.Write(file_text)
+    infile.Close()
+    
     file_text := StrReplace(file_text, "SetFontSize 40", "SetFontSize 45")
     file_text := StrReplace(file_text, "SetFontSize 36", "SetFontSize 40")
     file_text := StrReplace(file_text, "SetFontSize 32", "SetFontSize 36")

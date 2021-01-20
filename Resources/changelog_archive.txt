@@ -1,4 +1,65 @@
 ﻿----------------------------------------------------------------
+| Heist
+----------------------------------------------------------------
+3.12.6
+▻ Updated the filter values.
+▻ Added The Fledgling unique.
+▻ Changed some enchantments. Some may show up as errors in the updater until next league.
+
+3.12.5
+▻ Released Heist v2 filter updater.
+▻ Lowered Cerulean Ring value.
+▻ Updated currency values: Incursion Vials, Perandus Coins, Rogue's Markers, Harbinger's Orbs/Shards, Engineer's Orb
+▻ Added Anarchic Spiritblade to crafting bases.
+▻ Added a loud sound and white background to unique watchstones.
+▻ Added Maw of Mischief unique.
+▻ Updated Map Fragment values (pure breachstones, lures, etc).
+▻ Added some more Cortex maps to the high value uniques maps.
+▻ Changed the icon of Legacy league uniques to red.
+▻ Changed replicas to always be valued at 3c+.
+
+3.12.4
+▻ Updated the filter values.
+▻ Released Heist v1 filter updater.
+▻ Added 24 new uniques
+Actum
+Chains of Emancipation
+The Iron Mass
+Corpsewalker
+
+3.12.3
+▻ Added a background and border to heist equipment.
+▻ Increased the value of most heist currency except Rogue Markers. I will adjust these once I see them in circulation.
+▻ Added sounds/icons/beams to some low level utility flasks.
+
+3.12.2
+▻ Added Prime Regrading Lens, Secondary Regrading Lens, Tempering Orb, Tailoring Orb
+
+3.12.1
+▻ Added Farric Lure, Saqawine Lure, Fenumal Lure, Craicic Lure
+▻ Added AlternateQuality gems.
+▻ Added Replica uniques.
+▻ Added Contracts item class.
+▻ Added Blueprints item class.
+▻ Added Heist Target item class.
+▻ Added Rogue's Marker (currency)
+▻ Added Trinket item class.
+▻ Added item classes: Heist Cloak, Heist Brooch, Heist Tool, Heist Gear
+▻ Added 12 new Divination cards
+The Gulf
+The Bitter Blossom
+Triskaidekaphobia
+Unrequited Love
+The Cache
+The Academic
+Desecrated Virtue
+Brother's Stash
+Unchained
+The Unexpected Prize
+Cursed Words
+The Journalist
+
+----------------------------------------------------------------
 | Harvest
 ----------------------------------------------------------------
 3.11.5
