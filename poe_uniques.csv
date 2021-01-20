@@ -203,7 +203,7 @@ Full Scale Armour,Viper's Scales,,,,Labyrinth
 Full Wyrmscale,Belly of the Beast,,,,
 Gavel,Cameria's Avarice,,,,Fated
 Gavel,Cameria's Maul,,Prophecy,,
-Gavel,Mjölner,,,,
+Gavel,MjÃ¶lner,,,,
 Gemstone Sword,Fate of the Vaal,Incursion,,,Crafted
 Gilded Sallet,Deidbell,,Prophecy,,
 Gilded Sallet,Deidbellow,,,,Fated
@@ -372,9 +372,9 @@ Long Bow,Storm Cloud,,Prophecy,,
 Long Bow,The Tempest,,,,Fated
 Long Staff,Pillar of the Caged God,,,X,
 Lunaris Circlet,Doedre's Scorn,,,,
-Maelström Staff,Disintegrator,,,,Uber Elder
-Maelström Staff,Duskdawn,,,,Crafted
-Maelström Staff,Taryn's Shiver,,,,
+MaelstrÃ¶m Staff,Disintegrator,,,,Uber Elder
+MaelstrÃ¶m Staff,Duskdawn,,,,Crafted
+MaelstrÃ¶m Staff,Taryn's Shiver,,,,
 Magistrate Crown,Craiceann's Chitin,Bestiary,,,Craiceann
 Magistrate Crown,Mask of the Stitched Demon,Incursion,,,Crafted
 Marble Amulet,Bloodgrip,,,,
@@ -796,7 +796,7 @@ Ezomyte Burgonet,Cowl of the Thermophile,Blight,,,
 Loricated Ringmail,Rotting Legion,Blight,,,
 Heavy Belt,Siegebreaker,,,,
 Saint's Hauberk,Sporeguard,Blight,,,
-Citrine Amulet,The Jinxed Juju,Blight,,,
+Citrine Amulet,The Jinxed Juju,,,,
 Iron Ring,Venopuncture,Blight,,,
 Topaz Ring,Astral Projector,Metamorph,,,
 Fossilised Spirit Shield,Manastorm,,,,Conquerors
@@ -819,17 +819,17 @@ Unset Ring,Profane Proxy,,,,
 Sinner Tricorne,Assailum,Delirium,,,
 Carnal Mitts,Algor Mortis,Delirium,,,
 Topaz Ring,Storm Secret,,,,
-Saint's Hauberk,Doryani's Prototype,,,,
+Saint's Hauberk,Doryani's Prototype,Harvest,,,
 Eelskin Gloves,Great Old One's Tentacles,,,,
-Ambush Mitts,Abhorrent Interrogation,,,,
+Ambush Mitts,Abhorrent Interrogation,Harvest,,,"Oshabi, Avatar of the Grove"
 Steel Kite Shield,Emperor's Vigilance,,,,
 Great Crown,Forbidden Shako,Harvest,,,"Oshabi, Avatar of the Grove"
-Highborn Staff,Witchhunter's Judgment,,,,
-Citrine Amulet,The Felbog Fang,Harvest,,,
+Highborn Staff,Witchhunter's Judgment,Harvest,,,"Oshabi, Avatar of the Grove"
+Citrine Amulet,The Felbog Fang,Harvest,,,"Namharim, Born of Night"
 Broadhead Arrow Quiver,Scorpion's Call,,,,
 Citrine Amulet,Retaliation Charm,,,,
 Necromancer Silks,Fleshcrafter,,,,
-Leather Belt,Bear's Girdle,,,,
+Leather Belt,Bear's Girdle,,,,"Ersi, Mother of Thorns"
 Ezomyte Axe,Wings of Entropy,,,,
 Archon Kite Shield,The Immortal Will,Harbinger,,,Crafted
 Blunt Arrow Quiver,The Shattered Divinity,Harbinger,,,Crafted
@@ -837,18 +837,18 @@ Callous Mask,The Tempest's Liberation,Harbinger,,,Crafted
 Cloth Belt,The Torrent's Reclamation,Harbinger,,,Crafted
 Imperial Staff,The Yielding Mortality,Harbinger,,,Crafted
 Legion Sword,The Surging Thoughts,Harbinger,,,Crafted
-Bone Circlet,Plume of Pursuit,Harvest,,"Oshabi, Avatar of the Grove"
-Hellion's Paw,Law of the Wilds,Harvest,,"Oshabi, Avatar of the Grove"
+Bone Circlet,Plume of Pursuit,Harvest,,,"Janaar, the Omen"
+Hellion's Paw,Law of the Wilds,Harvest,,,"Oshabi, Avatar of the Grove"
 Butcher Axe,Actum,Heist,,,
-Astral Plate,Blunderbore,Heist,,,
-Chain Belt,Chains of Emancipation,Heist,,,
+Astral Plate,Blunderbore,,,,
+Chain Belt,Chains of Emancipation,Heist,,,"Freidrich Tarollo, Slave Merchant"
 Carnal Boots,Corpsewalker,Heist,,,
 Fluted Bascinet,Crest of Desire,Heist,,,
 Sentinel Jacket,Expedition's End,Heist,,,
 Paua Ring,Fated End,Heist,,,
 Mirrored Spiked Shield,Font of Thunder,Heist,,,
-Slink Gloves,Mercenary's Lot,Heist,,,
-Leather Belt,Pyroshock Clasp,Heist,,,
+Slink Gloves,Mercenary's Lot,,,,
+Leather Belt,Pyroshock Clasp,,,,
 Ezomyte Burgonet,Replica Abyssus,Heist,,,Heist
 Soldier Boots,Replica Alberon's Warpath,Heist,,,Heist
 Sorcerer Gloves,Replica Allelopathy,Heist,,,Heist
@@ -880,15 +880,15 @@ Laminated Kite Shield,Replica Victario's Charity,Heist,,,Heist
 Murder Boots,Replica Voidwalker,Heist,,,Heist
 Zealot Gloves,Replica Volkuur's Guidance,Heist,,,Heist
 Crimson Round Shield,Shattershard,Heist,,,
-Varnished Coat,The Admiral,Heist,,,
-Cloth Belt,The Druggery,Heist,,,
-Lapis Amulet,The Ephemeral Bond,Heist,,,
-Ezomyte Staff,The Fulcrum,Heist,,,
-Teak Round Shield,The Ghastly Theatre,Heist,,,
+Varnished Coat,The Admiral,Heist,,,Admiral Darnaw
+Cloth Belt,The Druggery,,,,
+Lapis Amulet,The Ephemeral Bond,,,,
+Ezomyte Staff,The Fulcrum,,,,
+Teak Round Shield,The Ghastly Theatre,,,,
 Ambusher,The Hidden Blade,Heist,,,
-Gold Ring,The Highwayman,Heist,,,
+Gold Ring,The Highwayman,,,,
 Gladius,The Iron Mass,Heist,,,
-Golden Mask,Willclash,Heist,,,
+Golden Mask,Willclash,,,,
 Great Helmet,Replica Veil of the Night,Heist,,,Heist
 Sanctified Mana Flask,Replica Lavianga's Spirit,Heist,,,Heist
 Granite Flask,Replica Rumi's Concoction,Heist,,,Heist
@@ -916,7 +916,7 @@ Triumphant Lamellar,Replica Farrul's Fur,Heist,,,Heist
 Great Crown,Replica Forbidden Shako,Heist,,,Heist
 Void Sceptre,Replica Nebulis,Heist,,,Heist
 Imperial Bow,Replica Windripper,Heist,,,Heist
-Maelström Staff,Replica Duskdawn,Heist,,,Heist
+MaelstrÃ¶m Staff,Replica Duskdawn,Heist,,,Heist
 Great Mallet,Replica Trypanon,Heist,,,Heist
 Siege Axe,Replica Soul Taker,Heist,,,Heist
 Vaal Claw,Replica Allure,Heist,,,Heist
@@ -940,3 +940,16 @@ Paua Ring,Replica Doedre's Damning,Heist,,,Heist
 Rustic Sash,Replica Prismweave,Heist,,,Heist
 Bone Helmet,Maw of Mischief,Heist,,,Heist
 Lacquered Helmet,The Fledgling,Heist,,,"Nashta, The Usurper"
+Ambusher,Goblinedge,Ritual,,,
+Amethyst Ring,Blackflame,Ritual,,,
+Bone Helmet,Ancient Skull,Ritual,,,
+Cloth Belt,Arn's Anguish,Ritual,,,
+Cloth Belt,Graven's Secret,Ritual,,,
+Cloth Belt,Olesya's Delight,Ritual,,,
+Heavy Belt,Survivor's Guilt,Ritual,,,
+Praetor Crown,Viridi's Veil,Ritual,,,
+Sadist Garb,DoppelgÃ¤nger Guise,Ritual,,,
+Sovereign Spiked Shield,Qotra's Regulator,Ritual,,,
+Unset Ring,Rotblood Promise,Ritual,,,
+Wyrmscale Boots,Legacy of Fury,Ritual,,,
+Zealot Gloves,Hand of the Fervent,Ritual,,,

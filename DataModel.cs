@@ -38,7 +38,7 @@ namespace PoE_Price_Lister
 		// http://api.poe.watch/get?league=Metamorph&category=armour
 		// http://api.poe.watch/compact?league=Metamorph&category=armour
 
-		private const string league = "Heist";
+		private const string league = "Ritual";
 
 		private const string repoURL = @"https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/";
 		public const string FiltersUrl = repoURL + @"Resources/Filters/";

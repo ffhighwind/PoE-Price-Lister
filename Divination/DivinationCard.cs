@@ -98,8 +98,8 @@ namespace PoE_Price_Lister
 			{ "Emperor's Luck", DivinationValue.ChaosLess2 },
 			{ "Three Faces in the Dark", DivinationValue.ChaosLess2 },
 			{ "The Master Artisan", DivinationValue.ChaosLess2 },
-			{ "Acclimatisation", DivinationValue.Chaos2to10 },
-			{ "Society's Remorse", DivinationValue.Chaos2to10 },
+			{ "Acclimatisation", DivinationValue.ChaosLess2 },
+			{ "Society's Remorse", DivinationValue.ChaosLess2 },
 
 			// 1.1c+
 			{ "No Traces", DivinationValue.Chaos2to10 },
@@ -113,7 +113,6 @@ namespace PoE_Price_Lister
 			{ "The Cartographer", DivinationValue.Chaos2to10 },
 			{ "Chaotic Disposition", DivinationValue.Chaos2to10 },
 			{ "Demigod's Wager", DivinationValue.Chaos2to10 },
-			{ "Acclimatisation", DivinationValue.Chaos2to10 },
 			{ "The Patient", DivinationValue.Chaos2to10 },
 
 			// 10c+

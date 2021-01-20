@@ -24,8 +24,8 @@ namespace PoE_Price_Lister
 {
 	public class UniqueItem
 	{
-		private static string[] CORE_LEAGUES { get; } = { "Abyss", "Breach", "Beyond", "Betrayal", "Legion", "Blight", "Essence", "Prophecy", "Metamorph", "Delirium" };
-		private static string[] SEMI_CORE_LEAGUES { get; } = { "Delve", "Incursion", };
+		private static string[] CORE_LEAGUES { get; } = { "Abyss", "Breach", "Beyond", "Betrayal", "Legion", "Blight", "Essence", "Prophecy", "Metamorph", "Delirium", "Ritual" };
+		private static string[] SEMI_CORE_LEAGUES { get; } = { "Delve", "Incursion", "Heist" };
 		// Bestiary, Perandus, Talisman, Harbinger, Synthesis, Legacy, Harvest
 		// Warbands, Tempest, Torment, Bloodlines, Rampage, Ambush, Invasion, Domination, Nemesis, Anarchy, Onslaught
 
