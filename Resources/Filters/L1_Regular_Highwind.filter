@@ -1,4 +1,4 @@
-﻿############################################
+﻿﻿############################################
 ##      HIGHWIND'S LOOT FILTER 3.13.2     ##
 ############################################
 ## Release Date: January 19, 2021         ##
@@ -389,7 +389,7 @@ Show  # League Specific - Harbinger - Low (2+)
 
 Show  # League Specific - Harbinger - Low (1+)
 	Class "Stackable Currency"
-	BaseType "Orb of Binding" "Harbinger's Shard"
+	BaseType "Orb of Binding" "Harbinger's Shard" "Engineer's Orb"
 
 Show  # League Specific - Perandus - Coins (40+)
 	Class "Stackable Currency"
