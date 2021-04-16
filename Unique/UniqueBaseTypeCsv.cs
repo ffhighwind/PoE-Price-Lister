@@ -27,12 +27,22 @@ namespace PoE_Price_Lister
 	[IgnoreEmptyLines]
 	public class UniqueBaseTypeCsv
 	{
-		public string BaseType { get; set; }
-
-		[FieldQuoted('"', QuoteMode.OptionalForBoth, MultilineMode.AllowForRead)]
+		[FieldQuoted('"', QuoteMode.OptionalForBoth, MultilineMode.NotAllow)]
 		public string Name { get; set; }
 
+		public string Category { get; set; }
+		public string Type { get; set; }
+		public string Class { get; set; }
+		public string BaseType { get; set; }
+
+		[FieldTrim(TrimMode.Both)]
+		[FieldQuoted('"', QuoteMode.OptionalForBoth, MultilineMode.NotAllow)]
+		[FieldConverter(ConverterKind.Date, "M/d/yyyy")]
+		public DateTime? Release { get; set; }
+
+		public string Version { get; set; }
 		public string League { get; set; }
+
 
 		[FieldConverter(typeof(UniqueUsageConverter))]
 		[FieldNullValue(UniqueUsage.None)]
@@ -42,8 +52,12 @@ namespace PoE_Price_Lister
 		[FieldNullValue(false)]
 		public bool Unobtainable { get; set; }
 
-		[FieldQuoted('"', QuoteMode.OptionalForBoth, MultilineMode.AllowForRead)]
+		[FieldQuoted('"', QuoteMode.OptionalForBoth, MultilineMode.NotAllow)]
 		public string Source { get; set; }
+		[FieldQuoted('"', QuoteMode.OptionalForBoth, MultilineMode.NotAllow)]
+		public string WikiLink { get; set; }
+		[FieldQuoted('"', QuoteMode.OptionalForBoth, MultilineMode.NotAllow)]
+		public string Notes { get; set; }
 
 		public override string ToString()
 		{

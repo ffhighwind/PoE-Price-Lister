@@ -116,7 +116,11 @@ namespace PoE_Price_Lister
 			//////////// If the code reaches here, no BOM/signature was found, so now
 			//////////// we need to 'taste' the file to see if can manually discover
 			//////////// the encoding. A high taster value is desired for UTF-8
-			return GetTextEncoding(new byte[maxBytes], out int index);
+			byte[] b = new byte[maxBytes];
+			using (System.IO.FileStream fs = System.IO.File.OpenRead(path)) {
+				fs.Read(b, 0, maxBytes);
+			}
+			return GetTextEncoding(b, out int _);
 		}
 
 		/// <summary>

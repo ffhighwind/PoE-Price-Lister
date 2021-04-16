@@ -1,4 +1,49 @@
 ﻿----------------------------------------------------------------
+| Ritual
+----------------------------------------------------------------
+3.13.3
+▻ Updated the values of uniques, divination cards, and enchantments.
+
+3.13.2
+▻ Updated the values of uniques, divination cards, and enchantments.
+▻ Fixed Engineer's Orb in the normal filter.
+▻ Added uniques
+Goblinedge
+Arn's Anguish
+Graven's Secret
+Olesya's Delight
+Survivor's Guilt
+Viridi's Veil
+Doppelgänger Guise
+Qotra's Regulator
+Rotblood Promise
+Legacy of Fury
+Hand of the Fervent
+▻ Added enchants
+16% increased Rolling Magma Area of Effect
+24% increased Immortal Call Duration
+24% increased Rolling Magma Area of Effect
+25% increased Rolling Magma Damage
+40% increased Rolling Magma Damage
+Enemies Drenched by Hydrosphere have Cold and Lightning Exposure, applying -4% to Resistances
+Enemies Drenched by Hydrosphere have Cold and Lightning Exposure, applying -6% to Resistances
+Hydrosphere deals 25% increased Damage
+Hydrosphere deals 40% increased Damage
+Hydrosphere has 20% increased Pulse Frequency
+Hydrosphere has 30% increased Pulse Frequency
+Rolling Magma Chains an additional time
+Venom Gyre has a 25% chance to keep caught Projectiles fired by using Whirling Blades
+
+3.13.1
+▻ Added Map Fragments: The Maven's Writ, Blood-filled Vessel
+▻ Added new currency
+▻ Added new Divination Cards
+▻ Removed Harvest related items.
+▻ Changed Magma Orb to Rolling Magma.
+▻ Changed Samite Helmet to Samnite Helmet.
+▻ Other changes: New Misc Map Items, Atlas Region Upgrade Item, Skill Gems, and BaseTypes are all handled automatically.
+
+----------------------------------------------------------------
 | Heist
 ----------------------------------------------------------------
 3.12.6

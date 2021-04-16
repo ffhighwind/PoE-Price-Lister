@@ -25,7 +25,7 @@ namespace PoE_Price_Lister
 {
 	public class UniqueBaseType
 	{
-		private static readonly string[] SIX_SOCKETS = new string[] { "Tabula Rasa", "Loreweave", "Oni-Goroshi" };
+		private static string[] SIX_SOCKETS { get; } = new string[] { "Tabula Rasa", "Loreweave", "Oni-Goroshi" };
 
 		public UniqueBaseType(string baseType)
 		{

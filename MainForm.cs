@@ -9,8 +9,6 @@ namespace PoE_Price_Lister
 	public partial class MainForm : Form
 	{
 		private readonly DataModel model = new DataModel();
-		private readonly ListViewItemComparer sorter = new ListViewItemComparer(0);
-		private static readonly string[] numericCols = new string[] { "Severity", "Value" };
 
 		private readonly DataTable scUniquesTable = new DataTable();
 		private readonly DataTable hcUniquesTable = new DataTable();
