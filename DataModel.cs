@@ -141,8 +141,8 @@ namespace PoE_Price_Lister
 			Enchantments = SC.Enchantments.Keys.OrderBy(x => x).ToList();
 		}
 
-		private List<JsonData> UniquesErrors = new List<JsonData>();
-		private List<JsonData> EnchantsErrors = new List<JsonData>();
+		private List<JsonData> UniquesErrors { get; set; } = new List<JsonData>();
+		private List<JsonData> EnchantsErrors { get; set; } = new List<JsonData>();
 
 		public string GetErrorsString()
 		{
