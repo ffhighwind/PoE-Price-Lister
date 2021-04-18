@@ -38,7 +38,7 @@ namespace PoE_Price_Lister
 		// http://api.poe.watch/get?league=Metamorph&category=armour
 		// http://api.poe.watch/compact?league=Metamorph&category=armour
 
-		private const string league = "Ritual";
+		private const string league = "Ultimatum";
 
 		private const string repoURL = @"https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/";
 		public const string FiltersUrl = repoURL + @"Resources/Filters/";
@@ -253,15 +253,15 @@ namespace PoE_Price_Lister
 				if (csvdata.Description[0] == '=')
 					csvdata.Description = csvdata.Description.Substring(1);
 				if (!SC.Enchantments.ContainsKey(csvdata.Description)) {
-					Enchantment scData = new Enchantment(csvdata.Name);
-					SC.Enchantments.Add(csvdata.Name, scData);
+					Enchantment scData = new Enchantment(csvdata.Enchantment);
+					SC.Enchantments.Add(csvdata.Enchantment, scData);
 					SC.EnchantmentsDescriptions.Add(csvdata.Description, scData);
-					Enchantment hcData = new Enchantment(csvdata.Name);
-					HC.Enchantments.Add(csvdata.Name, hcData);
+					Enchantment hcData = new Enchantment(csvdata.Enchantment);
+					HC.Enchantments.Add(csvdata.Enchantment, hcData);
 					HC.EnchantmentsDescriptions.Add(csvdata.Description, hcData);
 				}
-				SC.Enchantments[csvdata.Name].Load(csvdata);
-				HC.Enchantments[csvdata.Name].Load(csvdata);
+				SC.Enchantments[csvdata.Enchantment].Load(csvdata);
+				HC.Enchantments[csvdata.Enchantment].Load(csvdata);
 			}
 		}
 

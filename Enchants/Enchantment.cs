@@ -30,7 +30,7 @@ namespace PoE_Price_Lister
 
 		public void Load(EnchantCsv csvdata)
 		{
-			Name = csvdata.Name;
+			Name = csvdata.Enchantment;
 			Description = csvdata.Description;
 			Source = csvdata.Source;
 			Gem = csvdata.Gem;

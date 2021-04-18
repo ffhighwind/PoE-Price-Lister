@@ -26,35 +26,38 @@ namespace PoE_Price_Lister
 	[IgnoreEmptyLines]
 	public class EnchantCsv
 	{
-		[FieldQuoted('"', QuoteMode.OptionalForBoth, MultilineMode.AllowForRead)]
+		[FieldQuoted('"', QuoteMode.OptionalForBoth, MultilineMode.NotAllow)]
 		public string Item { get; set; }
 
-		[FieldQuoted('"', QuoteMode.OptionalForBoth, MultilineMode.AllowForRead)]
-		public string Name { get; set; }
+		[FieldQuoted('"', QuoteMode.OptionalForBoth, MultilineMode.NotAllow)]
+		public string Enchantment { get; set; }
+
+		[FieldQuoted('"', QuoteMode.OptionalForBoth, MultilineMode.NotAllow)]
+		public string Description { get; set; }
+
+		public string Gem { get; set; }
 
 		[FieldConverter(typeof(DifficultyConverter))]
 		public EnchantmentSource Source { get; set; }
 
-		[FieldQuoted('"', QuoteMode.OptionalForBoth, MultilineMode.AllowForRead)]
-		public string Description { get; set; }
-
-		public string Gem { get; set; }
+		//[FieldConverter(ConverterKind.PercentDouble)] // not working?
+		public string DropRate { get; set; }
 
 		internal class DifficultyConverter : ConverterBase
 		{
 			public override object StringToField(string from)
 			{
-				if (from.Equals("Eternal Labyrinth of Potential"))
+				if (from.Contains("Eternal Labyrinth of Potential"))
 					return EnchantmentSource.EternalLabyrinthOfPotential;
-				if (from.Equals("Merciless Labyrinth"))
+				if (from.Contains("Merciless Labyrinth"))
 					return EnchantmentSource.MercilessLab;
-				if (from.Equals("Eternal Labyrinth"))
+				if (from.Contains("Eternal Labyrinth"))
 					return EnchantmentSource.EternalLab;
-				if (from.Equals("Blight Oils"))
+				if (from.Contains("Blight Oils"))
 					return EnchantmentSource.BlightOils;
-				if (from.Equals("Cruel Labyrinth"))
+				if (from.Contains("Cruel Labyrinth"))
 					return EnchantmentSource.CruelLab;
-				if (from.Equals("Normal Labyrinth"))
+				if (from.Contains("Normal Labyrinth"))
 					return EnchantmentSource.NormalLab;
 				throw new InvalidOperationException(from);
 			}
