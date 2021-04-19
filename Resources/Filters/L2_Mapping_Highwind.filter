@@ -366,10 +366,6 @@ Show
 	PlayEffect Blue
 	Continue
 
-Show  # League Specific - Metamorph - Catalyst (Low)
-	Class "Stackable Currency"
-	BaseType "Turbulent Catalyst" "Abrasive Catalyst" "Intrinsic Catalyst" "Tempering Catalyst" "Imbued Catalyst"
-
 Show  # League Specific - Blight - Blight Oils (Low)
 	Class "Stackable Currency"
 	BaseType "Clear Oil" "Sepia Oil" "Amber Oil" "Verdant Oil" 
@@ -444,10 +440,6 @@ Show
 	PlayEffect Blue
 	Continue
 
-Show  # League Specific - Ritual - Ritual Vessels
-	Class Currency
-	BaseType "Ritual Vessel"
-
 Show  # League Specific - Delirium - Delirium Orbs (Mid)
 	Class Currency
 	BaseType "Singular Delirium Orb" "Blacksmith's Delirium Orb" "Armoursmith's Delirium Orb" "Jeweller's Delirium Orb" "Abyssal Delirium Orb" "Decadent Delirium Orb" "Foreboding Delirium Orb" "Obscured Delirium Orb" "Whispering Delirium Orb" "Fragmented Delirium Orb" "Portentous Delirium Orb" "Primal Delirium Orb" "Imperial Delirium Orb" "Amorphous Delirium Orb"
@@ -459,11 +451,11 @@ Show  # League Specific - Essences (Mid)
 
 Show  # League Specific - Metamorph - Catalyst (Mid)
 	Class "Stackable Currency"
-	BaseType "Fertile Catalyst" "Prismatic Catalyst" "Noxious Catalyst" "Accelerating Catalyst" "Unstable Catalyst"
+	BaseType "Turbulent Catalyst" "Abrasive Catalyst" "Intrinsic Catalyst" "Tempering Catalyst" "Imbued Catalyst" "Fertile Catalyst" "Prismatic Catalyst" "Noxious Catalyst" "Accelerating Catalyst" "Unstable Catalyst"
 
 Show  # League Specific - Blight - Blight Oils (Mid)
 	Class "Stackable Currency"
-	BaseType "Teal Oil" "Azure Oil" "Indigo Oil" "Violet Oil" "Crimson Oil" "Black Oil" "Tainted Oil"
+	BaseType "Teal Oil" "Azure Oil" "Indigo Oil" "Violet Oil" "Crimson Oil" "Black Oil"
 
 Show  # League Specific - Delve - Fossils (Mid)
 	Class "Stackable Currency"
@@ -514,6 +506,10 @@ Show  # Currency - High
 #------------------------#
 # 6c+
 
+Show  # League Specific - Ritual - Ritual Vessels
+	Class Currency
+	BaseType "Ritual Vessel"
+
 Show  # League Specific - Harvest - Imbued Harbinger (High)
 	Class Currency
 	BaseType "Deregulation Scroll" "Time-light Scroll" "Fragmentation Scroll" "Electroshock Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Facetor's Lens"
@@ -529,11 +525,11 @@ Show  # League Specific - Essence - Essences (High)
 
 Show  # League Specific - Blight - Blight Oils (High)
 	Class "Stackable Currency"
-	BaseType "Opalescent Oil" "Silver Oil" "Golden Oil"
+	BaseType "Opalescent Oil" "Silver Oil" "Golden Oil" "Tainted Oil"
 
 Show  # League Specific - Breach - Blessings
 	Class Currency
-	BaseType "Blessing of "
+	BaseType "Blessing of Esh" "Blessing of Tul" "Blessing of Uul-Netol" "Blessing of Xoph" "Blessing of Chayula"
 
 Show  # League Specific - Delve - Fossils (High)
 	Class "Stackable Currency"
@@ -1015,7 +1011,7 @@ Show  # Maps - Fragments - High
 
 Show  # Maps - Fragments - Mid
 	Class "Map Fragments"
-	BaseType "Farric Lure" "Saqawine Lure" "Fenumal Lure" "Craicic Lure" "Sacrifice at Midnight" "Inya's Key" "Eber's Key" "Volkuur's Key" "Yriel's Key" "Fragment of the Hydra" "Fragment of the Phoenix" "Fragment of the Minotaur" "Fragment of the Chimera" "Mortal Grief" "Divine Vessel" "Xoph's Breachstone" "Tul's Breachstone" "Esh's Breachstone" "Uul-Netol's Breachstone" "Offering to the Goddess" " Emblem" " Breachstone" "Fragment of Enslavement" "Fragment of Eradication" "Fragment of Constriction" "Fragment of Purification" "Fragment of Shape" "Fragment of Knowledge" "Fragment of Terror" "Fragment of Emptiness" "Blood-filled Vessel"
+	BaseType "Sacred Blossom" "Farric Lure" "Saqawine Lure" "Fenumal Lure" "Craicic Lure" "Sacrifice at Midnight" "Inya's Key" "Eber's Key" "Volkuur's Key" "Yriel's Key" "Fragment of the Hydra" "Fragment of the Phoenix" "Fragment of the Minotaur" "Fragment of the Chimera" "Mortal Grief" "Divine Vessel" "Xoph's Breachstone" "Tul's Breachstone" "Esh's Breachstone" "Uul-Netol's Breachstone" "Offering to the Goddess" " Emblem" " Breachstone" "Fragment of Enslavement" "Fragment of Eradication" "Fragment of Constriction" "Fragment of Purification" "Fragment of Shape" "Fragment of Knowledge" "Fragment of Terror" "Fragment of Emptiness" "Blood-filled Vessel"
 
 Show  # Maps - Fragments - Low
 	Class "Map Fragments"
