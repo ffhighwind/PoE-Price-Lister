@@ -32,7 +32,7 @@ namespace PoE_Price_Lister
 			Name = name;
 		}
 
-		public void Load(JsonData item)
+		public void Load(ItemData item)
 		{
 			Name = item.Name;
 			ChaosValue = item.ChaosValue;

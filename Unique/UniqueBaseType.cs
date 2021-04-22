@@ -43,7 +43,7 @@ namespace PoE_Price_Lister
 			_Items.Add(new UniqueItem(item));
 		}
 
-		public bool Add(JsonData item)
+		public bool Add(ItemData item)
 		{
 			foreach (UniqueItem i in _Items) {
 				if (i.Name == item.Name) {

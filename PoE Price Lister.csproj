@@ -86,9 +86,10 @@
     <Compile Include="FilterType.cs" />
     <Compile Include="DataModel.cs" />
     <Compile Include="FilterWriter.cs" />
+    <Compile Include="ItemKey.cs" />
     <Compile Include="Unique\UniqueItem.cs" />
     <Compile Include="Unique\UniqueValue.cs" />
-    <Compile Include="JsonData.cs" />
+    <Compile Include="ItemData.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +104,7 @@
     <Compile Include="Unique\UniqueUsage.cs" />
     <Compile Include="Unique\UniqueValueEnum.cs" />
     <Compile Include="Util.cs" />
+    <Compile Include="PoeNinja.cs" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

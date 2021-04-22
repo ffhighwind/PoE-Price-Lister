@@ -141,8 +141,8 @@ namespace PoE_Price_Lister
 			Enchantments = SC.Enchantments.Keys.OrderBy(x => x).ToList();
 		}
 
-		private List<JsonData> UniquesErrors { get; set; } = new List<JsonData>();
-		private List<JsonData> EnchantsErrors { get; set; } = new List<JsonData>();
+		private List<ItemData> UniquesErrors { get; set; } = new List<ItemData>();
+		private List<ItemData> EnchantsErrors { get; set; } = new List<ItemData>();
 
 		public string GetErrorsString()
 		{
@@ -163,7 +163,7 @@ namespace PoE_Price_Lister
 			FillJsonData(string.Format(jsonURL, "HelmetEnchant", leagueStr), data, EnchantJsonHandler);
 		}
 
-		private void FillJsonData(string url, LeagueData data, Action<JsonData, LeagueData> handler)
+		private void FillJsonData(string url, LeagueData data, Action<ItemData, LeagueData> handler)
 		{
 			string jsonURLString = Util.ReadWebPage(url, "application/json");
 			if (jsonURLString.Length == 0) {
@@ -174,13 +174,13 @@ namespace PoE_Price_Lister
 				JObject jsonString = JObject.Parse(jsonURLString);
 				JToken results = jsonString["lines"];
 				foreach (JToken result in results) {
-					JsonData jdata = result.ToObject<JsonData>();
+					ItemData jdata = result.ToObject<ItemData>();
 					handler(jdata, data);
 				}
 			}
 		}
 
-		private void EnchantJsonHandler(JsonData jdata, LeagueData data)
+		private void EnchantJsonHandler(ItemData jdata, LeagueData data)
 		{
 			string description = jdata.Name.Trim();
 			if (!data.EnchantmentsDescriptions.TryGetValue(description, out Enchantment ench)) {
@@ -191,7 +191,7 @@ namespace PoE_Price_Lister
 			ench.Load(jdata);
 		}
 
-		private void UniqueJsonHandler(JsonData jdata, LeagueData data)
+		private void UniqueJsonHandler(ItemData jdata, LeagueData data)
 		{
 			string baseTy = jdata.BaseType;
 			if (!data.Uniques.TryGetValue(baseTy, out UniqueBaseType uniq)) {
@@ -203,7 +203,7 @@ namespace PoE_Price_Lister
 			}
 		}
 
-		private void DivinationJsonHandler(JsonData jdata, LeagueData data)
+		private void DivinationJsonHandler(ItemData jdata, LeagueData data)
 		{
 			string name = jdata.Name;
 			if (!data.DivinationCards.ContainsKey(name)) {

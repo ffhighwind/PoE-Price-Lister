@@ -36,7 +36,7 @@ namespace PoE_Price_Lister
 			Gem = csvdata.Gem;
 		}
 
-		public void Load(JsonData jdata)
+		public void Load(ItemData jdata)
 		{
 			Description = jdata.Name;
 			ChaosValue = jdata.ChaosValue;

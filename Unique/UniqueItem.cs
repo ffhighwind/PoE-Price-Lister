@@ -29,7 +29,7 @@ namespace PoE_Price_Lister
 		// Bestiary, Perandus, Talisman, Harbinger, Synthesis, Legacy, Harvest
 		// Warbands, Tempest, Torment, Bloodlines, Rampage, Ambush, Invasion, Domination, Nemesis, Anarchy, Onslaught
 
-		public UniqueItem(JsonData jdata)
+		public UniqueItem(ItemData jdata)
 		{
 			Load(jdata);
 		}
@@ -48,7 +48,7 @@ namespace PoE_Price_Lister
 			Source = csvdata.Source;
 		}
 
-		public void Load(JsonData jdata)
+		public void Load(ItemData jdata)
 		{
 			Name = jdata.Name;
 			ChaosValue = jdata.ChaosValue;
