@@ -1007,7 +1007,7 @@ Show
 
 Show  # Maps - Fragments - High
 	Class "Map Fragments"
-	BaseType "Mortal Rage" "Mortal Ignorance" "Mortal Hope" "Chayula's Breachstone" "Chayula's " "Timeless Maraketh Emblem" "Timeless Templar Emblem" "Simulacrum" "Gilded " "Winged " "Dedication to the Goddess" "Gift to the Goddess" "Tribute to the Goddess" "The Maven's Writ"
+	BaseType "Sacred Blossom"  "Mortal Rage" "Mortal Ignorance" "Mortal Hope" "Chayula's Breachstone" "Chayula's " "Timeless Maraketh Emblem" "Timeless Templar Emblem" "Simulacrum" "Gilded " "Winged " "Dedication to the Goddess" "Gift to the Goddess" "Tribute to the Goddess" "The Maven's Writ"
 	SetBorderColor 255 255 255 255 # Map Fragment (High)
 	PlayAlertSound 1 200 # High Value
 	MinimapIcon 0 Red Hexagon
@@ -1577,7 +1577,7 @@ Show  # Jewels - Unique - Other
 
 Show  # Uniques - 15c+
 	Rarity = Unique
-	BaseType "Butcher Axe" "Champion Kite Shield" "Silk Gloves" "Two-Stone Ring" "Hydrascale Gauntlets" "Heavy Quiver" "Savant's Robe" "Ezomyte Dagger" "Riveted Gloves" "Jewelled Foil" "Fluted Bascinet" "Crusader Boots" "Golden Flame" "Golden Obi" "Golden Mantle" "Golden Visage" "Golden Caligae" "Golden Bracers" "Golden Wreath" "Sorcerer Boots" "Assassin's Boots" "Arcanist Gloves" "Wyrmscale Doublet" "Vaal Hatchet" "Glorious Plate" "Exquisite Leather" "Jingling Spirit Shield" "Granite Flask" "Deerskin Gloves" "Ornate Quiver" "Highborn Staff" "Crusader Helmet" "Charan's Sword" "Vaal Rapier" "Long Staff" "Blood Raiment" "Siege Axe" "Rawhide Boots" "Crimson Round Shield" "Occultist's Vestment" "Ruby Amulet" "Jet Amulet" "Sapphire Flask" "Ezomyte Tower Shield" "Gladiator Plate" "Steelwood Bow" "Royal Burgonet" "Imperial Maul" "Prophecy Wand" "Demon Dagger" "Citadel Bow"
+	BaseType "Fishing Rod" "Golden Bracers" "Crusader Helmet" "Golden Visage" "Golden Wreath" "Rusted Hatchet" "Driftwood Club" "Golden Blade" "Variscite Blade" "Heavy Quiver" "Golden Hoop" "Goathide Buckler" "Golden Flame" "Long Staff" Sundering Axe" "Corroded Blade" "Jet Amulet" "Ruby Amulet" "Golden Obi" "Golden Mantle" "Golden Caligae" "Shackled Boots" "Glass Shank" "Butcher Axe" "Champion Kite Shield" "Silk Gloves" "Two-Stone Ring" "Hydrascale Gauntlets" "Heavy Quiver" "Savant's Robe" "Ezomyte Dagger" "Riveted Gloves" "Jewelled Foil" "Fluted Bascinet" "Crusader Boots" "Golden Flame" "Golden Obi" "Golden Mantle" "Golden Visage" "Golden Caligae" "Golden Bracers" "Golden Wreath" "Sorcerer Boots" "Assassin's Boots" "Arcanist Gloves" "Wyrmscale Doublet" "Vaal Hatchet" "Glorious Plate" "Exquisite Leather" "Jingling Spirit Shield" "Granite Flask" "Deerskin Gloves" "Ornate Quiver" "Highborn Staff" "Crusader Helmet" "Charan's Sword" "Vaal Rapier" "Long Staff" "Blood Raiment" "Siege Axe" "Rawhide Boots" "Crimson Round Shield" "Occultist's Vestment" "Ruby Amulet" "Jet Amulet" "Sapphire Flask" "Ezomyte Tower Shield" "Gladiator Plate" "Steelwood Bow" "Royal Burgonet" "Imperial Maul" "Prophecy Wand" "Demon Dagger" "Citadel Bow"
 	SetFontSize 45
 	SetTextColor 255 128 64 # Unique (15c+)
 	SetBackgroundColor 255 255 255 255 # Unique (15c+)

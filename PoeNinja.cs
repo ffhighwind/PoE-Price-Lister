@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Newtonsoft.Json.Linq;
 
 namespace PoE_Price_Lister
@@ -17,15 +13,12 @@ namespace PoE_Price_Lister
 		// http://api.poe.watch/get?league=Metamorph&category=armour
 		// http://api.poe.watch/compact?league=Metamorph&category=armour
 
-		private const string repoURL = @"https://raw.githubusercontent.com/ffhighwind/PoE-Price-Lister/master/";
-		public const string FiltersUrl = repoURL + @"Resources/Filters/";
 		//private const string jsonURL = @"http://poe.ninja/api/Data/Get{0}Overview?league={1}";
 		private const string jsonURL = @"https://poe.ninja/api/data/{0}overview?league={1}&type={2}";
 		//ALTERNATE API? https://poe.watch/prices?category=enchantment&league={1}
 
 		private Dictionary<ItemKey, List<ItemData>> __Data { get; } = new Dictionary<ItemKey, List<ItemData>>();
 		private Dictionary<ItemKey, IReadOnlyList<ItemData>> _Data { get; } = new Dictionary<ItemKey, IReadOnlyList<ItemData>>();
-
 		public IReadOnlyDictionary<ItemKey, IReadOnlyList<ItemData>> Data => _Data;
 
 		public bool Hardcore { get; private set; }
