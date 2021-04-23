@@ -62,6 +62,8 @@ namespace PoE_Price_Lister
 				return FilterValue;
 			}
 			if (Items.Count == 1) {
+				if (Items[0].IsUnobtainable)
+					return UniqueValue.Chaos15;
 				float val = Items[0].ChaosValue;
 				if (val < 0.01 || Items[0].IsLowConfidence || (val >= FilterValue.LowValue && val <= FilterValue.HighValue))
 					return FilterValue;
