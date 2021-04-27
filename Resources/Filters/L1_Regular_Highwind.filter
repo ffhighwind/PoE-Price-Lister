@@ -1,7 +1,7 @@
 ﻿﻿############################################
-##      HIGHWIND'S LOOT FILTER 3.14.6     ##
+##      HIGHWIND'S LOOT FILTER 3.14.7     ##
 ############################################
-## Release Date: April 25, 2021           ##
+## Release Date: April 27, 2021           ##
 ############################################
 
 #--------------#
@@ -162,6 +162,17 @@ Show  # League Specific - Harbinger - Infused Engineer's Orb
 	MinimapIcon 0 Red Circle
 	PlayEffect Red
 
+Show  # League Specific - Betrayal - Veiled Chaos Orb
+	Class Currency
+	BaseType "Veiled Chaos Orb"
+	SetFontSize 45
+	SetTextColor 255 0 255 # Currency (High)
+	SetBackgroundColor 255 255 255 255 # Currency (High)
+	SetBorderColor 255 0 255 255 # Currency (High)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red Circle
+	PlayEffect Red
+
 #-----------#
 # Worthless #
 #-----------#
@@ -245,10 +256,6 @@ Show  # League Specific - Essence - Essences (Very Low)
 	Class "Stackable Currency"
 	BaseType "Wailing Essence" "Weeping Essence"
 
-Show  # League Specific - Ritual - Splinters (Very Low)
-	Class "Stackable Currency"
-	BaseType "Ritual Splinter"
-
 Show  # League Specific - Harbinger - Very Low - Stack (2+)
 	Class "Stackable Currency"
 	BaseType "Binding Shard" "Horizon Shard"
@@ -307,11 +314,11 @@ Show
 
 Show  # Currency - < 0.15c
 	Class "Stackable Currency"
-	BaseType "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb" "Orb of Chance"
+	BaseType "Orb of Alteration" "Jeweller's Orb" "Orb of Chance"
 
 Show  # Currency - < 0.25c
 	Class "Stackable Currency"
-	BaseType "Silver Coin" "Glassblower's Bauble"
+	BaseType "Chromatic Orb" "Silver Coin" "Glassblower's Bauble"
 
 #-----------------#
 # Low (Splinters) #
@@ -389,7 +396,7 @@ Show  # League Specific - Harbinger - Low (2+)
 
 Show  # League Specific - Harbinger - Low (1+)
 	Class "Stackable Currency"
-	BaseType "Orb of Binding" "Harbinger's Shard"
+	BaseType "Orb of Binding" "Harbinger's Shard" "Engineer's Orb"
 
 Show  # League Specific - Perandus - Coins (40+)
 	Class "Stackable Currency"
@@ -398,6 +405,10 @@ Show  # League Specific - Perandus - Coins (40+)
 Show  # League Specific - Heist (35+)
 	Class "Stackable Currency"
 	BaseType "Rogue's Marker"
+
+Show  # League Specific - Ritual - Splinters
+	Class "Stackable Currency"
+	BaseType "Ritual Splinter"
 
 #-----#
 # Mid #
@@ -440,10 +451,6 @@ Show
 	PlayEffect Blue
 	Continue
 
-Show  # League Specific - Ritual - Ritual Vessels
-	Class Currency
-	BaseType "Ritual Vessel"
-
 Show  # League Specific - Delirium - Delirium Orbs (Mid)
 	Class Currency
 	BaseType "Singular Delirium Orb" "Blacksmith's Delirium Orb" "Armoursmith's Delirium Orb" "Jeweller's Delirium Orb" "Abyssal Delirium Orb" "Decadent Delirium Orb" "Foreboding Delirium Orb" "Obscured Delirium Orb" "Whispering Delirium Orb" "Fragmented Delirium Orb" "Portentous Delirium Orb" "Primal Delirium Orb" "Imperial Delirium Orb" "Amorphous Delirium Orb"
@@ -479,7 +486,7 @@ Show  # League Specific - Bestiary - Bestiary Orbs
 
 Show  # League Specific - Incursion - Vials (Mid)
 	Class "Stackable Currency"
-	BaseType "Vial of Dominance" "Vial of Fate"
+	BaseType "Vial of Fate"
 
 Show  # League Specific - Harbinger - Mid
 	Class "Stackable Currency"
@@ -503,12 +510,16 @@ Show
 
 Show  # Currency - High
 	Class Currency
-	BaseType "Orb of Annulment" "Divine Orb" "Journeyman Cartographer's Seal" "Master Cartographer's Seal" "Unshaping Orb" "Exalted Shard" "Apprentice Cartographer's Seal" "Exalted Orb" "Eternal Orb" "Imprint" "Mirror of Kalandra" "Albino Rhoa Feather" "Mirror Shard" "Crusader's Exalted Orb" "Redeemer's Exalted Orb" "Hunter's Exalted Orb" "Warlord's Exalted Orb" "Awakener's Orb" "Orb of Unmaking" "Maven's Orb" "Crescent Splinter"
+	BaseType "Orb of Annulment" "Divine Orb" "Journeyman Cartographer's Seal" "Master Cartographer's Seal" "Unshaping Orb" "Exalted Shard" "Apprentice Cartographer's Seal" "Exalted Orb" "Eternal Orb" "Imprint" "Mirror of Kalandra" "Albino Rhoa Feather" "Mirror Shard" "Crusader's Exalted Orb" "Redeemer's Exalted Orb" "Hunter's Exalted Orb" "Warlord's Exalted Orb" "Awakener's Orb" "Orb of Unmaking" "Maven's Orb" "Crescent Splinter" "Elevated Sextant"
 
 #------------------------#
 # High (League Specific) #
 #------------------------#
 # 6c+
+
+Show  # League Specific - Ritual - Ritual Vessels
+	Class Currency
+	BaseType "Ritual Vessel"
 
 Show  # League Specific - Harvest - Imbued Harbinger (High)
 	Class Currency
@@ -545,7 +556,7 @@ Show  # League Specific - Harbinger - High
 
 Show  # League Specific - Incursion - Vials (High)
 	Class "Stackable Currency"
-	BaseType "Vial of the Ghost" "Vial of Sacrifice" "Vial of Awakening" "Vial of Summoning" "Vial of Consequence" "Vial of the Ritual" "Vial of Transcendence"
+	BaseType "Vial of the Ghost" "Vial of Sacrifice" "Vial of Awakening" "Vial of Summoning" "Vial of Consequence" "Vial of the Ritual" "Vial of Transcendence" "Vial of Dominance"
 
 Show  # League Specific - Heist
 	Class "Stackable Currency"
@@ -570,7 +581,7 @@ Show
 Show  # Currency - Prophecies - High
 	Class Currency
 	BaseType "Prophecy"
-	Prophecy "The Queen's Sacrifice" "Fated Connections" "Trash to Treasure"
+	Prophecy "The Queen's Sacrifice" "Fated Connections" "Trash to Treasure" "Song of the Sekhema" "Deadly Rivalry V" "Deadly Rivalry IV" "The Hollow Pledge" "Unbearable Whispers V" "The Unbreathing Queen V" "The Feral Lord V" "The Plaguemaw V"
 	SetFontSize 45
 	SetBackgroundColor 255 255 255 255 # Prophecy (High Value)
 	PlayAlertSound 1 200 # High Value
@@ -580,15 +591,16 @@ Show  # Currency - Prophecies - High
 Show  # Currency - Prophecies - Mid
 	Class Currency
 	BaseType "Prophecy"
-	Prophecy "Song of the Sekhema" "Flesh of the Beast" "The Jeweller's Touch" "Wind and Thunder" "Monstrous Treasure" "Cleanser of Sins" "The Queen's Vaults" "The Dreaded Rhoa" "Darktongue's Shriek" "A Dishonourable Death" "The King's Path" "A Master Seeks Help" "The Bowstring's Music" "Lost in the Pages"
+	Prophecy "Flesh of the Beast" "The Jeweller's Touch" "Wind and Thunder" "Monstrous Treasure" "Cleanser of Sins" "Darktongue's Shriek" "A Dishonourable Death" "The King's Path" "A Master Seeks Help" "The Bowstring's Music" "Lost in the Pages"
 
-Show  # Currency - Prophecies - Very Low
+Hide  # Currency - Prophecies - Very Low
 	Class Currency
 	BaseType "Prophecy"
-	Prophecy "Resistant to Change" "Touched by the Wind" "Smothering Tendrils" "Vital Transformation" "Lasting Impressions" "The Invader" "Lightning Falls" "Hidden Reinforcements" "Fallow At Last" "The Hungering Swarm" "Crushing Squall" "Fire from the Sky" "The Brothers of Necromancy" "Gilded Within" "Risen Blood" "In the Grasp of Corruption" "Vaal Invasion" "Unnatural Energy" "Undead Uprising" "The Undead Storm" "The Mysterious Gift" "The God of Misfortune"
+	Prophecy "Ice from Above" "Resistant to Change" "Touched by the Wind" "Smothering Tendrils" "Vital Transformation" "Lasting Impressions" "The Invader" "Lightning Falls" "Hidden Reinforcements" "Fallow At Last" "The Hungering Swarm" "Crushing Squall" "Fire from the Sky" "The Brothers of Necromancy" "Gilded Within" "Risen Blood" "In the Grasp of Corruption" "Vaal Invasion" "Unnatural Energy" "Undead Uprising" "The Undead Storm" "The Mysterious Gift" "The God of Misfortune"
 	SetFontSize 36
 	MinimapIcon -1
-	PlayAlertSound 1 0
+	PlayAlertSound None
+	DisableDropSound
 
 Show  # Currency - Prophecies - Low
 	Class Currency
@@ -1170,6 +1182,12 @@ Show
 	SetBorderColor 130 130 130 255 # Gem Quality (Low)
 	Continue
 
+Show  # Gems - Twilight Strand
+	Class "Skill Gems"
+	AreaLevel = 1
+	SetFontSize 40
+	SetBorderColor 0 0 0 230 # Default
+
 Show  # Gems - Quality - 10%+
 	Class "Skill Gems"
 	Quality >= 10
@@ -1721,9 +1739,34 @@ Show
 	SetFontSize 40
 	Continue
 
-Show  # Crafting Bases - Influence - 70+ Drop Level
+# Atlas bases, Ritual bases
+Show  # Crafting Bases - Influence - 71+ Drop Level
 	HasInfluence Crusader Hunter Redeemer Warlord Shaper Elder
-	BaseType "Opal Ring" "Steel Ring" "Vermillion Ring" "Cerulean Ring" "Marble Amulet" "Blue Pearl Amulet" "Spiked Gloves" "Fingerless Silk Gloves" "Gripped Gloves" "Bone Helmet" "Two-Toned Boots" "Crystal Belt" "Stygian Vise"
+	SetFontSize 45
+	DropLevel >= 71
+	SetTextColor 0 100 220 # Crafting Base (High)
+	SetBackgroundColor 255 255 255 255 # Crafting Base (High)
+	SetBorderColor 40 80 150 255 # Crafting Base (High)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red UpsideDownHouse
+	PlayEffect Red
+
+# Atlas base items
+Show  # Crafting Bases - Influence - 70+ Atlas Base Types
+	HasInfluence Crusader Hunter Redeemer Warlord Shaper Elder
+	Class Boots Gloves Amulets Rings Belts
+	DropLevel >= 70
+	SetFontSize 45
+	SetTextColor 0 100 220 # Crafting Base (High)
+	SetBackgroundColor 255 255 255 255 # Crafting Base (High)
+	SetBorderColor 40 80 150 255 # Crafting Base (High)
+	PlayAlertSound 1 200 # High Value
+	MinimapIcon 0 Red UpsideDownHouse
+	PlayEffect Red
+
+Show  # Crafting Bases - Influence - Other Base Types
+	HasInfluence Crusader Hunter Redeemer Warlord Shaper Elder
+	BaseType "Stygian Vise" 
 	SetFontSize 45
 	SetTextColor 0 100 220 # Crafting Base (High)
 	SetBackgroundColor 255 255 255 255 # Crafting Base (High)
@@ -1842,7 +1885,7 @@ Show  # Crafting Bases - Influence - 84+ Belts
 	HasInfluence Crusader Hunter Redeemer Warlord Shaper Elder
 	Class Belts
 	ItemLevel >= 84
-	BaseType "Leather Belt" "Vanguard Belt" "Heavy Belt"
+	BaseType "Leather Belt" "Heavy Belt"
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Green UpsideDownHouse
 	PlayEffect Green
@@ -2493,30 +2536,30 @@ Show
 Show  # Flasks - Utility - Leveling Useful
 	Class "Utility Flasks"
 	BaseType "Quicksilver Flask" "Silver Flask" "Granite Flask" "Jade Flask" "Bismuth Flask" "Sulphur Flask" "Basalt Flask"
-	ItemLevel < 68
+	AreaLevel < 68
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 1 Cyan UpsideDownHouse
 	PlayEffect Cyan
 
 Show  # Flasks - Utility - Leveling
 	Class "Utility Flasks"
-	ItemLevel < 35
+	AreaLevel < 35
 	PlayAlertSound 4 200 # Mid Value
 	MinimapIcon 0 Cyan UpsideDownHouse
 	PlayEffect Cyan
 
 Show  # Flasks - Utility - Leveling
 	Class "Utility Flasks"
-	ItemLevel < 68
+	AreaLevel < 68
 
 Show  # Flasks - Utility - Mapping (Low)
 	Class "Utility Flasks"
-	ItemLevel < 73
+	AreaLevel < 73
 
 #Disabled Block Start
 #Show  # Flasks - Utility - Mapping (Mid)
 #	Class "Utility Flasks"
-#	ItemLevel < 78
+#	AreaLevel < 78
 #Disabled Block End
 
 Hide  # Flasks - Utility - Mapping (High)
@@ -2531,18 +2574,18 @@ Hide  # Flasks - Utility - Mapping (High)
 Show  # Flasks - Quality - Leveling
 	Quality >= 5
 	Class Flasks
-	ItemLevel < 68
+	AreaLevel < 68
 
 Show  # Flasks - Quality - Mapping (Low)
 	Quality >= 5
 	Class Flasks
-	ItemLevel < 73
+	AreaLevel < 73
 
 #Disabled Block Start
 #Show  # Flasks - Quality - Mapping (Mid)
 #	Quality >= 5
 #	Class Flasks
-#	ItemLevel < 78
+#	AreaLevel < 78
 #Disabled Block End
 
 Hide  # Flasks - Quality - Mapping (High)
@@ -2557,42 +2600,42 @@ Hide  # Flasks - Quality - Mapping (High)
 Hide  # Flasks - Normal - Low Drop Level - 65+
 	Class Flasks
 	DropLevel < 60
-	ItemLevel > 65
+	AreaLevel > 65
 	SetFontSize 24
 	DisableDropSound
 
 Hide  # Flasks - Normal - Low Drop Level - 60+
 	Class Flasks
 	DropLevel < 50
-	ItemLevel > 60
+	AreaLevel > 60
 	SetFontSize 24
 	DisableDropSound
 
 Hide  # Flasks - Normal - Low Drop Level - 50+
 	Class Flasks
 	DropLevel < 40
-	ItemLevel > 50
+	AreaLevel > 50
 	SetFontSize 24
 	DisableDropSound
 
 Hide  # Flasks - Normal - Low Drop Level - 40+
 	Class Flasks
 	DropLevel < 30
-	ItemLevel > 40
+	AreaLevel > 40
 	SetFontSize 24
 	DisableDropSound
 
 Hide  # Flasks - Normal - Low Drop Level - 30+
 	Class Flasks
 	DropLevel < 20
-	ItemLevel > 30
+	AreaLevel > 30
 	SetFontSize 24
 	DisableDropSound
 
 Hide  # Flasks - Normal - Low Drop Level - 20+
 	Class Flasks
 	DropLevel < 10
-	ItemLevel > 20
+	AreaLevel > 20
 	SetFontSize 24
 	DisableDropSound
 
@@ -2602,27 +2645,27 @@ Hide  # Flasks - Normal - Low Drop Level - 20+
 
 Hide  # Flasks - Normal - Leveling - Hybrid
 	Class "Hybrid Flasks"
-	ItemLevel < 68
+	AreaLevel < 68
 	DisableDropSound
 
 Show  # Flasks - Normal - Leveling - Life
 	Class "Life Flasks"
-	ItemLevel < 68
+	AreaLevel < 68
 
 Show  # Flasks - Normal - Leveling - Mana
 	Class "Mana Flasks"
-	ItemLevel < 68
+	AreaLevel < 68
 
 #Disabled Block Start
 #Show  # Flasks - Normal - Mapping (Low)
 #	Class Flasks
-#	ItemLevel < 73
+#	AreaLevel < 73
 #Disabled Block End
 
 #Disabled Block Start
 #Show  # Flasks - Normal - Mapping (Mid)
 #	Class Flasks
-#	ItemLevel < 77
+#	AreaLevel < 77
 #Disabled Block End
 
 Hide  # Flasks - Normal - Mapping (High)
@@ -2904,10 +2947,17 @@ Show  # Vendor Recipes - Chisels - 15% Quality Normal
 # Section: Pre-Filter (Optimization)
 
 # Sockets 0:
-# Class Flasks Rings Amulets Belts Quivers Jewels Leaguestones
+# Class Flasks Rings Amulets Belts Quivers
+
 # Sockets >= 1:
-# "One Hand" "Two Hand" Bows Staves Warstaves Daggers "Rune Dagger" Wands Claws Sceptres Gloves Boots Helmets "Body Armours" Shields "Fishing Rods"
+# Class "One Hand" "Two Hand" Bows Staves Warstaves Daggers "Rune Dagger" Wands Claws Sceptres Gloves Boots Helmets "Body Armours" Shields "Fishing Rods"
 # All equipment except quivers, amulets, socketless rings, socketless belts, and socketless uniques like Kaom's Heart/Roots
+
+# Twilight Strand
+Show
+	Rarity <= Magic
+	AreaLevel = 1
+	ItemLevel < 10
 
 #--------------#
 # Normal/Magic #
