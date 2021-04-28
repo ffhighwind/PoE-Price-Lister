@@ -1,0 +1,60 @@
+﻿InputClass,InputBaseType,InputQuantity,OutputClass,OutputBaseType,OutputQuantity,Type
+Stackable Currency,Orb of Regret,1,Stackable Currency,Orb of Alchemy,1,Purchase
+Stackable Currency,Orb of Scouring,2,Stackable Currency,Orb of Regret,1,Purchase
+Stackable Currency,Orb of Chance,4,Stackable Currency,Orb of Scouring,1,Purchase
+Stackable Currency,Orb of Fusing,1,Stackable Currency,Orb of Chance,1,Purchase
+Stackable Currency,Jeweller's Orb,4,Stackable Currency,Orb of Fusing,1,Purchase
+Stackable Currency,Jeweller's Orb,3,Stackable Currency,Chromatic Orb,1,Purchase
+Stackable Currency,Orb of Alteration,2,Stackable Currency,Jeweller's Orb,1,Purchase
+Stackable Currency,Orb of Augmentation,4,Stackable Currency,Orb of Alteration,1,Purchase
+Stackable Currency,Orb of Transmutation,4,Stackable Currency,Orb of Augmentation,1,Purchase
+Stackable Currency,Portal Scroll,7,Stackable Currency,Orb of Transmutation,1,Purchase
+Stackable Currency,Scroll of Wisdom,3,Stackable Currency,Portal Scroll,1,Purchase
+Stackable Currency,Portal Scroll,1,Stackable Currency,Scroll of Wisdom,1,Purchase
+Stackable Currency,Blacksmith's Whetstone,8,Stackable Currency,Glassblower's Bauble,1,Purchase
+Stackable Currency,Armourer's Scrap,3,Stackable Currency,Blacksmith's Whetstone,1,Purchase
+Stackable Currency,Blacksmith's Whetstone,1,Stackable Currency,Armourer's Scrap,1,Purchase
+Stackable Currency,Splinter of Chayula,100,Map Fragments,Chayula's Breachstone,1,Stack
+Stackable Currency,Splinter of Esh,100,Map Fragments,Xoph's Breachstone,1,Stack
+Stackable Currency,Splinter of Tul,100,Map Fragments,Tul's Breachstone,1,Stack
+Stackable Currency,Splinter of Uul-Netol,100,Map Fragments,Uul-Netol's Breachstone,1,Stack
+Stackable Currency,Splinter of Xoph,100,Map Fragments,Xoph's Breachstone,1,Stack
+Stackable Currency,Timeless Eternal Empire Splinter,100,Map Fragments,Timeless Eternal Emblem,1,Stack
+Stackable Currency,Timeless Karui Splinter,100,Map Fragments,Timeless Karui Emblem,1,Stack
+Stackable Currency,Timeless Maraketh Splinter,100,Map Fragments,Timeless Maraketh Emblem,1,Stack
+Stackable Currency,Timeless Templar Splinter,100,Map Fragments,Timeless Templar Emblem,1,Stack
+Stackable Currency,Timeless Vaal Splinter,100,Map Fragments,Timeless Vaal Emblem,1,Stack
+Stackable Currency,Alchemy Shard,20,Stackable Currency,Orb of Alchemy,1,Stack
+Stackable Currency,Alteration Shard,20,Stackable Currency,Orb of Alteration,1,Stack
+Stackable Currency,Exalted Shard,20,Stackable Currency,Exalted Orb,1,Stack
+Stackable Currency,Mirror Shard,20,Stackable Currency,Mirror of Kalandra,1,Stack
+Stackable Currency,Scroll Fragment,5,Stackable Currency,Scroll of Wisdom,1,Stack
+Stackable Currency,Transmutation Shard,20,Stackable Currency,Orb of Transmutation,1,Stack
+Stackable Currency,Chaos Shard,20,Stackable Currency,Chaos Orb,1,Stack
+Stackable Currency,Ancient Shard,20,Stackable Currency,Ancient Orb,1,Stack
+Stackable Currency,Annulment Shard,20,Stackable Currency,Orb of Annulment,1,Stack
+Stackable Currency,Binding Shard,20,Stackable Currency,Orb of Binding,1,Stack
+Stackable Currency,Engineer's Shard,20,Stackable Currency,Engineer's Orb,1,Stack
+Stackable Currency,Harbinger's Shard,20,Stackable Currency,Harbinger's Orb,1,Stack
+Stackable Currency,Horizon Shard,20,Stackable Currency,Orb of Horizons,1,Stack
+Stackable Currency,Regal Shard,20,Stackable Currency,Regal Orb,1,Stack
+Stackable Currency,Ritual Splinter,100,Stackable Currency,Ritual Vessel,1,Stack
+Stackable Currency,Clear Oil,3,Stackable Currency,Sepia Oil,1,Recipe
+Stackable Currency,Sepia Oil,3,Stackable Currency,Amber Oil,1,Recipe
+Stackable Currency,Amber Oil,3,Stackable Currency,Verdant Oil,1,Recipe
+Stackable Currency,Verdant Oil,3,Stackable Currency,Teal Oil,1,Recipe
+Stackable Currency,Teal Oil,3,Stackable Currency,Azure Oil,1,Recipe
+Stackable Currency,Azure Oil,3,Stackable Currency,Indigo Oil,1,Recipe
+Stackable Currency,Indigo Oil,3,Stackable Currency,Violet Oil,1,Recipe
+Stackable Currency,Violet Oil,3,Stackable Currency,Crimson Oil,1,Recipe
+Stackable Currency,Crimson Oil,3,Stackable Currency,Black Oil,1,Recipe
+Stackable Currency,Black Oil,3,Stackable Currency,Opalescent Oil,1,Recipe
+Stackable Currency,Opalescent Oil,3,Stackable Currency,Silver Oil,1,Recipe
+Stackable Currency,Silver Oil,3,Stackable Currency,Golden Oil,1,Recipe
+Stackable Currency,Simple Sextant,3,Stackable Currency,Prime Sextant,1,Recipe
+Stackable Currency,Prime Sextant,3,Stackable Currency,Awakened Sextant,1,Recipe
+Stackable Currency,Portal Scroll,1,Stackable Currency,Scroll of Wisdom,1,Recipe
+Stackable Currency,Orb of Transmutation,1,Stackable Currency,Scroll of Wisdom,4,Recipe
+Stackable Currency,Blacksmith's Whetstone,1,Stackable Currency,Scroll of Wisdom,4,Recipe
+Stackable Currency,Armourer's Scrap,1,Stackable Currency,Scroll of Wisdom,2,Recipe
+Stackable Currency,Orb of Alteration,1,Stackable Currency,Scroll of Wisdom,4,Recipe

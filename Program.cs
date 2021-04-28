@@ -35,7 +35,7 @@ namespace PoE_Price_Lister
 		{
 			MessageBox.Show(e.Message + "\n" + e.StackTrace, "Exception");
 			if (e.InnerException != null)
-				MessageBox.Show(e.Message + "\n" + e.InnerException.StackTrace, "Inner Exception");
+				MessageBox.Show(e.InnerException.Message + "\n" + e.InnerException.StackTrace, "Inner Exception");
 			Application.Exit();
 		}
 	}

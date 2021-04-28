@@ -3,6 +3,7 @@ using System.Data;
 using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Linq;
 
 namespace PoE_Price_Lister
 {
@@ -20,6 +21,7 @@ namespace PoE_Price_Lister
 		public MainForm()
 		{
 			InitializeComponent();
+
 			openFileDialog.InitialDirectory = Directory.GetCurrentDirectory() + "\\Resources";
 
 			scUniquesTable.Columns.Add("BaseType");

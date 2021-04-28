@@ -22,6 +22,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Reflection;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PoE_Price_Lister
@@ -268,18 +269,9 @@ namespace PoE_Price_Lister
 				client.BaseAddress = new Uri(url);
 				if (headerMedia.Length > 0)
 					client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(headerMedia));
-				HttpResponseMessage response;
-				try {
-					response = client.GetAsync(url).Result;
-					if (response.IsSuccessStatusCode) {
-						return encoding == null ? response.Content.ReadAsStringAsync().Result
-							: encoding.GetString(response.Content.ReadAsByteArrayAsync().Result);
-					}
-				}
-				catch {
-					return null;
-				}
-				return null;
+				if (encoding == null)
+					return client.GetStringAsync(url).Result;
+				return encoding.GetString(client.GetByteArrayAsync(url).Result);
 			}
 		}
 	}

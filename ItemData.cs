@@ -18,6 +18,8 @@
 
 using System;
 using System.Collections.Generic;
+using System.Text;
+
 using Newtonsoft.Json;
 
 namespace PoE_Price_Lister
@@ -116,7 +118,17 @@ namespace PoE_Price_Lister
 
         public override string ToString()
 		{
-			return JsonConvert.SerializeObject(this, Formatting.Indented);
+            StringBuilder sb = new StringBuilder();
+            if(Links > 4) {
+                sb.Append('(').Append(Links).Append("L)");
+            }
+            sb.Append(Name ?? "").Append(' ');
+            if (Count > 5)
+                sb.Append(ChaosValue).Append("c ");
+            sb.Append(BaseType ?? "");
+            return sb.ToString();
+
+			//return JsonConvert.SerializeObject(this, Formatting.Indented);
 		}
 
 		internal class TrimConverter : JsonConverter

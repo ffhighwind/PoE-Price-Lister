@@ -75,6 +75,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConversionCsv.cs" />
+    <Compile Include="CurrencyCsv.cs" />
     <Compile Include="Divination\DivinationCard.cs" />
     <Compile Include="Divination\DivinationValue.cs" />
     <Compile Include="Divination\DivinationValueEnum.cs" />
@@ -87,6 +89,7 @@
     <Compile Include="DataModel.cs" />
     <Compile Include="FilterWriter.cs" />
     <Compile Include="ItemKey.cs" />
+    <Compile Include="PricesCsv.cs" />
     <Compile Include="Unique\UniqueItem.cs" />
     <Compile Include="Unique\UniqueValue.cs" />
     <Compile Include="ItemData.cs" />
@@ -118,7 +121,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="poe_conversions.csv" />
+    <None Include="poe_currency.csv" />
     <None Include="poe_enchants.csv" />
+    <None Include="poe_prices.csv" />
     <None Include="README.md" />
     <None Include="Resources\FilterNova-AutoUpdater.ahk" />
     <None Include="Resources\Filters\filter font enlarger.ahk" />
