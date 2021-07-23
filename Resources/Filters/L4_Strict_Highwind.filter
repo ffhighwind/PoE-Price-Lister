@@ -1,5 +1,5 @@
-﻿﻿############################################
-##     HIGHWIND'S STRICT FILTER 3.15.1    ##
+﻿############################################
+##     HIGHWIND'S STRICT FILTER 3.15.2    ##
 ############################################
 ## Release Date: July 23, 2021            ##
 ############################################
@@ -206,7 +206,7 @@ Show  # Currency - < 0.15c
 
 Hide  # League Specific - Essence - Essences (Worthless)
 	Class "Stackable Currency"
-	BaseType == "Whispering Essence" "Muttering Essence"
+	BaseType "Whispering Essence" "Muttering Essence"
 	DisableDropSound
 
 Hide  # League Specific - Harbinger - Worthless - Shards (1)
@@ -242,7 +242,7 @@ Show
 
 Hide  # League Specific - Essence - Essences (Very Low)
 	Class "Stackable Currency"
-	BaseType == "Wailing Essence" "Weeping Essence"
+	BaseType "Wailing Essence" "Weeping Essence"
 	DisableDropSound
 
 Hide  # League Specific - Harbinger - Very Low - Stack (2+)
@@ -328,7 +328,7 @@ Show  # League Specific - Delirium - Simulacrum Splinter
 
 Show  # League Specific - Legion - Timeless Splinters
 	Class "Stackable Currency"
-	BaseType == "Timeless Karui Splinter" "Timeless Maraketh Splinter" " Empire Splinter" "Timeless Templar Splinter" "Timeless Vaal Splinter"
+	BaseType == "Timeless Karui Splinter" "Timeless Maraketh Splinter" "Timeless Eternal Empire Splinter" "Timeless Templar Splinter" "Timeless Vaal Splinter"
 
 Show  # League Specific - Breach - Uul-Netol Splinters
 	Class "Stackable Currency"
@@ -448,7 +448,7 @@ Show  # League Specific - Delirium - Delirium Orbs (Mid)
 
 Show  # League Specific - Essences (Mid)
 	Class "Stackable Currency"
-	BaseType == "Shrieking Essence" "Screaming Essence" "Remnant of Corruption"
+	BaseType "Shrieking Essence" "Screaming Essence" "Remnant of Corruption"
 	MinimapIcon 0 Blue Diamond
 
 Show  # League Specific - Metamorph - Catalyst (Mid)
@@ -526,7 +526,7 @@ Show  # League Specific - Delirium - Delirium Orb (High)
 
 Show  # League Specific - Essence - Essences (High)
 	Class "Stackable Currency"
-	BaseType == "Deafening Essence" "Essence of Delirium" "Essence of Hysteria" "Essence of Horror" "Essence of Insanity"
+	BaseType "Deafening Essence" "Essence of Delirium" "Essence of Hysteria" "Essence of Horror" "Essence of Insanity"
 	MinimapIcon 0 Red Diamond
 
 Show  # League Specific - Blight - Blight Oils (High)
@@ -535,7 +535,7 @@ Show  # League Specific - Blight - Blight Oils (High)
 
 Show  # League Specific - Breach - Blessings
 	Class Currency
-	BaseType == "Blessing of "
+	BaseType "Blessing of "
 
 Show  # League Specific - Delve - Fossils (High)
 	Class "Stackable Currency"
