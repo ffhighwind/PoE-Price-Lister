@@ -1,4 +1,87 @@
-﻿----------------------------------------------------------------
+﻿
+----------------------------------------------------------------
+| Ultimatum
+----------------------------------------------------------------
+3.14.8
+▻ Fixed an issue with the latest patch. (Removed some invalid item classes)
+▻ Updated the filter values (uniques, divination cards, enchantments).
+
+3.14.7
+▻ Updated the filter values (uniques, divination cards, enchantments).
+▻ Repriced currency: Vial of Dominance, Ritual Vessel, Ritual Splinter, Veiled Chaos Orb, Elevated Sextant, Chromatic Orb, Alteration Orb, Glassblower Baubles
+▻ Updated prophecy values: "Song of the Sekhema", "The Hollow Pledge", "Deadly Rivalry V", "Unbearable Whispers V", "The Feral Lord V", "The Unbreathing Queen V", "The Plaguemaw V", "Ice from Above"
+▻ Changed the Flasks section to use AreaLevel instead of ItemLevel.
+▻ Added items to The Twilight Strand in all filters.
+▻ Removed most Mirrored/Corrupted normal/magic items.
+▻ Reworked the influenced items section to be more future-proof.
+▻ Reworked the explicit mods.
+▻ Reworked the chance section.
+▻ Other minor fixes
+
+3.14.6
+▻ Updated the filter values (uniques, divination cards, enchantments).
+
+3.14.5
+▻ Updated the filter values (uniques, divination cards, enchantments).
+▻ Fixed Sacred Blossom sound.
+
+3.14.4
+▻ Updated the filter values (uniques, divination cards, enchantments).
+▻ Added a new unique: Hateforge
+
+3.14.3
+▻ Repriced Tainted Oil, Sacred Blossom, Catalysts, and Ritual Vessels.
+▻ Repriced Chromatic Orbs in the Very Strict filter so they are not hidden. They're currently 1/4c.
+▻ Updated the filter values (uniques, divination cards, enchantments).
+▻ Started the overhaul and validation of the unique items CSV. Added Jewels, Item Class, Category, Version/Release date. The most important validation is going to be the "League" and "Source" data.
+
+3.14.2
+▻ Released a new version of the filter update tool.
+▻ Updated the filter values.
+
+3.14.1
+▻ New Divination Cards 
+Winter's Embrace
+Sambodhi's Wisdom
+The Enthusiasts
+Broken Promises
+Brush, Paint and Palette
+Deadly Joy
+The Adventuring Spirit
+The Eternal War
+Prejudice
+The Shortcut
+The Card Sharp
+A Modest Request
+Luminous Trove
+The Hook
+▻ New Currency 
+Veiled Chaos Orb
+Noxious Catalyst
+Accelerating Catalyst
+Unstable Catalyst
+Tainted Oil
+▻ New Uniques 
+Glimpse of Chaos, Vaal Mask (Ultimatum exclusive)
+Mahuxotl's Machination, Steel Kite Shield (Ultimatum exclusive)
+The Scales of Justice, Chiming Spirit Shield (Labyrinth)
+? (Labyrinth)
+Cane of Kulemac, Serpentine Staff (Betrayal Mastermind)
+Atziri's Rule, Judgement Staff (Atziri)
+▻ New Map Fragments 
+Rusted Blight Scarab
+Polished Blight Scarab
+Gilded Blight Scarab
+Winged Blight Scarab
+Rusted Abyss Scarab
+Polished Abyss Scarab
+Gilded Abyss Scarab
+Winged Abyss Scarab
+Sacred Blossom
+▻ Blighted Incubator, Morphing Incubator, Maddening Incubator
+▻ Misc Map Items: Vaal Reliquary Key, Chronicle of Atzoatl, Inscribed Ultimatum
+
+----------------------------------------------------------------
 | Ritual
 ----------------------------------------------------------------
 3.13.3
