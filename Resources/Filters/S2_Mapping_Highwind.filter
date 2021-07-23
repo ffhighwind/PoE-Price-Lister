@@ -439,7 +439,7 @@ Show
 
 Show  # League Specific - Expedition - Mid
 	Class Currency
-	BaseType == "Burial Medallion" "Lesser Sun Artifact" "Lesser Order Artifact" "Lesser Black Scythe Artifact" "Lesser Broken Circle Artifact" "Common Sun Artifact" "Common Order Artifact" "Common Black Scythe Artifact" "Common Broken Circle Artifact"
+	BaseType == "Burial Medallion" "Exotic Coinage" "Scrap Metal" "Lesser Sun Artifact" "Lesser Order Artifact" "Lesser Black Scythe Artifact" "Lesser Broken Circle Artifact" "Common Sun Artifact" "Common Order Artifact" "Common Black Scythe Artifact" "Common Broken Circle Artifact"
 
 Show  # League Specific - Delirium - Delirium Orbs (Mid)
 	Class Currency
@@ -509,7 +509,7 @@ Show  # Currency - High
 
 Show  # League Specific - Expedition - High
 	Class Currency
-	BaseType == "Enkindling Orb" "Instilling Orb" "Exotic Coinage" "Scrap Metal" "Astragali" "Greater Broken Circle Artifact" "Grand Broken Circle Artifact" "Greater Black Scythe Artifact" "Grand Black Scythe Artifact" "Greater Order Artifact" "Grand Order Artifact" "Greater Sun Artifact" "Grand Sun Artifact"
+	BaseType == "Enkindling Orb" "Instilling Orb" "Astragali" "Greater Broken Circle Artifact" "Grand Broken Circle Artifact" "Greater Black Scythe Artifact" "Grand Black Scythe Artifact" "Greater Order Artifact" "Grand Order Artifact" "Greater Sun Artifact" "Grand Sun Artifact"
 	
 Show  # League Specific - Ritual - Ritual Vessels
 	Class Currency
@@ -727,7 +727,7 @@ Show  # League Specific - Expedition
 	Class "Expedition Logbook"
 	SetTextColor 235 235 235 # Expedition
 	SetBackgroundColor 0 100 255 220 # Expedition
-	SetBorderColor 255 0 0 255 # Expedition
+	SetBorderColor 0 0 0 255 # Expedition
 	SetFontSize 45
 	PlayAlertSound 3 200 # Expedition
 	MinimapIcon 0 Blue Hexagon
