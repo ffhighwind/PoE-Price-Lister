@@ -648,7 +648,7 @@ Show  # Watchstones
 	PlayEffect Red
 
 Show  # Quests
-	Class Quest "Incursion Item" "Atlas Region Upgrade Item" "Expedition Logbook"
+	Class Quest "Incursion Item" "Atlas Region Upgrade Item"
 	SetFontSize 45
 	SetTextColor 74 230 58 # Quest
 	SetBackgroundColor 12 30 12 230 # Quest
@@ -718,6 +718,20 @@ Show  # League Specific - Pieces (Harbinger)
 	PlayAlertSound 1 200 # High Value
 	MinimapIcon 0 Red UpsideDownHouse
 	PlayEffect Red
+
+#------------#
+# Expedition #
+#------------#
+
+Show  # League Specific - Expedition
+	Class "Expedition Logbook"
+	SetTextColor 235 235 235 # Expedition
+	SetBackgroundColor 0 100 255 220 # Expedition
+	SetBorderColor 255 0 0 255 # Expedition
+	SetFontSize 45
+	PlayAlertSound 3 200 # Expedition
+	MinimapIcon 0 Blue Hexagon
+	PlayEffect Blue
 
 #-------#
 # Heist #
