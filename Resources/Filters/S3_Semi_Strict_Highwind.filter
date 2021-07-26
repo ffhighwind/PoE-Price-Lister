@@ -726,8 +726,8 @@ Show  # League Specific - Expedition
 	SetBackgroundColor 0 100 255 220 # Expedition
 	SetBorderColor 255 255 255 255 # Expedition
 	SetFontSize 45
-	PlayAlertSound 3 200 # Expedition
-	MinimapIcon 0 Blue Hexagon
+	PlayAlertSound 1 200 # Expedition
+	MinimapIcon 0 Red Hexagon
 	PlayEffect Blue
 
 #-------#
