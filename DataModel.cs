@@ -419,8 +419,13 @@ namespace PoE_Price_Lister
 				line = lines.First().TrimStart();
 				if (line.StartsWith("BaseType ")) {
 					IEnumerable<string> baseTypes = SplitQuotedList(line).Skip(1);
-					FillFilterUniqueData(SC, baseTypes, value);
-					FillFilterUniqueData(HC, baseTypes, value);
+					if (baseTypes.Any()) {
+						if (new string[]{ "=", "==", ">=", "<=" }.Contains(baseTypes.First())) {
+							baseTypes = baseTypes.Skip(1);
+						}
+						FillFilterUniqueData(SC, baseTypes, value);
+						FillFilterUniqueData(HC, baseTypes, value);
+					}
 				}
 			}
 		}

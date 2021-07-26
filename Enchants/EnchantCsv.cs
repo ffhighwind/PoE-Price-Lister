@@ -41,7 +41,7 @@ namespace PoE_Price_Lister
 		public EnchantmentSource Source { get; set; }
 
 		//[FieldConverter(ConverterKind.PercentDouble)] // not working?
-		public string DropRate { get; set; }
+		//public string DropRate { get; set; }
 
 		internal class DifficultyConverter : ConverterBase
 		{

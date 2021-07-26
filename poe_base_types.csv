@@ -1,1015 +1,1028 @@
-﻿BaseType,Category,Class,DropLevel,Type,Armor,Evasion,Energy Shield,Bonus
-Arena Plate,Armour,Body Armour,32,Armour,,,,
-Assassin's Garb,Armour,Body Armour,68,Evasion,,737,,3% increased Movement Speed
-Astral Plate,Armour,Body Armour,62,Armour,,,,(8-12)% to all Elemental Resistances
-Battle Lamellar,Armour,Body Armour,54,Armour/Evasion,,297,297,
-Battle Plate,Armour,Body Armour,41,Armour,,,,
-Blood Raiment,Armour,Body Armour,65,Energy Shield/Evasion,,436,70,
-Bone Armour,Armour,Body Armour,35,Energy Shield/Evasion,,194,39,
-Bronze Plate,Armour,Body Armour,37,Armour,,,,
-Buckskin Tunic,Armour,Body Armour,17,Evasion,,176,,
-Cabalist Regalia,Armour,Body Armour,35,Energy Shield,,,71,
-Carnal Armour,Armour,Body Armour,71,Energy Shield/Evasion,,353,98,(20-25) to maximum Mana
-Chain Hauberk,Armour,Body Armour,51,Armour/Energy Shield,281,,55,
-Chainmail Doublet,Armour,Body Armour,21,Armour/Energy Shield,119,,25,
-Chainmail Tunic,Armour,Body Armour,8,Armour/Energy Shield,48,,12,
-Chainmail Vest,Armour,Body Armour,4,Armour/Energy Shield,27,,8,
-Chestplate,Armour,Body Armour,6,Armour,,,,
-Colosseum Plate,Armour,Body Armour,49,Armour,,,,
-Commander's Brigandine,Armour,Body Armour,50,Armour/Evasion,,275,275,
-Conjurer's Vestment,Armour,Body Armour,45,Energy Shield,,,89,
-Conquest Chainmail,Armour,Body Armour,61,Armour/Energy Shield,387,,75,
-Copper Plate,Armour,Body Armour,17,Armour,,,,
-Coronal Leather,Armour,Body Armour,49,Evasion,,491,,
-Crimson Raiment,Armour,Body Armour,48,Energy Shield/Evasion,,264,52,
-Crusader Chainmail,Armour,Body Armour,43,Armour/Energy Shield,237,,47,
-Crusader Plate,Armour,Body Armour,59,Armour,,,,
-Crypt Armour,Armour,Body Armour,56,Energy Shield/Evasion,,308,60,
-Cutthroat's Garb,Armour,Body Armour,53,Evasion,,530,,
-Desert Brigandine,Armour,Body Armour,60,Armour/Evasion,,376,376,
-Destiny Leather,Armour,Body Armour,59,Evasion,,601,,
-Destroyer Regalia,Armour,Body Armour,53,Energy Shield,,,104,
-Devout Chainmail,Armour,Body Armour,55,Armour/Energy Shield,302,,59,
-Dragonscale Doublet,Armour,Body Armour,57,Armour/Evasion,,313,313,
-Eelskin Tunic,Armour,Body Armour,37,Evasion,,373,,
-Elegant Ringmail,Armour,Body Armour,64,Armour/Energy Shield,377,,87,
-Exquisite Leather,Armour,Body Armour,62,Evasion,,704,,
-Field Lamellar,Armour,Body Armour,35,Armour/Evasion,,194,194,
-Frontier Leather,Armour,Body Armour,41,Evasion,,412,,
-Full Chainmail,Armour,Body Armour,32,Armour/Energy Shield,178,,36,
-Full Dragonscale,Armour,Body Armour,63,Armour/Evasion,,470,373,
-Full Leather,Armour,Body Armour,28,Evasion,,284,,
-Full Plate,Armour,Body Armour,28,Armour,,,,
-Full Ringmail,Armour,Body Armour,28,Armour/Energy Shield,156,,32,
-Full Scale Armour,Armour,Body Armour,28,Armour/Evasion,,156,156,
-Full Wyrmscale,Armour,Body Armour,46,Armour/Evasion,,254,254,
-General's Brigandine,Armour,Body Armour,66,Armour/Evasion,,415,415,
-Gladiator Plate,Armour,Body Armour,65,Armour,,,,
-Glorious Leather,Armour,Body Armour,45,Evasion,,451,,
-Glorious Plate,Armour,Body Armour,68,Armour,,,,
-Golden Mantle,Armour,Body Armour,20,,,,,(15-25)% to all Elemental Resistances
-Golden Plate,Armour,Body Armour,56,Armour,,,,
-Holy Chainmail,Armour,Body Armour,35,Armour/Energy Shield,194,,39,
-Hussar Brigandine,Armour,Body Armour,42,Armour/Evasion,,232,232,
-Infantry Brigandine,Armour,Body Armour,21,Armour/Evasion,,119,119,
-Lacquered Garb,Armour,Body Armour,52,Energy Shield/Evasion,,286,56,
-Latticed Ringmail,Armour,Body Armour,39,Armour/Energy Shield,216,,43,
-Light Brigandine,Armour,Body Armour,8,Armour/Evasion,,48,48,
-Lordly Plate,Armour,Body Armour,35,Armour,,,,
-Loricated Ringmail,Armour,Body Armour,58,Armour/Energy Shield,325,,63,
-Mage's Vestment,Armour,Body Armour,28,Energy Shield,,,58,
-Majestic Plate,Armour,Body Armour,53,Armour,,,,
-Necromancer Silks,Armour,Body Armour,59,Energy Shield,,,117,
-Occultist's Vestment,Armour,Body Armour,62,Energy Shield,,,130,(3-10)% increased Spell Damage
-Oiled Coat,Armour,Body Armour,22,Energy Shield/Evasion,,124,26,
-Oiled Vest,Armour,Body Armour,9,Energy Shield/Evasion,,54,13,
-Ornate Ringmail,Armour,Body Armour,47,Armour/Energy Shield,259,,51,
-Padded Jacket,Armour,Body Armour,18,Energy Shield/Evasion,,102,22,
-Padded Vest,Armour,Body Armour,4,Energy Shield/Evasion,,27,8,
-Plate Vest,Armour,Body Armour,1,Armour,,,,
-Quilted Jacket,Armour,Body Armour,40,Energy Shield/Evasion,,221,44,
-Ringmail Coat,Armour,Body Armour,17,Armour/Energy Shield,97,,21,
-Sacrificial Garb,Armour,Body Armour,72,Armour/Evasion/Energy Shield,329,329,64,
-Sadist Garb,Armour,Body Armour,68,Energy Shield/Evasion,,427,88,
-Sage's Robe,Armour,Body Armour,37,Energy Shield,,,74,
-Saint's Hauberk,Armour,Body Armour,67,Armour/Energy Shield,443,,73,
-Saintly Chainmail,Armour,Body Armour,70,Armour/Energy Shield,401,,91,
-Savant's Robe,Armour,Body Armour,56,Energy Shield,,,109,
-Scale Doublet,Armour,Body Armour,17,Armour/Evasion,,97,97,
-Scale Vest,Armour,Body Armour,4,Armour/Evasion,,27,27,
-Scarlet Raiment,Armour,Body Armour,28,Energy Shield/Evasion,,156,32,
-Scholar's Robe,Armour,Body Armour,18,Energy Shield,,,39,
-Sentinel Jacket,Armour,Body Armour,59,Energy Shield/Evasion,,330,64,
-Shabby Jerkin,Armour,Body Armour,2,Evasion,,29,,
-Sharkskin Tunic,Armour,Body Armour,56,Evasion,,559,,
-Silk Robe,Armour,Body Armour,32,Energy Shield,,,65,
-Silken Garb,Armour,Body Armour,25,Energy Shield,,,52,
-Silken Vest,Armour,Body Armour,11,Energy Shield,,,27,
-Silken Wrap,Armour,Body Armour,41,Energy Shield,,,82,
-Simple Robe,Armour,Body Armour,3,Energy Shield,,,12,
-Sleek Coat,Armour,Body Armour,44,Energy Shield/Evasion,,243,48,
-Soldier's Brigandine,Armour,Body Armour,32,Armour/Evasion,,178,178,
-Spidersilk Robe,Armour,Body Armour,49,Energy Shield,,,96,
-Strapped Leather,Armour,Body Armour,9,Evasion,,98,,
-Sun Leather,Armour,Body Armour,32,Evasion,,324,,
-Sun Plate,Armour,Body Armour,45,Armour,,,,
-Thief's Garb,Armour,Body Armour,35,Evasion,,353,,
-Triumphant Lamellar,Armour,Body Armour,69,Armour/Evasion,,380,477,
-Vaal Regalia,Armour,Body Armour,68,Energy Shield,,,163,
-Varnished Coat,Armour,Body Armour,62,Energy Shield/Evasion,,387,75,
-War Plate,Armour,Body Armour,21,Armour,,,,
-Waxed Garb,Armour,Body Armour,32,Energy Shield/Evasion,,178,36,
-Widowsilk Robe,Armour,Body Armour,65,Energy Shield,,,150,
-Wild Leather,Armour,Body Armour,25,Evasion,,255,,
-Wyrmscale Doublet,Armour,Body Armour,38,Armour/Evasion,,210,210,
-Zodiac Leather,Armour,Body Armour,65,Evasion,,854,,
-Ambush Boots,Armour,Boots,47,Energy Shield/Evasion,,85,17,
-Ancient Greaves,Armour,Boots,46,Armour,151,,,
-Antique Greaves,Armour,Boots,37,Armour,122,,,
-Arcanist Slippers,Armour,Boots,61,Energy Shield,,,45,
-Assassin's Boots,Armour,Boots,63,Energy Shield/Evasion,,121,24,
-Basemetal Treads,Armour,Boots,20,Armour,68,,,"(4–5)% Chance to Block Attack Damage
+﻿BaseType,Category,Class,DropLevel,Type,Armor,Evasion,Energy Shield,,Bonus
+Arena Plate,Armour,Body Armour,32,Armour,,,,,
+Assassin's Garb,Armour,Body Armour,68,Evasion,,737,,,3% increased Movement Speed
+Astral Plate,Armour,Body Armour,62,Armour,,,,,(8-12)% to all Elemental Resistances
+Battle Lamellar,Armour,Body Armour,54,Armour/Evasion,,297,297,,
+Battle Plate,Armour,Body Armour,41,Armour,,,,,
+Blood Raiment,Armour,Body Armour,65,Energy Shield/Evasion,,436,70,,
+Bone Armour,Armour,Body Armour,35,Energy Shield/Evasion,,194,39,,
+Bronze Plate,Armour,Body Armour,37,Armour,,,,,
+Buckskin Tunic,Armour,Body Armour,17,Evasion,,176,,,
+Cabalist Regalia,Armour,Body Armour,35,Energy Shield,,,71,,
+Carnal Armour,Armour,Body Armour,71,Energy Shield/Evasion,,353,98,,(20-25) to maximum Mana
+Chain Hauberk,Armour,Body Armour,51,Armour/Energy Shield,281,,55,,
+Chainmail Doublet,Armour,Body Armour,21,Armour/Energy Shield,119,,25,,
+Chainmail Tunic,Armour,Body Armour,8,Armour/Energy Shield,48,,12,,
+Chainmail Vest,Armour,Body Armour,4,Armour/Energy Shield,27,,8,,
+Chestplate,Armour,Body Armour,6,Armour,,,,,
+Colosseum Plate,Armour,Body Armour,49,Armour,,,,,
+Commander's Brigandine,Armour,Body Armour,50,Armour/Evasion,,275,275,,
+Conjurer's Vestment,Armour,Body Armour,45,Energy Shield,,,89,,
+Conquest Chainmail,Armour,Body Armour,61,Armour/Energy Shield,387,,75,,
+Copper Plate,Armour,Body Armour,17,Armour,,,,,
+Coronal Leather,Armour,Body Armour,49,Evasion,,491,,,
+Crimson Raiment,Armour,Body Armour,48,Energy Shield/Evasion,,264,52,,
+Crusader Chainmail,Armour,Body Armour,43,Armour/Energy Shield,237,,47,,
+Crusader Plate,Armour,Body Armour,59,Armour,,,,,
+Crypt Armour,Armour,Body Armour,56,Energy Shield/Evasion,,308,60,,
+Cutthroat's Garb,Armour,Body Armour,53,Evasion,,530,,,
+Desert Brigandine,Armour,Body Armour,60,Armour/Evasion,,376,376,,
+Destiny Leather,Armour,Body Armour,59,Evasion,,601,,,
+Destroyer Regalia,Armour,Body Armour,53,Energy Shield,,,104,,
+Devout Chainmail,Armour,Body Armour,55,Armour/Energy Shield,302,,59,,
+Dragonscale Doublet,Armour,Body Armour,57,Armour/Evasion,,313,313,,
+Eelskin Tunic,Armour,Body Armour,37,Evasion,,373,,,
+Elegant Ringmail,Armour,Body Armour,64,Armour/Energy Shield,377,,87,,
+Exquisite Leather,Armour,Body Armour,62,Evasion,,704,,,
+Field Lamellar,Armour,Body Armour,35,Armour/Evasion,,194,194,,
+Frontier Leather,Armour,Body Armour,41,Evasion,,412,,,
+Full Chainmail,Armour,Body Armour,32,Armour/Energy Shield,178,,36,,
+Full Dragonscale,Armour,Body Armour,63,Armour/Evasion,,470,373,,
+Full Leather,Armour,Body Armour,28,Evasion,,284,,,
+Full Plate,Armour,Body Armour,28,Armour,,,,,
+Full Ringmail,Armour,Body Armour,28,Armour/Energy Shield,156,,32,,
+Full Scale Armour,Armour,Body Armour,28,Armour/Evasion,,156,156,,
+Full Wyrmscale,Armour,Body Armour,46,Armour/Evasion,,254,254,,
+General's Brigandine,Armour,Body Armour,66,Armour/Evasion,,415,415,,
+Gladiator Plate,Armour,Body Armour,65,Armour,,,,,
+Glorious Leather,Armour,Body Armour,45,Evasion,,451,,,
+Glorious Plate,Armour,Body Armour,68,Armour,,,,,
+Golden Mantle,Armour,Body Armour,20,,,,,,(15-25)% to all Elemental Resistances
+Golden Plate,Armour,Body Armour,56,Armour,,,,,
+Holy Chainmail,Armour,Body Armour,35,Armour/Energy Shield,194,,39,,
+Hussar Brigandine,Armour,Body Armour,42,Armour/Evasion,,232,232,,
+Infantry Brigandine,Armour,Body Armour,21,Armour/Evasion,,119,119,,
+Lacquered Garb,Armour,Body Armour,52,Energy Shield/Evasion,,286,56,,
+Latticed Ringmail,Armour,Body Armour,39,Armour/Energy Shield,216,,43,,
+Light Brigandine,Armour,Body Armour,8,Armour/Evasion,,48,48,,
+Lordly Plate,Armour,Body Armour,35,Armour,,,,,
+Loricated Ringmail,Armour,Body Armour,58,Armour/Energy Shield,325,,63,,
+Mage's Vestment,Armour,Body Armour,28,Energy Shield,,,58,,
+Majestic Plate,Armour,Body Armour,53,Armour,,,,,
+Necromancer Silks,Armour,Body Armour,59,Energy Shield,,,117,,
+Occultist's Vestment,Armour,Body Armour,62,Energy Shield,,,130,,(3-10)% increased Spell Damage
+Oiled Coat,Armour,Body Armour,22,Energy Shield/Evasion,,124,26,,
+Oiled Vest,Armour,Body Armour,9,Energy Shield/Evasion,,54,13,,
+Ornate Ringmail,Armour,Body Armour,47,Armour/Energy Shield,259,,51,,
+Padded Jacket,Armour,Body Armour,18,Energy Shield/Evasion,,102,22,,
+Padded Vest,Armour,Body Armour,4,Energy Shield/Evasion,,27,8,,
+Plate Vest,Armour,Body Armour,1,Armour,,,,,
+Quilted Jacket,Armour,Body Armour,40,Energy Shield/Evasion,,221,44,,
+Ringmail Coat,Armour,Body Armour,17,Armour/Energy Shield,97,,21,,
+Sacrificial Garb,Armour,Body Armour,72,Armour/Evasion/Energy Shield,329,329,64,,
+Sadist Garb,Armour,Body Armour,68,Energy Shield/Evasion,,427,88,,
+Sage's Robe,Armour,Body Armour,37,Energy Shield,,,74,,
+Saint's Hauberk,Armour,Body Armour,67,Armour/Energy Shield,443,,73,,
+Saintly Chainmail,Armour,Body Armour,70,Armour/Energy Shield,401,,91,,
+Savant's Robe,Armour,Body Armour,56,Energy Shield,,,109,,
+Scale Doublet,Armour,Body Armour,17,Armour/Evasion,,97,97,,
+Scale Vest,Armour,Body Armour,4,Armour/Evasion,,27,27,,
+Scarlet Raiment,Armour,Body Armour,28,Energy Shield/Evasion,,156,32,,
+Scholar's Robe,Armour,Body Armour,18,Energy Shield,,,39,,
+Sentinel Jacket,Armour,Body Armour,59,Energy Shield/Evasion,,330,64,,
+Shabby Jerkin,Armour,Body Armour,2,Evasion,,29,,,
+Sharkskin Tunic,Armour,Body Armour,56,Evasion,,559,,,
+Silk Robe,Armour,Body Armour,32,Energy Shield,,,65,,
+Silken Garb,Armour,Body Armour,25,Energy Shield,,,52,,
+Silken Vest,Armour,Body Armour,11,Energy Shield,,,27,,
+Silken Wrap,Armour,Body Armour,41,Energy Shield,,,82,,
+Simple Robe,Armour,Body Armour,3,Energy Shield,,,12,,
+Sleek Coat,Armour,Body Armour,44,Energy Shield/Evasion,,243,48,,
+Soldier's Brigandine,Armour,Body Armour,32,Armour/Evasion,,178,178,,
+Spidersilk Robe,Armour,Body Armour,49,Energy Shield,,,96,,
+Strapped Leather,Armour,Body Armour,9,Evasion,,98,,,
+Sun Leather,Armour,Body Armour,32,Evasion,,324,,,
+Sun Plate,Armour,Body Armour,45,Armour,,,,,
+Thief's Garb,Armour,Body Armour,35,Evasion,,353,,,
+Triumphant Lamellar,Armour,Body Armour,69,Armour/Evasion,,380,477,,
+Vaal Regalia,Armour,Body Armour,68,Energy Shield,,,163,,
+Varnished Coat,Armour,Body Armour,62,Energy Shield/Evasion,,387,75,,
+War Plate,Armour,Body Armour,21,Armour,,,,,
+Waxed Garb,Armour,Body Armour,32,Energy Shield/Evasion,,178,36,,
+Widowsilk Robe,Armour,Body Armour,65,Energy Shield,,,150,,
+Wild Leather,Armour,Body Armour,25,Evasion,,255,,,
+Wyrmscale Doublet,Armour,Body Armour,38,Armour/Evasion,,210,210,,
+Zodiac Leather,Armour,Body Armour,65,Evasion,,854,,,
+Ambush Boots,Armour,Boots,47,Energy Shield/Evasion,,85,17,,
+Ancient Greaves,Armour,Boots,46,Armour,151,,,,
+Antique Greaves,Armour,Boots,37,Armour,122,,,,
+Arcanist Slippers,Armour,Boots,61,Energy Shield,,,45,,
+Assassin's Boots,Armour,Boots,63,Energy Shield/Evasion,,121,24,,
+Basemetal Treads,Armour,Boots,20,Armour,68,,,,"(4–5)% Chance to Block Attack Damage
 You take 20% of Damage from Blocked Hits"
-Brimstone Treads,Armour,Boots,80,Armour,236,,,"(4–5)% Chance to Block Attack Damage
+Brimstone Treads,Armour,Boots,80,Armour,236,,,,"(4–5)% Chance to Block Attack Damage
 You take 20% of Damage from Blocked Hits"
-Bronzescale Boots,Armour,Boots,30,Armour/Evasion,55,55,,
-Carnal Boots,Armour,Boots,55,Energy Shield/Evasion,,99,19,
-Chain Boots,Armour,Boots,5,Armour/Energy Shield,11,,3,
-Clasped Boots,Armour,Boots,27,Energy Shield/Evasion,,50,10,
-Cloudwhisper Boots,Armour,Boots,20,Evasion,,68,,"1 to (5–6) Added Attack Lightning Damage per 200 Accuracy Rating
+Bronzescale Boots,Armour,Boots,30,Armour/Evasion,55,55,,,
+Carnal Boots,Armour,Boots,55,Energy Shield/Evasion,,99,19,,
+Chain Boots,Armour,Boots,5,Armour/Energy Shield,11,,3,,
+Clasped Boots,Armour,Boots,27,Energy Shield/Evasion,,50,10,,
+Cloudwhisper Boots,Armour,Boots,20,Evasion,,68,,,"1 to (5–6) Added Attack Lightning Damage per 200 Accuracy Rating
 25% less Accuracy Rating"
-Conjurer Boots,Armour,Boots,53,Energy Shield,,,34,
-Crusader Boots,Armour,Boots,64,Armour/Energy Shield,121,,24,
-Darksteel Treads,Armour,Boots,50,Armour,164,,,"(4–5)% Chance to Block Attack Damage
+Conjurer Boots,Armour,Boots,53,Energy Shield,,,34,,
+Crusader Boots,Armour,Boots,64,Armour/Energy Shield,121,,24,,
+Darksteel Treads,Armour,Boots,50,Armour,164,,,,"(4–5)% Chance to Block Attack Damage
 You take 20% of Damage from Blocked Hits"
-Deerskin Boots,Armour,Boots,22,Evasion,,74,,
-Dragonscale Boots,Armour,Boots,65,Armour/Evasion,121,121,,
-Dreamquest Slippers,Armour,Boots,80,Energy Shield,,,47,"10% reduced Movement Speed
+Deerskin Boots,Armour,Boots,22,Evasion,,74,,,
+Dragonscale Boots,Armour,Boots,65,Armour/Evasion,121,121,,,
+Dreamquest Slippers,Armour,Boots,80,Energy Shield,,,47,,"10% reduced Movement Speed
 (30–40)% increased Cooldown Recovery Rate of Movement Skills"
-Duskwalk Slippers,Armour,Boots,20,Energy Shield,,,14,"10% reduced Movement Speed
+Duskwalk Slippers,Armour,Boots,20,Energy Shield,,,14,,"10% reduced Movement Speed
 (30–40)% increased Cooldown Recovery Rate of Movement Skills"
-Eelskin Boots,Armour,Boots,39,Evasion,,129,,
-Goathide Boots,Armour,Boots,12,Evasion,,42,,
-Golden Caligae,Armour,Boots,12,,,,,(8-16)% to all Elemental Resistances
-Goliath Greaves,Armour,Boots,54,Armour,177,,,
-Hydrascale Boots,Armour,Boots,59,Armour/Evasion,106,106,,
-Iron Greaves,Armour,Boots,1,Armour,6,,,
-Ironscale Boots,Armour,Boots,18,Armour/Evasion,34,34,,
-Leatherscale Boots,Armour,Boots,6,Armour/Evasion,12,12,,
-Legion Boots,Armour,Boots,58,Armour/Energy Shield,104,,20,
-Mesh Boots,Armour,Boots,28,Armour/Energy Shield,51,,10,
-Murder Boots,Armour,Boots,69,Energy Shield/Evasion,,185,17,
-Nightwind Slippers,Armour,Boots,50,Energy Shield,,,32,"10% reduced Movement Speed
+Eelskin Boots,Armour,Boots,39,Evasion,,129,,,
+Goathide Boots,Armour,Boots,12,Evasion,,42,,,
+Golden Caligae,Armour,Boots,12,,,,,,(8-16)% to all Elemental Resistances
+Goliath Greaves,Armour,Boots,54,Armour,177,,,,
+Hydrascale Boots,Armour,Boots,59,Armour/Evasion,106,106,,,
+Iron Greaves,Armour,Boots,1,Armour,6,,,,
+Ironscale Boots,Armour,Boots,18,Armour/Evasion,34,34,,,
+Leatherscale Boots,Armour,Boots,6,Armour/Evasion,12,12,,,
+Legion Boots,Armour,Boots,58,Armour/Energy Shield,104,,20,,
+Mesh Boots,Armour,Boots,28,Armour/Energy Shield,51,,10,,
+Murder Boots,Armour,Boots,69,Energy Shield/Evasion,,185,17,,
+Nightwind Slippers,Armour,Boots,50,Energy Shield,,,32,,"10% reduced Movement Speed
 (30–40)% increased Cooldown Recovery Rate of Movement Skills"
-Nubuck Boots,Armour,Boots,34,Evasion,,113,,
-Plated Greaves,Armour,Boots,23,Armour,77,,,
-Rawhide Boots,Armour,Boots,3,Evasion,,13,,
-Reinforced Greaves,Armour,Boots,33,Armour,109,,,
-Ringmail Boots,Armour,Boots,13,Armour/Energy Shield,25,,5,
-Riveted Boots,Armour,Boots,36,Armour/Energy Shield,65,,13,
-Samite Slippers,Armour,Boots,44,Energy Shield,,,29,
-Satin Slippers,Armour,Boots,38,Energy Shield,,,25,
-Scholar Boots,Armour,Boots,32,Energy Shield,,,21,
-Serpentscale Boots,Armour,Boots,42,Armour/Evasion,76,76,,
-Shackled Boots,Armour,Boots,34,Energy Shield/Evasion,,62,12,
-Shagreen Boots,Armour,Boots,55,Evasion,,180,,
-Sharkskin Boots,Armour,Boots,44,Evasion,,145,,
-Silk Slippers,Armour,Boots,22,Energy Shield,,,15,
-Slink Boots,Armour,Boots,69,Evasion,,246,,
-Soldier Boots,Armour,Boots,49,Armour/Energy Shield,88,,17,
-Sorcerer Boots,Armour,Boots,67,Energy Shield,,,49,
-Stealth Boots,Armour,Boots,62,Evasion,,220,,
-Steel Greaves,Armour,Boots,9,Armour,32,,,
-Steelscale Boots,Armour,Boots,36,Armour/Evasion,65,65,,
-Stormrider Boots,Armour,Boots,80,Evasion,,236,,"1 to (5–6) Added Attack Lightning Damage per 200 Accuracy Rating
+Nubuck Boots,Armour,Boots,34,Evasion,,113,,,
+Plated Greaves,Armour,Boots,23,Armour,77,,,,
+Rawhide Boots,Armour,Boots,3,Evasion,,13,,,
+Reinforced Greaves,Armour,Boots,33,Armour,109,,,,
+Ringmail Boots,Armour,Boots,13,Armour/Energy Shield,25,,5,,
+Riveted Boots,Armour,Boots,36,Armour/Energy Shield,65,,13,,
+Samite Slippers,Armour,Boots,44,Energy Shield,,,29,,
+Satin Slippers,Armour,Boots,38,Energy Shield,,,25,,
+Scholar Boots,Armour,Boots,32,Energy Shield,,,21,,
+Serpentscale Boots,Armour,Boots,42,Armour/Evasion,76,76,,,
+Shackled Boots,Armour,Boots,34,Energy Shield/Evasion,,62,12,,
+Shagreen Boots,Armour,Boots,55,Evasion,,180,,,
+Sharkskin Boots,Armour,Boots,44,Evasion,,145,,,
+Silk Slippers,Armour,Boots,22,Energy Shield,,,15,,
+Slink Boots,Armour,Boots,69,Evasion,,246,,,
+Soldier Boots,Armour,Boots,49,Armour/Energy Shield,88,,17,,
+Sorcerer Boots,Armour,Boots,67,Energy Shield,,,49,,
+Stealth Boots,Armour,Boots,62,Evasion,,220,,,
+Steel Greaves,Armour,Boots,9,Armour,32,,,,
+Steelscale Boots,Armour,Boots,36,Armour/Evasion,65,65,,,
+Stormrider Boots,Armour,Boots,80,Evasion,,236,,,"1 to (5–6) Added Attack Lightning Damage per 200 Accuracy Rating
 25% less Accuracy Rating"
-Strapped Boots,Armour,Boots,16,Energy Shield/Evasion,,30,6,
-Titan Greaves,Armour,Boots,68,Armour,241,,,
-Trapper Boots,Armour,Boots,41,Energy Shield/Evasion,,74,15,
-Two-Toned Boots,Armour,Boots,70,Armour/Evasion,126,126,,(8-12)% to Fire and Cold Resistances
-Two-Toned Boots,Armour,Boots,70,Armour/Energy Shield,126,,24,(8-12)% to Fire and Lightning Resistances
-Two-Toned Boots,Armour,Boots,70,Energy Shield/Evasion,,126,24,(8-12)% to Cold and Lightning Resistances
-Vaal Greaves,Armour,Boots,62,Armour,220,,,
-Velvet Slippers,Armour,Boots,9,Energy Shield,,,8,
-Windbreak Boots,Armour,Boots,50,Evasion,,164,,"1 to (5–6) Added Attack Lightning Damage per 200 Accuracy Rating
+Strapped Boots,Armour,Boots,16,Energy Shield/Evasion,,30,6,,
+Titan Greaves,Armour,Boots,68,Armour,241,,,,
+Trapper Boots,Armour,Boots,41,Energy Shield/Evasion,,74,15,,
+Two-Toned Boots,Armour,Boots,70,Armour/Evasion,126,126,,,(8-12)% to Fire and Cold Resistances
+Two-Toned Boots,Armour,Boots,70,Armour/Energy Shield,126,,24,,(8-12)% to Fire and Lightning Resistances
+Two-Toned Boots,Armour,Boots,70,Energy Shield/Evasion,,126,24,,(8-12)% to Cold and Lightning Resistances
+Vaal Greaves,Armour,Boots,62,Armour,220,,,,
+Velvet Slippers,Armour,Boots,9,Energy Shield,,,8,,
+Windbreak Boots,Armour,Boots,50,Evasion,,164,,,"1 to (5–6) Added Attack Lightning Damage per 200 Accuracy Rating
 25% less Accuracy Rating"
-Wool Shoes,Armour,Boots,3,Energy Shield,,,4,
-Wrapped Boots,Armour,Boots,6,Energy Shield/Evasion,,12,3,
-Wyrmscale Boots,Armour,Boots,51,Armour/Evasion,92,92,,
-Zealot Boots,Armour,Boots,40,Armour/Energy Shield,73,,14,
-Aetherwind Gloves,Armour,Gloves,40,Energy Shield,,,26,"30% reduced maximum Mana
+Wool Shoes,Armour,Boots,3,Energy Shield,,,4,,
+Wrapped Boots,Armour,Boots,6,Energy Shield/Evasion,,12,3,,
+Wyrmscale Boots,Armour,Boots,51,Armour/Evasion,92,92,,,
+Zealot Boots,Armour,Boots,40,Armour/Energy Shield,73,,14,,
+Aetherwind Gloves,Armour,Gloves,40,Energy Shield,,,26,,"30% reduced maximum Mana
 (25–30)% chance when you pay a Skill's Mana Cost to gain that much Mana"
-Ambush Mitts,Armour,Gloves,45,Energy Shield/Evasion,,81,16,
-Ancient Gauntlets,Armour,Gloves,47,Armour,154,,,
-Antique Gauntlets,Armour,Gloves,39,Armour,129,,,
-Arcanist Gloves,Armour,Gloves,60,Energy Shield,,,43,
-Assassin's Mitts,Armour,Gloves,58,Energy Shield/Evasion,,104,20,
-Bronze Gauntlets,Armour,Gloves,23,Armour,77,,,
-Bronzescale Gauntlets,Armour,Gloves,27,Armour/Evasion,50,50,,
-Carnal Mitts,Armour,Gloves,50,Energy Shield/Evasion,,90,18,
-Chain Gloves,Armour,Gloves,7,Armour/Energy Shield,14,,3,
-Clasped Mitts,Armour,Gloves,31,Energy Shield/Evasion,,57,11,
-Conjurer Gloves,Armour,Gloves,55,Energy Shield,,,35,
-Crusader Gloves,Armour,Gloves,66,Armour/Energy Shield,121,,24,
-Debilitation Gauntlets,Armour,Gloves,70,Armour,236,,,"Exerted Attacks deal (40–50)% increased Damage
+Ambush Mitts,Armour,Gloves,45,Energy Shield/Evasion,,81,16,,
+Ancient Gauntlets,Armour,Gloves,47,Armour,154,,,,
+Antique Gauntlets,Armour,Gloves,39,Armour,129,,,,
+Arcanist Gloves,Armour,Gloves,60,Energy Shield,,,43,,
+Assassin's Mitts,Armour,Gloves,58,Energy Shield/Evasion,,104,20,,
+Bronze Gauntlets,Armour,Gloves,23,Armour,77,,,,
+Bronzescale Gauntlets,Armour,Gloves,27,Armour/Evasion,50,50,,,
+Carnal Mitts,Armour,Gloves,50,Energy Shield/Evasion,,90,18,,
+Chain Gloves,Armour,Gloves,7,Armour/Energy Shield,14,,3,,
+Clasped Mitts,Armour,Gloves,31,Energy Shield/Evasion,,57,11,,
+Conjurer Gloves,Armour,Gloves,55,Energy Shield,,,35,,
+Crusader Gloves,Armour,Gloves,66,Armour/Energy Shield,121,,24,,
+Debilitation Gauntlets,Armour,Gloves,70,Armour,236,,,,"Exerted Attacks deal (40–50)% increased Damage
 Warcry Skills have +2 seconds to Cooldown"
-Deerskin Gloves,Armour,Gloves,21,Evasion,,71,,
-Dragonscale Gauntlets,Armour,Gloves,67,Armour/Evasion,121,121,,
-Eelskin Gloves,Armour,Gloves,38,Evasion,,125,,
-Embroidered Gloves,Armour,Gloves,36,Energy Shield,,,24,
-Fingerless Silk Gloves,Armour,Gloves,70,Energy Shield,,,43,(12-16)% increased Spell Damage
-Fishscale Gauntlets,Armour,Gloves,4,Armour/Evasion,9,9,,
-Gauche Gloves,Armour,Gloves,10,Evasion,,35,,"25% reduced Attack Damage with Main Hand
+Deerskin Gloves,Armour,Gloves,21,Evasion,,71,,,
+Dragonscale Gauntlets,Armour,Gloves,67,Armour/Evasion,121,121,,,
+Eelskin Gloves,Armour,Gloves,38,Evasion,,125,,,
+Embroidered Gloves,Armour,Gloves,36,Energy Shield,,,24,,
+Fingerless Silk Gloves,Armour,Gloves,70,Energy Shield,,,43,,(12-16)% increased Spell Damage
+Fishscale Gauntlets,Armour,Gloves,4,Armour/Evasion,9,9,,,
+Gauche Gloves,Armour,Gloves,10,Evasion,,35,,,"25% reduced Attack Damage with Main Hand
 (40–50)% increased Attack Damage with Off Hand"
-Goathide Gloves,Armour,Gloves,9,Evasion,,32,,
-Golden Bracers,Armour,Gloves,12,,,,,(20-30) to maximum Life
-Goliath Gauntlets,Armour,Gloves,53,Armour,174,,,
-Gripped Gloves,Armour,Gloves,70,Evasion,,220,,(14-18)% increased Projectile Attack Damage
-Gruelling Gauntlets,Armour,Gloves,40,Armour,132,,,"Exerted Attacks deal (30–40)% increased Damage
+Goathide Gloves,Armour,Gloves,9,Evasion,,32,,,
+Golden Bracers,Armour,Gloves,12,,,,,,(20-30) to maximum Life
+Goliath Gauntlets,Armour,Gloves,53,Armour,174,,,,
+Gripped Gloves,Armour,Gloves,70,Evasion,,220,,,(14-18)% increased Projectile Attack Damage
+Gruelling Gauntlets,Armour,Gloves,40,Armour,132,,,,"Exerted Attacks deal (30–40)% increased Damage
 Warcry Skills have +2 seconds to Cooldown"
-Hydrascale Gauntlets,Armour,Gloves,59,Armour/Evasion,106,106,,
-Iron Gauntlets,Armour,Gloves,1,Armour,6,,,
-Ironscale Gauntlets,Armour,Gloves,15,Armour/Evasion,28,28,,
-Legion Gloves,Armour,Gloves,57,Armour/Energy Shield,103,,20,
-Leyline Gloves,Armour,Gloves,10,Energy Shield,,,8,"30% reduced maximum Mana
+Hydrascale Gauntlets,Armour,Gloves,59,Armour/Evasion,106,106,,,
+Iron Gauntlets,Armour,Gloves,1,Armour,6,,,,
+Ironscale Gauntlets,Armour,Gloves,15,Armour/Evasion,28,28,,,
+Legion Gloves,Armour,Gloves,57,Armour/Energy Shield,103,,20,,
+Leyline Gloves,Armour,Gloves,10,Energy Shield,,,8,,"30% reduced maximum Mana
 (25–30)% chance when you pay a Skill's Mana Cost to gain that much Mana"
-Mesh Gloves,Armour,Gloves,32,Armour/Energy Shield,58,,12,
-Murder Mitts,Armour,Gloves,67,Energy Shield/Evasion,,121,24,
-Nexus Gloves,Armour,Gloves,70,Energy Shield,,,45,"30% reduced maximum Mana
+Mesh Gloves,Armour,Gloves,32,Armour/Energy Shield,58,,12,,
+Murder Mitts,Armour,Gloves,67,Energy Shield/Evasion,,121,24,,
+Nexus Gloves,Armour,Gloves,70,Energy Shield,,,45,,"30% reduced maximum Mana
 (25–30)% chance when you pay a Skill's Mana Cost to gain that much Mana"
-Nubuck Gloves,Armour,Gloves,33,Evasion,,109,,
-Plated Gauntlets,Armour,Gloves,11,Armour,39,,,
-Rawhide Gloves,Armour,Gloves,3,Evasion,,13,,
-Ringmail Gloves,Armour,Gloves,19,Armour/Energy Shield,35,,7,
-Riveted Gloves,Armour,Gloves,37,Armour/Energy Shield,67,,13,
-Samite Gloves,Armour,Gloves,47,Energy Shield,,,30,
-Satin Gloves,Armour,Gloves,41,Energy Shield,,,27,
-Serpentscale Gauntlets,Armour,Gloves,43,Armour/Evasion,78,78,,
-Shagreen Gloves,Armour,Gloves,54,Evasion,,177,,
-Sharkskin Gloves,Armour,Gloves,45,Evasion,,148,,
-Silk Gloves,Armour,Gloves,25,Energy Shield,,,17,
-Sinistral Gloves,Armour,Gloves,70,Evasion,,236,,"25% reduced Attack Damage with Main Hand
+Nubuck Gloves,Armour,Gloves,33,Evasion,,109,,,
+Plated Gauntlets,Armour,Gloves,11,Armour,39,,,,
+Rawhide Gloves,Armour,Gloves,3,Evasion,,13,,,
+Ringmail Gloves,Armour,Gloves,19,Armour/Energy Shield,35,,7,,
+Riveted Gloves,Armour,Gloves,37,Armour/Energy Shield,67,,13,,
+Samite Gloves,Armour,Gloves,47,Energy Shield,,,30,,
+Satin Gloves,Armour,Gloves,41,Energy Shield,,,27,,
+Serpentscale Gauntlets,Armour,Gloves,43,Armour/Evasion,78,78,,,
+Shagreen Gloves,Armour,Gloves,54,Evasion,,177,,,
+Sharkskin Gloves,Armour,Gloves,45,Evasion,,148,,,
+Silk Gloves,Armour,Gloves,25,Energy Shield,,,17,,
+Sinistral Gloves,Armour,Gloves,70,Evasion,,236,,,"25% reduced Attack Damage with Main Hand
 (40–50)% increased Attack Damage with Off Hand"
-Slink Gloves,Armour,Gloves,70,Evasion,,242,,
-Soldier Gloves,Armour,Gloves,51,Armour/Energy Shield,92,,18,
-Sorcerer Gloves,Armour,Gloves,69,Energy Shield,,,47,
-Southswing Gloves,Armour,Gloves,40,Evasion,,132,,"25% reduced Attack Damage with Main Hand
+Slink Gloves,Armour,Gloves,70,Evasion,,242,,,
+Soldier Gloves,Armour,Gloves,51,Armour/Energy Shield,92,,18,,
+Sorcerer Gloves,Armour,Gloves,69,Energy Shield,,,47,,
+Southswing Gloves,Armour,Gloves,40,Evasion,,132,,,"25% reduced Attack Damage with Main Hand
 (40–50)% increased Attack Damage with Off Hand"
-Spiked Gloves,Armour,Gloves,70,Armour,220,,,(16-20)% increased Melee Damage
-Stealth Gloves,Armour,Gloves,62,Evasion,,231,,
-Steel Gauntlets,Armour,Gloves,35,Armour,116,,,
-Steelscale Gauntlets,Armour,Gloves,36,Armour/Evasion,65,65,,
-Strapped Mitts,Armour,Gloves,16,Energy Shield/Evasion,,30,6,
-Taxing Gauntlets,Armour,Gloves,10,Armour,35,,,"Exerted Attacks deal (25–30)% increased Damage
+Spiked Gloves,Armour,Gloves,70,Armour,220,,,,(16-20)% increased Melee Damage
+Stealth Gloves,Armour,Gloves,62,Evasion,,231,,,
+Steel Gauntlets,Armour,Gloves,35,Armour,116,,,,
+Steelscale Gauntlets,Armour,Gloves,36,Armour/Evasion,65,65,,,
+Strapped Mitts,Armour,Gloves,16,Energy Shield/Evasion,,30,6,,
+Taxing Gauntlets,Armour,Gloves,10,Armour,35,,,,"Exerted Attacks deal (25–30)% increased Damage
 Warcry Skills have +2 seconds to Cooldown"
-Titan Gauntlets,Armour,Gloves,69,Armour,242,,,
-Trapper Mitts,Armour,Gloves,36,Energy Shield/Evasion,,65,13,
-Vaal Gauntlets,Armour,Gloves,63,Armour,232,,,
-Velvet Gloves,Armour,Gloves,12,Energy Shield,,,9,
-Wool Gloves,Armour,Gloves,3,Energy Shield,,,4,
-Wrapped Mitts,Armour,Gloves,5,Energy Shield/Evasion,,11,3,
-Wyrmscale Gauntlets,Armour,Gloves,49,Armour/Evasion,88,88,,
-Zealot Gloves,Armour,Gloves,43,Armour/Energy Shield,78,,15,
-Archdemon Crown,Armour,Helmet,75,Armour/Energy Shield,185,,36,"-10% to all Elemental Resistances
+Titan Gauntlets,Armour,Gloves,69,Armour,242,,,,
+Trapper Mitts,Armour,Gloves,36,Energy Shield/Evasion,,65,13,,
+Vaal Gauntlets,Armour,Gloves,63,Armour,232,,,,
+Velvet Gloves,Armour,Gloves,12,Energy Shield,,,9,,
+Wool Gloves,Armour,Gloves,3,Energy Shield,,,4,,
+Wrapped Mitts,Armour,Gloves,5,Energy Shield/Evasion,,11,3,,
+Wyrmscale Gauntlets,Armour,Gloves,49,Armour/Evasion,88,88,,,
+Zealot Gloves,Armour,Gloves,43,Armour/Energy Shield,78,,15,,
+Archdemon Crown,Armour,Helmet,75,Armour/Energy Shield,185,,36,,"-10% to all Elemental Resistances
 Socketed Skills apply Fire, Cold and Lightning Exposure on Hit"
-Atonement Mask,Armour,Helmet,45,Armour/Evasion,122,122,,"(20–25)% increased Effect of Fortify on you
+Atonement Mask,Armour,Helmet,45,Armour/Evasion,122,122,,,"(20–25)% increased Effect of Fortify on you
 You are Crushed"
-Aventail Helmet,Armour,Helmet,37,Armour/Energy Shield,101,,20,
-Barbute Helmet,Armour,Helmet,18,Armour,92,,,
-Battered Helm,Armour,Helmet,4,Armour/Evasion,13,13,,
-Blizzard Crown,Armour,Helmet,75,Energy Shield/Evasion,,185,36,"Adds (75–85) to (115–128) Cold Damage
+Aventail Helmet,Armour,Helmet,37,Armour/Energy Shield,101,,20,,
+Barbute Helmet,Armour,Helmet,18,Armour,92,,,,
+Battered Helm,Armour,Helmet,4,Armour/Evasion,13,13,,,
+Blizzard Crown,Armour,Helmet,75,Energy Shield/Evasion,,185,36,,"Adds (75–85) to (115–128) Cold Damage
 Your Hits treat Cold Resistance as 10% higher than actual value"
-Bone Circlet,Armour,Helmet,34,Energy Shield,,,34,
-Bone Helmet,Armour,Helmet,73,Armour/Energy Shield,197,,38,Minions deal (15-20)% increased Damage
-Callous Mask,Armour,Helmet,45,Energy Shield/Evasion,,122,24,
-Close Helmet,Armour,Helmet,26,Armour,130,,,
-Cone Helmet,Armour,Helmet,7,Armour,38,,,
-Crusader Helmet,Armour,Helmet,31,Armour/Energy Shield,85,,17,
-Deicide Mask,Armour,Helmet,67,Energy Shield/Evasion,,190,45,
-Demon Crown,Armour,Helmet,45,Armour/Energy Shield,122,,24,"-10% to all Elemental Resistances
+Bone Circlet,Armour,Helmet,34,Energy Shield,,,34,,
+Bone Helmet,Armour,Helmet,73,Armour/Energy Shield,197,,38,,Minions deal (15-20)% increased Damage
+Callous Mask,Armour,Helmet,45,Energy Shield/Evasion,,122,24,,
+Close Helmet,Armour,Helmet,26,Armour,130,,,,
+Cone Helmet,Armour,Helmet,7,Armour,38,,,,
+Crusader Helmet,Armour,Helmet,31,Armour/Energy Shield,85,,17,,
+Deicide Mask,Armour,Helmet,67,Energy Shield/Evasion,,190,45,,
+Demon Crown,Armour,Helmet,45,Armour/Energy Shield,122,,24,,"-10% to all Elemental Resistances
 Socketed Skills apply Fire, Cold and Lightning Exposure on Hit"
-Eternal Burgonet,Armour,Helmet,69,Armour,373,,,
-Ezomyte Burgonet,Armour,Helmet,60,Armour,346,,,
-Fencer Helm,Armour,Helmet,43,Armour/Evasion,117,117,,
-Festival Mask,Armour,Helmet,28,Energy Shield/Evasion,,77,16,
-Fluted Bascinet,Armour,Helmet,58,Armour/Evasion,160,160,,
-Gale Crown,Armour,Helmet,15,Energy Shield/Evasion,,42,9,"Adds (3–4) to (5–6) Cold Damage
+Eternal Burgonet,Armour,Helmet,69,Armour,373,,,,
+Ezomyte Burgonet,Armour,Helmet,60,Armour,346,,,,
+Fencer Helm,Armour,Helmet,43,Armour/Evasion,117,117,,,
+Festival Mask,Armour,Helmet,28,Energy Shield/Evasion,,77,16,,
+Fluted Bascinet,Armour,Helmet,58,Armour/Evasion,160,160,,,
+Gale Crown,Armour,Helmet,15,Energy Shield/Evasion,,42,9,,"Adds (3–4) to (5–6) Cold Damage
 Your Hits treat Cold Resistance as 10% higher than actual value"
-Gilded Sallet,Armour,Helmet,33,Armour/Evasion,90,90,,
-Gladiator Helmet,Armour,Helmet,35,Armour,174,,,
-Golden Mask,Armour,Helmet,35,Energy Shield/Evasion,,96,19,
-Golden Visage,Armour,Helmet,12,,,,,(8-16)% to all Elemental Resistances
-Golden Wreath,Armour,Helmet,12,,,,,(16-24) to all Attributes
-Great Crown,Armour,Helmet,53,Armour/Energy Shield,143,,28,
-Great Helmet,Armour,Helmet,22,Armour/Energy Shield,61,,13,
-Harlequin Mask,Armour,Helmet,57,Energy Shield/Evasion,,157,31,
-Hubris Circlet,Armour,Helmet,69,Energy Shield,,,76,
-Hunter Hood,Armour,Helmet,41,Evasion,,203,,
-Imp Crown,Armour,Helmet,15,Armour/Energy Shield,42,,9,"-10% to all Elemental Resistances
+Gilded Sallet,Armour,Helmet,33,Armour/Evasion,90,90,,,
+Gladiator Helmet,Armour,Helmet,35,Armour,174,,,,
+Golden Mask,Armour,Helmet,35,Energy Shield/Evasion,,96,19,,
+Golden Visage,Armour,Helmet,12,,,,,,(8-16)% to all Elemental Resistances
+Golden Wreath,Armour,Helmet,12,,,,,,(16-24) to all Attributes
+Great Crown,Armour,Helmet,53,Armour/Energy Shield,143,,28,,
+Great Helmet,Armour,Helmet,22,Armour/Energy Shield,61,,13,,
+Harlequin Mask,Armour,Helmet,57,Energy Shield/Evasion,,157,31,,
+Hubris Circlet,Armour,Helmet,69,Energy Shield,,,76,,
+Hunter Hood,Armour,Helmet,41,Evasion,,203,,,
+Imp Crown,Armour,Helmet,15,Armour/Energy Shield,42,,9,,"-10% to all Elemental Resistances
 Socketed Skills apply Fire, Cold and Lightning Exposure on Hit"
-Iron Circlet,Armour,Helmet,8,Energy Shield,,,10,
-Iron Hat,Armour,Helmet,1,Armour,9,,,
-Iron Mask,Armour,Helmet,17,Energy Shield/Evasion,,48,10,
-Lacquered Helmet,Armour,Helmet,51,Armour/Evasion,138,138,,
-Leather Cap,Armour,Helmet,3,Evasion,,19,,
-Leather Hood,Armour,Helmet,20,Evasion,,101,,
-Lion Pelt,Armour,Helmet,70,Evasion,,380,,
-Lunaris Circlet,Armour,Helmet,39,Energy Shield,,,38,
-Magistrate Crown,Armour,Helmet,58,Armour/Energy Shield,160,,31,
-Mind Cage,Armour,Helmet,65,Energy Shield,,,69,
-Necromancer Circlet,Armour,Helmet,54,Energy Shield,,,52,
-Nightmare Bascinet,Armour,Helmet,67,Armour/Evasion,162,233,,
-Noble Tricorne,Armour,Helmet,47,Evasion,,232,,
-Penitent Mask,Armour,Helmet,75,Armour/Evasion,185,185,,"(20–25)% increased Effect of Fortify on you
+Iron Circlet,Armour,Helmet,8,Energy Shield,,,10,,
+Iron Hat,Armour,Helmet,1,Armour,9,,,,
+Iron Mask,Armour,Helmet,17,Energy Shield/Evasion,,48,10,,
+Lacquered Helmet,Armour,Helmet,51,Armour/Evasion,138,138,,,
+Leather Cap,Armour,Helmet,3,Evasion,,19,,,
+Leather Hood,Armour,Helmet,20,Evasion,,101,,,
+Lion Pelt,Armour,Helmet,70,Evasion,,380,,,
+Lunaris Circlet,Armour,Helmet,39,Energy Shield,,,38,,
+Magistrate Crown,Armour,Helmet,58,Armour/Energy Shield,160,,31,,
+Mind Cage,Armour,Helmet,65,Energy Shield,,,69,,
+Necromancer Circlet,Armour,Helmet,54,Energy Shield,,,52,,
+Nightmare Bascinet,Armour,Helmet,67,Armour/Evasion,162,233,,,
+Noble Tricorne,Armour,Helmet,47,Evasion,,232,,,
+Penitent Mask,Armour,Helmet,75,Armour/Evasion,185,185,,,"(20–25)% increased Effect of Fortify on you
 You are Crushed"
-Pig-Faced Bascinet,Armour,Helmet,63,Armour/Evasion,229,159,,
-Plague Mask,Armour,Helmet,10,Energy Shield/Evasion,,29,7,
-Praetor Crown,Armour,Helmet,68,Armour/Energy Shield,161,,48,
-Prophet Crown,Armour,Helmet,63,Armour/Energy Shield,224,,30,
-Raven Mask,Armour,Helmet,38,Energy Shield/Evasion,,104,21,
-Reaver Helmet,Armour,Helmet,40,Armour,198,,,
-Regicide Mask,Armour,Helmet,52,Energy Shield/Evasion,,141,28,
-Royal Burgonet,Armour,Helmet,65,Armour,377,,,
-Rusted Coif,Armour,Helmet,5,Armour/Energy Shield,16,,4,
-Sallet,Armour,Helmet,13,Armour/Evasion,37,37,,
-Samnite Helmet,Armour,Helmet,55,Armour,276,,,
-Scare Mask,Armour,Helmet,4,Energy Shield/Evasion,,13,4,
-Secutor Helm,Armour,Helmet,36,Armour/Evasion,98,98,,
-Siege Helmet,Armour,Helmet,48,Armour,237,,,
-Silken Hood,Armour,Helmet,60,Evasion,,346,,
-Sinner Tricorne,Armour,Helmet,64,Evasion,,369,,
-Solaris Circlet,Armour,Helmet,59,Energy Shield,,,57,
-Soldier Helmet,Armour,Helmet,12,Armour/Energy Shield,34,,8,
-Sorrow Mask,Armour,Helmet,15,Armour/Evasion,42,42,,"(20-25)% increased Effect of Fortify on you
+Pig-Faced Bascinet,Armour,Helmet,63,Armour/Evasion,229,159,,,
+Plague Mask,Armour,Helmet,10,Energy Shield/Evasion,,29,7,,
+Praetor Crown,Armour,Helmet,68,Armour/Energy Shield,161,,48,,
+Prophet Crown,Armour,Helmet,63,Armour/Energy Shield,224,,30,,
+Raven Mask,Armour,Helmet,38,Energy Shield/Evasion,,104,21,,
+Reaver Helmet,Armour,Helmet,40,Armour,198,,,,
+Regicide Mask,Armour,Helmet,52,Energy Shield/Evasion,,141,28,,
+Royal Burgonet,Armour,Helmet,65,Armour,377,,,,
+Rusted Coif,Armour,Helmet,5,Armour/Energy Shield,16,,4,,
+Sallet,Armour,Helmet,13,Armour/Evasion,37,37,,,
+Samnite Helmet,Armour,Helmet,55,Armour,276,,,,
+Scare Mask,Armour,Helmet,4,Energy Shield/Evasion,,13,4,,
+Secutor Helm,Armour,Helmet,36,Armour/Evasion,98,98,,,
+Siege Helmet,Armour,Helmet,48,Armour,237,,,,
+Silken Hood,Armour,Helmet,60,Evasion,,346,,,
+Sinner Tricorne,Armour,Helmet,64,Evasion,,369,,,
+Solaris Circlet,Armour,Helmet,59,Energy Shield,,,57,,
+Soldier Helmet,Armour,Helmet,12,Armour/Energy Shield,34,,8,,
+Sorrow Mask,Armour,Helmet,15,Armour/Evasion,42,42,,,"(20-25)% increased Effect of Fortify on you
 You are Crushed
 -15% additional Physical Damage Reduction"
-Steel Circlet,Armour,Helmet,48,Energy Shield,,,46,
-Torture Cage,Armour,Helmet,17,Energy Shield,,,19,
-Tribal Circlet,Armour,Helmet,26,Energy Shield,,,27,
-Tricorne,Armour,Helmet,10,Evasion,,53,,
-Ursine Pelt,Armour,Helmet,55,Evasion,,276,,
-Vaal Mask,Armour,Helmet,62,Energy Shield/Evasion,,207,36,
-Vine Circlet,Armour,Helmet,3,Energy Shield,,,6,
-Visored Sallet,Armour,Helmet,23,Armour/Evasion,64,64,,
-Winter Crown,Armour,Helmet,45,Energy Shield/Evasion,,122,24,"Adds (15–20) to (28–35) Cold Damage
+Steel Circlet,Armour,Helmet,48,Energy Shield,,,46,,
+Torture Cage,Armour,Helmet,17,Energy Shield,,,19,,
+Tribal Circlet,Armour,Helmet,26,Energy Shield,,,27,,
+Tricorne,Armour,Helmet,10,Evasion,,53,,,
+Ursine Pelt,Armour,Helmet,55,Evasion,,276,,,
+Vaal Mask,Armour,Helmet,62,Energy Shield/Evasion,,207,36,,
+Vine Circlet,Armour,Helmet,3,Energy Shield,,,6,,
+Visored Sallet,Armour,Helmet,23,Armour/Evasion,64,64,,,
+Winter Crown,Armour,Helmet,45,Energy Shield/Evasion,,122,24,,"Adds (15–20) to (28–35) Cold Damage
 Your Hits treat Cold Resistance as 10% higher than actual value"
-Wolf Pelt,Armour,Helmet,30,Evasion,,150,,
-Zealot Helmet,Armour,Helmet,44,Armour/Energy Shield,119,,24,
-Diamond Flask,Flasks,Critical Utility Flask,27,,,,,Your Critical Strike Chance is Lucky
-Colossal Hybrid Flask,Flasks,Hybrid Flask,40,,,,,
-Hallowed Hybrid Flask,Flasks,Hybrid Flask,60,,,,,
-Large Hybrid Flask,Flasks,Hybrid Flask,30,,,,,
-Medium Hybrid Flask,Flasks,Hybrid Flask,20,,,,,
-Sacred Hybrid Flask,Flasks,Hybrid Flask,50,,,,,
-Small Hybrid Flask,Flasks,Hybrid Flask,10,,,,,
-Colossal Life Flask,Flasks,Life Flask,30,,,,,
-Divine Life Flask,Flasks,Life Flask,60,,,,,
-Eternal Life Flask,Flasks,Life Flask,65,,,,,
-Giant Life Flask,Flasks,Life Flask,24,,,,,
-Grand Life Flask,Flasks,Life Flask,18,,,,,
-Greater Life Flask,Flasks,Life Flask,12,,,,,
-Hallowed Life Flask,Flasks,Life Flask,42,,,,,
-Large Life Flask,Flasks,Life Flask,6,,,,,
-Medium Life Flask,Flasks,Life Flask,3,,,,,
-Sacred Life Flask,Flasks,Life Flask,36,,,,,
-Sanctified Life Flask,Flasks,Life Flask,50,,,,,
-Small Life Flask,Flasks,Life Flask,1,,,,,
-Colossal Mana Flask,Flasks,Mana Flask,30,,,,,
-Divine Mana Flask,Flasks,Mana Flask,60,,,,,
-Eternal Mana Flask,Flasks,Mana Flask,65,,,,,
-Giant Mana Flask,Flasks,Mana Flask,24,,,,,
-Grand Mana Flask,Flasks,Mana Flask,18,,,,,
-Greater Mana Flask,Flasks,Mana Flask,12,,,,,
-Hallowed Mana Flask,Flasks,Mana Flask,42,,,,,
-Large Mana Flask,Flasks,Mana Flask,6,,,,,
-Medium Mana Flask,Flasks,Mana Flask,3,,,,,
-Sacred Mana Flask,Flasks,Mana Flask,36,,,,,
-Sanctified Mana Flask,Flasks,Mana Flask,50,,,,,
-Small Mana Flask,Flasks,Mana Flask,1,,,,,
-Amethyst Flask,Flasks,Utility Flask,18,,,,,35% to Chaos Resistance
-Aquamarine Flask,Flasks,Utility Flask,27,,,,,"20% chance to Avoid Cold Damage when Hit
+Wolf Pelt,Armour,Helmet,30,Evasion,,150,,,
+Zealot Helmet,Armour,Helmet,44,Armour/Energy Shield,119,,24,,
+Diamond Flask,Flasks,Critical Utility Flask,27,,,,,,Your Critical Strike Chance is Lucky
+Colossal Hybrid Flask,Flasks,Hybrid Flask,40,,,,,,
+Hallowed Hybrid Flask,Flasks,Hybrid Flask,60,,,,,,
+Large Hybrid Flask,Flasks,Hybrid Flask,30,,,,,,
+Medium Hybrid Flask,Flasks,Hybrid Flask,20,,,,,,
+Sacred Hybrid Flask,Flasks,Hybrid Flask,50,,,,,,
+Small Hybrid Flask,Flasks,Hybrid Flask,10,,,,,,
+Colossal Life Flask,Flasks,Life Flask,30,,,,,,
+Divine Life Flask,Flasks,Life Flask,60,,,,,,
+Eternal Life Flask,Flasks,Life Flask,65,,,,,,
+Giant Life Flask,Flasks,Life Flask,24,,,,,,
+Grand Life Flask,Flasks,Life Flask,18,,,,,,
+Greater Life Flask,Flasks,Life Flask,12,,,,,,
+Hallowed Life Flask,Flasks,Life Flask,42,,,,,,
+Large Life Flask,Flasks,Life Flask,6,,,,,,
+Medium Life Flask,Flasks,Life Flask,3,,,,,,
+Sacred Life Flask,Flasks,Life Flask,36,,,,,,
+Sanctified Life Flask,Flasks,Life Flask,50,,,,,,
+Small Life Flask,Flasks,Life Flask,1,,,,,,
+Colossal Mana Flask,Flasks,Mana Flask,30,,,,,,
+Divine Mana Flask,Flasks,Mana Flask,60,,,,,,
+Eternal Mana Flask,Flasks,Mana Flask,65,,,,,,
+Giant Mana Flask,Flasks,Mana Flask,24,,,,,,
+Grand Mana Flask,Flasks,Mana Flask,18,,,,,,
+Greater Mana Flask,Flasks,Mana Flask,12,,,,,,
+Hallowed Mana Flask,Flasks,Mana Flask,42,,,,,,
+Large Mana Flask,Flasks,Mana Flask,6,,,,,,
+Medium Mana Flask,Flasks,Mana Flask,3,,,,,,
+Sacred Mana Flask,Flasks,Mana Flask,36,,,,,,
+Sanctified Mana Flask,Flasks,Mana Flask,50,,,,,,
+Small Mana Flask,Flasks,Mana Flask,1,,,,,,
+Amethyst Flask,Flasks,Utility Flask,18,,,,,,35% to Chaos Resistance
+Aquamarine Flask,Flasks,Utility Flask,27,,,,,,"20% chance to Avoid Cold Damage when Hit
 Creates Chilled Ground on Use"
-Basalt Flask,Flasks,Utility Flask,40,,,,,"15% additional Physical Damage Reduction
+Basalt Flask,Flasks,Utility Flask,40,,,,,,"15% additional Physical Damage Reduction
 20% of Melee Physical Damage taken reflected to Attacker"
-Bismuth Flask,Flasks,Utility Flask,8,,,,,35% to all Elemental Resistances
-Granite Flask,Flasks,Utility Flask,27,,,,,3000 Armour
-Jade Flask,Flasks,Utility Flask,27,,,,,3000 Evasion Rating
-Quartz Flask,Flasks,Utility Flask,27,,,,,"Phasing
+Bismuth Flask,Flasks,Utility Flask,8,,,,,,35% to all Elemental Resistances
+Granite Flask,Flasks,Utility Flask,27,,,,,,3000 Armour
+Jade Flask,Flasks,Utility Flask,27,,,,,,3000 Evasion Rating
+Quartz Flask,Flasks,Utility Flask,27,,,,,,"Phasing
 10% chance to Dodge Attack Hits
 10% chance to Dodge Spell Hits"
-Quicksilver Flask,Flasks,Utility Flask,4,,,,,40% increased Movement Speed
-Ruby Flask,Flasks,Utility Flask,18,,,,,
-Sapphire Flask,Flasks,Utility Flask,18,,,,,
-Silver Flask,Flasks,Utility Flask,22,,,,,Onslaught
-Stibnite Flask,Flasks,Utility Flask,14,,,,,"100% increased Evasion Rating
+Quicksilver Flask,Flasks,Utility Flask,4,,,,,,40% increased Movement Speed
+Ruby Flask,Flasks,Utility Flask,18,,,,,,
+Sapphire Flask,Flasks,Utility Flask,18,,,,,,
+Silver Flask,Flasks,Utility Flask,22,,,,,,Onslaught
+Stibnite Flask,Flasks,Utility Flask,14,,,,,,"100% increased Evasion Rating
 Creates a Smoke Cloud on Use"
-Sulphur Flask,Flasks,Utility Flask,35,,,,,"40% increased Damage
+Sulphur Flask,Flasks,Utility Flask,35,,,,,,"40% increased Damage
 Creates Consecrated Ground on Use"
-Topaz Flask,Flasks,Utility Flask,18,,,,,
-Agate Amulet,Jewellery,Amulet,16,,,,,(16-24) to Strength and Intelligence
-Amber Amulet,Jewellery,Amulet,5,,,,,(20-30) to Strength
-Ashscale Talisman,Jewellery,Amulet,1,,,,,"(20-30)% increased Fire Damage
+Topaz Flask,Flasks,Utility Flask,18,,,,,,
+Agate Amulet,Jewellery,Amulet,16,,,,,,(16-24) to Strength and Intelligence
+Amber Amulet,Jewellery,Amulet,5,,,,,,(20-30) to Strength
+Ashscale Talisman,Jewellery,Amulet,1,,,,,,"(20-30)% increased Fire Damage
 Corrupted"
-Astrolabe Amulet,Jewellery,Amulet,69,,,,,"Has Elder, Shaper and all Conqueror Influences
+Astrolabe Amulet,Jewellery,Amulet,69,,,,,,"Has Elder, Shaper and all Conqueror Influences
 Implicit Modifiers Cannot Be Changed"
-Avian Twins Talisman,Jewellery,Amulet,1,,,,,"50% of Fire Damage from Hits taken as Cold Damage
+Avian Twins Talisman,Jewellery,Amulet,1,,,,,,"50% of Fire Damage from Hits taken as Cold Damage
 Corrupted"
-Avian Twins Talisman,Jewellery,Amulet,1,,,,,"50% of Fire Damage from Hits taken as Lightning Damage
+Avian Twins Talisman,Jewellery,Amulet,1,,,,,,"50% of Fire Damage from Hits taken as Lightning Damage
 Corrupted"
-Avian Twins Talisman,Jewellery,Amulet,1,,,,,"50% of Cold Damage from Hits taken as Fire Damage
+Avian Twins Talisman,Jewellery,Amulet,1,,,,,,"50% of Cold Damage from Hits taken as Fire Damage
 Corrupted"
-Avian Twins Talisman,Jewellery,Amulet,1,,,,,"50% of Cold Damage from Hits taken as Lightning Damage
+Avian Twins Talisman,Jewellery,Amulet,1,,,,,,"50% of Cold Damage from Hits taken as Lightning Damage
 Corrupted"
-Avian Twins Talisman,Jewellery,Amulet,1,,,,,"50% of Lightning Damage from Hits taken as Cold Damage
+Avian Twins Talisman,Jewellery,Amulet,1,,,,,,"50% of Lightning Damage from Hits taken as Cold Damage
 Corrupted"
-Avian Twins Talisman,Jewellery,Amulet,1,,,,,"50% of Lightning Damage from Hits taken as Fire Damage
+Avian Twins Talisman,Jewellery,Amulet,1,,,,,,"50% of Lightning Damage from Hits taken as Fire Damage
 Corrupted"
-Black Maw Talisman,Jewellery,Amulet,1,,,,,"Has 1 Socket
+Black Maw Talisman,Jewellery,Amulet,1,,,,,,"Has 1 Socket
 Corrupted"
-Blue Pearl Amulet,Jewellery,Amulet,77,,,,,(48-56)% increased Mana Regeneration Rate
-Bonespire Talisman,Jewellery,Amulet,1,,,,,"(20-30)% increased maximum Mana
+Blue Pearl Amulet,Jewellery,Amulet,77,,,,,,(48-56)% increased Mana Regeneration Rate
+Bonespire Talisman,Jewellery,Amulet,1,,,,,,"(20-30)% increased maximum Mana
 Corrupted"
-Breakrib Talisman,Jewellery,Amulet,1,,,,,"(20-30)% increased Global Physical Damage
+Breakrib Talisman,Jewellery,Amulet,1,,,,,,"(20-30)% increased Global Physical Damage
 Corrupted"
-Chrysalis Talisman,Jewellery,Amulet,1,,,,,"(20-30)% increased Spell Damage
+Chrysalis Talisman,Jewellery,Amulet,1,,,,,,"(20-30)% increased Spell Damage
 Corrupted"
-Citrine Amulet,Jewellery,Amulet,16,,,,,(16-24) to Strength and Dexterity
-Clutching Talisman,Jewellery,Amulet,1,,,,,"(15-25)% increased Global Defences
+Citrine Amulet,Jewellery,Amulet,16,,,,,,(16-24) to Strength and Dexterity
+Clutching Talisman,Jewellery,Amulet,1,,,,,,"(15-25)% increased Global Defences
 Corrupted"
-Coral Amulet,Jewellery,Amulet,1,,,,,Regenerate (2-4) Life per second
-Deadhand Talisman,Jewellery,Amulet,1,,,,,"(19-31)% increased Chaos Damage
+Coral Amulet,Jewellery,Amulet,1,,,,,,Regenerate (2-4) Life per second
+Deadhand Talisman,Jewellery,Amulet,1,,,,,,"(19-31)% increased Chaos Damage
 Corrupted"
-Deep One Talisman,Jewellery,Amulet,1,,,,,"(20-30)% increased Cold Damage
+Deep One Talisman,Jewellery,Amulet,1,,,,,,"(20-30)% increased Cold Damage
 Corrupted"
-Fangjaw Talisman,Jewellery,Amulet,1,,,,,"(8-12)% increased maximum Life
+Fangjaw Talisman,Jewellery,Amulet,1,,,,,,"(8-12)% increased maximum Life
 Corrupted"
-Gold Amulet,Jewellery,Amulet,8,,,,,(12-20)% increased Rarity of Items found
-Greatwolf Talisman,Jewellery,Amulet,1,,,,,"<Two random talisman implicit modifiers>
+Gold Amulet,Jewellery,Amulet,8,,,,,,(12-20)% increased Rarity of Items found
+Greatwolf Talisman,Jewellery,Amulet,1,,,,,,"<Two random talisman implicit modifiers>
 Corrupted"
-Hexclaw Talisman,Jewellery,Amulet,1,,,,,"(40-50)% increased Global Critical Strike Chance
+Hexclaw Talisman,Jewellery,Amulet,1,,,,,,"(40-50)% increased Global Critical Strike Chance
 Corrupted"
-Horned Talisman,Jewellery,Amulet,1,,,,,"Projectiles Pierce 2 additional Targets
+Horned Talisman,Jewellery,Amulet,1,,,,,,"Projectiles Pierce 2 additional Targets
 Corrupted"
-Jade Amulet,Jewellery,Amulet,5,,,,,(20-30) to Dexterity
-Jet Amulet,Jewellery,Amulet,12,,,,,(8-12)% to all Elemental Resistances
-Lapis Amulet,Jewellery,Amulet,5,,,,,(20-30) to Intelligence
-Lone Antler Talisman,Jewellery,Amulet,1,,,,,"(20-30)% increased Lightning Damage
+Jade Amulet,Jewellery,Amulet,5,,,,,,(20-30) to Dexterity
+Jet Amulet,Jewellery,Amulet,12,,,,,,(8-12)% to all Elemental Resistances
+Lapis Amulet,Jewellery,Amulet,5,,,,,,(20-30) to Intelligence
+Lone Antler Talisman,Jewellery,Amulet,1,,,,,,"(20-30)% increased Lightning Damage
 Corrupted"
-Longtooth Talisman,Jewellery,Amulet,1,,,,,"(4-6)% additional Physical Damage Reduction
+Longtooth Talisman,Jewellery,Amulet,1,,,,,,"(4-6)% additional Physical Damage Reduction
 Corrupted"
-Mandible Talisman,Jewellery,Amulet,1,,,,,"(6-10)% increased Attack and Cast Speed
+Mandible Talisman,Jewellery,Amulet,1,,,,,,"(6-10)% increased Attack and Cast Speed
 Corrupted"
-Marble Amulet,Jewellery,Amulet,74,,,,,Regenerate (1.2-1.6)% of Life per second
-Monkey Paw Talisman,Jewellery,Amulet,1,,,,,"10% chance to gain a Power Charge on Kill
+Marble Amulet,Jewellery,Amulet,74,,,,,,Regenerate (1.2-1.6)% of Life per second
+Monkey Paw Talisman,Jewellery,Amulet,1,,,,,,"10% chance to gain a Power Charge on Kill
 Corrupted"
-Monkey Paw Talisman,Jewellery,Amulet,1,,,,,"10% chance to gain a Frenzy Charge on Kill
+Monkey Paw Talisman,Jewellery,Amulet,1,,,,,,"10% chance to gain a Frenzy Charge on Kill
 Corrupted"
-Monkey Paw Talisman,Jewellery,Amulet,1,,,,,"10% chance to gain an Endurance Charge on Kill
+Monkey Paw Talisman,Jewellery,Amulet,1,,,,,,"10% chance to gain an Endurance Charge on Kill
 Corrupted"
-Monkey Twins Talisman,Jewellery,Amulet,1,,,,,"(5-8)% increased Area of Effect
+Monkey Twins Talisman,Jewellery,Amulet,1,,,,,,"(5-8)% increased Area of Effect
 Corrupted"
-Onyx Amulet,Jewellery,Amulet,20,,,,,(10-16) to all Attributes
-Paua Amulet,Jewellery,Amulet,1,,,,,(20-30)% increased Mana Regeneration Rate
-Primal Skull Talisman,Jewellery,Amulet,1,,,,,"Regenerate 2% of Life per second
+Onyx Amulet,Jewellery,Amulet,20,,,,,,(10-16) to all Attributes
+Paua Amulet,Jewellery,Amulet,1,,,,,,(20-30)% increased Mana Regeneration Rate
+Primal Skull Talisman,Jewellery,Amulet,1,,,,,,"Regenerate 2% of Life per second
 Corrupted"
-Rot Head Talisman,Jewellery,Amulet,1,,,,,"(30-40)% increased Fish Bite Sensitivity
+Rot Head Talisman,Jewellery,Amulet,1,,,,,,"(30-40)% increased Fish Bite Sensitivity
 Corrupted"
-Rotfeather Talisman,Jewellery,Amulet,1,,,,,"(25-35)% increased Damage
+Rotfeather Talisman,Jewellery,Amulet,1,,,,,,"(25-35)% increased Damage
 Corrupted"
-Ruby Amulet,Jewellery,Amulet,50,,,,,(20-30)% to Fire Resistance
-Simplex Amulet,Jewellery,Amulet,24,,,,,"-1 Prefix Modifier allowed
+Ruby Amulet,Jewellery,Amulet,50,,,,,,(20-30)% to Fire Resistance
+Simplex Amulet,Jewellery,Amulet,24,,,,,,"-1 Prefix Modifier allowed
 -1 Suffix Modifier allowed
 Implicit Modifiers Cannot Be Changed
 25% increased Explicit Modifier magnitudes"
-Spinefuse Talisman,Jewellery,Amulet,1,,,,,"(6-10)% increased Quantity of Items found
+Spinefuse Talisman,Jewellery,Amulet,1,,,,,,"(6-10)% increased Quantity of Items found
 Corrupted"
-Splitnewt Talisman,Jewellery,Amulet,1,,,,,"(4-6)% chance to Freeze, Shock and Ignite
+Splitnewt Talisman,Jewellery,Amulet,1,,,,,,"(4-6)% chance to Freeze, Shock and Ignite
 Corrupted"
-Three Hands Talisman,Jewellery,Amulet,1,,,,,"Gain (6-12)% of Physical Damage as Extra Damage of a random Element
+Three Hands Talisman,Jewellery,Amulet,1,,,,,,"Gain (6-12)% of Physical Damage as Extra Damage of a random Element
 Corrupted"
-Three Rat Talisman,Jewellery,Amulet,1,,,,,"(12-16)% increased Attributes
+Three Rat Talisman,Jewellery,Amulet,1,,,,,,"(12-16)% increased Attributes
 Corrupted"
-Turquoise Amulet,Jewellery,Amulet,16,,,,,(16-24) to Dexterity and Intelligence
-Undying Flesh Talisman,Jewellery,Amulet,1,,,,,"1 to maximum number of Raised Zombies
+Turquoise Amulet,Jewellery,Amulet,16,,,,,,(16-24) to Dexterity and Intelligence
+Undying Flesh Talisman,Jewellery,Amulet,1,,,,,,"1 to maximum number of Raised Zombies
 Corrupted"
-Wereclaw Talisman,Jewellery,Amulet,1,,,,,"(24-36)% to Global Critical Strike Multiplier
+Wereclaw Talisman,Jewellery,Amulet,1,,,,,,"(24-36)% to Global Critical Strike Multiplier
 Corrupted"
-Writhing Talisman,Jewellery,Amulet,1,,,,,"(20-30)% increased Attack Damage
+Writhing Talisman,Jewellery,Amulet,1,,,,,,"(20-30)% increased Attack Damage
 Corrupted"
-Chain Belt,Jewellery,Belt,1,,,,,(9-20) to maximum Energy Shield
-Cloth Belt,Jewellery,Belt,16,,,,,(15-25)% increased Stun and Block Recovery
-Crystal Belt,Jewellery,Belt,79,,,,,(60-80) to maximum Energy Shield
-Golden Obi,Jewellery,Belt,1,,,,,(20-30)% increased Rarity of Items found
-Heavy Belt,Jewellery,Belt,8,,,,,(25-35) to Strength
-Leather Belt,Jewellery,Belt,8,,,,,(25-40) to maximum Life
-Mechalarm Belt,Jewellery,Belt,56,,,,,Trigger Level 20 Summon Taunting Contraption when you use a Flask
-Micro-Distillery Belt,Jewellery,Belt,24,,,,,"Can't use Flask in Fifth Slot
+Chain Belt,Jewellery,Belt,1,,,,,,(9-20) to maximum Energy Shield
+Cloth Belt,Jewellery,Belt,16,,,,,,(15-25)% increased Stun and Block Recovery
+Crystal Belt,Jewellery,Belt,79,,,,,,(60-80) to maximum Energy Shield
+Golden Obi,Jewellery,Belt,1,,,,,,(20-30)% increased Rarity of Items found
+Heavy Belt,Jewellery,Belt,8,,,,,,(25-35) to Strength
+Leather Belt,Jewellery,Belt,8,,,,,,(25-40) to maximum Life
+Mechalarm Belt,Jewellery,Belt,56,,,,,,Trigger Level 20 Summon Taunting Contraption when you use a Flask
+Micro-Distillery Belt,Jewellery,Belt,24,,,,,,"Can't use Flask in Fifth Slot
 Flasks applied to you have 20% increased Effect"
-Rustic Sash,Jewellery,Belt,1,,,,,(12-24)% increased Global Physical Damage
-Studded Belt,Jewellery,Belt,16,,,,,(20-30)% increased Stun Duration on Enemies
-Stygian Vise,Jewellery,Belt,1,,,,,Has 1 Abyssal Socket
-Vanguard Belt,Jewellery,Belt,78,,,,,(260-320) to Armour and Evasion Rating
-Amethyst Ring,Jewellery,Ring,30,,,,,(9-13)% to Chaos Resistance
-Breach Ring,Jewellery,Ring,1,,,,,Properties are doubled while in a BreachCorrupted
-Cogwork Ring,Jewellery,Ring,24,,,,,"-1 Prefix Modifier allowed
+Rustic Sash,Jewellery,Belt,1,,,,,,(12-24)% increased Global Physical Damage
+Studded Belt,Jewellery,Belt,16,,,,,,(20-30)% increased Stun Duration on Enemies
+Stygian Vise,Jewellery,Belt,1,,,,,,Has 1 Abyssal Socket
+Vanguard Belt,Jewellery,Belt,78,,,,,,(260-320) to Armour and Evasion Rating
+Amethyst Ring,Jewellery,Ring,30,,,,,,(9-13)% to Chaos Resistance
+Breach Ring,Jewellery,Ring,1,,,,,,Properties are doubled while in a BreachCorrupted
+Cogwork Ring,Jewellery,Ring,24,,,,,,"-1 Prefix Modifier allowed
 +1 Suffix Modifier allowed
 Implicit Modifiers Cannot Be Changed"
-Coral Ring,Jewellery,Ring,1,,,,,(20-30) to maximum Life
-Diamond Ring,Jewellery,Ring,20,,,,,(20-30)% increased Global Critical Strike Chance
-Geodesic Ring,Jewellery,Ring,24,,,,,"1 Prefix Modifier allowed
+Coral Ring,Jewellery,Ring,1,,,,,,(20-30) to maximum Life
+Diamond Ring,Jewellery,Ring,20,,,,,,(20-30)% increased Global Critical Strike Chance
+Geodesic Ring,Jewellery,Ring,24,,,,,,"1 Prefix Modifier allowed
 -1 Suffix Modifier allowed
 Implicit Modifiers Cannot Be Changed"
-Gold Ring,Jewellery,Ring,20,,,,,(6-15)% increased Rarity of Items found
-Golden Hoop,Jewellery,Ring,12,,,,,(8-12) to all Attributes
-Iron Ring,Jewellery,Ring,1,,,,,Adds 1 to 4 Physical Damage to Attacks
-Jet Ring,Jewellery,Ring,1,,,,,(5-10)% increased Global Defences
-Moonstone Ring,Jewellery,Ring,20,,,,,(15-25) to maximum Energy Shield
-Opal Ring,Jewellery,Ring,80,,,,,(15-25)% increased Elemental Damage
-Paua Ring,Jewellery,Ring,1,,,,,(20-30) to maximum Mana
-Prismatic Ring,Jewellery,Ring,30,,,,,(8-10)% to all Elemental Resistances
-Ruby Ring,Jewellery,Ring,16,,,,,(20-30)% to Fire Resistance
-Sapphire Ring,Jewellery,Ring,8,,,,,(20-30)% to Cold Resistance
-Steel Ring,Jewellery,Ring,80,,,,,Adds (3-4) to (10-14) Physical Damage to Attacks
-Topaz Ring,Jewellery,Ring,12,,,,,(20-30)% to Lightning Resistance
-Two-Stone Ring,Jewellery,Ring,20,,,,,(12-16)% to Fire and Cold Resistances
-Two-Stone Ring,Jewellery,Ring,20,,,,,(12-16)% to Cold and Lightning Resistances
-Two-Stone Ring,Jewellery,Ring,20,,,,,(12-16)% to Fire and Lightning Resistances
-Unset Ring,Jewellery,Ring,5,,,,,Has 1 Socket
-Vermillion Ring,Jewellery,Ring,80,,,,,(5-7)% increased maximum Life
-Blunt Arrow Quiver,Off-hand,Quiver,16,,,,,(25-35)% increased Stun Duration on Enemies
-Broadhead Arrow Quiver,Off-hand,Quiver,28,,,,,Adds 6 to 12 Physical Damage to Bow Attacks
-Fire Arrow Quiver,Off-hand,Quiver,22,,,,,Adds 4 to 8 Fire Damage to Bow Attacks
-Heavy Quiver,Off-hand,Quiver,5,,,,,Adds 1 to 4 Physical Damage to Attacks
-Ornate Quiver,Off-hand,Quiver,45,,,,,Has 1 Socket
-Penetrating Arrow Quiver,Off-hand,Quiver,36,,,,,Arrows Pierce an additional Target
-Serrated Arrow Quiver,Off-hand,Quiver,5,,,,,Adds 1 to 4 Physical Damage to Bow Attacks
-Sharktooth Arrow Quiver,Off-hand,Quiver,10,,,,,(3-4) Life gained for each Enemy hit by your Attacks
-Spike-Point Arrow Quiver,Off-hand,Quiver,45,,,,,(20-30)% increased Global Critical Strike Chance
-Two-Point Arrow Quiver,Off-hand,Quiver,4,,,,,(20-30)% increased Global Accuracy Rating
-Alder Spiked Shield,Off-hand,Shield,58,Energy Shield/Evasion,,209,41,2% chance to Dodge Attack Hits
-Alloyed Spiked Shield,Off-hand,Shield,20,Energy Shield/Evasion,,56,12,2% chance to Dodge Spell Hits
-Ancient Spirit Shield,Off-hand,Shield,45,Energy Shield,,,36,(5-10)% increased Spell Damage
-Angelic Kite Shield,Off-hand,Shield,55,Armour/Energy Shield,124,,24,12% to all Elemental Resistances
-Archon Kite Shield,Off-hand,Shield,68,Armour/Energy Shield,156,,30,12% to all Elemental Resistances
-Baroque Round Shield,Off-hand,Shield,54,Armour/Evasion,122,122,,120% increased Block Recovery
-Battle Buckler,Off-hand,Shield,50,Evasion,,246,,9% increased Movement Speed
-Bone Spirit Shield,Off-hand,Shield,15,Energy Shield,,,14,(15-20)% increased Spell Damage
-Branded Kite Shield,Off-hand,Shield,59,Armour/Energy Shield,186,,36,4% to all Elemental Resistances
-Brass Spirit Shield,Off-hand,Shield,33,Energy Shield,,,33,
-Bronze Tower Shield,Off-hand,Shield,47,Armour,367,,,(30-40) to maximum Life
-Buckskin Tower Shield,Off-hand,Shield,39,Armour,177,,,(10-20) to maximum Life
-Burnished Spiked Shield,Off-hand,Shield,27,Energy Shield/Evasion,,62,13,4% chance to Dodge Attack Hits
-Cardinal Round Shield,Off-hand,Shield,66,Armour/Evasion,209,209,,
-Cedar Tower Shield,Off-hand,Shield,17,Armour,108,,,(20-30) to maximum Life
-Ceremonial Kite Shield,Off-hand,Shield,34,Armour/Energy Shield,77,,16,12% to all Elemental Resistances
-Champion Kite Shield,Off-hand,Shield,62,Armour/Energy Shield,215,,42,
-Chiming Spirit Shield,Off-hand,Shield,49,Energy Shield,,,39,(10-15)% increased Spell Damage
-Cold-attuned Buckler,Off-hand,Shield,70,Evasion,,302,,Inflict Brittle on Enemies when you Block their Damage
-Colossal Tower Shield,Off-hand,Shield,67,Armour,632,,,(10-20) to maximum Life
-Compound Spiked Shield,Off-hand,Shield,45,Energy Shield/Evasion,,122,24,2% chance to Dodge Spell Hits
-Copper Tower Shield,Off-hand,Shield,24,Armour,191,,,(30-40) to maximum Life
-Corroded Tower Shield,Off-hand,Shield,5,Armour,46,,,(10-20) to maximum Life
-Corrugated Buckler,Off-hand,Shield,46,Evasion,,189,,3% increased Movement Speed
-Crested Tower Shield,Off-hand,Shield,55,Armour,338,,,(20-30) to maximum Life
-Crimson Round Shield,Off-hand,Shield,49,Armour/Evasion,155,155,,
-Crusader Buckler,Off-hand,Shield,66,Evasion,,330,,9% increased Movement Speed
-Driftwood Spiked Shield,Off-hand,Shield,12,Energy Shield/Evasion,,46,10,2% chance to Dodge Attack Hits
-Ebony Tower Shield,Off-hand,Shield,61,Armour,412,,,(20-30) to maximum Life
-Elegant Round Shield,Off-hand,Shield,70,Armour/Evasion,148,148,,120% increased Block Recovery
-Enameled Buckler,Off-hand,Shield,42,Evasion,,277,,6% increased Movement Speed
-Endothermic Buckler,Off-hand,Shield,30,Evasion,,112,,Inflict Brittle on Enemies when you Block their Damage
-Etched Kite Shield,Off-hand,Shield,40,Armour/Energy Shield,127,,25,4% to all Elemental Resistances
-Exhausting Spirit Shield,Off-hand,Shield,30,Energy Shield,,,23,Sap Enemies when you Block their Damage
-Exothermic Tower Shield,Off-hand,Shield,30,Armour,125,,,Scorch Enemies when you Block their Damage
-Ezomyte Spiked Shield,Off-hand,Shield,62,Energy Shield/Evasion,,181,35,2% chance to Dodge Spell Hits
-Ezomyte Tower Shield,Off-hand,Shield,64,Armour,522,,,(30-40) to maximum Life
-Fir Round Shield,Off-hand,Shield,12,Armour/Evasion,29,29,,180% increased Block Recovery
-Fossilised Spirit Shield,Off-hand,Shield,59,Energy Shield,,,47,(15-20)% increased Spell Damage
-Gilded Buckler,Off-hand,Shield,34,Evasion,,197,,6% increased Movement Speed
-Girded Tower Shield,Off-hand,Shield,51,Armour,481,,,(10-20) to maximum Life
-Goathide Buckler,Off-hand,Shield,2,Evasion,,12,,3% increased Movement Speed
-Golden Buckler,Off-hand,Shield,54,Evasion,,310,,6% increased Movement Speed
-Golden Flame,Off-hand,Shield,15,,,,,(11-19)% to Chaos Resistance
-Hammered Buckler,Off-hand,Shield,23,Evasion,,96,,3% increased Movement Speed
-Harmonic Spirit Shield,Off-hand,Shield,65,Energy Shield,,,55,(10-15)% increased Spell Damage
-Heat-attuned Tower Shield,Off-hand,Shield,70,Armour,440,,,Scorch Enemies when you Block their Damage
-Imperial Buckler,Off-hand,Shield,69,Evasion,,385,,6% increased Movement Speed
-Ironwood Buckler,Off-hand,Shield,57,Evasion,,280,,3% increased Movement Speed
-Ivory Spirit Shield,Off-hand,Shield,41,Energy Shield,,,33,(15-20)% increased Spell Damage
-Jingling Spirit Shield,Off-hand,Shield,28,Energy Shield,,,24,(10-15)% increased Spell Damage
-Lacewood Spirit Shield,Off-hand,Shield,56,Energy Shield,,,45,(5-10)% increased Spell Damage
-Lacquered Buckler,Off-hand,Shield,60,Evasion,,440,,6% increased Movement Speed
-Laminated Kite Shield,Off-hand,Shield,50,Armour/Energy Shield,113,,22,8% to all Elemental Resistances
-Layered Kite Shield,Off-hand,Shield,27,Armour/Energy Shield,62,,13,8% to all Elemental Resistances
-Linden Kite Shield,Off-hand,Shield,13,Armour/Energy Shield,43,,10,4% to all Elemental Resistances
-Magmatic Tower Shield,Off-hand,Shield,50,Armour,205,,,Scorch Enemies when you Block their Damage
-Mahogany Tower Shield,Off-hand,Shield,43,Armour,265,,,(20-30) to maximum Life
-Maple Round Shield,Off-hand,Shield,39,Armour/Evasion,88,88,,180% increased Block Recovery
-Mirrored Spiked Shield,Off-hand,Shield,66,Energy Shield/Evasion,,151,29,4% chance to Dodge Attack Hits
-Mosaic Kite Shield,Off-hand,Shield,65,Armour/Energy Shield,147,,28,8% to all Elemental Resistances
-Oak Buckler,Off-hand,Shield,38,Evasion,,188,,3% increased Movement Speed
-Ornate Spiked Shield,Off-hand,Shield,33,Energy Shield/Evasion,,120,24,4% chance to Dodge Spell Hits
-Painted Buckler,Off-hand,Shield,16,Evasion,,109,,6% increased Movement Speed
-Painted Tower Shield,Off-hand,Shield,35,Armour,217,,,(20-30) to maximum Life
-Pine Buckler,Off-hand,Shield,8,Evasion,,43,,3% increased Movement Speed
-Pinnacle Tower Shield,Off-hand,Shield,70,Armour,467,,,(20-30) to maximum Life
-Plank Kite Shield,Off-hand,Shield,7,Armour/Energy Shield,18,,4,4% to all Elemental Resistances
-Polar Buckler,Off-hand,Shield,50,Evasion,,185,,Inflict Brittle on Enemies when you Block their Damage
-Polished Spiked Shield,Off-hand,Shield,49,Energy Shield/Evasion,,111,22,4% chance to Dodge Attack Hits
-Rawhide Tower Shield,Off-hand,Shield,11,Armour,53,,,(10-20) to maximum Life
-Redwood Spiked Shield,Off-hand,Shield,39,Energy Shield/Evasion,,142,28,2% chance to Dodge Attack Hits
-Reinforced Kite Shield,Off-hand,Shield,20,Armour/Energy Shield,65,,14,
-Reinforced Tower Shield,Off-hand,Shield,30,Armour,287,,,(10-20) to maximum Life
-Rotted Round Shield,Off-hand,Shield,5,Armour/Evasion,13,13,,60% increased Block Recovery
-Scarlet Round Shield,Off-hand,Shield,27,Armour/Evasion,87,87,,
-Shagreen Tower Shield,Off-hand,Shield,58,Armour,261,,,(10-20) to maximum Life
-Sovereign Spiked Shield,Off-hand,Shield,54,Energy Shield/Evasion,,195,38,4% chance to Dodge Spell Hits
-Spiked Bundle,Off-hand,Shield,5,Energy Shield/Evasion,,13,4,2% chance to Dodge Attack Hits
-Spiked Round Shield,Off-hand,Shield,45,Armour/Evasion,102,102,,60% increased Block Recovery
-Spiny Round Shield,Off-hand,Shield,62,Armour/Evasion,154,154,,60% increased Block Recovery
-Splendid Round Shield,Off-hand,Shield,33,Armour/Evasion,75,75,,120% increased Block Recovery
-Splintered Tower Shield,Off-hand,Shield,1,Armour,9,,,
-Steel Kite Shield,Off-hand,Shield,46,Armour/Energy Shield,146,,29,
-Studded Round Shield,Off-hand,Shield,20,Armour/Evasion,46,46,,60% increased Block Recovery
-Subsuming Spirit Shield,Off-hand,Shield,50,Energy Shield,,,36,Sap Enemies when you Block their Damage
-Supreme Spiked Shield,Off-hand,Shield,70,Energy Shield/Evasion,,242,47,4% chance to Dodge Spell Hits
-Tarnished Spirit Shield,Off-hand,Shield,23,Energy Shield,,,20,(5-10)% increased Spell Damage
-Teak Round Shield,Off-hand,Shield,58,Armour/Evasion,131,131,,180% increased Block Recovery
-Thorium Spirit Shield,Off-hand,Shield,53,Energy Shield,,,51,
-Titanium Spirit Shield,Off-hand,Shield,68,Energy Shield,,,64,
-Transfer-attuned Spirit Shield,Off-hand,Shield,70,Energy Shield,,,53,Sap Enemies when you Block their Damage
-Twig Spirit Shield,Off-hand,Shield,3,Energy Shield,,,5,(10-15)% increased Spell Damage
-Vaal Buckler,Off-hand,Shield,63,Evasion,,275,,3% increased Movement Speed
-Vaal Spirit Shield,Off-hand,Shield,62,Energy Shield,,,53,(5-10)% increased Spell Damage
-Walnut Spirit Shield,Off-hand,Shield,37,Energy Shield,,,30,(5-10)% increased Spell Damage
-War Buckler,Off-hand,Shield,29,Evasion,,145,,9% increased Movement Speed
-Yew Spirit Shield,Off-hand,Shield,9,Energy Shield,,,9,(5-10)% increased Spell Damage
-Awl,One Handed Weapon,Claws,12,,,,,7 Life gained for each Enemy hit by Attacks
-Blinder,One Handed Weapon,Claws,22,,,,,12 Life gained for each Enemy hit by Attacks
-Cat's Paw,One Handed Weapon,Claws,17,,,,,8 Life gained for each Enemy hit by Attacks
-Double Claw,One Handed Weapon,Claws,36,,,,,"6 Mana gained for each Enemy hit by Attacks
+Gold Ring,Jewellery,Ring,20,,,,,,(6-15)% increased Rarity of Items found
+Golden Hoop,Jewellery,Ring,12,,,,,,(8-12) to all Attributes
+Iron Ring,Jewellery,Ring,1,,,,,,Adds 1 to 4 Physical Damage to Attacks
+Jet Ring,Jewellery,Ring,1,,,,,,(5-10)% increased Global Defences
+Moonstone Ring,Jewellery,Ring,20,,,,,,(15-25) to maximum Energy Shield
+Opal Ring,Jewellery,Ring,80,,,,,,(15-25)% increased Elemental Damage
+Paua Ring,Jewellery,Ring,1,,,,,,(20-30) to maximum Mana
+Prismatic Ring,Jewellery,Ring,30,,,,,,(8-10)% to all Elemental Resistances
+Ruby Ring,Jewellery,Ring,16,,,,,,(20-30)% to Fire Resistance
+Sapphire Ring,Jewellery,Ring,8,,,,,,(20-30)% to Cold Resistance
+Steel Ring,Jewellery,Ring,80,,,,,,Adds (3-4) to (10-14) Physical Damage to Attacks
+Topaz Ring,Jewellery,Ring,12,,,,,,(20-30)% to Lightning Resistance
+Two-Stone Ring,Jewellery,Ring,20,,,,,,(12-16)% to Fire and Cold Resistances
+Two-Stone Ring,Jewellery,Ring,20,,,,,,(12-16)% to Cold and Lightning Resistances
+Two-Stone Ring,Jewellery,Ring,20,,,,,,(12-16)% to Fire and Lightning Resistances
+Unset Ring,Jewellery,Ring,5,,,,,,Has 1 Socket
+Vermillion Ring,Jewellery,Ring,80,,,,,,(5-7)% increased maximum Life
+Blunt Arrow Quiver,Off-hand,Quiver,16,,,,,,(25-35)% increased Stun Duration on Enemies
+Broadhead Arrow Quiver,Off-hand,Quiver,28,,,,,,Adds 6 to 12 Physical Damage to Bow Attacks
+Fire Arrow Quiver,Off-hand,Quiver,22,,,,,,Adds 4 to 8 Fire Damage to Bow Attacks
+Heavy Quiver,Off-hand,Quiver,5,,,,,,Adds 1 to 4 Physical Damage to Attacks
+Ornate Quiver,Off-hand,Quiver,45,,,,,,Has 1 Socket
+Penetrating Arrow Quiver,Off-hand,Quiver,36,,,,,,Arrows Pierce an additional Target
+Serrated Arrow Quiver,Off-hand,Quiver,5,,,,,,Adds 1 to 4 Physical Damage to Bow Attacks
+Sharktooth Arrow Quiver,Off-hand,Quiver,10,,,,,,(3-4) Life gained for each Enemy hit by your Attacks
+Spike-Point Arrow Quiver,Off-hand,Quiver,45,,,,,,(20-30)% increased Global Critical Strike Chance
+Two-Point Arrow Quiver,Off-hand,Quiver,4,,,,,,(20-30)% increased Global Accuracy Rating
+Alder Spiked Shield,Off-hand,Shield,58,Energy Shield/Evasion,,209,41,,2% chance to Dodge Attack Hits
+Alloyed Spiked Shield,Off-hand,Shield,20,Energy Shield/Evasion,,56,12,,2% chance to Dodge Spell Hits
+Ancient Spirit Shield,Off-hand,Shield,45,Energy Shield,,,36,,(5-10)% increased Spell Damage
+Angelic Kite Shield,Off-hand,Shield,55,Armour/Energy Shield,124,,24,,12% to all Elemental Resistances
+Archon Kite Shield,Off-hand,Shield,68,Armour/Energy Shield,156,,30,,12% to all Elemental Resistances
+Baroque Round Shield,Off-hand,Shield,54,Armour/Evasion,122,122,,,120% increased Block Recovery
+Battle Buckler,Off-hand,Shield,50,Evasion,,246,,,9% increased Movement Speed
+Bone Spirit Shield,Off-hand,Shield,15,Energy Shield,,,14,,(15-20)% increased Spell Damage
+Branded Kite Shield,Off-hand,Shield,59,Armour/Energy Shield,186,,36,,4% to all Elemental Resistances
+Brass Spirit Shield,Off-hand,Shield,33,Energy Shield,,,33,,
+Bronze Tower Shield,Off-hand,Shield,47,Armour,367,,,,(30-40) to maximum Life
+Buckskin Tower Shield,Off-hand,Shield,39,Armour,177,,,,(10-20) to maximum Life
+Burnished Spiked Shield,Off-hand,Shield,27,Energy Shield/Evasion,,62,13,,4% chance to Dodge Attack Hits
+Cardinal Round Shield,Off-hand,Shield,66,Armour/Evasion,209,209,,,
+Cedar Tower Shield,Off-hand,Shield,17,Armour,108,,,,(20-30) to maximum Life
+Ceremonial Kite Shield,Off-hand,Shield,34,Armour/Energy Shield,77,,16,,12% to all Elemental Resistances
+Champion Kite Shield,Off-hand,Shield,62,Armour/Energy Shield,215,,42,,
+Chiming Spirit Shield,Off-hand,Shield,49,Energy Shield,,,39,,(10-15)% increased Spell Damage
+Cold-attuned Buckler,Off-hand,Shield,70,Evasion,,302,,,Inflict Brittle on Enemies when you Block their Damage
+Colossal Tower Shield,Off-hand,Shield,67,Armour,632,,,,(10-20) to maximum Life
+Compound Spiked Shield,Off-hand,Shield,45,Energy Shield/Evasion,,122,24,,2% chance to Dodge Spell Hits
+Copper Tower Shield,Off-hand,Shield,24,Armour,191,,,,(30-40) to maximum Life
+Corroded Tower Shield,Off-hand,Shield,5,Armour,46,,,,(10-20) to maximum Life
+Corrugated Buckler,Off-hand,Shield,46,Evasion,,189,,,3% increased Movement Speed
+Crested Tower Shield,Off-hand,Shield,55,Armour,338,,,,(20-30) to maximum Life
+Crimson Round Shield,Off-hand,Shield,49,Armour/Evasion,155,155,,,
+Crusader Buckler,Off-hand,Shield,66,Evasion,,330,,,9% increased Movement Speed
+Driftwood Spiked Shield,Off-hand,Shield,12,Energy Shield/Evasion,,46,10,,2% chance to Dodge Attack Hits
+Ebony Tower Shield,Off-hand,Shield,61,Armour,412,,,,(20-30) to maximum Life
+Elegant Round Shield,Off-hand,Shield,70,Armour/Evasion,148,148,,,120% increased Block Recovery
+Enameled Buckler,Off-hand,Shield,42,Evasion,,277,,,6% increased Movement Speed
+Endothermic Buckler,Off-hand,Shield,30,Evasion,,112,,,Inflict Brittle on Enemies when you Block their Damage
+Etched Kite Shield,Off-hand,Shield,40,Armour/Energy Shield,127,,25,,4% to all Elemental Resistances
+Exhausting Spirit Shield,Off-hand,Shield,30,Energy Shield,,,23,,Sap Enemies when you Block their Damage
+Exothermic Tower Shield,Off-hand,Shield,30,Armour,125,,,,Scorch Enemies when you Block their Damage
+Ezomyte Spiked Shield,Off-hand,Shield,62,Energy Shield/Evasion,,181,35,,2% chance to Dodge Spell Hits
+Ezomyte Tower Shield,Off-hand,Shield,64,Armour,522,,,,(30-40) to maximum Life
+Fir Round Shield,Off-hand,Shield,12,Armour/Evasion,29,29,,,180% increased Block Recovery
+Fossilised Spirit Shield,Off-hand,Shield,59,Energy Shield,,,47,,(15-20)% increased Spell Damage
+Gilded Buckler,Off-hand,Shield,34,Evasion,,197,,,6% increased Movement Speed
+Girded Tower Shield,Off-hand,Shield,51,Armour,481,,,,(10-20) to maximum Life
+Goathide Buckler,Off-hand,Shield,2,Evasion,,12,,,3% increased Movement Speed
+Golden Buckler,Off-hand,Shield,54,Evasion,,310,,,6% increased Movement Speed
+Golden Flame,Off-hand,Shield,15,,,,,,(11-19)% to Chaos Resistance
+Hammered Buckler,Off-hand,Shield,23,Evasion,,96,,,3% increased Movement Speed
+Harmonic Spirit Shield,Off-hand,Shield,65,Energy Shield,,,55,,(10-15)% increased Spell Damage
+Heat-attuned Tower Shield,Off-hand,Shield,70,Armour,440,,,,Scorch Enemies when you Block their Damage
+Imperial Buckler,Off-hand,Shield,69,Evasion,,385,,,6% increased Movement Speed
+Ironwood Buckler,Off-hand,Shield,57,Evasion,,280,,,3% increased Movement Speed
+Ivory Spirit Shield,Off-hand,Shield,41,Energy Shield,,,33,,(15-20)% increased Spell Damage
+Jingling Spirit Shield,Off-hand,Shield,28,Energy Shield,,,24,,(10-15)% increased Spell Damage
+Lacewood Spirit Shield,Off-hand,Shield,56,Energy Shield,,,45,,(5-10)% increased Spell Damage
+Lacquered Buckler,Off-hand,Shield,60,Evasion,,440,,,6% increased Movement Speed
+Laminated Kite Shield,Off-hand,Shield,50,Armour/Energy Shield,113,,22,,8% to all Elemental Resistances
+Layered Kite Shield,Off-hand,Shield,27,Armour/Energy Shield,62,,13,,8% to all Elemental Resistances
+Linden Kite Shield,Off-hand,Shield,13,Armour/Energy Shield,43,,10,,4% to all Elemental Resistances
+Magmatic Tower Shield,Off-hand,Shield,50,Armour,205,,,,Scorch Enemies when you Block their Damage
+Mahogany Tower Shield,Off-hand,Shield,43,Armour,265,,,,(20-30) to maximum Life
+Maple Round Shield,Off-hand,Shield,39,Armour/Evasion,88,88,,,180% increased Block Recovery
+Mirrored Spiked Shield,Off-hand,Shield,66,Energy Shield/Evasion,,151,29,,4% chance to Dodge Attack Hits
+Mosaic Kite Shield,Off-hand,Shield,65,Armour/Energy Shield,147,,28,,8% to all Elemental Resistances
+Oak Buckler,Off-hand,Shield,38,Evasion,,188,,,3% increased Movement Speed
+Ornate Spiked Shield,Off-hand,Shield,33,Energy Shield/Evasion,,120,24,,4% chance to Dodge Spell Hits
+Painted Buckler,Off-hand,Shield,16,Evasion,,109,,,6% increased Movement Speed
+Painted Tower Shield,Off-hand,Shield,35,Armour,217,,,,(20-30) to maximum Life
+Pine Buckler,Off-hand,Shield,8,Evasion,,43,,,3% increased Movement Speed
+Pinnacle Tower Shield,Off-hand,Shield,70,Armour,467,,,,(20-30) to maximum Life
+Plank Kite Shield,Off-hand,Shield,7,Armour/Energy Shield,18,,4,,4% to all Elemental Resistances
+Polar Buckler,Off-hand,Shield,50,Evasion,,185,,,Inflict Brittle on Enemies when you Block their Damage
+Polished Spiked Shield,Off-hand,Shield,49,Energy Shield/Evasion,,111,22,,4% chance to Dodge Attack Hits
+Rawhide Tower Shield,Off-hand,Shield,11,Armour,53,,,,(10-20) to maximum Life
+Redwood Spiked Shield,Off-hand,Shield,39,Energy Shield/Evasion,,142,28,,2% chance to Dodge Attack Hits
+Reinforced Kite Shield,Off-hand,Shield,20,Armour/Energy Shield,65,,14,,
+Reinforced Tower Shield,Off-hand,Shield,30,Armour,287,,,,(10-20) to maximum Life
+Rotted Round Shield,Off-hand,Shield,5,Armour/Evasion,13,13,,,60% increased Block Recovery
+Scarlet Round Shield,Off-hand,Shield,27,Armour/Evasion,87,87,,,
+Shagreen Tower Shield,Off-hand,Shield,58,Armour,261,,,,(10-20) to maximum Life
+Sovereign Spiked Shield,Off-hand,Shield,54,Energy Shield/Evasion,,195,38,,4% chance to Dodge Spell Hits
+Spiked Bundle,Off-hand,Shield,5,Energy Shield/Evasion,,13,4,,2% chance to Dodge Attack Hits
+Spiked Round Shield,Off-hand,Shield,45,Armour/Evasion,102,102,,,60% increased Block Recovery
+Spiny Round Shield,Off-hand,Shield,62,Armour/Evasion,154,154,,,60% increased Block Recovery
+Splendid Round Shield,Off-hand,Shield,33,Armour/Evasion,75,75,,,120% increased Block Recovery
+Splintered Tower Shield,Off-hand,Shield,1,Armour,9,,,,
+Steel Kite Shield,Off-hand,Shield,46,Armour/Energy Shield,146,,29,,
+Studded Round Shield,Off-hand,Shield,20,Armour/Evasion,46,46,,,60% increased Block Recovery
+Subsuming Spirit Shield,Off-hand,Shield,50,Energy Shield,,,36,,Sap Enemies when you Block their Damage
+Supreme Spiked Shield,Off-hand,Shield,70,Energy Shield/Evasion,,242,47,,4% chance to Dodge Spell Hits
+Tarnished Spirit Shield,Off-hand,Shield,23,Energy Shield,,,20,,(5-10)% increased Spell Damage
+Teak Round Shield,Off-hand,Shield,58,Armour/Evasion,131,131,,,180% increased Block Recovery
+Thorium Spirit Shield,Off-hand,Shield,53,Energy Shield,,,51,,
+Titanium Spirit Shield,Off-hand,Shield,68,Energy Shield,,,64,,
+Transfer-attuned Spirit Shield,Off-hand,Shield,70,Energy Shield,,,53,,Sap Enemies when you Block their Damage
+Twig Spirit Shield,Off-hand,Shield,3,Energy Shield,,,5,,(10-15)% increased Spell Damage
+Vaal Buckler,Off-hand,Shield,63,Evasion,,275,,,3% increased Movement Speed
+Vaal Spirit Shield,Off-hand,Shield,62,Energy Shield,,,53,,(5-10)% increased Spell Damage
+Walnut Spirit Shield,Off-hand,Shield,37,Energy Shield,,,30,,(5-10)% increased Spell Damage
+War Buckler,Off-hand,Shield,29,Evasion,,145,,,9% increased Movement Speed
+Yew Spirit Shield,Off-hand,Shield,9,Energy Shield,,,9,,(5-10)% increased Spell Damage
+Awl,One Handed Weapon,Claws,12,,,,,,7 Life gained for each Enemy hit by Attacks
+Blinder,One Handed Weapon,Claws,22,,,,,,12 Life gained for each Enemy hit by Attacks
+Cat's Paw,One Handed Weapon,Claws,17,,,,,,8 Life gained for each Enemy hit by Attacks
+Double Claw,One Handed Weapon,Claws,36,,,,,,"6 Mana gained for each Enemy hit by Attacks
 +15 Life gained for each Enemy hit by Attacks"
-Eagle Claw,One Handed Weapon,Claws,55,,,,,2% of Physical Attack Damage Leeched as Life
-Eye Gouger,One Handed Weapon,Claws,64,,,,,50 Life gained for each Enemy hit by Attacks
-Fright Claw,One Handed Weapon,Claws,34,,,,,20 Life gained for each Enemy hit by Attacks
-Gemini Claw,One Handed Weapon,Claws,72,,,,,"14 Mana gained for each Enemy hit by Attacks
+Eagle Claw,One Handed Weapon,Claws,55,,,,,,2% of Physical Attack Damage Leeched as Life
+Eye Gouger,One Handed Weapon,Claws,64,,,,,,50 Life gained for each Enemy hit by Attacks
+Fright Claw,One Handed Weapon,Claws,34,,,,,,20 Life gained for each Enemy hit by Attacks
+Gemini Claw,One Handed Weapon,Claws,72,,,,,,"14 Mana gained for each Enemy hit by Attacks
 +38 Life gained for each Enemy hit by Attacks"
-Gouger,One Handed Weapon,Claws,40,,,,,24 Life gained for each Enemy hit by Attacks
-Great White Claw,One Handed Weapon,Claws,58,,,,,46 Life gained for each Enemy hit by Attacks
-Gut Ripper,One Handed Weapon,Claws,46,,,,,44 Life gained for each Enemy hit by Attacks
-Hellion's Paw,One Handed Weapon,Claws,62,,,,,1.6% of Physical Attack Damage Leeched as Life
-Imperial Claw,One Handed Weapon,Claws,68,,,,,46 Life gained for each Enemy hit by Attacks
-Malign Fangs,One Handed Weapon,Claws,50,,,,,Adds (38-48) to (70-90) Chaos Damage
-Nailed Fist,One Handed Weapon,Claws,3,,,,,3 Life gained for each Enemy hit by Attacks
-Noble Claw,One Handed Weapon,Claws,52,,,,,40 Life gained for each Enemy hit by Attacks
-Prehistoric Claw,One Handed Weapon,Claws,49,,,,,2% of Physical Attack Damage Leeched as Life
-Shadow Fangs,One Handed Weapon,Claws,30,,,,,Adds (23-33) to (45-60) Chaos Damage
-Sharktooth Claw,One Handed Weapon,Claws,7,,,,,6 Life gained for each Enemy hit by Attacks
-Sparkling Claw,One Handed Weapon,Claws,30,,,,,15 Life gained for each Enemy hit by Attacks
-Terror Claw,One Handed Weapon,Claws,70,,,,,2% of Physical Attack Damage Leeched as Life
-Thresher Claw,One Handed Weapon,Claws,37,,,,,25 Life gained for each Enemy hit by Attacks
-Throat Stabber,One Handed Weapon,Claws,60,,,,,40 Life gained for each Enemy hit by Attacks
-Tiger's Paw,One Handed Weapon,Claws,43,,,,,1.6% of Physical Attack Damage Leeched as Life
-Timeworn Claw,One Handed Weapon,Claws,26,,,,,19 Life gained for each Enemy hit by Attacks
-Twin Claw,One Handed Weapon,Claws,57,,,,,"10 Mana gained for each Enemy hit by Attacks
+Gouger,One Handed Weapon,Claws,40,,,,,,24 Life gained for each Enemy hit by Attacks
+Great White Claw,One Handed Weapon,Claws,58,,,,,,46 Life gained for each Enemy hit by Attacks
+Gut Ripper,One Handed Weapon,Claws,46,,,,,,44 Life gained for each Enemy hit by Attacks
+Hellion's Paw,One Handed Weapon,Claws,62,,,,,,1.6% of Physical Attack Damage Leeched as Life
+Imperial Claw,One Handed Weapon,Claws,68,,,,,,46 Life gained for each Enemy hit by Attacks
+Malign Fangs,One Handed Weapon,Claws,50,,,,,,Adds (38-48) to (70-90) Chaos Damage
+Nailed Fist,One Handed Weapon,Claws,3,,,,,,3 Life gained for each Enemy hit by Attacks
+Noble Claw,One Handed Weapon,Claws,52,,,,,,40 Life gained for each Enemy hit by Attacks
+Prehistoric Claw,One Handed Weapon,Claws,49,,,,,,2% of Physical Attack Damage Leeched as Life
+Shadow Fangs,One Handed Weapon,Claws,30,,,,,,Adds (23-33) to (45-60) Chaos Damage
+Sharktooth Claw,One Handed Weapon,Claws,7,,,,,,6 Life gained for each Enemy hit by Attacks
+Sparkling Claw,One Handed Weapon,Claws,30,,,,,,15 Life gained for each Enemy hit by Attacks
+Terror Claw,One Handed Weapon,Claws,70,,,,,,2% of Physical Attack Damage Leeched as Life
+Thresher Claw,One Handed Weapon,Claws,37,,,,,,25 Life gained for each Enemy hit by Attacks
+Throat Stabber,One Handed Weapon,Claws,60,,,,,,40 Life gained for each Enemy hit by Attacks
+Tiger's Paw,One Handed Weapon,Claws,43,,,,,,1.6% of Physical Attack Damage Leeched as Life
+Timeworn Claw,One Handed Weapon,Claws,26,,,,,,19 Life gained for each Enemy hit by Attacks
+Twin Claw,One Handed Weapon,Claws,57,,,,,,"10 Mana gained for each Enemy hit by Attacks
 +28 Life gained for each Enemy hit by Attacks"
-Vaal Claw,One Handed Weapon,Claws,66,,,,,2% of Physical Attack Damage Leeched as Life
-Void Fangs,One Handed Weapon,Claws,70,,,,,Adds (40-55) to (80-98) Chaos Damage
-Ambusher,One Handed Weapon,Daggers,60,,,,,30% increased Global Critical Strike Chance
-Flaying Knife,One Handed Weapon,Daggers,30,,,,,30% increased Global Critical Strike Chance
-Glass Shank,One Handed Weapon,Daggers,1,,,,,30% increased Global Critical Strike Chance
-Gutting Knife,One Handed Weapon,Daggers,56,,,,,30% increased Global Critical Strike Chance
-Hollowpoint Dagger,One Handed Weapon,Daggers,30,,,,,All Damage from Hits with This Weapon can Poison
-Pneumatic Dagger,One Handed Weapon,Daggers,70,,,,,All Damage from Hits with This Weapon can Poison
-Poignard,One Handed Weapon,Daggers,41,,,,,30% increased Global Critical Strike Chance
-Pressurised Dagger,One Handed Weapon,Daggers,50,,,,,All Damage from Hits with This Weapon can Poison
-Prong Dagger,One Handed Weapon,Daggers,36,,,,,4% Chance to Block Attack Damage
-Sai,One Handed Weapon,Daggers,70,,,,,6% Chance to Block Attack Damage
-Skinning Knife,One Handed Weapon,Daggers,5,,,,,30% increased Global Critical Strike Chance
-Stiletto,One Handed Weapon,Daggers,15,,,,,30% increased Global Critical Strike Chance
-Trisula,One Handed Weapon,Daggers,51,,,,,4% Chance to Block Attack Damage
-Arming Axe,One Handed Weapon,One Hand Axe,25,,,,,
-Boarding Axe,One Handed Weapon,One Hand Axe,11,,,,,
-Broad Axe,One Handed Weapon,One Hand Axe,21,,,,,
-Butcher Axe,One Handed Weapon,One Hand Axe,63,,,,,
-Ceremonial Axe,One Handed Weapon,One Hand Axe,51,,,,,
-Chest Splitter,One Handed Weapon,One Hand Axe,48,,,,,
-Cleaver,One Handed Weapon,One Hand Axe,16,,,,,
-Decorative Axe,One Handed Weapon,One Hand Axe,29,,,,,
-Disapprobation Axe,One Handed Weapon,One Hand Axe,50,,,,,10 to Maximum Rage
-Engraved Hatchet,One Handed Weapon,One Hand Axe,56,,,,,8% increased Global Physical Damage
-Etched Hatchet,One Handed Weapon,One Hand Axe,35,,,,,8% increased Global Physical Damage
-Infernal Axe,One Handed Weapon,One Hand Axe,69,,,,,
-Jade Hatchet,One Handed Weapon,One Hand Axe,6,,,,,
-Jasper Axe,One Handed Weapon,One Hand Axe,36,,,,,
-Karui Axe,One Handed Weapon,One Hand Axe,57,,,,,
-Maltreatment Axe,One Handed Weapon,One Hand Axe,30,,,,,10 to Maximum Rage
-Psychotic Axe,One Handed Weapon,One Hand Axe,70,,,,,10 to Maximum Rage
-Reaver Axe,One Handed Weapon,One Hand Axe,61,,,,,
-Royal Axe,One Handed Weapon,One Hand Axe,67,,,,,
-Runic Hatchet,One Handed Weapon,One Hand Axe,71,,,,,12% increased Global Physical Damage
-Rusted Hatchet,One Handed Weapon,One Hand Axe,2,,,,,
-Siege Axe,One Handed Weapon,One Hand Axe,59,,,,,
-Spectral Axe,One Handed Weapon,One Hand Axe,33,,,,,
-Tomahawk,One Handed Weapon,One Hand Axe,39,,,,,
-Vaal Hatchet,One Handed Weapon,One Hand Axe,65,,,,,
-War Axe,One Handed Weapon,One Hand Axe,45,,,,,
-Wraith Axe,One Handed Weapon,One Hand Axe,54,,,,,
-Wrist Chopper,One Handed Weapon,One Hand Axe,42,,,,,
-Ancestral Club,One Handed Weapon,One Hand Mace,56,,,,,10% reduced Enemy Stun Threshold
-Auric Mace,One Handed Weapon,One Hand Mace,66,,,,,15% reduced Enemy Stun Threshold
-Barbed Club,One Handed Weapon,One Hand Mace,38,,,,,10% reduced Enemy Stun Threshold
-Battle Hammer,One Handed Weapon,One Hand Mace,44,,,,,10% reduced Enemy Stun Threshold
-Behemoth Mace,One Handed Weapon,One Hand Mace,70,,,,,6% increased Attack Speed
-Bladed Mace,One Handed Weapon,One Hand Mace,24,,,,,10% reduced Enemy Stun Threshold
-Boom Mace,One Handed Weapon,One Hand Mace,70,,,,,Trigger Level 20 Fiery Impact on Melee Hit with this Weapon
-Ceremonial Mace,One Handed Weapon,One Hand Mace,28,,,,,15% reduced Enemy Stun Threshold
-Crack Mace,One Handed Weapon,One Hand Mace,50,,,,,Trigger Level 15 Fiery Impact on Melee Hit with this Weapon
-Dragon Mace,One Handed Weapon,One Hand Mace,55,,,,,4% increased Attack Speed
-Dream Mace,One Handed Weapon,One Hand Mace,32,,,,,10% reduced Enemy Stun Threshold
-Driftwood Club,One Handed Weapon,One Hand Mace,1,,,,,10% reduced Enemy Stun Threshold
-Flanged Mace,One Handed Weapon,One Hand Mace,47,,,,,10% reduced Enemy Stun Threshold
-Flare Mace,One Handed Weapon,One Hand Mace,30,,,,,Trigger Level 10 Fiery Impact on Melee Hit with this Weapon
-Gavel,One Handed Weapon,One Hand Mace,60,,,,,15% reduced Enemy Stun Threshold
-Legion Hammer,One Handed Weapon,One Hand Mace,62,,,,,10% reduced Enemy Stun Threshold
-Nightmare Mace,One Handed Weapon,One Hand Mace,68,,,,,10% reduced Enemy Stun Threshold
-Ornate Mace,One Handed Weapon,One Hand Mace,50,,,,,15% reduced Enemy Stun Threshold
-Pernach,One Handed Weapon,One Hand Mace,64,,,,,10% reduced Enemy Stun Threshold
-Petrified Club,One Handed Weapon,One Hand Mace,35,,,,,10% reduced Enemy Stun Threshold
-Phantom Mace,One Handed Weapon,One Hand Mace,53,,,,,10% reduced Enemy Stun Threshold
-Rock Breaker,One Handed Weapon,One Hand Mace,41,,,,,15% reduced Enemy Stun Threshold
-Spiked Club,One Handed Weapon,One Hand Mace,10,,,,,10% reduced Enemy Stun Threshold
-Stone Hammer,One Handed Weapon,One Hand Mace,15,,,,,15% reduced Enemy Stun Threshold
-Tenderizer,One Handed Weapon,One Hand Mace,58,,,,,10% reduced Enemy Stun Threshold
-Tribal Club,One Handed Weapon,One Hand Mace,5,,,,,10% reduced Enemy Stun Threshold
-War Hammer,One Handed Weapon,One Hand Mace,20,,,,,10% reduced Enemy Stun Threshold
-Wyrm Mace,One Handed Weapon,One Hand Mace,34,,,,,4% increased Attack Speed
-Anarchic Spiritblade,One Handed Weapon,One Hand Sword,70,,,,,100% of Physical Damage from Hits with this Weapon is Converted to a random Element
-Ancient Sword,One Handed Weapon,One Hand Sword,24,,,,,165 to Accuracy Rating
-Baselard,One Handed Weapon,One Hand Sword,41,,,,,40% increased Global Accuracy Rating
-Battle Sword,One Handed Weapon,One Hand Sword,44,,,,,40% increased Global Accuracy Rating
-Broad Sword,One Handed Weapon,One Hand Sword,15,,,,,40% increased Global Accuracy Rating
-Capricious Spiritblade,One Handed Weapon,One Hand Sword,50,,,,,100% of Physical Damage from Hits with this Weapon is Converted to a random Element
-Copper Sword,One Handed Weapon,One Hand Sword,5,,,,,45 to Accuracy Rating
-Corsair Sword,One Handed Weapon,One Hand Sword,58,,,,,40% increased Global Accuracy Rating
-Cutlass,One Handed Weapon,One Hand Sword,38,,,,,40% increased Global Accuracy Rating
-Dusk Blade,One Handed Weapon,One Hand Sword,32,,,,,40% increased Global Accuracy Rating
-Elder Sword,One Handed Weapon,One Hand Sword,47,,,,,330 to Accuracy Rating
-Elegant Sword,One Handed Weapon,One Hand Sword,28,,,,,190 to Accuracy Rating
-Eternal Sword,One Handed Weapon,One Hand Sword,66,,,,,475 to Accuracy Rating
-Fickle Spiritblade,One Handed Weapon,One Hand Sword,30,,,,,100% of Physical Damage from Hits with this Weapon is Converted to a random Element
-Gemstone Sword,One Handed Weapon,One Hand Sword,56,,,,,400 to Accuracy Rating
-Gladius,One Handed Weapon,One Hand Sword,60,,,,,40% increased Global Accuracy Rating
-Golden Blade,One Handed Weapon,One Hand Sword,1,,,,,(16-24) to all Attributes
-Graceful Sword,One Handed Weapon,One Hand Sword,50,,,,,350 to Accuracy Rating
-Grappler,One Handed Weapon,One Hand Sword,55,,,,,4% chance to Dodge Attack Hits
-Hook Sword,One Handed Weapon,One Hand Sword,34,,,,,4% chance to Dodge Attack Hits
-Legion Sword,One Handed Weapon,One Hand Sword,62,,,,,40% increased Global Accuracy Rating
-Midnight Blade,One Handed Weapon,One Hand Sword,68,,,,,40% increased Global Accuracy Rating
-Rusted Sword,One Handed Weapon,One Hand Sword,1,,,,,40% increased Global Accuracy Rating
-Sabre,One Handed Weapon,One Hand Sword,10,,,,,40% increased Global Accuracy Rating
-Tiger Hook,One Handed Weapon,One Hand Sword,70,,,,,6% chance to Dodge Attack Hits
-Twilight Blade,One Handed Weapon,One Hand Sword,53,,,,,40% increased Global Accuracy Rating
-Vaal Blade,One Handed Weapon,One Hand Sword,64,,,,,460 to Accuracy Rating
-Variscite Blade,One Handed Weapon,One Hand Sword,35,,,,,240 to Accuracy Rating
-War Sword,One Handed Weapon,One Hand Sword,20,,,,,40% increased Global Accuracy Rating
-Boot Blade,One Handed Weapon,Rune Daggers,44,,,,,30% increased Global Critical Strike Chance
-Boot Knife,One Handed Weapon,Rune Daggers,20,,,,,30% increased Global Critical Strike Chance
-Butcher Knife,One Handed Weapon,Rune Daggers,38,,,,,30% increased Global Critical Strike Chance
-Carving Knife,One Handed Weapon,Rune Daggers,10,,,,,30% increased Global Critical Strike Chance
-Copper Kris,One Handed Weapon,Rune Daggers,24,,,,,50% increased Global Critical Strike Chance
-Demon Dagger,One Handed Weapon,Rune Daggers,68,,,,,40% increased Global Critical Strike Chance
-Ezomyte Dagger,One Handed Weapon,Rune Daggers,62,,,,,30% increased Global Critical Strike Chance
-Fiend Dagger,One Handed Weapon,Rune Daggers,53,,,,,40% increased Global Critical Strike Chance
-Flashfire Blade,One Handed Weapon,Rune Daggers,50,,,,,Trigger Level 20 Flame Dash when you use a Socketed Skill
-Flickerflame Blade,One Handed Weapon,Rune Daggers,30,,,,,Trigger Level 10 Flame Dash when you use a Socketed Skill
-Golden Kris,One Handed Weapon,Rune Daggers,47,,,,,50% increased Global Critical Strike Chance
-Imp Dagger,One Handed Weapon,Rune Daggers,32,,,,,40% increased Global Critical Strike Chance
-Imperial Skean,One Handed Weapon,Rune Daggers,66,,,,,30% increased Global Critical Strike Chance
-Infernal Blade,One Handed Weapon,Rune Daggers,70,,,,,Trigger Level 30 Flame Dash when you use a Socketed Skill
-Platinum Kris,One Handed Weapon,Rune Daggers,64,,,,,50% increased Global Critical Strike Chance
-Royal Skean,One Handed Weapon,Rune Daggers,50,,,,,30% increased Global Critical Strike Chance
-Skean,One Handed Weapon,Rune Daggers,28,,,,,30% increased Global Critical Strike Chance
-Slaughter Knife,One Handed Weapon,Rune Daggers,58,,,,,30% increased Global Critical Strike Chance
-Abyssal Sceptre,One Handed Weapon,Sceptres,53,,,,,30% increased Elemental Damage
-Alternating Sceptre,One Handed Weapon,Sceptres,70,,,,,Secrets of Suffering
-Blood Sceptre,One Handed Weapon,Sceptres,47,,,,,24% increased Elemental Damage
-Bronze Sceptre,One Handed Weapon,Sceptres,10,,,,,12% increased Elemental Damage
-Carnal Sceptre,One Handed Weapon,Sceptres,66,,,,,32% increased Elemental Damage
-Crystal Sceptre,One Handed Weapon,Sceptres,41,,,,,30% increased Elemental Damage
-Darkwood Sceptre,One Handed Weapon,Sceptres,5,,,,,12% increased Elemental Damage
-Driftwood Sceptre,One Handed Weapon,Sceptres,1,,,,,10% increased Elemental Damage
-Grinning Fetish,One Handed Weapon,Sceptres,35,,,,,18% increased Elemental Damage
-Horned Sceptre,One Handed Weapon,Sceptres,36,,,,,Damage Penetrates 4% Elemental Resistances
-Iron Sceptre,One Handed Weapon,Sceptres,20,,,,,14% increased Elemental Damage
-Karui Sceptre,One Handed Weapon,Sceptres,56,,,,,26% increased Elemental Damage
-Lead Sceptre,One Handed Weapon,Sceptres,44,,,,,22% increased Elemental Damage
-Ochre Sceptre,One Handed Weapon,Sceptres,24,,,,,16% increased Elemental Damage
-Opal Sceptre,One Handed Weapon,Sceptres,60,,,,,40% increased Elemental Damage
-Oscillating Sceptre,One Handed Weapon,Sceptres,30,,,,,Elemental Overload
-Platinum Sceptre,One Handed Weapon,Sceptres,62,,,,,30% increased Elemental Damage
-Quartz Sceptre,One Handed Weapon,Sceptres,15,,,,,20% increased Elemental Damage
-Ritual Sceptre,One Handed Weapon,Sceptres,28,,,,,16% increased Elemental Damage
-Royal Sceptre,One Handed Weapon,Sceptres,50,,,,,24% increased Elemental Damage
-Sambar Sceptre,One Handed Weapon,Sceptres,70,,,,,Damage Penetrates 6% Elemental Resistances
-Sekhem,One Handed Weapon,Sceptres,38,,,,,18% increased Elemental Damage
-Shadow Sceptre,One Handed Weapon,Sceptres,32,,,,,22% increased Elemental Damage
-Stabilising Sceptre,One Handed Weapon,Sceptres,50,,,,,Elemental Equilibrium
-Stag Sceptre,One Handed Weapon,Sceptres,55,,,,,Damage Penetrates 4% Elemental Resistances
-Tyrant's Sekhem,One Handed Weapon,Sceptres,58,,,,,26% increased Elemental Damage
-Vaal Sceptre,One Handed Weapon,Sceptres,64,,,,,32% increased Elemental Damage
-Void Sceptre,One Handed Weapon,Sceptres,68,,,,,40% increased Elemental Damage
-Antique Rapier,One Handed Weapon,Thrusting One Hand Sword,26,,,,,25% to Global Critical Strike Multiplier
-Apex Rapier,One Handed Weapon,Thrusting One Hand Sword,55,,,,,35% to Global Critical Strike Multiplier
-Basket Rapier,One Handed Weapon,Thrusting One Hand Sword,17,,,,,25% to Global Critical Strike Multiplier
-Battered Foil,One Handed Weapon,Thrusting One Hand Sword,12,,,,,25% to Global Critical Strike Multiplier
-Burnished Foil,One Handed Weapon,Thrusting One Hand Sword,40,,,,,25% to Global Critical Strike Multiplier
-Courtesan Sword,One Handed Weapon,Thrusting One Hand Sword,57,,,,,15% chance to cause Bleeding on Hit
-Dragonbone Rapier,One Handed Weapon,Thrusting One Hand Sword,58,,,,,25% to Global Critical Strike Multiplier
-Dragoon Sword,One Handed Weapon,Thrusting One Hand Sword,72,,,,,20% chance to cause Bleeding on Hit
-Elegant Foil,One Handed Weapon,Thrusting One Hand Sword,30,,,,,25% to Global Critical Strike Multiplier
-Estoc,One Handed Weapon,Thrusting One Hand Sword,43,,,,,25% to Global Critical Strike Multiplier
-Fancy Foil,One Handed Weapon,Thrusting One Hand Sword,52,,,,,25% to Global Critical Strike Multiplier
-Harpy Rapier,One Handed Weapon,Thrusting One Hand Sword,70,,,,,35% to Global Critical Strike Multiplier
-Jagged Foil,One Handed Weapon,Thrusting One Hand Sword,22,,,,,25% to Global Critical Strike Multiplier
-Jewelled Foil,One Handed Weapon,Thrusting One Hand Sword,68,,,,,25% to Global Critical Strike Multiplier
-Pecoraro,One Handed Weapon,Thrusting One Hand Sword,62,,,,,25% to Global Critical Strike Multiplier
-Primeval Rapier,One Handed Weapon,Thrusting One Hand Sword,49,,,,,25% to Global Critical Strike Multiplier
-Rusted Spike,One Handed Weapon,Thrusting One Hand Sword,3,,,,,25% to Global Critical Strike Multiplier
-Serrated Foil,One Handed Weapon,Thrusting One Hand Sword,46,,,,,25% to Global Critical Strike Multiplier
-Smallsword,One Handed Weapon,Thrusting One Hand Sword,36,,,,,15% chance to cause Bleeding on Hit
-Spiraled Foil,One Handed Weapon,Thrusting One Hand Sword,64,,,,,25% to Global Critical Strike Multiplier
-Tempered Foil,One Handed Weapon,Thrusting One Hand Sword,60,,,,,25% to Global Critical Strike Multiplier
-Thorn Rapier,One Handed Weapon,Thrusting One Hand Sword,34,,,,,35% to Global Critical Strike Multiplier
-Vaal Rapier,One Handed Weapon,Thrusting One Hand Sword,66,,,,,25% to Global Critical Strike Multiplier
-Whalebone Rapier,One Handed Weapon,Thrusting One Hand Sword,7,,,,,25% to Global Critical Strike Multiplier
-Wyrmbone Rapier,One Handed Weapon,Thrusting One Hand Sword,37,,,,,25% to Global Critical Strike Multiplier
-Accumulator Wand,One Handed Weapon,Wands,70,,,,,"Gain an Endurance, Frenzy or Power Charge every 6 seconds"
-Assembler Wand,One Handed Weapon,Wands,30,,,,,"Gain an Endurance, Frenzy or Power Charge every 6 seconds"
-Carved Wand,One Handed Weapon,Wands,12,,,,,(11-15)% increased Spell Damage
-Congregator Wand,One Handed Weapon,Wands,50,,,,,"Gain an Endurance, Frenzy or Power Charge every 6 seconds"
-Convoking Wand,One Handed Weapon,Wands,72,,,,,Can roll Minion Modifiers
-Crystal Wand,One Handed Weapon,Wands,45,,,,,(29-33)% increased Spell Damage
-Demon's Horn,One Handed Weapon,Wands,56,,,,,(31-35)% increased Spell Damage
-Driftwood Wand,One Handed Weapon,Wands,1,,,,,(8-12)% increased Spell Damage
-Engraved Wand,One Handed Weapon,Wands,40,,,,,(22-26)% increased Spell Damage
-Faun's Horn,One Handed Weapon,Wands,35,,,,,(20-24)% increased Spell Damage
-Goat's Horn,One Handed Weapon,Wands,6,,,,,(10-14)% increased Spell Damage
-Heathen Wand,One Handed Weapon,Wands,55,,,,,10% increased Cast Speed
-Imbued Wand,One Handed Weapon,Wands,59,,,,,(33-37)% increased Spell Damage
-Omen Wand,One Handed Weapon,Wands,53,,,,,(27-31)% increased Spell Damage
-Opal Wand,One Handed Weapon,Wands,62,,,,,(38-42)% increased Spell Damage
-Pagan Wand,One Handed Weapon,Wands,34,,,,,10% increased Cast Speed
-Profane Wand,One Handed Weapon,Wands,70,,,,,14% increased Cast Speed
-Prophecy Wand,One Handed Weapon,Wands,68,,,,,(36-40)% increased Spell Damage
-Quartz Wand,One Handed Weapon,Wands,18,,,,,(18-22)% increased Spell Damage
-Sage Wand,One Handed Weapon,Wands,30,,,,,(17-21)% increased Spell Damage
-Serpent Wand,One Handed Weapon,Wands,49,,,,,(26-30)% increased Spell Damage
-Spiraled Wand,One Handed Weapon,Wands,24,,,,,(15-19)% increased Spell Damage
-Tornado Wand,One Handed Weapon,Wands,65,,,,,(35-39)% increased Spell Damage
-Archon Kite Shield Piece,Piece,Piece,,,,,,
-Archon Kite Shield Piece,Piece,Piece,,,,,,
-Archon Kite Shield Piece,Piece,Piece,,,,,,
-Archon Kite Shield Piece,Piece,Piece,,,,,,
-Blunt Arrow Quiver Piece,Piece,Piece,,,,,,
-Blunt Arrow Quiver Piece,Piece,Piece,,,,,,
-Blunt Arrow Quiver Piece,Piece,Piece,,,,,,
-Callous Mask Piece,Piece,Piece,,,,,,
-Callous Mask Piece,Piece,Piece,,,,,,
-Callous Mask Piece,Piece,Piece,,,,,,
-Cloth Belt Piece,Piece,Piece,,,,,,
-Cloth Belt Piece,Piece,Piece,,,,,,
-Imperial Staff Piece,Piece,Piece,,,,,,
-Imperial Staff Piece,Piece,Piece,,,,,,
-Imperial Staff Piece,Piece,Piece,,,,,,
-Legion Sword Piece,Piece,Piece,,,,,,
-Legion Sword Piece,Piece,Piece,,,,,,
-Legion Sword Piece,Piece,Piece,,,,,,
-Assassin Bow,Two Handed Weapon,Bows,62,,,,,(15-25)% to Global Critical Strike Multiplier
-Bone Bow,Two Handed Weapon,Bows,23,,,,,
-Citadel Bow,Two Handed Weapon,Bows,58,,,,,
-Composite Bow,Two Handed Weapon,Bows,14,,,,,
-Compound Bow,Two Handed Weapon,Bows,41,,,,,
-Crude Bow,Two Handed Weapon,Bows,1,,,,,
-Death Bow,Two Handed Weapon,Bows,32,,,,,(30-50)% increased Critical Strike Chance
-Decimation Bow,Two Handed Weapon,Bows,53,,,,,(30-50)% increased Critical Strike Chance
-Decurve Bow,Two Handed Weapon,Bows,38,,,,,
-Foundry Bow,Two Handed Weapon,Bows,50,,,,,Adds (70-84) to (110-124) Fire Damage
-Grove Bow,Two Handed Weapon,Bows,35,,,,,
-Harbinger Bow,Two Handed Weapon,Bows,68,,,,,(30-50)% increased Critical Strike Chance
-Hedron Bow,Two Handed Weapon,Bows,30,,,,,Adds (40-48) to (60-72) Fire Damage
-Highborn Bow,Two Handed Weapon,Bows,50,,,,,(20-24)% increased Elemental Damage with Attack Skills
-Imperial Bow,Two Handed Weapon,Bows,66,,,,,(20-24)% increased Elemental Damage with Attack Skills
-Ivory Bow,Two Handed Weapon,Bows,47,,,,,
-Long Bow,Two Handed Weapon,Bows,9,,,,,
-Maraketh Bow,Two Handed Weapon,Bows,71,,,,,10% increased Movement Speed
-Ranger Bow,Two Handed Weapon,Bows,60,,,,,
-Recurve Bow,Two Handed Weapon,Bows,18,,,,,(15-25)% to Global Critical Strike Multiplier
-Reflex Bow,Two Handed Weapon,Bows,36,,,,,6% increased Movement Speed
-Royal Bow,Two Handed Weapon,Bows,28,,,,,(20-24)% increased Elemental Damage with Attack Skills
-Short Bow,Two Handed Weapon,Bows,5,,,,,
-Sniper Bow,Two Handed Weapon,Bows,44,,,,,(15-25)% to Global Critical Strike Multiplier
-Solarine Bow,Two Handed Weapon,Bows,70,,,,,Adds (105-116) to (160-172) Fire Damage
-Spine Bow,Two Handed Weapon,Bows,64,,,,,
-Steelwood Bow,Two Handed Weapon,Bows,57,,,,,6% increased Movement Speed
-Thicket Bow,Two Handed Weapon,Bows,56,,,,,
-Fishing Rod,Two Handed Weapon,Fishing Rod,1,,,,,
-Battery Staff,Two Handed Weapon,Staves,70,,,,,"(140-165) to maximum Energy Shield
+Vaal Claw,One Handed Weapon,Claws,66,,,,,,2% of Physical Attack Damage Leeched as Life
+Void Fangs,One Handed Weapon,Claws,70,,,,,,Adds (40-55) to (80-98) Chaos Damage
+Ambusher,One Handed Weapon,Daggers,60,,,,,,30% increased Global Critical Strike Chance
+Flaying Knife,One Handed Weapon,Daggers,30,,,,,,30% increased Global Critical Strike Chance
+Glass Shank,One Handed Weapon,Daggers,1,,,,,,30% increased Global Critical Strike Chance
+Gutting Knife,One Handed Weapon,Daggers,56,,,,,,30% increased Global Critical Strike Chance
+Hollowpoint Dagger,One Handed Weapon,Daggers,30,,,,,,All Damage from Hits with This Weapon can Poison
+Pneumatic Dagger,One Handed Weapon,Daggers,70,,,,,,All Damage from Hits with This Weapon can Poison
+Poignard,One Handed Weapon,Daggers,41,,,,,,30% increased Global Critical Strike Chance
+Pressurised Dagger,One Handed Weapon,Daggers,50,,,,,,All Damage from Hits with This Weapon can Poison
+Prong Dagger,One Handed Weapon,Daggers,36,,,,,,4% Chance to Block Attack Damage
+Sai,One Handed Weapon,Daggers,70,,,,,,6% Chance to Block Attack Damage
+Skinning Knife,One Handed Weapon,Daggers,5,,,,,,30% increased Global Critical Strike Chance
+Stiletto,One Handed Weapon,Daggers,15,,,,,,30% increased Global Critical Strike Chance
+Trisula,One Handed Weapon,Daggers,51,,,,,,4% Chance to Block Attack Damage
+Arming Axe,One Handed Weapon,One Hand Axe,25,,,,,,
+Boarding Axe,One Handed Weapon,One Hand Axe,11,,,,,,
+Broad Axe,One Handed Weapon,One Hand Axe,21,,,,,,
+Butcher Axe,One Handed Weapon,One Hand Axe,63,,,,,,
+Ceremonial Axe,One Handed Weapon,One Hand Axe,51,,,,,,
+Chest Splitter,One Handed Weapon,One Hand Axe,48,,,,,,
+Cleaver,One Handed Weapon,One Hand Axe,16,,,,,,
+Decorative Axe,One Handed Weapon,One Hand Axe,29,,,,,,
+Disapprobation Axe,One Handed Weapon,One Hand Axe,50,,,,,,10 to Maximum Rage
+Engraved Hatchet,One Handed Weapon,One Hand Axe,56,,,,,,8% increased Global Physical Damage
+Etched Hatchet,One Handed Weapon,One Hand Axe,35,,,,,,8% increased Global Physical Damage
+Infernal Axe,One Handed Weapon,One Hand Axe,69,,,,,,
+Jade Hatchet,One Handed Weapon,One Hand Axe,6,,,,,,
+Jasper Axe,One Handed Weapon,One Hand Axe,36,,,,,,
+Karui Axe,One Handed Weapon,One Hand Axe,57,,,,,,
+Maltreatment Axe,One Handed Weapon,One Hand Axe,30,,,,,,10 to Maximum Rage
+Psychotic Axe,One Handed Weapon,One Hand Axe,70,,,,,,10 to Maximum Rage
+Reaver Axe,One Handed Weapon,One Hand Axe,61,,,,,,
+Royal Axe,One Handed Weapon,One Hand Axe,67,,,,,,
+Runic Hatchet,One Handed Weapon,One Hand Axe,71,,,,,,12% increased Global Physical Damage
+Rusted Hatchet,One Handed Weapon,One Hand Axe,2,,,,,,
+Siege Axe,One Handed Weapon,One Hand Axe,59,,,,,,
+Spectral Axe,One Handed Weapon,One Hand Axe,33,,,,,,
+Tomahawk,One Handed Weapon,One Hand Axe,39,,,,,,
+Vaal Hatchet,One Handed Weapon,One Hand Axe,65,,,,,,
+War Axe,One Handed Weapon,One Hand Axe,45,,,,,,
+Wraith Axe,One Handed Weapon,One Hand Axe,54,,,,,,
+Wrist Chopper,One Handed Weapon,One Hand Axe,42,,,,,,
+Ancestral Club,One Handed Weapon,One Hand Mace,56,,,,,,10% reduced Enemy Stun Threshold
+Auric Mace,One Handed Weapon,One Hand Mace,66,,,,,,15% reduced Enemy Stun Threshold
+Barbed Club,One Handed Weapon,One Hand Mace,38,,,,,,10% reduced Enemy Stun Threshold
+Battle Hammer,One Handed Weapon,One Hand Mace,44,,,,,,10% reduced Enemy Stun Threshold
+Behemoth Mace,One Handed Weapon,One Hand Mace,70,,,,,,6% increased Attack Speed
+Bladed Mace,One Handed Weapon,One Hand Mace,24,,,,,,10% reduced Enemy Stun Threshold
+Boom Mace,One Handed Weapon,One Hand Mace,70,,,,,,Trigger Level 20 Fiery Impact on Melee Hit with this Weapon
+Ceremonial Mace,One Handed Weapon,One Hand Mace,28,,,,,,15% reduced Enemy Stun Threshold
+Crack Mace,One Handed Weapon,One Hand Mace,50,,,,,,Trigger Level 15 Fiery Impact on Melee Hit with this Weapon
+Dragon Mace,One Handed Weapon,One Hand Mace,55,,,,,,4% increased Attack Speed
+Dream Mace,One Handed Weapon,One Hand Mace,32,,,,,,10% reduced Enemy Stun Threshold
+Driftwood Club,One Handed Weapon,One Hand Mace,1,,,,,,10% reduced Enemy Stun Threshold
+Flanged Mace,One Handed Weapon,One Hand Mace,47,,,,,,10% reduced Enemy Stun Threshold
+Flare Mace,One Handed Weapon,One Hand Mace,30,,,,,,Trigger Level 10 Fiery Impact on Melee Hit with this Weapon
+Gavel,One Handed Weapon,One Hand Mace,60,,,,,,15% reduced Enemy Stun Threshold
+Legion Hammer,One Handed Weapon,One Hand Mace,62,,,,,,10% reduced Enemy Stun Threshold
+Nightmare Mace,One Handed Weapon,One Hand Mace,68,,,,,,10% reduced Enemy Stun Threshold
+Ornate Mace,One Handed Weapon,One Hand Mace,50,,,,,,15% reduced Enemy Stun Threshold
+Pernach,One Handed Weapon,One Hand Mace,64,,,,,,10% reduced Enemy Stun Threshold
+Petrified Club,One Handed Weapon,One Hand Mace,35,,,,,,10% reduced Enemy Stun Threshold
+Phantom Mace,One Handed Weapon,One Hand Mace,53,,,,,,10% reduced Enemy Stun Threshold
+Rock Breaker,One Handed Weapon,One Hand Mace,41,,,,,,15% reduced Enemy Stun Threshold
+Spiked Club,One Handed Weapon,One Hand Mace,10,,,,,,10% reduced Enemy Stun Threshold
+Stone Hammer,One Handed Weapon,One Hand Mace,15,,,,,,15% reduced Enemy Stun Threshold
+Tenderizer,One Handed Weapon,One Hand Mace,58,,,,,,10% reduced Enemy Stun Threshold
+Tribal Club,One Handed Weapon,One Hand Mace,5,,,,,,10% reduced Enemy Stun Threshold
+War Hammer,One Handed Weapon,One Hand Mace,20,,,,,,10% reduced Enemy Stun Threshold
+Wyrm Mace,One Handed Weapon,One Hand Mace,34,,,,,,4% increased Attack Speed
+Anarchic Spiritblade,One Handed Weapon,One Hand Sword,70,,,,,,100% of Physical Damage from Hits with this Weapon is Converted to a random Element
+Ancient Sword,One Handed Weapon,One Hand Sword,24,,,,,,165 to Accuracy Rating
+Baselard,One Handed Weapon,One Hand Sword,41,,,,,,40% increased Global Accuracy Rating
+Battle Sword,One Handed Weapon,One Hand Sword,44,,,,,,40% increased Global Accuracy Rating
+Broad Sword,One Handed Weapon,One Hand Sword,15,,,,,,40% increased Global Accuracy Rating
+Capricious Spiritblade,One Handed Weapon,One Hand Sword,50,,,,,,100% of Physical Damage from Hits with this Weapon is Converted to a random Element
+Copper Sword,One Handed Weapon,One Hand Sword,5,,,,,,45 to Accuracy Rating
+Corsair Sword,One Handed Weapon,One Hand Sword,58,,,,,,40% increased Global Accuracy Rating
+Cutlass,One Handed Weapon,One Hand Sword,38,,,,,,40% increased Global Accuracy Rating
+Dusk Blade,One Handed Weapon,One Hand Sword,32,,,,,,40% increased Global Accuracy Rating
+Elder Sword,One Handed Weapon,One Hand Sword,47,,,,,,330 to Accuracy Rating
+Elegant Sword,One Handed Weapon,One Hand Sword,28,,,,,,190 to Accuracy Rating
+Eternal Sword,One Handed Weapon,One Hand Sword,66,,,,,,475 to Accuracy Rating
+Fickle Spiritblade,One Handed Weapon,One Hand Sword,30,,,,,,100% of Physical Damage from Hits with this Weapon is Converted to a random Element
+Gemstone Sword,One Handed Weapon,One Hand Sword,56,,,,,,400 to Accuracy Rating
+Gladius,One Handed Weapon,One Hand Sword,60,,,,,,40% increased Global Accuracy Rating
+Golden Blade,One Handed Weapon,One Hand Sword,1,,,,,,(16-24) to all Attributes
+Graceful Sword,One Handed Weapon,One Hand Sword,50,,,,,,350 to Accuracy Rating
+Grappler,One Handed Weapon,One Hand Sword,55,,,,,,4% chance to Dodge Attack Hits
+Hook Sword,One Handed Weapon,One Hand Sword,34,,,,,,4% chance to Dodge Attack Hits
+Legion Sword,One Handed Weapon,One Hand Sword,62,,,,,,40% increased Global Accuracy Rating
+Midnight Blade,One Handed Weapon,One Hand Sword,68,,,,,,40% increased Global Accuracy Rating
+Rusted Sword,One Handed Weapon,One Hand Sword,1,,,,,,40% increased Global Accuracy Rating
+Sabre,One Handed Weapon,One Hand Sword,10,,,,,,40% increased Global Accuracy Rating
+Tiger Hook,One Handed Weapon,One Hand Sword,70,,,,,,6% chance to Dodge Attack Hits
+Twilight Blade,One Handed Weapon,One Hand Sword,53,,,,,,40% increased Global Accuracy Rating
+Vaal Blade,One Handed Weapon,One Hand Sword,64,,,,,,460 to Accuracy Rating
+Variscite Blade,One Handed Weapon,One Hand Sword,35,,,,,,240 to Accuracy Rating
+War Sword,One Handed Weapon,One Hand Sword,20,,,,,,40% increased Global Accuracy Rating
+Boot Blade,One Handed Weapon,Rune Daggers,44,,,,,,30% increased Global Critical Strike Chance
+Boot Knife,One Handed Weapon,Rune Daggers,20,,,,,,30% increased Global Critical Strike Chance
+Butcher Knife,One Handed Weapon,Rune Daggers,38,,,,,,30% increased Global Critical Strike Chance
+Carving Knife,One Handed Weapon,Rune Daggers,10,,,,,,30% increased Global Critical Strike Chance
+Copper Kris,One Handed Weapon,Rune Daggers,24,,,,,,50% increased Global Critical Strike Chance
+Demon Dagger,One Handed Weapon,Rune Daggers,68,,,,,,40% increased Global Critical Strike Chance
+Ezomyte Dagger,One Handed Weapon,Rune Daggers,62,,,,,,30% increased Global Critical Strike Chance
+Fiend Dagger,One Handed Weapon,Rune Daggers,53,,,,,,40% increased Global Critical Strike Chance
+Flashfire Blade,One Handed Weapon,Rune Daggers,50,,,,,,Trigger Level 20 Flame Dash when you use a Socketed Skill
+Flickerflame Blade,One Handed Weapon,Rune Daggers,30,,,,,,Trigger Level 10 Flame Dash when you use a Socketed Skill
+Golden Kris,One Handed Weapon,Rune Daggers,47,,,,,,50% increased Global Critical Strike Chance
+Imp Dagger,One Handed Weapon,Rune Daggers,32,,,,,,40% increased Global Critical Strike Chance
+Imperial Skean,One Handed Weapon,Rune Daggers,66,,,,,,30% increased Global Critical Strike Chance
+Infernal Blade,One Handed Weapon,Rune Daggers,70,,,,,,Trigger Level 30 Flame Dash when you use a Socketed Skill
+Platinum Kris,One Handed Weapon,Rune Daggers,64,,,,,,50% increased Global Critical Strike Chance
+Royal Skean,One Handed Weapon,Rune Daggers,50,,,,,,30% increased Global Critical Strike Chance
+Skean,One Handed Weapon,Rune Daggers,28,,,,,,30% increased Global Critical Strike Chance
+Slaughter Knife,One Handed Weapon,Rune Daggers,58,,,,,,30% increased Global Critical Strike Chance
+Abyssal Sceptre,One Handed Weapon,Sceptres,53,,,,,,30% increased Elemental Damage
+Alternating Sceptre,One Handed Weapon,Sceptres,70,,,,,,Secrets of Suffering
+Blood Sceptre,One Handed Weapon,Sceptres,47,,,,,,24% increased Elemental Damage
+Bronze Sceptre,One Handed Weapon,Sceptres,10,,,,,,12% increased Elemental Damage
+Carnal Sceptre,One Handed Weapon,Sceptres,66,,,,,,32% increased Elemental Damage
+Crystal Sceptre,One Handed Weapon,Sceptres,41,,,,,,30% increased Elemental Damage
+Darkwood Sceptre,One Handed Weapon,Sceptres,5,,,,,,12% increased Elemental Damage
+Driftwood Sceptre,One Handed Weapon,Sceptres,1,,,,,,10% increased Elemental Damage
+Grinning Fetish,One Handed Weapon,Sceptres,35,,,,,,18% increased Elemental Damage
+Horned Sceptre,One Handed Weapon,Sceptres,36,,,,,,Damage Penetrates 4% Elemental Resistances
+Iron Sceptre,One Handed Weapon,Sceptres,20,,,,,,14% increased Elemental Damage
+Karui Sceptre,One Handed Weapon,Sceptres,56,,,,,,26% increased Elemental Damage
+Lead Sceptre,One Handed Weapon,Sceptres,44,,,,,,22% increased Elemental Damage
+Ochre Sceptre,One Handed Weapon,Sceptres,24,,,,,,16% increased Elemental Damage
+Opal Sceptre,One Handed Weapon,Sceptres,60,,,,,,40% increased Elemental Damage
+Oscillating Sceptre,One Handed Weapon,Sceptres,30,,,,,,Elemental Overload
+Platinum Sceptre,One Handed Weapon,Sceptres,62,,,,,,30% increased Elemental Damage
+Quartz Sceptre,One Handed Weapon,Sceptres,15,,,,,,20% increased Elemental Damage
+Ritual Sceptre,One Handed Weapon,Sceptres,28,,,,,,16% increased Elemental Damage
+Royal Sceptre,One Handed Weapon,Sceptres,50,,,,,,24% increased Elemental Damage
+Sambar Sceptre,One Handed Weapon,Sceptres,70,,,,,,Damage Penetrates 6% Elemental Resistances
+Sekhem,One Handed Weapon,Sceptres,38,,,,,,18% increased Elemental Damage
+Shadow Sceptre,One Handed Weapon,Sceptres,32,,,,,,22% increased Elemental Damage
+Stabilising Sceptre,One Handed Weapon,Sceptres,50,,,,,,Elemental Equilibrium
+Stag Sceptre,One Handed Weapon,Sceptres,55,,,,,,Damage Penetrates 4% Elemental Resistances
+Tyrant's Sekhem,One Handed Weapon,Sceptres,58,,,,,,26% increased Elemental Damage
+Vaal Sceptre,One Handed Weapon,Sceptres,64,,,,,,32% increased Elemental Damage
+Void Sceptre,One Handed Weapon,Sceptres,68,,,,,,40% increased Elemental Damage
+Antique Rapier,One Handed Weapon,Thrusting One Hand Sword,26,,,,,,25% to Global Critical Strike Multiplier
+Apex Rapier,One Handed Weapon,Thrusting One Hand Sword,55,,,,,,35% to Global Critical Strike Multiplier
+Basket Rapier,One Handed Weapon,Thrusting One Hand Sword,17,,,,,,25% to Global Critical Strike Multiplier
+Battered Foil,One Handed Weapon,Thrusting One Hand Sword,12,,,,,,25% to Global Critical Strike Multiplier
+Burnished Foil,One Handed Weapon,Thrusting One Hand Sword,40,,,,,,25% to Global Critical Strike Multiplier
+Courtesan Sword,One Handed Weapon,Thrusting One Hand Sword,57,,,,,,15% chance to cause Bleeding on Hit
+Dragonbone Rapier,One Handed Weapon,Thrusting One Hand Sword,58,,,,,,25% to Global Critical Strike Multiplier
+Dragoon Sword,One Handed Weapon,Thrusting One Hand Sword,72,,,,,,20% chance to cause Bleeding on Hit
+Elegant Foil,One Handed Weapon,Thrusting One Hand Sword,30,,,,,,25% to Global Critical Strike Multiplier
+Estoc,One Handed Weapon,Thrusting One Hand Sword,43,,,,,,25% to Global Critical Strike Multiplier
+Fancy Foil,One Handed Weapon,Thrusting One Hand Sword,52,,,,,,25% to Global Critical Strike Multiplier
+Harpy Rapier,One Handed Weapon,Thrusting One Hand Sword,70,,,,,,35% to Global Critical Strike Multiplier
+Jagged Foil,One Handed Weapon,Thrusting One Hand Sword,22,,,,,,25% to Global Critical Strike Multiplier
+Jewelled Foil,One Handed Weapon,Thrusting One Hand Sword,68,,,,,,25% to Global Critical Strike Multiplier
+Pecoraro,One Handed Weapon,Thrusting One Hand Sword,62,,,,,,25% to Global Critical Strike Multiplier
+Primeval Rapier,One Handed Weapon,Thrusting One Hand Sword,49,,,,,,25% to Global Critical Strike Multiplier
+Rusted Spike,One Handed Weapon,Thrusting One Hand Sword,3,,,,,,25% to Global Critical Strike Multiplier
+Serrated Foil,One Handed Weapon,Thrusting One Hand Sword,46,,,,,,25% to Global Critical Strike Multiplier
+Smallsword,One Handed Weapon,Thrusting One Hand Sword,36,,,,,,15% chance to cause Bleeding on Hit
+Spiraled Foil,One Handed Weapon,Thrusting One Hand Sword,64,,,,,,25% to Global Critical Strike Multiplier
+Tempered Foil,One Handed Weapon,Thrusting One Hand Sword,60,,,,,,25% to Global Critical Strike Multiplier
+Thorn Rapier,One Handed Weapon,Thrusting One Hand Sword,34,,,,,,35% to Global Critical Strike Multiplier
+Vaal Rapier,One Handed Weapon,Thrusting One Hand Sword,66,,,,,,25% to Global Critical Strike Multiplier
+Whalebone Rapier,One Handed Weapon,Thrusting One Hand Sword,7,,,,,,25% to Global Critical Strike Multiplier
+Wyrmbone Rapier,One Handed Weapon,Thrusting One Hand Sword,37,,,,,,25% to Global Critical Strike Multiplier
+Accumulator Wand,One Handed Weapon,Wands,70,,,,,,"Gain an Endurance, Frenzy or Power Charge every 6 seconds"
+Assembler Wand,One Handed Weapon,Wands,30,,,,,,"Gain an Endurance, Frenzy or Power Charge every 6 seconds"
+Carved Wand,One Handed Weapon,Wands,12,,,,,,(11-15)% increased Spell Damage
+Congregator Wand,One Handed Weapon,Wands,50,,,,,,"Gain an Endurance, Frenzy or Power Charge every 6 seconds"
+Convoking Wand,One Handed Weapon,Wands,72,,,,,,Can roll Minion Modifiers
+Crystal Wand,One Handed Weapon,Wands,45,,,,,,(29-33)% increased Spell Damage
+Demon's Horn,One Handed Weapon,Wands,56,,,,,,(31-35)% increased Spell Damage
+Driftwood Wand,One Handed Weapon,Wands,1,,,,,,(8-12)% increased Spell Damage
+Engraved Wand,One Handed Weapon,Wands,40,,,,,,(22-26)% increased Spell Damage
+Faun's Horn,One Handed Weapon,Wands,35,,,,,,(20-24)% increased Spell Damage
+Goat's Horn,One Handed Weapon,Wands,6,,,,,,(10-14)% increased Spell Damage
+Heathen Wand,One Handed Weapon,Wands,55,,,,,,10% increased Cast Speed
+Imbued Wand,One Handed Weapon,Wands,59,,,,,,(33-37)% increased Spell Damage
+Omen Wand,One Handed Weapon,Wands,53,,,,,,(27-31)% increased Spell Damage
+Opal Wand,One Handed Weapon,Wands,62,,,,,,(38-42)% increased Spell Damage
+Pagan Wand,One Handed Weapon,Wands,34,,,,,,10% increased Cast Speed
+Profane Wand,One Handed Weapon,Wands,70,,,,,,14% increased Cast Speed
+Prophecy Wand,One Handed Weapon,Wands,68,,,,,,(36-40)% increased Spell Damage
+Quartz Wand,One Handed Weapon,Wands,18,,,,,,(18-22)% increased Spell Damage
+Sage Wand,One Handed Weapon,Wands,30,,,,,,(17-21)% increased Spell Damage
+Serpent Wand,One Handed Weapon,Wands,49,,,,,,(26-30)% increased Spell Damage
+Spiraled Wand,One Handed Weapon,Wands,24,,,,,,(15-19)% increased Spell Damage
+Tornado Wand,One Handed Weapon,Wands,65,,,,,,(35-39)% increased Spell Damage
+Archon Kite Shield Piece,Piece,Piece,,,,,,,
+Archon Kite Shield Piece,Piece,Piece,,,,,,,
+Archon Kite Shield Piece,Piece,Piece,,,,,,,
+Archon Kite Shield Piece,Piece,Piece,,,,,,,
+Blunt Arrow Quiver Piece,Piece,Piece,,,,,,,
+Blunt Arrow Quiver Piece,Piece,Piece,,,,,,,
+Blunt Arrow Quiver Piece,Piece,Piece,,,,,,,
+Callous Mask Piece,Piece,Piece,,,,,,,
+Callous Mask Piece,Piece,Piece,,,,,,,
+Callous Mask Piece,Piece,Piece,,,,,,,
+Cloth Belt Piece,Piece,Piece,,,,,,,
+Cloth Belt Piece,Piece,Piece,,,,,,,
+Imperial Staff Piece,Piece,Piece,,,,,,,
+Imperial Staff Piece,Piece,Piece,,,,,,,
+Imperial Staff Piece,Piece,Piece,,,,,,,
+Legion Sword Piece,Piece,Piece,,,,,,,
+Legion Sword Piece,Piece,Piece,,,,,,,
+Legion Sword Piece,Piece,Piece,,,,,,,
+Assassin Bow,Two Handed Weapon,Bows,62,,,,,,(15-25)% to Global Critical Strike Multiplier
+Bone Bow,Two Handed Weapon,Bows,23,,,,,,
+Citadel Bow,Two Handed Weapon,Bows,58,,,,,,
+Composite Bow,Two Handed Weapon,Bows,14,,,,,,
+Compound Bow,Two Handed Weapon,Bows,41,,,,,,
+Crude Bow,Two Handed Weapon,Bows,1,,,,,,
+Death Bow,Two Handed Weapon,Bows,32,,,,,,(30-50)% increased Critical Strike Chance
+Decimation Bow,Two Handed Weapon,Bows,53,,,,,,(30-50)% increased Critical Strike Chance
+Decurve Bow,Two Handed Weapon,Bows,38,,,,,,
+Foundry Bow,Two Handed Weapon,Bows,50,,,,,,Adds (70-84) to (110-124) Fire Damage
+Grove Bow,Two Handed Weapon,Bows,35,,,,,,
+Harbinger Bow,Two Handed Weapon,Bows,68,,,,,,(30-50)% increased Critical Strike Chance
+Hedron Bow,Two Handed Weapon,Bows,30,,,,,,Adds (40-48) to (60-72) Fire Damage
+Highborn Bow,Two Handed Weapon,Bows,50,,,,,,(20-24)% increased Elemental Damage with Attack Skills
+Imperial Bow,Two Handed Weapon,Bows,66,,,,,,(20-24)% increased Elemental Damage with Attack Skills
+Ivory Bow,Two Handed Weapon,Bows,47,,,,,,
+Long Bow,Two Handed Weapon,Bows,9,,,,,,
+Maraketh Bow,Two Handed Weapon,Bows,71,,,,,,10% increased Movement Speed
+Ranger Bow,Two Handed Weapon,Bows,60,,,,,,
+Recurve Bow,Two Handed Weapon,Bows,18,,,,,,(15-25)% to Global Critical Strike Multiplier
+Reflex Bow,Two Handed Weapon,Bows,36,,,,,,6% increased Movement Speed
+Royal Bow,Two Handed Weapon,Bows,28,,,,,,(20-24)% increased Elemental Damage with Attack Skills
+Short Bow,Two Handed Weapon,Bows,5,,,,,,
+Sniper Bow,Two Handed Weapon,Bows,44,,,,,,(15-25)% to Global Critical Strike Multiplier
+Solarine Bow,Two Handed Weapon,Bows,70,,,,,,Adds (105-116) to (160-172) Fire Damage
+Spine Bow,Two Handed Weapon,Bows,64,,,,,,
+Steelwood Bow,Two Handed Weapon,Bows,57,,,,,,6% increased Movement Speed
+Thicket Bow,Two Handed Weapon,Bows,56,,,,,,
+Fishing Rod,Two Handed Weapon,Fishing Rod,1,,,,,,
+Battery Staff,Two Handed Weapon,Staves,70,,,,,,"(140-165) to maximum Energy Shield
 Spend Energy Shield before Mana for Costs of Socketed Skills"
-Crescent Staff,Two Handed Weapon,Staves,36,,,,,80% increased Global Critical Strike Chance
-Eclipse Staff,Two Handed Weapon,Staves,70,,,,,100% increased Global Critical Strike Chance
-Gnarled Branch,Two Handed Weapon,Staves,4,,,,,18% Chance to Block Attack Damage while wielding a Staff
-Highborn Staff,Two Handed Weapon,Staves,52,,,,,18% Chance to Block Attack Damage while wielding a Staff
-Imperial Staff,Two Handed Weapon,Staves,66,,,,,18% Chance to Block Attack Damage while wielding a Staff
-Lathi,Two Handed Weapon,Staves,62,,,,,18% Chance to Block Attack Damage while wielding a Staff
-Long Staff,Two Handed Weapon,Staves,18,,,,,18% Chance to Block Attack Damage while wielding a Staff
-Moon Staff,Two Handed Weapon,Staves,57,,,,,80% increased Global Critical Strike Chance
-Primitive Staff,Two Handed Weapon,Staves,9,,,,,18% Chance to Block Attack Damage while wielding a Staff
-Primordial Staff,Two Handed Weapon,Staves,58,,,,,18% Chance to Block Attack Damage while wielding a Staff
-Quarterstaff,Two Handed Weapon,Staves,45,,,,,18% Chance to Block Attack Damage while wielding a Staff
-Reciprocation Staff,Two Handed Weapon,Staves,50,,,,,"(100-120) to maximum Energy Shield
+Crescent Staff,Two Handed Weapon,Staves,36,,,,,,80% increased Global Critical Strike Chance
+Eclipse Staff,Two Handed Weapon,Staves,70,,,,,,100% increased Global Critical Strike Chance
+Gnarled Branch,Two Handed Weapon,Staves,4,,,,,,18% Chance to Block Attack Damage while wielding a Staff
+Highborn Staff,Two Handed Weapon,Staves,52,,,,,,18% Chance to Block Attack Damage while wielding a Staff
+Imperial Staff,Two Handed Weapon,Staves,66,,,,,,18% Chance to Block Attack Damage while wielding a Staff
+Lathi,Two Handed Weapon,Staves,62,,,,,,18% Chance to Block Attack Damage while wielding a Staff
+Long Staff,Two Handed Weapon,Staves,18,,,,,,18% Chance to Block Attack Damage while wielding a Staff
+Moon Staff,Two Handed Weapon,Staves,57,,,,,,80% increased Global Critical Strike Chance
+Primitive Staff,Two Handed Weapon,Staves,9,,,,,,18% Chance to Block Attack Damage while wielding a Staff
+Primordial Staff,Two Handed Weapon,Staves,58,,,,,,18% Chance to Block Attack Damage while wielding a Staff
+Quarterstaff,Two Handed Weapon,Staves,45,,,,,,18% Chance to Block Attack Damage while wielding a Staff
+Reciprocation Staff,Two Handed Weapon,Staves,50,,,,,,"(100-120) to maximum Energy Shield
 Spend Energy Shield before Mana for Costs of Socketed Skills"
-Royal Staff,Two Handed Weapon,Staves,28,,,,,18% Chance to Block Attack Damage while wielding a Staff
-Transformer Staff,Two Handed Weapon,Staves,30,,,,,"(66-80) to maximum Energy Shield
+Royal Staff,Two Handed Weapon,Staves,28,,,,,,18% Chance to Block Attack Damage while wielding a Staff
+Transformer Staff,Two Handed Weapon,Staves,30,,,,,,"(66-80) to maximum Energy Shield
 Spend Energy Shield before Mana for Costs of Socketed Skills"
-Woodful Staff,Two Handed Weapon,Staves,37,,,,,18% Chance to Block Attack Damage while wielding a Staff
-Abyssal Axe,Two Handed Weapon,Two Hand Axe,55,,,,,
-Apex Cleaver,Two Handed Weapon,Two Hand Axe,70,,,,,20% to Maximum Quality
-Dagger Axe,Two Handed Weapon,Two Hand Axe,36,,,,,50% increased Critical Strike Chance
-Despot Axe,Two Handed Weapon,Two Hand Axe,66,,,,,
-Double Axe,Two Handed Weapon,Two Hand Axe,23,,,,,
-Ezomyte Axe,Two Handed Weapon,Two Hand Axe,62,,,,,
-Fleshripper,Two Handed Weapon,Two Hand Axe,70,,,,,50% increased Critical Strike Chance
-Gilded Axe,Two Handed Weapon,Two Hand Axe,28,,,,,
-Headsman Axe,Two Handed Weapon,Two Hand Axe,45,,,,,
-Honed Cleaver,Two Handed Weapon,Two Hand Axe,50,,,,,20% to Maximum Quality
-Jade Chopper,Two Handed Weapon,Two Hand Axe,9,,,,,
-Jasper Chopper,Two Handed Weapon,Two Hand Axe,37,,,,,
-Karui Chopper,Two Handed Weapon,Two Hand Axe,58,,,,,
-Labrys,Two Handed Weapon,Two Hand Axe,49,,,,,
-Noble Axe,Two Handed Weapon,Two Hand Axe,52,,,,,
-Poleaxe,Two Handed Weapon,Two Hand Axe,18,,,,,
-Prime Cleaver,Two Handed Weapon,Two Hand Axe,30,,,,,20% to Maximum Quality
-Shadow Axe,Two Handed Weapon,Two Hand Axe,33,,,,,
-Stone Axe,Two Handed Weapon,Two Hand Axe,4,,,,,
-Sundering Axe,Two Handed Weapon,Two Hand Axe,60,,,,,20% to Damage over Time Multiplier for Bleeding
-Talon Axe,Two Handed Weapon,Two Hand Axe,59,,,,,50% increased Critical Strike Chance
-Timber Axe,Two Handed Weapon,Two Hand Axe,41,,,,,
-Vaal Axe,Two Handed Weapon,Two Hand Axe,64,,,,,25% chance to Maim on Hit
-Void Axe,Two Handed Weapon,Two Hand Axe,68,,,,,
-Woodsplitter,Two Handed Weapon,Two Hand Axe,13,,,,,
-Blunt Force Condenser,Two Handed Weapon,Two Hand Mace,30,,,,,Warcries Exert 1 additional Attack
-Brass Maul,Two Handed Weapon,Two Hand Mace,27,,,,,30% increased Stun Duration on Enemies
-Colossus Mallet,Two Handed Weapon,Two Hand Mace,59,,,,,30% increased Area Damage
-Coronal Maul,Two Handed Weapon,Two Hand Mace,69,,,,,20% increased Area of Effect
-Crushing Force Magnifier,Two Handed Weapon,Two Hand Mace,50,,,,,Warcries Exert 1 additional Attack
-Dread Maul,Two Handed Weapon,Two Hand Mace,54,,,,,30% increased Stun Duration on Enemies
-Driftwood Maul,Two Handed Weapon,Two Hand Mace,3,,,,,30% increased Stun Duration on Enemies
-Fright Maul,Two Handed Weapon,Two Hand Mace,32,,,,,30% increased Stun Duration on Enemies
-Great Mallet,Two Handed Weapon,Two Hand Mace,40,,,,,30% increased Stun Duration on Enemies
-Impact Force Propagator,Two Handed Weapon,Two Hand Mace,70,,,,,Warcries Exert 1 additional Attack
-Imperial Maul,Two Handed Weapon,Two Hand Mace,65,,,,,10% increased Strength
-Jagged Maul,Two Handed Weapon,Two Hand Mace,22,,,,,30% increased Stun Duration on Enemies
-Karui Maul,Two Handed Weapon,Two Hand Mace,57,,,,,45% increased Stun Duration on Enemies
-Mallet,Two Handed Weapon,Two Hand Mace,12,,,,,30% increased Stun Duration on Enemies
-Meatgrinder,Two Handed Weapon,Two Hand Mace,63,,,,,5% chance to deal Double Damage
-Morning Star,Two Handed Weapon,Two Hand Mace,34,,,,,15% increased Area of Effect
-Piledriver,Two Handed Weapon,Two Hand Mace,61,,,,,20% reduced Enemy Stun Threshold
-Plated Maul,Two Handed Weapon,Two Hand Mace,51,,,,,30% increased Stun Duration on Enemies
-Sledgehammer,Two Handed Weapon,Two Hand Mace,17,,,,,45% increased Stun Duration on Enemies
-Solar Maul,Two Handed Weapon,Two Hand Mace,56,,,,,15% increased Area of Effect
-Spiny Maul,Two Handed Weapon,Two Hand Mace,48,,,,,30% increased Stun Duration on Enemies
-Steelhead,Two Handed Weapon,Two Hand Mace,44,,,,,45% increased Stun Duration on Enemies
-Terror Maul,Two Handed Weapon,Two Hand Mace,67,,,,,25% chance to double Stun Duration
-Totemic Maul,Two Handed Weapon,Two Hand Mace,36,,,,,30% increased Stun Duration on Enemies
-Tribal Maul,Two Handed Weapon,Two Hand Mace,8,,,,,30% increased Stun Duration on Enemies
-Banishing Blade,Two Handed Weapon,Two Hand Sword,70,,,,,Attack Critical Strikes ignore Enemy Monster Elemental Resistances
-Bastard Sword,Two Handed Weapon,Two Hand Sword,12,,,,,60% increased Global Accuracy Rating
-Blasting Blade,Two Handed Weapon,Two Hand Sword,50,,,,,Attack Critical Strikes ignore Enemy Monster Elemental Resistances
-Butcher Sword,Two Handed Weapon,Two Hand Sword,36,,,,,250 to Accuracy Rating
-Charan's Sword,Two Handed Weapon,Two Hand Sword,2,,,,,40% increased Global Accuracy Rating
-Corroded Blade,Two Handed Weapon,Two Hand Sword,3,,,,,40% increased Global Accuracy Rating
-Curved Blade,Two Handed Weapon,Two Hand Sword,35,,,,,40% to Global Critical Strike Multiplier
-Engraved Greatsword,Two Handed Weapon,Two Hand Sword,48,,,,,60% increased Global Accuracy Rating
-Etched Greatsword,Two Handed Weapon,Two Hand Sword,22,,,,,60% increased Global Accuracy Rating
-Exquisite Blade,Two Handed Weapon,Two Hand Sword,70,,,,,50% to Global Critical Strike Multiplier
-Ezomyte Blade,Two Handed Weapon,Two Hand Sword,61,,,,,25% to Global Critical Strike Multiplier
-Footman Sword,Two Handed Weapon,Two Hand Sword,40,,,,,60% increased Global Accuracy Rating
-Headman's Sword,Two Handed Weapon,Two Hand Sword,57,,,,,400 to Accuracy Rating
-Highland Blade,Two Handed Weapon,Two Hand Sword,44,,,,,305 to Accuracy Rating
-Infernal Sword,Two Handed Weapon,Two Hand Sword,67,,,,,30% increased Elemental Damage with Attack Skills
-Lion Sword,Two Handed Weapon,Two Hand Sword,65,,,,,50 to Strength and Dexterity
-Lithe Blade,Two Handed Weapon,Two Hand Sword,56,,,,,40% to Global Critical Strike Multiplier
-Longsword,Two Handed Weapon,Two Hand Sword,8,,,,,60 to Accuracy Rating
-Ornate Sword,Two Handed Weapon,Two Hand Sword,27,,,,,185 to Accuracy Rating
-Reaver Sword,Two Handed Weapon,Two Hand Sword,59,,,,,60% increased Global Accuracy Rating
-Rebuking Blade,Two Handed Weapon,Two Hand Sword,30,,,,,Attack Critical Strikes ignore Enemy Monster Elemental Resistances
-Spectral Sword,Two Handed Weapon,Two Hand Sword,32,,,,,45% increased Global Accuracy Rating
-Tiger Sword,Two Handed Weapon,Two Hand Sword,51,,,,,360 to Accuracy Rating
-Two-Handed Sword,Two Handed Weapon,Two Hand Sword,17,,,,,120 to Accuracy Rating
-Vaal Greatsword,Two Handed Weapon,Two Hand Sword,63,,,,,470 to Accuracy Rating
-Wraith Sword,Two Handed Weapon,Two Hand Sword,54,,,,,45% increased Global Accuracy Rating
-Capacity Rod,Two Handed Weapon,Warstaves,30,,,,,1 to Maximum Power Charges and Maximum Endurance Charges
-Coiled Staff,Two Handed Weapon,Warstaves,23,,,,,20% Chance to Block Attack Damage while wielding a Staff
-Eventuality Rod,Two Handed Weapon,Warstaves,70,,,,,1 to Maximum Power Charges and Maximum Endurance Charges
-Ezomyte Staff,Two Handed Weapon,Warstaves,60,,,,,20% Chance to Block Attack Damage while wielding a Staff
-Foul Staff,Two Handed Weapon,Warstaves,55,,,,,18% Chance to Block Attack Damage while wielding a Staff
-Iron Staff,Two Handed Weapon,Warstaves,13,,,,,18% Chance to Block Attack Damage while wielding a Staff
-Judgement Staff,Two Handed Weapon,Warstaves,68,,,,,20% Chance to Block Spell Damage while wielding a Staff
-Maelström Staff,Two Handed Weapon,Warstaves,64,,,,,25% Chance to Block Attack Damage while wielding a Staff
-Military Staff,Two Handed Weapon,Warstaves,41,,,,,18% Chance to Block Attack Damage while wielding a Staff
-Potentiality Rod,Two Handed Weapon,Warstaves,50,,,,,1 to Maximum Power Charges and Maximum Endurance Charges
-Serpentine Staff,Two Handed Weapon,Warstaves,49,,,,,20% Chance to Block Attack Damage while wielding a Staff
-Vile Staff,Two Handed Weapon,Warstaves,33,,,,,18% Chance to Block Attack Damage while wielding a Staff
-Small Cluster Jewel,Jewel,Jewel,,,,,,
-Medium Cluster Jewel,Jewel,Jewel,,,,,,
-Large Cluster Jewel,Jewel,Jewel,,,,,,
-Crimson Jewel,Jewel,Jewel,,,,,,
-Viridian Jewel,Jewel,Jewel,,,,,,
-Cobalt Jewel,Jewel,Jewel,,,,,,
-Timeless Jewel,Jewel,Jewel,,,,,,
-Prismatic Jewel,Jewel,Jewel,,,,,,
-Murderous Eye Jewel,Jewel,Abyss Jewel,,,,,,
-Searching Eye Jewel,Jewel,Abyss Jewel,,,,,,
-Hypnotic Eye Jewel,Jewel,Abyss Jewel,,,,,,
-Ghastly Eye Jewel,Jewel,Abyss Jewel,,,,,,
+Woodful Staff,Two Handed Weapon,Staves,37,,,,,,18% Chance to Block Attack Damage while wielding a Staff
+Abyssal Axe,Two Handed Weapon,Two Hand Axe,55,,,,,,
+Apex Cleaver,Two Handed Weapon,Two Hand Axe,70,,,,,,20% to Maximum Quality
+Dagger Axe,Two Handed Weapon,Two Hand Axe,36,,,,,,50% increased Critical Strike Chance
+Despot Axe,Two Handed Weapon,Two Hand Axe,66,,,,,,
+Double Axe,Two Handed Weapon,Two Hand Axe,23,,,,,,
+Ezomyte Axe,Two Handed Weapon,Two Hand Axe,62,,,,,,
+Fleshripper,Two Handed Weapon,Two Hand Axe,70,,,,,,50% increased Critical Strike Chance
+Gilded Axe,Two Handed Weapon,Two Hand Axe,28,,,,,,
+Headsman Axe,Two Handed Weapon,Two Hand Axe,45,,,,,,
+Honed Cleaver,Two Handed Weapon,Two Hand Axe,50,,,,,,20% to Maximum Quality
+Jade Chopper,Two Handed Weapon,Two Hand Axe,9,,,,,,
+Jasper Chopper,Two Handed Weapon,Two Hand Axe,37,,,,,,
+Karui Chopper,Two Handed Weapon,Two Hand Axe,58,,,,,,
+Labrys,Two Handed Weapon,Two Hand Axe,49,,,,,,
+Noble Axe,Two Handed Weapon,Two Hand Axe,52,,,,,,
+Poleaxe,Two Handed Weapon,Two Hand Axe,18,,,,,,
+Prime Cleaver,Two Handed Weapon,Two Hand Axe,30,,,,,,20% to Maximum Quality
+Shadow Axe,Two Handed Weapon,Two Hand Axe,33,,,,,,
+Stone Axe,Two Handed Weapon,Two Hand Axe,4,,,,,,
+Sundering Axe,Two Handed Weapon,Two Hand Axe,60,,,,,,20% to Damage over Time Multiplier for Bleeding
+Talon Axe,Two Handed Weapon,Two Hand Axe,59,,,,,,50% increased Critical Strike Chance
+Timber Axe,Two Handed Weapon,Two Hand Axe,41,,,,,,
+Vaal Axe,Two Handed Weapon,Two Hand Axe,64,,,,,,25% chance to Maim on Hit
+Void Axe,Two Handed Weapon,Two Hand Axe,68,,,,,,
+Woodsplitter,Two Handed Weapon,Two Hand Axe,13,,,,,,
+Blunt Force Condenser,Two Handed Weapon,Two Hand Mace,30,,,,,,Warcries Exert 1 additional Attack
+Brass Maul,Two Handed Weapon,Two Hand Mace,27,,,,,,30% increased Stun Duration on Enemies
+Colossus Mallet,Two Handed Weapon,Two Hand Mace,59,,,,,,30% increased Area Damage
+Coronal Maul,Two Handed Weapon,Two Hand Mace,69,,,,,,20% increased Area of Effect
+Crushing Force Magnifier,Two Handed Weapon,Two Hand Mace,50,,,,,,Warcries Exert 1 additional Attack
+Dread Maul,Two Handed Weapon,Two Hand Mace,54,,,,,,30% increased Stun Duration on Enemies
+Driftwood Maul,Two Handed Weapon,Two Hand Mace,3,,,,,,30% increased Stun Duration on Enemies
+Fright Maul,Two Handed Weapon,Two Hand Mace,32,,,,,,30% increased Stun Duration on Enemies
+Great Mallet,Two Handed Weapon,Two Hand Mace,40,,,,,,30% increased Stun Duration on Enemies
+Impact Force Propagator,Two Handed Weapon,Two Hand Mace,70,,,,,,Warcries Exert 1 additional Attack
+Imperial Maul,Two Handed Weapon,Two Hand Mace,65,,,,,,10% increased Strength
+Jagged Maul,Two Handed Weapon,Two Hand Mace,22,,,,,,30% increased Stun Duration on Enemies
+Karui Maul,Two Handed Weapon,Two Hand Mace,57,,,,,,45% increased Stun Duration on Enemies
+Mallet,Two Handed Weapon,Two Hand Mace,12,,,,,,30% increased Stun Duration on Enemies
+Meatgrinder,Two Handed Weapon,Two Hand Mace,63,,,,,,5% chance to deal Double Damage
+Morning Star,Two Handed Weapon,Two Hand Mace,34,,,,,,15% increased Area of Effect
+Piledriver,Two Handed Weapon,Two Hand Mace,61,,,,,,20% reduced Enemy Stun Threshold
+Plated Maul,Two Handed Weapon,Two Hand Mace,51,,,,,,30% increased Stun Duration on Enemies
+Sledgehammer,Two Handed Weapon,Two Hand Mace,17,,,,,,45% increased Stun Duration on Enemies
+Solar Maul,Two Handed Weapon,Two Hand Mace,56,,,,,,15% increased Area of Effect
+Spiny Maul,Two Handed Weapon,Two Hand Mace,48,,,,,,30% increased Stun Duration on Enemies
+Steelhead,Two Handed Weapon,Two Hand Mace,44,,,,,,45% increased Stun Duration on Enemies
+Terror Maul,Two Handed Weapon,Two Hand Mace,67,,,,,,25% chance to double Stun Duration
+Totemic Maul,Two Handed Weapon,Two Hand Mace,36,,,,,,30% increased Stun Duration on Enemies
+Tribal Maul,Two Handed Weapon,Two Hand Mace,8,,,,,,30% increased Stun Duration on Enemies
+Banishing Blade,Two Handed Weapon,Two Hand Sword,70,,,,,,Attack Critical Strikes ignore Enemy Monster Elemental Resistances
+Bastard Sword,Two Handed Weapon,Two Hand Sword,12,,,,,,60% increased Global Accuracy Rating
+Blasting Blade,Two Handed Weapon,Two Hand Sword,50,,,,,,Attack Critical Strikes ignore Enemy Monster Elemental Resistances
+Butcher Sword,Two Handed Weapon,Two Hand Sword,36,,,,,,250 to Accuracy Rating
+Charan's Sword,Two Handed Weapon,Two Hand Sword,2,,,,,,40% increased Global Accuracy Rating
+Corroded Blade,Two Handed Weapon,Two Hand Sword,3,,,,,,40% increased Global Accuracy Rating
+Curved Blade,Two Handed Weapon,Two Hand Sword,35,,,,,,40% to Global Critical Strike Multiplier
+Engraved Greatsword,Two Handed Weapon,Two Hand Sword,48,,,,,,60% increased Global Accuracy Rating
+Etched Greatsword,Two Handed Weapon,Two Hand Sword,22,,,,,,60% increased Global Accuracy Rating
+Exquisite Blade,Two Handed Weapon,Two Hand Sword,70,,,,,,50% to Global Critical Strike Multiplier
+Ezomyte Blade,Two Handed Weapon,Two Hand Sword,61,,,,,,25% to Global Critical Strike Multiplier
+Footman Sword,Two Handed Weapon,Two Hand Sword,40,,,,,,60% increased Global Accuracy Rating
+Headman's Sword,Two Handed Weapon,Two Hand Sword,57,,,,,,400 to Accuracy Rating
+Highland Blade,Two Handed Weapon,Two Hand Sword,44,,,,,,305 to Accuracy Rating
+Infernal Sword,Two Handed Weapon,Two Hand Sword,67,,,,,,30% increased Elemental Damage with Attack Skills
+Lion Sword,Two Handed Weapon,Two Hand Sword,65,,,,,,50 to Strength and Dexterity
+Lithe Blade,Two Handed Weapon,Two Hand Sword,56,,,,,,40% to Global Critical Strike Multiplier
+Longsword,Two Handed Weapon,Two Hand Sword,8,,,,,,60 to Accuracy Rating
+Ornate Sword,Two Handed Weapon,Two Hand Sword,27,,,,,,185 to Accuracy Rating
+Reaver Sword,Two Handed Weapon,Two Hand Sword,59,,,,,,60% increased Global Accuracy Rating
+Rebuking Blade,Two Handed Weapon,Two Hand Sword,30,,,,,,Attack Critical Strikes ignore Enemy Monster Elemental Resistances
+Spectral Sword,Two Handed Weapon,Two Hand Sword,32,,,,,,45% increased Global Accuracy Rating
+Tiger Sword,Two Handed Weapon,Two Hand Sword,51,,,,,,360 to Accuracy Rating
+Two-Handed Sword,Two Handed Weapon,Two Hand Sword,17,,,,,,120 to Accuracy Rating
+Vaal Greatsword,Two Handed Weapon,Two Hand Sword,63,,,,,,470 to Accuracy Rating
+Wraith Sword,Two Handed Weapon,Two Hand Sword,54,,,,,,45% increased Global Accuracy Rating
+Capacity Rod,Two Handed Weapon,Warstaves,30,,,,,,1 to Maximum Power Charges and Maximum Endurance Charges
+Coiled Staff,Two Handed Weapon,Warstaves,23,,,,,,20% Chance to Block Attack Damage while wielding a Staff
+Eventuality Rod,Two Handed Weapon,Warstaves,70,,,,,,1 to Maximum Power Charges and Maximum Endurance Charges
+Ezomyte Staff,Two Handed Weapon,Warstaves,60,,,,,,20% Chance to Block Attack Damage while wielding a Staff
+Foul Staff,Two Handed Weapon,Warstaves,55,,,,,,18% Chance to Block Attack Damage while wielding a Staff
+Iron Staff,Two Handed Weapon,Warstaves,13,,,,,,18% Chance to Block Attack Damage while wielding a Staff
+Judgement Staff,Two Handed Weapon,Warstaves,68,,,,,,20% Chance to Block Spell Damage while wielding a Staff
+Maelström Staff,Two Handed Weapon,Warstaves,64,,,,,,25% Chance to Block Attack Damage while wielding a Staff
+Military Staff,Two Handed Weapon,Warstaves,41,,,,,,18% Chance to Block Attack Damage while wielding a Staff
+Potentiality Rod,Two Handed Weapon,Warstaves,50,,,,,,1 to Maximum Power Charges and Maximum Endurance Charges
+Serpentine Staff,Two Handed Weapon,Warstaves,49,,,,,,20% Chance to Block Attack Damage while wielding a Staff
+Vile Staff,Two Handed Weapon,Warstaves,33,,,,,,18% Chance to Block Attack Damage while wielding a Staff
+Small Cluster Jewel,Jewel,Jewel,,,,,,,
+Medium Cluster Jewel,Jewel,Jewel,,,,,,,
+Large Cluster Jewel,Jewel,Jewel,,,,,,,
+Crimson Jewel,Jewel,Jewel,,,,,,,
+Viridian Jewel,Jewel,Jewel,,,,,,,
+Cobalt Jewel,Jewel,Jewel,,,,,,,
+Timeless Jewel,Jewel,Jewel,,,,,,,
+Prismatic Jewel,Jewel,Jewel,,,,,,,
+Murderous Eye Jewel,Jewel,Abyss Jewel,,,,,,,
+Searching Eye Jewel,Jewel,Abyss Jewel,,,,,,,
+Hypnotic Eye Jewel,Jewel,Abyss Jewel,,,,,,,
+Ghastly Eye Jewel,Jewel,Abyss Jewel,,,,,,,
+Runic Helm,Armour,Helmet,25,Ward,,,,34,
+Runic Crest,Armour,Helmet,49,Ward,,,,81,
+Runic Crown,Armour,Helmet,68,Ward,,,,137,
+Runic Greaves,Armour,Boots,24,Ward,,,,20,
+Runic Sollerets,Armour,Boots,48,Ward,,,,52,
+Runic Sabatons,Armour,Boots,69,Ward,,,,85,
+Runic Gloves,Armour,Gloves,24,Ward,,,,20,
+Runic Gages,Armour,Gloves,48,Ward,,,,52,
+Runic Gauntlets,Armour,Gloves,69,Ward,,,,85,
+Gold Flask,Flasks,Utility Flask,22,,,,,,30% increased Rarity of items found
+Corundum Flask,Flasks,Utility Flask,27,,,,,,"30% increasaed Stun Treshold
+Cannot be stunned if you've been stunned during flask effect"
+Iron Flask,Flasks,Utility Flask,40,,,,,,Restores Ward on use
