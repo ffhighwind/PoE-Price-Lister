@@ -123,7 +123,9 @@
     </Compile>
     <None Include="poe_conversions.csv" />
     <None Include="poe_currency.csv" />
-    <None Include="poe_enchants.csv" />
+    <None Include="poe_enchants.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="poe_prices.csv" />
     <None Include="README.md" />
     <None Include="Resources\FilterNova-AutoUpdater.ahk" />

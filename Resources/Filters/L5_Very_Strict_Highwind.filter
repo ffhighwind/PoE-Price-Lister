@@ -441,7 +441,7 @@ Show
 
 Show  # League Specific - Expedition - Mid
 	Class Currency
-	BaseType == "Burial Medallion" "Exotic Coinage" "Scrap Metal" "Lesser Sun Artifact" "Lesser Order Artifact" "Lesser Black Scythe Artifact" "Lesser Broken Circle Artifact" "Common Sun Artifact" "Common Order Artifact" "Common Black Scythe Artifact" "Common Broken Circle Artifact"
+	BaseType == "Burial Medallion" "Exotic Coinage" "Scrap Metal" "Lesser Sun Artifact" "Lesser Order Artifact" "Lesser Black Scythe Artifact" "Lesser Broken Circle Artifact" "Common Sun Artifact" "Common Order Artifact" "Common Black Scythe Artifact" "Common Broken Circle Artifact" "Enkindling Orb" "Instilling Orb" "Astragali" "Greater Broken Circle Artifact" "Grand Broken Circle Artifact" "Greater Black Scythe Artifact" "Grand Black Scythe Artifact" "Greater Order Artifact" "Grand Order Artifact" "Greater Sun Artifact" "Grand Sun Artifact"
 
 Show  # League Specific - Delirium - Delirium Orbs (Mid)
 	Class Currency
@@ -508,10 +508,6 @@ Show  # Currency - High
 # High (League Specific) #
 #------------------------#
 # 6c+
-
-Show  # League Specific - Expedition - High
-	Class Currency
-	BaseType == "Enkindling Orb" "Instilling Orb" "Astragali" "Greater Broken Circle Artifact" "Grand Broken Circle Artifact" "Greater Black Scythe Artifact" "Grand Black Scythe Artifact" "Greater Order Artifact" "Grand Order Artifact" "Greater Sun Artifact" "Grand Sun Artifact"
 
 Show  # League Specific - Ritual - Ritual Vessels
 	Class Currency
