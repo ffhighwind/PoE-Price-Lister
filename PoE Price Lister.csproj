@@ -133,6 +133,7 @@
     <None Include="Resources\Filters\filter silencer.ahk" />
     <None Include="Resources\Filters\Filters.zip" />
     <None Include="Resources\Filters\L1_Regular_Highwind.filter" />
+    <None Include="Resources\Filters\L1_Shaper_Highwind.filter" />
     <None Include="Resources\Filters\L2_Mapping_Highwind.filter" />
     <None Include="Resources\Filters\L3_Semi_Strict_Highwind.filter" />
     <None Include="Resources\Filters\L4_Strict_Highwind.filter" />

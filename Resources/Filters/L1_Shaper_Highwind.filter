@@ -164,6 +164,9 @@ Show  # Currency - Shaper Voice - Alchemy
 	SetTextColor 255 0 255 # Currency (Low)
 	SetBackgroundColor 0 0 0 230 # Currency (Low)
 	SetBorderColor 0 0 0 0 # Currency (Low)
+	PlayAlertSound ShAlchemy 300
+	MinimapIcon 1 Yellow Circle
+	PlayEffect Yellow
 
 Show  # Currency - Shaper Voice - Blessed
 	Class Currency
@@ -172,7 +175,9 @@ Show  # Currency - Shaper Voice - Blessed
 	SetTextColor 255 0 255 # Currency (Low)
 	SetBackgroundColor 0 0 0 230 # Currency (Low)
 	SetBorderColor 0 0 0 0 # Currency (Low)
-	PlayAlertSound ShBlessed 200
+	PlayAlertSound ShBlessed 300
+	MinimapIcon 1 Yellow Circle
+	PlayEffect Yellow
 
 Show  # Currency - Shaper Voice - Fusing
 	Class Currency
@@ -181,7 +186,9 @@ Show  # Currency - Shaper Voice - Fusing
 	SetTextColor 255 0 255 # Currency (Low)
 	SetBackgroundColor 0 0 0 230 # Currency (Low)
 	SetBorderColor 0 0 0 0 # Currency (Low)
-	PlayAlertSound shFusing 200
+	PlayAlertSound shFusing 300
+	MinimapIcon 1 Yellow Circle
+	PlayEffect Yellow
 
 Show  # Currency - Shaper Voice - Vaal
 	Class Currency
@@ -190,7 +197,7 @@ Show  # Currency - Shaper Voice - Vaal
 	SetTextColor 255 0 255 # Currency (Mid)
 	SetBackgroundColor 20 0 20 230 # Currency (Mid)
 	SetBorderColor 255 0 255 255 # Currency (Mid)
-	PlayAlertSound ShVaal 200
+	PlayAlertSound ShVaal 300
 	MinimapIcon 1 Yellow Circle
 	PlayEffect Yellow
 
@@ -201,7 +208,7 @@ Show  # Currency - Shaper Voice - Regal
 	SetTextColor 255 0 255 # Currency (Mid)
 	SetBackgroundColor 20 0 20 230 # Currency (Mid)
 	SetBorderColor 255 0 255 255 # Currency (Mid)
-	PlayAlertSound ShChaos 200
+	PlayAlertSound ShRegal 300
 	MinimapIcon 1 Yellow Circle
 	PlayEffect Yellow
 
@@ -212,8 +219,7 @@ Show  # Currency - Shaper Voice - Chaos
 	SetTextColor 255 0 255 # Currency (Mid)
 	SetBackgroundColor 20 0 20 230 # Currency (Mid)
 	SetBorderColor 255 0 255 255 # Currency (Mid)
-	PlayAlertSound ShVaal 200
-	BaseType == "Vaal Orb"
+	PlayAlertSound ShChaos 300
 	MinimapIcon 1 Yellow Circle
 	PlayEffect Yellow
 
